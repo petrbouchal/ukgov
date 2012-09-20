@@ -1,0 +1,1 @@
+earners2012 <- read.csv("~/Downloads/High Earners/150k-Master-2012-20-9-12-CSV.csv", header=F)
