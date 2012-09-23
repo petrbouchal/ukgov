@@ -85,7 +85,7 @@ print(Motion, "chart")
 ```
 
 <!-- MotionChart generated in R 2.15.1 by googleVis 0.2.17 package -->
-<!-- Sun Sep 23 05:39:38 2012 -->
+<!-- Sun Sep 23 05:55:44 2012 -->
 
 
 <!-- jsHeader -->
@@ -94,7 +94,7 @@ print(Motion, "chart")
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartIDf8a36167b0b ()
+function gvisDataMotionChartID11a836716e5 ()
 {
   var data = new google.visualization.DataTable();
   var datajson =
@@ -1873,8 +1873,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartIDf8a36167b0b() {
-  var data = gvisDataMotionChartIDf8a36167b0b();
+function drawChartMotionChartID11a836716e5() {
+  var data = gvisDataMotionChartID11a836716e5();
   var options = {};
 options["width"] =   1000;
 options["height"] =    400;
@@ -1890,7 +1890,7 @@ options["showYMetricPicker"] =      1;
 options["showSidePanel"] =      1;
 
      var chart = new google.visualization.MotionChart(
-       document.getElementById('MotionChartIDf8a36167b0b')
+       document.getElementById('MotionChartID11a836716e5')
      );
      chart.draw(data,options);
     
@@ -1899,14 +1899,14 @@ options["showSidePanel"] =      1;
   
  
 // jsDisplayChart 
-function displayChartMotionChartIDf8a36167b0b()
+function displayChartMotionChartID11a836716e5()
 {
   google.load("visualization", "1", { packages:["motionchart"] }); 
-  google.setOnLoadCallback(drawChartMotionChartIDf8a36167b0b);
+  google.setOnLoadCallback(drawChartMotionChartID11a836716e5);
 }
  
 // jsChart 
-displayChartMotionChartIDf8a36167b0b()
+displayChartMotionChartID11a836716e5()
  
 <!-- jsFooter -->  
 //-->
@@ -1914,7 +1914,7 @@ displayChartMotionChartIDf8a36167b0b()
  
 <!-- divChart -->
   
-<div id="MotionChartIDf8a36167b0b"
+<div id="MotionChartID11a836716e5"
   style="width: 1000px; height: 400px;">
 </div>
 
