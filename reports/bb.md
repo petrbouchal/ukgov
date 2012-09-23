@@ -2,80 +2,8 @@ Interactive chart of headcount in UK Government departments
 ========================================================
 
 
-```r
-library(plyr)
-# load data
-RawDeptsFTE <- read.csv("~/Desktop/RawDeptsFTE.csv")
-
-# get rid of fluff in colnames, making it suitable for reshape and
-# googlevis
-names(RawDeptsFTE) <- gsub("[.]", "", names(RawDeptsFTE))
-names(RawDeptsFTE) <- gsub("FTE", "", names(RawDeptsFTE))
-names(RawDeptsFTE) <- gsub("X", "FTE", names(RawDeptsFTE))
-
-DeptsFTE <- ddply(RawDeptsFTE, .(Dept, Whitehall), summarise, sFTE2009Q1 = sum(FTE2009Q1, 
-    na.rm = TRUE), sFTE2009Q2 = sum(FTE2009Q2, na.rm = TRUE), sFTE2009Q3 = sum(FTE2009Q3, 
-    na.rm = TRUE), sFTE2009Q4 = sum(FTE2009Q4, na.rm = TRUE), sFTE2010Q1 = sum(FTE2010Q1, 
-    na.rm = TRUE), sFTE2010Q2 = sum(FTE2010Q2, na.rm = TRUE), sFTE2010Q3 = sum(FTE2010Q3, 
-    na.rm = TRUE), sFTE2010Q4 = sum(FTE2010Q4, na.rm = TRUE), sFTE2011Q1 = sum(FTE2011Q1, 
-    na.rm = TRUE), sFTE2011Q2 = sum(FTE2011Q2, na.rm = TRUE), sFTE2011Q3 = sum(FTE2011Q3, 
-    na.rm = TRUE), sFTE2011Q4 = sum(FTE2011Q4, na.rm = TRUE), sFTE2012Q1 = sum(FTE2012Q1, 
-    na.rm = TRUE), sFTE2012Q2 = sum(FTE2012Q2, na.rm = TRUE))
-
-# now convert to wide to create WH and NWH FTE vars for each
-
-DeptsFTEwide <- reshape(DeptsFTE, idvar = "Dept", timevar = "Whitehall", direction = "wide")
-
-# make names manageable
-names(DeptsFTEwide) <- gsub("sFTE", "", names(DeptsFTEwide))
-names(DeptsFTEwide) <- gsub(".Core Whitehall Depts.", "WH", names(DeptsFTEwide))
-names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service", "NWH", names(DeptsFTEwide))
-
-# now convert to long
-DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"), varying = list(c(2:15), 
-    c(16:29)), v.names = c("FTE_WH", "FTE_NWH"), times = c("2009Q1", "2009Q2", 
-    "2009Q3", "2009Q4", "2010Q1", "2010Q2", "2010Q3", "2010Q4", "2011Q1", "2011Q2", 
-    "2011Q3", "2011Q4", "2012Q1", "2012Q2"), timevar = "Period", direction = "long")
-
-# Notes: yLambda: 0 is log, 1 is linear timeUnit: originally was _NOTHING
-# playduration is in ms need to set xaxisoption to _NOTHING if showing
-# bubble by default
-```
 
 
-
-```r
-
-suppressPackageStartupMessages(library(googleVis))
-
-Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
-                       options=list(
-                       height=400, 
-                       width=1000, 
-                       state="{\"iconKeySettings\":[],\"stateVersion\":3,
-                        \"time\":\"2010-07-01\",\"xAxisOption\":\"_ALPHABETICAL\",
-                        \"playDuration\":4000,\"iconType\":\"VBAR\",
-                        \"sizeOption\":\"_UNISIZE\",\"xZoomedDataMin\":null,
-                        \"xZoomedIn\":false,
-                        \"duration\":{\"multiplier\":1,\"timeUnit\":\"Q\"},
-                        \"yZoomedDataMin\":null,
-                        \"xLambda\":1,\"colorOption\":\"_NOTHING\",
-                        \"nonSelectedAlpha\":0.4,
-                        \"dimensions\":{\"iconDimensions\":[]},
-                        \"yZoomedIn\":false,\"yAxisOption\":\"_NOTHING\",
-                        \"yLambda\":0,\"yZoomedDataMax\":null,
-                        \"showTrails\":true,\"xZoomedDataMax\":null};",
-                       showSelectListComponent = 1,
-                       showHeader=1,
-                       showAdvancedPanel=1,
-                       showChartButtons=1,
-                       showXScalePicker=1,
-                       showYScalePicker=1,
-                       showXMetricPicker=1,
-                       showYMetricPicker=1,
-                       showSidePanel=1
-                       ))
-```
 
 
 
@@ -85,7 +13,7 @@ print(Motion, "chart")
 ```
 
 <!-- MotionChart generated in R 2.15.1 by googleVis 0.2.17 package -->
-<!-- Sun Sep 23 05:55:44 2012 -->
+<!-- Sun Sep 23 12:16:38 2012 -->
 
 
 <!-- jsHeader -->
@@ -94,7 +22,7 @@ print(Motion, "chart")
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID11a836716e5 ()
+function gvisDataMotionChartID1568589dd728 ()
 {
   var data = new google.visualization.DataTable();
   var datajson =
@@ -1873,8 +1801,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID11a836716e5() {
-  var data = gvisDataMotionChartID11a836716e5();
+function drawChartMotionChartID1568589dd728() {
+  var data = gvisDataMotionChartID1568589dd728();
   var options = {};
 options["width"] =   1000;
 options["height"] =    400;
@@ -1890,7 +1818,7 @@ options["showYMetricPicker"] =      1;
 options["showSidePanel"] =      1;
 
      var chart = new google.visualization.MotionChart(
-       document.getElementById('MotionChartID11a836716e5')
+       document.getElementById('MotionChartID1568589dd728')
      );
      chart.draw(data,options);
     
@@ -1899,14 +1827,14 @@ options["showSidePanel"] =      1;
   
  
 // jsDisplayChart 
-function displayChartMotionChartID11a836716e5()
+function displayChartMotionChartID1568589dd728()
 {
   google.load("visualization", "1", { packages:["motionchart"] }); 
-  google.setOnLoadCallback(drawChartMotionChartID11a836716e5);
+  google.setOnLoadCallback(drawChartMotionChartID1568589dd728);
 }
  
 // jsChart 
-displayChartMotionChartID11a836716e5()
+displayChartMotionChartID1568589dd728()
  
 <!-- jsFooter -->  
 //-->
@@ -1914,7 +1842,1931 @@ displayChartMotionChartID11a836716e5()
  
 <!-- divChart -->
   
-<div id="MotionChartID11a836716e5"
+<div id="MotionChartID1568589dd728"
   style="width: 1000px; height: 400px;">
 </div>
+
+
+
+```r
+library(plyr)
+# load data
+RawDeptsFTE <- read.csv("~/Desktop/RawDeptsFTE.csv")
+
+# get rid of fluff in colnames, making it suitable for reshape and
+# googlevis
+names(RawDeptsFTE) <- gsub("[.]", "", names(RawDeptsFTE))
+names(RawDeptsFTE) <- gsub("FTE", "", names(RawDeptsFTE))
+names(RawDeptsFTE) <- gsub("X", "FTE", names(RawDeptsFTE))
+
+DeptsFTE <- ddply(RawDeptsFTE, .(Dept, Whitehall), summarise, sFTE2009Q1 = sum(FTE2009Q1, 
+    na.rm = TRUE), sFTE2009Q2 = sum(FTE2009Q2, na.rm = TRUE), sFTE2009Q3 = sum(FTE2009Q3, 
+    na.rm = TRUE), sFTE2009Q4 = sum(FTE2009Q4, na.rm = TRUE), sFTE2010Q1 = sum(FTE2010Q1, 
+    na.rm = TRUE), sFTE2010Q2 = sum(FTE2010Q2, na.rm = TRUE), sFTE2010Q3 = sum(FTE2010Q3, 
+    na.rm = TRUE), sFTE2010Q4 = sum(FTE2010Q4, na.rm = TRUE), sFTE2011Q1 = sum(FTE2011Q1, 
+    na.rm = TRUE), sFTE2011Q2 = sum(FTE2011Q2, na.rm = TRUE), sFTE2011Q3 = sum(FTE2011Q3, 
+    na.rm = TRUE), sFTE2011Q4 = sum(FTE2011Q4, na.rm = TRUE), sFTE2012Q1 = sum(FTE2012Q1, 
+    na.rm = TRUE), sFTE2012Q2 = sum(FTE2012Q2, na.rm = TRUE))
+
+# now convert to wide to create WH and NWH FTE vars for each
+
+DeptsFTEwide <- reshape(DeptsFTE, idvar = "Dept", timevar = "Whitehall", direction = "wide")
+
+# make names manageable
+names(DeptsFTEwide) <- gsub("sFTE", "", names(DeptsFTEwide))
+names(DeptsFTEwide) <- gsub(".Core Whitehall Depts.", "WH", names(DeptsFTEwide))
+names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service", "NWH", names(DeptsFTEwide))
+
+# now convert to long
+DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"), varying = list(c(2:15), 
+    c(16:29)), v.names = c("FTE_WH", "FTE_NWH"), times = c("2009Q1", "2009Q2", 
+    "2009Q3", "2009Q4", "2010Q1", "2010Q2", "2010Q3", "2010Q4", "2011Q1", "2011Q2", 
+    "2011Q3", "2011Q4", "2012Q1", "2012Q2"), timevar = "Period", direction = "long")
+
+# Notes: yLambda: 0 is log, 1 is linear timeUnit: originally was _NOTHING
+# playduration is in ms need to set xaxisoption to _NOTHING if showing
+# bubble by default
+
+```
+
+
+
+```r
+
+suppressPackageStartupMessages(library(googleVis))
+
+Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
+                       options=list(
+                       height=400, 
+                       width=1000, 
+                       state="{\"iconKeySettings\":[],\"stateVersion\":3,
+                        \"time\":\"2010-07-01\",\"xAxisOption\":\"_ALPHABETICAL\",
+                        \"playDuration\":4000,\"iconType\":\"VBAR\",
+                        \"sizeOption\":\"_UNISIZE\",\"xZoomedDataMin\":null,
+                        \"xZoomedIn\":false,
+                        \"duration\":{\"multiplier\":1,\"timeUnit\":\"Q\"},
+                        \"yZoomedDataMin\":null,
+                        \"xLambda\":1,\"colorOption\":\"_NOTHING\",
+                        \"nonSelectedAlpha\":0.4,
+                        \"dimensions\":{\"iconDimensions\":[]},
+                        \"yZoomedIn\":false,\"yAxisOption\":\"_NOTHING\",
+                        \"yLambda\":0,\"yZoomedDataMax\":null,
+                        \"showTrails\":true,\"xZoomedDataMax\":null};",
+                       showSelectListComponent = 1,
+                       showHeader=1,
+                       showAdvancedPanel=1,
+                       showChartButtons=1,
+                       showXScalePicker=1,
+                       showYScalePicker=1,
+                       showXMetricPicker=1,
+                       showYMetricPicker=1,
+                       showSidePanel=1
+                       ))
+```
+
+
+
+
+```r
+print(Motion, "chart")
+```
+
+<!-- MotionChart generated in R 2.15.1 by googleVis 0.2.17 package -->
+<!-- Sun Sep 23 12:16:38 2012 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript" src="http://www.google.com/jsapi">
+</script>
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataMotionChartID1568589dd728 ()
+{
+  var data = new google.visualization.DataTable();
+  var datajson =
+[
+ [
+ "AGO",
+"2009Q1",
+40,
+9580 
+],
+[
+ "BIS",
+"2009Q1",
+4450,
+5540 
+],
+[
+ "CO",
+"2009Q1",
+1270,
+1690 
+],
+[
+ "DCLG",
+"2009Q1",
+2810,
+2390 
+],
+[
+ "DCMS",
+"2009Q1",
+460,
+110 
+],
+[
+ "DECC",
+"2009Q1",
+0,
+null 
+],
+[
+ "DEFRA",
+"2009Q1",
+3000,
+7820 
+],
+[
+ "DH",
+"2009Q1",
+2260,
+3170 
+],
+[
+ "DWP",
+"2009Q1",
+null,
+109260 
+],
+[
+ "DfE",
+"2009Q1",
+3190,
+2250 
+],
+[
+ "DfID",
+"2009Q1",
+1600,
+null 
+],
+[
+ "DfT",
+"2009Q1",
+2050,
+16570 
+],
+[
+ "FCO",
+"2009Q1",
+5920,
+5500 
+],
+[
+ "GEO",
+"2009Q1",
+100,
+null 
+],
+[
+ "HMT",
+"2009Q1",
+1240,
+89880 
+],
+[
+ "HO",
+"2009Q1",
+null,
+24540 
+],
+[
+ "MoD",
+"2009Q1",
+null,
+75630 
+],
+[
+ "MoJ",
+"2009Q1",
+2990,
+81030 
+],
+[
+ "NIO",
+"2009Q1",
+120,
+null 
+],
+[
+ "Scot Gov",
+"2009Q1",
+null,
+16390 
+],
+[
+ "Welsh Gov",
+"2009Q1",
+null,
+5950 
+],
+[
+ "AGO",
+"2009Q2",
+50,
+9530 
+],
+[
+ "BIS",
+"2009Q2",
+4770,
+6620 
+],
+[
+ "CO",
+"2009Q2",
+1300,
+1710 
+],
+[
+ "DCLG",
+"2009Q2",
+2800,
+2370 
+],
+[
+ "DCMS",
+"2009Q2",
+460,
+110 
+],
+[
+ "DECC",
+"2009Q2",
+0,
+null 
+],
+[
+ "DEFRA",
+"2009Q2",
+2860,
+7910 
+],
+[
+ "DH",
+"2009Q2",
+2240,
+3100 
+],
+[
+ "DWP",
+"2009Q2",
+null,
+114110 
+],
+[
+ "DfE",
+"2009Q2",
+3220,
+2220 
+],
+[
+ "DfID",
+"2009Q2",
+1630,
+null 
+],
+[
+ "DfT",
+"2009Q2",
+2050,
+16620 
+],
+[
+ "FCO",
+"2009Q2",
+5960,
+5620 
+],
+[
+ "GEO",
+"2009Q2",
+100,
+null 
+],
+[
+ "HMT",
+"2009Q2",
+1310,
+88630 
+],
+[
+ "HO",
+"2009Q2",
+null,
+24640 
+],
+[
+ "MoD",
+"2009Q2",
+null,
+75470 
+],
+[
+ "MoJ",
+"2009Q2",
+3020,
+79470 
+],
+[
+ "NIO",
+"2009Q2",
+110,
+null 
+],
+[
+ "Scot Gov",
+"2009Q2",
+null,
+16660 
+],
+[
+ "Welsh Gov",
+"2009Q2",
+null,
+5940 
+],
+[
+ "AGO",
+"2009Q3",
+50,
+9470 
+],
+[
+ "BIS",
+"2009Q3",
+3870,
+6690 
+],
+[
+ "CO",
+"2009Q3",
+1270,
+1720 
+],
+[
+ "DCLG",
+"2009Q3",
+2660,
+2340 
+],
+[
+ "DCMS",
+"2009Q3",
+460,
+110 
+],
+[
+ "DECC",
+"2009Q3",
+970,
+null 
+],
+[
+ "DEFRA",
+"2009Q3",
+2540,
+7900 
+],
+[
+ "DH",
+"2009Q3",
+2330,
+3070 
+],
+[
+ "DWP",
+"2009Q3",
+null,
+121060 
+],
+[
+ "DfE",
+"2009Q3",
+3240,
+2150 
+],
+[
+ "DfID",
+"2009Q3",
+1630,
+null 
+],
+[
+ "DfT",
+"2009Q3",
+2060,
+16730 
+],
+[
+ "FCO",
+"2009Q3",
+6020,
+5670 
+],
+[
+ "GEO",
+"2009Q3",
+100,
+null 
+],
+[
+ "HMT",
+"2009Q3",
+1370,
+87540 
+],
+[
+ "HO",
+"2009Q3",
+null,
+24780 
+],
+[
+ "MoD",
+"2009Q3",
+null,
+75670 
+],
+[
+ "MoJ",
+"2009Q3",
+3130,
+78580 
+],
+[
+ "NIO",
+"2009Q3",
+110,
+null 
+],
+[
+ "Scot Gov",
+"2009Q3",
+null,
+16780 
+],
+[
+ "Welsh Gov",
+"2009Q3",
+null,
+6040 
+],
+[
+ "AGO",
+"2009Q4",
+50,
+9600 
+],
+[
+ "BIS",
+"2009Q4",
+3960,
+6730 
+],
+[
+ "CO",
+"2009Q4",
+1270,
+1720 
+],
+[
+ "DCLG",
+"2009Q4",
+2630,
+2220 
+],
+[
+ "DCMS",
+"2009Q4",
+460,
+120 
+],
+[
+ "DECC",
+"2009Q4",
+990,
+null 
+],
+[
+ "DEFRA",
+"2009Q4",
+2570,
+7840 
+],
+[
+ "DH",
+"2009Q4",
+2360,
+2930 
+],
+[
+ "DWP",
+"2009Q4",
+null,
+122920 
+],
+[
+ "DfE",
+"2009Q4",
+3180,
+2070 
+],
+[
+ "DfID",
+"2009Q4",
+1570,
+null 
+],
+[
+ "DfT",
+"2009Q4",
+2080,
+16730 
+],
+[
+ "FCO",
+"2009Q4",
+6120,
+5710 
+],
+[
+ "GEO",
+"2009Q4",
+90,
+null 
+],
+[
+ "HMT",
+"2009Q4",
+1350,
+85940 
+],
+[
+ "HO",
+"2009Q4",
+null,
+24800 
+],
+[
+ "MoD",
+"2009Q4",
+null,
+75700 
+],
+[
+ "MoJ",
+"2009Q4",
+3110,
+78120 
+],
+[
+ "NIO",
+"2009Q4",
+110,
+null 
+],
+[
+ "Scot Gov",
+"2009Q4",
+null,
+16700 
+],
+[
+ "Welsh Gov",
+"2009Q4",
+null,
+6020 
+],
+[
+ "AGO",
+"2010Q1",
+50,
+9450 
+],
+[
+ "BIS",
+"2010Q1",
+3940,
+6780 
+],
+[
+ "CO",
+"2010Q1",
+1230,
+1690 
+],
+[
+ "DCLG",
+"2010Q1",
+2650,
+2140 
+],
+[
+ "DCMS",
+"2010Q1",
+470,
+120 
+],
+[
+ "DECC",
+"2010Q1",
+1020,
+null 
+],
+[
+ "DEFRA",
+"2010Q1",
+2640,
+7730 
+],
+[
+ "DH",
+"2010Q1",
+2630,
+2770 
+],
+[
+ "DWP",
+"2010Q1",
+null,
+120940 
+],
+[
+ "DfE",
+"2010Q1",
+2650,
+2060 
+],
+[
+ "DfID",
+"2010Q1",
+1570,
+null 
+],
+[
+ "DfT",
+"2010Q1",
+2080,
+16550 
+],
+[
+ "FCO",
+"2010Q1",
+5900,
+5650 
+],
+[
+ "GEO",
+"2010Q1",
+120,
+null 
+],
+[
+ "HMT",
+"2010Q1",
+1330,
+84530 
+],
+[
+ "HO",
+"2010Q1",
+null,
+24990 
+],
+[
+ "MoD",
+"2010Q1",
+null,
+75230 
+],
+[
+ "MoJ",
+"2010Q1",
+3130,
+77410 
+],
+[
+ "NIO",
+"2010Q1",
+110,
+null 
+],
+[
+ "Scot Gov",
+"2010Q1",
+null,
+16780 
+],
+[
+ "Welsh Gov",
+"2010Q1",
+null,
+5990 
+],
+[
+ "AGO",
+"2010Q2",
+40,
+9230 
+],
+[
+ "BIS",
+"2010Q2",
+3860,
+8550 
+],
+[
+ "CO",
+"2010Q2",
+1600,
+2040 
+],
+[
+ "DCLG",
+"2010Q2",
+2580,
+2120 
+],
+[
+ "DCMS",
+"2010Q2",
+480,
+120 
+],
+[
+ "DECC",
+"2010Q2",
+1060,
+null 
+],
+[
+ "DEFRA",
+"2010Q2",
+2640,
+7290 
+],
+[
+ "DH",
+"2010Q2",
+2600,
+2720 
+],
+[
+ "DWP",
+"2010Q2",
+null,
+118350 
+],
+[
+ "DfE",
+"2010Q2",
+2890,
+2170 
+],
+[
+ "DfID",
+"2010Q2",
+1580,
+null 
+],
+[
+ "DfT",
+"2010Q2",
+2070,
+16540 
+],
+[
+ "FCO",
+"2010Q2",
+5890,
+5660 
+],
+[
+ "GEO",
+"2010Q2",
+120,
+null 
+],
+[
+ "HMT",
+"2010Q2",
+1350,
+76850 
+],
+[
+ "HO",
+"2010Q2",
+null,
+29540 
+],
+[
+ "MoD",
+"2010Q2",
+null,
+74610 
+],
+[
+ "MoJ",
+"2010Q2",
+3350,
+76790 
+],
+[
+ "NIO",
+"2010Q2",
+130,
+null 
+],
+[
+ "Scot Gov",
+"2010Q2",
+null,
+16870 
+],
+[
+ "Welsh Gov",
+"2010Q2",
+null,
+5910 
+],
+[
+ "AGO",
+"2010Q3",
+50,
+9100 
+],
+[
+ "BIS",
+"2010Q3",
+3760,
+8460 
+],
+[
+ "CO",
+"2010Q3",
+1500,
+1950 
+],
+[
+ "DCLG",
+"2010Q3",
+2520,
+2090 
+],
+[
+ "DCMS",
+"2010Q3",
+460,
+110 
+],
+[
+ "DECC",
+"2010Q3",
+1120,
+null 
+],
+[
+ "DEFRA",
+"2010Q3",
+2590,
+7070 
+],
+[
+ "DH",
+"2010Q3",
+2540,
+2570 
+],
+[
+ "DWP",
+"2010Q3",
+null,
+115430 
+],
+[
+ "DfE",
+"2010Q3",
+2800,
+1670 
+],
+[
+ "DfID",
+"2010Q3",
+1600,
+null 
+],
+[
+ "DfT",
+"2010Q3",
+2070,
+16330 
+],
+[
+ "FCO",
+"2010Q3",
+5900,
+5660 
+],
+[
+ "GEO",
+"2010Q3",
+110,
+null 
+],
+[
+ "HMT",
+"2010Q3",
+1360,
+75140 
+],
+[
+ "HO",
+"2010Q3",
+null,
+29070 
+],
+[
+ "MoD",
+"2010Q3",
+null,
+73590 
+],
+[
+ "MoJ",
+"2010Q3",
+3300,
+75930 
+],
+[
+ "NIO",
+"2010Q3",
+110,
+null 
+],
+[
+ "Scot Gov",
+"2010Q3",
+null,
+16820 
+],
+[
+ "Welsh Gov",
+"2010Q3",
+null,
+5610 
+],
+[
+ "AGO",
+"2010Q4",
+40,
+8980 
+],
+[
+ "BIS",
+"2010Q4",
+3420,
+8200 
+],
+[
+ "CO",
+"2010Q4",
+1460,
+1630 
+],
+[
+ "DCLG",
+"2010Q4",
+2470,
+2050 
+],
+[
+ "DCMS",
+"2010Q4",
+460,
+120 
+],
+[
+ "DECC",
+"2010Q4",
+1130,
+null 
+],
+[
+ "DEFRA",
+"2010Q4",
+2570,
+6910 
+],
+[
+ "DH",
+"2010Q4",
+2570,
+2520 
+],
+[
+ "DWP",
+"2010Q4",
+null,
+112320 
+],
+[
+ "DfE",
+"2010Q4",
+2740,
+1630 
+],
+[
+ "DfID",
+"2010Q4",
+1580,
+null 
+],
+[
+ "DfT",
+"2010Q4",
+2030,
+16120 
+],
+[
+ "FCO",
+"2010Q4",
+5770,
+5630 
+],
+[
+ "GEO",
+"2010Q4",
+110,
+null 
+],
+[
+ "HMT",
+"2010Q4",
+1300,
+74290 
+],
+[
+ "HO",
+"2010Q4",
+null,
+27910 
+],
+[
+ "MoD",
+"2010Q4",
+null,
+73130 
+],
+[
+ "MoJ",
+"2010Q4",
+4470,
+74320 
+],
+[
+ "NIO",
+"2010Q4",
+110,
+null 
+],
+[
+ "Scot Gov",
+"2010Q4",
+null,
+16690 
+],
+[
+ "Welsh Gov",
+"2010Q4",
+null,
+5550 
+],
+[
+ "AGO",
+"2011Q1",
+40,
+8900 
+],
+[
+ "BIS",
+"2011Q1",
+3400,
+8120 
+],
+[
+ "CO",
+"2011Q1",
+1520,
+1580 
+],
+[
+ "DCLG",
+"2011Q1",
+2250,
+1950 
+],
+[
+ "DCMS",
+"2011Q1",
+450,
+120 
+],
+[
+ "DECC",
+"2011Q1",
+1150,
+null 
+],
+[
+ "DEFRA",
+"2011Q1",
+2530,
+6880 
+],
+[
+ "DH",
+"2011Q1",
+2560,
+2460 
+],
+[
+ "DWP",
+"2011Q1",
+null,
+109590 
+],
+[
+ "DfE",
+"2011Q1",
+2660,
+1620 
+],
+[
+ "DfID",
+"2011Q1",
+1570,
+null 
+],
+[
+ "DfT",
+"2011Q1",
+1860,
+15810 
+],
+[
+ "FCO",
+"2011Q1",
+5660,
+5370 
+],
+[
+ "GEO",
+"2011Q1",
+110,
+null 
+],
+[
+ "HMT",
+"2011Q1",
+1240,
+80330 
+],
+[
+ "HO",
+"2011Q1",
+null,
+27380 
+],
+[
+ "MoD",
+"2011Q1",
+null,
+72080 
+],
+[
+ "MoJ",
+"2011Q1",
+4510,
+73700 
+],
+[
+ "NIO",
+"2011Q1",
+100,
+null 
+],
+[
+ "Scot Gov",
+"2011Q1",
+null,
+17890 
+],
+[
+ "Welsh Gov",
+"2011Q1",
+null,
+5450 
+],
+[
+ "AGO",
+"2011Q2",
+40,
+8670 
+],
+[
+ "BIS",
+"2011Q2",
+3170,
+7630 
+],
+[
+ "CO",
+"2011Q2",
+1630,
+1330 
+],
+[
+ "DCLG",
+"2011Q2",
+2020,
+1910 
+],
+[
+ "DCMS",
+"2011Q2",
+490,
+120 
+],
+[
+ "DECC",
+"2011Q2",
+1170,
+null 
+],
+[
+ "DEFRA",
+"2011Q2",
+2340,
+6870 
+],
+[
+ "DH",
+"2011Q2",
+2390,
+2460 
+],
+[
+ "DWP",
+"2011Q2",
+null,
+105700 
+],
+[
+ "DfE",
+"2011Q2",
+2490,
+1610 
+],
+[
+ "DfID",
+"2011Q2",
+1560,
+null 
+],
+[
+ "DfT",
+"2011Q2",
+1780,
+15600 
+],
+[
+ "FCO",
+"2011Q2",
+5560,
+5350 
+],
+[
+ "GEO",
+"2011Q2",
+0,
+null 
+],
+[
+ "HMT",
+"2011Q2",
+1170,
+74820 
+],
+[
+ "HO",
+"2011Q2",
+null,
+26310 
+],
+[
+ "MoD",
+"2011Q2",
+null,
+70680 
+],
+[
+ "MoJ",
+"2011Q2",
+4300,
+71750 
+],
+[
+ "NIO",
+"2011Q2",
+50,
+null 
+],
+[
+ "Scot Gov",
+"2011Q2",
+null,
+16300 
+],
+[
+ "Welsh Gov",
+"2011Q2",
+null,
+5300 
+],
+[
+ "AGO",
+"2011Q3",
+40,
+8460 
+],
+[
+ "BIS",
+"2011Q3",
+2880,
+14880 
+],
+[
+ "CO",
+"2011Q3",
+1630,
+1230 
+],
+[
+ "DCLG",
+"2011Q3",
+2110,
+840 
+],
+[
+ "DCMS",
+"2011Q3",
+460,
+110 
+],
+[
+ "DECC",
+"2011Q3",
+1190,
+null 
+],
+[
+ "DEFRA",
+"2011Q3",
+2100,
+6560 
+],
+[
+ "DH",
+"2011Q3",
+2370,
+2240 
+],
+[
+ "DWP",
+"2011Q3",
+null,
+102380 
+],
+[
+ "DfE",
+"2011Q3",
+2490,
+1590 
+],
+[
+ "DfID",
+"2011Q3",
+1560,
+null 
+],
+[
+ "DfT",
+"2011Q3",
+1710,
+15460 
+],
+[
+ "FCO",
+"2011Q3",
+5450,
+5310 
+],
+[
+ "GEO",
+"2011Q3",
+0,
+null 
+],
+[
+ "HMT",
+"2011Q3",
+1150,
+74060 
+],
+[
+ "HO",
+"2011Q3",
+null,
+25580 
+],
+[
+ "MoD",
+"2011Q3",
+null,
+68000 
+],
+[
+ "MoJ",
+"2011Q3",
+4250,
+66470 
+],
+[
+ "NIO",
+"2011Q3",
+50,
+null 
+],
+[
+ "Scot Gov",
+"2011Q3",
+null,
+16080 
+],
+[
+ "Welsh Gov",
+"2011Q3",
+null,
+5110 
+],
+[
+ "AGO",
+"2011Q4",
+40,
+8340 
+],
+[
+ "BIS",
+"2011Q4",
+2910,
+14570 
+],
+[
+ "CO",
+"2011Q4",
+1640,
+1200 
+],
+[
+ "DCLG",
+"2011Q4",
+1860,
+840 
+],
+[
+ "DCMS",
+"2011Q4",
+460,
+110 
+],
+[
+ "DECC",
+"2011Q4",
+1230,
+null 
+],
+[
+ "DEFRA",
+"2011Q4",
+2080,
+6440 
+],
+[
+ "DH",
+"2011Q4",
+2330,
+2210 
+],
+[
+ "DWP",
+"2011Q4",
+null,
+101100 
+],
+[
+ "DfE",
+"2011Q4",
+2580,
+1670 
+],
+[
+ "DfID",
+"2011Q4",
+1620,
+null 
+],
+[
+ "DfT",
+"2011Q4",
+1660,
+15370 
+],
+[
+ "FCO",
+"2011Q4",
+5770,
+5290 
+],
+[
+ "GEO",
+"2011Q4",
+0,
+null 
+],
+[
+ "HMT",
+"2011Q4",
+1130,
+73870 
+],
+[
+ "HO",
+"2011Q4",
+null,
+24850 
+],
+[
+ "MoD",
+"2011Q4",
+null,
+64590 
+],
+[
+ "MoJ",
+"2011Q4",
+4160,
+64450 
+],
+[
+ "NIO",
+"2011Q4",
+50,
+null 
+],
+[
+ "Scot Gov",
+"2011Q4",
+null,
+15800 
+],
+[
+ "Welsh Gov",
+"2011Q4",
+null,
+5100 
+],
+[
+ "AGO",
+"2012Q1",
+40,
+8340 
+],
+[
+ "BIS",
+"2012Q1",
+2930,
+14220 
+],
+[
+ "CO",
+"2012Q1",
+1710,
+1100 
+],
+[
+ "DCLG",
+"2012Q1",
+1820,
+820 
+],
+[
+ "DCMS",
+"2012Q1",
+450,
+120 
+],
+[
+ "DECC",
+"2012Q1",
+1290,
+null 
+],
+[
+ "DEFRA",
+"2012Q1",
+2090,
+6400 
+],
+[
+ "DH",
+"2012Q1",
+2290,
+2180 
+],
+[
+ "DWP",
+"2012Q1",
+null,
+99800 
+],
+[
+ "DfE",
+"2012Q1",
+2590,
+1670 
+],
+[
+ "DfID",
+"2012Q1",
+1650,
+null 
+],
+[
+ "DfT",
+"2012Q1",
+1630,
+15290 
+],
+[
+ "FCO",
+"2012Q1",
+5780,
+5290 
+],
+[
+ "GEO",
+"2012Q1",
+0,
+null 
+],
+[
+ "HMT",
+"2012Q1",
+1200,
+73340 
+],
+[
+ "HO",
+"2012Q1",
+null,
+24640 
+],
+[
+ "MoD",
+"2012Q1",
+null,
+61330 
+],
+[
+ "MoJ",
+"2012Q1",
+4060,
+63290 
+],
+[
+ "NIO",
+"2012Q1",
+60,
+null 
+],
+[
+ "Scot Gov",
+"2012Q1",
+null,
+15720 
+],
+[
+ "Welsh Gov",
+"2012Q1",
+null,
+5170 
+],
+[
+ "AGO",
+"2012Q2",
+40,
+8280 
+],
+[
+ "BIS",
+"2012Q2",
+0,
+14220 
+],
+[
+ "CO",
+"2012Q2",
+1800,
+720 
+],
+[
+ "DCLG",
+"2012Q2",
+1700,
+840 
+],
+[
+ "DCMS",
+"2012Q2",
+450,
+130 
+],
+[
+ "DECC",
+"2012Q2",
+1320,
+null 
+],
+[
+ "DEFRA",
+"2012Q2",
+2060,
+6290 
+],
+[
+ "DH",
+"2012Q2",
+2270,
+2180 
+],
+[
+ "DWP",
+"2012Q2",
+null,
+98210 
+],
+[
+ "DfE",
+"2012Q2",
+2630,
+1630 
+],
+[
+ "DfID",
+"2012Q2",
+1690,
+null 
+],
+[
+ "DfT",
+"2012Q2",
+1640,
+15200 
+],
+[
+ "FCO",
+"2012Q2",
+6420,
+5260 
+],
+[
+ "GEO",
+"2012Q2",
+0,
+null 
+],
+[
+ "HMT",
+"2012Q2",
+1160,
+72520 
+],
+[
+ "HO",
+"2012Q2",
+null,
+24520 
+],
+[
+ "MoD",
+"2012Q2",
+null,
+59640 
+],
+[
+ "MoJ",
+"2012Q2",
+4260,
+61890 
+],
+[
+ "NIO",
+"2012Q2",
+90,
+null 
+],
+[
+ "Scot Gov",
+"2012Q2",
+null,
+15770 
+],
+[
+ "Welsh Gov",
+"2012Q2",
+null,
+5230 
+] 
+];
+data.addColumn('string','Dept');
+data.addColumn('string','Period');
+data.addColumn('number','FTE_WH');
+data.addColumn('number','FTE_NWH');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartMotionChartID1568589dd728() {
+  var data = gvisDataMotionChartID1568589dd728();
+  var options = {};
+options["width"] =   1000;
+options["height"] =    400;
+options["state"] = "{\"iconKeySettings\":[],\"stateVersion\":3,\n                        \"time\":\"2010-07-01\",\"xAxisOption\":\"_ALPHABETICAL\",\n                        \"playDuration\":4000,\"iconType\":\"VBAR\",\n                        \"sizeOption\":\"_UNISIZE\",\"xZoomedDataMin\":null,\n                        \"xZoomedIn\":false,\n                        \"duration\":{\"multiplier\":1,\"timeUnit\":\"Q\"},\n                        \"yZoomedDataMin\":null,\n                        \"xLambda\":1,\"colorOption\":\"_NOTHING\",\n                        \"nonSelectedAlpha\":0.4,\n                        \"dimensions\":{\"iconDimensions\":[]},\n                        \"yZoomedIn\":false,\"yAxisOption\":\"_NOTHING\",\n                        \"yLambda\":0,\"yZoomedDataMax\":null,\n                        \"showTrails\":true,\"xZoomedDataMax\":null};";
+options["showSelectListComponent"] =      1;
+options["showHeader"] =      1;
+options["showAdvancedPanel"] =      1;
+options["showChartButtons"] =      1;
+options["showXScalePicker"] =      1;
+options["showYScalePicker"] =      1;
+options["showXMetricPicker"] =      1;
+options["showYMetricPicker"] =      1;
+options["showSidePanel"] =      1;
+
+     var chart = new google.visualization.MotionChart(
+       document.getElementById('MotionChartID1568589dd728')
+     );
+     chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart 
+function displayChartMotionChartID1568589dd728()
+{
+  google.load("visualization", "1", { packages:["motionchart"] }); 
+  google.setOnLoadCallback(drawChartMotionChartID1568589dd728);
+}
+ 
+// jsChart 
+displayChartMotionChartID1568589dd728()
+ 
+<!-- jsFooter -->  
+//-->
+</script>
+ 
+<!-- divChart -->
+  
+<div id="MotionChartID1568589dd728"
+  style="width: 1000px; height: 400px;">
+</div>
+
+
+Let's see a simple chart which will render right in the preview:
+
+
 
