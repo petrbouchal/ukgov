@@ -321,3 +321,58 @@ plot2 <- ggplot(DeptsFTElong2, aes(x=Date,
 ```{r fig.width=10, fig.height=15, fig.align='center', echo=FALSE}
 plot2
 ```
+
+
+```{r tidy=FALSE}
+SumDeptsFTEAdj <- read.csv("~/GitHub/Charting-government/data/SumDeptsFTEAdjusted.csv")
+# get rid of fluff in colnames, making it suitable for reshape and googlevis
+names(SumDeptsFTEAdj) <- gsub("[.]","", names(SumDeptsFTEAdj))
+names(SumDeptsFTEAdj) <- gsub("FTE","", names(SumDeptsFTEAdj))
+names(SumDeptsFTEAdj) <- gsub("X","FTE", names(SumDeptsFTEAdj))
+
+
+SumDeptsFTEAdjlong <- reshape(SumDeptsFTEAdj, idvar = c("Dept","Whitehall"), 
+                  varying = c(3:16),
+                  v.names = c("FTE"),
+                  times = c("2009Q1","2009Q2","2009Q3","2009Q4",
+                            "2010Q1","2010Q2","2010Q3","2010Q4",
+                            "2011Q1","2011Q2","2011Q3","2011Q4",
+                            "2012Q1","2012Q2"),
+                  timevar = "Period",
+                  direction = "long")
+
+SumDeptsFTEAdjlong$Date <- SumDeptsFTEAdjlong$Period
+
+SumDeptsFTEAdjlong$Date <- gsub("Q1","-03-31",SumDeptsFTEAdjlong$Date)
+SumDeptsFTEAdjlong$Date <- gsub("Q2","-06-30",SumDeptsFTEAdjlong$Date)
+SumDeptsFTEAdjlong$Date <- gsub("Q3","-09-30",SumDeptsFTEAdjlong$Date)
+SumDeptsFTEAdjlong$Date <- gsub("Q4","-12-31",SumDeptsFTEAdjlong$Date)
+
+SumDeptsFTEAdjlong$Date <- as.POSIXct(SumDeptsFTEAdjlong$Date, tz = "GMT")
+
+library(scales)
+plotFTE <- ggplot(SumDeptsFTEAdjlong, aes(x=Date,
+                                   y=FTE/1000,
+                                   fill=factor(Whitehall))) + 
+                geom_area() +
+                facet_wrap(~ Dept, ncol=3, scales = "free_y") +
+                #facet_wrap(~ Dept, ncol=3) +
+                theme(legend.position="bottom",
+                      legend.key.size=unit(6,"pt"),
+                      panel.background=element_blank(),
+                      panel.grid.major.x=element_blank(),
+                      panel.grid.minor.y=element_blank(),
+                      panel.grid.major.y=element_line(colour="light grey"),
+                      axis.ticks=element_blank(),
+                      axis.text.x=element_text(angle=90, hjust=1, vjust=.5),
+                      axis.ticks.margin = unit(1,"pt"),
+                      axis.title.x=element_blank()
+                      )+
+                labs(y = "FTE (thousands)", x = "") + 
+                #scale_x_date(breaks = "3 months", labels=date_format("%B")) +
+                guides(fill = guide_legend(reverse = FALSE, nrow =1,
+                                           direction="horizontal",
+                                           title="Legend"))
+plotFTE
+
+```
