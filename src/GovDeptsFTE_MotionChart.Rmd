@@ -325,12 +325,17 @@ plot2
 
 ```{r tidy=FALSE}
 SumDeptsFTEAdj <- read.csv("~/GitHub/Charting-government/data/SumDeptsFTEAdjusted.csv")
+
+# remove total and blank rows
+SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "TOTAL")
+SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "")
+
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
 names(SumDeptsFTEAdj) <- gsub("[.]","", names(SumDeptsFTEAdj))
 names(SumDeptsFTEAdj) <- gsub("FTE","", names(SumDeptsFTEAdj))
 names(SumDeptsFTEAdj) <- gsub("X","FTE", names(SumDeptsFTEAdj))
 
-
+# reshape
 SumDeptsFTEAdjlong <- reshape(SumDeptsFTEAdj, idvar = c("Dept","Whitehall"), 
                   varying = c(3:16),
                   v.names = c("FTE"),
@@ -341,6 +346,7 @@ SumDeptsFTEAdjlong <- reshape(SumDeptsFTEAdj, idvar = c("Dept","Whitehall"),
                   timevar = "Period",
                   direction = "long")
 
+# format date, rebuild dates from quarters
 SumDeptsFTEAdjlong$Date <- SumDeptsFTEAdjlong$Period
 
 SumDeptsFTEAdjlong$Date <- gsub("Q1","-03-31",SumDeptsFTEAdjlong$Date)
@@ -350,6 +356,7 @@ SumDeptsFTEAdjlong$Date <- gsub("Q4","-12-31",SumDeptsFTEAdjlong$Date)
 
 SumDeptsFTEAdjlong$Date <- as.POSIXct(SumDeptsFTEAdjlong$Date, tz = "GMT")
 
+# plot
 library(scales)
 plotFTE <- ggplot(SumDeptsFTEAdjlong, aes(x=Date,
                                    y=FTE/1000,
