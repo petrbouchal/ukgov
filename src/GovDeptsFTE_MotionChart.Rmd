@@ -2,9 +2,14 @@ Interactive chart of headcount in UK Government departments
 ========================================================
 
 ```{r echo = FALSE}
+
+setwd("~/GitHub/Charting-government/")
+
+# needs updating for summarised adjusted data
+
 library(plyr)
 # load data
-RawDeptsFTE <- read.csv("~/Desktop/RawDeptsFTE.csv")
+RawDeptsFTE <- read.csv("./data/RawDeptsFTE.csv")
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
 names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
@@ -135,8 +140,11 @@ print(Motion, "chart")
 
 ```{r tidy = TRUE, eval=FALSE}
 library(plyr)
+
+# this is just showing code, to be copied from above when updated
+
 # load data
-RawDeptsFTE <- read.csv("~/Desktop/RawDeptsFTE.csv")
+RawDeptsFTE <- read.csv("./data/RawDeptsFTE.csv")
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
 names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
@@ -160,7 +168,7 @@ DeptsFTE <- ddply(RawDeptsFTE, .(Dept,Whitehall), summarise,
                   FTE2012Q2 = sum(FTE2012Q2,na.rm=TRUE)
                   )
 
-# now convert to wide to create WH and NWH FTE vars for each
+# convert to wide to create WH and NWH FTE vars for each
 
 DeptsFTEwide <- reshape(DeptsFTE, idvar = "Dept",
                   timevar = "Whitehall", direction = "wide")
@@ -170,7 +178,7 @@ names(DeptsFTEwide) <- gsub("sFTE","", names(DeptsFTEwide))
 names(DeptsFTEwide) <- gsub(".Core Whitehall Depts.","WH", names(DeptsFTEwide))
 names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service","NWH", names(DeptsFTEwide))
 
-# now convert to long
+# convert to long
 DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"), 
                   varying = list(c(2:15),c(16:29)),
                   v.names = c("FTE_WH", "FTE_NWH"),
@@ -190,6 +198,9 @@ DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"),
 ```
 
 ```{r tidy=FALSE, eval=TRUE}
+
+# this is same code as above, just with bubble chart - again, to be copied
+# when code above is updated
 
 suppressPackageStartupMessages(library(googleVis))
 
@@ -274,8 +285,9 @@ plot <-ggplot(DeptsFTEwithtotals,
 plot
 ```
 
+```{r tidy=FALSE, echo=FALSE, eval=FALSE}
 
-```{r tidy=FALSE}
+# this is just for storage
 
 DeptsFTElong2 = reshape(DeptsFTElong, 
                         idvar=c("Dept","Period"),
@@ -318,19 +330,16 @@ plot2 <- ggplot(DeptsFTElong2, aes(x=Date,
 ```
 
 
-```{r fig.width=10, fig.height=15, fig.align='center', echo=FALSE}
-plot2
-```
-
-
 ```{r tidy=FALSE}
-SumDeptsFTEAdj <- read.csv("~/GitHub/Charting-government/data/SumDeptsFTEAdjusted.csv")
+SumDeptsFTEAdj <- read.csv("./data/SumDeptsFTEAdjusted.csv")
 
 # remove total and blank rows
 SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "TOTAL")
+SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "TOTAL NWH")
+SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "TOTAL WH")
 SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "")
 
-# get rid of fluff in colnames, making it suitable for reshape and googlevis
+# get rid of mess in colnames, making it suitable for reshape and googlevis
 names(SumDeptsFTEAdj) <- gsub("[.]","", names(SumDeptsFTEAdj))
 names(SumDeptsFTEAdj) <- gsub("FTE","", names(SumDeptsFTEAdj))
 names(SumDeptsFTEAdj) <- gsub("X","FTE", names(SumDeptsFTEAdj))
@@ -358,7 +367,7 @@ SumDeptsFTEAdjlong$Date <- as.POSIXct(SumDeptsFTEAdjlong$Date, tz = "GMT")
 
 # plot
 library(scales)
-plotFTE <- ggplot(SumDeptsFTEAdjlong, aes(x=Date,
+plotFTEadj <- ggplot(SumDeptsFTEAdjlong, aes(x=Date,
                                    y=FTE/1000,
                                    fill=factor(Whitehall))) + 
                 geom_area() +
@@ -380,6 +389,6 @@ plotFTE <- ggplot(SumDeptsFTEAdjlong, aes(x=Date,
                 guides(fill = guide_legend(reverse = FALSE, nrow =1,
                                            direction="horizontal",
                                            title="Legend"))
-plotFTE
+plotFTEadj
 
 ```
