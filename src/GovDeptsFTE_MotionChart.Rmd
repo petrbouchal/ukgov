@@ -9,7 +9,7 @@ setwd("~/GitHub/Charting-government/")
 
 library(plyr)
 # load data
-RawDeptsFTE <- read.csv("./data/RawDeptsFTE.csv")
+RawDeptsFTE <- read.csv("data/RawDeptsFTE.csv")
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
 names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
@@ -144,7 +144,7 @@ library(plyr)
 # this is just showing code, to be copied from above when updated
 
 # load data
-RawDeptsFTE <- read.csv("./data/RawDeptsFTE.csv")
+RawDeptsFTE <- read.csv("data/RawDeptsFTE.csv")
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
 names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
@@ -248,8 +248,18 @@ Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
 print(Motion, "chart")
 ```
 
+This is the code that will be used to create output files with chart
+HTML/java code.
+```{r echo=TRUE, eval=FALSE}
+setwd("~/GitHub/Charting-government/")
+sink("reports/motionchart_HTML.txt")
+invisible(print(Motion, "chart"))
+invisible(sink())
+```
+
+
 Let's see a simple chart which will render right in the preview:
-```{r tidy = FALSE}
+```{r TotalsPlot_Code, tidy = FALSE}
 
 library(ggplot2)
 library(grid)
@@ -281,7 +291,7 @@ plot <-ggplot(DeptsFTEwithtotals,
 ```
 
 
-```{r fig.width=10, fig.align='center', fig.height=4, echo=FALSE}
+```{r TotalsPlot_Chart, fig.width=10, fig.align='center', fig.height=4, echo=FALSE}
 plot
 ```
 
@@ -330,8 +340,9 @@ plot2 <- ggplot(DeptsFTElong2, aes(x=Date,
 ```
 
 
-```{r tidy=FALSE}
-SumDeptsFTEAdj <- read.csv("./data/SumDeptsFTEAdjusted.csv")
+```{r AllDeptsGridPlot_Code, tidy=FALSE}
+setwd("~/github/Charting-government/")
+SumDeptsFTEAdj <- read.csv("data/SumDeptsFTEAdjusted.csv")
 
 # remove total and blank rows
 SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "TOTAL")
@@ -389,6 +400,10 @@ plotFTEadj <- ggplot(SumDeptsFTEAdjlong, aes(x=Date,
                 guides(fill = guide_legend(reverse = FALSE, nrow =1,
                                            direction="horizontal",
                                            title="Legend"))
+
+```
+
+```{r AlldeptsGridPlot_Chart}
 plotFTEadj
 
 ```
