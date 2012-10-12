@@ -3,6 +3,8 @@ Interactive chart of headcount in UK Government departments
 
 ```{r echo = FALSE}
 
+# note this does not appear in 
+
 setwd("~/GitHub/Charting-government/")
 
 # needs updating for summarised adjusted data
@@ -63,7 +65,8 @@ DeptsFTEwide <- reshape(DeptsFTE, idvar = "Dept",
 # make names manageable
 names(DeptsFTEwide) <- gsub("FTE","", names(DeptsFTEwide))
 names(DeptsFTEwide) <- gsub(".Core Whitehall Depts.","WH", names(DeptsFTEwide))
-names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service","NWH", names(DeptsFTEwide))
+names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service","NWH",
+                            names(DeptsFTEwide))
 
 # now convert to long
 DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"), 
