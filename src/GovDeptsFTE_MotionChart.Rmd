@@ -12,7 +12,7 @@ setwd("~/GitHub/Charting-government/")
 library(plyr)
 # load data
 RawDeptsFTE <- read.csv("data-input/OrgsFTERaw.csv")
-DeptsFTE <- read.csv("data-input/DeptsFTEAdjusted.csv")
+DeptsFTE <- read.csv("data-input/DeptsFTEAdjusted.csv", header=T)
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
 names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
