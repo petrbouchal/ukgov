@@ -1,22 +1,7 @@
-Interactive chart of headcount in UK Government departments
-========================================================
-
-```{r echo = FALSE}
-
-# note this does not appear in 
-
-setwd("~/GitHub/Charting-government/")
-
-# needs updating for summarised adjusted data
 
 library(plyr)
 # load data
-<<<<<<< HEAD
-RawDeptsFTE <- read.csv("data-input/OrgsFTERaw.csv")
-DeptsFTE <- read.csv("data-input/DeptsFTEAdjusted.csv", header=T)
-=======
 RawDeptsFTE <- read.csv("./data/RawDeptsFTE.csv")
->>>>>>> Updates
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
 names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
@@ -70,8 +55,7 @@ DeptsFTEwide <- reshape(DeptsFTE, idvar = "Dept",
 # make names manageable
 names(DeptsFTEwide) <- gsub("FTE","", names(DeptsFTEwide))
 names(DeptsFTEwide) <- gsub(".Core Whitehall Depts.","WH", names(DeptsFTEwide))
-names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service","NWH",
-                            names(DeptsFTEwide))
+names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service","NWH", names(DeptsFTEwide))
 
 # now convert to long
 DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"), 
@@ -91,14 +75,12 @@ DeptsFTElong$FTE_NWH[is.na(DeptsFTElong$FTE_NWH)] <- 0
 # add summary var
 DeptsFTElong$FTE_total = (DeptsFTElong$FTE_WH + DeptsFTElong$FTE_NWH)
 
-```
 
-Manual:
-
-http://code.google.com/p/google-motion-charts-with-r/wiki/SettingOptions
-http://code.google.com/p/google-motion-charts-with-r/
-https://developers.google.com/chart/interactive/docs/
-```{r echo=FALSE}
+# Manual:
+# 
+# http://code.google.com/p/google-motion-charts-with-r/wiki/SettingOptions
+# http://code.google.com/p/google-motion-charts-with-r/
+# https://developers.google.com/chart/interactive/docs/
 
 suppressPackageStartupMessages(library(googleVis))
 
@@ -145,19 +127,11 @@ Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
 # playduration is in ms
 # need to set xaxisoption to _NOTHING if showing bubble by default
 
-```
-
-```{r results = "asis",eval=TRUE,echo=TRUE}
 print(Motion, "chart")
-```
 
-```{r tidy = TRUE, eval=FALSE}
 library(plyr)
-
-# this is just showing code, to be copied from above when updated
-
 # load data
-RawDeptsFTE <- read.csv("data/RawDeptsFTE.csv")
+RawDeptsFTE <- read.csv("~/Desktop/RawDeptsFTE.csv")
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
 names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
@@ -181,7 +155,7 @@ DeptsFTE <- ddply(RawDeptsFTE, .(Dept,Whitehall), summarise,
                   FTE2012Q2 = sum(FTE2012Q2,na.rm=TRUE)
                   )
 
-# convert to wide to create WH and NWH FTE vars for each
+# now convert to wide to create WH and NWH FTE vars for each
 
 DeptsFTEwide <- reshape(DeptsFTE, idvar = "Dept",
                   timevar = "Whitehall", direction = "wide")
@@ -191,7 +165,7 @@ names(DeptsFTEwide) <- gsub("sFTE","", names(DeptsFTEwide))
 names(DeptsFTEwide) <- gsub(".Core Whitehall Depts.","WH", names(DeptsFTEwide))
 names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service","NWH", names(DeptsFTEwide))
 
-# convert to long
+# now convert to long
 DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"), 
                   varying = list(c(2:15),c(16:29)),
                   v.names = c("FTE_WH", "FTE_NWH"),
@@ -208,12 +182,7 @@ DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"),
 # playduration is in ms
 # need to set xaxisoption to _NOTHING if showing bubble by default
 
-```
 
-```{r tidy=FALSE, eval=TRUE}
-
-# this is same code as above, just with bubble chart - again, to be copied
-# when code above is updated
 
 suppressPackageStartupMessages(library(googleVis))
 
@@ -254,25 +223,10 @@ Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
                        showYMetricPicker=1,
                        showSidePanel=1
                        ))
-```
 
-
-```{r results = "asis", eval=TRUE, echo=FALSE}
 print(Motion, "chart")
-```
-
-This is the code that will be used to create output files with chart
-HTML/java code.
-```{r echo=TRUE, eval=FALSE}
-setwd("~/GitHub/Charting-government/")
-sink("reports/motionchart_HTML.txt")
-invisible(print(Motion, "chart"))
-invisible(sink())
-```
-
 
 Let's see a simple chart which will render right in the preview:
-```{r TotalsPlot_Code, tidy = FALSE}
 
 library(ggplot2)
 library(grid)
@@ -301,16 +255,9 @@ plot <-ggplot(DeptsFTEwithtotals,
         axis.ticks.margin = unit(1,"pt"),
         axis.title.x=element_blank()
         )
-```
 
-
-```{r TotalsPlot_Chart, fig.width=10, fig.align='center', fig.height=4, echo=FALSE}
 plot
-```
 
-```{r tidy=FALSE, echo=FALSE, eval=FALSE}
-
-# this is just for storage
 
 DeptsFTElong2 = reshape(DeptsFTElong, 
                         idvar=c("Dept","Period"),
@@ -350,73 +297,6 @@ plot2 <- ggplot(DeptsFTElong2, aes(x=Date,
                 guides(fill = guide_legend(reverse = FALSE, nrow =1,
                                            direction="horizontal",
                                            title="Legend"))
-```
 
 
-```{r AllDeptsGridPlot_Code, tidy=FALSE}
-setwd("~/github/Charting-government/")
-SumDeptsFTEAdj <- read.csv("data/SumDeptsFTEAdjusted.csv")
-
-# remove total and blank rows
-SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "TOTAL")
-SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "TOTAL NWH")
-SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "TOTAL WH")
-SumDeptsFTEAdj <- subset(SumDeptsFTEAdj, Dept != "")
-
-# get rid of mess in colnames, making it suitable for reshape and googlevis
-names(SumDeptsFTEAdj) <- gsub("[.]","", names(SumDeptsFTEAdj))
-names(SumDeptsFTEAdj) <- gsub("FTE","", names(SumDeptsFTEAdj))
-names(SumDeptsFTEAdj) <- gsub("X","FTE", names(SumDeptsFTEAdj))
-
-# reshape
-SumDeptsFTEAdjlong <- reshape(SumDeptsFTEAdj, idvar = c("Dept","Whitehall"), 
-                  varying = c(3:16),
-                  v.names = c("FTE"),
-                  times = c("2009Q1","2009Q2","2009Q3","2009Q4",
-                            "2010Q1","2010Q2","2010Q3","2010Q4",
-                            "2011Q1","2011Q2","2011Q3","2011Q4",
-                            "2012Q1","2012Q2"),
-                  timevar = "Period",
-                  direction = "long")
-
-# format date, rebuild dates from quarters
-SumDeptsFTEAdjlong$Date <- SumDeptsFTEAdjlong$Period
-
-SumDeptsFTEAdjlong$Date <- gsub("Q1","-03-31",SumDeptsFTEAdjlong$Date)
-SumDeptsFTEAdjlong$Date <- gsub("Q2","-06-30",SumDeptsFTEAdjlong$Date)
-SumDeptsFTEAdjlong$Date <- gsub("Q3","-09-30",SumDeptsFTEAdjlong$Date)
-SumDeptsFTEAdjlong$Date <- gsub("Q4","-12-31",SumDeptsFTEAdjlong$Date)
-
-SumDeptsFTEAdjlong$Date <- as.POSIXct(SumDeptsFTEAdjlong$Date, tz = "GMT")
-
-# plot
-library(scales)
-plotFTEadj <- ggplot(SumDeptsFTEAdjlong, aes(x=Date,
-                                   y=FTE/1000,
-                                   fill=factor(Whitehall))) + 
-                geom_area() +
-                facet_wrap(~ Dept, ncol=3, scales = "free_y") +
-                #facet_wrap(~ Dept, ncol=3) +
-                theme(legend.position="bottom",
-                      legend.key.size=unit(6,"pt"),
-                      panel.background=element_blank(),
-                      panel.grid.major.x=element_blank(),
-                      panel.grid.minor.y=element_blank(),
-                      panel.grid.major.y=element_line(colour="light grey"),
-                      axis.ticks=element_blank(),
-                      axis.text.x=element_text(angle=90, hjust=1, vjust=.5),
-                      axis.ticks.margin = unit(1,"pt"),
-                      axis.title.x=element_blank()
-                      )+
-                labs(y = "FTE (thousands)", x = "") + 
-                #scale_x_date(breaks = "3 months", labels=date_format("%B")) +
-                guides(fill = guide_legend(reverse = FALSE, nrow =1,
-                                           direction="horizontal",
-                                           title="Legend"))
-
-```
-
-```{r AlldeptsGridPlot_Chart}
-plotFTEadj
-
-```
+plot2
