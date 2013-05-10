@@ -1,4 +1,3 @@
-
 library(plyr)
 # load data
 RawDeptsFTE <- read.csv("./data/RawDeptsFTE.csv")
