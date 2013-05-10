@@ -1,0 +1,15 @@
+library(plyr)
+change <- read.csv("./data-input/ChangeDeptsFTE.csv")
+
+# clean up names
+names(change) <- gsub("_FTE","", names(change))
+names(change) <- gsub("Whitehall.","Whitehall", names(change), fixed=TRUE)
+names(change) <- gsub("._","", names(change), fixed=TRUE)
+names(change) <- gsub("X","", names(change), fixed=TRUE)
+names(change) <- gsub("[2010]{4}[.]{1}","2010", names(change), fixed=FALSE)
+names(change) <- gsub("[2011]{4}[.]{1}","2011", names(change), fixed=FALSE)
+names(change) <- gsub("[2012]{4}[.]{1}","2012", names(change), fixed=FALSE)
+names(change) <- gsub("...",".", names(change), fixed=TRUE)
+names(change) <- gsub("..",".", names(change), fixed=TRUE)
+names(change) <- gsub("..",".", names(change), fixed=TRUE)
+names(change) <- gsub("^\.","", names(change), fixed=FALSE)
