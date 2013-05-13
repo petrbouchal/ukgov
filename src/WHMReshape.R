@@ -14,7 +14,7 @@ names(change) <- gsub("..",".", names(change), fixed=TRUE)
 names(change) <- gsub("..",".", names(change), fixed=TRUE)
 names(change) <- gsub(".Change","Change", names(change), fixed=TRUE)
 
-
+# remove variables here
 
 # need to adjust reshape arguments to work with this dataset
 changelong <- reshape(change, idvar = c("Dept"), 
