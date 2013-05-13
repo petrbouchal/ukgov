@@ -3,7 +3,7 @@ library(ggthemes)
 library(scales)
 library(ggplot2)
 library(stringr)
-BP_ts <- read.csv('./data-input/BP_ts_depts_20130510.csv.csv')
+BP_ts <- read.csv('./data-input/BP_ts_depts_20130510.csv')
 BPl <- melt(BP_ts)
 BPl$monthlabel <- str_sub(BPl$variable,1,3)
 
