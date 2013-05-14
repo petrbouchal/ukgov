@@ -1,55 +1,27 @@
 
 library(plyr)
 # load data
-RawDeptsFTE <- read.csv("./data/RawDeptsFTE.csv")
+AdjDeptsFTESums <- read.csv("./data-input/DeptsFTEAdjustedSums.csv", header=T, skip=0)
+AdjDeptsFTEChange <- read.csv("./data-input/DeptsFTEAdjusted.csv", header=T, skip=0)
+
+#delete empty vars
+AdjDeptsFTESums$X <- NULL
+AdjDeptsFTESums$X.1 <- NULL
+
+#rename vars to enable matching
+AdjDeptsFTEChange <- rename(AdjDeptsFTEChange, c("Whitehall." = "Whitehall"))
+AdjDeptsFTESums <- rename(AdjDeptsFTESums, c("WH" = "Whitehall"))
+
+# match
+AdjDeptsFTE <- merge(AdjDeptsFTEChange, AdjDeptsFTESums)
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
-names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
-names(RawDeptsFTE) <- gsub("FTE","", names(RawDeptsFTE))
-names(RawDeptsFTE) <- gsub("X","FTE", names(RawDeptsFTE))
-
-DeptsFTE <- ddply(RawDeptsFTE, .(Dept,Whitehall), summarise,
-                  FTE2009Q1 = sum(FTE2009Q1,na.rm=TRUE),
-                  FTE2009Q2 = sum(FTE2009Q2,na.rm=TRUE),
-                  FTE2009Q3 = sum(FTE2009Q3,na.rm=TRUE),
-                  FTE2009Q4 = sum(FTE2009Q4,na.rm=TRUE),
-                  FTE2010Q1 = sum(FTE2010Q1,na.rm=TRUE),
-                  FTE2010Q2 = sum(FTE2010Q2,na.rm=TRUE),
-                  FTE2010Q3 = sum(FTE2010Q3,na.rm=TRUE),
-                  FTE2010Q4 = sum(FTE2010Q4,na.rm=TRUE),
-                  FTE2011Q1 = sum(FTE2011Q1,na.rm=TRUE),
-                  FTE2011Q2 = sum(FTE2011Q2,na.rm=TRUE),
-                  FTE2011Q3 = sum(FTE2011Q3,na.rm=TRUE),
-                  FTE2011Q4 = sum(FTE2011Q4,na.rm=TRUE),
-                  FTE2012Q1 = sum(FTE2012Q1,na.rm=TRUE),
-                  FTE2012Q2 = sum(FTE2012Q2,na.rm=TRUE)
-                  )
-
-FTEsumByDept <- ddply(DeptsFTE, .(Dept), summarise,
-                  sFTE2009Q1 = sum(FTE2009Q1,na.rm=TRUE),
-                  sFTE2009Q2 = sum(FTE2009Q2,na.rm=TRUE),
-                  sFTE2009Q3 = sum(FTE2009Q3,na.rm=TRUE),
-                  sFTE2009Q4 = sum(FTE2009Q4,na.rm=TRUE),
-                  sFTE2010Q1 = sum(FTE2010Q1,na.rm=TRUE),
-                  sFTE2010Q2 = sum(FTE2010Q2,na.rm=TRUE),
-                  sFTE2010Q3 = sum(FTE2010Q3,na.rm=TRUE),
-                  sFTE2010Q4 = sum(FTE2010Q4,na.rm=TRUE),
-                  sFTE2011Q1 = sum(FTE2011Q1,na.rm=TRUE),
-                  sFTE2011Q2 = sum(FTE2011Q2,na.rm=TRUE),
-                  sFTE2011Q3 = sum(FTE2011Q3,na.rm=TRUE),
-                  sFTE2011Q4 = sum(FTE2011Q4,na.rm=TRUE),
-                  sFTE2012Q1 = sum(FTE2012Q1,na.rm=TRUE),
-                  sFTE2012Q2 = sum(FTE2012Q2,na.rm=TRUE)
-                  )
-
- DeptsFTEwithtotals <- merge.data.frame(DeptsFTE, FTEsumByDept, all.x=TRUE)
-
-# create simple Whitehall indicator
-DeptsFTEwithtotals$WH <- ifelse(as.numeric(DeptsFTE$Whitehall) == 1, 1, 0)
+names(AdjDeptsFTEChange) <- gsub("[.]","", names(AdjDeptsFTE))
+names(AdjDeptsFTEChange) <- gsub("FTE","", names(AdjDeptsFTE))
+names(AdjDeptsFTEChange) <- gsub("X","FTE", names(AdjDeptsFTE))
 
 # now convert to wide to create WH and NWH FTE vars for each
-
-DeptsFTEwide <- reshape(DeptsFTE, idvar = "Dept",
+DeptsFTEwide <- reshape(AdjDeptsFTE, idvar = "Dept",
                   timevar = "Whitehall", direction = "wide")
 
 # make names manageable
@@ -64,7 +36,7 @@ DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"),
                   times = c("2009Q1","2009Q2","2009Q3","2009Q4",
                             "2010Q1","2010Q2","2010Q3","2010Q4",
                             "2011Q1","2011Q2","2011Q3","2011Q4",
-                            "2012Q1","2012Q2"),
+                            "2012Q1","2012Q2","2012Q3","2012Q4"),
                   timevar = "Period",
                   direction = "long")
 
@@ -131,14 +103,14 @@ print(Motion, "chart")
 
 library(plyr)
 # load data
-RawDeptsFTE <- read.csv("~/Desktop/RawDeptsFTE.csv")
+AdjDeptsFTE <- read.csv("~/Desktop/AdjDeptsFTE.csv")
 
 # get rid of fluff in colnames, making it suitable for reshape and googlevis
-names(RawDeptsFTE) <- gsub("[.]","", names(RawDeptsFTE))
-names(RawDeptsFTE) <- gsub("FTE","", names(RawDeptsFTE))
-names(RawDeptsFTE) <- gsub("X","FTE", names(RawDeptsFTE))
+names(AdjDeptsFTE) <- gsub("[.]","", names(AdjDeptsFTE))
+names(AdjDeptsFTE) <- gsub("FTE","", names(AdjDeptsFTE))
+names(AdjDeptsFTE) <- gsub("X","FTE", names(AdjDeptsFTE))
 
-DeptsFTE <- ddply(RawDeptsFTE, .(Dept,Whitehall), summarise,
+DeptsFTE <- ddply(AdjDeptsFTE, .(Dept,Whitehall), summarise,
                   FTE2009Q1 = sum(FTE2009Q1,na.rm=TRUE),
                   FTE2009Q2 = sum(FTE2009Q2,na.rm=TRUE),
                   FTE2009Q3 = sum(FTE2009Q3,na.rm=TRUE),
@@ -226,7 +198,7 @@ Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
 
 print(Motion, "chart")
 
-Let's see a simple chart which will render right in the preview:
+#Let's see a simple chart which will render right in the preview:
 
 library(ggplot2)
 library(grid)
