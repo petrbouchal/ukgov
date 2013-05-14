@@ -1,11 +1,16 @@
 library(plyr)
 library(stringr)
+library(ggplot2)
+library(grid)
 library(ggthemes)
-library(reshape2)
+library(reshape)
 library(plyr)
 
+# ideally load CSV here as raw text and edit before loading as data
+# to minimise need for manual adjustment in Excel 
+
 # load data
-change <- read.csv("./data-input/ChangeDeptsFTE.csv")
+change <- read.csv("./data-input/ChangeDeptsFTE.csv",)
 names(change)
 
 # clean up names
@@ -23,6 +28,9 @@ names(change)
 
 # reshape
 changel <- melt(change)
+changel <- changel[grepl('201', changel$variable),]
+
+# create vars identifying measure and period
 changel$variable <- gsub(".","-",changel$variable, fixed=TRUE) 
 changel$measure <- gsub("-.*","",changel$variable)
 changel$Period <- gsub(".*-","",changel$variable)
@@ -30,13 +38,5 @@ changel$Dept <- gsub(" ",".",changel$Dept)
 changel$variable <- NULL
 changel$group=paste(changel$Dept,changel$Whitehall,sep='-')
 
-# plot
-plotPSE <- ggplot(data=subset(changel,changel$measure=='Cumulative_perc_endog_change'),
-                  aes(x=Period,y=value, group=group, colour=Whitehall)) + 
-  geom_line(size=1) +
-  geom_point(aes(colour=Whitehall), size=1) +
-  geom_point(colour='white', size=.8) +
-  facet_wrap(~Dept) +
-  theme_few()
-plotPSE
+write.csv(changel,'./data-output/PSE_change_long.csv', row.names=FALSE)
   

@@ -1,180 +1,53 @@
 library(plyr)
-# load data
-AdjDeptsFTESums <- read.csv("./data-input/DeptsFTEAdjustedSums.csv", header=T, skip=0)
-AdjDeptsFTEChange <- read.csv("./data-input/DeptsFTEAdjusted.csv", header=T, skip=0)
+source('./src/PSE_Reshape.R') # to prepare data if needed
 
-#delete empty vars
-AdjDeptsFTESums$X <- NULL
-AdjDeptsFTESums$X.1 <- NULL
-
-#rename vars to enable matching
-AdjDeptsFTEChange <- rename(AdjDeptsFTEChange, c("Whitehall." = "Whitehall"))
-AdjDeptsFTESums <- rename(AdjDeptsFTESums, c("WH" = "Whitehall"))
-
-# match
-AdjDeptsFTE <- merge(AdjDeptsFTEChange, AdjDeptsFTESums)
-
-# get rid of fluff in colnames, making it suitable for reshape and googlevis
-names(AdjDeptsFTEChange) <- gsub("[.]","", names(AdjDeptsFTE))
-names(AdjDeptsFTEChange) <- gsub("FTE","", names(AdjDeptsFTE))
-names(AdjDeptsFTEChange) <- gsub("X","FTE", names(AdjDeptsFTE))
-
-# now convert to wide to create WH and NWH FTE vars for each
-DeptsFTEwide <- reshape(AdjDeptsFTE, idvar = "Dept",
-                  timevar = "Whitehall", direction = "wide")
-
-# make names manageable
-names(DeptsFTEwide) <- gsub("FTE","", names(DeptsFTEwide))
-names(DeptsFTEwide) <- gsub(".Core Whitehall Depts.","WH", names(DeptsFTEwide))
-names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service","NWH", names(DeptsFTEwide))
-
-# now convert to long
-DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"), 
-                  varying = list(c(2:15),c(16:29)),
-                  v.names = c("FTE_WH", "FTE_NWH"),
-                  times = c("2009Q1","2009Q2","2009Q3","2009Q4",
-                            "2010Q1","2010Q2","2010Q3","2010Q4",
-                            "2011Q1","2011Q2","2011Q3","2011Q4",
-                            "2012Q1","2012Q2","2012Q3","2012Q4"),
-                  timevar = "Period",
-                  direction = "long")
-
-# replace NAs with 0
-DeptsFTElong$FTE_WH[is.na(DeptsFTElong$FTE_WH)] <- 0
-DeptsFTElong$FTE_NWH[is.na(DeptsFTElong$FTE_NWH)] <- 0
-
-# add summary var
-DeptsFTElong$FTE_total = (DeptsFTElong$FTE_WH + DeptsFTElong$FTE_NWH)
-
-
-# Manual:
+# Manual for google charts:
 # 
 # http://code.google.com/p/google-motion-charts-with-r/wiki/SettingOptions
 # http://code.google.com/p/google-motion-charts-with-r/
 # https://developers.google.com/chart/interactive/docs/
 
+# plain chart in ggplot2
+plotPSE <- ggplot(data=subset(changel,changel$measure=='Cumulative_perc_endog_change'),
+                  aes(x=Period,y=value, group=group, colour=Whitehall)) + 
+  geom_line(size=1) +
+  geom_point(aes(colour=Whitehall), size=1) +
+  geom_point(colour='white', size=.8) +
+  facet_wrap(~Dept) +
+  theme_few()
+plotPSE
+
+# reshape to wide(r) for googlevis
+changel2 <- data.frame(cast(changel, ... ~ measure))
+
+# dates for googlevis
+changel2$Period <- gsub("Q1","-03-31",changel2$Period)
+changel2$Period <- gsub("Q2","-06-30",changel2$Period)
+changel2$Period <- gsub("Q3","-09-30",changel2$Period)
+changel2$Period <- gsub("Q4","-12-31",changel2$Period)
+
+changel2$Period <- as.Date(changel2$Period, tz = "GMT", format='%Y-%m-%d')
+
+# Google Plot
 suppressPackageStartupMessages(library(googleVis))
-
-Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
+Motion=gvisMotionChart(changel2, idvar="group", timevar="Period",
                        options=list(
-                       height=400, 
-                       width=1000, 
-                       state="{\"playDuration\":10000,
-                       \"xZoomedDataMin\":0,
-                       \"xZoomedIn\":false,
-                       \"time\":\"2010-07-01\",
-                       \"yZoomedIn\":false,
-                       \"orderedByY\":false,
-                       \"sizeOption\":\"_UNISIZE\",
-                       \"xLambda\":1,
-                       \"colorOption\":\"4\",
-                       \"yZoomedDataMax\":130000,
-                       \"nonSelectedAlpha\":0.4,
-                       \"iconType\":\"VBAR\",
-                       \"dimensions\":{\"iconDimensions\":[\"dim0\"]},
-                       \"uniColorForNonSelected\":false,
-                       \"yZoomedDataMin\":0,
-                       \"xZoomedDataMax\":21,
-                       \"duration\":{\"multiplier\":1,\"timeUnit\":\"Q\"},
-                       \"xAxisOption\":\"_ALPHABETICAL\",
-                       \"orderedByX\":true,
-                       \"showTrails\":false,
-                       \"yLambda\":1,
-                       \"yAxisOption\":\"4\",
-                       \"iconKeySettings\":[]};",
-                       showSelectListComponent = 1,
-                       showHeader=1,
-                       showAdvancedPanel=1,
-                       showChartButtons=1,
-                       showXScalePicker=1,
-                       showYScalePicker=1,
-                       showXMetricPicker=1,
-                       showYMetricPicker=1,
-                       showSidePanel=1
-                       ))
-# Notes:
-# yLambda: 0 is log, 1 is linear
-# timeUnit: originally was _NOTHING
-# playduration is in ms
-# need to set xaxisoption to _NOTHING if showing bubble by default
-
-print(Motion, "chart")
-
-library(plyr)
-# load data
-AdjDeptsFTE <- read.csv("~/Desktop/AdjDeptsFTE.csv")
-
-# get rid of fluff in colnames, making it suitable for reshape and googlevis
-names(AdjDeptsFTE) <- gsub("[.]","", names(AdjDeptsFTE))
-names(AdjDeptsFTE) <- gsub("FTE","", names(AdjDeptsFTE))
-names(AdjDeptsFTE) <- gsub("X","FTE", names(AdjDeptsFTE))
-
-DeptsFTE <- ddply(AdjDeptsFTE, .(Dept,Whitehall), summarise,
-                  FTE2009Q1 = sum(FTE2009Q1,na.rm=TRUE),
-                  FTE2009Q2 = sum(FTE2009Q2,na.rm=TRUE),
-                  FTE2009Q3 = sum(FTE2009Q3,na.rm=TRUE),
-                  FTE2009Q4 = sum(FTE2009Q4,na.rm=TRUE),
-                  FTE2010Q1 = sum(FTE2010Q1,na.rm=TRUE),
-                  FTE2010Q2 = sum(FTE2010Q2,na.rm=TRUE),
-                  FTE2010Q3 = sum(FTE2010Q3,na.rm=TRUE),
-                  FTE2010Q4 = sum(FTE2010Q4,na.rm=TRUE),
-                  FTE2011Q1 = sum(FTE2011Q1,na.rm=TRUE),
-                  FTE2011Q2 = sum(FTE2011Q2,na.rm=TRUE),
-                  FTE2011Q3 = sum(FTE2011Q3,na.rm=TRUE),
-                  FTE2011Q4 = sum(FTE2011Q4,na.rm=TRUE),
-                  FTE2012Q1 = sum(FTE2012Q1,na.rm=TRUE),
-                  FTE2012Q2 = sum(FTE2012Q2,na.rm=TRUE)
-                  )
-
-# now convert to wide to create WH and NWH FTE vars for each
-
-DeptsFTEwide <- reshape(DeptsFTE, idvar = "Dept",
-                  timevar = "Whitehall", direction = "wide")
-
-# make names manageable
-names(DeptsFTEwide) <- gsub("sFTE","", names(DeptsFTEwide))
-names(DeptsFTEwide) <- gsub(".Core Whitehall Depts.","WH", names(DeptsFTEwide))
-names(DeptsFTEwide) <- gsub(".Non-Whitehall Civil Service","NWH", names(DeptsFTEwide))
-
-# now convert to long
-DeptsFTElong <- reshape(DeptsFTEwide, idvar = c("Dept"), 
-                  varying = list(c(2:15),c(16:29)),
-                  v.names = c("FTE_WH", "FTE_NWH"),
-                  times = c("2009Q1","2009Q2","2009Q3","2009Q4",
-                            "2010Q1","2010Q2","2010Q3","2010Q4",
-                            "2011Q1","2011Q2","2011Q3","2011Q4",
-                            "2012Q1","2012Q2"),
-                  timevar = "Period",
-                  direction = "long")
-
-# Notes:
-# yLambda: 0 is log, 1 is linear
-# timeUnit: originally was _NOTHING
-# playduration is in ms
-# need to set xaxisoption to _NOTHING if showing bubble by default
-
-
-
-suppressPackageStartupMessages(library(googleVis))
-
-Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
-                       options=list(
-                       height=400, 
-                       width=1000, 
-                       state="{\"playDuration\":10000,
-                       \"xZoomedDataMin\":0,
-                       \"xZoomedIn\":false,
-                       \"time\":\"2010-07-01\",
-                       \"yZoomedIn\":false,
-                       \"orderedByY\":false,
-                       \"sizeOption\":\"4\",
-                       \"xLambda\":1,
-                       \"colorOption\":\"2\",
-                       \"yZoomedDataMax\":130000,
-                       \"nonSelectedAlpha\":0.4,
-                       \"iconType\":\"BUBBLE\",
-                       \"dimensions\":{\"iconDimensions\":[\"dim0\"]},
-                       \"uniColorForNonSelected\":false,
+                         height=400, 
+                         width=1000, 
+                         state="{\"playDuration\":10000,
+                         \"xZoomedDataMin\":0,
+                         \"xZoomedIn\":false,
+                         \"time\":\"2010-07-01\",
+                         \"yZoomedIn\":false,
+                         \"orderedByY\":false,
+                         \"sizeOption\":\"4\",
+                         \"xLambda\":1,
+                         \"colorOption\":\"2\",
+                         \"yZoomedDataMax\":130000,
+                         \"nonSelectedAlpha\":0.4,
+                         \"iconType\":\"BUBBLE\",
+                         \"dimensions\":{\"iconDimensions\":[\"dim0\"]},
+                         \"uniColorForNonSelected\":false,
                        \"yZoomedDataMin\":0,
                        \"xZoomedDataMax\":21,
                        \"duration\":{\"multiplier\":1,\"timeUnit\":\"Q\"},
@@ -184,90 +57,21 @@ Motion=gvisMotionChart(DeptsFTElong, idvar="Dept", timevar="Period",
                        \"yLambda\":1,
                        \"yAxisOption\":\"2\",
                        \"iconKeySettings\":[]};",
-                       showSelectListComponent = 1,
-                       showHeader=1,
-                       showAdvancedPanel=1,
-                       showChartButtons=1,
-                       showXScalePicker=1,
-                       showYScalePicker=1,
-                       showXMetricPicker=1,
-                       showYMetricPicker=1,
-                       showSidePanel=1
+                         showSelectListComponent = 1,
+                         showHeader=1,
+                         showAdvancedPanel=1,
+                         showChartButtons=1,
+                         showXScalePicker=1,
+                         showYScalePicker=1,
+                         showXMetricPicker=1,
+                         showYMetricPicker=1,
+                         showSidePanel=1
                        ))
 
 print(Motion, "chart")
 
-#Let's see a simple chart which will render right in the preview:
-
-library(ggplot2)
-library(grid)
 # order levels
 
 DeptsFTEwithtotals$Dept <- reorder(DeptsFTEwithtotals$Dept,
                                    -DeptsFTEwithtotals$sFTE2012Q2) 
 
-plot <-ggplot(DeptsFTEwithtotals,
-              aes(x=factor(Dept),
-                  y=FTE2012Q2,
-                  fill=factor(Whitehall))) + 
-  geom_bar(position="stack", binwidth=1) +
-  guides(fill = guide_legend(reverse = FALSE, nrow =1,
-                             direction="horizontal",
-                             title="Legend")) +
-  labs(y = "FTE in Q2 2012") +
-  theme(legend.position="bottom",
-        legend.key.size=unit(6,"pt"),
-        panel.background=element_blank(),
-        panel.grid.major.x=element_blank(),
-        panel.grid.minor.y=element_blank(),
-        panel.grid.major.y=element_line(colour="light grey"),
-        axis.ticks=element_blank(),
-        axis.text.x=element_text(angle=90, hjust=1, vjust=.5),
-        axis.ticks.margin = unit(1,"pt"),
-        axis.title.x=element_blank()
-        )
-
-plot
-
-
-DeptsFTElong2 = reshape(DeptsFTElong, 
-                        idvar=c("Dept","Period"),
-                        varying = c("FTE_WH","FTE_NWH"),
-                        v.names = "FTE",
-                        times = c("WH","NWH"),
-                        timevar = "Whitehall",
-                        direction="long")
-
-DeptsFTElong2$Date <- DeptsFTElong2$Period
-
-DeptsFTElong2$Date <- gsub("Q1","-03-31",DeptsFTElong2$Date)
-DeptsFTElong2$Date <- gsub("Q2","-06-30",DeptsFTElong2$Date)
-DeptsFTElong2$Date <- gsub("Q3","-09-30",DeptsFTElong2$Date)
-DeptsFTElong2$Date <- gsub("Q4","-12-31",DeptsFTElong2$Date)
-
-DeptsFTElong2$Date <- as.POSIXct(DeptsFTElong2$Date, tz = "GMT")
-
-plot2 <- ggplot(DeptsFTElong2, aes(x=Date,
-                                   y=FTE/1000,
-                                   fill=factor(Whitehall))) + 
-                geom_area() +
-                facet_wrap(~ Dept, ncol=3, scales = "free_y") +
-                #facet_wrap(~ Dept, ncol=3) +
-                theme(legend.position="bottom",
-                      legend.key.size=unit(6,"pt"),
-                      panel.background=element_blank(),
-                      panel.grid.major.x=element_blank(),
-                      panel.grid.minor.y=element_blank(),
-                      panel.grid.major.y=element_line(colour="light grey"),
-                      axis.ticks=element_blank(),
-                      axis.text.x=element_text(angle=90, hjust=1, vjust=.5),
-                      axis.ticks.margin = unit(1,"pt"),
-                      axis.title.x=element_blank()
-                      )+
-                labs(y = "FTE (thousands)", x = "") + 
-                guides(fill = guide_legend(reverse = FALSE, nrow =1,
-                                           direction="horizontal",
-                                           title="Legend"))
-
-
-plot2
