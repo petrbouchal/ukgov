@@ -1,4 +1,3 @@
-
 library(plyr)
 # load data
 AdjDeptsFTESums <- read.csv("./data-input/DeptsFTEAdjustedSums.csv", header=T, skip=0)

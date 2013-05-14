@@ -1,0 +1,103 @@
+Department,Policy/spend area,Who makes policy,Who sets operational strategy,What output does Whitehall produce?,What output does government produce?,Who delivers final output,ALB type current,ALB type IfG,ALB CE on dept board?,ALB own board,Cost excl. admin [bn],Admin cost,Cost all [bn],Political salience,Ministerial involvement,Own AO,Managerial control from dept,Note,Length of WH,WH control,Provision type,Links in chain
+BIS,"Science, innovation and research funding",Dept,NA,ALB management,[Grants],Non-state,NDPB,,,,5.3,,5.3,,,NA,,,2,5,2,3
+BIS,Consumer protection,Dept,-,Rules,Rules,Dept,NDPB,,,,,,0,,,,,,1,1,1,1
+BIS,Consumer protection - enforcement,Dept; ALB,ALB,Enforcement,Enforcement,,,,,,,,0,,,,,,2,5.5,1,2
+BIS,Competition policy,Dept,-,Rules,Rules,Dept; ALB,NMD,,,,,,0,,,NA,,,1,1,1,1
+BIS,Competition policy - enforcement,Dept; ALB,ALB,Enforcement,Enforcement,ALB,NMD; NDPB,,,,,,0,,,,,,2,5.5,1,2
+BIS,Further education,Dept,[Dept],ALB management,[Grants],Non-state,EA,EA,No,,3.7,,3.7,,,,,,2,4,3,3
+BIS,Higher education,Dept,NA,ALB management,[Grants],Non-state,NDPB,,,,4,,4,,,,,,2,5,3,2
+BIS,Higher education - student loans,Dept,ALB,ALB management,Discretionary grants,[ALB],,,,,1.9,,1.9,,,,,,NA,5,1,2
+BIS,Government shareholding,Dept,Dept,Decisions; rules; assurance,Decisions; rules; assurance,Dept,,,[Yes],,1.2,,1.2,,,,,,1,1,1,1
+BIS,Higher education - student grants,Dept,ALB,ALB management,Loans - transactional service,ALB,NDPB,,,,1.9,,1.9,,,,,,NA,5,1,2
+BIS,Better regulation,,,Rules,Rules,Dept; other depts,,,,,,,0,,,,,,2,1,1,1.5
+BIS,Business and enterprise policy,Dept,Dept,Rules,Rules,Dept; ALB,NA,,,,,,0,,,,,,2,1.5,1,1
+BIS,Trade and investment,Multiple depts,ALB,ALB management; Operational outputs,Rules; advisory services,ALB,NMD,EA,Yes,,0.13,,0.13,,1,1,,from UKTI Accounts: 80m UKTI budget + 40m BIS spend,2,3,1,2
+CO,Civil society - other,Dept,Dept,Discretionary grants,Discretionary grants,Dept,,,,,0.075,,0.075,,,,,129m = Big Society in CO BP 2012,1,1,1,1
+CO,Civil society - NCS local,Dept,Dept,Discretionary grants,Discretionary grants,Local,,,,,0.032,,0.032,,,,,part of Big Society,1,6,1,2
+CO,Civil society - NCS commissioned,Dept,Dept,Commissioning by dept,Commissioning,Non-state,,,,,0.021,,0.021,,,,,part of Big Society,1,1,3,2
+CO,Cabinet support,Dept,Dept,NA,NA,Dept,,,,,0.05,,0.05,,,,,,1,1,1,1
+CO,National security & Civil Contingencies,Cabinet,Dept,NA,NA,Dept,,,,,0.03,,0.03,,,,,,1,1,1,1
+[CO/SIS],SIS,Cabinet,NA,ALB management; oversight,Operational,ALB,Other,,,,1.95,,1.95,,,,,,2,5,1,2
+CO,ERG,Multiple depts,Dept,NA,NA,Dept,,,,,0.07,,0.07,,,,,Taken from BP bubbles - accounts line includes other items too,2,1,1,1
+DCLG,Local authority funding,Dept,Dept,Formula grant,Formula grant,Local,,,,,26.5,,26.5,,,,,,1,1,1,2
+DCLG,Planning policy and regulation,Dept,Dept,Rules; decisions,Rules; decisions,Dept,,,,,,,0,,,,,,1,1,1,1
+DCLG,[Local funding framework],Dept,Dept,Rules,Rules,Dept,,,,,,,0,,,,,,1,1,1,1
+DCLG,Housing policy,Dept,[Dept/ALB],NA,NA,Local; private,,,,,,,0,,,,,,,,,
+DCMS,Museums and Galleries,Dept,ALB,ALB management,[Formula grants],Other public,,,,,0.5,,0.5,,,,,,1,5,1,2
+DCMS,Sport (non-Olympics),Dept,ALB,ALB management,Discretionary grants,ALB,NDPB,,,,0.2,,0.2,,,,,,1,5,NA,3
+DCMS,Arts funding,Dept,ALB,ALB management,Discretionary grants,ALB,NDPB,,,Yes,0.4,,0.4,,,,,,1,5,3,3
+DCMS,Media,Dept,-,NA,NA,Dept; ALB,,,,,0.3,,0.3,,,,,,,,,
+DCMS,Media regulation,-,ALB,Rules,Enforcement,,,,,,,,0,,,,,,,,,
+DECC,Energy market regulation,Eu; Dept,-,ALB management,Rules; Enforcement,ALB,NMD,,No,Yes,,,0,,,,,,1,5,,
+DECC,Energy market regulation - enforcement,-,ALB,-,Enforcement,,,,,,,,0,,,,,,2,5.5,,2
+DECC,Climate change policy,EU; Dept,Dept,International negotiations,NA,Dept,,,,,0.2,,0.2,,,,,,1,1,1,1
+DECC,Fuel poverty grants,Dept,[Other dept],Operational outputs,Payments - Transactional service,Other dept,,,,,0.4,,0.4,,,,,Paid by DWP,2,2,1,2
+DECC,Renewables,Dept,NA,NA,NA,,,,,,1.9,,1.9,,,,,Mainly levies,,,,
+DECC,Coal legacy,Dept,[ALB],ALB management,NA,Private,,,,,0.2,,0.2,,,,,,2,5,3,3
+DECC,Nuclear decommissioning,Dept,ALB,ALB management,Commissioned service,Private,NDPB,,No,,2.3,,2.3,,,,,,2,5,3,3
+DECC,Green deal,Dept,Dept,Convening; Commissioning; ALB management; Accreditation and regulation,,Certified private actors,,,,,,,0,,,,,,2,5,3,4
+Defra,Rural development,Eu; Dept,Dept,ALB management; Operational outputs,Discretionary grants; transactional service (RPA),ALB,NMD; NDPB; EA,,No,,2.8,,2.8,,,,,2.3bn from EU CAP,2,5,1,2
+Defra,Environmental protection,Eu; Dept,ALB,Rules; ALB management,Rules; Enforcement,ALB,NDPB,,No,,,,0,,,,,,2,5,1,2
+Defra,Waste policy,Eu; Dept,NA,ALB management,Rules; Others' commitments,Local; private,NDPB,,No,,,,0,,,,,,2,6,2,2
+Defra,Consumer protection,Eu; Dept,ALB,Rules; ALB management,Rules and enforcement,Dept; ALB,NDPB; NMD,,No,,,,0,,,,,,2,5,1,2
+Defra,Flood protection,Dept,NA,ALB management,Rules; Guidance; Discretionary grants,Local; private,NDPB,,No,,0.9,,0.9,,,,,,2,6,2,4
+DfID,Foreign aid - own delivery,Dept,Dept,NA,,,,,,,4.5,,4.5,,,,,,1,1,2,2
+DfID,Foreign aid - multilateral,Dept,International body,Membership multilateral,Grant to international organisations,International,,,,,2.9,,2.9,,,,,,1,7,NA,2
+DfT,Local transport subsidy,Dept,Dept,Formula grant,Formula grants,Local; private,,,,,5.4,,5.4,,,,,,1,6,2,3
+DfT,National roads,Dept,ALB,ALB management,Formula grants,ALB; Private,,,,,2.3,,2.3,,,,,,1,3,3,3
+DfE,Schools,Dept,Dept; pro forma ALB,ALB management (pro forma ALB),Formula grants,Other public,EA,,,,41,,41,,,,,,2,3,1,2.5
+DfE,Schools - examinations,Dept,Dept,ALB management,Operational output; enforcement,ALB,NMD,IPIB,,,,,0,,,,,,2,5.5,3,3
+DfE,Schools - inspection,Dept,Dept,ALB management,Operational output; enforcement,ALB,NMD,IPIB,,,0.17,,0.17,,,,,,2,5.5,1,2
+DfE,Schools - academies,Dept,Dept; pro forma ALB,Market stewardship by ALB (pro forma ALB),Formula grants to market; compliance,Non-state,EA,,Yes,No,5.2,,5.2,,,,,,2,3,3,3
+DWP,Work programme,Dept,Dept,Commissioning by dept,Commissioned service to individuals,Non-state,,,,,,,0.8,,,,,Cost is guess based on 5yr cost reported by NAO,1,1,3,2
+DWP,Job centre plus,Dept,Dept,Operational outputs,Payments - Transactional service; Advice - Transactional service,Dept,,,,,5,1.4,6.4,,,,,,1,1,1,1
+DWP,Pensions,Dept,Dept,Operational outputs,Payments - transactional service,Dept,,,,,74,,74,,,,,,1,1,1,1
+DWP,Universal credit - major project,Dept,Dept,NA,NA,Dept,,,,,,,0,,,,,,1,1,1,1
+DWP,Other benefits,Dept,Dept,Operational outputs,Payments - transactional service,Dept,,,,,12,,12,,,,,,1,1,1,1
+DWP,Child Maintenance,Dept,Dept,Commissioning by dept,Advice - transactional service; enforcement,Dept,,,,,,,0,,,,,,1,1,1,1
+DWP,Disability and carers service,Dept,Dept,Operational outputs,Payments - Transactional service; Advice - Transactional service,Dept,,,,,13,,13,,,,,,1,1,1,1
+DWP,Housing and council tax benefit,Dept,Dept,Formula grant,Formula grants,Local,,,,,28,,28,,,,,,1,1,1,1
+DfE,Further education,Dept,Dept; pro forma ALB,Market stewardship by ALB (pro forma ALB),Formula grants,Non-state,EA,,Yes,No,6.8,,6.8,,,,,[Part from BIS - double counted?],2.5,3,3,4
+DfE,Curriculum,Dept,-,Rules,Rules; guidance,Dept,,,,,,,0,,,,,,1,1,1,1
+DfE,Schools capital,Dept,Dept; pro forma ALB,ALB management (pro forma ALB),,Other public; Non-state,,,,,4,,4,,,,,,1,2,NA,4
+DfE,Teacher training,Dept,Dept; ALB,NA,NA,Other public,,,,,0.4,,0.4,,,,,,2,5,NA,3
+DfE,Apprenticeships,Dept,NA,NA,NA,NA,,,,,0.85,,0.85,,,,,,,,,
+DfE,Pupil premium,Dept,NA,NA,NA,NA,,,,,1.2,,1.2,,,,,,,,,
+DfE,Early intervention,Dept,NA,NA,NA,NA,,,,,2.4,,2.4,,,,,,,,,
+DfT,Rail capital,Dept,Dept,ALB management,Formula grants; Commissioned services,[Private],NA,,No,,4.8,,4.8,,,,,,,,,
+DfT,Transport regulation - driving standards,Dept,ALB,ALB management,Operational output; rules,ALB,EA,,No,,,,0,,,,,,2,5,1,2
+DfT,Transport regulation - rail,Dept,ALB,ALB management,[Rules; enforcement],ALB,NMD,,No,,,,0,,,,,,2,5,1,2
+DfT,Transport regulation - driver and vehicle registration,Dept,ALB,ALB management,Transactional service,ALB,EA,,No,,,,0,,,,,,2,5,1,2
+FCO,National security,Dept,Dept,NA,Policy; ,Dept,,,,,,,0,,,,,,1,1,1,1
+FCO,Consular services,Dept,Dept,Operational outputs,Advice - Transactional service,Dept,,,,,,,0,,,,,,1,1,1,1
+FCO,Public diplomacy,Dept,Dept; ALB,ALB management; Operational outputs,NA,Dept; ALB,,,,,0.4,,0.4,,,,,"British Council and BBC, 0.2bn each",2,5,1,2
+FCO,Trade and investment,Multiple depts,ALB,ALB management; Operational outputs,Advice - Transactional service; Public persuasion,Dept; ALB,NMD,,,,0.2,,0.2,,,,,from UKTI Accounts,2,5,1,2
+FCO,Bilateral diplomacy,Dept,Dept,Operational outputs,Public persuasion,,,,,,0.8,,0.8,,,,,General programme and admin from Accounts,1,1,1,1
+FCO,Peacekeeping grants,Dept,International body,Membership multilateral,Grant to international organisations,,,,,,0.3,,0.3,,,,,,1,7,NA,2
+FCO,International organisations,Dept,Dept,Operational outputs,NA,Dept,,,,,0.07,,0.07,,,,,Programme for international - IO grants separated below,1,1,1,1
+FCO,Multilateral diplomacy - membership fees,Dept,-,Membership multilateral,Grant to international organisations,International,,,,,0.13,,0.13,,,,,Subset of above,1,1,1,2
+Health,NHS,Dept,[ALB],NA,NA,Other public,,,,,102,,102,,,,,,,,,
+Health,Public Health,Dept,Dept,Rules; influencing,NA,Dept; [Local],NMD,IPIB,No,No,0.2,,0.2,,,,,,2,4,1,2
+Health,Social care,Dept,Dept,Formula grant,Formula grant to LG,Non-state,,,,,0.16,,0.16,,,,,,2,7,3,4
+Health,Research,,,NA,NA,,,,,,1,,1,,,,,,,,,
+HMRC,Tax and duty collection,Other dept,Dept,Operational outputs,Transactional service,Dept,,,,,,2.2,2.2,,,,,Another 1.8bn as corporate support and other costs across HMRC,1,1,1,1
+HMRC,Child benefit,Other dept,Dept,Operational outputs,Payments - transactional service,Dept,,,,,12.2,,12.2,,,,,,1,1,1,1
+HMRC,Tax credits,Other dept,Dept,Operational outputs,Transactional service,Dept,,,,,31,,31,,,,,,1,1,1,1
+HMT,?,,,NA,NA,Dept,,,,,,,0.17,,,,,,,,,
+HO,Border protection,Dept,NA,ALB management,Rules; Transactional Service; Enforcement,ALB,EA,,Yes,[Yes],0.7,,0.7,,,,,,2,3,1,2
+HO,Asylum,Dept,NA,ALB management,Rules; Transactional Service; Enforcement,ALB,EA,,Yes,[Yes],0.6,,0.6,,,,,,2,3,1,2
+HO,Immigration,Dept,NA,ALB management,Rules; Transactional Service; Enforcement,ALB,EA,,Yes,[Yes],0.5,,0.5,,,,,,2,3,1,2
+HO,Visas,Dept,ALB,ALB management,Rules; Transactional Service; Enforcement,ALB,EA,,Yes,[Yes],0.4,,0.4,,,,,,2,3,1,2
+HO,Police,Dept,NA,Formula grant,Formula grants,Other public,,,,,5,,5,,,,,,1,6,1,2
+HO,Police - other,Dept,NA,NA,NA,Other public,,,,,0.8,,0.8,,,,,,,,,
+HO,Identity and passports,Dept,[ALB],ALB management,Transactional service,ALB,,,,,0.4,,0.4,,,,,,2,4,1,2
+HO,Anti-terrorism,Dept,[ALB],ALB management; oversight,NA,Dept; ALB,,,,,1.2,,1.2,,,,,,,,,
+MoD,Civilian pay,Dept,NA,NA,Payments,,,,,,2.3,,2.3,,,,,,,,,
+MoD,Service pay,Dept,NA,NA,NA,,,,,,9.5,,9.5,,,,,,,,,
+MoD,Infrastructure costs,Dept,NA,NA,Commissioned goods; Own operation outputs,,,,,,4.1,,4.1,,,,,,,,,
+MoD,Inventory,Dept,NA,NA,Commissioned goods,,,,,,1.5,,1.5,,,,,,,,,
+MoD,Equipment support,Dept,NA,NA,Commissioned goods,,,,,,5.6,,5.6,,,,,,,,,
+MoJ,Prisons,Dept,Dept; pro forma ALB,Commissioning by ALB (pro forma ALB); Operational delivery,Multiple services; Market stewardship,ALB; Non-state,EA,EA,Yes,No,2,,2,,,,,NOMS * half,2,3,2,3
+MoJ,Probation,Dept,Dept; pro forma ALB,Commissioning by ALB (pro forma ALB); Operational delivery,Multiple services; Market stewardship,ALB; Non-state,EA,EA,Yes,No,2,,2,,,,,NOMS * half,2,3,2,4
+MoJ,Courts & Tribunals,Dept,ALB,[ALB management],Multiple services; Market stewardship,ALB,EA,EA,Yes,Yes,1.7,,1.7,,,,,,2,4,1,2
+MoJ,Legal aid,Dept,Dept; pro forma ALB,Commissioning by ALB (pro forma ALB),Commissioned service to individuals,Private,NDPB,EA,Yes,[Yes],2,0.1,2.1,,,,,,2,3,3,3
