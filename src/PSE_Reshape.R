@@ -28,15 +28,15 @@ names(change)
 
 # reshape
 changel <- melt(change)
+# get rid of rows where 'variable' does not contain year
 changel <- changel[grepl('201', changel$variable),]
 
 # create vars identifying measure and period
 changel$variable <- gsub(".","-",changel$variable, fixed=TRUE) 
 changel$measure <- gsub("-.*","",changel$variable)
 changel$Period <- gsub(".*-","",changel$variable)
-changel$Dept <- gsub(" ",".",changel$Dept)
 changel$variable <- NULL
+# create variable to group points into chart lines
 changel$group=paste(changel$Dept,changel$Whitehall,sep='-')
 
 write.csv(changel,'./data-output/PSE_change_long.csv', row.names=FALSE)
-  
