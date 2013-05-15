@@ -24,13 +24,13 @@ plotPSE
 changel$group <- NULL
 changel2 <- data.frame(cast(changel, ... ~ measure + Whitehall))
 
-# dates for googlevis
-changel2$Period <- gsub("Q1","-03-31",changel2$Period)
-changel2$Period <- gsub("Q2","-06-30",changel2$Period)
-changel2$Period <- gsub("Q3","-09-30",changel2$Period)
-changel2$Period <- gsub("Q4","-12-31",changel2$Period)
-
-changel2$Period <- as.Date(changel2$Period, tz = "GMT", format='%Y-%m-%d')
+# dates for googlevis - seems not to be needed
+# changel2$Period <- gsub("Q1","-03-31",changel2$Period)
+# changel2$Period <- gsub("Q2","-06-30",changel2$Period)
+# changel2$Period <- gsub("Q3","-09-30",changel2$Period)
+# changel2$Period <- gsub("Q4","-12-31",changel2$Period)
+# 
+# changel2$Period <- as.Date(changel2$Period, tz = "GMT", format='%Y-%m-%d')
 
 # Google Plot
 # TODO: rename variables
@@ -42,7 +42,7 @@ changel2$Period <- as.Date(changel2$Period, tz = "GMT", format='%Y-%m-%d')
 suppressPackageStartupMessages(library(googleVis))
 Motion=gvisMotionChart(changel2, idvar="Dept", timevar="Period",
                        options=list(
-                         height=400, 
+                         height=600, 
                          width=1000, 
                          state="{\"playDuration\":15000,
                          \"xZoomedDataMin\":0,
@@ -75,14 +75,14 @@ Motion=gvisMotionChart(changel2, idvar="Dept", timevar="Period",
                          showYScalePicker=1,
                          showXMetricPicker=1,
                          showYMetricPicker=1,
-                         showSidePanel=1
+                         showSidePanel=1,
+                         vAxis = "{\"format\" : \"#%\"}"
                        ))
 
 plot(Motion)
 #print(Motion, "chart")
 
-# order levels
-
-DeptsFTEwithtotals$Dept <- reorder(DeptsFTEwithtotals$Dept,
+# reorder levels - keeping code for record
+# DeptsFTEwithtotals$Dept <- reorder(DeptsFTEwithtotals$Dept,
                                    -DeptsFTEwithtotals$sFTE2012Q2) 
 
