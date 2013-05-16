@@ -1,5 +1,12 @@
 library(plyr)
+library(stringr)
+library(ggplot2)
+library(grid)
+library(ggthemes)
 library(reshape)
+library(plyr)
+library(scales)
+#library(extrafont)
 
 # source('./src/PSE_Reshape.R') # to prepare data if needed
 
@@ -15,12 +22,22 @@ plotPSE <- ggplot(data=subset(changel,changel$measure=='Cumulative_perc_endog_ch
   geom_line(size=1) +
   geom_point(aes(colour=Whitehall), size=1) +
   geom_point(colour='white', size=.8) +
+  scale_color_manual(values=c('#00ccff', '#7a9393', '#d40072')) +
+  scale_y_continuous(labels=percent) +
   facet_wrap(~Dept) +
-  theme_few()
+  theme_gray() +
+  labs(title='Change in civil service staff by department, SR2010 to present',
+       y='% change since SR 2010', x = 'Quarter') +
+  guides(colour = guide_legend(ncol = 1)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.title=element_blank(),
+        legend.position=c(.92,0.1),
+        axis.ticks=element_blank(),
+        plot.title=element_text(family="Bliss",face='bold',size=20,
+        lineheight=2.5, vjust=1))
 plotPSE
 
 # reshape to wide(r) for googlevis
-#changel2 <- data.frame(cast(changel, ... ~ measure))
 changel$group <- NULL
 changel2 <- data.frame(cast(changel, ... ~ measure + Whitehall))
 

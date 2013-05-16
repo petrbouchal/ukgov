@@ -1,16 +1,18 @@
-Dept,Operational delivery,ALB management,Delivery through contractual relationships,Grant-funding system - formula,Grant-funding system - bid-based
-BIS,0.000,8.000,0.000,0.000,2.000
-DCMS,0.000,8.000,0.000,0.000,2.000
-Defra,0.000,9.000,0.000,0.000,1.000
-DECC,0.000,5.000,0.000,0.000,5.000
-DCLG,0.000,2.000,0.000,8.000,0.000
-DfE,0.000,2.000,0.000,8.000,0.000
-DH,0.000,1.000,0.000,9.000,0.000
-DfT,0.000,4.000,2.000,4.000,0.000
-MoJ,4.000,4.000,2.000,0.000,0.000
-DfID,0.000,0.000,0.000,5.000,5.000
-FCO,3.000,3.000,0.000,2.000,2.000
-DWP,8.000,1.000,1.000,0.000,0.000
-MoD,7.000,3.000,0.000,0.000,0.000
-HMRC,8.000,2.000,0.000,0.000,0.000
-HO,4.667,2.333,0.000,3.000,0.000
+Department,Sponsorship,Line management,Contracts,Formula funding system,Bid-based grants,Supranational
+BIS,90,0,0,0,10,0
+DCMS,95,0,0,0,5,0
+Defra,95,0,0,0,5,
+DECC,90,0,0,0,10,0
+DCLG,6,0,0,94,0,0
+DfE,2,0,0,94,4,0
+DH,3,0,0,97,0,0
+DWP,1,83,1,15,0,0
+HMRC,1,99,0,0,0,0
+MoD,37,62,0,0,0,1
+MoJ,50,40,10,0,0,0
+HO,30,15,0,55,0,0
+DfT,54,0,1,45,0,0
+FCO,35,30,0,0,15,20
+DfID,0,0,0,0,50,50
+HMT,0,0,0,0,0,0
+CO,0,0,0,0,0,0
