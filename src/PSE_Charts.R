@@ -17,21 +17,30 @@ library(scales)
 # https://developers.google.com/chart/interactive/docs/
 
 # plain chart in ggplot2
-plotPSE <- ggplot(data=subset(changel,changel$measure=='Cumulative_perc_endog_change'),
+changel$chart <- TRUE
+changel$chart[changel$Dept == 'Total']  <- FALSE
+changel$chart[changel$Dept == 'AGO']  <- FALSE
+changel$chart[changel$Dept == 'NIO']  <- FALSE
+changel$chart[changel$Dept == 'GEO']  <- FALSE
+plotPSE <- ggplot(data=changel[changel$measure=='Cumulative_perc_endog_change' &
+                                 changel$chart==TRUE,],
                   aes(x=Period,y=value, group=group, colour=Whitehall)) + 
+  geom_hline(y=0, size=.2, colour='grey')+
   geom_line(size=1) +
   geom_point(aes(colour=Whitehall), size=1) +
   geom_point(colour='white', size=.8) +
   scale_color_manual(values=c('#00ccff', '#7a9393', '#d40072')) +
   scale_y_continuous(labels=percent) +
-  facet_wrap(~Dept) +
+  facet_wrap(~Dept, scales='fixed') +
   theme_gray() +
-  labs(title='Change in civil service staff by department, SR2010 to present',
+  labs(title='Change in civil service staff by department, SR 2010 to present',
        y='% change since SR 2010', x = 'Quarter') +
   guides(colour = guide_legend(ncol = 1)) +
+  guides(col=guide_legend(ncol=3)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         legend.title=element_blank(),
-        legend.position=c(.92,0.1),
+        legend.position='bottom',
+        legend.direction='vertical',
         axis.ticks=element_blank(),
         plot.title=element_text(family="Bliss",face='bold',size=20,
         lineheight=2.5, vjust=1))
