@@ -23,7 +23,8 @@ jobids <- unique(vac$jobid)
 grid <- expand.grid(dates, jobids)
 names(grid) <- c('jobtimeaccessed','jobid')
 # check at what dates each job existed
-jobatdate <- merge(grid, vac[,c(11,32,84)], all.x=TRUE)
+#FIXME: THESE NEED BETTER COLUMN REFERENCES AS NUMBER OF COLUMNS IN INPUT DATA CHANGES!!
+jobatdate <- merge(grid, vac[,c(11,32,87)], all.x=TRUE)
 jobatdate$isjob[is.na(jobatdate$isjob)] <- FALSE
 
 # create long dataset
@@ -44,19 +45,26 @@ timelines$livenow <- FALSE
 
 timelines$newnow[timelines$firstseen == max(dates)] <- TRUE
 timelines$livenow[timelines$lastseen == max(dates)] <- TRUE
+# FIXME: THIS LINE DOESN'T WORK
 timelines$duration <- difftime(as.Date(timelines$lastseen) - as.Date(timelines$firstseen),
                                "days")
 timelines <- merge(timelines, vacp)
 counts <- ddply(timelines, .(Department), summarise, count=length(unique(jobid))) 
 timelines <- merge(timelines, counts)
 
+# NOTE IT's NOT CLEAR HOW THE 'LIVE' ATTRIBUTE GETS AGGREGATED/DISPLAYED
+
 groupings <- read.csv('./data-input/jobs_depts_links.csv')
 timelines <- merge(timelines, groupings)
 
+# NOTE: Need to build chart from summed data set to allow proper labelling
 require(ggplot2)
-plot <- ggplot(timelines,aes(x=Department,y=factor(firstseen), col=livenow)) +
-  geom_tile(aes(fill=log(Number_of_Vacancies))) +
+plot <- ggplot(timelines[timelines$Whitehall=='Yes',],
+               aes(x=Department,y=as.Date(firstseen), col=livenow)) +
+  geom_tile(aes(fill=Number_of_Vacancies)) +
   scale_fill_continuous(low="yellow",high="red") +
-  coord_flip() +
-  theme_few()
+  scale_y_date() +
+  geom_text(aes(label=Number_of_Vacancies),
+            col='black', size=3) +
+  coord_flip()
 plot
