@@ -24,7 +24,7 @@ grid <- expand.grid(dates, jobids)
 names(grid) <- c('jobtimeaccessed','jobid')
 # check at what dates each job existed
 #FIXME: THESE NEED BETTER COLUMN REFERENCES AS NUMBER OF COLUMNS IN INPUT DATA CHANGES!!
-jobatdate <- merge(grid, vac[,c(11,32,87)], all.x=TRUE)
+jobatdate <- merge(grid, vac[,c(11,32,89)], all.x=TRUE)
 jobatdate$isjob[is.na(jobatdate$isjob)] <- FALSE
 
 # create long dataset
