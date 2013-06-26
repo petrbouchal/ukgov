@@ -2,14 +2,10 @@ require(stringr)
 require(reshape)
 require(reshape2)
 
-<<<<<<< HEAD
-path  <- 'path'
-filename <- 'filename'
+path  <- '/Users/petrbouchal/Downloads/ACSES/ACSES_Gender_Dept_Grade_Pay_data.tsv'
 
-apses <- csv.read(paste0(path, filename))
+apses <- read.delim(path, sep='\t')
 
 write.csv(unique(unique(apses$new1)),file='./data-output/acses_depts.csv')
-=======
+
 dataname <- 'Annual Civil Service Employment Survey'
-breakdown <- 
->>>>>>> b929036f55f41db1cbc95588068aa4b89a91456b

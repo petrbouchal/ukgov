@@ -47,8 +47,7 @@ timelines$newnow[timelines$firstseen == max(dates)] <- TRUE
 timelines$livenow[timelines$lastseen == max(dates)] <- TRUE
 
 # FIXME: THIS LINE DOESN'T WORK
-timelines$duration <- difftime(as.Date(timelines$lastseen) - as.Date(timelines$firstseen),
-                               "days")
+# timelines$duration <- difftime(as.Date(timelines$lastseen) - as.Date(timelines$firstseen),"days")
 
 timelines <- merge(timelines, vacp)
 counts <- ddply(timelines, .(Department), summarise, count=length(unique(jobid))) 
