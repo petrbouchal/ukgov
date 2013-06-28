@@ -67,12 +67,34 @@ ac_ch <- ac_ch[ac_ch$Date==2012,]
 
 # Build plot --------------------------------------------------------------
 
+# fix labels
+
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Administrative officers and assistants"] <- "AO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Executive officer"] <- "EO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior and higher executive officer"] <- "SEO/HEO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "All grades"
+
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to Â£20,000"] <- "< 20"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£20,001 - Â£30,000"] <- "20-30"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£30,001 - Â£40,000"] <- "30-40"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£40,001 - Â£50,000"] <- "40-50"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£50,001 - Â£60,000"] <- "50-60"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£60,001 - Â£70,000"] <- "60-70"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - Â£80,000"] <- "60-70"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than Â£80,000"] <- "> 80"
+
 #loadfonts()
 #loadfonts(device='win')
 #fonts()
 
+maxY <- max(abs(ac_ch$share),na.rm=TRUE)
+plottitle <- 'Civil Service pay by grade and gender'
+pwidth=9
+pheight=4
+
 fontfamily = 'Calibri'
-plotname <- './graphs/ACSES graphs/plot_GeGrPay.pdf'
+plotname <- './charts/ACSES charts/plot_GeGrPay.pdf'
 plot_GeGrPay <- ggplot(ac_ch, aes(Wage.band, share)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
 #  geom_line(aes(group=grp, col=Gender), size=2) +
@@ -87,8 +109,8 @@ plot_GeGrPay <- ggplot(ac_ch, aes(Wage.band, share)) +
   guides(col=guide_legend(ncol=3)) +
   theme_few() +
   scale_y_continuous(labels=c('20%','0','20%'),
-                     limits=c(-max(abs(ac_ch$share),na.rm=TRUE),
-                              max(abs(ac_ch$share),na.rm=TRUE)),
+                     limits=c(-maxY,
+                              maxY),
                      breaks=c(-.2,0,.2)) +
   #scale_x_discrete(labels = c('AO','EO','SEO/HEO','G6/7','SCS')) +
   theme(axis.text.x = element_text(angle = 0),
@@ -107,7 +129,7 @@ plot_GeGrPay <- ggplot(ac_ch, aes(Wage.band, share)) +
         plot.title=element_text(family=fontfamily,face='bold',size=20,
                                 lineheight=2.5, vjust=2)) +
   facet_wrap(~Civil.Service.grad, nrow=1) +
-  ggtitle('Civil Servants in Whitehall departments by grade and gender')
+  ggtitle(plottitle)
 
 # Draw plot ---------------------------------------------------------------
 
@@ -115,5 +137,5 @@ plot_GeGrPay
 
 # Save plot ---------------------------------------------------------------
 
-#ggsave(plotname, family=fontfamily, device=cairo_pdf)
+ggsave(plotname, family=fontfamily, device=cairo_pdf, width=pwidth, height=pheight)
 #embed_fonts(plotname, outfile=plotname)

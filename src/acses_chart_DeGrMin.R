@@ -63,15 +63,17 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 #loadfonts(device='win')
 fonts()
 
+plottitle='Share of minority Civil Servants in departments'
+
 fontfamily = 'Calibri'
 plotname <- './charts/ACSES charts/plot_DeGrMin.pdf'
 ac_ch$alpha <- 1
-ac_ch$alpha[ac_ch$Civil.Service.grad=='Total'] <- .6
+ac_ch$alpha[ac_ch$Civil.Service.grad=='Total'] <- .8
 
 maxY = max(abs(ac_ch$share),na.rm=TRUE)
 
 plot_DeGrMin <- ggplot(ac_ch,aes(Civil.Service.grad, share,alpha=alpha)) +
-  geom_bar(position='identity', width=.6,stat='identity',fill='#00ccff') +
+  geom_bar(position='identity', width=.6,stat='identity',fill='#00ccff',colour='#00ccff') +
 #  geom_line(aes(group=grp, col=Gender), size=2) +
 #  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
 #  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Male',]) +
@@ -90,7 +92,7 @@ plot_DeGrMin <- ggplot(ac_ch,aes(Civil.Service.grad, share,alpha=alpha)) +
   theme(axis.text.x = element_text(angle = 0),
         axis.text.y= element_text(vjust=0),
         legend.title=element_blank(),
-        legend.position='bottom',
+        legend.position='none',
         legend.direction='horizontal',
         legend.key.size=unit(.4,units='cm'),
         legend.text = element_text(vjust=1),
@@ -103,7 +105,7 @@ plot_DeGrMin <- ggplot(ac_ch,aes(Civil.Service.grad, share,alpha=alpha)) +
         plot.title=element_text(family=fontfamily,face='bold',size=20,
                                 lineheight=2.5, vjust=2)) +
   facet_wrap(~Group, nrow=3) +
-  ggtitle('Share of minority group Civil Servants in departments')
+  ggtitle(plottitle)
 
 
 # Draw plot ---------------------------------------------------------------

@@ -66,13 +66,15 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 #loadfonts(device='win')
 fonts()
 
+plottitle <- 'Civil Servants in Whitehall departments by grade and gender'
+
 fontfamily = 'Calibri'
-plotname <- './charts/ACSES charts/plot_DeGeGr.pdf'
+plotname <- './charts/ACSES charts/plot_DeGeGr2.pdf'
 plot_DeGeGr <- ggplot(ac_ch, aes(Civil.Service.grad, share)) +
-#  geom_bar(position='identity', width=.99, aes(fill=Gender),stat='identity') +
+  geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
 #  geom_line(aes(group=grp, col=Gender), size=2) +
-  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
-  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Male',]) +
+#  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
+#  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Male',]) +
 #  geom_point(aes(col=Gender), pch=21, size=2) +
 #  geom_point(col='white', pch=19, size=1.5) +
   coord_flip() +
@@ -102,7 +104,7 @@ plot_DeGeGr <- ggplot(ac_ch, aes(Civil.Service.grad, share)) +
         plot.title=element_text(family=fontfamily,face='bold',size=20,
                                 lineheight=2.5, vjust=2)) +
   facet_wrap(~Group, nrow=3) +
-  ggtitle('Civil Servants in Whitehall departments by grade and gender')
+  ggtitle(plottitle)
 
 
 # Draw plot ---------------------------------------------------------------

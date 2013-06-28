@@ -78,12 +78,16 @@ levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£60,001 - Â£70,000"] <- "
 levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - Â£80,000"] <- "60-70"
 levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than Â£80,000"] <- "> 80"
 
+plottitle='Civil Service pay in Whitehall departments by gender'
+pwidth=9
+pheight=6.5
+
 #loadfonts()
 #loadfonts(device='win')
 #fonts()
 
 fontfamily = 'Calibri'
-plotname <- './charts/ACSES charts/plot_DeGeGr.pdf'
+plotname <- './charts/ACSES charts/plot_DeGePay.pdf'
 
 plot_DeGeGr <- ggplot(ac_ch, aes(Wage.band, share)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
@@ -119,8 +123,7 @@ plot_DeGeGr <- ggplot(ac_ch, aes(Wage.band, share)) +
         plot.title=element_text(family=fontfamily,face='bold',size=20,
                                 lineheight=2.5, vjust=2)) +
   facet_wrap(~Group, nrow=3) +
-  ggtitle('Civil Service pay in Whitehall departments by gender')
-
+  ggtitle(plottitle)
 
 # Draw plot ---------------------------------------------------------------
 
@@ -130,5 +133,6 @@ plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------
 
-ggsave(plotname, family=fontfamily, device=cairo_pdf)
+ggsave(plotname, family=fontfamily, device=cairo_pdf,
+       height=pheight, width=pwidth)
 #embed_fonts(plotname, outfile=plotname)
