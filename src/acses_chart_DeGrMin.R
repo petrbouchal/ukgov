@@ -72,8 +72,8 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 #fonts()
 
 plottitle='Share of minority Civil Servants in departments'
-pheight = 6.5
-pwidth=9
+pheight = 6.3
+pwidth=9.7
 
 fontfamily = 'Calibri'
 plotname <- './charts/ACSES charts/plot_DeGrMin.pdf'
@@ -91,7 +91,7 @@ plot_DeGrMin <- ggplot(ac_ch,aes(Civil.Service.grad, share_2012, alpha=alpha,
   geom_bar(position='identity', width=.6,stat='identity',colour='#00ccff', fill='#00ccff') +
   geom_segment(aes(y=share_2008, yend=share_2012, xend=Civil.Service.grad, alpha=1),
                colour='#d40072', size=1,
-               arrow=arrow(length=unit(.1,'cm'),type='closed')) +
+               arrow=arrow(length=unit(.2,'cm'),type='closed')) +
   #geom_point(col='#d40072', pch=18, size=2.5, aes(alpha=1)) +
   coord_flip() +
   #scale_colour_manual(values=c('#d40072','#00ccff')) +
@@ -103,6 +103,7 @@ plot_DeGrMin <- ggplot(ac_ch,aes(Civil.Service.grad, share_2012, alpha=alpha,
                      labels=c('0','25%','50%')) +
   scale_x_discrete(labels = c('All grades','AO','EO','SEO/HEO','G6/7','SCS')) +
   theme(axis.text.x = element_text(angle = 0),
+        text=element_text(family=fontfamily),
         axis.text.y= element_text(vjust=0),
         legend.title=element_blank(),
         legend.position='none',
@@ -131,4 +132,5 @@ plot_DeGrMin
 
 ggsave(plotname, family=fontfamily, device=cairo_pdf,
        heigh=pheight, width=pwidth)
+dev.off()
 #embed_fonts(plotname, outfile=plotname)

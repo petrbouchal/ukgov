@@ -86,26 +86,22 @@ ac_ch$minpop <- .14
 maxY = max(abs(ac_ch$share),na.rm=TRUE)
 
 plot_DeGrMinYr <- ggplot(ac_ch,aes(as.factor(Date), share, group=grp)) +
-  geom_line(aes(y=minpop, group=grp, col='grey'), size=.5) +
-  geom_line(aes(group=grp, col=Civil.Service.grad), size=1.5) +
+  geom_line(aes(y=minpop, group=grp, colour='UK population'), size=.5) +
+  geom_line(aes(group=grp, col=Civil.Service.grad), size=1) +
 #  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
 #  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Male',]) +
 #  geom_point(aes(col=Gender), pch=21, size=2) +
-#  geom_bar(position='identity', width=.6,stat='identity',colour='#00ccff', fill='#00ccff') +
-#  geom_segment(aes(y=share_2008, yend=share_2012, xend=Civil.Service.grad, alpha=1),
-#               colour='#d40072', size=1,
-#               arrow=arrow(length=unit(.1,'cm'),type='closed')) +
-  #geom_point(col='#d40072', pch=18, size=2.5, aes(alpha=1)) +
 #  coord_flip() +
-  scale_colour_manual(values=c('#d40072','grey','#00ccff')) +
-  guides(colour = guide_legend(ncol = 1)) +
-  guides(col=guide_legend(ncol=3)) +
+  guides(fill=guide_legend(order=1), colour=guide_legend(order=2)) +
+  scale_colour_manual(values=c('All grades'='#d40072','UK population'='grey',
+                               'SCS'='#00ccff')) +
   theme_few() +
   scale_y_continuous(breaks=c(0,.25,.5),
-                     limits=c(0,1),
+                     limits=c(0,.5),
                      labels=c('0','25%','50%')) +
-  #scale_x_discrete(labels = c('All grades','AO','EO','SEO/HEO','G6/7','SCS')) +
+  #scale_x_discrete(labels = c('All grades','AO','EO','SEO/HEO','G 6/7','SCS')) +
   theme(axis.text.x = element_text(angle = 0),
+        text=element_text(family=fontfamily)
         axis.text.y= element_text(vjust=0),
         legend.title=element_blank(),
         legend.position='bottom',
@@ -116,7 +112,7 @@ plot_DeGrMinYr <- ggplot(ac_ch,aes(as.factor(Date), share, group=grp)) +
         axis.title=element_blank(),
         axis.text=element_text(colour='grey'),
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
-        strip.text=element_text(face='bold'),
+        strip.text=element_text(face='bold', size=unit(11,'pt')),
         panel.border=element_rect(colour='grey'),
         plot.title=element_text(family=fontfamily,face='bold',size=20,
                                 lineheight=2.5, vjust=2)) +
@@ -131,4 +127,5 @@ plot_DeGrMinYr
 
 ggsave(plotname, family=fontfamily, device=cairo_pdf,
        heigh=pheight, width=pwidth)
+dev.off
 #embed_fonts(plotname, outfile=plotname)
