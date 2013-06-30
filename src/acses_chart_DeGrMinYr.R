@@ -75,8 +75,8 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Civil.Service.grad)
 #fonts()
 
 plottitle='Share of minority Civil Servants in departments 2008-12, SCS and all'
-pheight = 6.5
-pwidth=9
+ph = 6.3
+pw = 9.7
 
 fontfamily = 'Calibri'
 plotname <- './charts/ACSES charts/plot_DeGrMinYr.pdf'
@@ -100,9 +100,10 @@ plot_DeGrMinYr <- ggplot(ac_ch,aes(as.factor(Date), share, group=grp)) +
                      limits=c(0,.5),
                      labels=c('0','25%','50%')) +
   #scale_x_discrete(labels = c('All grades','AO','EO','SEO/HEO','G 6/7','SCS')) +
-  theme(axis.text.x = element_text(angle = 0),
-        text=element_text(family=fontfamily)
-        axis.text.y= element_text(vjust=0),
+  theme(text=element_text(family=fontfamily),
+        axis.text = element_text(colour='grey',hjust=1),
+        axis.text.x= element_text(angle = 90,colour='grey',hjust=1),
+        axis.text.y= element_text(angle=0, colour='grey'),
         legend.title=element_blank(),
         legend.position='bottom',
         legend.direction='horizontal',
@@ -110,14 +111,13 @@ plot_DeGrMinYr <- ggplot(ac_ch,aes(as.factor(Date), share, group=grp)) +
         legend.text = element_text(vjust=1),
         axis.ticks=element_blank(),
         axis.title=element_blank(),
-        axis.text=element_text(colour='grey'),
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
         strip.text=element_text(face='bold', size=unit(11,'pt')),
         panel.border=element_rect(colour='grey'),
         plot.title=element_text(family=fontfamily,face='bold',size=20,
                                 lineheight=2.5, vjust=2)) +
-  facet_wrap(~Group, nrow=3) +
-  ggtitle(plottitle)
+  ggtitle(plottitle) +
+  facet_wrap(~Group, nrow=3)
 
 # Draw plot ---------------------------------------------------------------
 
@@ -125,7 +125,6 @@ plot_DeGrMinYr
 
 # Save plot ---------------------------------------------------------------
 
-ggsave(plotname, family=fontfamily, device=cairo_pdf,
-       heigh=pheight, width=pwidth)
+ggsave(plotname, family=fontfamily, device=cairo_pdf,heigh=ph, width=pw)
 dev.off
 #embed_fonts(plotname, outfile=plotname)

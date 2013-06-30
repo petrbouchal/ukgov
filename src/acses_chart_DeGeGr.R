@@ -4,11 +4,12 @@ library(scales)
 library(grid)
 library(ggthemes)
 library(extrafont)
+library(gridExtra)
 
 # Load data ---------------------------------------------------------------
 
-#path  <- '/Users/petrbouchal/Downloads/ACSES/'
-path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
+path  <- '/Users/petrbouchal/Downloads/ACSES/'
+#path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 fullpath <- paste0(path, filename)
 acses <- read.delim(fullpath, sep='\t')
@@ -67,6 +68,8 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 fonts()
 
 plottitle <- 'Civil Servants in Whitehall departments by grade and gender'
+ph=6.3
+pw=9.7
 
 fontfamily = 'Calibri'
 plotname <- './charts/ACSES charts/plot_DeGeGr2.pdf'
@@ -78,8 +81,8 @@ plot_DeGeGr <- ggplot(ac_ch, aes(Civil.Service.grad, share)) +
 #  geom_point(aes(col=Gender), pch=21, size=2) +
 #  geom_point(col='white', pch=19, size=1.5) +
   coord_flip() +
-  scale_fill_manual(values=c('#d40072','#00ccff')) +
-  scale_colour_manual(values=c('#d40072','#00ccff')) +
+  scale_fill_manual(values=c('#d40072','#00ccff'),
+                    labels=c('Female   ', 'Male')) +
   guides(colour = guide_legend(ncol = 1)) +
   guides(col=guide_legend(ncol=3)) +
   theme_few() +
@@ -88,32 +91,32 @@ plot_DeGeGr <- ggplot(ac_ch, aes(Civil.Service.grad, share)) +
                               max(abs(ac_ch$share),na.rm=TRUE)),
                      labels=c('20%','0','20%')) +
   scale_x_discrete(labels = c('AO','EO','SEO/HEO','G6/7','SCS')) +
-  theme(axis.text.x = element_text(angle = 0),
+  theme(text = element_text(family=fontfamily),
+        axis.text = element_text(colour='grey'),
+        axis.text.x = element_text(angle = 0),
+        axis.ticks=element_blank(),
         axis.text.y= element_text(vjust=0),
+        axis.title=element_blank(),
         legend.title=element_blank(),
         legend.position='bottom',
         legend.direction='horizontal',
         legend.key.size=unit(.4,units='cm'),
         legend.text = element_text(vjust=1),
-        axis.ticks=element_blank(),
-        axis.title=element_blank(),
-        axis.text=element_text(colour='grey'),
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
-        strip.text=element_text(face='bold'),
         panel.border=element_rect(colour='grey'),
+        strip.text=element_text(face='bold'),
+        plot.margin=unit(c(1,1,1,0),'cm'),
         plot.title=element_text(family=fontfamily,face='bold',size=20,
                                 lineheight=2.5, vjust=2)) +
+  annotate("text", label = "Breached", x = 0, y = 0) +
   facet_wrap(~Group, nrow=3) +
   ggtitle(plottitle)
 
-
 # Draw plot ---------------------------------------------------------------
-
 
 plot_DeGeGr
 
-
 # Save plot ---------------------------------------------------------------
 
-ggsave(plotname, family=fontfamily, device=cairo_pdf)
+ggsave(plotname, family=fontfamily, device=cairo_pdf, height=ph, width=pw)
 #embed_fonts(plotname, outfile=plotname)
