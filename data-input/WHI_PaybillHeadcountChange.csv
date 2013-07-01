@@ -1,0 +1,98 @@
+Department,Quarter,Paybill,Headcount,Paybill without outliers,Headcount without outliers
+Cabinet Office,2011 Q4,,,,
+"Department for Business, Innovation & Skills",2011 Q4,,,,
+Department for Communities & Local Government,2011 Q4,,,,
+"Department for Culture, Media and Sport",2011 Q4,,,,
+"Department for Culture, Media and Sport",2012 Q1,,,,
+"Department for Culture, Media and Sport",2012 Q2,,,,
+"Department for Culture, Media and Sport",2012 Q3,,,,
+"Department for Culture, Media and Sport",2012 Q4,,,,
+"Department for Culture, Media and Sport",2013 Q1,,,,
+Department for Education,2011 Q4,,,,
+"Department for Environment, Food & Rural Affairs",2011 Q4,,,,
+"Department for Environment, Food & Rural Affairs",2012 Q1,,,,
+"Department for Environment, Food & Rural Affairs",2012 Q2,,,,
+"Department for Environment, Food & Rural Affairs",2012 Q3,,,,
+"Department for Environment, Food & Rural Affairs",2012 Q4,,,,
+"Department for Environment, Food & Rural Affairs",2013 Q1,,,,
+Department for International Development,2011 Q4,,,,
+Department for Transport,2011 Q4,,,,
+Department for Work & Pensions,2011 Q4,,,,
+Department of Energy & Climate Change,2011 Q4,,,,
+Department of Health,2011 Q4,,,,
+Department of Health,2012 Q4,-1.00000,-1.00000,,
+Department of Health,2013 Q1,-1.00000,-1.00000,,
+HM Revenue & Customs,2011 Q4,,,,
+HM Treasury,2011 Q4,,,,
+HM Treasury,2013 Q1,-0.65376,-0.66568,,
+Home Office,2011 Q4,,,,
+Home Office,2012 Q2,1.10569,1.77304,,
+Home Office,2012 Q3,1.46154,1.80766,,
+Home Office,2012 Q4,2.41054,2.88634,,
+Home Office,2013 Q1,2.17958,2.94542,,
+Ministry of Defence,2011 Q4,,,,
+Ministry of Justice,2011 Q4,,,,
+Ministry of Defence,2012 Q2,-0.64943,-0.02816,,-0.02816
+Home Office,2012 Q1,0.05318,0.89935,0.05318,
+Cabinet Office,2012 Q1,-0.01291,0.03297,-0.01291,0.03297
+Cabinet Office,2012 Q2,0.01875,0.06184,0.01875,0.06184
+Cabinet Office,2012 Q3,0.11036,0.10778,0.11036,0.10778
+Cabinet Office,2012 Q4,0.20379,0.17588,0.20379,0.17588
+Cabinet Office,2013 Q1,0.16928,0.19281,0.16928,0.19281
+"Department for Business, Innovation & Skills",2012 Q1,0.00185,0.00767,0.00185,0.00767
+"Department for Business, Innovation & Skills",2012 Q2,-0.02631,-0.02334,-0.02631,-0.02334
+"Department for Business, Innovation & Skills",2012 Q3,0.03092,0.02117,0.03092,0.02117
+"Department for Business, Innovation & Skills",2012 Q4,0.05105,0.03858,0.05105,0.03858
+"Department for Business, Innovation & Skills",2013 Q1,0.15149,0.04617,0.15149,0.04617
+Department for Communities & Local Government,2012 Q1,0.02539,-0.03976,0.02539,-0.03976
+Department for Communities & Local Government,2012 Q2,0.01929,-0.04447,0.01929,-0.04447
+Department for Communities & Local Government,2012 Q3,0.00325,-0.04575,0.00325,-0.04575
+Department for Communities & Local Government,2012 Q4,-0.05801,-0.12836,-0.05801,-0.12836
+Department for Communities & Local Government,2013 Q1,0.02025,-0.12065,0.02025,-0.12065
+Department for Education,2012 Q1,0.00201,0.02492,0.00201,0.02492
+Department for Education,2012 Q2,-0.01564,0.03143,-0.01564,0.03143
+Department for Education,2012 Q3,0.01681,0.00668,0.01681,0.00668
+Department for Education,2012 Q4,-0.00499,0.00892,-0.00499,0.00892
+Department for Education,2013 Q1,0.05287,0.00158,0.05287,0.00158
+Department for International Development,2012 Q1,0.08935,0.02754,0.08935,0.02754
+Department for International Development,2012 Q2,-0.00894,0.02176,-0.00894,0.02176
+Department for International Development,2012 Q3,-0.03261,0.03061,-0.03261,0.03061
+Department for International Development,2012 Q4,0.05414,0.07583,0.05414,0.07583
+Department for International Development,2013 Q1,0.15700,0.09684,0.15700,0.09684
+Department for Transport,2012 Q1,-0.02448,-0.01815,-0.02448,-0.01815
+Department for Transport,2012 Q2,-0.08981,0.00945,-0.08981,0.00945
+Department for Transport,2012 Q3,-0.05125,-0.00522,-0.05125,-0.00522
+Department for Transport,2012 Q4,-0.07629,0.01143,-0.07629,0.01143
+Department for Transport,2013 Q1,-0.09997,0.01993,-0.09997,0.01993
+Department for Work & Pensions,2012 Q1,0.00222,-0.01532,0.00222,-0.01532
+Department for Work & Pensions,2012 Q2,-0.29977,-0.31085,-0.29977,-0.31085
+Department for Work & Pensions,2012 Q3,-0.26046,-0.28401,-0.26046,-0.28401
+Department for Work & Pensions,2012 Q4,0.06977,0.04447,0.06977,0.04447
+Department for Work & Pensions,2013 Q1,0.06331,0.03141,0.06331,0.03141
+Department of Energy & Climate Change,2012 Q1,0.02782,0.03692,0.02782,0.03692
+Department of Energy & Climate Change,2012 Q2,0.01411,0.02735,0.01411,0.02735
+Department of Energy & Climate Change,2012 Q3,0.09389,0.00448,0.09389,0.00448
+Department of Energy & Climate Change,2012 Q4,0.18642,0.13043,0.18642,0.13043
+Department of Energy & Climate Change,2013 Q1,0.12477,0.14107,0.12477,0.14107
+Department of Health,2012 Q1,-0.01270,-0.01778,-0.01270,-0.01778
+Department of Health,2012 Q2,0.01315,-0.01221,0.01315,-0.01221
+Department of Health,2012 Q3,0.00841,-0.01319,0.00841,-0.01319
+HM Revenue & Customs,2012 Q1,0.00166,-0.00390,0.00166,-0.00390
+HM Revenue & Customs,2012 Q2,0.01678,-0.00543,0.01678,-0.00543
+HM Revenue & Customs,2012 Q3,-0.00714,-0.01855,-0.00714,-0.01855
+HM Revenue & Customs,2012 Q4,-0.02069,-0.03875,-0.02069,-0.03875
+HM Revenue & Customs,2013 Q1,-0.01439,-0.03981,-0.01439,-0.03981
+HM Treasury,2012 Q1,0.05835,0.03902,0.05835,0.03902
+HM Treasury,2012 Q2,-0.00925,0.01094,-0.00925,0.01094
+HM Treasury,2012 Q3,0.05802,0.00916,0.05802,0.00916
+HM Treasury,2012 Q4,-0.00321,0.01035,-0.00321,0.01035
+Ministry of Defence,2012 Q1,-0.02332,-0.03907,-0.02332,-0.03907
+Ministry of Defence,2012 Q3,-0.04711,-0.05090,-0.04711,-0.05090
+Ministry of Defence,2012 Q4,-0.11504,-0.11880,-0.11504,-0.11880
+Ministry of Defence,2013 Q1,-0.11350,-0.13693,-0.11350,-0.13693
+Ministry of Justice,2012 Q1,0.24163,-0.01829,0.24163,-0.01829
+Ministry of Justice,2012 Q2,0.19557,0.01932,0.19557,0.01932
+Ministry of Justice,2012 Q3,0.13472,0.01472,0.13472,0.01472
+Ministry of Justice,2012 Q4,0.19000,0.03354,0.19000,0.03354
+Ministry of Justice,2013 Q1,0.15728,0.03388,0.15728,0.03388
+Foreign and Commonwealth office,2013 Q1,,,0.00000,

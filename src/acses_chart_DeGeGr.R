@@ -81,11 +81,7 @@ fontfamily = 'Calibri'
 plotname <- './charts/ACSES charts/plot_DeGeGr2.pdf'
 plot_DeGeGr <- ggplot(ac_ch, aes(Civil.Service.grad, share)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
-#  geom_line(aes(group=grp, col=Gender), size=2) +
 #  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
-#  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Male',]) +
-#  geom_point(aes(col=Gender), pch=21, size=2) +
-#  geom_point(col='white', pch=19, size=1.5) +
   coord_flip() +
   scale_fill_manual(values=c('#d40072','#00ccff'),
                     labels=c('Female   ', 'Male')) +

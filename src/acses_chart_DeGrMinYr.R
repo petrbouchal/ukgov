@@ -8,8 +8,8 @@ library(reshape2)
 
 # Load data ---------------------------------------------------------------
 
-path  <- '/Users/petrbouchal/Downloads/ACSES/'
-#path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
+#path  <- '/Users/petrbouchal/Downloads/ACSES/'
+path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
 filename <- 'ACSES_Gender_Dept_Ethn_Grade_Pay_data.tsv'
 fullpath <- paste0(path, filename)
 acses <- read.delim(fullpath, sep='\t')
