@@ -10,8 +10,8 @@ library(extrafont)
 
 # Load data ---------------------------------------------------------------
 
-#path  <- '/Users/petrbouchal/Downloads/ACSES/'
-path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
+path  <- '/Users/petrbouchal/Downloads/ACSES/'
+#path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 fullpath <- paste0(path, filename)
 acses <- read.delim(fullpath, sep='\t')
@@ -73,6 +73,9 @@ ac_ch <- ac_ch[ac_ch$Date==2012 | ac_ch$Date==2010,]
 fontfamily = 'Calibri'
 plotname <- './graphs/ACSES graphs/plot_GrPayYr.pdf'
 
+pw='9.7'
+ph='3.15'
+
 # fix labels
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Administrative officers and assistants"] <- "AO"
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Executive officer"] <- "EO"
@@ -80,14 +83,23 @@ levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior and h
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "All grades"
 
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to Â£20,000"] <- "< 20"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£20,001 - Â£30,000"] <- "20-30"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£30,001 - Â£40,000"] <- "30-40"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£40,001 - Â£50,000"] <- "40-50"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£50,001 - Â£60,000"] <- "50-60"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£60,001 - Â£70,000"] <- "60-70"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - Â£80,000"] <- "60-70"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than Â£80,000"] <- "> 80"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to Â£20,000"] <- "< 20"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£20,001 - Â£30,000"] <- "20-30"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£30,001 - Â£40,000"] <- "30-40"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£40,001 - Â£50,000"] <- "40-50"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£50,001 - Â£60,000"] <- "50-60"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£60,001 - Â£70,000"] <- "60-70"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - Â£80,000"] <- "60-70"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than Â£80,000"] <- "> 80"
+
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to £20,000"] <- "< 20"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£20,001 - £30,000"] <- "20-30"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£30,001 - £40,000"] <- "30-40"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£40,001 - £50,000"] <- "40-50"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£50,001 - £60,000"] <- "50-60"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£60,001 - £70,000"] <- "60-70"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£70,001 - £80,000"] <- "60-70"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than £80,000"] <- "> 80"
 
 maxY <- max(abs(ac_ch$share),na.rm=TRUE)
 
@@ -108,27 +120,24 @@ plot_GrPayYr <- ggplot(ac_ch, aes(Wage.band, share)) +
                      breaks=c(-.5,0,.5),
                      limits=c(-maxY, maxY)) +
   #scale_x_discrete(labels = c('AO','EO','SEO/HEO','G6/7','SCS')) +
-  theme(axis.text.x = element_text(angle = 0),
-        axis.text.y= element_text(vjust=0),
+  theme(text=element_text(family=fontfamily),
+        axis.text=element_text(colour='grey'),
+        axis.title=element_text(colour='grey'),
+        axis.ticks=element_blank(),
         legend.title=element_blank(),
         legend.position='bottom',
         legend.direction='horizontal',
         legend.key.size=unit(.4,units='cm'),
         legend.text = element_text(vjust=1),
-        axis.ticks=element_blank(),
-        axis.ticks=element_line(colour='white',size=3),
-        axis.ticks.length=unit(-.1,'cm'),
-        axis.ticks.margin=unit(.25,'cm'),
-        axis.title=element_blank(),
-        axis.text=element_text(colour='grey'),
-        axis.text.x=element_text(colour='black'),
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
         strip.text=element_text(face='bold'),
         panel.border=element_rect(colour='grey'),
         plot.title=element_text(family=fontfamily,face='bold',size=20,
                                 lineheight=2.5, vjust=2)) +
   facet_wrap(~Civil.Service.grad, nrow=1) +
-  ggtitle('Civil Service pay by grade, 2010 and 2012')
+  ggtitle('Civil Service pay by grade, 2010 and 2012') +
+  xlab("Salary range, £000") +
+  ylab('Staff in grade and pay range, as proportion of department')
 
 # Draw plot ---------------------------------------------------------------
 
@@ -136,5 +145,5 @@ plot_GrPayYr
 
 # Save plot ---------------------------------------------------------------
 
-#ggsave(plotname, family=fontfamily, device=cairo_pdf)
+#ggsave(plotname, family=fontfamily, device=cairo_pdf, width=pw, height=ph)
 #embed_fonts(plotname, outfile=plotname)

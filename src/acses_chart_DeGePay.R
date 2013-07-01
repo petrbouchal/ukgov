@@ -7,14 +7,13 @@ library(extrafont)
 
 # Load data ---------------------------------------------------------------
 
-#path  <- '/Users/petrbouchal/Downloads/ACSES/'
-path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
+path  <- '/Users/petrbouchal/Downloads/ACSES/'
+#path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 fullpath <- paste0(path, filename)
 acses <- read.delim(fullpath, sep='\t')
 acses$value[acses$value=='#'] <- NA
 acses$value[acses$value=='..'] <- NA
-
 
 # LOAD DATA WITH GROUPINGS AND FILTER - MADE IN EXCEL
 orgs <- read.csv('./data-input/acses_orgs.csv')
@@ -22,7 +21,8 @@ orgs <- read.csv('./data-input/acses_orgs.csv')
 # Process data ------------------------------------------------------------
 
 # FILTER OUT GRADE LINES
-ac_ch <- acses[acses$Civil.Service.grad=='Total',]
+ac_ch <- acses
+ac_ch <- ac_ch[ac_ch$Civil.Service.grad=='Total',]
 
 # RENAME Org variable
 ac_ch$Organisation <- ac_ch$new1
@@ -69,18 +69,27 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 
 # fix labels
 
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to Â£20,000"] <- "< 20"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£20,001 - Â£30,000"] <- "20-30"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£30,001 - Â£40,000"] <- "30-40"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£40,001 - Â£50,000"] <- "40-50"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£50,001 - Â£60,000"] <- "50-60"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£60,001 - Â£70,000"] <- "60-70"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - Â£80,000"] <- "60-70"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than Â£80,000"] <- "> 80"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to £20,000"] <- "< 20"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£20,001 - £30,000"] <- "20-30"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£30,001 - £40,000"] <- "30-40"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£40,001 - £50,000"] <- "40-50"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£50,001 - £60,000"] <- "50-60"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£60,001 - £70,000"] <- "60-70"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£70,001 - £80,000"] <- "60-70"
+levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than £80,000"] <- "> 80"
+
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to £20,000"] <- "< 20"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£20,001 - £30,000"] <- "20-30"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£30,001 - £40,000"] <- "30-40"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£40,001 - £50,000"] <- "40-50"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£50,001 - £60,000"] <- "50-60"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£60,001 - £70,000"] <- "60-70"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - £80,000"] <- "60-70"
+# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than £80,000"] <- "> 80"
 
 plottitle='Civil Service pay in Whitehall departments by gender'
-pwidth=9
-pheight=6.5
+pw=9.7
+ph=6.3
 
 #loadfonts()
 #loadfonts(device='win')
@@ -89,16 +98,12 @@ pheight=6.5
 fontfamily = 'Calibri'
 plotname <- './charts/ACSES charts/plot_DeGePay.pdf'
 
-plot_DeGeGr <- ggplot(ac_ch, aes(Wage.band, share)) +
+plot_DeGePay <- ggplot(ac_ch, aes(Wage.band, share)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
-#  geom_line(aes(group=grp, col=Gender), size=2) +
 #  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
-#  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Male',]) +
-#  geom_point(aes(col=Gender), pch=21, size=2) +
-#  geom_point(col='white', pch=19, size=1.5) +
   coord_flip() +
-  scale_fill_manual(values=c('#d40072','#00ccff')) +
-  scale_colour_manual(values=c('#d40072','#00ccff')) +
+  scale_fill_manual(values=c('#d40072','#00ccff'),
+                    labels=c('Female   ', 'Male')) +
   guides(colour = guide_legend(ncol = 1)) +
   guides(col=guide_legend(ncol=3)) +
   theme_few() +
@@ -107,32 +112,34 @@ plot_DeGeGr <- ggplot(ac_ch, aes(Wage.band, share)) +
                               max(abs(ac_ch$share),na.rm=TRUE)),
                      labels=c('20%','0','20%')) +
 #  scale_x_discrete(labels = c('AO','EO','SEO/HEO','G6/7','SCS')) +
-  theme(axis.text.x = element_text(angle = 0),
+  theme(text = element_text(family=fontfamily,size=10),
+        axis.text=element_text(colour='grey'),
+        axis.text.x = element_text(angle = 0),
         axis.text.y= element_text(vjust=0),
+        axis.ticks=element_blank(),
+        axis.title=element_text(colour='grey'),
         legend.title=element_blank(),
         legend.position='bottom',
         legend.direction='horizontal',
-        legend.key.size=unit(.4,units='cm'),
+        legend.key.size=unit(.3,units='cm'),
         legend.text = element_text(vjust=1),
-        axis.ticks=element_blank(),
-        axis.title=element_blank(),
-        axis.text=element_text(colour='grey'),
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
-        strip.text=element_text(face='bold'),
         panel.border=element_rect(colour='grey'),
-        plot.title=element_text(family=fontfamily,face='bold',size=20,
+        plot.margin=unit(c(1,1,1,0),'cm'),
+        strip.text=element_text(face='bold',size=12),
+        plot.title=element_text(family=fontfamily,face='bold',size=14,
                                 lineheight=2.5, vjust=2)) +
   facet_wrap(~Group, nrow=3) +
-  ggtitle(plottitle)
-
-# Draw plot ---------------------------------------------------------------
-
-
-plot_DeGeGr
-
+  ggtitle(plottitle) +
+  xlab("Salary range, £000") +
+  ylab('Staff in grade and pay range, as proportion of all staff in department')
 
 # Save plot ---------------------------------------------------------------
 
-ggsave(plotname, family=fontfamily, device=cairo_pdf,
-       height=pheight, width=pwidth)
+ggsave(plot=plot_DeGePay,filename=plotname, family=fontfamily, device=cairo_pdf, height=ph, width=pw)
 #embed_fonts(plotname, outfile=plotname)
+dev.off()
+
+# Draw plot ---------------------------------------------------------------
+
+plot_DeGePay

@@ -67,70 +67,72 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 
 # Build plot --------------------------------------------------------------
 
+# fix labe;s
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Administrative officers and assistants"] <- "AO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Executive officer"] <- "EO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior and higher executive officer"] <- "SEO/HEO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "All grades"
+
 #loadfonts()
 #loadfonts(device='win')
 #fonts()
 
-plottitle='Share of minority Civil Servants in departments'
-pheight = 6.3
-pwidth=9.7
+plottitle='Share of minority Civil Servants in departments by grade, 2010-12'
+ph = 6.3
+pw = 9.7
 
 fontfamily = 'Calibri'
 plotname <- './charts/ACSES charts/plot_DeGrMin.pdf'
-ac_ch$alpha <- 1
-ac_ch$alpha[ac_ch$Civil.Service.grad=='Total'] <- .8
+ac_ch$trans <- 1
+ac_ch$trans[ac_ch$Civil.Service.grad=='All grades'] <- .9999
 
 maxY = max(abs(ac_ch$share_2012),na.rm=TRUE)
 
-plot_DeGrMin <- ggplot(ac_ch,aes(Civil.Service.grad, share_2012, alpha=alpha,
-                                 fill=sharediff)) +
-#  geom_line(aes(group=grp, col=Gender), size=2) +
-#  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
+plot_DeGrMin <- ggplot(ac_ch,aes(Civil.Service.grad, share_2012)) +
 #  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Male',]) +
-#  geom_point(aes(col=Gender), pch=21, size=2) +
-  geom_bar(position='identity', width=.6,stat='identity',colour='#00ccff', fill='#00ccff') +
+  geom_bar(position='identity', width=.6,stat='identity',aes(alpha=trans),fill='#00ccff') +
   geom_segment(aes(y=share_2008, yend=share_2012, xend=Civil.Service.grad, alpha=1),
-               colour='#d40072', size=1,
-               arrow=arrow(length=unit(.2,'cm'),type='closed')) +
-  #geom_point(col='#d40072', pch=18, size=2.5, aes(alpha=1)) +
+               size=1,
+               arrow=arrow(length=unit(.1,'cm'),type='closed'),colour='#d40072') +
+  scale_colour_manual(values=c('#d40072','#00ccff'),guide='legend') +
+  scale_fill_manual(values=c('#00ccff','#d40072'),guide='legend') +
+  scale_alpha_continuous(guide='none') +
+  guides(colour=guide_legend(),fill=guide_legend()) +
   coord_flip() +
-  #scale_colour_manual(values=c('#d40072','#00ccff')) +
-  guides(colour = guide_legend(ncol = 1)) +
-  guides(col=guide_legend(ncol=3)) +
   theme_few() +
   scale_y_continuous(breaks=c(0,.25,.5),
                      limits=c(0,maxY),
                      labels=c('0','25%','50%')) +
-  scale_x_discrete(labels = c('All grades','AO','EO','SEO/HEO','G6/7','SCS')) +
-  theme(axis.text.x = element_text(angle = 0),
-        text=element_text(family=fontfamily),
-        axis.text.y= element_text(vjust=0),
-        legend.title=element_blank(),
-        legend.position='none',
-        legend.direction='horizontal',
-        legend.key.size=unit(.4,units='cm'),
-        legend.text = element_text(vjust=1),
-        axis.ticks=element_blank(),
-        axis.title=element_blank(),
+  theme(line=element_line(lineend='square'),
+        text = element_text(family=fontfamily,size=10),
         axis.text=element_text(colour='grey'),
+        axis.text.x = element_text(angle = 0),
+        axis.text.y= element_text(vjust=0),
+        axis.ticks=element_blank(),
+        axis.title=element_text(colour='grey'),
+        axis.title.y=element_blank(),
+#        legend.title=element_blank(),
+        legend.position='bottom',
+        legend.direction='horizontal',
+        legend.key.size=unit(.3,units='cm'),
+        legend.text = element_text(vjust=1),
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
-        strip.text=element_text(face='bold'),
         panel.border=element_rect(colour='grey'),
-        plot.title=element_text(family=fontfamily,face='bold',size=20,
+        plot.margin=unit(c(1,1,1,0),'cm'),
+        strip.text=element_text(face='bold',size=12),
+        plot.title=element_text(family=fontfamily,face='bold',size=14,
                                 lineheight=2.5, vjust=2)) +
   facet_wrap(~Group, nrow=3) +
-  ggtitle(plottitle)
-
-
-# Draw plot ---------------------------------------------------------------
-
-
-plot_DeGrMin
-
+  ggtitle(plottitle) +
+  ylab('Minority staff as proportion of those declaring ethnicity')
 
 # Save plot ---------------------------------------------------------------
 
-ggsave(plotname, family=fontfamily, device=cairo_pdf,
-       heigh=pheight, width=pwidth)
+ggsave(plot=plot_DeGrMin,filename=plotname, family=fontfamily, device=cairo_pdf,heigh=ph, width=pw)
 dev.off()
 #embed_fonts(plotname, outfile=plotname)
+
+# Draw plot ---------------------------------------------------------------
+
+plot_DeGrMin

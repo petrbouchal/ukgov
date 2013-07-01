@@ -16,14 +16,14 @@ acses <- read.delim(fullpath, sep='\t')
 acses$value[acses$value=='#'] <- NA
 acses$value[acses$value=='..'] <- NA
 
-
 # LOAD DATA WITH GROUPINGS AND FILTER - MADE IN EXCEL
 orgs <- read.csv('./data-input/acses_orgs.csv')
 
 # Process data ------------------------------------------------------------
 
 # FILTER OUT WAGE BAND LINES
-ac_ch <- acses[acses$Wage.band=='Total',]
+ac_ch <- acses
+ac_ch <- ac_ch[ac_ch$Wage.band=='Total',]
 
 # RENAME Org variable
 ac_ch$Organisation <- ac_ch$new1
@@ -65,7 +65,13 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 
 #loadfonts()
 #loadfonts(device='win')
-fonts()
+#fonts()
+
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Administrative officers and assistants"] <- "AO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Executive officer"] <- "EO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior and higher executive officer"] <- "SEO/HEO"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
+levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "All grades"
 
 plottitle <- 'Civil Servants in Whitehall departments by grade and gender'
 ph=6.3
@@ -90,33 +96,35 @@ plot_DeGeGr <- ggplot(ac_ch, aes(Civil.Service.grad, share)) +
                      limits=c(-max(abs(ac_ch$share),na.rm=TRUE),
                               max(abs(ac_ch$share),na.rm=TRUE)),
                      labels=c('20%','0','20%')) +
-  scale_x_discrete(labels = c('AO','EO','SEO/HEO','G6/7','SCS')) +
-  theme(text = element_text(family=fontfamily),
+  theme(text = element_text(family=fontfamily,size=10),
         axis.text = element_text(colour='grey'),
         axis.text.x = element_text(angle = 0),
         axis.ticks=element_blank(),
         axis.text.y= element_text(vjust=0),
-        axis.title=element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_text(colour='grey'),
         legend.title=element_blank(),
         legend.position='bottom',
         legend.direction='horizontal',
-        legend.key.size=unit(.4,units='cm'),
+        legend.key.size=unit(.3,units='cm'),
         legend.text = element_text(vjust=1),
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
         panel.border=element_rect(colour='grey'),
-        strip.text=element_text(face='bold'),
+        strip.text=element_text(face='bold',size=12),
         plot.margin=unit(c(1,1,1,0),'cm'),
-        plot.title=element_text(family=fontfamily,face='bold',size=20,
+        plot.title=element_text(family=fontfamily,face='bold',size=14,
                                 lineheight=2.5, vjust=2)) +
-  annotate("text", label = "Breached", x = 0, y = 0) +
+  #annotate("text", label = "Breached", x = 0, y = 0) +
   facet_wrap(~Group, nrow=3) +
-  ggtitle(plottitle)
+  ggtitle(plottitle) +
+  ylab('Staff in grade, as proportion of all staff in department')
+
+# Save plot ---------------------------------------------------------------
+
+ggsave(plot = plot_DeGeGr, filename=plotname, family=fontfamily, device=cairo_pdf, height=ph, width=pw)
+#embed_fonts(plotname, outfile=plotname)
+dev.off()
 
 # Draw plot ---------------------------------------------------------------
 
 plot_DeGeGr
-
-# Save plot ---------------------------------------------------------------
-
-ggsave(plotname, family=fontfamily, device=cairo_pdf, height=ph, width=pw)
-#embed_fonts(plotname, outfile=plotname)
