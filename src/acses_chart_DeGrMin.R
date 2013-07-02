@@ -58,9 +58,11 @@ ac_ch <- melt(ac_ch, id.vars=c('Group','Date','Ethnic.grou','Civil.Service.grad'
 ac_ch <- dcast(ac_ch, ... ~ variable + Date, drop=TRUE)
 ac_ch$sharediff <- (ac_ch$share_2012 - ac_ch$share_2008)
 
-# Filter out unneeded things
+#Sort levels
 ac_ch$Civil.Service.grad = factor(ac_ch$Civil.Service.grad,
                                   levels(ac_ch$Civil.Service.grad)[c(7,1,2,4,5,3,6)])
+
+# Filter out unneeded things
 ac_ch <- ac_ch[ac_ch$Civil.Service.grad!='Not reported',]
 ac_ch <- ac_ch[ac_ch$Ethnic.grou!='White',]
 ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
