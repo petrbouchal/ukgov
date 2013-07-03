@@ -20,14 +20,14 @@ acses$value[acses$value=='..'] <- NA
 orgs <- read.csv('./data-input/acses_orgs.csv')
 
 # Process data ------------------------------------------------------------
+
+# FILTER OUT WAGE BAND LINES
 ac_ch <- acses
+ac_ch <- ac_ch[ac_ch$Wage.band=='Total',]
 
 # RENAME Org variable
 ac_ch$Organisation <- ac_ch$new1
 ac_ch$new1 <- NULL
-
-# FILTER OUT WAGE BAND LINES
-ac_ch <- ac_ch[ac_ch$Wage.band=='Total',]
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
 ac_ch <- merge(ac_ch,orgs, all.x=TRUE)
@@ -37,16 +37,16 @@ ac_ch$value <- as.numeric(as.character(ac_ch$value))
 ac_ch <- unique(ac_ch) # removes duplicate lines for DfE and GEO
 
 # CREATE TOTALS PER GROUP
-totals <- ac_ch[ac_ch$Civil.Service.grad=='Total',]
+dept_tot <- ac_ch[ac_ch$Civil.Service.grad=='Total',]
 ac_ch <- ac_ch[ac_ch$Civil.Service.grad!='Total',]
 ac_ch <- ddply(ac_ch, .(Group, Gender, Date, Civil.Service.grad),
                summarise, count=sum(value, na.rm=TRUE))
 
-totals <- ddply(totals, .(Group, Date), summarise,
+dept_tot <- ddply(dept_tot, .(Group, Date), summarise,
                   total=sum(value, na.rm=TRUE))
 
 # MERGE TOTALS INTO MAIN FILE
-ac_ch <- merge(ac_ch, totals)
+ac_ch <- merge(ac_ch, dept_tot)
 ac_ch$share <- ac_ch$count/ac_ch$total
 
 # Make female share negative
