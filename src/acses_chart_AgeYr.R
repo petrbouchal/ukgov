@@ -89,6 +89,8 @@ plot_AgeYr <- ggplot(ac_ch, aes(x=Age.band, y=count)) +
 #             aes(fill=as.factor(Date),group=Date,alpha=transp,order=-Date)) +
 #   geom_line(position='identity',stat='identity',aes(fill=as.factor(Date),group=Date,
 #             colour=as.factor(Date)),size=1) +
+  geom_bar(position='identity', width=.9,data=ac_ch[ac_ch$Date==2010,],
+           aes(fill=Gender),stat='identity',alpha=.4) +
   geom_bar(position='identity', width=.9,data=ac_ch[ac_ch$Date==2012,],
            aes(fill=Gender),stat='identity') +
   geom_point(data=ac_ch[ac_ch$Date==2010,],aes(pch='2010'),
