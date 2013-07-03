@@ -8,8 +8,8 @@ library(reshape2)
 
 # Load data ---------------------------------------------------------------
 
-#path  <- '/Users/petrbouchal/Downloads/ACSES/'
-path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
+path  <- '/Users/petrbouchal/Downloads/ACSES/'
+#path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
 filename <- 'ACSES_Gender_Dept_Ethn_Grade_Pay_data.tsv'
 fullpath <- paste0(path, filename)
 acses <- read.delim(fullpath, sep='\t')
@@ -89,12 +89,17 @@ maxY = max(abs(ac_ch$share),na.rm=TRUE)
 plot_GrMinYr <- ggplot(ac_ch,aes(as.factor(Date), share)) +
   geom_line(aes(colour=Civil.Service.grad,group=Civil.Service.grad),
            size=1, stat='identity') +
-  geom_line(aes(y=minpop, colour='UK population (2011)',group=Civil.Service.grad), stat='identity', size=1) +
-  guides(fill=guide_legend(order=1), colour=guide_legend(order=2)) +
-  scale_colour_manual(values=c('All grades'='#d40072','UK population (2011)'='grey',
+  geom_line(aes(y=minpop,group=Civil.Service.grad,linetype='UK Population (2011)'),
+            colour='grey',show_guide=T,
+            stat='identity', size=1) +
+  scale_colour_manual(values=c('All grades'='#d40072',
                                'SCS'='#00ccff')) +
-  scale_fill_manual(values=c('All grades'='#d40072','UK population (2011)'='grey',
+  scale_fill_manual(values=c('All grades'='#d40072',
                                'SCS'='#00ccff')) +
+  scale_linetype_manual(values=c('UK Population (2011)'='dotted')) +
+  guides(fill=guide_legend(order=1), colour=guide_legend(order=2),
+         linetype=guide_legend(override.aes=list(linetype='dotted'),
+                               keywidth=unit(1,'cm'))) +
   theme_few() +
   scale_y_continuous(breaks=c(0,.1,.2),
                      limits=c(0,.2),
@@ -102,15 +107,16 @@ plot_GrMinYr <- ggplot(ac_ch,aes(as.factor(Date), share)) +
   theme(line=element_line(lineend='square'),
         text = element_text(family=fontfamily,size=10),
         axis.text=element_text(colour='grey30'),
-        axis.text.x = element_text(angle = 90),
+        axis.text.x = element_text(angle = 0),
         axis.text.y = element_text(vjust=0),
         axis.ticks=element_blank(),
         axis.title=element_text(colour='grey30'),
         axis.title.x=element_blank(),
         legend.title=element_blank(),
-        legend.position='bottom',
+        legend.justification=c(1,0),
+        legend.position=c(1,0),
         legend.direction='horizontal',
-        legend.box='horizontal',
+        legend.box='vertical',
         legend.key.size=unit(.3,units='cm'),
         legend.text = element_text(vjust=1),
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
