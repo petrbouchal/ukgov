@@ -42,7 +42,7 @@ ac_ch <- ddply(ac_ch, .(Gender, Date, Civil.Service.grad),
                summarise, count=sum(value, na.rm=TRUE))
 
 totals <- ddply(totals, .(Date), summarise,
-                  total=sum(value, na.rm=TRUE))
+                total=sum(value, na.rm=TRUE))
 
 # MERGE TOTALS INTO MAIN FILE
 ac_ch <- merge(ac_ch, totals)
@@ -83,6 +83,8 @@ plot_GeGrYr <- ggplot(ac_ch, aes(x=Civil.Service.grad, y=count)) +
   #             aes(fill=as.factor(Date),group=Date,alpha=transp,order=-Date)) +
   #   geom_line(position='identity',stat='identity',aes(fill=as.factor(Date),group=Date,
   #             colour=as.factor(Date)),size=1) +
+  geom_bar(position='identity', width=.9,data=ac_ch[ac_ch$Date==2010,],
+           aes(fill=Gender),stat='identity',alpha=.4) +
   geom_bar(position='identity', width=.9,data=ac_ch[ac_ch$Date==2012,],
            aes(fill=Gender),stat='identity') +
   geom_point(data=ac_ch[ac_ch$Date==2010,],aes(pch='2010'),
