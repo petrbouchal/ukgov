@@ -56,12 +56,6 @@ levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior and h
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "All grades"
 
-ac_ch$Age.band <- gsub('Aged ','',ac_ch$Age.band)
-ac_ch$Age.band <- gsub('and over','+',ac_ch$Age.band)
-
-ac_ch$Civil.Service.grad = factor(ac_ch$Civil.Service.grad,
-                                  levels(ac_ch$Civil.Service.grad)[c(7,1,2,4,5,3,6)])
-
 # Filter out unneeded things
 ac_ch <- ac_ch[ac_ch$Age.band!='Total' & ac_ch$Civil.Service.grad!='All grades',]
 ac_ch <- ac_ch[ac_ch$Age.band!='Unknown age',]

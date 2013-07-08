@@ -27,7 +27,7 @@ ac_ch <- acses
 ac_ch <- ac_ch[ac_ch$new1==org & ac_ch$Gender!='Total',]
 
 # turn value into numeric 'count' variable
-ac_ch$count <- as.numeric(as.character(ac_ch$value))
+
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
 # ac_ch <- merge(ac_ch,orgs, all.x=TRUE)
@@ -83,14 +83,7 @@ levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "
 # levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - Â£80,000"] <- "60-70"
 # levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than Â£80,000"] <- "> 80"
 
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to £20,000"] <- "< 20"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£20,001 - £30,000"] <- "20-30"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£30,001 - £40,000"] <- "30-40"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£40,001 - £50,000"] <- "40-50"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£50,001 - £60,000"] <- "50-60"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£60,001 - £70,000"] <- "60-70"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£70,001 - £80,000"] <- "60-70"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than £80,000"] <- "> 80"
+ac_ch <- RelabelPaybands(ac_ch)
 
 #loadfonts()
 #loadfonts(device='win')

@@ -16,8 +16,6 @@ acses <- read.delim(fullpath, sep='\t')
 acses$value[acses$value=='#'] <- NA
 acses$value[acses$value=='..'] <- NA
 
-# LOAD DATA WITH GROUPINGS AND FILTER - MADE IN EXCEL
-orgs <- read.csv('./data-input/acses_orgs.csv')
 
 # Process data ------------------------------------------------------------
 ac_ch <- acses

@@ -8,36 +8,20 @@ library(reshape2)
 
 # Load data ---------------------------------------------------------------
 
-path  <- '/Users/petrbouchal/Downloads/ACSES/'
-#path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
-filename <- 'ACSES_Gender_Dept_Age_Grade_data.tsv'
-fullpath <- paste0(path, filename)
-acses <- read.delim(fullpath, sep='\t')
-acses$value[acses$value=='#'] <- NA
-acses$value[acses$value=='..'] <- NA
+source('./src/acses_lib.R')
+ac_ch <- LoadAcsesData('ACSES_Dept_Age_Grade_Pay_data.tsv',
+                       'home')
 
 # Process data ------------------------------------------------------------
 
-ac_ch <- acses
-
-# RENAME Org variable
-ac_ch$Organisation <- ac_ch$new1
-ac_ch$new1 <- NULL
-
 # FILTER OUT LINES
-ac_ch <- ac_ch[ac_ch$Gender!='Total',]
-ac_ch <- ac_ch[ac_ch$Civil.Service.grad=='Total',]
+ac_ch <- ac_ch[ac_ch$Gender!='Total' & ac_ch$Civil.Service.grad=='Total',]
 ac_ch <- ac_ch[ac_ch$Organisation=='Total (All Departments)',]
 
-# MERGE FILTER/GROUP DATA INTO MAIN DATA
-ac_ch$count <- as.numeric(as.character(ac_ch$value))
-ac_ch <- unique(ac_ch) # removes duplicate lines for DfE and GEO
+ac_ch <- RelabelAgebands(ac_ch)
 
-ac_ch$Age.band <- gsub('Aged ','',ac_ch$Age.band)
-ac_ch$Age.band <- gsub('and over','+',ac_ch$Age.band)
-
-# CREATE TOTALS PER GROUP & CATEGORY
-ac_ch <- ddply(ac_ch, .(Date, Age.band, Gender),
+# SUMMARISE BY GROUP & CATEGORY
+ac_ch <- ddply(ac_ch, .(Date, Age.band),
                summarise, count=sum(count, na.rm=TRUE))
 
 # CREATE TOTALS PER GROUP

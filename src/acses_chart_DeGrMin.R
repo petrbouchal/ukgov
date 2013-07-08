@@ -69,12 +69,8 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 
 # Build plot --------------------------------------------------------------
 
-# fix labe;s
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Administrative officers and assistants"] <- "AO"
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Executive officer"] <- "EO"
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior and higher executive officer"] <- "SEO/HEO"
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "All grades"
+# fix labels
+ac_ch <- RelabelGrades(ac_ch)
 
 #loadfonts()
 #loadfonts(device='win')

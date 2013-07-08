@@ -69,23 +69,7 @@ ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender)
 
 # fix labels
 
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to £20,000"] <- "< 20"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£20,001 - £30,000"] <- "20-30"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£30,001 - £40,000"] <- "30-40"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£40,001 - £50,000"] <- "40-50"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£50,001 - £60,000"] <- "50-60"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£60,001 - £70,000"] <- "60-70"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="£70,001 - £80,000"] <- "60-70"
-levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than £80,000"] <- "> 80"
-
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to £20,000"] <- "< 20"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£20,001 - £30,000"] <- "20-30"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£30,001 - £40,000"] <- "30-40"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£40,001 - £50,000"] <- "40-50"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£50,001 - £60,000"] <- "50-60"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£60,001 - £70,000"] <- "60-70"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - £80,000"] <- "60-70"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than £80,000"] <- "> 80"
+ac_ch <- RelabelGrades(ac_ch)
 
 plottitle='Civil Service pay in Whitehall departments by gender'
 pw=9.7

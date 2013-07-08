@@ -58,6 +58,7 @@ levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Executive of
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior and higher executive officer"] <- "SEO/HEO"
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
 levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "All grades"
+ac_ch <- RelabelGrades(ac_ch)
 
 # Filter out unneeded things
 ac_ch$Civil.Service.grad = factor(ac_ch$Civil.Service.grad,
