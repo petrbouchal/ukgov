@@ -7,6 +7,8 @@ library(grid)
 library(ggthemes)
 library(extrafont)
 library(gridExtra)
+library(reshape)
+library(reshape2)
 
 # Set parameters for saved chart ------------------------------------------
 
