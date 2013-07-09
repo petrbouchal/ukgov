@@ -1,3 +1,8 @@
+# Set location ------------------------------------------------------------
+
+location='home'
+location='ifg'
+
 # Load libraries ----------------------------------------------------------
 
 library(plyr)
@@ -76,6 +81,7 @@ theme_WHM <-theme_few() +
         axis.title=element_text(colour='grey30'),
         axis.ticks=element_blank(),
         axis.title=element_text(),
+        axis.line=element_line(size=.5,colour=IfGcols[1,1]),
         legend.title=element_blank(),
         legend.position='bottom',
         legend.box='horizontal',
@@ -83,7 +89,7 @@ theme_WHM <-theme_few() +
         legend.key.size=unit(.3,units='cm'),
         legend.text = element_text(vjust=1),
         panel.margin=unit(c(0,0,0,0),'cm'),
-        panel.border=element_rect(colour='grey80'),
+        panel.border=element_blank(),
         plot.margin=unit(c(1,1,0,0),'cm'),
         plot.title=element_text(family='Calibri',face='bold',size=14,
                                 lineheight=2.5, vjust=2))

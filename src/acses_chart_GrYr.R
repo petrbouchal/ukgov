@@ -4,7 +4,7 @@ source('./src/acses_lib.R')
 # Load data ---------------------------------------------------------------
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
-origdata <- LoadAcsesData(file_name=filename,location='ifg')
+origdata <- LoadAcsesData(file_name=filename,location=location)
 
 # Process data ------------------------------------------------------------
 
@@ -50,17 +50,17 @@ ph=24.5/2
 
 maxY <- max(abs(uu$change),na.rm=TRUE)
 ylimits <- c(-maxY*1.04, maxY*1.04)
-ybreaks <- signif(seq(ylimits[1]*.9,ylimits[2]*.9,length.out=5),1)
+ybreaks <- signif(seq(ylimits[1],ylimits[2],length.out=5),1)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_GrYr <- ggplot(uu, aes(x=Civil.Service.grad, y=change)) +
   geom_bar(position='dodge', width=.9, fill=IfGcols[2,1],stat='identity') +
-#  scale_fill_manual(values=c('2010'=IfGcols[2,1],'2012'=IfGcols[3,1])) +
+  scale_fill_manual(values=c('2010'=IfGcols[2,1],'2012'=IfGcols[3,1])) +
   scale_y_continuous(limits=ylimits, labels=ylabels, breaks=ybreaks) +
-#  guides(fill=guide_legend(override.aes=list(shape=NA,size=1.2),
-#                         label.vjust=.5,order=2),
-#         shape=guide_legend(override.aes=list(size=4),
-#                            label.vjust=.5,order=2,keyheight=.5,hjust=0)) +
+  guides(fill=guide_legend(override.aes=list(shape=NA,size=1.2),
+                         label.vjust=.5,order=2),
+         shape=guide_legend(override.aes=list(size=4),
+                            label.vjust=.5,order=2,keyheight=.5,hjust=0)) +
   ggtitle(plottitle) +
   ylab(ylabel) +
   xlab(xlabel) +
@@ -72,7 +72,7 @@ plot_GrYr
 
 # Save plot ---------------------------------------------------------------
 
-if(plotformat=='pdf') {
+if(plotformat=='pdf' | plotformat=='eps') {
   ggsave(paste0(plotimagepath,plotname,'.',plotformat), family=fontfamily, device=cairo_pdf, height=ph, width=pw, units='cm')  
 } else {
   ggsave(paste0(plotimagepath,plotname,'.',plotformat), family=fontfamily, height=ph, width=pw, units='cm')
