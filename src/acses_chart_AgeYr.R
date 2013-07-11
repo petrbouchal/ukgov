@@ -85,11 +85,5 @@ dev.off()
 
 # Save plot ---------------------------------------------------------------
 
-if(plotformat=='pdf' | plotformat=='eps') {
-  ggsave(paste0(plotimagepath,plotname,'.',plotformat), family=fontfamily, device=cairo_pdf, height=ph, width=pw, units='cm')  
-} else {
-  ggsave(paste0(plotimagepath,plotname,'.',plotformat), family=fontfamily, height=ph, width=pw, units='cm')
-}
-dev.off()
-save(plot_AgeYr,file=paste0(plotobjpath,plotname,'.ggp'))
+SavePlot(plotname='AgeYr',ffamily='Calibri',)
 plot_AgeYr

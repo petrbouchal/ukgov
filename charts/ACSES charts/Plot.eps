@@ -54,11 +54,48 @@
            >>
          ] setcolorspace } bind def
 /srgb { setcolor } bind def
+% begin encoding
+/WinAnsiEncoding [
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus /comma /minus /period /slash
+ /zero /one /two /three /four /five /six /seven
+ /eight /nine /colon /semicolon /less /equal /greater /question
+ /at /A /B /C /D /E /F /G
+ /H /I /J /K /L /M /N /O
+ /P /Q /R /S /T /U /V /W
+ /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+ /grave /a /b /c /d /e /f /g
+ /h /i /j /k /l /m /n /o
+ /p /q /r /s /t /u /v /w
+ /x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+ /Euro /.notdef /quotesinglbase /florin /quotedblbase /ellipsis /dagger /daggerdbl
+ /circumflex /perthousand /Scaron /guilsinglleft /OE /.notdef /Zcaron /.notdef
+ /.notdef /quoteleft /quoteright /quotedblleft /quotedblright /bullet /endash /emdash
+ /tilde /trademark /scaron /guilsinglright /oe /.notdef /zcaron /Ydieresis
+ /space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+ /dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+ /degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+ /cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+ /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+ /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+ /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+ /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+ /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+ /egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+ /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+ /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis
+]
+ def
+% end encoding
 %%IncludeResource: font Calibri
 /Calibri findfont
 dup length dict begin
   {1 index /FID ne {def} {pop pop} ifelse} forall
-  /Encoding ISOLatin1Encoding def
+  /Encoding WinAnsiEncoding def
   currentdict
   end
 /Font1 exch definefont pop
@@ -66,7 +103,7 @@ dup length dict begin
 /Calibri-Bold findfont
 dup length dict begin
   {1 index /FID ne {def} {pop pop} ifelse} forall
-  /Encoding ISOLatin1Encoding def
+  /Encoding WinAnsiEncoding def
   currentdict
   end
 /Font2 exch definefont pop
@@ -74,7 +111,7 @@ dup length dict begin
 /Calibri-Italic findfont
 dup length dict begin
   {1 index /FID ne {def} {pop pop} ifelse} forall
-  /Encoding ISOLatin1Encoding def
+  /Encoding WinAnsiEncoding def
   currentdict
   end
 /Font3 exch definefont pop
@@ -82,7 +119,7 @@ dup length dict begin
 /Calibri-BoldItalic findfont
 dup length dict begin
   {1 index /FID ne {def} {pop pop} ifelse} forall
-  /Encoding ISOLatin1Encoding def
+  /Encoding WinAnsiEncoding def
   currentdict
   end
 /Font4 exch definefont pop
@@ -110,49 +147,29 @@ bp
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
-34.44 62.74 405.35 302.85 cl
+25.09 70.94 405.35 269.70 cl
 /bg { 1 1 1 srgb } def
-34.44 62.74 370.92 240.11 r p2
+25.09 70.94 380.27 198.76 r p2
 /bg { 0.8314 0 0.4471 srgb } def
-77.24 62.74 21.40 52.06 r p2
+68.96 70.94 21.94 82.71 r p2
 /bg { 0 0.8000 1 srgb } def
-55.84 62.74 21.40 101.96 r p2
+47.03 70.94 21.94 157.70 r p2
 /bg { 0.8314 0 0.4471 srgb } def
-148.57 62.74 21.40 50.77 r p2
+142.09 70.94 21.94 105.11 r p2
 /bg { 0 0.8000 1 srgb } def
-127.17 62.74 21.40 107.25 r p2
+120.15 70.94 21.94 170.22 r p2
 /bg { 0.8314 0 0.4471 srgb } def
-219.90 62.74 21.40 59.43 r p2
+215.22 70.94 21.94 115.75 r p2
 /bg { 0 0.8000 1 srgb } def
-198.50 62.74 21.40 110.49 r p2
+193.28 70.94 21.94 182.14 r p2
 /bg { 0.8314 0 0.4471 srgb } def
-291.23 62.74 21.40 61.15 r p2
+288.35 70.94 21.94 121.95 r p2
 /bg { 0 0.8000 1 srgb } def
-269.83 62.74 21.40 110.95 r p2
+266.41 70.94 21.94 186.32 r p2
 /bg { 0.8314 0 0.4471 srgb } def
-362.56 62.74 21.40 60.19 r p2
+361.48 70.94 21.94 107.92 r p2
 /bg { 0 0.8000 1 srgb } def
-341.16 62.74 21.40 111.48 r p2
-0.7451 0.7451 0.7451 srgb
-2.13 setlinewidth
-[ 2.13 6.38] 0 setdash
-0 setlinecap
-1 setlinejoin
-1.00 setmiterlimit
-np
-77.24 230.82 m
-71.33 0 l
-71.33 0 l
-71.33 0 l
-71.33 0 l
-o
-np
-77.24 230.82 m
-71.33 0 l
-71.33 0 l
-71.33 0 l
-71.33 0 l
-o
+339.54 70.94 21.94 198.76 r p2
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.2157 0.2588 0.2902 srgb
@@ -162,17 +179,16 @@ o
 1 setlinejoin
 10.00 setmiterlimit
 np
-34.44 62.74 m
-0 240.11 l
+25.09 70.94 m
+0 198.76 l
 o
 0.00 0.00 433.70 347.24 cl
 /Font1 findfont 8 s
 0.3020 0.3020 0.3020 srgb
-27.35 62.74 (0%) 1 0 t
-27.35 122.77 (5%) 1 0 t
-27.35 182.79 (10%) 1 0 t
-27.35 242.82 (15%) 1 0 t
-27.35 302.85 (20%) 1 0 t
+18.00 70.94 (0%) 1 0 t
+18.00 121.45 (2.1%) 1 0 t
+18.00 169.55 (4.1%) 1 0 t
+18.00 220.05 (6.2%) 1 0 t
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
@@ -187,19 +203,19 @@ o
 1 setlinejoin
 10.00 setmiterlimit
 np
-34.44 62.74 m
-370.91 0 l
+25.09 70.94 m
+380.26 0 l
 o
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 /Font1 findfont 8 s
 0.3020 0.3020 0.3020 srgb
-77.24 50.60 (2008) .5 0 t
-148.57 50.60 (2009) .5 0 t
-219.90 50.60 (2010) .5 0 t
-291.23 50.60 (2011) .5 0 t
-362.56 50.60 (2012) .5 0 t
+68.96 55.21 (2008) .5 0 t
+142.09 55.21 (2009) .5 0 t
+215.22 55.21 (2010) .5 0 t
+288.35 55.21 (2011) .5 0 t
+361.48 55.21 (2012) .5 0 t
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
@@ -209,10 +225,7 @@ o
 0.00 0.00 433.70 347.24 cl
 /Font1 findfont 10 s
 0.3020 0.3020 0.3020 srgb
-9.92 142.60 (St) 90 ta
--0.120 (a) tb
--0.060 (f) tb
--0.100 (f as % of disclosed) tb gr
+14.40 170.32 (Staff as % of disclosed) .5 90 t
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
@@ -220,95 +233,35 @@ o
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 /bg { 1 1 1 srgb } def
-103.17 10.03 117.44 17.01 r p2
+177.22 10.03 76.00 17.14 r p2
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 /bg { 1 1 1 srgb } def
-111.74 14.29 28.35 8.50 r p2
+185.79 14.29 28.35 8.64 r p2
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 /bg { 0 0.8000 1 srgb } def
-111.74 14.29 28.35 8.50 r p2
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.7451 0.7451 0.7451 srgb
-2.13 setlinewidth
-[] 0 setdash
-0 setlinecap
-1 setlinejoin
-10.00 setmiterlimit
-np
-114.58 18.54 m
-22.68 0 l
-o
+185.79 14.29 28.35 8.64 r p2
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 /bg { 1 1 1 srgb } def
-174.24 14.29 28.35 8.50 r p2
+218.46 14.29 28.35 8.64 r p2
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 /bg { 0.8314 0 0.4471 srgb } def
-174.24 14.29 28.35 8.50 r p2
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.7451 0.7451 0.7451 srgb
-2.13 setlinewidth
-[] 0 setdash
-0 setlinecap
-1 setlinejoin
-10.00 setmiterlimit
-np
-177.08 18.54 m
-22.68 0 l
-o
+218.46 14.29 28.35 8.64 r p2
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 /Font1 findfont 8 s
 0.0039 0.0078 0.0078 srgb
-142.25 16.01 (All gr) 0 ta
--0.168 (ades) tb gr
+216.30 14.29 (All grades) 0 0 t
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 /Font1 findfont 8 s
 0.0039 0.0078 0.0078 srgb
-204.75 16.01 (SCS) 0 0 t
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-/bg { 1 1 1 srgb } def
-227.81 10.03 108.81 17.01 r p2
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-/bg { 1 1 1 srgb } def
-236.38 14.29 28.35 8.50 r p2
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-0.7451 0.7451 0.7451 srgb
-2.13 setlinewidth
-[ 2.13 6.38] 0 setdash
-0 setlinecap
-1 setlinejoin
-10.00 setmiterlimit
-np
-239.22 18.54 m
-22.67 0 l
-o
-0.00 0.00 433.70 347.24 cl
-0.00 0.00 433.70 347.24 cl
-/Font1 findfont 8 s
-0.0039 0.0078 0.0078 srgb
-266.89 16.01 (UK P) 0 ta
--0.160 (opula) tb
--0.072 (tion \(2011\)) tb gr
+248.97 14.29 (SCS) 0 0 t
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
@@ -321,14 +274,7 @@ o
 0.00 0.00 433.70 347.24 cl
 /Font2 findfont 14 s
 0.0039 0.0078 0.0078 srgb
-79.05 317.25 (Civil Ser) 0 ta
-0.126 (v) tb
--0.210 (an) tb
--0.126 (ts iden) tb
--0.126 (tif) tb
-0.070 (ying as e) tb
--0.098 (thnic minority) tb
--0.854 (, 2008-12) tb gr
+215.22 284.10 (Civil Servants identifying as disabled, 2008-12) .5 0 t
 0.00 0.00 433.70 347.24 cl
 0.00 0.00 433.70 347.24 cl
 ep

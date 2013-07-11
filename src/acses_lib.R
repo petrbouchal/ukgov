@@ -1,7 +1,7 @@
 # Set location ------------------------------------------------------------
 
-location='home'
-#location='ifg'
+#location='home'
+location='ifg'
 
 # Load libraries ----------------------------------------------------------
 
@@ -23,6 +23,7 @@ ph=24.5/2
 fontfamily='Calibri'
 #font_import()
 loadfonts(device='postscript')
+loadfonts(device='win')
 loadfonts()
 if(location=='ifg') {
   loadfonts(device='win')
