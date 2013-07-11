@@ -19,7 +19,7 @@ uu <- uu[uu$Ethnic.grou!='Not reported / Not declared',]
 
 # CREATE TOTALS PER GROUP
 #uu <- uu[uu$Civil.Service.grad!='Total',]
-uu <- ddply(uu, .(Group, Ethnic.grou, Date, Civil.Service.grad),
+uu <- ddply(uu, .(Ethnic.grou, Date, Civil.Service.grad),
                summarise, count=sum(count, na.rm=TRUE))
 
 totals <- ddply(uu, .(Date, Civil.Service.grad), summarise,
@@ -38,7 +38,7 @@ uu <- uu[uu$Ethnic.grou!='White',]
 
 # Build plot --------------------------------------------------------------
 
-plotformat='png'
+plotformat='eps'
 plotname <- 'plot_GrMinYr'
 plottitle <- 'Civil Servants identifying as ethnic minority, 2008-12'
 ylabel <- 'Staff as % of disclosed'
@@ -82,14 +82,11 @@ plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
 # Draw plot ---------------------------------------------------------------
 
 plot_GrMinYr
+dev.off()
 
 # Save plot ---------------------------------------------------------------
 
-if(plotformat=='pdf' | plotformat=='eps') {
-  ggsave(paste0(plotimagepath,plotname,'.',plotformat), family=fontfamily, device=cairo_pdf, height=ph, width=pw, units='cm')  
-} else {
-  ggsave(paste0(plotimagepath,plotname,'.',plotformat), family=fontfamily, height=ph, width=pw, units='cm')
-}
+SavePlot(ffamily=fontfamily,plotformat='eps',)
+
 dev.off()
-save(plot_GrMinYr,file=paste0(plotobjpath,plotname,'.ggp'))
 plot_GrMinYr

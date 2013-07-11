@@ -1,7 +1,7 @@
 # Set location ------------------------------------------------------------
 
 location='home'
-location='ifg'
+#location='ifg'
 
 # Load libraries ----------------------------------------------------------
 
@@ -19,11 +19,14 @@ library(reshape2)
 
 pw=15.3
 ph=24.5/2
+
 fontfamily='Calibri'
-plotformat='pdf'
-savedevice = 'cairo_pdf'
-plotobjpath <- './charts/ACSES chart objects/'
-plotimagepath <- './charts/ACSES charts/'
+#font_import()
+loadfonts(device='postscript')
+loadfonts()
+if(location=='ifg') {
+  loadfonts(device='win')
+}
 
 # Fn: load and clean ACSES data -------------------------------------------------
 
@@ -91,7 +94,7 @@ theme_WHM <-theme_few() +
         panel.margin=unit(c(0,0,0,0),'cm'),
         panel.border=element_blank(),
         plot.margin=unit(c(1,1,0,0),'cm'),
-        plot.title=element_text(family='Calibri',face='bold',size=14,
+        plot.title=element_text(family=fontfamily,face='bold',size=14,
                                 lineheight=2.5, vjust=2))
 
 theme_set(theme_WHM)
@@ -131,4 +134,26 @@ RelabelAgebands <- function (dataset) {
   dataset$Age.band <- gsub('Aged ','',dataset$Age.band)
   dataset$Age.band <- gsub('and over','+',dataset$Age.band)
   return(dataset)
+}
+
+
+# Fn: generic save function -----------------------------------------------
+
+SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
+                      splot=last_plot() ,ploth=24.5/2, plotw=15.3) {
+  plotobjdir <- './charts/ACSES chart objects/'
+  plotimagedir <- './charts/ACSES charts/'
+  plotimagepath = paste0(plotimagedir,plotname,'.',plotformat)
+  plotobjpath = paste0(plotobjdir,plotname,'.','ggp')
+  if(plotformat=='pdf') {
+    ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_pdf,
+           height=ph, width=pw, units='cm')  
+  } else if(plotformat=='eps') {
+    ggsave(plotimagepath, plot=splot, family=ffamily,
+           height=ph, width=pw, units='cm')
+  } else {
+    ggsave(plotimagepath, plot=splot, family=ffamily,
+           height=ploth, width=plotw, units='cm')
+  }
+  save(plot_GrMinYr,file=plotobjpath)
 }
