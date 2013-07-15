@@ -1,6 +1,55 @@
+# Setup -------------------------------------------------------------------
 source('./src/acses_lib.R')
-
 source('./src/PSE_Reshape.R') # to prepare data if needed
+PSE <- change
+
+# Plain chart in ggplot2 --------------------------------------------------
+
+PSE$chart <- TRUE
+PSE$chart[PSE$Dept == 'Total']  <- FALSE
+PSE$chart[PSE$Dept == 'AGO']  <- FALSE
+PSE$chart[PSE$Dept == 'NIO']  <- FALSE
+PSE$chart[PSE$Dept == 'GEO']  <- FALSE
+PSE$chart[PSE$Dept == 'Welsh Gov']  <- FALSE
+PSE$chart[PSE$Dept == 'Scot Gov']  <- FALSE
+PSE$chart[PSE$Dept == 'FCO' & PSE$Whitehall!='Total']  <- FALSE
+
+# change order of facets
+totals <- PSE[PSE$measure=='Cumulative_Perc_net_change' & PSE$Whitehall=='Total' & PSE$Period=='2013Q1',
+                  c(1,3)]
+totals$sorter <- totals$value
+totals$value <- NULL
+
+PSE <- merge(PSE, totals,all.x=TRUE)
+PSE$sorter[PSE$Dept =='Total excl. WH FCO'] <- max(PSE$sorter)*1.1
+PSE$Dept <- reorder(PSE$Dept,PSE$sorter,mean)
+
+labelsx <- c('2010Q3','Q4','2011Q1','Q2','Q3','Q4','2012Q1','Q2','Q3','Q4','2013Q4')
+
+plotPSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
+                                 PSE$chart,],
+                  aes(x=Period,y=value, group=group, colour=Whitehall)) + 
+  geom_line(size=1) +
+  geom_hline(yintercept=0,colour=IfGcols[1,2]) +
+  facet_wrap(~Dept, scales='fixed',nrow=3) +
+  scale_color_manual(values=c(IfGcols[2,1], IfGcols[5,1], IfGcols[3,1])) +
+  scale_y_continuous(labels=percent) +
+  scale_x_discrete(labels=labelsx) +
+  labs(title='Change in civil service staff by department, SR 2010 to present',
+       y='% change since SR 2010', x = '') +
+  guides(colour = guide_legend(ncol = 3,keywidth=unit(1,'cm'))) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        axis.line.x=element_line(size=unit(1,'mm'),colour=IfGcols[1,2]),
+        panel.border=element_rect(fill=NA,color=IfGcols[1,3]),
+        panel.margin=unit(c(1,1,1,1),'mm'),panel.background=element_rect(fill=IfGcols[3,3]))
+plotPSE
+
+# Save ggplot -------------------------------------------------------------
+
+SavePlot(plotname='PSE change',plotformat='wmf',ffamily=fontfamily,
+         ploth=15.3,plotw=24.5)
+
+# GoogleVis aka Gapminder chart -------------------------------------------
 
 # Manual for google charts:
 # 
@@ -8,44 +57,18 @@ source('./src/PSE_Reshape.R') # to prepare data if needed
 # http://code.google.com/p/google-motion-charts-with-r/
 # https://developers.google.com/chart/interactive/docs/
 
-# plain chart in ggplot2
-changel$chart <- TRUE
-changel$chart[changel$Dept == 'Total']  <- FALSE
-changel$chart[changel$Dept == 'AGO']  <- FALSE
-changel$chart[changel$Dept == 'NIO']  <- FALSE
-changel$chart[changel$Dept == 'GEO']  <- FALSE
-changel$chart[changel$Dept == 'Welsh Gov']  <- FALSE
-changel$chart[changel$Dept == 'Scot Gov']  <- FALSE
-changel$chart[changel$Dept == 'FCO' & changel$Whitehall!='Total']  <- FALSE
-plotPSE <- ggplot(data=changel[changel$measure=='Cumulative_Perc_net_change' &
-                                 changel$chart==TRUE,],
-                  aes(x=Period,y=value, group=group, colour=Whitehall)) + 
-  geom_line(size=1) +
-  geom_point(aes(colour=Whitehall), size=1) +
-  geom_point(colour='white', size=.8) +
-  scale_color_manual(values=c(IfGcols[2,1], IfGcols[5,1], IfGcols[3,1])) +
-  scale_y_continuous(labels=percent) +
-  facet_wrap(~Dept, scales='fixed',nrow=3) +
-  labs(title='Change in civil service staff by department, SR 2010 to present',
-       y='% change since SR 2010', x = 'Quarter') +
-  guides(colour = guide_legend(ncol = 1)) +
-  guides(col=guide_legend(ncol=3)) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        panel.border=element_rect(fill=NA,color=IfGcols[1,1]),
-        panel.margin=unit(c(1,1,1,1),'mm'))
-plotPSE
-
 # reshape to wide(r) for googlevis
-changel$group <- NULL
-changel2 <- data.frame(cast(changel, ... ~ measure + Whitehall))
+PSE2 <- PSE
+PSE2$group <- NULL
+PSE2 <- data.frame(cast(PSE, ... ~ measure + Whitehall))
 
 # dates for googlevis - seems not to be needed
-# changel2$Period <- gsub("Q1","-03-31",changel2$Period)
-# changel2$Period <- gsub("Q2","-06-30",changel2$Period)
-# changel2$Period <- gsub("Q3","-09-30",changel2$Period)
-# changel2$Period <- gsub("Q4","-12-31",changel2$Period)
+# PSE2$Period <- gsub("Q1","-03-31",PSE2$Period)
+# PSE2$Period <- gsub("Q2","-06-30",PSE2$Period)
+# PSE2$Period <- gsub("Q3","-09-30",PSE2$Period)
+# PSE2$Period <- gsub("Q4","-12-31",PSE2$Period)
 # 
-# changel2$Period <- as.Date(changel2$Period, tz = "GMT", format='%Y-%m-%d')
+# PSE2$Period <- as.Date(PSE2$Period, tz = "GMT", format='%Y-%m-%d')
 
 # Google Plot
 # TODO: rename variables
@@ -55,7 +78,7 @@ changel2 <- data.frame(cast(changel, ... ~ measure + Whitehall))
 # TODO: get the quarterly scale working
 # TODO: get default variable choices working
 suppressPackageStartupMessages(library(googleVis))
-Motion=gvisMotionChart(changel2, idvar="Dept", timevar="Period",
+Motion=gvisMotionChart(PSE2, idvar="Dept", timevar="Period",
                        options=list(
                          height=600, 
                          width=1000, 

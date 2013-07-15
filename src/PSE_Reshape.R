@@ -22,25 +22,26 @@ names(change) <- gsub("_to","", names(change), fixed=TRUE)
 names(change) <- gsub("_201",".201", names(change), fixed=TRUE)
 names(change) <- gsub("X__","Perc_", names(change), fixed=TRUE)
 names(change) <- gsub("___","_Perc_", names(change), fixed=TRUE)
-names(change)
 
 # remove and reorder variables
 #change <- change[,c(1:42,51:70,45:47,50)]
-names(change)
 
 # reshape
-changel <- melt(change)
+change <- melt(change)
 
 # get rid of rows where 'variable' does not contain year
-changel <- changel[grepl('201', changel$variable),]
+change <- change[grepl('201', change$variable),]
 
 # create vars identifying measure and period
-changel$variable <- gsub(".","-",changel$variable, fixed=TRUE) 
-changel$measure <- gsub("-.*","",changel$variable)
-changel$Period <- gsub(".*-","",changel$variable)
-changel$variable <- NULL
+change$variable <- gsub(".","-",change$variable, fixed=TRUE) 
+change$measure <- gsub("-.*","",change$variable)
+change$Period <- gsub(".*-","",change$variable)
+change$variable <- NULL
 
 # create variable to group points into chart lines
-changel$group=paste(changel$Dept,changel$Whitehall,sep='-')
+change$group=paste(change$Dept,change$Whitehall,sep='-')
 
-write.csv(changel,'./data-output/PSE_change_long.csv', row.names=FALSE)
+# relabel dept names
+change$Dept <- revalue(change$Dept, c('MoJ' = 'MOJ','MoD'='MOD'))
+
+write.csv(change,'./data-output/PSE_change_long.csv', row.names=FALSE)

@@ -66,10 +66,8 @@ plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
                              'SCS'=IfGcols[3,1])) +
   scale_linetype_manual(values=c('UK Population (2011)'='dotted')) +
   guides(colour=guide_legend(order=1),
-         fill=guide_legend(order=2,
-                             override.aes=list(size=0)),
-         linetype=guide_legend(order=3,override.aes=list(linetype='dotted'),
-                               keywidth=unit(1,'cm'))) +
+         fill=guide_legend(order=2, override.aes=list(colour=NA)),
+         linetype=guide_legend(order=3, keywidth=unit(1,'cm'))) +
   scale_y_continuous(breaks=ybreaks,
                      limits=ylimits,
                      labels=ylabels,

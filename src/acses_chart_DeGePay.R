@@ -1,129 +1,90 @@
-library(plyr)
-library(ggplot2)
-library(scales)
-library(grid)
-library(ggthemes)
-library(extrafont)
+source('./src/acses_lib.R')
 
 # Load data ---------------------------------------------------------------
 
-path  <- '/Users/petrbouchal/Downloads/ACSES/'
-#path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
-fullpath <- paste0(path, filename)
-acses <- read.delim(fullpath, sep='\t')
-acses$value[acses$value=='#'] <- NA
-acses$value[acses$value=='..'] <- NA
-
-# LOAD DATA WITH GROUPINGS AND FILTER - MADE IN EXCEL
-orgs <- read.csv('./data-input/acses_orgs.csv')
+origdata <- LoadAcsesData(filename,location)
 
 # Process data ------------------------------------------------------------
 
 # FILTER OUT GRADE LINES
-ac_ch <- acses
-ac_ch <- ac_ch[ac_ch$Civil.Service.grad=='Total',]
-
-# RENAME Org variable
-ac_ch$Organisation <- ac_ch$new1
-ac_ch$new1 <- NULL
+uu <- origdata
+uu <- uu[uu$Civil.Service.grad=='Total',]
+uu <- uu[uu$Gender!='Total',]
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
-ac_ch <- merge(ac_ch,orgs, all.x=TRUE)
-ac_ch <- ac_ch[ac_ch$Include=='Yes',]
-ac_ch <- ac_ch[ac_ch$Gender!='Total',]
-ac_ch$value <- as.numeric(as.character(ac_ch$value))
-ac_ch <- unique(ac_ch) # removes duplicate lines for DfE and GEO
+uu <- AddOrgData(uu)
 
 # CREATE TOTALS PER GROUP
-totals <- ac_ch[ac_ch$Wage.band=='Total',]
-ac_ch <- ac_ch[ac_ch$Wage.band!='Total',]
-ac_ch <- ddply(ac_ch, .(Group, Gender, Date, Wage.band),
-               summarise, count=sum(value, na.rm=TRUE))
+totals <- uu[uu$Wage.band=='Total',]
+uu <- uu[uu$Wage.band!='Total',]
+uu <- ddply(uu, .(Group, Gender, Date, Wage.band),
+               summarise, count=sum(count, na.rm=TRUE))
 
 totals <- ddply(totals, .(Group, Date), summarise,
-                  total=sum(value, na.rm=TRUE))
+                  total=sum(count, na.rm=TRUE))
 
 # MERGE TOTALS INTO MAIN FILE
-ac_ch <- merge(ac_ch, totals)
-ac_ch$share <- ac_ch$count/ac_ch$total
-
-# Make female share negative
-ac_ch$share[ac_ch$Gender=='Female'] <- -ac_ch$share[ac_ch$Gender=='Female']
-ac_ch$count[ac_ch$Gender=='Female'] <- -ac_ch$count[ac_ch$Gender=='Female']
+uu <- merge(uu, totals)
+uu$share <- uu$count/uu$total
 
 # SELECT YEAR
-ac_ch <- ac_ch[ac_ch$Date=='2012',]
+uu <- uu[uu$Date=='2012',]
 
 # FILTER OUT
-#ac_ch$Civil.Service.grad = factor(ac_ch$Civil.Service.grad,
-#                                  levels(ac_ch$Civil.Service.grad)[c(1,2,4,5,3,6)])
-ac_ch$Wage.band = factor(ac_ch$Wage.band,
-                         levels(ac_ch$Wage.band)[c(8,9,10,1:7)])
-ac_ch <- ac_ch[ac_ch$Wage.band!='not reported',]
-#ac_ch <- ac_ch[ac_ch$Civil.Service.grad!='Not reported',]
-ac_ch$grp <- paste0(ac_ch$Group, ac_ch$Gender) 
+uu <- uu[uu$Wage.band!='not reported',]
+uu$grp <- paste0(uu$Group, uu$Gender) 
 
+uu <- RelabelPaybands(uu)
+
+# Sort departments --------------------------------------------------------
+gradevalues <- data.frame('gradeval'=c(1:length(levels(uu$Wage.band))),
+                          'Wage.band'=levels(uu$Wage.band))
+uu <- merge(uu,gradevalues)
+xtot <- ddply(uu,.(Group, Date, Wage.band),
+              summarise,sharebothgenders=sum(share, na.rm=TRUE))
+uu <- merge(uu,xtot)
+uu <- merge(uu,gradevalues)
+uu$gradescore <- uu$gradeval*uu$sharebothgenders
+xtot <- ddply(uu,.(Group,Date),summarise,meangradescore=mean(gradescore))
+uu <- merge(uu,xtot)
+uu$sorter <- uu$meangradescore
+#make Whole CS category go last
+uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
+#reorder grouping variable
+uu$Group <- reorder(uu$Group,uu$sorter,mean)
+
+# Make female share negative
+uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
+uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
 # Build plot --------------------------------------------------------------
 
-# fix labels
-
-ac_ch <- RelabelGrades(ac_ch)
-
+plotformat='wmf'
+plotname <- 'plot_DeGePay'
 plottitle='Civil Service pay in Whitehall departments by gender'
-pw=9.7
-ph=6.3
+xlabel="Salary range, £000"
+ylabel='Staff in grade and pay range, as proportion of all staff in department'
+pw=24.5
+ph=15.3
 
-#loadfonts()
-#loadfonts(device='win')
-#fonts()
+uu$yvar <- uu$share
+maxY <- max(abs(uu$share),na.rm=TRUE)
+ylimits <- c(-maxY, maxY)
+ybreaks <- c(-.2,.2)
+ylabels <- paste0(abs(ybreaks*100),'%')
 
-fontfamily = 'Calibri'
-plotname <- './charts/ACSES charts/plot_DeGePay.pdf'
-
-plot_DeGePay <- ggplot(ac_ch, aes(Wage.band, share)) +
+plot_DeGePay <- ggplot(uu, aes(Wage.band, yvar)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
-#  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
   coord_flip() +
-  scale_fill_manual(values=c('#d40072','#00ccff'),
+  scale_fill_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
                     labels=c('Female   ', 'Male')) +
-  guides(colour = guide_legend(ncol = 1)) +
   guides(col=guide_legend(ncol=3)) +
-  theme_few() +
-  scale_y_continuous(breaks=c(-.2,0,.2),
-                     limits=c(-max(abs(ac_ch$share),na.rm=TRUE),
-                              max(abs(ac_ch$share),na.rm=TRUE)),
-                     labels=c('20%','0','20%')) +
-#  scale_x_discrete(labels = c('AO','EO','SEO/HEO','G6/7','SCS')) +
-  theme(text = element_text(family=fontfamily,size=10),
-        axis.text=element_text(colour='grey'),
-        axis.text.x = element_text(angle = 0),
-        axis.text.y= element_text(vjust=0),
-        axis.ticks=element_blank(),
-        axis.title=element_text(colour='grey'),
-        legend.title=element_blank(),
-        legend.position='bottom',
-        legend.direction='horizontal',
-        legend.key.size=unit(.3,units='cm'),
-        legend.text = element_text(vjust=1),
-        panel.margin=unit(c(.1,.1,.1,.1),'cm'),
-        panel.border=element_rect(colour='grey'),
-        plot.margin=unit(c(1,1,1,0),'cm'),
-        strip.text=element_text(face='bold',size=12),
-        plot.title=element_text(family=fontfamily,face='bold',size=14,
-                                lineheight=2.5, vjust=2)) +
+  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
   facet_wrap(~Group, nrow=3) +
-  ggtitle(plottitle) +
-  xlab("Salary range, £000") +
-  ylab('Staff in grade and pay range, as proportion of all staff in department')
+  labs(x=xlabel,y=ylabel,title=plottitle)
+plot_DeGePay
 
 # Save plot ---------------------------------------------------------------
 
-ggsave(plot=plot_DeGePay,filename=plotname, family=fontfamily, device=cairo_pdf, height=ph, width=pw)
-#embed_fonts(plotname, outfile=plotname)
-dev.off()
-
-# Draw plot ---------------------------------------------------------------
-
-plot_DeGePay
+SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw)

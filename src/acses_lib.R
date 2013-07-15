@@ -1,7 +1,7 @@
 # Set location ------------------------------------------------------------
 
-location='home'
-#location='ifg'
+#location='home'
+location='ifg'
 
 # Load libraries ----------------------------------------------------------
 
@@ -22,10 +22,10 @@ ph=24.5/2
 
 fontfamily='Calibri'
 #font_import()
-loadfonts(device='postscript')
-loadfonts()
+loadfonts(device='postscript',quiet=TRUE)
+loadfonts(quiet=TRUE)
 if(location=='ifg') {
-  loadfonts(device='win')
+  loadfonts(device='win',quiet=TRUE)
 }
 
 # Fn: load and clean ACSES data -------------------------------------------------
@@ -50,12 +50,14 @@ LoadAcsesData <- function (file_name, location='home') {
   return(dataset)
 }
 
-
 # Fn: Load org-group data -------------------------------------------------
 
-AddOrgData <- function (dataset) {
+AddOrgData <- function (dataset, exclude=TRUE) {
   orgs <- read.csv('./data-input/acses_orgs.csv')
   dataset <- merge(dataset,orgs,all.x=TRUE)
+  if(exclude==TRUE) {
+    dataset <- dataset[dataset$Include=='Yes',]
+  }
   return(dataset)
 }
 
@@ -114,7 +116,7 @@ RelabelGrades <- function (dataset) {
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Grades 6 & 7"] <- "G6/G7"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Total"] <- "All grades"
-  dataset$Civil.Service.grad = factor(dataset$Civil.Service.grad,
+  dataset$Civil.Service.grad <- factor(dataset$Civil.Service.grad,
                                       levels(dataset$Civil.Service.grad)[c(7,1,2,4,5,3,6)])
   dataset$Civil.Service.grad <- droplevels(dataset$Civil.Service.grad)
   return(dataset)
@@ -123,7 +125,18 @@ RelabelGrades <- function (dataset) {
 # Fn: Relabel - paybands --------------------------------------------------
 
 RelabelPaybands <- function (dataset) {
-  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="up to £20,000"] <- "< 20"
+  dataset$Wage.band <- factor(dataset$Wage.band,
+                              levels(dataset$Wage.band)[c(10,1:7,8,9)])
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="up to Â20,000"] <- "< 20"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â20,001 - Â30,000"] <- "20-30"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â30,001 - Â40,000"] <- "30-40"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â40,001 - Â50,000"] <- "40-50"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â50,001 - Â60,000"] <- "50-60"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â60,001 - Â70,000"] <- "60-70"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â70,001 - Â80,000"] <- "60-70"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="more than Â80,000"] <- "> 80"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="up to Â£20,000"] <- "< 20"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="up to Â20,000"] <- "< 20"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£20,001 - £30,000"] <- "20-30"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£30,001 - £40,000"] <- "30-40"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£40,001 - £50,000"] <- "40-50"
@@ -131,6 +144,14 @@ RelabelPaybands <- function (dataset) {
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£60,001 - £70,000"] <- "60-70"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£70,001 - £80,000"] <- "60-70"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="more than £80,000"] <- "> 80"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="up to Â£20,000"] <- "< 20"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â£20,001 - Â£30,000"] <- "20-30"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â£30,001 - Â£40,000"] <- "30-40"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â£40,001 - Â£50,000"] <- "40-50"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â£50,001 - Â£60,000"] <- "50-60"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â£60,001 - Â£70,000"] <- "60-70"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â£70,001 - Â£80,000"] <- "60-70"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="more than Â£80,000"] <- "> 80"
   dataset$Wage.band <- droplevels(dataset$Wage.band)
   return(dataset)
 }
@@ -164,8 +185,8 @@ SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
   }
   dev.off()
   save(splot,file=plotobjpath)
+  splot
 }
-
 
 # Sort group factor by given variable -------------------------------------
 

@@ -10,7 +10,7 @@ uu <- origdata
 
 # FILTER OUT WAGE BAND LINES
 uu <- uu[uu$Wage.band=='Total',]
-uu <- uu[uu$Gender=='Total',]
+uu <- uu[uu$Gender='Total',]
 uu <- uu[uu$Organisation=='Total (All Departments)',]
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
@@ -62,10 +62,7 @@ plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2,
                              override.aes=list(size=1))) +
-  scale_y_continuous(breaks=ybreaks,
-                     limits=ylimits,
-                     labels=ylabels,
-                     expand=c(0,0)) +
+  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
   labs(title=plottitle,y=ylabel,x=xlabel) +
   theme(axis.line=element_line(colour=IfGcols[1,1]),
         text=element_text(family=fontfamily,size=8),
@@ -80,5 +77,3 @@ dev.off()
 # Save plot ---------------------------------------------------------------
 
 SavePlot(ffamily=fontfamily,plotformat=plotformat,ploth=ph,plotw=pw, plotname=plotname)
-
-plot_DisabGrYr

@@ -55,8 +55,6 @@ uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
 #reorder grouping variable
 uu$Group <- reorder(uu$Group,uu$sorter,mean)
 
-#SortDepts(uu,uu$Civil.Service.grad)
-
 # Make female share negative
 uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
 uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
@@ -65,7 +63,7 @@ uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
 plotformat='eps'
 plotname <- 'plot_DeGeGr'
-plottitle <- 'Civil Servants by grade'
+plottitle <- 'Civil Servants by gender and grade'
 ylabel <- 'Staff in grade as % of whole Civil Service'
 xlabel <- ''
 ph=15.3
@@ -81,23 +79,16 @@ ylabels <- paste0(abs(ybreaks*100),'%')
 plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
   coord_flip() +
-  scale_fill_manual(values=c(IfGcols[2,1],IfGcols[3,1]),
+  scale_fill_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
                     labels=c('Female   ', 'Male')) +
   guides(colour = guide_legend(ncol = 1)) +
   guides(col=guide_legend(ncol=3)) +
-  scale_y_continuous(breaks=ybreaks,
-                     limits=ylimits,
-                     labels=ylabels) +
+  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
   facet_wrap(~Group, nrow=3) +
-  theme(axis.text.x=element_text(angle=90),axis.line=element_blank()) +
-  labs(title=plottitle, y=ylabel,x=xlabel)
-
-# Draw plot ---------------------------------------------------------------
-
+  labs(title=plottitle, y=ylabel,x=xlabel) +
+  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,3]))
 plot_DeGeGr
-dev.off()
 
 # Save plot ---------------------------------------------------------------
 
 SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)
-plot_DeGeGr
