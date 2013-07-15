@@ -40,16 +40,16 @@ uu <- uu[uu$Ethnic.grou!='White',]
 
 plotformat='eps'
 plotname <- 'plot_GrMinYr'
-plottitle <- 'Civil Servants identifying as ethnic minority, 2008-12'
+plottitle <- 'Civil Servants identifying as ethnic minority'
 ylabel <- 'Staff as % of disclosed'
 xlabel <- ''
-pw=15.3
-ph=24.5/2
+pw=15.3/2
+ph=24.5/4
 
 uu$yvar <- uu$share
-maxY <- max(abs(.2),na.rm=TRUE)
-ylimits <- c(0, maxY)
-ybreaks <- signif(seq(ylimits[1],ylimits[2],length.out=5),2)
+maxY <- max(abs(.15),na.rm=TRUE)
+ylimits <- c(0, .15)
+ybreaks <- c(0,0.05,.1,.15)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 uu$minpop <- 0.14
@@ -67,17 +67,18 @@ plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
   scale_linetype_manual(values=c('UK Population (2011)'='dotted')) +
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2,
-                             override.aes=list(size=1),
-                             keywidth=unit(1,'cm')),
+                             override.aes=list(size=0)),
          linetype=guide_legend(order=3,override.aes=list(linetype='dotted'),
                                keywidth=unit(1,'cm'))) +
   scale_y_continuous(breaks=ybreaks,
                      limits=ylimits,
                      labels=ylabels,
                      expand=c(0,0)) +
-  ggtitle(plottitle) +
-  ylab(ylabel) +
-  xlab(xlabel)
+  labs(x=xlabel,y=ylabel,title=plottitle) +
+  theme(axis.line=element_line(colour=IfGcols[1,1]),
+        text=element_text(family=fontfamily,size=8),
+        plot.title=element_text(family=fontfamily,size=10),
+        legend.position=c(.5,.9))
 
 # Draw plot ---------------------------------------------------------------
 
@@ -86,7 +87,7 @@ dev.off()
 
 # Save plot ---------------------------------------------------------------
 
-SavePlot(ffamily=fontfamily,plotformat='eps',)
+SavePlot(ffamily=fontfamily,plotformat=plotformat,plotname=plotname,ploth=ph,plotw=pw)
 
 dev.off()
 plot_GrMinYr

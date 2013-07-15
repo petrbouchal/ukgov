@@ -40,20 +40,20 @@ uu <- uu[uu$Disability.statu!='Non-disabled',]
 
 plotformat='eps'
 plotname <- 'plot_DisabGrYr'
-plottitle <- 'Civil Servants identifying as disabled, 2008-12'
+plottitle <- 'Civil Servants identifying as disabled'
 ylabel <- 'Staff as % of disclosed'
 xlabel <- ''
-pw=15.3
-ph=24.5/2
+pw=15.3/2
+ph=24.5/4
 
 uu$yvar <- uu$share
 maxY <- max(abs(uu$share),na.rm=TRUE)
-ylimits <- c(0, maxY)
-ybreaks <- signif(seq(ylimits[1],ylimits[2],length.out=5),2)
+ylimits <- c(0, .09)
+ybreaks <- c(0,.03,.06,.09)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
-  geom_bar(aes(fill=Civil.Service.grad,group=Civil.Service.grad),
+  geom_bar(aes(fill=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
   scale_colour_manual(values=c('All grades'=IfGcols[2,1],
                                'SCS'=IfGcols[3,1])) +
@@ -61,15 +61,16 @@ plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
                              'SCS'=IfGcols[3,1])) +
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2,
-                             override.aes=list(size=1),
-                             keywidth=unit(1,'cm'))) +
+                             override.aes=list(size=1))) +
   scale_y_continuous(breaks=ybreaks,
                      limits=ylimits,
                      labels=ylabels,
                      expand=c(0,0)) +
-  ggtitle(plottitle) +
-  ylab(ylabel) +
-  xlab(xlabel)
+  labs(title=plottitle,y=ylabel,x=xlabel) +
+  theme(axis.line=element_line(colour=IfGcols[1,1]),
+        text=element_text(family=fontfamily,size=8),
+        legend.position=c(.2,.9),
+        plot.title=element_text(size=10))
 
 # Draw plot ---------------------------------------------------------------
 
@@ -78,7 +79,6 @@ dev.off()
 
 # Save plot ---------------------------------------------------------------
 
-SavePlot(ffamily=fontfamily,plotformat='emf')
+SavePlot(ffamily=fontfamily,plotformat=plotformat,ploth=ph,plotw=pw, plotname=plotname)
 
-dev.off()
 plot_DisabGrYr

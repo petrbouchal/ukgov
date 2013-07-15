@@ -1,7 +1,7 @@
 # Set location ------------------------------------------------------------
 
-#location='home'
-location='ifg'
+location='home'
+#location='ifg'
 
 # Load libraries ----------------------------------------------------------
 
@@ -23,7 +23,6 @@ ph=24.5/2
 fontfamily='Calibri'
 #font_import()
 loadfonts(device='postscript')
-loadfonts(device='win')
 loadfonts()
 if(location=='ifg') {
   loadfonts(device='win')
@@ -79,24 +78,30 @@ rm(IfGcols1,IfGcols2,IfGcols3,IfGcols4,IfGcols5,IfGcols6,IfGcols7)
 
 theme_WHM <-theme_few() +
   theme(text = element_text(family=fontfamily,size=10),
-        axis.text = element_text(colour='grey30'),
+        axis.text = element_text(colour='grey30',hjust=.5,vjust=.5),
         axis.text.x = element_text(angle = 0),
-        axis.text.y= element_text(vjust=0),
+        #axis.text.y= element_text(vjust=0,hjust=1),
         axis.title=element_text(colour='grey30'),
         axis.ticks=element_blank(),
         axis.title=element_text(),
-        axis.line=element_line(size=.5,colour=IfGcols[1,1]),
+        axis.line=element_blank(),
         legend.title=element_blank(),
+        #legend.position=c(.5,-0.17),
         legend.position='bottom',
         legend.box='horizontal',
         legend.direction='horizontal',
-        legend.key.size=unit(.3,units='cm'),
+        legend.key=element_rect(colour='white'),
+        legend.key.size=unit(.2,'cm'),
         legend.text = element_text(vjust=1),
-        panel.margin=unit(c(0,0,0,0),'cm'),
+        legend.background=element_blank(),
+        #legend.margin=unit(c(0,0,0,0),'mm'),
+        panel.margin=unit(c(1,1,1,1),'mm'),
         panel.border=element_blank(),
-        plot.margin=unit(c(1,1,0,0),'cm'),
-        plot.title=element_text(family=fontfamily,face='bold',size=14,
-                                lineheight=2.5, vjust=2))
+        panel.background=element_blank(),
+        plot.background=element_blank(),
+        plot.margin=unit(c(.25,.25,0,0),'cm'),
+        plot.title=element_text(face='bold',size=12,
+                                lineheight=1.5, vjust=.75))
 
 theme_set(theme_WHM)
 
@@ -107,13 +112,13 @@ RelabelGrades <- function (dataset) {
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Executive officer"] <- "EO"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Senior and higher executive officer"] <- "SEO/HEO"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
+  levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Grades 6 & 7"] <- "G6/G7"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Total"] <- "All grades"
   dataset$Civil.Service.grad = factor(dataset$Civil.Service.grad,
-                                    levels(dataset$Civil.Service.grad)[c(7,1,2,4,5,3,6)])
+                                      levels(dataset$Civil.Service.grad)[c(7,1,2,4,5,3,6)])
+  dataset$Civil.Service.grad <- droplevels(dataset$Civil.Service.grad)
   return(dataset)
 }
-
-
 
 # Fn: Relabel - paybands --------------------------------------------------
 
@@ -126,6 +131,7 @@ RelabelPaybands <- function (dataset) {
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£60,001 - £70,000"] <- "60-70"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£70,001 - £80,000"] <- "60-70"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="more than £80,000"] <- "> 80"
+  dataset$Wage.band <- droplevels(dataset$Wage.band)
   return(dataset)
 }
 
@@ -150,11 +156,36 @@ SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
     ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_pdf,
            height=ph, width=pw, units='cm')  
   } else if(plotformat=='eps') {
-    ggsave(plotimagepath, plot=splot, family=ffamily,
+    ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_ps,
            height=ph, width=pw, units='cm')
   } else {
     ggsave(plotimagepath, plot=splot, family=ffamily,
            height=ploth, width=plotw, units='cm')
   }
-  save(plot_GrMinYr,file=plotobjpath)
+  dev.off()
+  save(splot,file=plotobjpath)
+}
+
+
+# Sort group factor by given variable -------------------------------------
+
+SortDepts <- function (dataset, sortin, sortbycat, sortbyvar) {
+  # orders factor (sortin) by how much of the staff (as counted by sortbyvar)
+  # is in each category (sortbycat) - i.e. in effect by the mean grade / age / pay
+  gradevalues <- data.frame('sortbyval'=c(1:length(levels(sortbycat))),
+                            sortbycat=levels(sortbycat))
+  dataset <- merge(dataset,gradevalues)
+  xtot <- ddply(dataset,.(Group, Date, sortbycatname),
+                summarise,sharewholegrp=sum(share, na.rm=TRUE))
+  dataset <- merge(dataset,xtot)
+  dataset <- merge(dataset,gradevalues)
+  dataset$gradescore <- dataset$gradeval*dataset$sharewholegrp
+  xtot <- ddply(dataset,.(Group,Date),summarise,meangradescore=mean(gradescore))
+  dataset <- merge(dataset,xtot)
+  dataset$sorter <- dataset$meangradescore
+  #make Whole CS category go last
+  dataset$sorter[dataset$Group=='Whole Civil Service'] <- max(dataset$sorter)*1.1
+  #reorder grouping variable
+  dataset$Group <- reorder(dataset$Group,dataset$sorter,mean)
+  return(dataset)
 }

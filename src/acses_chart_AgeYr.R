@@ -41,7 +41,7 @@ uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
 plotformat='pdf'
 plotname <- 'plot_AgeYr'
-plottitle <- 'Civil Servants by age'
+plottitle <- 'Civil Servants by gender and age'
 ylabel <- 'Staff in age group as % of whole Civil Service'
 xlabel <- ''
 pw=15.3/2
@@ -54,36 +54,37 @@ ylimits <- c(-maxY*1.04, maxY*1.04)
 ybreaks <- signif(seq(ylimits[1],ylimits[2],length.out=5),1)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
-uu$transp <- 1
-uu$transp[uu$Date==2012] <- 1
+uu$grp <- paste0(uu$Gender,' ',uu$Date)
 
-plot_AgeYr <- ggplot(uu, aes(x=Age.band, y=yvar,group=Gender)) +
-   geom_bar(position='identity', width=.9,data=uu[uu$Date==2012,],
-            aes(fill=Gender),stat='identity') +
-   geom_point(data=uu[uu$Date==2010,],aes(pch='2010'),
-              colour='grey30',size=10,show_guide=T) +
-  scale_fill_manual(values=c('Female'=IfGcols[3,1],'Male'=IfGcols[2,1])) +
+plot_AgeYr <- ggplot(uu, aes(x=Age.band, y=yvar,group=grp)) +
+  geom_bar(position='dodge', width=.9,data=uu[uu$Gender=='Male',],
+           aes(fill=as.factor(grp)),stat='identity') +
+  geom_bar(position='dodge', width=.9,data=uu[uu$Gender=='Female',],
+           aes(fill=as.factor(grp)),stat='identity') +
+  scale_fill_manual(values=c('Female 2010'=IfGcols[3,2],
+                             'Female 2012'=IfGcols[3,1],
+                             'Male 2010'=IfGcols[2,2],
+                             'Male 2012'=IfGcols[2,1])) +
   scale_y_continuous(limits=ylimits,
                       labels=ylabels,
                       breaks=ybreaks) +
-  scale_shape_manual(values=c('2010'='I')) +
   guides(fill=guide_legend(override.aes=list(shape=NA,size=1.2),
-                           label.vjust=.5,order=2),
+                           label.vjust=.5,order=2,nrow=2),
          shape=guide_legend(override.aes=list(size=4),
-         label.vjust=.5,order=2,keyheight=.5,hjust=0)) +
-  ggtitle(plottitle) +
-  ylab(ylabel) +
-  xlab(xlabel) +
-  theme(plot.margins=c(0,0,0,0),panel.margins=c(0,0,0,0),
-        legend.box.just='bottom') +
-  coord_flip()
+         label.vjust=.5,order=2,hjust=0)) +
+  labs(x=xlabel,y=ylabel,title=plottitle) +
+  coord_flip() +
+  theme(axis.line=element_line(colour=IfGcols[1,1]),
+        legend.direction='vertical',
+        legend.position=c(.25,.92),
+        text=element_text(family=fontfamily,size=8),
+        plot.title=element_text(family=fontfamily,size=10))
 
 # Draw plot ---------------------------------------------------------------
 
 plot_AgeYr
-dev.off()
 
 # Save plot ---------------------------------------------------------------
 
-SavePlot(plotname='AgeYr',ffamily='Calibri',)
+SavePlot(plotname=plotname,ffamily='Calibri',ploth=ph,plotw=pw)
 plot_AgeYr

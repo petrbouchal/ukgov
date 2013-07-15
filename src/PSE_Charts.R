@@ -1,14 +1,6 @@
-library(plyr)
-library(stringr)
-library(ggplot2)
-library(grid)
-library(ggthemes)
-library(reshape)
-library(plyr)
-library(scales)
-#library(extrafont)
+source('./src/acses_lib.R')
 
-# source('./src/PSE_Reshape.R') # to prepare data if needed
+source('./src/PSE_Reshape.R') # to prepare data if needed
 
 # Manual for google charts:
 # 
@@ -22,28 +14,25 @@ changel$chart[changel$Dept == 'Total']  <- FALSE
 changel$chart[changel$Dept == 'AGO']  <- FALSE
 changel$chart[changel$Dept == 'NIO']  <- FALSE
 changel$chart[changel$Dept == 'GEO']  <- FALSE
-plotPSE <- ggplot(data=changel[changel$measure=='Cumulative_perc_endog_change' &
+changel$chart[changel$Dept == 'Welsh Gov']  <- FALSE
+changel$chart[changel$Dept == 'Scot Gov']  <- FALSE
+changel$chart[changel$Dept == 'FCO' & changel$Whitehall!='Total']  <- FALSE
+plotPSE <- ggplot(data=changel[changel$measure=='Cumulative_Perc_net_change' &
                                  changel$chart==TRUE,],
                   aes(x=Period,y=value, group=group, colour=Whitehall)) + 
-  geom_hline(y=0, size=.2, colour='grey')+
   geom_line(size=1) +
   geom_point(aes(colour=Whitehall), size=1) +
   geom_point(colour='white', size=.8) +
-  scale_color_manual(values=c('#00ccff', '#7a9393', '#d40072')) +
+  scale_color_manual(values=c(IfGcols[2,1], IfGcols[5,1], IfGcols[3,1])) +
   scale_y_continuous(labels=percent) +
-  facet_wrap(~Dept, scales='fixed') +
-  theme_gray() +
+  facet_wrap(~Dept, scales='fixed',nrow=3) +
   labs(title='Change in civil service staff by department, SR 2010 to present',
        y='% change since SR 2010', x = 'Quarter') +
   guides(colour = guide_legend(ncol = 1)) +
   guides(col=guide_legend(ncol=3)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        legend.title=element_blank(),
-        legend.position='bottom',
-        legend.direction='vertical',
-        axis.ticks=element_blank(),
-        plot.title=element_text(family="Bliss",face='bold',size=20,
-        lineheight=2.5, vjust=1))
+        panel.border=element_rect(fill=NA,color=IfGcols[1,1]),
+        panel.margin=unit(c(1,1,1,1),'mm'))
 plotPSE
 
 # reshape to wide(r) for googlevis
@@ -110,5 +99,5 @@ plot(Motion)
 
 # reorder levels - keeping code for record
 # DeptsFTEwithtotals$Dept <- reorder(DeptsFTEwithtotals$Dept,
-                                   -DeptsFTEwithtotals$sFTE2012Q2) 
+#                                   -DeptsFTEwithtotals$sFTE2012Q2) 
 
