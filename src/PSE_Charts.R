@@ -19,20 +19,20 @@ totals <- PSE[PSE$measure=='Cumulative_Perc_net_change' & PSE$Whitehall=='Total'
                   c(1,3)]
 totals$sorter <- totals$value
 totals$value <- NULL
-
 PSE <- merge(PSE, totals,all.x=TRUE)
 PSE$sorter[PSE$Dept =='Total excl. WH FCO'] <- max(PSE$sorter)*1.1
 PSE$Dept <- reorder(PSE$Dept,PSE$sorter,mean)
+PSE$Whitehall <- factor(PSE$Whitehall,levels(PSE$Whitehall)[c(3,1,2)])
 
 labelsx <- c('2010Q3','Q4','2011Q1','Q2','Q3','Q4','2012Q1','Q2','Q3','Q4','2013Q4')
 
 plotPSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
                                  PSE$chart,],
                   aes(x=Period,y=value, group=group, colour=Whitehall)) + 
-  geom_line(size=1) +
   geom_hline(yintercept=0,colour=IfGcols[1,2]) +
+  geom_line(size=1) +
   facet_wrap(~Dept, scales='fixed',nrow=3) +
-  scale_color_manual(values=c(IfGcols[2,1], IfGcols[5,1], IfGcols[3,1])) +
+  scale_color_manual(values=c(IfGcols[3,1], IfGcols[2,1], IfGcols[5,1])) +
   scale_y_continuous(labels=percent) +
   scale_x_discrete(labels=labelsx) +
   labs(title='Change in civil service staff by department, SR 2010 to present',
@@ -41,7 +41,7 @@ plotPSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
   theme(axis.text.x = element_text(angle = 90, hjust = 1),
         axis.line.x=element_line(size=unit(1,'mm'),colour=IfGcols[1,2]),
         panel.border=element_rect(fill=NA,color=IfGcols[1,3]),
-        panel.margin=unit(c(1,1,1,1),'mm'),panel.background=element_rect(fill=IfGcols[3,3]))
+        panel.margin=unit(c(1,1,1,1),'mm'))
 plotPSE
 
 # Save ggplot -------------------------------------------------------------

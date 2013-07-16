@@ -13,12 +13,14 @@ uu <- AddOrgData(uu,exclude=FALSE)
 uu$Include[uu$Group=='HMRC'] <- 'Yes'
 uu$Include[uu$Group=='DWP'] <- 'Yes'
 uu <- uu[uu$Include=='Yes',]
-uu <- uu[uu$Whitehall=='WH' | uu$Whitehall=='Total',]
+#uu <- uu[uu$Whitehall=='WH' | uu$Whitehall=='Total',]
 
 # FILTER OUT UNWANTED LINES
 uu <- uu[uu$Gender!='Total',]
 uu <- uu[uu$Civil.Service.grad=='Total',]
 uu <- uu[uu$Wage.band=='Total',]
+
+uu <- RelabelAgebands(uu)
 
 # CREATE TOTALS PER GROUP
 uu <- ddply(uu, .(Group, Date, Age.band, Gender),
@@ -35,7 +37,6 @@ uu <- uu[uu$Age.band!='Unknown age',]
 uu <- merge(uu, totals)
 uu$share <- uu$count/uu$total
 
-uu <- RelabelAgebands(uu)
 
 # Select years
 uu <- uu[uu$Date=='2012',]
@@ -72,7 +73,7 @@ uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
 
 ph = 15.3
 pw = 24.5
-plotname <- './charts/ACSES charts/plot_AgeDeYr.png'
+plotname <- './charts/ACSES charts/plot_AgeDeGe.png'
 
 plottitle='Civil Servants in departments by gender and age group'
 ylabel = 'Staff in age group as % of whole department'
@@ -80,14 +81,14 @@ xlabel = ''
 
 uu$yvar <- uu$share
 
-maxY <- max(abs(uu$yvar),na.rm=TRUE)
+maxY <- max(abs(uu$yvar),na.rm=FALSE)
 ylimits <- c(-maxY*1.04, maxY*1.04)
 ybreaks <- c(-.3,-.15,0,.15,.3)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
-plot_AgeDeYr <- ggplot(uu, aes(x=Age.band, y=yvar)) +
+plot_AgeDeGe <- ggplot(uu, aes(x=Age.band, y=yvar)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
-  scale_fill_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
+  scale_fill_manual(values=c(IfGcols[2,1],IfGcols[5,1]),
                     labels=c('Female   ', 'Male')) +
   guides(col=guide_legend(ncol=3)) +
   scale_y_continuous(labels=ylabels,breaks=ybreaks,limits=ylimits) +
@@ -96,7 +97,7 @@ plot_AgeDeYr <- ggplot(uu, aes(x=Age.band, y=yvar)) +
   coord_flip() +
   labs(y=ylabel,title=plottitle,x=xlabel) +
   theme(panel.border=element_rect(fill=NA,color=IfGcols[1,3]))
-plot_AgeDeYr
+plot_AgeDeGe
 
 # Save plot ---------------------------------------------------------------
 

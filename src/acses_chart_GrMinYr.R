@@ -77,15 +77,8 @@ plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
         text=element_text(family=fontfamily,size=8),
         plot.title=element_text(family=fontfamily,size=10),
         legend.position=c(.5,.9))
-
-# Draw plot ---------------------------------------------------------------
-
 plot_GrMinYr
-dev.off()
 
 # Save plot ---------------------------------------------------------------
 
 SavePlot(ffamily=fontfamily,plotformat=plotformat,plotname=plotname,ploth=ph,plotw=pw)
-
-dev.off()
-plot_GrMinYr

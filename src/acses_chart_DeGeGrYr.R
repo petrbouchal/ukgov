@@ -13,27 +13,23 @@ uu <- uu[uu$Wage.band=='Total',]
 uu <- AddOrgData(uu)
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
-uu <- uu[uu$Include=='Yes',]
 uu <- uu[uu$Gender!='Total',]
 
 # CREATE TOTALS PER GROUP
-totals <- uu[uu$Civil.Service.grad=='Total',]
-uu <- uu[uu$Civil.Service.grad!='Total',]
 uu <- ddply(uu, .(Group, Gender, Date, Civil.Service.grad),
                summarise, count=sum(count, na.rm=TRUE))
+totals <- uu[uu$Civil.Service.grad=='Total',]
+uu <- uu[uu$Civil.Service.grad!='Total',]
 
-write.csv(uu,file='./data-output/ACSES_DeGeGr.csv')
-
-totals <- ddply(totals, .(Group, Date), summarise,
+totals <- ddply(totals, .(Group, Date,Civil.Service.grad), summarise,
                   total=sum(count, na.rm=TRUE))
 
 # MERGE TOTALS INTO MAIN FILE
 uu <- merge(uu, totals)
 uu$share <- uu$count/uu$total
 
-# SELECT YEAR
-uu <- uu[uu$Date=='2012',]
-uu <- uu[uu$Civil.Service.grad!='Not reported',]
+# SELECT GRADES
+uu <- uu[uu$Civil.Service.grad=='SCS' | uu$Civil.Service.grad=='All grades',]
 uu$grp <- paste0(uu$Group, uu$Gender) 
 
 uu <- RelabelGrades(uu)
@@ -42,7 +38,7 @@ uu <- RelabelGrades(uu)
 gradevalues <- data.frame('gradeval'=c(1:length(levels(uu$Civil.Service.grad))),
                           'Civil.Service.grad'=levels(uu$Civil.Service.grad))
 uu <- merge(uu,gradevalues)
-xtot <- ddply(uu,.(Group, Date, Civil.Service.grad),
+xtot <- ddply(uu[uu$Date==2012],.(Group, Civil.Service.grad),
               summarise,sharebothgenders=sum(share, na.rm=TRUE))
 uu <- merge(uu,xtot)
 uu <- merge(uu,gradevalues)
@@ -55,14 +51,14 @@ uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
 #reorder grouping variable
 uu$Group <- reorder(uu$Group,uu$sorter,mean)
 
+
+# Build plot --------------------------------------------------------------
 # Make female share negative
 uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
 uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
-# Build plot --------------------------------------------------------------
-
 plotformat='eps'
-plotname <- 'plot_DeGeGr'
+plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
 ylabel <- 'Staff in grade as % of whole Civil Service'
 xlabel <- ''
@@ -76,7 +72,7 @@ ylimits <- c(-maxY*1.04, maxY*1.04)
 ybreaks <- c(-.3,-.15,0,.15,.3)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
-plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share)) +
+plot_DeGeGrYr <- ggplot(uu, aes(Civil.Service.grad, share)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
   coord_flip() +
   scale_fill_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
@@ -87,7 +83,7 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share)) +
   facet_wrap(~Group, nrow=3) +
   labs(title=plottitle, y=ylabel,x=xlabel) +
   theme(panel.border=element_rect(fill=NA,color=IfGcols[1,3]))
-plot_DeGeGr
+plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------
 

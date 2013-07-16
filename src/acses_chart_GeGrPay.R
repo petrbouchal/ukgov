@@ -1,145 +1,75 @@
-
-# Load packages -----------------------------------------------------------
-
-library(plyr)
-library(ggplot2)
-library(scales)
-library(grid)
-library(ggthemes)
-library(extrafont)
+source('./src/acses_lib.R')
 
 # Load data ---------------------------------------------------------------
 
-#path  <- '/Users/petrbouchal/Downloads/ACSES/'
-path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
-fullpath <- paste0(path, filename)
-acses <- read.delim(fullpath, sep='\t')
-acses$value[acses$value=='#'] <- NA
-acses$value[acses$value=='..'] <- NA
-orgnames <- as.data.frame(unique(acses$new1))
+origdata <- LoadAcsesData(filename,location)
 
 # Process data ------------------------------------------------------------
+uu <- origdata
 
 # FILTER
-org = 'Total (All Departments)'
-ac_ch <- acses
-ac_ch <- ac_ch[ac_ch$new1==org & ac_ch$Gender!='Total',]
-
-# turn value into numeric 'count' variable
-
-
-# MERGE FILTER/GROUP DATA INTO MAIN DATA
-# ac_ch <- merge(ac_ch,orgs, all.x=TRUE)
-# ac_ch <- ac_ch[ac_ch$Include=='Yes',]
-# ac_ch <- unique(ac_ch) # removes duplicate lines for DfE and GEO
+uu <- uu[uu$Organisation=='Total (All Departments)' & uu$Gender!='Total',]
 
 # CREATE TOTALS PER GROUP
-totals <- ac_ch[ac_ch$Wage.band=='Total',]
-ac_ch <- ac_ch[ac_ch$Wage.band!='Total',]
+totals <- uu[uu$Wage.band=='Total',]
+uu <- uu[uu$Wage.band!='Total',]
 
-totals <- ddply(totals, .(Date, Civil.Service.grad), summarise,
+totals <- ddply(totals, .(Date, Civil.Service.grad,Gender), summarise,
                   total=sum(count, na.rm=TRUE))
 
 # MERGE TOTALS INTO MAIN DATA
-ac_ch <- merge(ac_ch, totals, by=c('Civil.Service.grad','Date'))
-ac_ch$share <- ac_ch$count/ac_ch$total
+uu <- merge(uu, totals, by=c('Civil.Service.grad','Date','Gender'))
+uu$share <- uu$count/uu$total
 
 # Make female share negative
-ac_ch$share[ac_ch$Gender=='Female'] <- -ac_ch$share[ac_ch$Gender=='Female']
-ac_ch$count[ac_ch$Gender=='Female'] <- -ac_ch$count[ac_ch$Gender=='Female']
+uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
+uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
-# REORDER LEVELS
-ac_ch$Civil.Service.grad = factor(ac_ch$Civil.Service.grad,
-                                  levels(ac_ch$Civil.Service.grad)[c(1,2,4,5,3,6,7)])
-ac_ch$Wage.band = factor(ac_ch$Wage.band,
-                                  levels(ac_ch$Wage.band)[c(8,9,10,1:7)])
 # FILTER OUT UNNEEDED BITS
-ac_ch <- ac_ch[ac_ch$Civil.Service.grad!='Not reported',]
-ac_ch <- ac_ch[ac_ch$Wage.band!='not reported',]
-
-# CREATE GROUPINGS
-ac_ch$grp <- paste0(ac_ch$Civil.Service.grad, ac_ch$Gender) 
+uu <- uu[uu$Civil.Service.grad!='Not reported',]
+uu <- uu[uu$Wage.band!='not reported',]
 
 # SELECT YEAR
-ac_ch <- ac_ch[ac_ch$Date==2012,]
+uu <- uu[uu$Date==2012,]
+
+uu <- RelabelGrades(uu)
+uu <- RelabelPaybands(uu)
 
 # Build plot --------------------------------------------------------------
+uu$grp <- paste0(uu$Civil.Service.grad, uu$Gender) 
 
-# fix labels
-
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Administrative officers and assistants"] <- "AO"
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Executive officer"] <- "EO"
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior and higher executive officer"] <- "SEO/HEO"
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
-levels(ac_ch$Civil.Service.grad)[levels(ac_ch$Civil.Service.grad)=="Total"] <- "All grades"
-
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="up to Â£20,000"] <- "< 20"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£20,001 - Â£30,000"] <- "20-30"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£30,001 - Â£40,000"] <- "30-40"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£40,001 - Â£50,000"] <- "40-50"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£50,001 - Â£60,000"] <- "50-60"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£60,001 - Â£70,000"] <- "60-70"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="Â£70,001 - Â£80,000"] <- "60-70"
-# levels(ac_ch$Wage.band)[levels(ac_ch$Wage.band)=="more than Â£80,000"] <- "> 80"
-
-ac_ch <- RelabelPaybands(ac_ch)
-
-#loadfonts()
-#loadfonts(device='win')
-#fonts()
-
-maxY <- max(abs(ac_ch$share),na.rm=TRUE)
-plottitle <- 'Civil Service pay by grade and gender'
-pw=9.7/1.44
-ph=6.3/1.44
-
-fontfamily = 'Calibri'
 plotname <- './charts/ACSES charts/plot_GeGrPay.pdf'
-plot_GeGrPay <- ggplot(ac_ch, aes(Wage.band, share)) +
+
+plottitle <- 'Civil Service pay by grade and gender'
+xlabel="Salary range, £000"
+ylabel='Staff in grade, as proportion of all staff in department'
+pw=24.5
+ph=15.3
+
+maxY <- max(abs(uu$share),na.rm=TRUE)
+ylimits <- c(-maxY,maxY)
+ybreaks <- c(-maxY,maxY)
+ylabels <- paste0(abs(ybreaks*100),'%')
+
+uu$yvar <- uu$share
+
+plot_GeGrPay <- ggplot(uu, aes(Wage.band, yvar)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
-#  geom_area(aes(group=grp, fill=Gender), data=ac_ch[ac_ch$Gender=='Female',]) +
   coord_flip() +
-  scale_fill_manual(values=c('#d40072','#00ccff'),
+  scale_fill_manual(values=c(IfGcols[2,1],IfGcols[5,1]),
                     labels=c('Female   ', 'Male')) +
   guides(colour = guide_legend(ncol = 1)) +
   guides(col=guide_legend(ncol=3)) +
-  theme_few() +
   scale_y_continuous(labels=c('20%','0','20%'),
                      limits=c(-maxY,
                               maxY),
                      breaks=c(-.2,0,.2)) +
-  #scale_x_discrete(labels = c('AO','EO','SEO/HEO','G6/7','SCS')) +
-  theme(text = element_text(family=fontfamily,size=10),
-        axis.text = element_text(colour='grey'),
-        axis.text.x = element_text(angle = 0),
-        axis.ticks=element_blank(),
-        axis.text.y= element_text(vjust=0),
-        axis.title.y=element_blank(),
-        axis.title.x=element_text(colour='grey'),
-        legend.title=element_blank(),
-        legend.position='bottom',
-        legend.direction='horizontal',
-        legend.key.size=unit(.3,units='cm'),
-        legend.text = element_text(vjust=1),
-        panel.margin=unit(c(.1,.1,.1,.1),'cm'),
-        panel.border=element_rect(colour='grey'),
-        strip.text=element_text(face='bold',size=12),
-        plot.margin=unit(c(1,1,1,0),'cm'),
-        plot.title=element_text(family=fontfamily,face='bold',size=14,
-                                lineheight=2.5, vjust=2)) +
-  #annotate("text", label = "Breached", x = 0, y = 0) +
   facet_wrap(~Civil.Service.grad, nrow=1) +
-  ggtitle(plottitle) +
-  xlab("Salary range, £000") +
-  ylab('Staff in grade, as proportion of all staff in department')
+  labs(title=plottitle,x=xlabel,y=ylabel) +
+  theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,3]))
+plot_GeGrPay
 
 # Save plot ---------------------------------------------------------------
 
-ggsave(plot = plot_GeGrPay, filename=plotname, family=fontfamily, device=cairo_pdf, width=pw, height=ph)
-#embed_fonts(plotname, outfile=plotname)
-dev.off()
-
-# Draw plot ---------------------------------------------------------------
-
-plot_GeGrPay
+SavePlot()

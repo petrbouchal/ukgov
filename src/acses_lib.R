@@ -63,6 +63,21 @@ AddOrgData <- function (dataset, exclude=TRUE) {
 
 # IfG Colour palette ------------------------------------------------------
 
+rgb2col <- function(rgb) {
+  rgb <- as.integer(rgb)
+  class(rgb) <- "hexmode"
+  rgb <- as.character(rgb)
+  rgb <- matrix(rgb, nrow=3)
+  paste("#", apply(rgb, MARGIN=2, FUN=paste, collapse=""), sep="")
+}
+
+getColorTable <- function(col) {
+  # Convert all colors into format "#rrggbb"
+  rgb <- col2rgb(col);
+  col <- rgb2col(rgb);
+  sort(unique(col))
+}
+
 IfGcols1 <- c('#37424a','#6E8494','#B6DAF5')
 IfGcols2 <- c('#00ccff','#80e5ff','#c0f2ff')
 IfGcols3 <- c('#d40072','#FF70BC','#FFC2E2')
@@ -75,6 +90,7 @@ IfGcols <- matrix(c(IfGcols1,IfGcols2,IfGcols3,IfGcols4,IfGcols5,IfGcols6,IfGcol
 IfGcols <- t(IfGcols)
 # can accsess by calling IfGcols[colour#, tint#] e.g. IfGcols[2,1] for full blue
 rm(IfGcols1,IfGcols2,IfGcols3,IfGcols4,IfGcols5,IfGcols6,IfGcols7)
+
 
 # Custom WHM theme --------------------------------------------------------
 
@@ -110,7 +126,7 @@ theme_set(theme_WHM)
 # Fn: Relabel - grades ----------------------------------------------------
 
 RelabelGrades <- function (dataset) {
-  levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Administrative officers and assistants"] <- "AO"
+  levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Administrative officers and assistants"] <- "AO/AA"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Executive officer"] <- "EO"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Senior and higher executive officer"] <- "SEO/HEO"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Senior Civil Service"] <- "SCS"
@@ -136,7 +152,7 @@ RelabelPaybands <- function (dataset) {
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="Â70,001 - Â80,000"] <- "60-70"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="more than Â80,000"] <- "> 80"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="up to Â£20,000"] <- "< 20"
-  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="up to Â20,000"] <- "< 20"
+  levels(dataset$Wage.band)[levels(dataset$Wage.band)=="up to £20,000"] <- "< 20"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£20,001 - £30,000"] <- "20-30"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£30,001 - £40,000"] <- "30-40"
   levels(dataset$Wage.band)[levels(dataset$Wage.band)=="£40,001 - £50,000"] <- "40-50"
@@ -156,11 +172,14 @@ RelabelPaybands <- function (dataset) {
   return(dataset)
 }
 
-# Fn: Relabel - Ages ------------------------------------------------------
+# Fn: Relabel - Ages + aggregate two lowest ages -------------------------
 
 RelabelAgebands <- function (dataset) {
   dataset$Age.band <- gsub('Aged ','',dataset$Age.band)
   dataset$Age.band <- gsub('and over','+',dataset$Age.band)
+  dataset$Age.band <- gsub('16-19','< 29',dataset$Age.band)
+  dataset$Age.band <- gsub('20-29','< 29',dataset$Age.band)
+  dataset <- ddply(dataset, .(Group,Date,Age.band,Gender))
   return(dataset)
 }
 
