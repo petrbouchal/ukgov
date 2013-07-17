@@ -4,6 +4,7 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(file_name=filename,location=location)
+grouporwh='WH'
 
 # Process data ------------------------------------------------------------
 uu <- origdata
@@ -11,6 +12,11 @@ uu <- origdata
 # FILTER OUT WAGE BAND LINES
 uu <- uu[uu$Wage.band=='Total',]
 uu <- AddOrgData(uu)
+if(grouporwh=='WH') {
+  uu$Whitehall[uu$Group=='HMRC'] <- 'WH'
+  uu$Whitehall[uu$Group=='DWP'] <- 'WH'
+  uu <- uu[uu$Whitehall=='WH' | uu$Whitehall=='Total',]
+}
 totals <- uu[uu$Gender=='Total',]
 uu <- uu[uu$Gender!='Total',]
 
@@ -46,7 +52,13 @@ uu$Group <- reorder(uu$Group,-uu$sorter)
 plotformat='eps'
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
-ylabel <- 'Staff in grade as % of whole Civil Service'
+if(grouporwh=='WH'){
+  plottitle='Civil Servants by gender and age group - Whitehall departments'
+  ylabel = 'Staff in age group as % of Whitehall dept'
+} else {
+  plottitle='Civil Servants by gender and age group - departmental groups'
+  ylabel = 'Staff in age group as % of departmental group'
+}
 xlabel <- ''
 ph=15.3
 pw=24.5

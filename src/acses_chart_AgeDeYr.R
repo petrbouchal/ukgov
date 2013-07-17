@@ -37,7 +37,7 @@ uu <- uu[uu$Age.band!='Unknown age',]
 uu <- RelabelAgebands(uu)
 
 # Select years
-uu <- uu[uu$Date=='2012']
+uu <- uu[uu$Date=='2012',]
 
 # Sort departments --------------------------------------------------------
 gradevalues <- data.frame('gradeval'=c(1:length(levels(uu$Age.band))),

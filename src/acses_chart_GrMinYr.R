@@ -38,21 +38,22 @@ uu <- uu[uu$Ethnic.grou!='White',]
 
 # Build plot --------------------------------------------------------------
 
-plotformat='eps'
+plotformat='wmf'
 plotname <- 'plot_GrMinYr'
 plottitle <- 'Civil Servants identifying as ethnic minority'
 ylabel <- 'Staff as % of disclosed'
 xlabel <- ''
-pw=15.3/2
-ph=24.5/4
+pw=15.3/3*2
+ph=24.5/3
 
 uu$yvar <- uu$share
-maxY <- max(abs(.15),na.rm=TRUE)
-ylimits <- c(0, .15)
+maxY <- max(abs(.16),na.rm=TRUE)
+ylimits <- c(0, .16)
 ybreaks <- c(0,0.05,.1,.15)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 uu$minpop <- 0.14
+
 
 plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
   geom_bar(aes(fill=Civil.Service.grad,group=Civil.Service.grad),
@@ -60,24 +61,21 @@ plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
   geom_line(aes(y=minpop,group=Civil.Service.grad,linetype='UK Population (2011)'),
             colour='grey',show_guide=T,
             stat='identity', size=1) +
-  scale_colour_manual(values=c('All grades'=IfGcols[2,1],
-                               'SCS'=IfGcols[3,1])) +
-  scale_fill_manual(values=c('All grades'=IfGcols[2,1],
-                             'SCS'=IfGcols[3,1])) +
+  scale_fill_manual(values=c('All grades'=IfGcols[5,1],
+                             'SCS'=IfGcols[4,1])) +
   scale_linetype_manual(values=c('UK Population (2011)'='dotted')) +
+  scale_x_discrete(labels=yearlabels)+
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2, override.aes=list(colour=NA)),
          linetype=guide_legend(order=3, keywidth=unit(1,'cm'))) +
-  scale_y_continuous(breaks=ybreaks,
-                     limits=ylimits,
-                     labels=ylabels,
-                     expand=c(0,0)) +
+  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
   labs(x=xlabel,y=ylabel,title=plottitle) +
   theme(axis.line=element_line(colour=IfGcols[1,1]),
-        text=element_text(family=fontfamily,size=8),
-        plot.title=element_text(family=fontfamily,size=10),
-        legend.position=c(.5,.9))
+        text=element_text(family=fontfamily,size=10),
+        plot.title=element_text(family=fontfamily,size=12),
+        legend.position='bottom')
 plot_GrMinYr
+dev.off()
 
 # Save plot ---------------------------------------------------------------
 

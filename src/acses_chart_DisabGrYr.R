@@ -38,18 +38,18 @@ uu <- uu[uu$Disability.statu!='Non-disabled',]
 
 # Build plot --------------------------------------------------------------
 
-plotformat='eps'
+plotformat='wmf'
 plotname <- 'plot_DisabGrYr'
 plottitle <- 'Civil Servants identifying as disabled'
 ylabel <- 'Staff as % of disclosed'
 xlabel <- ''
-pw=15.3/2
-ph=24.5/4
+pw=15.3/3*2
+ph=24.5/3
 
 uu$yvar <- uu$share
 maxY <- max(abs(uu$share),na.rm=TRUE)
-ylimits <- c(0, .09)
-ybreaks <- c(0,.03,.06,.09)
+ylimits <- c(0, .1)
+ybreaks <- c(0,.025,.05,0.075,.1)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
@@ -63,11 +63,12 @@ plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
          fill=guide_legend(order=2,
                              override.aes=list(size=1))) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
+  scale_x_discrete(labels=yearlabels) +
   labs(title=plottitle,y=ylabel,x=xlabel) +
   theme(axis.line=element_line(colour=IfGcols[1,1]),
-        text=element_text(family=fontfamily,size=8),
-        legend.position=c(.2,.9),
-        plot.title=element_text(size=10))
+        text=element_text(family=fontfamily,size=10),
+        legend.position='bottom',
+        plot.title=element_text(size=12))
 plot_DisabGrYr
 
 # Save plot ---------------------------------------------------------------

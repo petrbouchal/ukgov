@@ -9,15 +9,15 @@ uu <- uu[uu$Gender!='Total' & uu$Civil.Service.grad=='Total',]
 uu <- uu[uu$Organisation=='Total (All Departments)',]
 
 uu <- RelabelAgebands(uu)
+uu <- ddply(uu, .(Organisation,Date,Age.band,Gender))
 
 # SUMMARISE BY GROUP & CATEGORY
 uu <- ddply(uu, .(Date, Age.band, Gender),
-               summarise, count=sum(count, na.rm=TRUE))
+            summarise, count=sum(count, na.rm=TRUE))
 
 # CREATE TOTALS PER GROUP
 totals <- uu[uu$Age.band!='Total',]
-totals <- ddply(totals, .(Date), summarise,
-                total = sum(count))
+totals <- ddply(totals, .(Date), summarise, total = sum(count))
 
 # MERGE TOTALS INTO MAIN FILE
 uu <- merge(uu, totals)
@@ -29,13 +29,21 @@ uu <- uu[uu$Age.band!='Unknown age',]
 
 # Select years and flip one year's value into negative
 uu <- uu[uu$Date=='2012' | uu$Date=='2010',]
-uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
-uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
 # reshape to create year-on-year change figure
-# uu <- melt(uu, id=c('Date','Age.band','Gender'))
-# uu <- dcast(uu, ... ~ variable + Date, drop=TRUE)
-# uu$sharediff <- (uu$share_2012 - uu$share_2010)
+uu2 <- ddply(uu, .(Age.band,Date),summarise,total=sum(total),count=sum(count))
+uu2$total <- uu2$total/2
+uu2 <- melt(uu2, id=c('Date','Age.band'))
+uu2 <- dcast(uu2, ... ~ variable + Date, drop=TRUE,fun.aggregate=sum)
+uu2$sharediff <- (uu2$count_2012/uu2$total_2012 - uu2$count_2010/uu2$total_2010)
+
+uu2 <- uu2[,c('Age.band','sharediff')]
+uu <- merge(uu,uu2,by='Age.band')
+
+rm(uu2)
+
+uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
+uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
 # Build plot --------------------------------------------------------------
 
@@ -43,48 +51,51 @@ plotformat='pdf'
 plotname <- 'plot_AgeYr'
 plottitle <- 'Civil Servants by gender and age'
 ylabel <- 'Staff in age group as % of whole Civil Service'
-xlabel <- ''
-pw=15.3/2
-ph=24.5/4
+xlabel <- 'Age group (years)'
+pw=15.3/3*2
+ph=24.5/3
 
 uu$yvar <- uu$share
+sharedifflabels <- paste0(ifelse(uu$sharediff<0,'','+'),
+                             signif(uu$sharediff*100,2),'%')[c(1,5,9,13,17,21)]
+shdl <- data.frame('shlab'=sharedifflabels,'cat'=unique(uu$Age.band),
+                   'labypos'=.2)
 
 maxY <- max(abs(uu$yvar),na.rm=TRUE)
-ylimits <- c(-maxY*1.04, maxY*1.04)
-ybreaks <- signif(seq(ylimits[1],ylimits[2],length.out=5),1)
+ylimits <- c(-.2, .2)
+ybreaks <- c(-.2,-.1,0,.1,.2)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 uu$grp <- paste0(uu$Gender,' ',uu$Date)
 
-plot_AgeYr <- ggplot(uu, aes(x=Age.band, y=yvar,group=grp)) +
-  geom_bar(position='dodge', width=.9,data=uu[uu$Gender=='Male',],
-           aes(fill=as.factor(grp)),stat='identity') +
-  geom_bar(position='dodge', width=.9,data=uu[uu$Gender=='Female',],
-           aes(fill=as.factor(grp)),stat='identity') +
-  scale_fill_manual(values=c('Female 2010'=IfGcols[3,2],
-                             'Female 2012'=IfGcols[3,1],
-                             'Male 2010'=IfGcols[2,2],
-                             'Male 2012'=IfGcols[2,1])) +
-  scale_y_continuous(limits=ylimits,
-                      labels=ylabels,
-                      breaks=ybreaks) +
-  guides(fill=guide_legend(override.aes=list(shape=NA,size=1.2),
-                           label.vjust=.5,order=2,nrow=2),
-         shape=guide_legend(override.aes=list(size=4),
-         label.vjust=.5,order=2,hjust=0)) +
+plot_AgeYr <- ggplot() +
+  geom_bar(position='identity', width=.9,data=uu[uu$Date==2012,],
+           aes(x=Age.band, y=yvar,fill=Gender,colour=Gender),stat='identity') +
+  geom_bar(position='identity', width=.9,data=uu[uu$Date==2010,],
+           aes(x=Age.band,y=yvar,fill=NA,colour=as.factor(Date)),
+           stat='identity',linetype='dashed') +
+  scale_fill_manual(values=c('Female'=IfGcols[2,1],'Male'=IfGcols[5,1]),
+                    labels=c('Female','Male')) +
   labs(x=xlabel,y=ylabel,title=plottitle) +
+  scale_colour_manual(values=c('2010'=IfGcols[1,1],
+                               'Male'=IfGcols[5,1],'Female'=IfGcols[2,1]),
+                      labels=c('Female','Male')) +
+  scale_y_continuous(limits=ylimits,labels=ylabels,breaks=ybreaks) +
+  guides(fill=guide_legend('2012', override.aes=list(colour=NA,size=1.2),
+                           label.vjust=.5,order=2,nrow=1),
+         colour=guide_legend('2010',override.aes=list(fill=NA,colour='black',
+                                                      linetype='dashed'))) +
   coord_flip() +
   theme(axis.line=element_line(colour=IfGcols[1,1]),
-        legend.direction='vertical',
-        legend.position=c(.25,.92),
-        text=element_text(family=fontfamily,size=8),
-        plot.title=element_text(family=fontfamily,size=10))
-
-# Draw plot ---------------------------------------------------------------
-
+        legend.direction='horizontal',
+        legend.box='horizontal',
+        legend.position='bottom',
+        legend.title=element_text(face='bold',vjust=.5),
+        legend.key.width=unit(1,'cm'),
+        text=element_text(family=fontfamily,size=10),
+        plot.title=element_text(family=fontfamily,size=12))
 plot_AgeYr
 
 # Save plot ---------------------------------------------------------------
 
-SavePlot(plotname=plotname,ffamily='Calibri',ploth=ph,plotw=pw)
-plot_AgeYr
+SavePlot(plotformat=plotformat,plotname=plotname,ffamily=fontfamily,ploth=ph,plotw=pw)

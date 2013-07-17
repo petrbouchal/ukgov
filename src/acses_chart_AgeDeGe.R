@@ -4,16 +4,18 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Age_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
+grouporwh='WH'
 
 # Process data ------------------------------------------------------------
 uu <- origdata
 
 # LOAD DATA WITH GROUPINGS AND FILTER - MADE IN EXCEL
-uu <- AddOrgData(uu,exclude=FALSE)
-uu$Include[uu$Group=='HMRC'] <- 'Yes'
-uu$Include[uu$Group=='DWP'] <- 'Yes'
-uu <- uu[uu$Include=='Yes',]
-#uu <- uu[uu$Whitehall=='WH' | uu$Whitehall=='Total',]
+uu <- AddOrgData(uu)
+if(grouporwh=='NWH') {
+  uu$Whitehall[uu$Group=='HMRC'] <- 'WH'
+  uu$Whitehall[uu$Group=='DWP'] <- 'WH'
+  uu <- uu[uu$Whitehall=='WH' | uu$Whitehall=='Total',]
+}
 
 # FILTER OUT UNWANTED LINES
 uu <- uu[uu$Gender!='Total',]
@@ -75,8 +77,13 @@ ph = 15.3
 pw = 24.5
 plotname <- './charts/ACSES charts/plot_AgeDeGe.png'
 
-plottitle='Civil Servants in departments by gender and age group'
-ylabel = 'Staff in age group as % of whole department'
+if(grouporwh=='WH'){
+  plottitle='Civil Servants by gender and age group - Whitehall departments'
+  ylabel = 'Staff in age group as % of Whitehall dept'
+} else {
+  plottitle='Civil Servants by gender and age group - departmental groups'
+  ylabel = 'Staff in age group as % of departmental group'
+}
 xlabel = ''
 
 uu$yvar <- uu$share

@@ -28,6 +28,8 @@ if(location=='ifg') {
   loadfonts(device='win',quiet=TRUE)
 }
 
+yearlabels <- c('2008','2009','2010\nSR10 baseline','2011','2012')
+
 # Fn: load and clean ACSES data -------------------------------------------------
 
 LoadAcsesData <- function (file_name, location='home') {
@@ -82,7 +84,7 @@ IfGcols1 <- c('#37424a','#6E8494','#B6DAF5')
 IfGcols2 <- c('#00ccff','#80e5ff','#c0f2ff')
 IfGcols3 <- c('#d40072','#FF70BC','#FFC2E2')
 IfGcols4 <- c('#83389b','#FF70BC','#FFC2E2')
-IfGcols5 <- c('#7a9393','#7a9393','#7a9393')
+IfGcols5 <- c('#7a9393','#d0dedf','#7a9393')
 IfGcols6 <- c('#457e81','#457e81','#457e81')
 IfGcols7 <- c('#be8b5e','#be8b5e','#be8b5e')
 IfGcols <- matrix(c(IfGcols1,IfGcols2,IfGcols3,IfGcols4,IfGcols5,IfGcols6,IfGcols7),
@@ -108,11 +110,10 @@ theme_WHM <-theme_few() +
         legend.position='bottom',
         legend.box='horizontal',
         legend.direction='horizontal',
-        legend.key=element_rect(colour='white'),
+        legend.key=element_rect(colour=NA),
         legend.key.size=unit(.2,'cm'),
-        legend.text = element_text(vjust=1),
+        legend.text = element_text(vjust=.5),
         legend.background=element_blank(),
-        #legend.margin=unit(c(0,0,0,0),'mm'),
         panel.margin=unit(c(1,1,1,1),'mm'),
         panel.border=element_blank(),
         panel.background=element_blank(),
@@ -179,7 +180,6 @@ RelabelAgebands <- function (dataset) {
   dataset$Age.band <- gsub('and over','+',dataset$Age.band)
   dataset$Age.band <- gsub('16-19','< 29',dataset$Age.band)
   dataset$Age.band <- gsub('20-29','< 29',dataset$Age.band)
-  dataset <- ddply(dataset, .(Group,Date,Age.band,Gender))
   return(dataset)
 }
 
@@ -188,6 +188,7 @@ RelabelAgebands <- function (dataset) {
 
 SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
                       splot=last_plot() ,ploth=24.5/2, plotw=15.3) {
+  dev.off()
   plotobjdir <- './charts/ACSES chart objects/'
   plotimagedir <- './charts/ACSES charts/'
   plotimagepath = paste0(plotimagedir,plotname,'.',plotformat)
@@ -202,7 +203,6 @@ SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
     ggsave(plotimagepath, plot=splot, family=ffamily,
            height=ploth, width=plotw, units='cm')
   }
-  dev.off()
   save(splot,file=plotobjpath)
   splot
 }
