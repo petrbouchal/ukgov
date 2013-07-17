@@ -91,7 +91,11 @@ tintshade <- function(colors, kind='tints', steps=c(.5,.25), hexin=TRUE) {
     if(kind=='tints') {
       rgbtint <- rgbcols+(255-rgbcols)*(1-i)
     } else if(kind=='shades') {
+<<<<<<< HEAD
       rgbtint <- rgbcols-(rgbcols)*(1-i)
+=======
+      rgbtint <- rgbcols-(255-rgbcols)*(1-i)
+>>>>>>> 7484eae680e8876479768b58de0e4b5a6f964c85
     } else {
       stop('Kind must be tints or shades')
     }
@@ -101,10 +105,23 @@ tintshade <- function(colors, kind='tints', steps=c(.5,.25), hexin=TRUE) {
   return(t(rgbout))
 }
 
+<<<<<<< HEAD
 IfGBasecols <- c('#37424a','#00ccff','#d40072','#83389b',
               '#7a9393','#457e81','#be8b5e')
 IfGcols <- tintshade(IfGBasecols,'tints',c(.5,.25),T)
 rm(IfGBasecols)
+=======
+IfGcols1 <- c('#37424a','#6E8494','#B6DAF5')
+IfGcols2 <- c('#00ccff','#80e5ff','#c0f2ff')
+IfGcols3 <- c('#d40072','#FF70BC','#FFC2E2')
+IfGcols4 <- c('#83389b','#FF70BC','#FFC2E2')
+IfGcols5 <- c('#7a9393','#d0dedf','#7a9393')
+IfGcols6 <- c('#457e81','#457e81','#457e81')
+IfGcols7 <- c('#be8b5e','#be8b5e','#be8b5e')
+IfGcols <- matrix(c(IfGcols1,IfGcols2,IfGcols3,IfGcols4,IfGcols5,IfGcols6,IfGcols7),
+                  nrow=3,ncol=7)
+IfGcols <- t(IfGcols)
+>>>>>>> 7484eae680e8876479768b58de0e4b5a6f964c85
 # can accsess by calling IfGcols[colour#, tint#] e.g. IfGcols[2,1] for full blue
 
 
