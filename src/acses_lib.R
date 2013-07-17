@@ -80,6 +80,27 @@ getColorTable <- function(col) {
   sort(unique(col))
 }
 
+tintshade <- function(colors, kind='tints', steps=c(.5,.25), hexin=TRUE) {
+  if(hexin) {
+    rgbcols <- col2rgb(colors)
+  } else {
+    rgbcols <- colors
+  }
+  rgbout <- matrix(colors,nrow=1)
+  for(i in steps) {
+    if(kind=='tints') {
+      rgbtint <- rgbcols+(255-rgbcols)*(1-i)
+    } else if(kind=='shades') {
+      rgbtint <- rgbcols-(255-rgbcols)*(1-i)
+    } else {
+      stop('Kind must be tints or shades')
+    }
+    coltint <- rgb2col(rgbtint)
+    rgbout <- rbind(rgbout, coltint)
+  }
+  return(t(rgbout))
+}
+
 IfGcols1 <- c('#37424a','#6E8494','#B6DAF5')
 IfGcols2 <- c('#00ccff','#80e5ff','#c0f2ff')
 IfGcols3 <- c('#d40072','#FF70BC','#FFC2E2')
