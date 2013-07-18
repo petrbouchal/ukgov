@@ -6,12 +6,16 @@ source('./src/acses_lib.R')
 basecols <- c('#37424a','#00ccff','#d40072','#83389b',
                  '#7a9393','#457e81','#be8b5e')
 
-xtints <- tintshade(basecols,kind='tints',steps=c(.5,.25),hexin=T)
-data <- data.frame('x'=sort(rep(1:7,3)),'y'=rep(1:3,7))
+tints <- c(.75,.5,.25)
+shades=c()
+xtints <- tintshade(basecols,tints=tints,hexin=T,)
+data <- data.frame('x'=sort(rep(1:dim(xtints)[1],dim(xtints)[2])),
+                   'y'=rep(1:dim(xtints)[2],dim(xtints)[1]))
 data$col <- ''
-data$col[data$y==1] <- xtints[,1]
-data$col[data$y==2] <- xtints[,2]
-data$col[data$y==3] <- xtints[,3]
+
+for(i in 1:dim(xtints)[2]) {
+  data$col[data$y==i] <- xtints[,i]
+}
 
 data$xx <- paste0(data$x,data$y)
 
@@ -20,10 +24,13 @@ data$g <- col2rgb(data$col)[2,]
 data$b <- col2rgb(data$col)[3,]
 data$rgb <- paste('r:',data$r,'\ng:',data$g,'\nb:',data$b, sep='')
 
-blah <- ggplot(data,aes(x,y))+
+palettesheet <- ggplot(data,aes(x,y))+
   geom_tile(aes(fill=as.factor(xx)),show_guide=F)+
-  scale_fill_manual(values=data2$col) +theme_few() +
+  scale_fill_manual(values=data$col) +theme_few() +
   geom_text(aes(x,y-.25,label=rgb))+
-  geom_text(aes(x,y+.25,label=col))
-blah
+  scale_y_continuous(labels=c('full',paste0(tints*100,'%')),breaks=(1:4))+
+  scale_x_continuous(breaks=NULL)+
+  geom_text(aes(x,y+.25,label=col)) +
+  theme(panel.border=element_blank(),axis.ticks=element_blank(),axis.title=element_blank())
+palettesheet
   

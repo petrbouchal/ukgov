@@ -80,30 +80,33 @@ getColorTable <- function(col) {
   sort(unique(col))
 }
 
-tintshade <- function(colors, kind='tints', steps=c(.5,.25), hexin=TRUE) {
+tintshade <- function(colors, tints=c(), shades=c(), hexin=TRUE) {
   if(hexin) {
     rgbcols <- col2rgb(colors)
   } else {
     rgbcols <- colors
   }
   rgbout <- matrix(colors,nrow=1)
-  for(i in steps) {
-    if(kind=='tints') {
+  if(length(tints)>0) {
+    for(i in tints) {
       rgbtint <- rgbcols+(255-rgbcols)*(1-i)
-    } else if(kind=='shades') {
-      rgbtint <- rgbcols-(rgbcols)*(1-i)
-    } else {
-      stop('Kind must be tints or shades')
+      coltint <- rgb2col(rgbtint)
+      rgbout <- rbind(rgbout, coltint)
     }
-    coltint <- rgb2col(rgbtint)
-    rgbout <- rbind(rgbout, coltint)
+  }
+  if(length(shades)>0) {
+    for(i in shades) {
+      rgbshade <- rgbcols-(rgbcols)*(1-i)
+      colshade <- rgb2col(rgbshade)
+      rgbout <- rbind(rgbout, colshade)
+    }
   }
   return(t(rgbout))
 }
 
 IfGBasecols <- c('#37424a','#00ccff','#d40072','#83389b',
               '#7a9393','#457e81','#be8b5e')
-IfGcols <- tintshade(IfGBasecols,'tints',c(.5,.25),T)
+IfGcols <- tintshade(IfGBasecols,tints=c(.5,.25),hexin=T,)
 rm(IfGBasecols)
 # can accsess by calling IfGcols[colour#, tint#] e.g. IfGcols[2,1] for full blue
 

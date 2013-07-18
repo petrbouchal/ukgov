@@ -47,7 +47,7 @@ uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
 # Build plot --------------------------------------------------------------
 
-plotformat='pdf'
+plotformat='wmf'
 plotname <- 'plot_AgeYr'
 plottitle <- 'Civil Servants by gender and age'
 ylabel <- 'Staff in age group as % of whole Civil Service'
