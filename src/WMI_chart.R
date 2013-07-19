@@ -14,11 +14,10 @@ wmibase <- data.frame('Dept'=uu$Dept[uu$Month==min(uu$Month)],
                       'base'=uu$value[uu$Month==min(uu$Month)],
                       'variable'=uu$variable[uu$Month==min(uu$Month)])
 uu <- merge(uu,wmibase)
-uu$valuepc <- uu$value/uu$base
+uu$valuepc <- uu$value/uu$base-1
 
 pw <- 24.5
 ph <- 15.3
-
 
 uu$yvar <- uu$valuepc
 plottitle <- ''
@@ -32,8 +31,8 @@ wmiplot <- ggplot(uu,aes(x=Month,y=yvar)) +
   scale_x_datetime(labels=date_format('%Y-%m')) +
   scale_colour_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
                       labels=c('FTE (Payroll)','Pay bill (Payroll)'))+
-  scale_y_continuous(labels=comma) +
-  facet_wrap(~Dept,scales='fixed',ncol=4) +
+  scale_y_continuous(labels=percent) +
+  facet_wrap(~Dept,scales='free_y',ncol=4) +
   theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,2]),
         plot.title=element_blank()) +
   labs(x=xlabel,y=ylabel)
