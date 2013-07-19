@@ -4,6 +4,7 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Ethn_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(filename,location)
+whitehallonly <- TRUE
 
 # Process data ------------------------------------------------------------
 uu <- origdata
@@ -11,7 +12,7 @@ uu <- origdata
 # FILTER OUT WAGE BAND LINES
 uu <- uu[uu$Wage.band=='Total',]
 uu <- uu[uu$Gender=='Total',]
-uu <- AddOrgData(uu)
+uu <- AddOrgData(uu,whitehallonly)
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
 uu <- uu[uu$Ethnic.grou!='Total',]
@@ -40,11 +41,22 @@ uu <- uu[uu$Ethnic.grou!='White',]
 
 grp <- paste(uu$Group,uu$Civil.Service.grad)
 
-plotformat='eps'
 plotname <- 'plot_DeGrMinYr'
-plottitle <- 'Civil Servants identifying as ethnic minority'
-ylabel <- 'Staff as % of disclosed'
-xlabel <- ''
+plottitle <- 'Ethnic minority civil servants'
+ylabel = 'Minority staff as % of disclosed in'
+xlabel = 'ordered by % of minority staff'
+if(whitehallonly){
+  plottitle=paste0(plottitle,' - Whitehall departments')
+  ylabel = paste0(ylabel,' Whitehall dept')
+  xlabel = paste0('Whitehall departments ',xlabel)
+  plotname = paste0(plotname,'_WH')
+} else {
+  plottitle=paste0(plottitle,' - departmental groups')
+  ylabel = paste0(ylabel,' departmental group')
+  xlabel = paste0('% of staff in grade. Departmental groups ',xlabel)
+  plotname = paste0(plotname,'_Group')
+}
+
 pw=15.3
 ph=24.5
 
@@ -60,12 +72,9 @@ plot_DeGrMinYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
   geom_bar(aes(fill=Civil.Service.grad,group=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
   geom_line(aes(y=minpop,group=Civil.Service.grad,linetype='UK Population (2011)'),
-            colour='grey',show_guide=T,
-            stat='identity', size=1) +
-  scale_colour_manual(values=c('All grades'=IfGcols[2,1],
-                               'SCS'=IfGcols[3,1])) +
-  scale_fill_manual(values=c('All grades'=IfGcols[2,1],
-                             'SCS'=IfGcols[3,1])) +
+            colour='grey',show_guide=T,stat='identity', size=1) +
+  scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1])) +
+  scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1])) +
   scale_linetype_manual(values=c('UK Population (2011)'='dotted')) +
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2, override.aes=list(colour=NA)),
@@ -75,8 +84,7 @@ plot_DeGrMinYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
   facet_wrap(~Group,nrow=3) +
   theme(axis.line=element_line(colour=IfGcols[1,1]),
         panel.border=element_rect(fill=NA, colour=IfGcols[1,1]),
-        text=element_text(family=fontfamily,size=8),
-        plot.title=element_text(size=10))
+        text=element_text(family=fontfamily,size=8))
 plot_DeGrMinYr
 
 # Save plot ---------------------------------------------------------------

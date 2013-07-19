@@ -76,7 +76,7 @@ plot_AgeYr <- ggplot() +
            stat='identity',linetype='dashed') +
   scale_fill_manual(values=c('Female'=IfGcols[2,1],'Male'=IfGcols[5,1]),
                     labels=c('Female','Male')) +
-  labs(x=xlabel,y=ylabel,title=plottitle) +
+  labs(x=xlabel,y=ylabel) +
   scale_colour_manual(values=c('2010'=IfGcols[1,1],
                                'Male'=IfGcols[5,1],'Female'=IfGcols[2,1]),
                       labels=c('Female','Male')) +
@@ -91,9 +91,7 @@ plot_AgeYr <- ggplot() +
         legend.box='horizontal',
         legend.position='bottom',
         legend.title=element_text(face='bold',vjust=.5),
-        legend.key.width=unit(1,'cm'),
-        text=element_text(family=fontfamily,size=10),
-        plot.title=element_text(family=fontfamily,size=12))
+        legend.key.width=unit(1,'cm'))
 plot_AgeYr
 
 # Save plot ---------------------------------------------------------------

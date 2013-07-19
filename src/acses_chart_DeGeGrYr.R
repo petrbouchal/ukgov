@@ -4,19 +4,15 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(file_name=filename,location=location)
-grouporwh='WH'
+whitehallonly=TRUE
 
 # Process data ------------------------------------------------------------
 uu <- origdata
 
 # FILTER OUT WAGE BAND LINES
 uu <- uu[uu$Wage.band=='Total',]
-uu <- AddOrgData(uu)
-if(grouporwh=='WH') {
-  uu$Whitehall[uu$Group=='HMRC'] <- 'WH'
-  uu$Whitehall[uu$Group=='DWP'] <- 'WH'
-  uu <- uu[uu$Whitehall=='WH' | uu$Whitehall=='Total',]
-}
+uu <- AddOrgData(uu,whitehallonly)
+
 totals <- uu[uu$Gender=='Total',]
 uu <- uu[uu$Gender!='Total',]
 
@@ -49,17 +45,22 @@ uu$Group <- reorder(uu$Group,-uu$sorter)
 
 # Build plot --------------------------------------------------------------
 
-plotformat='eps'
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
-if(grouporwh=='WH'){
-  plottitle='Civil Servants by gender and age group - Whitehall departments'
-  ylabel = 'Staff in age group as % of Whitehall dept'
+ylabel = 'Staff in age group as % of'
+xlabel = 'ordered by % of females in workforce in 2012'
+if(whitehallonly){
+  plottitle=paste0(plottitle,' - Whitehall departments')
+  ylabel = paste0(ylabel,' Whitehall dept')
+  xlabel = paste0('Whitehall departments ',xlabel)
+  plotname = paste0(plotname,'_WH')
 } else {
-  plottitle='Civil Servants by gender and age group - departmental groups'
-  ylabel = 'Staff in age group as % of departmental group'
+  plottitle=paste0(plottitle,' - departmental groups')
+  ylabel = paste0(ylabel,' departmental group')
+  xlabel = paste0('Departmental groups ',xlabel)
+  plotname = paste0(plotname,'_Group')
 }
-xlabel <- ''
+
 ph=15.3
 pw=24.5
 
@@ -82,4 +83,4 @@ plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------
 
-SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)
+#SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)

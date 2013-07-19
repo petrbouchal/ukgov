@@ -4,6 +4,7 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Disab_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
+whitehallonly <- TRUE
 
 # Process data ------------------------------------------------------------
 uu <- origdata
@@ -12,7 +13,7 @@ uu <- origdata
 uu <- uu[uu$Wage.band=='Total',]
 uu <- uu[uu$Gende=='Total',]
 
-uu <- AddOrgData(uu)
+uu <- AddOrgData(uu,whitehallonly)
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
 uu <- uu[uu$Disability.statu!='Total',]
@@ -41,16 +42,21 @@ uu <- uu[uu$Disability.statu!='Non-disabled',]
 
 uu$grp <- paste0(uu$Group,uu$Civil.Service.grad)
 
-plotformat='eps'
-plotname <- 'plot_DeDisabGrYr'
-plottitle <- 'Civil Servants identifying as disabled'
-ylabel <- 'Staff as % of disclosed'
-xlabel <- ''
+plotname <- paste0('plot_DeDisabGrYr',
+                   if(whitehallonly) { '_WH' } else {'_Group'})
+plottitle <- paste0('Civil Servants identifying as disabled, by ',
+                    if(whitehallonly){'Whitehall department'
+                                      } else {'departmental group'})
+ylabel <- paste0('Staff as % of disclosed in ',
+                if(whitehallonly){'Whitehall department'
+                                  } else {'departmental group'})
+xlabel <- paste0(ifelse(whitehallonly,'Whitehall departments ','Departmental groups '),
+                 'ordered by % of disabled staff in workforce')
 pw=15.3/2
 ph=24.5/4
 
 uu$yvar <- uu$share
-maxY <- max(abs(uu$yvar),na.rm=TRUE)
+maxY <- max(abs(uu$yvar)*1.04,na.rm=TRUE)
 ylimits <- c(0, maxY*1.04)
 ybreaks <- c(0,.03,.06,.09)
 ylabels <- paste0(abs(ybreaks*100),'%')
@@ -62,13 +68,12 @@ plot_DeDisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
   scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1])) +
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2,override.aes=list(size=1))) +
-  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
-  labs(title=plottitle,y=ylabel,x=xlabel) +
+  scale_y_continuous(limits=c(0,maxY),labels=percent,expand=c(0,0)) +
+  labs(y=ylabel,x=xlabel) +
   facet_wrap(~Group,nrow=3)+
   theme(axis.line=element_line(colour=IfGcols[1,1]),
         panel.border=element_rect(fill=NA, colour=IfGcols[1,1]),
-        text=element_text(family=fontfamily,size=8),
-        plot.title=element_text(size=10))
+        plot.title=element_blank())
 plot_DeDisabGrYr
 
 # Save plot ---------------------------------------------------------------

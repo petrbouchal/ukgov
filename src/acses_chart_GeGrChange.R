@@ -29,4 +29,4 @@ plot_GeGrChange <- ggplot(uu,aes(y=value,x=Variable)) +
   labs(y=ylabel,x=xlabel,title=plottitle)
 plot_GeGrChange
 
-SavePlot(plotname=plotname,ffamily=fontfamily,plotformat='pdf',ploth=ph,plotw=pw)
+SavePlot(plotname=plotname,ffamily=fontfamily,plotformat=plotformat,ploth=ph,plotw=pw)

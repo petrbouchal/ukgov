@@ -54,12 +54,15 @@ LoadAcsesData <- function (file_name, location='home') {
 
 # Fn: Load org-group data -------------------------------------------------
 
-AddOrgData <- function (dataset, exclude=TRUE) {
+AddOrgData <- function (dataset, whitehallonly=FALSE) {
   orgs <- read.csv('./data-input/acses_orgs.csv')
   dataset <- merge(dataset,orgs,all.x=TRUE)
-  if(exclude==TRUE) {
-    dataset <- dataset[dataset$Include=='Yes',]
+  if(whitehallonly) {
+    dataset$Whitehall[dataset$Group=='HMRC'] <- 'WH'
+    dataset$Whitehall[dataset$Group=='DWP'] <- 'WH'
+    dataset <- dataset[dataset$Whitehall=='WH' | dataset$Whitehall=='Total',]
   }
+  dataset <- dataset[dataset$Include=='Yes',]
   return(dataset)
 }
 
@@ -107,6 +110,7 @@ tintshade <- function(colors, tints=c(), shades=c(), hexin=TRUE) {
 IfGBasecols <- c('#37424a','#00ccff','#d40072','#83389b',
               '#7a9393','#457e81','#be8b5e')
 IfGcols <- tintshade(IfGBasecols,tints=c(.5,.25),hexin=T,)
+dimnames(IfGcols) <- NULL
 rm(IfGBasecols)
 # can accsess by calling IfGcols[colour#, tint#] e.g. IfGcols[2,1] for full blue
 
@@ -135,8 +139,7 @@ theme_WHM <-theme_few() +
         panel.background=element_blank(),
         plot.background=element_blank(),
         plot.margin=unit(c(.25,.25,0,0),'cm'),
-        plot.title=element_text(face='bold',size=12,
-                                lineheight=1.5, vjust=.75))
+        plot.title=element_blank())
 
 theme_set(theme_WHM)
 
