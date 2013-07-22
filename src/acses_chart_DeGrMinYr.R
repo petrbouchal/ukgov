@@ -82,8 +82,8 @@ plot_DeGrMinYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
   scale_y_continuous(breaks=ybreaks, limits=ylimits,labels=ylabels,expand=c(0,0)) +
   labs(x=xlabel,y=ylabel,title=plottitle) +
   facet_wrap(~Group,nrow=3) +
-  theme(axis.line=element_line(colour=IfGcols[1,1]),
-        panel.border=element_rect(fill=NA, colour=IfGcols[1,1]),
+  theme(axis.line=element_blank(),
+        panel.border=element_rect(fill=NA, colour=IfGcols[1,3]),
         text=element_text(family=fontfamily,size=8))
 plot_DeGrMinYr
 

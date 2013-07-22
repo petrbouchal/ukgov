@@ -4,7 +4,7 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Age_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
-whitehallonly=TRUE
+whitehallonly=FALSE
 
 # Process data ------------------------------------------------------------
 uu <- origdata

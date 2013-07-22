@@ -71,8 +71,8 @@ plot_DeDisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
   scale_y_continuous(limits=c(0,maxY),labels=percent,expand=c(0,0)) +
   labs(y=ylabel,x=xlabel) +
   facet_wrap(~Group,nrow=3)+
-  theme(axis.line=element_line(colour=IfGcols[1,1]),
-        panel.border=element_rect(fill=NA, colour=IfGcols[1,1]),
+  theme(axis.line=element_blank(),
+        panel.border=element_rect(fill=NA, colour=IfGcols[1,2]),
         plot.title=element_blank())
 plot_DeDisabGrYr
 

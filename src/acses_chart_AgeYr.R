@@ -86,7 +86,7 @@ plot_AgeYr <- ggplot() +
          colour=guide_legend('2010',override.aes=list(fill=NA,colour='black',
                                                       linetype='dashed'))) +
   coord_flip() +
-  theme(axis.line=element_line(colour=IfGcols[1,1]),
+  theme(axis.line=element_line(colour=IfGcols[1,2]),
         legend.direction='horizontal',
         legend.box='horizontal',
         legend.position='bottom',

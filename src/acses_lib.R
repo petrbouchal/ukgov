@@ -226,7 +226,7 @@ SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
   splot
 }
 
-# Sort group factor by given variable -------------------------------------
+# Sort group factor by given variable - UNFINISHED!! ----------------------
 
 SortDepts <- function (dataset, sortin, sortbycat, sortbyvar) {
   # orders factor (sortin) by how much of the staff (as counted by sortbyvar)

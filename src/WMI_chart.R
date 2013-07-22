@@ -33,7 +33,7 @@ wmiplot <- ggplot(uu,aes(x=Month,y=yvar)) +
                       labels=c('FTE (Payroll)','Pay bill (Payroll)'))+
   scale_y_continuous(labels=percent) +
   facet_wrap(~Dept,scales='free_y',ncol=4) +
-  theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,2]),
+  theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,3]),
         plot.title=element_blank()) +
   labs(x=xlabel,y=ylabel)
 wmiplot

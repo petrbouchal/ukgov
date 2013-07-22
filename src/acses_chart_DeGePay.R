@@ -4,6 +4,7 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(filename,location)
+whitehallonly <- TRUE
 
 # Process data ------------------------------------------------------------
 
@@ -13,7 +14,7 @@ uu <- uu[uu$Civil.Service.grad=='Total',]
 uu <- uu[uu$Gender!='Total',]
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
-uu <- AddOrgData(uu)
+uu <- AddOrgData(uu,whitehallonly)
 
 # CREATE TOTALS PER GROUP
 totals <- uu[uu$Wage.band=='Total',]
@@ -61,12 +62,23 @@ uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 # Build plot --------------------------------------------------------------
 
 plotformat='wmf'
+pw=24.5
+ph=15.3
 plotname <- 'plot_DeGePay'
 plottitle='Civil Service pay in Whitehall departments by gender'
 xlabel="Salary range, £000"
-ylabel='Staff in grade and pay range, as proportion of all staff in department'
-pw=24.5
-ph=15.3
+ylabel='Staff in grade and pay range'
+if(whitehallonly){
+  plottitle=paste0(plottitle,' - Whitehall departments')
+  xlabel = paste0(xlabel)
+  ylabel = paste0(ylabel, ', as % of staff in age group. Whitehall departments ordered by pay composition')
+  plotname = paste0(plotname,'_WH')
+} else {
+  plottitle=paste0(plottitle,' - departmental groups')
+  xlabel = paste0(xlabel)
+  ylabel = paste0(ylabel, ' % of staff in age group. Departmental groups ordered by pay composition')
+  plotname = paste0(plotname,'_Group')
+}
 
 uu$yvar <- uu$share
 maxY <- max(abs(uu$share),na.rm=TRUE)
@@ -81,6 +93,7 @@ plot_DeGePay <- ggplot(uu, aes(Wage.band, yvar)) +
                     labels=c('Female   ', 'Male')) +
   guides(col=guide_legend(ncol=3)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
+  theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,2])) +
   facet_wrap(~Group, nrow=3) +
   labs(x=xlabel,y=ylabel,title=plottitle)
 plot_DeGePay
