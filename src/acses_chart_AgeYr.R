@@ -47,13 +47,12 @@ uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
 # Build plot --------------------------------------------------------------
 
-plotformat='wmf'
 plotname <- 'plot_AgeYr'
 plottitle <- 'Civil Servants by gender and age'
 ylabel <- 'Staff in age group as % of whole Civil Service'
 xlabel <- 'Age group (years)'
-pw=15.3/3*2
-ph=24.5/3
+pw=14.0/3*2
+ph=21.0/3
 
 uu$yvar <- uu$share
 sharedifflabels <- paste0(ifelse(uu$sharediff<0,'','+'),
@@ -68,7 +67,7 @@ ylabels <- paste0(abs(ybreaks*100),'%')
 
 uu$grp <- paste0(uu$Gender,' ',uu$Date)
 
-plot_AgeYr <- ggplot() +
+plot_AgeYr <- ggplot(data=uu) +
   geom_bar(position='identity', width=.9,data=uu[uu$Date==2012,],
            aes(x=Age.band, y=yvar,fill=Gender,colour=Gender),stat='identity') +
   geom_bar(position='identity', width=.9,data=uu[uu$Date==2010,],
@@ -93,6 +92,7 @@ plot_AgeYr <- ggplot() +
         legend.title=element_text(face='bold',vjust=.5),
         legend.key.width=unit(1,'cm'))
 plot_AgeYr
+thisplot <- plot_AgeYr
 
 # Save plot ---------------------------------------------------------------
 

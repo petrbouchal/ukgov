@@ -1,7 +1,7 @@
 # Set location ------------------------------------------------------------
 
-#location='home'
-location='ifg'
+location='home'
+#location='ifg'
 
 # Load libraries ----------------------------------------------------------
 
@@ -17,8 +17,10 @@ library(reshape2)
 
 # Set parameters for saved chart ------------------------------------------
 
-pw=15.3
-ph=24.5/2
+pw=14
+ph=21
+
+plotformat <- 'eps'
 
 fontfamily='Calibri'
 #font_import()
@@ -206,8 +208,8 @@ RelabelAgebands <- function (dataset) {
 # Fn: generic save function -----------------------------------------------
 
 SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
-                      splot=last_plot() ,ploth=24.5/2, plotw=15.3) {
-  dev.off()
+                      splot=last_plot() ,ploth=210/2, plotw=14) {
+  try(dev.off(),silent=TRUE)
   plotobjdir <- './charts/ACSES chart objects/'
   plotimagedir <- './charts/ACSES charts/'
   plotimagepath = paste0(plotimagedir,plotname,'.',plotformat)
@@ -223,6 +225,7 @@ SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
            height=ploth, width=plotw, units='cm')
   }
   save(splot,file=plotobjpath)
+  write.csv(splot$data,file=paste0(plotimagedir,plotname,'_data.csv'))
   splot
 }
 
