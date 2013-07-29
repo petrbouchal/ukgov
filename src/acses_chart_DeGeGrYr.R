@@ -1,4 +1,3 @@
-setwd('~/github/local/Charting-government/')
 source('./src/acses_lib.R')
 
 # Load data ---------------------------------------------------------------

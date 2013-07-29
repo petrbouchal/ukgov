@@ -52,8 +52,6 @@ ylabel <- paste0('Staff as % of disclosed in ',
                                   } else {'departmental group'})
 xlabel <- paste0(ifelse(whitehallonly,'Whitehall departments ','Departmental groups '),
                  'ordered by % of disabled staff in workforce')
-pw=15.3/2
-ph=24.5/4
 
 uu$yvar <- uu$share
 maxY <- max(abs(uu$yvar)*1.04,na.rm=TRUE)

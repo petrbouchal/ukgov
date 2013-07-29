@@ -1,7 +1,7 @@
 # Set location ------------------------------------------------------------
 
-location='home'
-#location='ifg'
+#location='home'
+location='ifg'
 
 # Load libraries ----------------------------------------------------------
 
@@ -17,10 +17,10 @@ library(reshape2)
 
 # Set parameters for saved chart ------------------------------------------
 
-pw=14
-ph=21
+ph=14-2.5
+pw=21
 
-plotformat <- 'eps'
+plotformat <- 'wmf'
 
 fontfamily='Calibri'
 #font_import()

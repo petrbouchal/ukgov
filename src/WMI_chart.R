@@ -27,8 +27,8 @@ uu <- uu[uu$Dept!='AG Depts',]
 
 # Setup plot --------------------------------------------------------------
 
-pw <- 24.5
-ph <- 15.3-2.5
+pw <- 21
+ph <- 14-2.5
 
 uu$yvar <- uu$valuepc
 plottitle <- ''
