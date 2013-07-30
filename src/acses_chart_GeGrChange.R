@@ -9,10 +9,10 @@ plotname <- 'plot_GeGrChange'
 plottitle <- 'Gender balance in Civil Service Grades and change 2010-12'
 ylabel <- ''
 xlabel <- ''
-ph <- 24.5/2.5
-pw <- 15.3
-plotformat='wmf'
-uu$ylabels <- paste0(signif(uu$value*100,2),'%')
+ph <- 21/2.5
+pw <- 14
+uu$ylabels[uu$Grade=='All grades'] <- paste0(format(uu$value[uu$Grade=='All grades']*100,1),'%')
+uu$ylabels[uu$Grade!='All grades'] <- paste0(round(uu$value[uu$Grade!='All grades']*100,0),'%')
 
 plot_GeGrChange <- ggplot(uu,aes(y=value,x=Variable)) +
   geom_bar(position='stack',stat='identity', aes(fill=grp))+

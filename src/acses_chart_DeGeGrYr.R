@@ -1,13 +1,12 @@
-setwd('~/github/local/Charting-government/')
 source('./src/acses_lib.R')
 
 # Load data ---------------------------------------------------------------
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(file_name=filename,location=location)
-whitehallonly=TRUE
 
 # Process data ------------------------------------------------------------
+whitehallonly=TRUE
 uu <- origdata
 
 # FILTER OUT WAGE BAND LINES
@@ -37,19 +36,26 @@ uu <- uu[uu$Gender=='Female',]
 
 # Sort departments --------------------------------------------------------
 
-xtot <- ddply(uu[uu$Date==2012,],.(Group),summarise,sorter=sum(share))
+xtot <- ddply(uu[uu$Date==2012 & uu$Civil.Service.grad=='All grades',],.(Group),
+              summarise,sorter=sum(share))
 uu <- merge(uu,xtot,all.x=T)
 #make Whole CS category go last
-uu$sorter[uu$Group=='Whole Civil Service'] <- min(uu$sorter)/1.1
+#uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*10
 #reorder grouping variable
 uu$Group <- reorder(uu$Group,-uu$sorter)
+uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
 
 # Build plot --------------------------------------------------------------
 
+if(whitehallonly) {
+  uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
+}
+HLcol <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[3,1])
+
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
-ylabel = 'Staff in age group as % of'
-xlabel = 'ordered by % of females in workforce in 2012'
+ylabel = 'Female Civil Servants as % of grade in'
+xlabel = 'ordered by % of female Civil Servants in 2012'
 if(whitehallonly){
   plottitle=paste0(plottitle,' - Whitehall departments')
   ylabel = paste0(ylabel,' Whitehall dept')
@@ -62,26 +68,35 @@ if(whitehallonly){
   plotname = paste0(plotname,'_Group')
 }
 
-ph=15.3
-pw=24.5
-
 uu$yvar <- uu$share
 
 maxY <- max(abs(uu$yvar),na.rm=TRUE)
 ylimits <- c(0, maxY*1.04)
-ybreaks <- c(0,.2,.4,.6)
+ybreaks <- c(0,0.25,0.5,0.75)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
-plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), share,group=grp)) +
-  geom_line(size=.6, aes(colour=Civil.Service.grad),stat='identity') +
-  scale_colour_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1])) +
+plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=var,group=grp)) +
+  geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = .01,fill=NA,size=2)+
+  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2)+
+  geom_line(size=1, aes(colour=Civil.Service.grad),stat='identity') +
+  geom_point(aes(colour=Civil.Service.grad),pch=19,show_guide=FALSE) +
+  scale_colour_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
+                      labels=c('All grades','Senior Civil Service')) +
+  scale_fill_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
+                      labels=c('All grades','Senior Civil Service')) +
   guides(colour = guide_legend(ncol = 2)) +
-  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
+  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
   facet_wrap(~Group, nrow=3) +
   labs(title=plottitle, y=ylabel,x=xlabel) +
-  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,3]))
+  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2]),
+        axis.text.x=element_text(angle=90,vjust=0.5),
+        axis.ticks=element_line(colour=IfGcols[1,2]),
+        panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
+        panel.grid.major.x=element_blank())
 plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------
 
-#SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)
+SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)

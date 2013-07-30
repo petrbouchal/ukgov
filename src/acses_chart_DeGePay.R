@@ -89,7 +89,7 @@ ylabels <- paste0(abs(ybreaks*100),'%')
 plot_DeGePay <- ggplot(uu, aes(Wage.band, yvar)) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
   coord_flip() +
-  scale_fill_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
+  scale_fill_manual(values=c(IfGcols[2,1],IfGcols[5,1]),
                     labels=c('Female   ', 'Male')) +
   guides(col=guide_legend(ncol=3)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +

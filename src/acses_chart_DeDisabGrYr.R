@@ -4,9 +4,9 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Disab_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
-whitehallonly <- TRUE
 
 # Process data ------------------------------------------------------------
+whitehallonly <- FALSE
 uu <- origdata
 
 # FILTER OUT WAGE BAND LINES
@@ -38,8 +38,25 @@ uu <- RelabelGrades(uu)
 uu <- uu[uu$Civil.Service.grad=='SCS' | uu$Civil.Service.grad=='All grades',]
 uu <- uu[uu$Disability.statu!='Non-disabled',]
 
+
+
+# Sort departments --------------------------------------------------------
+
+xtot <- ddply(uu[uu$Date==2012 & uu$Civil.Service.grad=='All grades',],.(Group),
+              summarise,sorter=sum(share))
+uu <- merge(uu,xtot,all.x=T)
+#make Whole CS category go last
+#uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
+#reorder grouping variable
+uu$Group <- reorder(uu$Group,-uu$sorter)
+uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
+
 # Build plot --------------------------------------------------------------
 
+if(whitehallonly) {
+  uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
+}
+HLcol <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[3,1])
 uu$grp <- paste0(uu$Group,uu$Civil.Service.grad)
 
 plotname <- paste0('plot_DeDisabGrYr',
@@ -47,13 +64,11 @@ plotname <- paste0('plot_DeDisabGrYr',
 plottitle <- paste0('Civil Servants identifying as disabled, by ',
                     if(whitehallonly){'Whitehall department'
                                       } else {'departmental group'})
-ylabel <- paste0('Staff as % of disclosed in ',
+ylabel <- paste0('Civil Servants as % of disclosed in ',
                 if(whitehallonly){'Whitehall department'
                                   } else {'departmental group'})
 xlabel <- paste0(ifelse(whitehallonly,'Whitehall departments ','Departmental groups '),
-                 'ordered by % of disabled staff in workforce')
-pw=15.3/2
-ph=24.5/4
+                 'ordered by % of disabled staff in workforce in 2012')
 
 uu$yvar <- uu$share
 maxY <- max(abs(uu$yvar)*1.04,na.rm=TRUE)
@@ -62,10 +77,16 @@ ybreaks <- c(0,.03,.06,.09)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DeDisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
+  geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = .01) +
   geom_bar(aes(fill=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
-  scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1])) +
-  scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1])) +
+  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
+  scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
+                    labels=c('All grades','Senior Civil Service')) +
+  scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
+                    labels=c('All grades','Senior Civil Service')) +
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2,override.aes=list(size=1))) +
   scale_y_continuous(limits=c(0,maxY),labels=percent,expand=c(0,0)) +
@@ -73,7 +94,10 @@ plot_DeDisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
   facet_wrap(~Group,nrow=3)+
   theme(axis.line=element_blank(),
         panel.border=element_rect(fill=NA, colour=IfGcols[1,2]),
-        plot.title=element_blank())
+        plot.title=element_blank(), axis.text.x=element_text(angle=90),
+        axis.ticks=element_line(colour=IfGcols[1,2]),axis.ticks.x=element_blank(),
+        panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.major.x=element_blank(),
+        panel.grid.minor=element_blank())
 plot_DeDisabGrYr
 
 # Save plot ---------------------------------------------------------------

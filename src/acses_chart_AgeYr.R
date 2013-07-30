@@ -49,7 +49,7 @@ uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
 plotname <- 'plot_AgeYr'
 plottitle <- 'Civil Servants by gender and age'
-ylabel <- 'Staff in age group as % of whole Civil Service'
+ylabel <- 'Civil Servants in age group as % of whole Civil Service'
 xlabel <- 'Age group (years)'
 pw=14.0/3*2
 ph=21.0/3
@@ -89,8 +89,14 @@ plot_AgeYr <- ggplot(data=uu) +
         legend.direction='horizontal',
         legend.box='horizontal',
         legend.position='bottom',
+<<<<<<< HEAD
         legend.key.width=unit(.5,'cm'),
         legend.title=element_text(face='bold',vjust=.5))
+=======
+        legend.title=element_text(face='bold',vjust=.5),
+        legend.key.width=unit(.5,'cm'),axis.ticks=element_line(colour=IfGcols[1,2]),
+        axis.ticks.y=element_blank())
+>>>>>>> 4c6239cbd47c3262c158c8bbc895366401a76936
 plot_AgeYr
 
 # Save plot ---------------------------------------------------------------
