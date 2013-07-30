@@ -4,13 +4,14 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(file_name=filename,location=location)
+whitehallonly <- TRUE
 
 # Process data ------------------------------------------------------------
 uu <- origdata
 
 # FILTER OUT WAGE BAND LINES
 uu <- uu[uu$Wage.band=='Total',]
-uu <- AddOrgData(uu)
+uu <- AddOrgData(uu,whitehallonly)
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
 uu <- uu[uu$Include=='Yes',]
@@ -51,23 +52,35 @@ xtot <- ddply(uu,.(Group,Date),summarise,meangradescore=mean(gradescore))
 uu <- merge(uu,xtot)
 uu$sorter <- uu$meangradescore
 #make Whole CS category go last
-uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
+#uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
 #reorder grouping variable
-uu$Group <- reorder(uu$Group,uu$sorter,mean)
+uu$Group <- reorder(uu$Group,-uu$sorter,mean)
 
 # Make female share negative
 uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
 uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
 
+uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
+
 # Build plot --------------------------------------------------------------
 
-plotformat='eps'
+if(whitehallonly) {
+  uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
+}
+HLcol <- ifelse(whitehallonly,IfGcols[4,1],IfGcols[3,1])
+
 plotname <- 'plot_DeGeGr'
 plottitle <- 'Civil Servants by gender and grade'
-ylabel <- 'Staff in grade as % of whole Civil Service'
-xlabel <- ''
-ph=15.3
-pw=24.5
+ylabel = 'ordered by grade composition of staff (most senior workforce first)'
+if(whitehallonly){
+  plottitle=paste0(plottitle,' - Whitehall departments')
+  ylabel = paste0('% of Civil Servants in grade. Whitehall departments ',ylabel)
+  plotname = paste0(plotname,'_WH')
+} else {
+  plottitle=paste0(plottitle,' - departmental groups')
+  ylabel = paste0('% of Civil Servants in grade. Departmental groups ',ylabel)
+  plotname = paste0(plotname,'_Group')
+}
 
 uu$yvar <- uu$share
 
@@ -77,16 +90,22 @@ ybreaks <- c(-.3,-.15,0,.15,.3)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share)) +
+  geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = .01) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
+  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
   coord_flip() +
-  scale_fill_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
+  scale_fill_manual(values=c(IfGcols[2,1],IfGcols[5,1]),
                     labels=c('Female   ', 'Male')) +
   guides(colour = guide_legend(ncol = 1)) +
   guides(col=guide_legend(ncol=3)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
   facet_wrap(~Group, nrow=3) +
-  labs(title=plottitle, y=ylabel,x=xlabel) +
-  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,3]))
+  labs(y=ylabel) +
+  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2]),
+        axis.ticks=element_line(colour=IfGcols[1,2]),axis.ticks.y=element_blank(),
+        plot.title=element_blank(),axis.title.y=element_blank())
 plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------

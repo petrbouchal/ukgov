@@ -4,12 +4,13 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Age_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
+whitehallonly <- TRUE
 
 # Process data ------------------------------------------------------------
 uu <- origdata
 
 # LOAD DATA WITH GROUPINGS AND FILTER - MADE IN EXCEL
-uu <- AddOrgData(uu)
+uu <- AddOrgData(uu, whitehallonly)
 
 # FILTER OUT UNWANTED LINES
 uu <- uu[uu$Gender!='Total',]
@@ -56,23 +57,12 @@ uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
 #reorder grouping variable
 uu$Group <- reorder(uu$Group,uu$sorter,mean)
 
-
 # Make female share negative
 uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
 
-# create group for area plotting
-#uu$grp <- paste0(uu$Group, uu$Civil.Service.grad)
-
-# reshape to create year-on-year change figure
-# uu <- melt(uu, id=c('Group','Date','Age.band'))
-# uu <- dcast(uu, ... ~ variable + Date, drop=TRUE)
-# uu$sharediff <- (uu$share_2012 - uu$share_2010)
-
 # Build plot --------------------------------------------------------------
 
-ph = 15.3
-pw = 24.5
-plotname <- './charts/ACSES charts/plot_AgeDeYr.png'
+plotname <- 'plot_AgeDeYr'
 
 plottitle='Civil Servants in departments by gender and age group'
 ylabel = 'Staff in age group as % of whole department'

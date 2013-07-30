@@ -1,6 +1,5 @@
 source('./src/acses_lib.R')
 
-
 # Load data ---------------------------------------------------------------
 
 origdata <- read.csv('./data-input/WMI.csv')
@@ -27,13 +26,9 @@ uu <- uu[uu$Dept!='AG Depts',]
 
 # Setup plot --------------------------------------------------------------
 
-pw <- 21
-ph <- 14-2.5
-
 uu$yvar <- uu$valuepc
 plottitle <- ''
 plotname <- 'WMI_depts'
-plotformat <- 'eps'
 ylabel <- 'Pay bill (£000\'s)/Staff count (FTE)'
 xlabel <- NULL
 
@@ -42,17 +37,21 @@ ylimits <- c(min(uu$yvar,na.rm=TRUE),max(uu$yvar,na.rm=TRUE))
 # Build plot --------------------------------------------------------------
 
 wmiplot <- ggplot(uu,aes(x=Month,y=yvar)) +
-  geom_line(aes(colour=variable,group=grp),size=1) +
   geom_hline(y=0, colour=IfGcols[1,2]) +
+  geom_line(aes(colour=variable,group=grp),size=1) +
   scale_x_datetime(labels=date_format('%Y-%m')) +
   scale_colour_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
                       labels=c('FTE (Payroll)','Pay bill (Payroll)')) +
   scale_y_continuous(labels=percent,limits=ylimits) +
-  facet_wrap(~Dept) +
-  theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,3]),
-        plot.title=element_blank(), axis.ticks=element_line(colour=IfGcols[1,3]),
-        axis.ticks.y=element_blank()) +
-  labs(x=xlabel,y=ylabel)
+  facet_wrap(~Dept,ncol=4) +
+  guides(colour=guide_legend(keywidth=unit(1,'cm'))) +
+  labs(x=xlabel,y=ylabel) +
+  theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,2]),
+        plot.title=element_blank(),
+        axis.ticks=element_line(colour=IfGcols[1,2]),
+        panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
+        panel.grid.major.x=element_blank(),plot.title=element_blank(),
+        axis.text.x=element_text(size=8))
 wmiplot
 
 SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)

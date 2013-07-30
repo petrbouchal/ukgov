@@ -1,573 +1,573 @@
-"","Dept","Whitehall","value","measure","Period","group","chart","sorter"
-"209","BIS","Core Whitehall Depts.",-0.156914894,"Cumulative_Perc_net_change","2011Q2","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"215","BIS","Non-Whitehall Civil Service",-0.030732861,"Cumulative_Perc_net_change","2010Q4","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"216","BIS","Non-Whitehall Civil Service",-0.121527778,"Cumulative_Perc_net_change","2011Q4","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"220","BIS","Core Whitehall Depts.",-0.095744681,"Cumulative_Perc_net_change","2011Q1","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"223","BIS","Core Whitehall Depts.",-0.193841929,"Cumulative_Perc_net_change","2012Q3","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"224","BIS","Non-Whitehall Civil Service",-0.102836879,"Cumulative_Perc_net_change","2011Q3","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"228","BIS","Core Whitehall Depts.",-0.234042553,"Cumulative_Perc_net_change","2011Q3","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"229","BIS","Core Whitehall Depts.",-0.180450599,"Cumulative_Perc_net_change","2013Q1","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"234","BIS","Core Whitehall Depts.",-0.22606383,"Cumulative_Perc_net_change","2011Q4","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"237","BIS","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"238","BIS","Core Whitehall Depts.",-0.191163663,"Cumulative_Perc_net_change","2012Q4","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"247","BIS","Total",-0.143207856,"Cumulative_Perc_net_change","2011Q3","BIS-Total",TRUE,-0.161040219
-"251","BIS","Total",-0.170217097,"Cumulative_Perc_net_change","2012Q3","BIS-Total",TRUE,-0.161040219
-"252","BIS","Non-Whitehall Civil Service",-0.137204015,"Cumulative_Perc_net_change","2013Q1","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"255","BIS","Core Whitehall Depts.",-0.185807131,"Cumulative_Perc_net_change","2012Q2","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"259","BIS","Total",-0.166353148,"Cumulative_Perc_net_change","2012Q2","BIS-Total",TRUE,-0.161040219
-"260","BIS","Non-Whitehall Civil Service",-0.139012812,"Cumulative_Perc_net_change","2012Q4","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"263","BIS","Core Whitehall Depts.",-0.207446809,"Cumulative_Perc_net_change","2012Q1","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"273","BIS","Non-Whitehall Civil Service",-0.098108747,"Cumulative_Perc_net_change","2011Q2","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"282","BIS","Total",-0.164421174,"Cumulative_Perc_net_change","2012Q4","BIS-Total",TRUE,-0.161040219
-"283","BIS","Non-Whitehall Civil Service",-0.040189125,"Cumulative_Perc_net_change","2011Q1","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"296","BIS","Total",-0.116202946,"Cumulative_Perc_net_change","2011Q2","BIS-Total",TRUE,-0.161040219
-"301","BIS","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"308","BIS","Core Whitehall Depts.",-0.090425532,"Cumulative_Perc_net_change","2010Q4","BIS-Core Whitehall Depts.",TRUE,-0.161040219
-"310","BIS","Non-Whitehall Civil Service",-0.145645066,"Cumulative_Perc_net_change","2012Q3","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"312","BIS","Total",-0.049099836,"Cumulative_Perc_net_change","2010Q4","BIS-Total",TRUE,-0.161040219
-"314","BIS","Total",-0.161040219,"Cumulative_Perc_net_change","2013Q1","BIS-Total",TRUE,-0.161040219
-"319","BIS","Total",-0.15671584,"Cumulative_Perc_net_change","2011Q4","BIS-Total",TRUE,-0.161040219
-"324","BIS","Total",0,"Cumulative_Perc_net_change","2010Q3","BIS-Total",TRUE,-0.161040219
-"344","BIS","Total",-0.057283142,"Cumulative_Perc_net_change","2011Q1","BIS-Total",TRUE,-0.161040219
-"368","BIS","Non-Whitehall Civil Service",-0.142630405,"Cumulative_Perc_net_change","2012Q1","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"383","BIS","Non-Whitehall Civil Service",-0.142630405,"Cumulative_Perc_net_change","2012Q2","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219
-"391","BIS","Total",-0.170223824,"Cumulative_Perc_net_change","2012Q1","BIS-Total",TRUE,-0.161040219
-"403","CO","Non-Whitehall Civil Service",-0.292076345,"Cumulative_Perc_net_change","2011Q4","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"407","CO","Non-Whitehall Civil Service",-0.274378253,"Cumulative_Perc_net_change","2011Q3","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"410","CO","Non-Whitehall Civil Service",-0.351069983,"Cumulative_Perc_net_change","2012Q1","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"421","CO","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"423","CO","Core Whitehall Depts.",0.013333333,"Cumulative_Perc_net_change","2011Q1","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"431","CO","Core Whitehall Depts.",-0.026666667,"Cumulative_Perc_net_change","2010Q4","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"444","CO","Total",-0.274224708,"Cumulative_Perc_net_change","2012Q4","CO-Total",TRUE,-0.262972378
-"455","CO","Core Whitehall Depts.",-0.046666667,"Cumulative_Perc_net_change","2011Q2","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"462","CO","Total",-0.291103203,"Cumulative_Perc_net_change","2012Q2","CO-Total",TRUE,-0.262972378
-"467","CO","Total",-0.101449275,"Cumulative_Perc_net_change","2011Q1","CO-Total",TRUE,-0.262972378
-"475","CO","Non-Whitehall Civil Service",-0.215384615,"Cumulative_Perc_net_change","2011Q2","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"476","CO","Total",-0.262972378,"Cumulative_Perc_net_change","2013Q1","CO-Total",TRUE,-0.262972378
-"482","CO","Non-Whitehall Civil Service",-0.535130133,"Cumulative_Perc_net_change","2012Q2","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"487","CO","Core Whitehall Depts.",-0.046666667,"Cumulative_Perc_net_change","2011Q3","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"489","CO","Total",-0.171014493,"Cumulative_Perc_net_change","2011Q3","CO-Total",TRUE,-0.262972378
-"493","CO","Non-Whitehall Civil Service",-0.164102564,"Cumulative_Perc_net_change","2010Q4","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"494","CO","Total",-0.291103203,"Cumulative_Perc_net_change","2012Q3","CO-Total",TRUE,-0.262972378
-"499","CO","Total",-0.142028986,"Cumulative_Perc_net_change","2011Q2","CO-Total",TRUE,-0.262972378
-"514","CO","Non-Whitehall Civil Service",-0.515760555,"Cumulative_Perc_net_change","2012Q3","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"519","CO","Core Whitehall Depts.",-0.040817996,"Cumulative_Perc_net_change","2011Q4","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"521","CO","Total",-0.176811594,"Cumulative_Perc_net_change","2011Q4","CO-Total",TRUE,-0.262972378
-"523","CO","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"525","CO","Non-Whitehall Civil Service",-0.18974359,"Cumulative_Perc_net_change","2011Q1","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"526","CO","Total",0,"Cumulative_Perc_net_change","2010Q3","CO-Total",TRUE,-0.262972378
-"538","CO","Non-Whitehall Civil Service",-0.4770214,"Cumulative_Perc_net_change","2013Q1","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"543","CO","Total",-0.104347826,"Cumulative_Perc_net_change","2010Q4","CO-Total",TRUE,-0.262972378
-"573","CO","Non-Whitehall Civil Service",-0.496390977,"Cumulative_Perc_net_change","2012Q4","CO-Non-Whitehall Civil Service",TRUE,-0.262972378
-"576","CO","Core Whitehall Depts.",-0.0497684,"Cumulative_Perc_net_change","2012Q3","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"578","CO","Core Whitehall Depts.",-0.029120654,"Cumulative_Perc_net_change","2012Q1","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"582","CO","Core Whitehall Depts.",-0.02829424,"Cumulative_Perc_net_change","2013Q1","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"584","CO","Core Whitehall Depts.",-0.03366278,"Cumulative_Perc_net_change","2012Q2","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"590","CO","Core Whitehall Depts.",-0.03366278,"Cumulative_Perc_net_change","2012Q4","CO-Core Whitehall Depts.",TRUE,-0.262972378
-"594","CO","Total",-0.2,"Cumulative_Perc_net_change","2012Q1","CO-Total",TRUE,-0.262972378
-"601","DCLG","Non-Whitehall Civil Service",-0.090909091,"Cumulative_Perc_net_change","2011Q3","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"606","DCLG","Non-Whitehall Civil Service",-0.090909091,"Cumulative_Perc_net_change","2011Q4","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"610","DCLG","Non-Whitehall Civil Service",-0.086124402,"Cumulative_Perc_net_change","2011Q2","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"615","DCLG","Total",-0.088937093,"Cumulative_Perc_net_change","2011Q1","DCLG-Total",TRUE,-0.25694327
-"619","DCLG","Non-Whitehall Civil Service",-0.090909091,"Cumulative_Perc_net_change","2013Q1","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"620","DCLG","Core Whitehall Depts.",-0.01984127,"Cumulative_Perc_net_change","2010Q4","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"625","DCLG","Non-Whitehall Civil Service",-0.112554113,"Cumulative_Perc_net_change","2012Q1","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"627","DCLG","Non-Whitehall Civil Service",-0.101731602,"Cumulative_Perc_net_change","2012Q4","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"636","DCLG","Non-Whitehall Civil Service",-0.112554113,"Cumulative_Perc_net_change","2012Q3","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"638","DCLG","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"644","DCLG","Non-Whitehall Civil Service",-0.090909091,"Cumulative_Perc_net_change","2012Q2","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"661","DCLG","Total",-0.147505423,"Cumulative_Perc_net_change","2011Q2","DCLG-Total",TRUE,-0.25694327
-"664","DCLG","Total",-0.251045994,"Cumulative_Perc_net_change","2012Q2","DCLG-Total",TRUE,-0.25694327
-"666","DCLG","Core Whitehall Depts.",-0.107142857,"Cumulative_Perc_net_change","2011Q1","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"685","DCLG","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"687","DCLG","Non-Whitehall Civil Service",-0.066985646,"Cumulative_Perc_net_change","2011Q1","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"690","DCLG","Core Whitehall Depts.",-0.162698413,"Cumulative_Perc_net_change","2011Q3","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"693","DCLG","Total",-0.130151844,"Cumulative_Perc_net_change","2011Q3","DCLG-Total",TRUE,-0.25694327
-"695","DCLG","Non-Whitehall Civil Service",-0.019138756,"Cumulative_Perc_net_change","2010Q4","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327
-"696","DCLG","Total",-0.262840546,"Cumulative_Perc_net_change","2012Q3","DCLG-Total",TRUE,-0.25694327
-"698","DCLG","Core Whitehall Depts.",-0.198412698,"Cumulative_Perc_net_change","2011Q2","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"718","DCLG","Total",-0.019522777,"Cumulative_Perc_net_change","2010Q4","DCLG-Total",TRUE,-0.25694327
-"719","DCLG","Total",-0.25694327,"Cumulative_Perc_net_change","2013Q1","DCLG-Total",TRUE,-0.25694327
-"725","DCLG","Total",-0.203867789,"Cumulative_Perc_net_change","2011Q4","DCLG-Total",TRUE,-0.25694327
-"727","DCLG","Total",-0.265789183,"Cumulative_Perc_net_change","2012Q4","DCLG-Total",TRUE,-0.25694327
-"728","DCLG","Total",0,"Cumulative_Perc_net_change","2010Q3","DCLG-Total",TRUE,-0.25694327
-"749","DCLG","Core Whitehall Depts.",-0.261904762,"Cumulative_Perc_net_change","2011Q4","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"768","DCLG","Total",-0.221559616,"Cumulative_Perc_net_change","2012Q1","DCLG-Total",TRUE,-0.25694327
-"773","DCLG","Core Whitehall Depts.",-0.325396825,"Cumulative_Perc_net_change","2012Q2","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"776","DCLG","Core Whitehall Depts.",-0.333333333,"Cumulative_Perc_net_change","2013Q1","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"778","DCLG","Core Whitehall Depts.",-0.333333333,"Cumulative_Perc_net_change","2012Q3","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"782","DCLG","Core Whitehall Depts.",-0.277777778,"Cumulative_Perc_net_change","2012Q1","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"791","DCLG","Core Whitehall Depts.",-0.341269841,"Cumulative_Perc_net_change","2012Q4","DCLG-Core Whitehall Depts.",TRUE,-0.25694327
-"797","DCMS","Core Whitehall Depts.",-1.11022e-16,"Cumulative_Perc_net_change","2011Q3","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"807","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2010Q4","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"819","DCMS","Core Whitehall Depts.",0.065217391,"Cumulative_Perc_net_change","2011Q2","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"822","DCMS","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q4","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"831","DCMS","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"841","DCMS","Core Whitehall Depts.",-0.02173913,"Cumulative_Perc_net_change","2011Q1","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"843","DCMS","Core Whitehall Depts.",-1.11022e-16,"Cumulative_Perc_net_change","2011Q4","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"846","DCMS","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"853","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2011Q1","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"854","DCMS","Total",0,"Cumulative_Perc_net_change","2010Q3","DCMS-Total",TRUE,-0.280701754
-"867","DCMS","Core Whitehall Depts.",-0.02173913,"Cumulative_Perc_net_change","2012Q2","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"875","DCMS","Core Whitehall Depts.",-0.02173913,"Cumulative_Perc_net_change","2012Q1","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"885","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2011Q2","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"886","DCMS","Total",0.01754386,"Cumulative_Perc_net_change","2010Q4","DCMS-Total",TRUE,-0.280701754
-"894","DCMS","Total",0,"Cumulative_Perc_net_change","2011Q4","DCMS-Total",TRUE,-0.280701754
-"902","DCMS","Total",0,"Cumulative_Perc_net_change","2011Q3","DCMS-Total",TRUE,-0.280701754
-"907","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2013Q1","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"917","DCMS","Non-Whitehall Civil Service",-1.11022e-16,"Cumulative_Perc_net_change","2011Q3","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"926","DCMS","Core Whitehall Depts.",0.130434783,"Cumulative_Perc_net_change","2012Q3","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"941","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2012Q1","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"947","DCMS","Non-Whitehall Civil Service",0.181818182,"Cumulative_Perc_net_change","2012Q2","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"949","DCMS","Non-Whitehall Civil Service",-1.11022e-16,"Cumulative_Perc_net_change","2011Q4","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"951","DCMS","Non-Whitehall Civil Service",0.181818182,"Cumulative_Perc_net_change","2012Q3","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"953","DCMS","Total",0.01754386,"Cumulative_Perc_net_change","2012Q2","DCMS-Total",TRUE,-0.280701754
-"958","DCMS","Total",0,"Cumulative_Perc_net_change","2011Q1","DCMS-Total",TRUE,-0.280701754
-"962","DCMS","Core Whitehall Depts.",-0.369565217,"Cumulative_Perc_net_change","2013Q1","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"966","DCMS","Total",-0.280701754,"Cumulative_Perc_net_change","2013Q1","DCMS-Total",TRUE,-0.280701754
-"969","DCMS","Non-Whitehall Civil Service",-3.33067e-16,"Cumulative_Perc_net_change","2012Q4","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754
-"976","DCMS","Total",-0.105263158,"Cumulative_Perc_net_change","2012Q4","DCMS-Total",TRUE,-0.280701754
-"977","DCMS","Total",0.070175439,"Cumulative_Perc_net_change","2011Q2","DCMS-Total",TRUE,-0.280701754
-"982","DCMS","Total",0.140350877,"Cumulative_Perc_net_change","2012Q3","DCMS-Total",TRUE,-0.280701754
-"989","DCMS","Core Whitehall Depts.",-0.130434783,"Cumulative_Perc_net_change","2012Q4","DCMS-Core Whitehall Depts.",TRUE,-0.280701754
-"990","DCMS","Total",0,"Cumulative_Perc_net_change","2012Q1","DCMS-Total",TRUE,-0.280701754
-"994","DECC","Core Whitehall Depts.",0.0625,"Cumulative_Perc_net_change","2011Q3","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"995","DECC","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"996","DECC","Core Whitehall Depts.",0.044642857,"Cumulative_Perc_net_change","2011Q2","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"999","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q1","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1002","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q2","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1004","DECC","Core Whitehall Depts.",0.026785714,"Cumulative_Perc_net_change","2011Q1","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1007","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2010Q4","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1010","DECC","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1038","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q3","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1039","DECC","Core Whitehall Depts.",0.008928571,"Cumulative_Perc_net_change","2010Q4","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1047","DECC","Core Whitehall Depts.",0.098214286,"Cumulative_Perc_net_change","2011Q4","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1070","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q4","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1079","DECC","Core Whitehall Depts.",0.151785714,"Cumulative_Perc_net_change","2012Q1","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1090","DECC","Total",0.276785714,"Cumulative_Perc_net_change","2013Q1","DECC-Total",TRUE,0.276785714
-"1096","DECC","Total",0,"Cumulative_Perc_net_change","2010Q3","DECC-Total",TRUE,0.276785714
-"1098","DECC","Total",0.241071429,"Cumulative_Perc_net_change","2012Q4","DECC-Total",TRUE,0.276785714
-"1102","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q1","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1103","DECC","Core Whitehall Depts.",0.223214286,"Cumulative_Perc_net_change","2012Q3","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1107","DECC","Total",0.223214286,"Cumulative_Perc_net_change","2012Q3","DECC-Total",TRUE,0.276785714
-"1111","DECC","Core Whitehall Depts.",0.178571429,"Cumulative_Perc_net_change","2012Q2","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1120","DECC","Total",0.026785714,"Cumulative_Perc_net_change","2011Q1","DECC-Total",TRUE,0.276785714
-"1125","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q3","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1126","DECC","Core Whitehall Depts.",0.276785714,"Cumulative_Perc_net_change","2013Q1","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1128","DECC","Total",0.008928571,"Cumulative_Perc_net_change","2010Q4","DECC-Total",TRUE,0.276785714
-"1134","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q2","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1144","DECC","Total",0.0625,"Cumulative_Perc_net_change","2011Q3","DECC-Total",TRUE,0.276785714
-"1149","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2013Q1","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1152","DECC","Total",0.044642857,"Cumulative_Perc_net_change","2011Q2","DECC-Total",TRUE,0.276785714
-"1155","DECC","Total",0.178571429,"Cumulative_Perc_net_change","2012Q2","DECC-Total",TRUE,0.276785714
-"1157","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q4","DECC-Non-Whitehall Civil Service",TRUE,0.276785714
-"1162","DECC","Core Whitehall Depts.",0.241071429,"Cumulative_Perc_net_change","2012Q4","DECC-Core Whitehall Depts.",TRUE,0.276785714
-"1180","DECC","Total",0.151785714,"Cumulative_Perc_net_change","2012Q1","DECC-Total",TRUE,0.276785714
-"1182","DECC","Total",0.098214286,"Cumulative_Perc_net_change","2011Q4","DECC-Total",TRUE,0.276785714
-"1190","DEFRA","Core Whitehall Depts.",-0.096525097,"Cumulative_Perc_net_change","2011Q2","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1193","DEFRA","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1198","DEFRA","Non-Whitehall Civil Service",-0.022630835,"Cumulative_Perc_net_change","2010Q4","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1199","DEFRA","Core Whitehall Depts.",-0.023166023,"Cumulative_Perc_net_change","2011Q1","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1204","DEFRA","Core Whitehall Depts.",-0.189189189,"Cumulative_Perc_net_change","2011Q3","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1210","DEFRA","Core Whitehall Depts.",-0.196911197,"Cumulative_Perc_net_change","2011Q4","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1211","DEFRA","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1215","DEFRA","Core Whitehall Depts.",-0.193050193,"Cumulative_Perc_net_change","2012Q1","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1216","DEFRA","Core Whitehall Depts.",-0.007722008,"Cumulative_Perc_net_change","2010Q4","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1218","DEFRA","Total",0,"Cumulative_Perc_net_change","2010Q3","DEFRA-Total",TRUE,-0.16252588
-"1229","DEFRA","Total",-0.148033126,"Cumulative_Perc_net_change","2012Q3","DEFRA-Total",TRUE,-0.16252588
-"1230","DEFRA","Non-Whitehall Civil Service",-0.026874116,"Cumulative_Perc_net_change","2011Q1","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1234","DEFRA","Core Whitehall Depts.",-0.204633205,"Cumulative_Perc_net_change","2012Q2","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1237","DEFRA","Total",-0.135610766,"Cumulative_Perc_net_change","2012Q2","DEFRA-Total",TRUE,-0.16252588
-"1242","DEFRA","Total",-0.025879917,"Cumulative_Perc_net_change","2011Q1","DEFRA-Total",TRUE,-0.16252588
-"1249","DEFRA","Non-Whitehall Civil Service",-0.028288543,"Cumulative_Perc_net_change","2011Q2","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1250","DEFRA","Total",-0.01863354,"Cumulative_Perc_net_change","2010Q4","DEFRA-Total",TRUE,-0.16252588
-"1260","DEFRA","Total",-0.15010352,"Cumulative_Perc_net_change","2012Q4","DEFRA-Total",TRUE,-0.16252588
-"1266","DEFRA","Core Whitehall Depts.",-0.22007722,"Cumulative_Perc_net_change","2012Q3","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1274","DEFRA","Total",-0.046583851,"Cumulative_Perc_net_change","2011Q2","DEFRA-Total",TRUE,-0.16252588
-"1281","DEFRA","Non-Whitehall Civil Service",-0.072135785,"Cumulative_Perc_net_change","2011Q3","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1288","DEFRA","Non-Whitehall Civil Service",-0.121640736,"Cumulative_Perc_net_change","2012Q3","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1292","DEFRA","Total",-0.16252588,"Cumulative_Perc_net_change","2013Q1","DEFRA-Total",TRUE,-0.16252588
-"1305","DEFRA","Non-Whitehall Civil Service",-0.09476662,"Cumulative_Perc_net_change","2012Q1","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1306","DEFRA","Total",-0.103519669,"Cumulative_Perc_net_change","2011Q3","DEFRA-Total",TRUE,-0.16252588
-"1311","DEFRA","Non-Whitehall Civil Service",-0.151343706,"Cumulative_Perc_net_change","2013Q1","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1313","DEFRA","Non-Whitehall Civil Service",-0.089108911,"Cumulative_Perc_net_change","2011Q4","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1319","DEFRA","Non-Whitehall Civil Service",-0.127298444,"Cumulative_Perc_net_change","2012Q4","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1337","DEFRA","Non-Whitehall Civil Service",-0.110325318,"Cumulative_Perc_net_change","2012Q2","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588
-"1338","DEFRA","Core Whitehall Depts.",-0.212355212,"Cumulative_Perc_net_change","2012Q4","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1354","DEFRA","Total",-0.121118012,"Cumulative_Perc_net_change","2012Q1","DEFRA-Total",TRUE,-0.16252588
-"1357","DEFRA","Core Whitehall Depts.",-0.193050193,"Cumulative_Perc_net_change","2013Q1","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588
-"1365","DEFRA","Total",-0.118012422,"Cumulative_Perc_net_change","2011Q4","DEFRA-Total",TRUE,-0.16252588
-"1389","DfE","Core Whitehall Depts.",-0.021428571,"Cumulative_Perc_net_change","2010Q4","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1390","DfE","Non-Whitehall Civil Service",-0.023952096,"Cumulative_Perc_net_change","2010Q4","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1393","DfE","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1397","DfE","Core Whitehall Depts.",-0.110714286,"Cumulative_Perc_net_change","2011Q3","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1405","DfE","Core Whitehall Depts.",-0.110714286,"Cumulative_Perc_net_change","2011Q2","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1412","DfE","Non-Whitehall Civil Service",-0.035928144,"Cumulative_Perc_net_change","2011Q2","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1416","DfE","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1420","DfE","Non-Whitehall Civil Service",-0.02994012,"Cumulative_Perc_net_change","2011Q1","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1423","DfE","Core Whitehall Depts.",-0.05,"Cumulative_Perc_net_change","2011Q1","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1428","DfE","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2012Q1","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1444","DfE","Non-Whitehall Civil Service",-0.047904192,"Cumulative_Perc_net_change","2011Q3","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1445","DfE","Core Whitehall Depts.",-0.075,"Cumulative_Perc_net_change","2012Q1","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1449","DfE","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2011Q4","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1452","DfE","Total",-0.022371365,"Cumulative_Perc_net_change","2010Q4","DfE-Total",TRUE,-0.094808014
-"1453","DfE","Core Whitehall Depts.",-0.078571429,"Cumulative_Perc_net_change","2011Q4","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1460","DfE","Total",0,"Cumulative_Perc_net_change","2010Q3","DfE-Total",TRUE,-0.094808014
-"1469","DfE","Core Whitehall Depts.",-0.089285714,"Cumulative_Perc_net_change","2012Q3","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1477","DfE","Core Whitehall Depts.",-0.060714286,"Cumulative_Perc_net_change","2012Q2","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1484","DfE","Total",-0.042505593,"Cumulative_Perc_net_change","2011Q1","DfE-Total",TRUE,-0.094808014
-"1492","DfE","Non-Whitehall Civil Service",-0.055895482,"Cumulative_Perc_net_change","2012Q3","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1500","DfE","Non-Whitehall Civil Service",-0.023952096,"Cumulative_Perc_net_change","2012Q2","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1508","DfE","Total",-0.087248322,"Cumulative_Perc_net_change","2011Q3","DfE-Total",TRUE,-0.094808014
-"1513","DfE","Total",-0.077093885,"Cumulative_Perc_net_change","2012Q3","DfE-Total",TRUE,-0.094808014
-"1516","DfE","Total",-0.082774049,"Cumulative_Perc_net_change","2011Q2","DfE-Total",TRUE,-0.094808014
-"1540","DfE","Total",-0.049217002,"Cumulative_Perc_net_change","2011Q4","DfE-Total",TRUE,-0.094808014
-"1541","DfE","Core Whitehall Depts.",-0.085714286,"Cumulative_Perc_net_change","2012Q4","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1543","DfE","Total",-0.089493775,"Cumulative_Perc_net_change","2012Q4","DfE-Total",TRUE,-0.094808014
-"1557","DfE","Total",-0.046979866,"Cumulative_Perc_net_change","2012Q1","DfE-Total",TRUE,-0.094808014
-"1561","DfE","Total",-0.046979866,"Cumulative_Perc_net_change","2012Q2","DfE-Total",TRUE,-0.094808014
-"1563","DfE","Total",-0.094808014,"Cumulative_Perc_net_change","2013Q1","DfE-Total",TRUE,-0.094808014
-"1564","DfE","Non-Whitehall Civil Service",-0.084289603,"Cumulative_Perc_net_change","2012Q4","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1567","DfE","Non-Whitehall Civil Service",-0.080740338,"Cumulative_Perc_net_change","2013Q1","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014
-"1582","DfE","Core Whitehall Depts.",-0.1,"Cumulative_Perc_net_change","2013Q1","DfE-Core Whitehall Depts.",TRUE,-0.094808014
-"1585","DfID","Core Whitehall Depts.",-0.01875,"Cumulative_Perc_net_change","2011Q1","DfID-Core Whitehall Depts.",TRUE,0.1
-"1595","DfID","Core Whitehall Depts.",-0.025,"Cumulative_Perc_net_change","2011Q2","DfID-Core Whitehall Depts.",TRUE,0.1
-"1596","DfID","Core Whitehall Depts.",-0.0125,"Cumulative_Perc_net_change","2010Q4","DfID-Core Whitehall Depts.",TRUE,0.1
-"1618","DfID","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DfID-Core Whitehall Depts.",TRUE,0.1
-"1620","DfID","Core Whitehall Depts.",0.03125,"Cumulative_Perc_net_change","2012Q1","DfID-Core Whitehall Depts.",TRUE,0.1
-"1625","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q1","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1639","DfID","Core Whitehall Depts.",0.05625,"Cumulative_Perc_net_change","2012Q2","DfID-Core Whitehall Depts.",TRUE,0.1
-"1643","DfID","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1646","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2010Q4","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1655","DfID","Core Whitehall Depts.",0.0125,"Cumulative_Perc_net_change","2011Q4","DfID-Core Whitehall Depts.",TRUE,0.1
-"1657","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q2","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1663","DfID","Core Whitehall Depts.",-0.025,"Cumulative_Perc_net_change","2011Q3","DfID-Core Whitehall Depts.",TRUE,0.1
-"1666","DfID","Total",0,"Cumulative_Perc_net_change","2010Q3","DfID-Total",TRUE,0.1
-"1681","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q4","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1711","DfID","Core Whitehall Depts.",0.06875,"Cumulative_Perc_net_change","2012Q3","DfID-Core Whitehall Depts.",TRUE,0.1
-"1713","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q1","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1714","DfID","Total",-0.025,"Cumulative_Perc_net_change","2011Q3","DfID-Total",TRUE,0.1
-"1722","DfID","Core Whitehall Depts.",0.1,"Cumulative_Perc_net_change","2013Q1","DfID-Core Whitehall Depts.",TRUE,0.1
-"1729","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q3","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1738","DfID","Total",-0.0125,"Cumulative_Perc_net_change","2010Q4","DfID-Total",TRUE,0.1
-"1744","DfID","Total",-0.01875,"Cumulative_Perc_net_change","2011Q1","DfID-Total",TRUE,0.1
-"1745","DfID","Total",-0.025,"Cumulative_Perc_net_change","2011Q2","DfID-Total",TRUE,0.1
-"1746","DfID","Total",0.0125,"Cumulative_Perc_net_change","2011Q4","DfID-Total",TRUE,0.1
-"1753","DfID","Core Whitehall Depts.",0.08125,"Cumulative_Perc_net_change","2012Q4","DfID-Core Whitehall Depts.",TRUE,0.1
-"1757","DfID","Total",0.1,"Cumulative_Perc_net_change","2013Q1","DfID-Total",TRUE,0.1
-"1759","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q2","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1768","DfID","Total",0.08125,"Cumulative_Perc_net_change","2012Q4","DfID-Total",TRUE,0.1
-"1771","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2013Q1","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1775","DfID","Total",0.03125,"Cumulative_Perc_net_change","2012Q1","DfID-Total",TRUE,0.1
-"1776","DfID","Total",0.06875,"Cumulative_Perc_net_change","2012Q3","DfID-Total",TRUE,0.1
-"1777","DfID","Total",0.05625,"Cumulative_Perc_net_change","2012Q2","DfID-Total",TRUE,0.1
-"1779","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q3","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1780","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q4","DfID-Non-Whitehall Civil Service",TRUE,0.1
-"1784","DfT","Non-Whitehall Civil Service",-0.012859767,"Cumulative_Perc_net_change","2010Q4","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1789","DfT","Core Whitehall Depts.",-0.140096618,"Cumulative_Perc_net_change","2011Q2","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1790","DfT","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1793","DfT","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1811","DfT","Core Whitehall Depts.",-0.019323671,"Cumulative_Perc_net_change","2010Q4","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1812","DfT","Non-Whitehall Civil Service",-0.031843233,"Cumulative_Perc_net_change","2011Q1","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1827","DfT","Core Whitehall Depts.",-0.173913043,"Cumulative_Perc_net_change","2011Q3","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1828","DfT","Total",0,"Cumulative_Perc_net_change","2010Q3","DfT-Total",TRUE,-0.0875
-"1830","DfT","Core Whitehall Depts.",-0.101449275,"Cumulative_Perc_net_change","2011Q1","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1835","DfT","Core Whitehall Depts.",-0.198067633,"Cumulative_Perc_net_change","2012Q3","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1842","DfT","Non-Whitehall Civil Service",-0.058787508,"Cumulative_Perc_net_change","2011Q4","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1856","DfT","Core Whitehall Depts.",-0.207729469,"Cumulative_Perc_net_change","2012Q2","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1858","DfT","Non-Whitehall Civil Service",-0.044703001,"Cumulative_Perc_net_change","2011Q2","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1860","DfT","Total",-0.013586957,"Cumulative_Perc_net_change","2010Q4","DfT-Total",TRUE,-0.0875
-"1874","DfT","Non-Whitehall Civil Service",-0.063686467,"Cumulative_Perc_net_change","2012Q1","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1884","DfT","Total",-0.055434783,"Cumulative_Perc_net_change","2011Q2","DfT-Total",TRUE,-0.0875
-"1890","DfT","Non-Whitehall Civil Service",-0.053276179,"Cumulative_Perc_net_change","2011Q3","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1891","DfT","Core Whitehall Depts.",-0.212560386,"Cumulative_Perc_net_change","2012Q1","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1892","DfT","Total",-0.039673913,"Cumulative_Perc_net_change","2011Q1","DfT-Total",TRUE,-0.0875
-"1899","DfT","Core Whitehall Depts.",-0.198067633,"Cumulative_Perc_net_change","2011Q4","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1906","DfT","Non-Whitehall Civil Service",-0.069197795,"Cumulative_Perc_net_change","2012Q2","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1907","DfT","Core Whitehall Depts.",-0.178743961,"Cumulative_Perc_net_change","2012Q4","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1916","DfT","Total",-0.066847826,"Cumulative_Perc_net_change","2011Q3","DfT-Total",TRUE,-0.0875
-"1923","DfT","Total",-0.088586957,"Cumulative_Perc_net_change","2012Q3","DfT-Total",TRUE,-0.0875
-"1925","DfT","Non-Whitehall Civil Service",-0.074709124,"Cumulative_Perc_net_change","2012Q3","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1953","DfT","Core Whitehall Depts.",-0.173913043,"Cumulative_Perc_net_change","2013Q1","DfT-Core Whitehall Depts.",TRUE,-0.0875
-"1955","DfT","Total",-0.088586957,"Cumulative_Perc_net_change","2012Q4","DfT-Total",TRUE,-0.0875
-"1957","DfT","Non-Whitehall Civil Service",-0.077158604,"Cumulative_Perc_net_change","2012Q4","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1960","DfT","Total",-0.0875,"Cumulative_Perc_net_change","2013Q1","DfT-Total",TRUE,-0.0875
-"1962","DfT","Non-Whitehall Civil Service",-0.076546234,"Cumulative_Perc_net_change","2013Q1","DfT-Non-Whitehall Civil Service",TRUE,-0.0875
-"1972","DfT","Total",-0.084782609,"Cumulative_Perc_net_change","2012Q2","DfT-Total",TRUE,-0.0875
-"1977","DfT","Total",-0.080434783,"Cumulative_Perc_net_change","2012Q1","DfT-Total",TRUE,-0.0875
-"1978","DfT","Total",-0.074456522,"Cumulative_Perc_net_change","2011Q4","DfT-Total",TRUE,-0.0875
-"1992","DH","Core Whitehall Depts.",0.007874016,"Cumulative_Perc_net_change","2011Q1","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"1996","DH","Non-Whitehall Civil Service",-0.019455253,"Cumulative_Perc_net_change","2010Q4","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"1999","DH","Core Whitehall Depts.",0.011811024,"Cumulative_Perc_net_change","2010Q4","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2003","DH","Total",0,"Cumulative_Perc_net_change","2010Q3","DH-Total",TRUE,-0.140900196
-"2022","DH","Total",-0.003913894,"Cumulative_Perc_net_change","2010Q4","DH-Total",TRUE,-0.140900196
-"2044","DH","Non-Whitehall Civil Service",-0.140077821,"Cumulative_Perc_net_change","2011Q4","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2047","DH","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2052","DH","Non-Whitehall Civil Service",-0.128404669,"Cumulative_Perc_net_change","2011Q3","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2053","DH","Core Whitehall Depts.",-0.098425197,"Cumulative_Perc_net_change","2012Q1","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2068","DH","Non-Whitehall Civil Service",-0.042801556,"Cumulative_Perc_net_change","2011Q1","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2076","DH","Non-Whitehall Civil Service",-0.151750973,"Cumulative_Perc_net_change","2012Q1","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2077","DH","Core Whitehall Depts.",-0.059055118,"Cumulative_Perc_net_change","2011Q2","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2085","DH","Core Whitehall Depts.",-0.106299213,"Cumulative_Perc_net_change","2012Q2","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2086","DH","Total",-0.050880626,"Cumulative_Perc_net_change","2011Q2","DH-Total",TRUE,-0.140900196
-"2094","DH","Total",-0.017612524,"Cumulative_Perc_net_change","2011Q1","DH-Total",TRUE,-0.140900196
-"2100","DH","Non-Whitehall Civil Service",-0.042801556,"Cumulative_Perc_net_change","2011Q2","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2101","DH","Core Whitehall Depts.",-0.082677165,"Cumulative_Perc_net_change","2011Q4","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2105","DH","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2109","DH","Core Whitehall Depts.",-0.066929134,"Cumulative_Perc_net_change","2011Q3","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2118","DH","Total",-0.097847358,"Cumulative_Perc_net_change","2011Q3","DH-Total",TRUE,-0.140900196
-"2124","DH","Non-Whitehall Civil Service",-0.147859922,"Cumulative_Perc_net_change","2013Q1","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2125","DH","Total",-0.129158513,"Cumulative_Perc_net_change","2012Q3","DH-Total",TRUE,-0.140900196
-"2132","DH","Non-Whitehall Civil Service",-0.151750973,"Cumulative_Perc_net_change","2012Q4","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2133","DH","Total",-0.129158513,"Cumulative_Perc_net_change","2012Q2","DH-Total",TRUE,-0.140900196
-"2135","DH","Non-Whitehall Civil Service",-0.151750973,"Cumulative_Perc_net_change","2012Q2","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2137","DH","Total",-0.111545988,"Cumulative_Perc_net_change","2011Q4","DH-Total",TRUE,-0.140900196
-"2141","DH","Core Whitehall Depts.",-0.133858268,"Cumulative_Perc_net_change","2013Q1","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2143","DH","Total",-0.135029354,"Cumulative_Perc_net_change","2012Q4","DH-Total",TRUE,-0.140900196
-"2156","DH","Total",-0.125244618,"Cumulative_Perc_net_change","2012Q1","DH-Total",TRUE,-0.140900196
-"2157","DH","Core Whitehall Depts.",-0.11023622,"Cumulative_Perc_net_change","2012Q3","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2163","DH","Core Whitehall Depts.",-0.118110236,"Cumulative_Perc_net_change","2012Q4","DH-Core Whitehall Depts.",TRUE,-0.140900196
-"2167","DH","Non-Whitehall Civil Service",-0.147859922,"Cumulative_Perc_net_change","2012Q3","DH-Non-Whitehall Civil Service",TRUE,-0.140900196
-"2174","DH","Total",-0.140900196,"Cumulative_Perc_net_change","2013Q1","DH-Total",TRUE,-0.140900196
-"2183","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q1","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2187","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q2","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2189","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2010Q4","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2192","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q3","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2197","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q4","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2199","DWP","Non-Whitehall Civil Service",-0.026942736,"Cumulative_Perc_net_change","2010Q4","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2222","DWP","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2229","DWP","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2230","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q1","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2231","DWP","Non-Whitehall Civil Service",-0.050593433,"Cumulative_Perc_net_change","2011Q1","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2247","DWP","Non-Whitehall Civil Service",-0.124144503,"Cumulative_Perc_net_change","2011Q4","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2248","DWP","Total",-0.084293511,"Cumulative_Perc_net_change","2011Q2","DWP-Total",TRUE,-0.17083947
-"2249","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q2","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2255","DWP","Non-Whitehall Civil Service",-0.113055531,"Cumulative_Perc_net_change","2011Q3","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2263","DWP","Non-Whitehall Civil Service",-0.084293511,"Cumulative_Perc_net_change","2011Q2","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2272","DWP","Total",0,"Cumulative_Perc_net_change","2010Q3","DWP-Total",TRUE,-0.17083947
-"2273","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q4","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2279","DWP","Non-Whitehall Civil Service",-0.13540674,"Cumulative_Perc_net_change","2012Q1","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2280","DWP","Total",-0.113055531,"Cumulative_Perc_net_change","2011Q3","DWP-Total",TRUE,-0.17083947
-"2281","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q3","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2287","DWP","Non-Whitehall Civil Service",-0.17083947,"Cumulative_Perc_net_change","2013Q1","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2292","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2013Q1","DWP-Core Whitehall Depts.",TRUE,-0.17083947
-"2295","DWP","Non-Whitehall Civil Service",-0.15715152,"Cumulative_Perc_net_change","2012Q4","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2303","DWP","Non-Whitehall Civil Service",-0.14710214,"Cumulative_Perc_net_change","2012Q3","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2311","DWP","Non-Whitehall Civil Service",-0.149181322,"Cumulative_Perc_net_change","2012Q2","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947
-"2319","DWP","Total",-0.15715152,"Cumulative_Perc_net_change","2012Q4","DWP-Total",TRUE,-0.17083947
-"2323","DWP","Total",-0.050593433,"Cumulative_Perc_net_change","2011Q1","DWP-Total",TRUE,-0.17083947
-"2326","DWP","Total",-0.124144503,"Cumulative_Perc_net_change","2011Q4","DWP-Total",TRUE,-0.17083947
-"2331","DWP","Total",-0.026942736,"Cumulative_Perc_net_change","2010Q4","DWP-Total",TRUE,-0.17083947
-"2338","DWP","Total",-0.17083947,"Cumulative_Perc_net_change","2013Q1","DWP-Total",TRUE,-0.17083947
-"2355","DWP","Total",-0.14710214,"Cumulative_Perc_net_change","2012Q3","DWP-Total",TRUE,-0.17083947
-"2370","DWP","Total",-0.13540674,"Cumulative_Perc_net_change","2012Q1","DWP-Total",TRUE,-0.17083947
-"2373","DWP","Total",-0.149181322,"Cumulative_Perc_net_change","2012Q2","DWP-Total",TRUE,-0.17083947
-"2447","FCO","Total",0,"Cumulative_Perc_net_change","2010Q3","FCO-Total",TRUE,-0.055363322
-"2450","FCO","Total",-0.056228374,"Cumulative_Perc_net_change","2011Q2","FCO-Total",TRUE,-0.055363322
-"2481","FCO","Total",-0.057093426,"Cumulative_Perc_net_change","2012Q4","FCO-Total",TRUE,-0.055363322
-"2482","FCO","Total",-0.069204152,"Cumulative_Perc_net_change","2011Q3","FCO-Total",TRUE,-0.055363322
-"2487","FCO","Total",-0.055363322,"Cumulative_Perc_net_change","2013Q1","FCO-Total",TRUE,-0.055363322
-"2489","FCO","Total",-0.07266436,"Cumulative_Perc_net_change","2012Q3","FCO-Total",TRUE,-0.055363322
-"2493","FCO","Total",-0.01384083,"Cumulative_Perc_net_change","2010Q4","FCO-Total",TRUE,-0.055363322
-"2498","FCO","Total",-0.045847751,"Cumulative_Perc_net_change","2011Q1","FCO-Total",TRUE,-0.055363322
-"2501","FCO","Total",-0.043252595,"Cumulative_Perc_net_change","2011Q4","FCO-Total",TRUE,-0.055363322
-"2533","FCO","Total",-0.042387543,"Cumulative_Perc_net_change","2012Q1","FCO-Total",TRUE,-0.055363322
-"2537","FCO","Total",0.010380623,"Cumulative_Perc_net_change","2012Q2","FCO-Total",TRUE,-0.055363322
-"2774","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q3","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2781","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q2","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2782","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q4","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2785","HMRC","Non-Whitehall Civil Service",-0.010936624,"Cumulative_Perc_net_change","2010Q4","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2788","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q2","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2791","HMRC","Non-Whitehall Civil Service",-0.012338755,"Cumulative_Perc_net_change","2011Q4","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2793","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q3","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2799","HMRC","Non-Whitehall Civil Service",-0.010515984,"Cumulative_Perc_net_change","2011Q3","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2800","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q4","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2801","HMRC","Non-Whitehall Civil Service",-0.009955132,"Cumulative_Perc_net_change","2011Q1","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2806","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q1","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2811","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q1","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2814","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2010Q4","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2819","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2013Q1","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2823","HMRC","Non-Whitehall Civil Service",-0.019349411,"Cumulative_Perc_net_change","2012Q1","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2832","HMRC","Total",-0.001962984,"Cumulative_Perc_net_change","2011Q2","HMRC-Total",TRUE,-0.046270331
-"2840","HMRC","Total",-0.009955132,"Cumulative_Perc_net_change","2011Q1","HMRC-Total",TRUE,-0.046270331
-"2843","HMRC","Total",0,"Cumulative_Perc_net_change","2010Q3","HMRC-Total",TRUE,-0.046270331
-"2847","HMRC","Non-Whitehall Civil Service",-0.001962984,"Cumulative_Perc_net_change","2011Q2","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2851","HMRC","Total",-0.010515984,"Cumulative_Perc_net_change","2011Q3","HMRC-Total",TRUE,-0.046270331
-"2853","HMRC","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","HMRC-Core Whitehall Depts.",TRUE,-0.046270331
-"2862","HMRC","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2875","HMRC","Total",-0.010936624,"Cumulative_Perc_net_change","2010Q4","HMRC-Total",TRUE,-0.046270331
-"2882","HMRC","Non-Whitehall Civil Service",-0.030286035,"Cumulative_Perc_net_change","2012Q2","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2892","HMRC","Non-Whitehall Civil Service",-0.048233315,"Cumulative_Perc_net_change","2012Q4","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2923","HMRC","Total",-0.012338755,"Cumulative_Perc_net_change","2011Q4","HMRC-Total",TRUE,-0.046270331
-"2937","HMRC","Non-Whitehall Civil Service",-0.046270331,"Cumulative_Perc_net_change","2013Q1","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2939","HMRC","Total",-0.044167134,"Cumulative_Perc_net_change","2012Q3","HMRC-Total",TRUE,-0.046270331
-"2941","HMRC","Non-Whitehall Civil Service",-0.044167134,"Cumulative_Perc_net_change","2012Q3","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331
-"2956","HMRC","Total",-0.048233315,"Cumulative_Perc_net_change","2012Q4","HMRC-Total",TRUE,-0.046270331
-"2958","HMRC","Total",-0.046270331,"Cumulative_Perc_net_change","2013Q1","HMRC-Total",TRUE,-0.046270331
-"2960","HMRC","Total",-0.030286035,"Cumulative_Perc_net_change","2012Q2","HMRC-Total",TRUE,-0.046270331
-"2966","HMRC","Total",-0.019349411,"Cumulative_Perc_net_change","2012Q1","HMRC-Total",TRUE,-0.046270331
-"2979","HMT","Core Whitehall Depts.",-0.169117647,"Cumulative_Perc_net_change","2011Q4","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"2982","HMT","Core Whitehall Depts.",-0.154411765,"Cumulative_Perc_net_change","2011Q3","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"2985","HMT","Non-Whitehall Civil Service",-0.019230769,"Cumulative_Perc_net_change","2010Q4","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"2986","HMT","Core Whitehall Depts.",-0.139705882,"Cumulative_Perc_net_change","2011Q2","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3002","HMT","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3003","HMT","Core Whitehall Depts.",-0.117647059,"Cumulative_Perc_net_change","2012Q1","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3004","HMT","Total",0,"Cumulative_Perc_net_change","2010Q3","HMT-Total",TRUE,-0.098053097
-"3006","HMT","Core Whitehall Depts.",-0.132543103,"Cumulative_Perc_net_change","2012Q4","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3014","HMT","Non-Whitehall Civil Service",-0.041208791,"Cumulative_Perc_net_change","2011Q3","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3020","HMT","Non-Whitehall Civil Service",-0.057692308,"Cumulative_Perc_net_change","2011Q4","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3021","HMT","Total",-0.06,"Cumulative_Perc_net_change","2011Q2","HMT-Total",TRUE,-0.098053097
-"3024","HMT","Core Whitehall Depts.",-0.088235294,"Cumulative_Perc_net_change","2011Q1","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3027","HMT","Core Whitehall Depts.",-0.125,"Cumulative_Perc_net_change","2012Q3","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3029","HMT","Total",-0.028,"Cumulative_Perc_net_change","2011Q1","HMT-Total",TRUE,-0.098053097
-"3032","HMT","Core Whitehall Depts.",-0.044117647,"Cumulative_Perc_net_change","2010Q4","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3035","HMT","Core Whitehall Depts.",-0.125,"Cumulative_Perc_net_change","2012Q2","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3036","HMT","Non-Whitehall Civil Service",-0.03021978,"Cumulative_Perc_net_change","2011Q2","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3037","HMT","Total",-0.026,"Cumulative_Perc_net_change","2010Q4","HMT-Total",TRUE,-0.098053097
-"3044","HMT","Non-Whitehall Civil Service",-0.005494505,"Cumulative_Perc_net_change","2011Q1","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3053","HMT","Total",-0.072,"Cumulative_Perc_net_change","2011Q3","HMT-Total",TRUE,-0.098053097
-"3065","HMT","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3078","HMT","Core Whitehall Depts.",-0.132543103,"Cumulative_Perc_net_change","2013Q1","HMT-Core Whitehall Depts.",TRUE,-0.098053097
-"3091","HMT","Total",-0.096039823,"Cumulative_Perc_net_change","2012Q4","HMT-Total",TRUE,-0.098053097
-"3092","HMT","Non-Whitehall Civil Service",-0.065934066,"Cumulative_Perc_net_change","2012Q1","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3094","HMT","Non-Whitehall Civil Service",-0.082417582,"Cumulative_Perc_net_change","2012Q4","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3122","HMT","Total",-0.09,"Cumulative_Perc_net_change","2012Q2","HMT-Total",TRUE,-0.098053097
-"3123","HMT","Total",-0.098053097,"Cumulative_Perc_net_change","2013Q1","HMT-Total",TRUE,-0.098053097
-"3125","HMT","Total",-0.088,"Cumulative_Perc_net_change","2011Q4","HMT-Total",TRUE,-0.098053097
-"3139","HMT","Non-Whitehall Civil Service",-0.085164835,"Cumulative_Perc_net_change","2013Q1","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3141","HMT","Total",-0.085973451,"Cumulative_Perc_net_change","2012Q3","HMT-Total",TRUE,-0.098053097
-"3143","HMT","Non-Whitehall Civil Service",-0.071428571,"Cumulative_Perc_net_change","2012Q3","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3144","HMT","Total",-0.08,"Cumulative_Perc_net_change","2012Q1","HMT-Total",TRUE,-0.098053097
-"3160","HMT","Non-Whitehall Civil Service",-0.076923077,"Cumulative_Perc_net_change","2012Q2","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097
-"3173","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q3","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3176","HO","Non-Whitehall Civil Service",-0.039903681,"Cumulative_Perc_net_change","2010Q4","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3179","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2010Q4","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3180","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q2","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3182","HO","Non-Whitehall Civil Service",-0.15004046,"Cumulative_Perc_net_change","2011Q4","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3189","HO","Non-Whitehall Civil Service",-0.12507183,"Cumulative_Perc_net_change","2011Q3","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3192","HO","Non-Whitehall Civil Service",-0.058135535,"Cumulative_Perc_net_change","2011Q1","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3198","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q1","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3201","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q4","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3214","HO","Non-Whitehall Civil Service",-0.157223217,"Cumulative_Perc_net_change","2012Q1","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3217","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q3","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3219","HO","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3220","HO","Total",0,"Cumulative_Perc_net_change","2010Q3","HO-Total",TRUE,-0.149371941
-"3221","HO","Non-Whitehall Civil Service",-0.149371941,"Cumulative_Perc_net_change","2013Q1","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3225","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q2","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3227","HO","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3229","HO","Non-Whitehall Civil Service",-0.158933397,"Cumulative_Perc_net_change","2012Q4","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3233","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q1","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3238","HO","Non-Whitehall Civil Service",-0.100103199,"Cumulative_Perc_net_change","2011Q2","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3244","HO","Total",-0.058135535,"Cumulative_Perc_net_change","2011Q1","HO-Total",TRUE,-0.149371941
-"3249","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q4","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3253","HO","Total",-0.158933397,"Cumulative_Perc_net_change","2012Q4","HO-Total",TRUE,-0.149371941
-"3255","HO","Total",-0.12507183,"Cumulative_Perc_net_change","2011Q3","HO-Total",TRUE,-0.149371941
-"3263","HO","Total",-0.100103199,"Cumulative_Perc_net_change","2011Q2","HO-Total",TRUE,-0.149371941
-"3270","HO","Total",-0.161327649,"Cumulative_Perc_net_change","2012Q2","HO-Total",TRUE,-0.149371941
-"3278","HO","Non-Whitehall Civil Service",-0.164405973,"Cumulative_Perc_net_change","2012Q3","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3279","HO","Total",-0.039903681,"Cumulative_Perc_net_change","2010Q4","HO-Total",TRUE,-0.149371941
-"3285","HO","Total",-0.149371941,"Cumulative_Perc_net_change","2013Q1","HO-Total",TRUE,-0.149371941
-"3286","HO","Non-Whitehall Civil Service",-0.161327649,"Cumulative_Perc_net_change","2012Q2","HO-Non-Whitehall Civil Service",TRUE,-0.149371941
-"3287","HO","Total",-0.15004046,"Cumulative_Perc_net_change","2011Q4","HO-Total",TRUE,-0.149371941
-"3321","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2013Q1","HO-Core Whitehall Depts.",TRUE,-0.149371941
-"3329","HO","Total",-0.164405973,"Cumulative_Perc_net_change","2012Q3","HO-Total",TRUE,-0.149371941
-"3346","HO","Total",-0.157223217,"Cumulative_Perc_net_change","2012Q1","HO-Total",TRUE,-0.149371941
-"3367","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2010Q4","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3368","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q1","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3373","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q3","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3378","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q4","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3380","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q2","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3387","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q1","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3391","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q3","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3397","MOD","Total",-0.020519092,"Cumulative_Perc_net_change","2011Q1","MoD-Total",TRUE,-0.209433507
-"3400","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q2","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3408","MOD","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3412","MOD","Non-Whitehall Civil Service",-0.168587804,"Cumulative_Perc_net_change","2012Q2","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3420","MOD","Non-Whitehall Civil Service",-0.145028337,"Cumulative_Perc_net_change","2012Q1","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3423","MOD","Non-Whitehall Civil Service",-0.006250849,"Cumulative_Perc_net_change","2010Q4","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3430","MOD","Non-Whitehall Civil Service",-0.099582264,"Cumulative_Perc_net_change","2011Q4","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3438","MOD","Non-Whitehall Civil Service",-0.052045115,"Cumulative_Perc_net_change","2011Q3","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3442","MOD","Total",-0.039543416,"Cumulative_Perc_net_change","2011Q2","MoD-Total",TRUE,-0.209433507
-"3446","MOD","Total",-0.006250849,"Cumulative_Perc_net_change","2010Q4","MoD-Total",TRUE,-0.209433507
-"3450","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q4","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3454","MOD","Total",0,"Cumulative_Perc_net_change","2010Q3","MoD-Total",TRUE,-0.209433507
-"3455","MOD","Non-Whitehall Civil Service",-0.020519092,"Cumulative_Perc_net_change","2011Q1","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3461","MOD","Total",-0.052045115,"Cumulative_Perc_net_change","2011Q3","MoD-Total",TRUE,-0.209433507
-"3480","MOD","Total",-0.099582264,"Cumulative_Perc_net_change","2011Q4","MoD-Total",TRUE,-0.209433507
-"3484","MOD","Non-Whitehall Civil Service",-0.180855455,"Cumulative_Perc_net_change","2012Q3","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3487","MOD","Non-Whitehall Civil Service",-0.039543416,"Cumulative_Perc_net_change","2011Q2","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3512","MOD","Total",-0.145028337,"Cumulative_Perc_net_change","2012Q1","MoD-Total",TRUE,-0.209433507
-"3516","MOD","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3522","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2013Q1","MoD-Core Whitehall Depts.",TRUE,-0.209433507
-"3540","MOD","Total",-0.200511578,"Cumulative_Perc_net_change","2012Q4","MoD-Total",TRUE,-0.209433507
-"3543","MOD","Non-Whitehall Civil Service",-0.200511578,"Cumulative_Perc_net_change","2012Q4","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3546","MOD","Total",-0.209433507,"Cumulative_Perc_net_change","2013Q1","MoD-Total",TRUE,-0.209433507
-"3548","MOD","Non-Whitehall Civil Service",-0.209433507,"Cumulative_Perc_net_change","2013Q1","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507
-"3555","MOD","Total",-0.180855455,"Cumulative_Perc_net_change","2012Q3","MoD-Total",TRUE,-0.209433507
-"3558","MOD","Total",-0.168587804,"Cumulative_Perc_net_change","2012Q2","MoD-Total",TRUE,-0.209433507
-"3569","MOJ","Core Whitehall Depts.",-0.097270694,"Cumulative_Perc_net_change","2011Q4","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3570","MOJ","Non-Whitehall Civil Service",-0.012795817,"Cumulative_Perc_net_change","2011Q1","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3573","MOJ","Total",-0.012873911,"Cumulative_Perc_net_change","2011Q1","MoJ-Total",TRUE,-0.147609371
-"3576","MOJ","Core Whitehall Depts.",-0.021319911,"Cumulative_Perc_net_change","2011Q1","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3580","MOJ","Non-Whitehall Civil Service",-0.049765743,"Cumulative_Perc_net_change","2011Q3","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3581","MOJ","Non-Whitehall Civil Service",-0.038915873,"Cumulative_Perc_net_change","2011Q2","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3582","MOJ","Core Whitehall Depts.",-0.133447921,"Cumulative_Perc_net_change","2012Q3","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3585","MOJ","Core Whitehall Depts.",-0.06689038,"Cumulative_Perc_net_change","2011Q2","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3590","MOJ","Core Whitehall Depts.",-0.077740492,"Cumulative_Perc_net_change","2011Q3","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3591","MOJ","Non-Whitehall Civil Service",-0.078643029,"Cumulative_Perc_net_change","2011Q4","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3594","MOJ","Non-Whitehall Civil Service",-0.095226025,"Cumulative_Perc_net_change","2012Q1","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3598","MOJ","Non-Whitehall Civil Service",-0.004490979,"Cumulative_Perc_net_change","2010Q4","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3602","MOJ","Total",0,"Cumulative_Perc_net_change","2010Q3","MoJ-Total",TRUE,-0.147609371
-"3608","MOJ","Total",-0.005553452,"Cumulative_Perc_net_change","2010Q4","MoJ-Total",TRUE,-0.147609371
-"3614","MOJ","Core Whitehall Depts.",-0.128398084,"Cumulative_Perc_net_change","2012Q4","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3623","MOJ","Total",-0.050990786,"Cumulative_Perc_net_change","2011Q3","MoJ-Total",TRUE,-0.147609371
-"3631","MOJ","Core Whitehall Depts.",-0.118970917,"Cumulative_Perc_net_change","2012Q2","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3637","MOJ","Non-Whitehall Civil Service",-0.13598823,"Cumulative_Perc_net_change","2012Q4","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3639","MOJ","Core Whitehall Depts.",-0.118970917,"Cumulative_Perc_net_change","2012Q1","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3645","MOJ","Total",-0.040136312,"Cumulative_Perc_net_change","2011Q2","MoJ-Total",TRUE,-0.147609371
-"3653","MOJ","Non-Whitehall Civil Service",-0.112380848,"Cumulative_Perc_net_change","2012Q2","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3654","MOJ","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3655","MOJ","Total",-0.079305399,"Cumulative_Perc_net_change","2011Q4","MoJ-Total",TRUE,-0.147609371
-"3669","MOJ","Non-Whitehall Civil Service",-0.149066252,"Cumulative_Perc_net_change","2013Q1","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3678","MOJ","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3683","MOJ","Core Whitehall Depts.",-0.03,"Cumulative_Perc_net_change","2010Q4","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3685","MOJ","Non-Whitehall Civil Service",-0.12686615,"Cumulative_Perc_net_change","2012Q3","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371
-"3686","MOJ","Core Whitehall Depts.",-0.134422982,"Cumulative_Perc_net_change","2013Q1","MoJ-Core Whitehall Depts.",TRUE,-0.147609371
-"3687","MOJ","Total",-0.096213652,"Cumulative_Perc_net_change","2012Q1","MoJ-Total",TRUE,-0.147609371
-"3701","MOJ","Total",-0.134995278,"Cumulative_Perc_net_change","2012Q4","MoJ-Total",TRUE,-0.147609371
-"3718","MOJ","Total",-0.112316749,"Cumulative_Perc_net_change","2012Q2","MoJ-Total",TRUE,-0.147609371
-"3737","MOJ","Total",-0.126809537,"Cumulative_Perc_net_change","2012Q3","MoJ-Total",TRUE,-0.147609371
-"3747","MOJ","Total",-0.147609371,"Cumulative_Perc_net_change","2013Q1","MoJ-Total",TRUE,-0.147609371
-"4357","Total excl. WH FCO","Total",-0.09039895,"Cumulative_Perc_net_change","2011Q4","Total excl. WH FCO-Total",TRUE,NA
-"4359","Total excl. WH FCO","Non-Whitehall Civil Service",-0.030220229,"Cumulative_Perc_net_change","2011Q1","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4361","Total excl. WH FCO","Non-Whitehall Civil Service",-0.088018065,"Cumulative_Perc_net_change","2011Q4","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4362","Total excl. WH FCO","Total",0,"Cumulative_Perc_net_change","2010Q3","Total excl. WH FCO-Total",TRUE,NA
-"4374","Total excl. WH FCO","Core Whitehall Depts.",-0.126110498,"Cumulative_Perc_net_change","2012Q2","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4380","Total excl. WH FCO","Core Whitehall Depts.",-0.045752832,"Cumulative_Perc_net_change","2011Q1","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4386","Total excl. WH FCO","Non-Whitehall Civil Service",-0.103929431,"Cumulative_Perc_net_change","2012Q1","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4387","Total excl. WH FCO","Non-Whitehall Civil Service",-0.016424331,"Cumulative_Perc_net_change","2010Q4","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4391","Total excl. WH FCO","Total",-0.017004066,"Cumulative_Perc_net_change","2010Q4","Total excl. WH FCO-Total",TRUE,NA
-"4408","Total excl. WH FCO","Core Whitehall Depts.",-0.130452806,"Cumulative_Perc_net_change","2012Q3","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4409","Total excl. WH FCO","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4410","Total excl. WH FCO","Core Whitehall Depts.",-0.127649293,"Cumulative_Perc_net_change","2012Q1","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4412","Total excl. WH FCO","Core Whitehall Depts.",-0.098705276,"Cumulative_Perc_net_change","2011Q2","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4413","Total excl. WH FCO","Non-Whitehall Civil Service",-0.051183704,"Cumulative_Perc_net_change","2011Q2","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4418","Total excl. WH FCO","Core Whitehall Depts.",-0.129847573,"Cumulative_Perc_net_change","2011Q4","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4422","Total excl. WH FCO","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4427","Total excl. WH FCO","Total",-0.105264272,"Cumulative_Perc_net_change","2012Q1","Total excl. WH FCO-Total",TRUE,NA
-"4428","Total excl. WH FCO","Core Whitehall Depts.",-0.026998841,"Cumulative_Perc_net_change","2010Q4","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4458","Total excl. WH FCO","Non-Whitehall Civil Service",-0.117238344,"Cumulative_Perc_net_change","2012Q2","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4459","Total excl. WH FCO","Total",-0.117715568,"Cumulative_Perc_net_change","2012Q2","Total excl. WH FCO-Total",TRUE,NA
-"4463","Total excl. WH FCO","Total",-0.031085889,"Cumulative_Perc_net_change","2011Q1","Total excl. WH FCO-Total",TRUE,NA
-"4480","Total excl. WH FCO","Core Whitehall Depts.",-0.130272626,"Cumulative_Perc_net_change","2012Q4","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4481","Total excl. WH FCO","Non-Whitehall Civil Service",-0.132052101,"Cumulative_Perc_net_change","2012Q4","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4484","Total excl. WH FCO","Core Whitehall Depts.",-0.121054454,"Cumulative_Perc_net_change","2011Q3","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4485","Total excl. WH FCO","Non-Whitehall Civil Service",-0.068780595,"Cumulative_Perc_net_change","2011Q3","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4522","Total excl. WH FCO","Total",-0.131906452,"Cumulative_Perc_net_change","2012Q4","Total excl. WH FCO-Total",TRUE,NA
-"4526","Total excl. WH FCO","Total",-0.071764357,"Cumulative_Perc_net_change","2011Q3","Total excl. WH FCO-Total",TRUE,NA
-"4530","Total excl. WH FCO","Non-Whitehall Civil Service",-0.124167681,"Cumulative_Perc_net_change","2012Q3","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4531","Total excl. WH FCO","Total",-0.12449425,"Cumulative_Perc_net_change","2012Q3","Total excl. WH FCO-Total",TRUE,NA
-"4535","Total excl. WH FCO","Total",-0.053892089,"Cumulative_Perc_net_change","2011Q2","Total excl. WH FCO-Total",TRUE,NA
-"4552","Total excl. WH FCO","Core Whitehall Depts.",-0.130992599,"Cumulative_Perc_net_change","2013Q1","Total excl. WH FCO-Core Whitehall Depts.",TRUE,NA
-"4553","Total excl. WH FCO","Non-Whitehall Civil Service",-0.137973598,"Cumulative_Perc_net_change","2013Q1","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,NA
-"4554","Total excl. WH FCO","Total",-0.137523131,"Cumulative_Perc_net_change","2013Q1","Total excl. WH FCO-Total",TRUE,NA
+"","Dept","Whitehall","value","measure","Period","group","chart","sorter","totalgroup"
+"209","BIS","Core Whitehall Depts.",-0.156914894,"Cumulative_Perc_net_change","2011Q2","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"215","BIS","Non-Whitehall Civil Service",-0.030732861,"Cumulative_Perc_net_change","2010Q4","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"216","BIS","Non-Whitehall Civil Service",-0.121527778,"Cumulative_Perc_net_change","2011Q4","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"220","BIS","Core Whitehall Depts.",-0.095744681,"Cumulative_Perc_net_change","2011Q1","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"223","BIS","Core Whitehall Depts.",-0.193841929,"Cumulative_Perc_net_change","2012Q3","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"224","BIS","Non-Whitehall Civil Service",-0.102836879,"Cumulative_Perc_net_change","2011Q3","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"228","BIS","Core Whitehall Depts.",-0.234042553,"Cumulative_Perc_net_change","2011Q3","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"229","BIS","Core Whitehall Depts.",-0.180450599,"Cumulative_Perc_net_change","2013Q1","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"234","BIS","Core Whitehall Depts.",-0.22606383,"Cumulative_Perc_net_change","2011Q4","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"237","BIS","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"238","BIS","Core Whitehall Depts.",-0.191163663,"Cumulative_Perc_net_change","2012Q4","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"247","BIS","Total",-0.143207856,"Cumulative_Perc_net_change","2011Q3","BIS-Total",TRUE,-0.161040219,FALSE
+"251","BIS","Total",-0.170217097,"Cumulative_Perc_net_change","2012Q3","BIS-Total",TRUE,-0.161040219,FALSE
+"252","BIS","Non-Whitehall Civil Service",-0.137204015,"Cumulative_Perc_net_change","2013Q1","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"255","BIS","Core Whitehall Depts.",-0.185807131,"Cumulative_Perc_net_change","2012Q2","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"259","BIS","Total",-0.166353148,"Cumulative_Perc_net_change","2012Q2","BIS-Total",TRUE,-0.161040219,FALSE
+"260","BIS","Non-Whitehall Civil Service",-0.139012812,"Cumulative_Perc_net_change","2012Q4","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"263","BIS","Core Whitehall Depts.",-0.207446809,"Cumulative_Perc_net_change","2012Q1","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"273","BIS","Non-Whitehall Civil Service",-0.098108747,"Cumulative_Perc_net_change","2011Q2","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"282","BIS","Total",-0.164421174,"Cumulative_Perc_net_change","2012Q4","BIS-Total",TRUE,-0.161040219,FALSE
+"283","BIS","Non-Whitehall Civil Service",-0.040189125,"Cumulative_Perc_net_change","2011Q1","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"296","BIS","Total",-0.116202946,"Cumulative_Perc_net_change","2011Q2","BIS-Total",TRUE,-0.161040219,FALSE
+"301","BIS","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"308","BIS","Core Whitehall Depts.",-0.090425532,"Cumulative_Perc_net_change","2010Q4","BIS-Core Whitehall Depts.",TRUE,-0.161040219,FALSE
+"310","BIS","Non-Whitehall Civil Service",-0.145645066,"Cumulative_Perc_net_change","2012Q3","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"312","BIS","Total",-0.049099836,"Cumulative_Perc_net_change","2010Q4","BIS-Total",TRUE,-0.161040219,FALSE
+"314","BIS","Total",-0.161040219,"Cumulative_Perc_net_change","2013Q1","BIS-Total",TRUE,-0.161040219,FALSE
+"319","BIS","Total",-0.15671584,"Cumulative_Perc_net_change","2011Q4","BIS-Total",TRUE,-0.161040219,FALSE
+"324","BIS","Total",0,"Cumulative_Perc_net_change","2010Q3","BIS-Total",TRUE,-0.161040219,FALSE
+"344","BIS","Total",-0.057283142,"Cumulative_Perc_net_change","2011Q1","BIS-Total",TRUE,-0.161040219,FALSE
+"368","BIS","Non-Whitehall Civil Service",-0.142630405,"Cumulative_Perc_net_change","2012Q1","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"383","BIS","Non-Whitehall Civil Service",-0.142630405,"Cumulative_Perc_net_change","2012Q2","BIS-Non-Whitehall Civil Service",TRUE,-0.161040219,FALSE
+"391","BIS","Total",-0.170223824,"Cumulative_Perc_net_change","2012Q1","BIS-Total",TRUE,-0.161040219,FALSE
+"403","CO","Non-Whitehall Civil Service",-0.292076345,"Cumulative_Perc_net_change","2011Q4","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"407","CO","Non-Whitehall Civil Service",-0.274378253,"Cumulative_Perc_net_change","2011Q3","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"410","CO","Non-Whitehall Civil Service",-0.351069983,"Cumulative_Perc_net_change","2012Q1","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"421","CO","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"423","CO","Core Whitehall Depts.",0.013333333,"Cumulative_Perc_net_change","2011Q1","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"431","CO","Core Whitehall Depts.",-0.026666667,"Cumulative_Perc_net_change","2010Q4","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"444","CO","Total",-0.274224708,"Cumulative_Perc_net_change","2012Q4","CO-Total",TRUE,-0.262972378,FALSE
+"455","CO","Core Whitehall Depts.",-0.046666667,"Cumulative_Perc_net_change","2011Q2","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"462","CO","Total",-0.291103203,"Cumulative_Perc_net_change","2012Q2","CO-Total",TRUE,-0.262972378,FALSE
+"467","CO","Total",-0.101449275,"Cumulative_Perc_net_change","2011Q1","CO-Total",TRUE,-0.262972378,FALSE
+"475","CO","Non-Whitehall Civil Service",-0.215384615,"Cumulative_Perc_net_change","2011Q2","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"476","CO","Total",-0.262972378,"Cumulative_Perc_net_change","2013Q1","CO-Total",TRUE,-0.262972378,FALSE
+"482","CO","Non-Whitehall Civil Service",-0.535130133,"Cumulative_Perc_net_change","2012Q2","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"487","CO","Core Whitehall Depts.",-0.046666667,"Cumulative_Perc_net_change","2011Q3","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"489","CO","Total",-0.171014493,"Cumulative_Perc_net_change","2011Q3","CO-Total",TRUE,-0.262972378,FALSE
+"493","CO","Non-Whitehall Civil Service",-0.164102564,"Cumulative_Perc_net_change","2010Q4","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"494","CO","Total",-0.291103203,"Cumulative_Perc_net_change","2012Q3","CO-Total",TRUE,-0.262972378,FALSE
+"499","CO","Total",-0.142028986,"Cumulative_Perc_net_change","2011Q2","CO-Total",TRUE,-0.262972378,FALSE
+"514","CO","Non-Whitehall Civil Service",-0.515760555,"Cumulative_Perc_net_change","2012Q3","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"519","CO","Core Whitehall Depts.",-0.040817996,"Cumulative_Perc_net_change","2011Q4","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"521","CO","Total",-0.176811594,"Cumulative_Perc_net_change","2011Q4","CO-Total",TRUE,-0.262972378,FALSE
+"523","CO","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"525","CO","Non-Whitehall Civil Service",-0.18974359,"Cumulative_Perc_net_change","2011Q1","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"526","CO","Total",0,"Cumulative_Perc_net_change","2010Q3","CO-Total",TRUE,-0.262972378,FALSE
+"538","CO","Non-Whitehall Civil Service",-0.4770214,"Cumulative_Perc_net_change","2013Q1","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"543","CO","Total",-0.104347826,"Cumulative_Perc_net_change","2010Q4","CO-Total",TRUE,-0.262972378,FALSE
+"573","CO","Non-Whitehall Civil Service",-0.496390977,"Cumulative_Perc_net_change","2012Q4","CO-Non-Whitehall Civil Service",TRUE,-0.262972378,FALSE
+"576","CO","Core Whitehall Depts.",-0.0497684,"Cumulative_Perc_net_change","2012Q3","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"578","CO","Core Whitehall Depts.",-0.029120654,"Cumulative_Perc_net_change","2012Q1","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"582","CO","Core Whitehall Depts.",-0.02829424,"Cumulative_Perc_net_change","2013Q1","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"584","CO","Core Whitehall Depts.",-0.03366278,"Cumulative_Perc_net_change","2012Q2","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"590","CO","Core Whitehall Depts.",-0.03366278,"Cumulative_Perc_net_change","2012Q4","CO-Core Whitehall Depts.",TRUE,-0.262972378,FALSE
+"594","CO","Total",-0.2,"Cumulative_Perc_net_change","2012Q1","CO-Total",TRUE,-0.262972378,FALSE
+"601","DCLG","Non-Whitehall Civil Service",-0.090909091,"Cumulative_Perc_net_change","2011Q3","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"606","DCLG","Non-Whitehall Civil Service",-0.090909091,"Cumulative_Perc_net_change","2011Q4","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"610","DCLG","Non-Whitehall Civil Service",-0.086124402,"Cumulative_Perc_net_change","2011Q2","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"615","DCLG","Total",-0.088937093,"Cumulative_Perc_net_change","2011Q1","DCLG-Total",TRUE,-0.25694327,FALSE
+"619","DCLG","Non-Whitehall Civil Service",-0.090909091,"Cumulative_Perc_net_change","2013Q1","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"620","DCLG","Core Whitehall Depts.",-0.01984127,"Cumulative_Perc_net_change","2010Q4","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"625","DCLG","Non-Whitehall Civil Service",-0.112554113,"Cumulative_Perc_net_change","2012Q1","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"627","DCLG","Non-Whitehall Civil Service",-0.101731602,"Cumulative_Perc_net_change","2012Q4","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"636","DCLG","Non-Whitehall Civil Service",-0.112554113,"Cumulative_Perc_net_change","2012Q3","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"638","DCLG","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"644","DCLG","Non-Whitehall Civil Service",-0.090909091,"Cumulative_Perc_net_change","2012Q2","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"661","DCLG","Total",-0.147505423,"Cumulative_Perc_net_change","2011Q2","DCLG-Total",TRUE,-0.25694327,FALSE
+"664","DCLG","Total",-0.251045994,"Cumulative_Perc_net_change","2012Q2","DCLG-Total",TRUE,-0.25694327,FALSE
+"666","DCLG","Core Whitehall Depts.",-0.107142857,"Cumulative_Perc_net_change","2011Q1","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"685","DCLG","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"687","DCLG","Non-Whitehall Civil Service",-0.066985646,"Cumulative_Perc_net_change","2011Q1","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"690","DCLG","Core Whitehall Depts.",-0.162698413,"Cumulative_Perc_net_change","2011Q3","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"693","DCLG","Total",-0.130151844,"Cumulative_Perc_net_change","2011Q3","DCLG-Total",TRUE,-0.25694327,FALSE
+"695","DCLG","Non-Whitehall Civil Service",-0.019138756,"Cumulative_Perc_net_change","2010Q4","DCLG-Non-Whitehall Civil Service",TRUE,-0.25694327,FALSE
+"696","DCLG","Total",-0.262840546,"Cumulative_Perc_net_change","2012Q3","DCLG-Total",TRUE,-0.25694327,FALSE
+"698","DCLG","Core Whitehall Depts.",-0.198412698,"Cumulative_Perc_net_change","2011Q2","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"718","DCLG","Total",-0.019522777,"Cumulative_Perc_net_change","2010Q4","DCLG-Total",TRUE,-0.25694327,FALSE
+"719","DCLG","Total",-0.25694327,"Cumulative_Perc_net_change","2013Q1","DCLG-Total",TRUE,-0.25694327,FALSE
+"725","DCLG","Total",-0.203867789,"Cumulative_Perc_net_change","2011Q4","DCLG-Total",TRUE,-0.25694327,FALSE
+"727","DCLG","Total",-0.265789183,"Cumulative_Perc_net_change","2012Q4","DCLG-Total",TRUE,-0.25694327,FALSE
+"728","DCLG","Total",0,"Cumulative_Perc_net_change","2010Q3","DCLG-Total",TRUE,-0.25694327,FALSE
+"749","DCLG","Core Whitehall Depts.",-0.261904762,"Cumulative_Perc_net_change","2011Q4","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"768","DCLG","Total",-0.221559616,"Cumulative_Perc_net_change","2012Q1","DCLG-Total",TRUE,-0.25694327,FALSE
+"773","DCLG","Core Whitehall Depts.",-0.325396825,"Cumulative_Perc_net_change","2012Q2","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"776","DCLG","Core Whitehall Depts.",-0.333333333,"Cumulative_Perc_net_change","2013Q1","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"778","DCLG","Core Whitehall Depts.",-0.333333333,"Cumulative_Perc_net_change","2012Q3","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"782","DCLG","Core Whitehall Depts.",-0.277777778,"Cumulative_Perc_net_change","2012Q1","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"791","DCLG","Core Whitehall Depts.",-0.341269841,"Cumulative_Perc_net_change","2012Q4","DCLG-Core Whitehall Depts.",TRUE,-0.25694327,FALSE
+"797","DCMS","Core Whitehall Depts.",-1.11022e-16,"Cumulative_Perc_net_change","2011Q3","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"807","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2010Q4","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"819","DCMS","Core Whitehall Depts.",0.065217391,"Cumulative_Perc_net_change","2011Q2","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"822","DCMS","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q4","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"831","DCMS","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"841","DCMS","Core Whitehall Depts.",-0.02173913,"Cumulative_Perc_net_change","2011Q1","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"843","DCMS","Core Whitehall Depts.",-1.11022e-16,"Cumulative_Perc_net_change","2011Q4","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"846","DCMS","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"853","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2011Q1","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"854","DCMS","Total",0,"Cumulative_Perc_net_change","2010Q3","DCMS-Total",TRUE,-0.280701754,FALSE
+"867","DCMS","Core Whitehall Depts.",-0.02173913,"Cumulative_Perc_net_change","2012Q2","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"875","DCMS","Core Whitehall Depts.",-0.02173913,"Cumulative_Perc_net_change","2012Q1","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"885","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2011Q2","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"886","DCMS","Total",0.01754386,"Cumulative_Perc_net_change","2010Q4","DCMS-Total",TRUE,-0.280701754,FALSE
+"894","DCMS","Total",0,"Cumulative_Perc_net_change","2011Q4","DCMS-Total",TRUE,-0.280701754,FALSE
+"902","DCMS","Total",0,"Cumulative_Perc_net_change","2011Q3","DCMS-Total",TRUE,-0.280701754,FALSE
+"907","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2013Q1","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"917","DCMS","Non-Whitehall Civil Service",-1.11022e-16,"Cumulative_Perc_net_change","2011Q3","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"926","DCMS","Core Whitehall Depts.",0.130434783,"Cumulative_Perc_net_change","2012Q3","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"941","DCMS","Non-Whitehall Civil Service",0.090909091,"Cumulative_Perc_net_change","2012Q1","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"947","DCMS","Non-Whitehall Civil Service",0.181818182,"Cumulative_Perc_net_change","2012Q2","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"949","DCMS","Non-Whitehall Civil Service",-1.11022e-16,"Cumulative_Perc_net_change","2011Q4","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"951","DCMS","Non-Whitehall Civil Service",0.181818182,"Cumulative_Perc_net_change","2012Q3","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"953","DCMS","Total",0.01754386,"Cumulative_Perc_net_change","2012Q2","DCMS-Total",TRUE,-0.280701754,FALSE
+"958","DCMS","Total",0,"Cumulative_Perc_net_change","2011Q1","DCMS-Total",TRUE,-0.280701754,FALSE
+"962","DCMS","Core Whitehall Depts.",-0.369565217,"Cumulative_Perc_net_change","2013Q1","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"966","DCMS","Total",-0.280701754,"Cumulative_Perc_net_change","2013Q1","DCMS-Total",TRUE,-0.280701754,FALSE
+"969","DCMS","Non-Whitehall Civil Service",-3.33067e-16,"Cumulative_Perc_net_change","2012Q4","DCMS-Non-Whitehall Civil Service",TRUE,-0.280701754,FALSE
+"976","DCMS","Total",-0.105263158,"Cumulative_Perc_net_change","2012Q4","DCMS-Total",TRUE,-0.280701754,FALSE
+"977","DCMS","Total",0.070175439,"Cumulative_Perc_net_change","2011Q2","DCMS-Total",TRUE,-0.280701754,FALSE
+"982","DCMS","Total",0.140350877,"Cumulative_Perc_net_change","2012Q3","DCMS-Total",TRUE,-0.280701754,FALSE
+"989","DCMS","Core Whitehall Depts.",-0.130434783,"Cumulative_Perc_net_change","2012Q4","DCMS-Core Whitehall Depts.",TRUE,-0.280701754,FALSE
+"990","DCMS","Total",0,"Cumulative_Perc_net_change","2012Q1","DCMS-Total",TRUE,-0.280701754,FALSE
+"994","DECC","Core Whitehall Depts.",0.0625,"Cumulative_Perc_net_change","2011Q3","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"995","DECC","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"996","DECC","Core Whitehall Depts.",0.044642857,"Cumulative_Perc_net_change","2011Q2","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"999","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q1","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1002","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q2","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1004","DECC","Core Whitehall Depts.",0.026785714,"Cumulative_Perc_net_change","2011Q1","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1007","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2010Q4","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1010","DECC","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1038","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q3","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1039","DECC","Core Whitehall Depts.",0.008928571,"Cumulative_Perc_net_change","2010Q4","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1047","DECC","Core Whitehall Depts.",0.098214286,"Cumulative_Perc_net_change","2011Q4","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1070","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q4","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1079","DECC","Core Whitehall Depts.",0.151785714,"Cumulative_Perc_net_change","2012Q1","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1090","DECC","Total",0.276785714,"Cumulative_Perc_net_change","2013Q1","DECC-Total",TRUE,0.276785714,FALSE
+"1096","DECC","Total",0,"Cumulative_Perc_net_change","2010Q3","DECC-Total",TRUE,0.276785714,FALSE
+"1098","DECC","Total",0.241071429,"Cumulative_Perc_net_change","2012Q4","DECC-Total",TRUE,0.276785714,FALSE
+"1102","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q1","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1103","DECC","Core Whitehall Depts.",0.223214286,"Cumulative_Perc_net_change","2012Q3","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1107","DECC","Total",0.223214286,"Cumulative_Perc_net_change","2012Q3","DECC-Total",TRUE,0.276785714,FALSE
+"1111","DECC","Core Whitehall Depts.",0.178571429,"Cumulative_Perc_net_change","2012Q2","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1120","DECC","Total",0.026785714,"Cumulative_Perc_net_change","2011Q1","DECC-Total",TRUE,0.276785714,FALSE
+"1125","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q3","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1126","DECC","Core Whitehall Depts.",0.276785714,"Cumulative_Perc_net_change","2013Q1","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1128","DECC","Total",0.008928571,"Cumulative_Perc_net_change","2010Q4","DECC-Total",TRUE,0.276785714,FALSE
+"1134","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q2","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1144","DECC","Total",0.0625,"Cumulative_Perc_net_change","2011Q3","DECC-Total",TRUE,0.276785714,FALSE
+"1149","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2013Q1","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1152","DECC","Total",0.044642857,"Cumulative_Perc_net_change","2011Q2","DECC-Total",TRUE,0.276785714,FALSE
+"1155","DECC","Total",0.178571429,"Cumulative_Perc_net_change","2012Q2","DECC-Total",TRUE,0.276785714,FALSE
+"1157","DECC","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q4","DECC-Non-Whitehall Civil Service",TRUE,0.276785714,FALSE
+"1162","DECC","Core Whitehall Depts.",0.241071429,"Cumulative_Perc_net_change","2012Q4","DECC-Core Whitehall Depts.",TRUE,0.276785714,FALSE
+"1180","DECC","Total",0.151785714,"Cumulative_Perc_net_change","2012Q1","DECC-Total",TRUE,0.276785714,FALSE
+"1182","DECC","Total",0.098214286,"Cumulative_Perc_net_change","2011Q4","DECC-Total",TRUE,0.276785714,FALSE
+"1190","DEFRA","Core Whitehall Depts.",-0.096525097,"Cumulative_Perc_net_change","2011Q2","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1193","DEFRA","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1198","DEFRA","Non-Whitehall Civil Service",-0.022630835,"Cumulative_Perc_net_change","2010Q4","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1199","DEFRA","Core Whitehall Depts.",-0.023166023,"Cumulative_Perc_net_change","2011Q1","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1204","DEFRA","Core Whitehall Depts.",-0.189189189,"Cumulative_Perc_net_change","2011Q3","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1210","DEFRA","Core Whitehall Depts.",-0.196911197,"Cumulative_Perc_net_change","2011Q4","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1211","DEFRA","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1215","DEFRA","Core Whitehall Depts.",-0.193050193,"Cumulative_Perc_net_change","2012Q1","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1216","DEFRA","Core Whitehall Depts.",-0.007722008,"Cumulative_Perc_net_change","2010Q4","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1218","DEFRA","Total",0,"Cumulative_Perc_net_change","2010Q3","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1229","DEFRA","Total",-0.148033126,"Cumulative_Perc_net_change","2012Q3","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1230","DEFRA","Non-Whitehall Civil Service",-0.026874116,"Cumulative_Perc_net_change","2011Q1","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1234","DEFRA","Core Whitehall Depts.",-0.204633205,"Cumulative_Perc_net_change","2012Q2","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1237","DEFRA","Total",-0.135610766,"Cumulative_Perc_net_change","2012Q2","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1242","DEFRA","Total",-0.025879917,"Cumulative_Perc_net_change","2011Q1","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1249","DEFRA","Non-Whitehall Civil Service",-0.028288543,"Cumulative_Perc_net_change","2011Q2","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1250","DEFRA","Total",-0.01863354,"Cumulative_Perc_net_change","2010Q4","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1260","DEFRA","Total",-0.15010352,"Cumulative_Perc_net_change","2012Q4","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1266","DEFRA","Core Whitehall Depts.",-0.22007722,"Cumulative_Perc_net_change","2012Q3","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1274","DEFRA","Total",-0.046583851,"Cumulative_Perc_net_change","2011Q2","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1281","DEFRA","Non-Whitehall Civil Service",-0.072135785,"Cumulative_Perc_net_change","2011Q3","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1288","DEFRA","Non-Whitehall Civil Service",-0.121640736,"Cumulative_Perc_net_change","2012Q3","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1292","DEFRA","Total",-0.16252588,"Cumulative_Perc_net_change","2013Q1","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1305","DEFRA","Non-Whitehall Civil Service",-0.09476662,"Cumulative_Perc_net_change","2012Q1","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1306","DEFRA","Total",-0.103519669,"Cumulative_Perc_net_change","2011Q3","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1311","DEFRA","Non-Whitehall Civil Service",-0.151343706,"Cumulative_Perc_net_change","2013Q1","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1313","DEFRA","Non-Whitehall Civil Service",-0.089108911,"Cumulative_Perc_net_change","2011Q4","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1319","DEFRA","Non-Whitehall Civil Service",-0.127298444,"Cumulative_Perc_net_change","2012Q4","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1337","DEFRA","Non-Whitehall Civil Service",-0.110325318,"Cumulative_Perc_net_change","2012Q2","DEFRA-Non-Whitehall Civil Service",TRUE,-0.16252588,FALSE
+"1338","DEFRA","Core Whitehall Depts.",-0.212355212,"Cumulative_Perc_net_change","2012Q4","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1354","DEFRA","Total",-0.121118012,"Cumulative_Perc_net_change","2012Q1","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1357","DEFRA","Core Whitehall Depts.",-0.193050193,"Cumulative_Perc_net_change","2013Q1","DEFRA-Core Whitehall Depts.",TRUE,-0.16252588,FALSE
+"1365","DEFRA","Total",-0.118012422,"Cumulative_Perc_net_change","2011Q4","DEFRA-Total",TRUE,-0.16252588,FALSE
+"1389","DfE","Core Whitehall Depts.",-0.021428571,"Cumulative_Perc_net_change","2010Q4","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1390","DfE","Non-Whitehall Civil Service",-0.023952096,"Cumulative_Perc_net_change","2010Q4","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1393","DfE","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1397","DfE","Core Whitehall Depts.",-0.110714286,"Cumulative_Perc_net_change","2011Q3","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1405","DfE","Core Whitehall Depts.",-0.110714286,"Cumulative_Perc_net_change","2011Q2","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1412","DfE","Non-Whitehall Civil Service",-0.035928144,"Cumulative_Perc_net_change","2011Q2","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1416","DfE","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1420","DfE","Non-Whitehall Civil Service",-0.02994012,"Cumulative_Perc_net_change","2011Q1","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1423","DfE","Core Whitehall Depts.",-0.05,"Cumulative_Perc_net_change","2011Q1","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1428","DfE","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2012Q1","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1444","DfE","Non-Whitehall Civil Service",-0.047904192,"Cumulative_Perc_net_change","2011Q3","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1445","DfE","Core Whitehall Depts.",-0.075,"Cumulative_Perc_net_change","2012Q1","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1449","DfE","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2011Q4","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1452","DfE","Total",-0.022371365,"Cumulative_Perc_net_change","2010Q4","DfE-Total",TRUE,-0.094808014,FALSE
+"1453","DfE","Core Whitehall Depts.",-0.078571429,"Cumulative_Perc_net_change","2011Q4","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1460","DfE","Total",0,"Cumulative_Perc_net_change","2010Q3","DfE-Total",TRUE,-0.094808014,FALSE
+"1469","DfE","Core Whitehall Depts.",-0.089285714,"Cumulative_Perc_net_change","2012Q3","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1477","DfE","Core Whitehall Depts.",-0.060714286,"Cumulative_Perc_net_change","2012Q2","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1484","DfE","Total",-0.042505593,"Cumulative_Perc_net_change","2011Q1","DfE-Total",TRUE,-0.094808014,FALSE
+"1492","DfE","Non-Whitehall Civil Service",-0.055895482,"Cumulative_Perc_net_change","2012Q3","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1500","DfE","Non-Whitehall Civil Service",-0.023952096,"Cumulative_Perc_net_change","2012Q2","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1508","DfE","Total",-0.087248322,"Cumulative_Perc_net_change","2011Q3","DfE-Total",TRUE,-0.094808014,FALSE
+"1513","DfE","Total",-0.077093885,"Cumulative_Perc_net_change","2012Q3","DfE-Total",TRUE,-0.094808014,FALSE
+"1516","DfE","Total",-0.082774049,"Cumulative_Perc_net_change","2011Q2","DfE-Total",TRUE,-0.094808014,FALSE
+"1540","DfE","Total",-0.049217002,"Cumulative_Perc_net_change","2011Q4","DfE-Total",TRUE,-0.094808014,FALSE
+"1541","DfE","Core Whitehall Depts.",-0.085714286,"Cumulative_Perc_net_change","2012Q4","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1543","DfE","Total",-0.089493775,"Cumulative_Perc_net_change","2012Q4","DfE-Total",TRUE,-0.094808014,FALSE
+"1557","DfE","Total",-0.046979866,"Cumulative_Perc_net_change","2012Q1","DfE-Total",TRUE,-0.094808014,FALSE
+"1561","DfE","Total",-0.046979866,"Cumulative_Perc_net_change","2012Q2","DfE-Total",TRUE,-0.094808014,FALSE
+"1563","DfE","Total",-0.094808014,"Cumulative_Perc_net_change","2013Q1","DfE-Total",TRUE,-0.094808014,FALSE
+"1564","DfE","Non-Whitehall Civil Service",-0.084289603,"Cumulative_Perc_net_change","2012Q4","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1567","DfE","Non-Whitehall Civil Service",-0.080740338,"Cumulative_Perc_net_change","2013Q1","DfE-Non-Whitehall Civil Service",TRUE,-0.094808014,FALSE
+"1582","DfE","Core Whitehall Depts.",-0.1,"Cumulative_Perc_net_change","2013Q1","DfE-Core Whitehall Depts.",TRUE,-0.094808014,FALSE
+"1585","DfID","Core Whitehall Depts.",-0.01875,"Cumulative_Perc_net_change","2011Q1","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1595","DfID","Core Whitehall Depts.",-0.025,"Cumulative_Perc_net_change","2011Q2","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1596","DfID","Core Whitehall Depts.",-0.0125,"Cumulative_Perc_net_change","2010Q4","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1618","DfID","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1620","DfID","Core Whitehall Depts.",0.03125,"Cumulative_Perc_net_change","2012Q1","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1625","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q1","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1639","DfID","Core Whitehall Depts.",0.05625,"Cumulative_Perc_net_change","2012Q2","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1643","DfID","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1646","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2010Q4","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1655","DfID","Core Whitehall Depts.",0.0125,"Cumulative_Perc_net_change","2011Q4","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1657","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q2","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1663","DfID","Core Whitehall Depts.",-0.025,"Cumulative_Perc_net_change","2011Q3","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1666","DfID","Total",0,"Cumulative_Perc_net_change","2010Q3","DfID-Total",TRUE,0.1,FALSE
+"1681","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q4","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1711","DfID","Core Whitehall Depts.",0.06875,"Cumulative_Perc_net_change","2012Q3","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1713","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q1","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1714","DfID","Total",-0.025,"Cumulative_Perc_net_change","2011Q3","DfID-Total",TRUE,0.1,FALSE
+"1722","DfID","Core Whitehall Depts.",0.1,"Cumulative_Perc_net_change","2013Q1","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1729","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2011Q3","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1738","DfID","Total",-0.0125,"Cumulative_Perc_net_change","2010Q4","DfID-Total",TRUE,0.1,FALSE
+"1744","DfID","Total",-0.01875,"Cumulative_Perc_net_change","2011Q1","DfID-Total",TRUE,0.1,FALSE
+"1745","DfID","Total",-0.025,"Cumulative_Perc_net_change","2011Q2","DfID-Total",TRUE,0.1,FALSE
+"1746","DfID","Total",0.0125,"Cumulative_Perc_net_change","2011Q4","DfID-Total",TRUE,0.1,FALSE
+"1753","DfID","Core Whitehall Depts.",0.08125,"Cumulative_Perc_net_change","2012Q4","DfID-Core Whitehall Depts.",TRUE,0.1,FALSE
+"1757","DfID","Total",0.1,"Cumulative_Perc_net_change","2013Q1","DfID-Total",TRUE,0.1,FALSE
+"1759","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q2","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1768","DfID","Total",0.08125,"Cumulative_Perc_net_change","2012Q4","DfID-Total",TRUE,0.1,FALSE
+"1771","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2013Q1","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1775","DfID","Total",0.03125,"Cumulative_Perc_net_change","2012Q1","DfID-Total",TRUE,0.1,FALSE
+"1776","DfID","Total",0.06875,"Cumulative_Perc_net_change","2012Q3","DfID-Total",TRUE,0.1,FALSE
+"1777","DfID","Total",0.05625,"Cumulative_Perc_net_change","2012Q2","DfID-Total",TRUE,0.1,FALSE
+"1779","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q3","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1780","DfID","Non-Whitehall Civil Service",NA,"Cumulative_Perc_net_change","2012Q4","DfID-Non-Whitehall Civil Service",TRUE,0.1,FALSE
+"1784","DfT","Non-Whitehall Civil Service",-0.012859767,"Cumulative_Perc_net_change","2010Q4","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1789","DfT","Core Whitehall Depts.",-0.140096618,"Cumulative_Perc_net_change","2011Q2","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1790","DfT","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1793","DfT","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1811","DfT","Core Whitehall Depts.",-0.019323671,"Cumulative_Perc_net_change","2010Q4","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1812","DfT","Non-Whitehall Civil Service",-0.031843233,"Cumulative_Perc_net_change","2011Q1","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1827","DfT","Core Whitehall Depts.",-0.173913043,"Cumulative_Perc_net_change","2011Q3","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1828","DfT","Total",0,"Cumulative_Perc_net_change","2010Q3","DfT-Total",TRUE,-0.0875,FALSE
+"1830","DfT","Core Whitehall Depts.",-0.101449275,"Cumulative_Perc_net_change","2011Q1","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1835","DfT","Core Whitehall Depts.",-0.198067633,"Cumulative_Perc_net_change","2012Q3","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1842","DfT","Non-Whitehall Civil Service",-0.058787508,"Cumulative_Perc_net_change","2011Q4","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1856","DfT","Core Whitehall Depts.",-0.207729469,"Cumulative_Perc_net_change","2012Q2","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1858","DfT","Non-Whitehall Civil Service",-0.044703001,"Cumulative_Perc_net_change","2011Q2","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1860","DfT","Total",-0.013586957,"Cumulative_Perc_net_change","2010Q4","DfT-Total",TRUE,-0.0875,FALSE
+"1874","DfT","Non-Whitehall Civil Service",-0.063686467,"Cumulative_Perc_net_change","2012Q1","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1884","DfT","Total",-0.055434783,"Cumulative_Perc_net_change","2011Q2","DfT-Total",TRUE,-0.0875,FALSE
+"1890","DfT","Non-Whitehall Civil Service",-0.053276179,"Cumulative_Perc_net_change","2011Q3","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1891","DfT","Core Whitehall Depts.",-0.212560386,"Cumulative_Perc_net_change","2012Q1","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1892","DfT","Total",-0.039673913,"Cumulative_Perc_net_change","2011Q1","DfT-Total",TRUE,-0.0875,FALSE
+"1899","DfT","Core Whitehall Depts.",-0.198067633,"Cumulative_Perc_net_change","2011Q4","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1906","DfT","Non-Whitehall Civil Service",-0.069197795,"Cumulative_Perc_net_change","2012Q2","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1907","DfT","Core Whitehall Depts.",-0.178743961,"Cumulative_Perc_net_change","2012Q4","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1916","DfT","Total",-0.066847826,"Cumulative_Perc_net_change","2011Q3","DfT-Total",TRUE,-0.0875,FALSE
+"1923","DfT","Total",-0.088586957,"Cumulative_Perc_net_change","2012Q3","DfT-Total",TRUE,-0.0875,FALSE
+"1925","DfT","Non-Whitehall Civil Service",-0.074709124,"Cumulative_Perc_net_change","2012Q3","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1953","DfT","Core Whitehall Depts.",-0.173913043,"Cumulative_Perc_net_change","2013Q1","DfT-Core Whitehall Depts.",TRUE,-0.0875,FALSE
+"1955","DfT","Total",-0.088586957,"Cumulative_Perc_net_change","2012Q4","DfT-Total",TRUE,-0.0875,FALSE
+"1957","DfT","Non-Whitehall Civil Service",-0.077158604,"Cumulative_Perc_net_change","2012Q4","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1960","DfT","Total",-0.0875,"Cumulative_Perc_net_change","2013Q1","DfT-Total",TRUE,-0.0875,FALSE
+"1962","DfT","Non-Whitehall Civil Service",-0.076546234,"Cumulative_Perc_net_change","2013Q1","DfT-Non-Whitehall Civil Service",TRUE,-0.0875,FALSE
+"1972","DfT","Total",-0.084782609,"Cumulative_Perc_net_change","2012Q2","DfT-Total",TRUE,-0.0875,FALSE
+"1977","DfT","Total",-0.080434783,"Cumulative_Perc_net_change","2012Q1","DfT-Total",TRUE,-0.0875,FALSE
+"1978","DfT","Total",-0.074456522,"Cumulative_Perc_net_change","2011Q4","DfT-Total",TRUE,-0.0875,FALSE
+"1992","DH","Core Whitehall Depts.",0.007874016,"Cumulative_Perc_net_change","2011Q1","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"1996","DH","Non-Whitehall Civil Service",-0.019455253,"Cumulative_Perc_net_change","2010Q4","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"1999","DH","Core Whitehall Depts.",0.011811024,"Cumulative_Perc_net_change","2010Q4","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2003","DH","Total",0,"Cumulative_Perc_net_change","2010Q3","DH-Total",TRUE,-0.140900196,FALSE
+"2022","DH","Total",-0.003913894,"Cumulative_Perc_net_change","2010Q4","DH-Total",TRUE,-0.140900196,FALSE
+"2044","DH","Non-Whitehall Civil Service",-0.140077821,"Cumulative_Perc_net_change","2011Q4","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2047","DH","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2052","DH","Non-Whitehall Civil Service",-0.128404669,"Cumulative_Perc_net_change","2011Q3","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2053","DH","Core Whitehall Depts.",-0.098425197,"Cumulative_Perc_net_change","2012Q1","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2068","DH","Non-Whitehall Civil Service",-0.042801556,"Cumulative_Perc_net_change","2011Q1","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2076","DH","Non-Whitehall Civil Service",-0.151750973,"Cumulative_Perc_net_change","2012Q1","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2077","DH","Core Whitehall Depts.",-0.059055118,"Cumulative_Perc_net_change","2011Q2","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2085","DH","Core Whitehall Depts.",-0.106299213,"Cumulative_Perc_net_change","2012Q2","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2086","DH","Total",-0.050880626,"Cumulative_Perc_net_change","2011Q2","DH-Total",TRUE,-0.140900196,FALSE
+"2094","DH","Total",-0.017612524,"Cumulative_Perc_net_change","2011Q1","DH-Total",TRUE,-0.140900196,FALSE
+"2100","DH","Non-Whitehall Civil Service",-0.042801556,"Cumulative_Perc_net_change","2011Q2","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2101","DH","Core Whitehall Depts.",-0.082677165,"Cumulative_Perc_net_change","2011Q4","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2105","DH","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2109","DH","Core Whitehall Depts.",-0.066929134,"Cumulative_Perc_net_change","2011Q3","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2118","DH","Total",-0.097847358,"Cumulative_Perc_net_change","2011Q3","DH-Total",TRUE,-0.140900196,FALSE
+"2124","DH","Non-Whitehall Civil Service",-0.147859922,"Cumulative_Perc_net_change","2013Q1","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2125","DH","Total",-0.129158513,"Cumulative_Perc_net_change","2012Q3","DH-Total",TRUE,-0.140900196,FALSE
+"2132","DH","Non-Whitehall Civil Service",-0.151750973,"Cumulative_Perc_net_change","2012Q4","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2133","DH","Total",-0.129158513,"Cumulative_Perc_net_change","2012Q2","DH-Total",TRUE,-0.140900196,FALSE
+"2135","DH","Non-Whitehall Civil Service",-0.151750973,"Cumulative_Perc_net_change","2012Q2","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2137","DH","Total",-0.111545988,"Cumulative_Perc_net_change","2011Q4","DH-Total",TRUE,-0.140900196,FALSE
+"2141","DH","Core Whitehall Depts.",-0.133858268,"Cumulative_Perc_net_change","2013Q1","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2143","DH","Total",-0.135029354,"Cumulative_Perc_net_change","2012Q4","DH-Total",TRUE,-0.140900196,FALSE
+"2156","DH","Total",-0.125244618,"Cumulative_Perc_net_change","2012Q1","DH-Total",TRUE,-0.140900196,FALSE
+"2157","DH","Core Whitehall Depts.",-0.11023622,"Cumulative_Perc_net_change","2012Q3","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2163","DH","Core Whitehall Depts.",-0.118110236,"Cumulative_Perc_net_change","2012Q4","DH-Core Whitehall Depts.",TRUE,-0.140900196,FALSE
+"2167","DH","Non-Whitehall Civil Service",-0.147859922,"Cumulative_Perc_net_change","2012Q3","DH-Non-Whitehall Civil Service",TRUE,-0.140900196,FALSE
+"2174","DH","Total",-0.140900196,"Cumulative_Perc_net_change","2013Q1","DH-Total",TRUE,-0.140900196,FALSE
+"2183","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q1","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2187","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q2","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2189","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2010Q4","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2192","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q3","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2197","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q4","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2199","DWP","Non-Whitehall Civil Service",-0.026942736,"Cumulative_Perc_net_change","2010Q4","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2222","DWP","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2229","DWP","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2230","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q1","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2231","DWP","Non-Whitehall Civil Service",-0.050593433,"Cumulative_Perc_net_change","2011Q1","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2247","DWP","Non-Whitehall Civil Service",-0.124144503,"Cumulative_Perc_net_change","2011Q4","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2248","DWP","Total",-0.084293511,"Cumulative_Perc_net_change","2011Q2","DWP-Total",TRUE,-0.17083947,FALSE
+"2249","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q2","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2255","DWP","Non-Whitehall Civil Service",-0.113055531,"Cumulative_Perc_net_change","2011Q3","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2263","DWP","Non-Whitehall Civil Service",-0.084293511,"Cumulative_Perc_net_change","2011Q2","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2272","DWP","Total",0,"Cumulative_Perc_net_change","2010Q3","DWP-Total",TRUE,-0.17083947,FALSE
+"2273","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q4","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2279","DWP","Non-Whitehall Civil Service",-0.13540674,"Cumulative_Perc_net_change","2012Q1","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2280","DWP","Total",-0.113055531,"Cumulative_Perc_net_change","2011Q3","DWP-Total",TRUE,-0.17083947,FALSE
+"2281","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q3","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2287","DWP","Non-Whitehall Civil Service",-0.17083947,"Cumulative_Perc_net_change","2013Q1","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2292","DWP","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2013Q1","DWP-Core Whitehall Depts.",TRUE,-0.17083947,FALSE
+"2295","DWP","Non-Whitehall Civil Service",-0.15715152,"Cumulative_Perc_net_change","2012Q4","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2303","DWP","Non-Whitehall Civil Service",-0.14710214,"Cumulative_Perc_net_change","2012Q3","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2311","DWP","Non-Whitehall Civil Service",-0.149181322,"Cumulative_Perc_net_change","2012Q2","DWP-Non-Whitehall Civil Service",TRUE,-0.17083947,FALSE
+"2319","DWP","Total",-0.15715152,"Cumulative_Perc_net_change","2012Q4","DWP-Total",TRUE,-0.17083947,FALSE
+"2323","DWP","Total",-0.050593433,"Cumulative_Perc_net_change","2011Q1","DWP-Total",TRUE,-0.17083947,FALSE
+"2326","DWP","Total",-0.124144503,"Cumulative_Perc_net_change","2011Q4","DWP-Total",TRUE,-0.17083947,FALSE
+"2331","DWP","Total",-0.026942736,"Cumulative_Perc_net_change","2010Q4","DWP-Total",TRUE,-0.17083947,FALSE
+"2338","DWP","Total",-0.17083947,"Cumulative_Perc_net_change","2013Q1","DWP-Total",TRUE,-0.17083947,FALSE
+"2355","DWP","Total",-0.14710214,"Cumulative_Perc_net_change","2012Q3","DWP-Total",TRUE,-0.17083947,FALSE
+"2370","DWP","Total",-0.13540674,"Cumulative_Perc_net_change","2012Q1","DWP-Total",TRUE,-0.17083947,FALSE
+"2373","DWP","Total",-0.149181322,"Cumulative_Perc_net_change","2012Q2","DWP-Total",TRUE,-0.17083947,FALSE
+"2447","FCO","Total",0,"Cumulative_Perc_net_change","2010Q3","FCO-Total",TRUE,-0.055363322,FALSE
+"2450","FCO","Total",-0.056228374,"Cumulative_Perc_net_change","2011Q2","FCO-Total",TRUE,-0.055363322,FALSE
+"2481","FCO","Total",-0.057093426,"Cumulative_Perc_net_change","2012Q4","FCO-Total",TRUE,-0.055363322,FALSE
+"2482","FCO","Total",-0.069204152,"Cumulative_Perc_net_change","2011Q3","FCO-Total",TRUE,-0.055363322,FALSE
+"2487","FCO","Total",-0.055363322,"Cumulative_Perc_net_change","2013Q1","FCO-Total",TRUE,-0.055363322,FALSE
+"2489","FCO","Total",-0.07266436,"Cumulative_Perc_net_change","2012Q3","FCO-Total",TRUE,-0.055363322,FALSE
+"2493","FCO","Total",-0.01384083,"Cumulative_Perc_net_change","2010Q4","FCO-Total",TRUE,-0.055363322,FALSE
+"2498","FCO","Total",-0.045847751,"Cumulative_Perc_net_change","2011Q1","FCO-Total",TRUE,-0.055363322,FALSE
+"2501","FCO","Total",-0.043252595,"Cumulative_Perc_net_change","2011Q4","FCO-Total",TRUE,-0.055363322,FALSE
+"2533","FCO","Total",-0.042387543,"Cumulative_Perc_net_change","2012Q1","FCO-Total",TRUE,-0.055363322,FALSE
+"2537","FCO","Total",0.010380623,"Cumulative_Perc_net_change","2012Q2","FCO-Total",TRUE,-0.055363322,FALSE
+"2774","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q3","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2781","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q2","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2782","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q4","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2785","HMRC","Non-Whitehall Civil Service",-0.010936624,"Cumulative_Perc_net_change","2010Q4","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2788","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q2","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2791","HMRC","Non-Whitehall Civil Service",-0.012338755,"Cumulative_Perc_net_change","2011Q4","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2793","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q3","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2799","HMRC","Non-Whitehall Civil Service",-0.010515984,"Cumulative_Perc_net_change","2011Q3","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2800","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q4","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2801","HMRC","Non-Whitehall Civil Service",-0.009955132,"Cumulative_Perc_net_change","2011Q1","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2806","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q1","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2811","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q1","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2814","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2010Q4","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2819","HMRC","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2013Q1","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2823","HMRC","Non-Whitehall Civil Service",-0.019349411,"Cumulative_Perc_net_change","2012Q1","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2832","HMRC","Total",-0.001962984,"Cumulative_Perc_net_change","2011Q2","HMRC-Total",TRUE,-0.046270331,FALSE
+"2840","HMRC","Total",-0.009955132,"Cumulative_Perc_net_change","2011Q1","HMRC-Total",TRUE,-0.046270331,FALSE
+"2843","HMRC","Total",0,"Cumulative_Perc_net_change","2010Q3","HMRC-Total",TRUE,-0.046270331,FALSE
+"2847","HMRC","Non-Whitehall Civil Service",-0.001962984,"Cumulative_Perc_net_change","2011Q2","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2851","HMRC","Total",-0.010515984,"Cumulative_Perc_net_change","2011Q3","HMRC-Total",TRUE,-0.046270331,FALSE
+"2853","HMRC","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","HMRC-Core Whitehall Depts.",TRUE,-0.046270331,FALSE
+"2862","HMRC","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2875","HMRC","Total",-0.010936624,"Cumulative_Perc_net_change","2010Q4","HMRC-Total",TRUE,-0.046270331,FALSE
+"2882","HMRC","Non-Whitehall Civil Service",-0.030286035,"Cumulative_Perc_net_change","2012Q2","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2892","HMRC","Non-Whitehall Civil Service",-0.048233315,"Cumulative_Perc_net_change","2012Q4","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2923","HMRC","Total",-0.012338755,"Cumulative_Perc_net_change","2011Q4","HMRC-Total",TRUE,-0.046270331,FALSE
+"2937","HMRC","Non-Whitehall Civil Service",-0.046270331,"Cumulative_Perc_net_change","2013Q1","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2939","HMRC","Total",-0.044167134,"Cumulative_Perc_net_change","2012Q3","HMRC-Total",TRUE,-0.046270331,FALSE
+"2941","HMRC","Non-Whitehall Civil Service",-0.044167134,"Cumulative_Perc_net_change","2012Q3","HMRC-Non-Whitehall Civil Service",TRUE,-0.046270331,FALSE
+"2956","HMRC","Total",-0.048233315,"Cumulative_Perc_net_change","2012Q4","HMRC-Total",TRUE,-0.046270331,FALSE
+"2958","HMRC","Total",-0.046270331,"Cumulative_Perc_net_change","2013Q1","HMRC-Total",TRUE,-0.046270331,FALSE
+"2960","HMRC","Total",-0.030286035,"Cumulative_Perc_net_change","2012Q2","HMRC-Total",TRUE,-0.046270331,FALSE
+"2966","HMRC","Total",-0.019349411,"Cumulative_Perc_net_change","2012Q1","HMRC-Total",TRUE,-0.046270331,FALSE
+"2979","HMT","Core Whitehall Depts.",-0.169117647,"Cumulative_Perc_net_change","2011Q4","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"2982","HMT","Core Whitehall Depts.",-0.154411765,"Cumulative_Perc_net_change","2011Q3","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"2985","HMT","Non-Whitehall Civil Service",-0.019230769,"Cumulative_Perc_net_change","2010Q4","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"2986","HMT","Core Whitehall Depts.",-0.139705882,"Cumulative_Perc_net_change","2011Q2","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3002","HMT","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3003","HMT","Core Whitehall Depts.",-0.117647059,"Cumulative_Perc_net_change","2012Q1","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3004","HMT","Total",0,"Cumulative_Perc_net_change","2010Q3","HMT-Total",TRUE,-0.098053097,FALSE
+"3006","HMT","Core Whitehall Depts.",-0.132543103,"Cumulative_Perc_net_change","2012Q4","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3014","HMT","Non-Whitehall Civil Service",-0.041208791,"Cumulative_Perc_net_change","2011Q3","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3020","HMT","Non-Whitehall Civil Service",-0.057692308,"Cumulative_Perc_net_change","2011Q4","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3021","HMT","Total",-0.06,"Cumulative_Perc_net_change","2011Q2","HMT-Total",TRUE,-0.098053097,FALSE
+"3024","HMT","Core Whitehall Depts.",-0.088235294,"Cumulative_Perc_net_change","2011Q1","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3027","HMT","Core Whitehall Depts.",-0.125,"Cumulative_Perc_net_change","2012Q3","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3029","HMT","Total",-0.028,"Cumulative_Perc_net_change","2011Q1","HMT-Total",TRUE,-0.098053097,FALSE
+"3032","HMT","Core Whitehall Depts.",-0.044117647,"Cumulative_Perc_net_change","2010Q4","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3035","HMT","Core Whitehall Depts.",-0.125,"Cumulative_Perc_net_change","2012Q2","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3036","HMT","Non-Whitehall Civil Service",-0.03021978,"Cumulative_Perc_net_change","2011Q2","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3037","HMT","Total",-0.026,"Cumulative_Perc_net_change","2010Q4","HMT-Total",TRUE,-0.098053097,FALSE
+"3044","HMT","Non-Whitehall Civil Service",-0.005494505,"Cumulative_Perc_net_change","2011Q1","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3053","HMT","Total",-0.072,"Cumulative_Perc_net_change","2011Q3","HMT-Total",TRUE,-0.098053097,FALSE
+"3065","HMT","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3078","HMT","Core Whitehall Depts.",-0.132543103,"Cumulative_Perc_net_change","2013Q1","HMT-Core Whitehall Depts.",TRUE,-0.098053097,FALSE
+"3091","HMT","Total",-0.096039823,"Cumulative_Perc_net_change","2012Q4","HMT-Total",TRUE,-0.098053097,FALSE
+"3092","HMT","Non-Whitehall Civil Service",-0.065934066,"Cumulative_Perc_net_change","2012Q1","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3094","HMT","Non-Whitehall Civil Service",-0.082417582,"Cumulative_Perc_net_change","2012Q4","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3122","HMT","Total",-0.09,"Cumulative_Perc_net_change","2012Q2","HMT-Total",TRUE,-0.098053097,FALSE
+"3123","HMT","Total",-0.098053097,"Cumulative_Perc_net_change","2013Q1","HMT-Total",TRUE,-0.098053097,FALSE
+"3125","HMT","Total",-0.088,"Cumulative_Perc_net_change","2011Q4","HMT-Total",TRUE,-0.098053097,FALSE
+"3139","HMT","Non-Whitehall Civil Service",-0.085164835,"Cumulative_Perc_net_change","2013Q1","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3141","HMT","Total",-0.085973451,"Cumulative_Perc_net_change","2012Q3","HMT-Total",TRUE,-0.098053097,FALSE
+"3143","HMT","Non-Whitehall Civil Service",-0.071428571,"Cumulative_Perc_net_change","2012Q3","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3144","HMT","Total",-0.08,"Cumulative_Perc_net_change","2012Q1","HMT-Total",TRUE,-0.098053097,FALSE
+"3160","HMT","Non-Whitehall Civil Service",-0.076923077,"Cumulative_Perc_net_change","2012Q2","HMT-Non-Whitehall Civil Service",TRUE,-0.098053097,FALSE
+"3173","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q3","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3176","HO","Non-Whitehall Civil Service",-0.039903681,"Cumulative_Perc_net_change","2010Q4","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3179","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2010Q4","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3180","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q2","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3182","HO","Non-Whitehall Civil Service",-0.15004046,"Cumulative_Perc_net_change","2011Q4","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3189","HO","Non-Whitehall Civil Service",-0.12507183,"Cumulative_Perc_net_change","2011Q3","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3192","HO","Non-Whitehall Civil Service",-0.058135535,"Cumulative_Perc_net_change","2011Q1","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3198","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q1","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3201","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q4","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3214","HO","Non-Whitehall Civil Service",-0.157223217,"Cumulative_Perc_net_change","2012Q1","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3217","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q3","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3219","HO","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3220","HO","Total",0,"Cumulative_Perc_net_change","2010Q3","HO-Total",TRUE,-0.149371941,FALSE
+"3221","HO","Non-Whitehall Civil Service",-0.149371941,"Cumulative_Perc_net_change","2013Q1","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3225","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q2","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3227","HO","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3229","HO","Non-Whitehall Civil Service",-0.158933397,"Cumulative_Perc_net_change","2012Q4","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3233","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q1","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3238","HO","Non-Whitehall Civil Service",-0.100103199,"Cumulative_Perc_net_change","2011Q2","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3244","HO","Total",-0.058135535,"Cumulative_Perc_net_change","2011Q1","HO-Total",TRUE,-0.149371941,FALSE
+"3249","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q4","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3253","HO","Total",-0.158933397,"Cumulative_Perc_net_change","2012Q4","HO-Total",TRUE,-0.149371941,FALSE
+"3255","HO","Total",-0.12507183,"Cumulative_Perc_net_change","2011Q3","HO-Total",TRUE,-0.149371941,FALSE
+"3263","HO","Total",-0.100103199,"Cumulative_Perc_net_change","2011Q2","HO-Total",TRUE,-0.149371941,FALSE
+"3270","HO","Total",-0.161327649,"Cumulative_Perc_net_change","2012Q2","HO-Total",TRUE,-0.149371941,FALSE
+"3278","HO","Non-Whitehall Civil Service",-0.164405973,"Cumulative_Perc_net_change","2012Q3","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3279","HO","Total",-0.039903681,"Cumulative_Perc_net_change","2010Q4","HO-Total",TRUE,-0.149371941,FALSE
+"3285","HO","Total",-0.149371941,"Cumulative_Perc_net_change","2013Q1","HO-Total",TRUE,-0.149371941,FALSE
+"3286","HO","Non-Whitehall Civil Service",-0.161327649,"Cumulative_Perc_net_change","2012Q2","HO-Non-Whitehall Civil Service",TRUE,-0.149371941,FALSE
+"3287","HO","Total",-0.15004046,"Cumulative_Perc_net_change","2011Q4","HO-Total",TRUE,-0.149371941,FALSE
+"3321","HO","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2013Q1","HO-Core Whitehall Depts.",TRUE,-0.149371941,FALSE
+"3329","HO","Total",-0.164405973,"Cumulative_Perc_net_change","2012Q3","HO-Total",TRUE,-0.149371941,FALSE
+"3346","HO","Total",-0.157223217,"Cumulative_Perc_net_change","2012Q1","HO-Total",TRUE,-0.149371941,FALSE
+"3367","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2010Q4","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3368","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q1","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3373","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q3","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3378","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q4","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3380","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q2","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3387","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2011Q1","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3391","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q3","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3397","MOD","Total",-0.020519092,"Cumulative_Perc_net_change","2011Q1","MoD-Total",TRUE,-0.209433507,FALSE
+"3400","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q2","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3408","MOD","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3412","MOD","Non-Whitehall Civil Service",-0.168587804,"Cumulative_Perc_net_change","2012Q2","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3420","MOD","Non-Whitehall Civil Service",-0.145028337,"Cumulative_Perc_net_change","2012Q1","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3423","MOD","Non-Whitehall Civil Service",-0.006250849,"Cumulative_Perc_net_change","2010Q4","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3430","MOD","Non-Whitehall Civil Service",-0.099582264,"Cumulative_Perc_net_change","2011Q4","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3438","MOD","Non-Whitehall Civil Service",-0.052045115,"Cumulative_Perc_net_change","2011Q3","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3442","MOD","Total",-0.039543416,"Cumulative_Perc_net_change","2011Q2","MoD-Total",TRUE,-0.209433507,FALSE
+"3446","MOD","Total",-0.006250849,"Cumulative_Perc_net_change","2010Q4","MoD-Total",TRUE,-0.209433507,FALSE
+"3450","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2012Q4","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3454","MOD","Total",0,"Cumulative_Perc_net_change","2010Q3","MoD-Total",TRUE,-0.209433507,FALSE
+"3455","MOD","Non-Whitehall Civil Service",-0.020519092,"Cumulative_Perc_net_change","2011Q1","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3461","MOD","Total",-0.052045115,"Cumulative_Perc_net_change","2011Q3","MoD-Total",TRUE,-0.209433507,FALSE
+"3480","MOD","Total",-0.099582264,"Cumulative_Perc_net_change","2011Q4","MoD-Total",TRUE,-0.209433507,FALSE
+"3484","MOD","Non-Whitehall Civil Service",-0.180855455,"Cumulative_Perc_net_change","2012Q3","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3487","MOD","Non-Whitehall Civil Service",-0.039543416,"Cumulative_Perc_net_change","2011Q2","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3512","MOD","Total",-0.145028337,"Cumulative_Perc_net_change","2012Q1","MoD-Total",TRUE,-0.209433507,FALSE
+"3516","MOD","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3522","MOD","Core Whitehall Depts.",NA,"Cumulative_Perc_net_change","2013Q1","MoD-Core Whitehall Depts.",TRUE,-0.209433507,FALSE
+"3540","MOD","Total",-0.200511578,"Cumulative_Perc_net_change","2012Q4","MoD-Total",TRUE,-0.209433507,FALSE
+"3543","MOD","Non-Whitehall Civil Service",-0.200511578,"Cumulative_Perc_net_change","2012Q4","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3546","MOD","Total",-0.209433507,"Cumulative_Perc_net_change","2013Q1","MoD-Total",TRUE,-0.209433507,FALSE
+"3548","MOD","Non-Whitehall Civil Service",-0.209433507,"Cumulative_Perc_net_change","2013Q1","MoD-Non-Whitehall Civil Service",TRUE,-0.209433507,FALSE
+"3555","MOD","Total",-0.180855455,"Cumulative_Perc_net_change","2012Q3","MoD-Total",TRUE,-0.209433507,FALSE
+"3558","MOD","Total",-0.168587804,"Cumulative_Perc_net_change","2012Q2","MoD-Total",TRUE,-0.209433507,FALSE
+"3569","MOJ","Core Whitehall Depts.",-0.097270694,"Cumulative_Perc_net_change","2011Q4","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3570","MOJ","Non-Whitehall Civil Service",-0.012795817,"Cumulative_Perc_net_change","2011Q1","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3573","MOJ","Total",-0.012873911,"Cumulative_Perc_net_change","2011Q1","MoJ-Total",TRUE,-0.147609371,FALSE
+"3576","MOJ","Core Whitehall Depts.",-0.021319911,"Cumulative_Perc_net_change","2011Q1","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3580","MOJ","Non-Whitehall Civil Service",-0.049765743,"Cumulative_Perc_net_change","2011Q3","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3581","MOJ","Non-Whitehall Civil Service",-0.038915873,"Cumulative_Perc_net_change","2011Q2","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3582","MOJ","Core Whitehall Depts.",-0.133447921,"Cumulative_Perc_net_change","2012Q3","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3585","MOJ","Core Whitehall Depts.",-0.06689038,"Cumulative_Perc_net_change","2011Q2","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3590","MOJ","Core Whitehall Depts.",-0.077740492,"Cumulative_Perc_net_change","2011Q3","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3591","MOJ","Non-Whitehall Civil Service",-0.078643029,"Cumulative_Perc_net_change","2011Q4","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3594","MOJ","Non-Whitehall Civil Service",-0.095226025,"Cumulative_Perc_net_change","2012Q1","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3598","MOJ","Non-Whitehall Civil Service",-0.004490979,"Cumulative_Perc_net_change","2010Q4","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3602","MOJ","Total",0,"Cumulative_Perc_net_change","2010Q3","MoJ-Total",TRUE,-0.147609371,FALSE
+"3608","MOJ","Total",-0.005553452,"Cumulative_Perc_net_change","2010Q4","MoJ-Total",TRUE,-0.147609371,FALSE
+"3614","MOJ","Core Whitehall Depts.",-0.128398084,"Cumulative_Perc_net_change","2012Q4","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3623","MOJ","Total",-0.050990786,"Cumulative_Perc_net_change","2011Q3","MoJ-Total",TRUE,-0.147609371,FALSE
+"3631","MOJ","Core Whitehall Depts.",-0.118970917,"Cumulative_Perc_net_change","2012Q2","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3637","MOJ","Non-Whitehall Civil Service",-0.13598823,"Cumulative_Perc_net_change","2012Q4","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3639","MOJ","Core Whitehall Depts.",-0.118970917,"Cumulative_Perc_net_change","2012Q1","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3645","MOJ","Total",-0.040136312,"Cumulative_Perc_net_change","2011Q2","MoJ-Total",TRUE,-0.147609371,FALSE
+"3653","MOJ","Non-Whitehall Civil Service",-0.112380848,"Cumulative_Perc_net_change","2012Q2","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3654","MOJ","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3655","MOJ","Total",-0.079305399,"Cumulative_Perc_net_change","2011Q4","MoJ-Total",TRUE,-0.147609371,FALSE
+"3669","MOJ","Non-Whitehall Civil Service",-0.149066252,"Cumulative_Perc_net_change","2013Q1","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3678","MOJ","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3683","MOJ","Core Whitehall Depts.",-0.03,"Cumulative_Perc_net_change","2010Q4","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3685","MOJ","Non-Whitehall Civil Service",-0.12686615,"Cumulative_Perc_net_change","2012Q3","MoJ-Non-Whitehall Civil Service",TRUE,-0.147609371,FALSE
+"3686","MOJ","Core Whitehall Depts.",-0.134422982,"Cumulative_Perc_net_change","2013Q1","MoJ-Core Whitehall Depts.",TRUE,-0.147609371,FALSE
+"3687","MOJ","Total",-0.096213652,"Cumulative_Perc_net_change","2012Q1","MoJ-Total",TRUE,-0.147609371,FALSE
+"3701","MOJ","Total",-0.134995278,"Cumulative_Perc_net_change","2012Q4","MoJ-Total",TRUE,-0.147609371,FALSE
+"3718","MOJ","Total",-0.112316749,"Cumulative_Perc_net_change","2012Q2","MoJ-Total",TRUE,-0.147609371,FALSE
+"3737","MOJ","Total",-0.126809537,"Cumulative_Perc_net_change","2012Q3","MoJ-Total",TRUE,-0.147609371,FALSE
+"3747","MOJ","Total",-0.147609371,"Cumulative_Perc_net_change","2013Q1","MoJ-Total",TRUE,-0.147609371,FALSE
+"4357","Total excl. WH FCO","Total",-0.09039895,"Cumulative_Perc_net_change","2011Q4","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4359","Total excl. WH FCO","Non-Whitehall Civil Service",-0.030220229,"Cumulative_Perc_net_change","2011Q1","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4361","Total excl. WH FCO","Non-Whitehall Civil Service",-0.088018065,"Cumulative_Perc_net_change","2011Q4","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4362","Total excl. WH FCO","Total",0,"Cumulative_Perc_net_change","2010Q3","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4374","Total excl. WH FCO","Core Whitehall Depts.",-0.126110498,"Cumulative_Perc_net_change","2012Q2","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4380","Total excl. WH FCO","Core Whitehall Depts.",-0.045752832,"Cumulative_Perc_net_change","2011Q1","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4386","Total excl. WH FCO","Non-Whitehall Civil Service",-0.103929431,"Cumulative_Perc_net_change","2012Q1","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4387","Total excl. WH FCO","Non-Whitehall Civil Service",-0.016424331,"Cumulative_Perc_net_change","2010Q4","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4391","Total excl. WH FCO","Total",-0.017004066,"Cumulative_Perc_net_change","2010Q4","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4408","Total excl. WH FCO","Core Whitehall Depts.",-0.130452806,"Cumulative_Perc_net_change","2012Q3","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4409","Total excl. WH FCO","Non-Whitehall Civil Service",0,"Cumulative_Perc_net_change","2010Q3","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4410","Total excl. WH FCO","Core Whitehall Depts.",-0.127649293,"Cumulative_Perc_net_change","2012Q1","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4412","Total excl. WH FCO","Core Whitehall Depts.",-0.098705276,"Cumulative_Perc_net_change","2011Q2","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4413","Total excl. WH FCO","Non-Whitehall Civil Service",-0.051183704,"Cumulative_Perc_net_change","2011Q2","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4418","Total excl. WH FCO","Core Whitehall Depts.",-0.129847573,"Cumulative_Perc_net_change","2011Q4","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4422","Total excl. WH FCO","Core Whitehall Depts.",0,"Cumulative_Perc_net_change","2010Q3","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4427","Total excl. WH FCO","Total",-0.105264272,"Cumulative_Perc_net_change","2012Q1","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4428","Total excl. WH FCO","Core Whitehall Depts.",-0.026998841,"Cumulative_Perc_net_change","2010Q4","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4458","Total excl. WH FCO","Non-Whitehall Civil Service",-0.117238344,"Cumulative_Perc_net_change","2012Q2","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4459","Total excl. WH FCO","Total",-0.117715568,"Cumulative_Perc_net_change","2012Q2","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4463","Total excl. WH FCO","Total",-0.031085889,"Cumulative_Perc_net_change","2011Q1","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4480","Total excl. WH FCO","Core Whitehall Depts.",-0.130272626,"Cumulative_Perc_net_change","2012Q4","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4481","Total excl. WH FCO","Non-Whitehall Civil Service",-0.132052101,"Cumulative_Perc_net_change","2012Q4","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4484","Total excl. WH FCO","Core Whitehall Depts.",-0.121054454,"Cumulative_Perc_net_change","2011Q3","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4485","Total excl. WH FCO","Non-Whitehall Civil Service",-0.068780595,"Cumulative_Perc_net_change","2011Q3","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4522","Total excl. WH FCO","Total",-0.131906452,"Cumulative_Perc_net_change","2012Q4","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4526","Total excl. WH FCO","Total",-0.071764357,"Cumulative_Perc_net_change","2011Q3","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4530","Total excl. WH FCO","Non-Whitehall Civil Service",-0.124167681,"Cumulative_Perc_net_change","2012Q3","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4531","Total excl. WH FCO","Total",-0.12449425,"Cumulative_Perc_net_change","2012Q3","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4535","Total excl. WH FCO","Total",-0.053892089,"Cumulative_Perc_net_change","2011Q2","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE
+"4552","Total excl. WH FCO","Core Whitehall Depts.",-0.130992599,"Cumulative_Perc_net_change","2013Q1","Total excl. WH FCO-Core Whitehall Depts.",TRUE,-0.137523131,TRUE
+"4553","Total excl. WH FCO","Non-Whitehall Civil Service",-0.137973598,"Cumulative_Perc_net_change","2013Q1","Total excl. WH FCO-Non-Whitehall Civil Service",TRUE,-0.137523131,TRUE
+"4554","Total excl. WH FCO","Total",-0.137523131,"Cumulative_Perc_net_change","2013Q1","Total excl. WH FCO-Total",TRUE,-0.137523131,TRUE

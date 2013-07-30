@@ -4,9 +4,9 @@ source('./src/acses_lib.R')
 
 filename <- 'ACSES_Gender_Dept_Ethn_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(filename,location)
-whitehallonly <- TRUE
 
 # Process data ------------------------------------------------------------
+whitehallonly <- FALSE
 uu <- origdata
 
 # FILTER OUT WAGE BAND LINES
@@ -37,14 +37,30 @@ uu <- RelabelGrades(uu)
 uu <- uu[uu$Civil.Service.grad=='SCS' | uu$Civil.Service.grad=='All grades',]
 uu <- uu[uu$Ethnic.grou!='White',]
 
+# Sort departments --------------------------------------------------------
+
+xtot <- ddply(uu[uu$Date==2012 & uu$Civil.Service.grad=='All grades',],.(Group),
+              summarise,sorter=sum(share))
+uu <- merge(uu,xtot,all.x=T)
+#make Whole CS category go last
+#uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
+#reorder grouping variable
+uu$Group <- reorder(uu$Group,-uu$sorter)
+uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
+
 # Build plot --------------------------------------------------------------
 
-grp <- paste(uu$Group,uu$Civil.Service.grad)
+if(whitehallonly) {
+  uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
+}
+HLcol <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[3,1])
+                
+uu$grp <- paste(uu$Group,uu$Civil.Service.grad)
 
 plotname <- 'plot_DeGrMinYr'
 plottitle <- 'Ethnic minority civil servants'
-ylabel = 'Minority staff as % of disclosed in'
-xlabel = 'ordered by % of minority staff'
+ylabel = 'Ethnic minority Civil Servants as % of disclosed in'
+xlabel = 'ordered by % of minority Civil Servants in 2012'
 if(whitehallonly){
   plottitle=paste0(plottitle,' - Whitehall departments')
   ylabel = paste0(ylabel,' Whitehall dept')
@@ -57,34 +73,39 @@ if(whitehallonly){
   plotname = paste0(plotname,'_Group')
 }
 
-pw=15.3
-ph=24.5
-
 uu$yvar <- uu$share
 maxY <- max(uu$yvar,na.rm=TRUE)
 ylimits <- c(0, maxY*1.04)
-ybreaks <- c(0,0.05,.1,.15)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 uu$minpop <- 0.14
 
 plot_DeGrMinYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
+  geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = .01) +
   geom_bar(aes(fill=Civil.Service.grad,group=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
-  geom_line(aes(y=minpop,group=Civil.Service.grad,linetype='UK Population (2011)'),
-            colour='grey',show_guide=T,stat='identity', size=1) +
-  scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1])) +
-  scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1])) +
-  scale_linetype_manual(values=c('UK Population (2011)'='dotted')) +
+  geom_line(aes(y=minpop,group=Civil.Service.grad,linetype='UK Population (Census 2011)'),
+            colour=IfGcols[1,1],show_guide=T,stat='identity', size=1) +
+  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
+  scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
+                      labels=c('All grades','Senior Civil Service')) +
+  scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
+                      labels=c('All grades','Senior Civil Service')) +
+  scale_linetype_manual(values=c('UK Population (Census 2011)'='dashed')) +
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2, override.aes=list(colour=NA)),
          linetype=guide_legend(order=3, keywidth=unit(1,'cm'))) +
-  scale_y_continuous(breaks=ybreaks, limits=ylimits,labels=ylabels,expand=c(0,0)) +
+  scale_y_continuous(limits=ylimits,labels=percent,expand=c(0,0)) +
   labs(x=xlabel,y=ylabel,title=plottitle) +
   facet_wrap(~Group,nrow=3) +
   theme(axis.line=element_blank(),
-        panel.border=element_rect(fill=NA, colour=IfGcols[1,3]),
-        text=element_text(family=fontfamily,size=8))
+        panel.border=element_rect(fill=NA, colour=IfGcols[1,2]),
+        axis.text.x=element_text(angle=90),
+        axis.ticks=element_line(colour=IfGcols[1,2]),axis.ticks.x=element_blank(),
+        panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.major.x=element_blank(),
+        panel.grid.minor=element_blank())
 plot_DeGrMinYr
 
 # Save plot ---------------------------------------------------------------
