@@ -38,9 +38,8 @@ uu <- uu[uu$Disability.statu!='Non-disabled',]
 
 # Build plot --------------------------------------------------------------
 
-plotformat='wmf'
 plotname <- 'plot_DisabGrYr'
-plottitle <- 'Civil Servants identifying as disabled'
+plottitle <- ''
 ylabel <- 'Staff as % of disclosed'
 xlabel <- ''
 pw=15.3/3*2
@@ -68,7 +67,7 @@ plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
   theme(axis.line=element_line(colour=IfGcols[1,1]),
         text=element_text(family=fontfamily,size=10),
         legend.position='bottom',
-        plot.title=element_text(size=12))
+        plot.title=element_blank())
 plot_DisabGrYr
 
 # Save plot ---------------------------------------------------------------

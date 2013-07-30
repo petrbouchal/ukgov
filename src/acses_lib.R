@@ -120,10 +120,10 @@ rm(IfGBasecols)
 
 theme_WHM <-theme_few() +
   theme(text = element_text(family=fontfamily,size=10),
-        axis.text = element_text(colour='grey30',hjust=.5,vjust=.5),
+        axis.text = element_text(colour=IfGcols[1,1],hjust=.5,vjust=.5),
         axis.text.x = element_text(angle = 0),
         #axis.text.y= element_text(vjust=0,hjust=1),
-        axis.title=element_text(colour='grey30'),
+        axis.title=element_text(colour=IfGcols[1,1]),
         axis.ticks=element_blank(),
         axis.title=element_text(),
         axis.line=element_blank(),

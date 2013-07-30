@@ -89,10 +89,9 @@ plot_AgeYr <- ggplot(data=uu) +
         legend.direction='horizontal',
         legend.box='horizontal',
         legend.position='bottom',
-        legend.title=element_text(face='bold',vjust=.5),
-        legend.key.width=unit(1,'cm'))
+        legend.key.width=unit(.5,'cm'),
+        legend.title=element_text(face='bold',vjust=.5))
 plot_AgeYr
-thisplot <- plot_AgeYr
 
 # Save plot ---------------------------------------------------------------
 
