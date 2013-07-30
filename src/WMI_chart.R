@@ -39,7 +39,8 @@ ylimits <- c(min(uu$yvar,na.rm=TRUE),max(uu$yvar,na.rm=TRUE))
 wmiplot <- ggplot(uu,aes(x=Month,y=yvar)) +
   geom_hline(y=0, colour=IfGcols[1,2]) +
   geom_line(aes(colour=variable,group=grp),size=1) +
-  scale_x_datetime(labels=date_format('%Y-%m')) +
+  scale_x_datetime(labels=date_format('%Y-%m'),breaks=date_breaks(width = "3 months"),
+                   expand=c(.18, .18)) +
   scale_colour_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
                       labels=c('FTE (Payroll)','Pay bill (Payroll)')) +
   scale_y_continuous(labels=percent,limits=ylimits) +

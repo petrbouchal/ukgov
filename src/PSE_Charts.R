@@ -44,7 +44,8 @@ plotPSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
                      labels=c('Departmental group','Whitehall','Non-Whitehall')) +
   scale_y_continuous(labels=percent) +
   scale_x_discrete(labels=labelsx) +
-  labs(y='% change since Spending Review 2010', x = '') +
+  labs(y='% change since Spending Review 2010',
+       x = 'Departmental groups ordered by reduction made to 2013 Q1') +
   guides(colour = guide_legend(ncol = 3,keywidth=unit(1,'cm'))) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),plot.title=element_blank(),
         axis.line.x=element_line(size=unit(1,'mm'),colour=IfGcols[1,2]),
