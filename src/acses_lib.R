@@ -1,7 +1,7 @@
 # Set location ------------------------------------------------------------
 
-#location='home'
-location='ifg'
+location='home'
+#location='ifg'
 
 # Load libraries ----------------------------------------------------------
 
@@ -20,7 +20,7 @@ library(reshape2)
 ph=14-2.5
 pw=21
 
-plotformat <- 'wmf'
+plotformat <- 'eps'
 
 fontfamily='Calibri'
 #font_import()
@@ -139,8 +139,9 @@ theme_WHM <-theme_few() +
         panel.margin=unit(c(1,1,1,1),'mm'),
         panel.border=element_blank(),
         panel.background=element_blank(),
-        plot.background=element_blank(),
+        plot.background=element_rect(fill=NA,colour=NA),
         plot.margin=unit(c(.25,.25,0,0),'cm'),
+        strip.background=element_rect(fill=NA,colour=NA),
         plot.title=element_blank())
 
 theme_set(theme_WHM)

@@ -39,13 +39,10 @@ uu <- uu[uu$Disability.statu!='Non-disabled',]
 # Build plot --------------------------------------------------------------
 
 plotname <- 'plot_DisabGrYr'
-<<<<<<< HEAD
 plottitle <- ''
 ylabel <- 'Staff as % of disclosed'
-=======
 plottitle <- 'Civil Servants identifying as disabled'
 ylabel <- 'Disabled as % of disclosed'
->>>>>>> 4c6239cbd47c3262c158c8bbc895366401a76936
 xlabel <- ''
 pw=15.3/3*2
 ph=24.5/3
@@ -68,13 +65,6 @@ plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
                              override.aes=list(size=1))) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
   scale_x_discrete(labels=yearlabels) +
-<<<<<<< HEAD
-  labs(title=plottitle,y=ylabel,x=xlabel) +
-  theme(axis.line=element_line(colour=IfGcols[1,1]),
-        text=element_text(family=fontfamily,size=10),
-        legend.position='bottom',
-        plot.title=element_blank())
-=======
   labs(y=ylabel,x=xlabel) +
   theme(axis.line=element_line(colour=IfGcols[1,2]),
         text=element_text(family=fontfamily,size=10),plot.title=element_blank(),
@@ -82,7 +72,6 @@ plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
         panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
         panel.grid.major.x=element_blank(),axis.ticks=element_line(colour=IfGcols[1,2]),
         axis.ticks.x=element_blank())
->>>>>>> 4c6239cbd47c3262c158c8bbc895366401a76936
 plot_DisabGrYr
 
 # Save plot ---------------------------------------------------------------

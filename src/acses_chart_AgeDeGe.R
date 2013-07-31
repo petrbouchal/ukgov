@@ -63,7 +63,7 @@ uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
 if(whitehallonly) {
   uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
 }
-HLcol <- ifelse(whitehallonly,IfGcols[4,1],IfGcols[3,1])
+HLcol <- ifelse(whitehallonly,IfGcols[4,3],IfGcols[3,3])
 
 plotname <- 'plot_AgeDeGe'
 
@@ -89,13 +89,11 @@ ybreaks <- c(-.3,-.15,0,.15,.3)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_AgeDeGe <- ggplot(uu, aes(x=Age.band, y=yvar)) +
-  geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = .01) +
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Age.band=='< 29' & uu$Gender=='Female',],
+            fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = 1) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
   scale_fill_manual(values=c('Female'=IfGcols[2,1],'Male'=IfGcols[5,1]),
                     labels=c('Female   ', 'Male')) +
-  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
   guides(col=guide_legend(ncol=3)) +
   scale_y_continuous(labels=ylabels,breaks=ybreaks,limits=ylimits) +
   facet_wrap(~Group, nrow=3) +

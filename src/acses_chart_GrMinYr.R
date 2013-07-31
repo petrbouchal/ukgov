@@ -38,10 +38,9 @@ uu <- uu[uu$Ethnic.grou!='White',]
 
 # Build plot --------------------------------------------------------------
 
-plotformat='wmf'
 plotname <- 'plot_GrMinYr'
 plottitle <- 'Civil Servants identifying as ethnic minority'
-ylabel <- 'Minority as % of disclosed'
+ylabel <- 'Ethnic minority as % of disclosed'
 xlabel <- ''
 pw=15.3/3*2
 ph=24.5/3

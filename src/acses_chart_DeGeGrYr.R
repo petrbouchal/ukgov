@@ -50,7 +50,7 @@ uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
 if(whitehallonly) {
   uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
 }
-HLcol <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[3,1])
+HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[3,3])
 
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
@@ -75,13 +75,11 @@ ylimits <- c(0, maxY*1.04)
 ybreaks <- c(0,0.25,0.5,0.75)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
-plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=var,group=grp)) +
-  geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = .01,fill=NA,size=2)+
-  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2)+
+plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+            fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = 1) +
   geom_line(size=1, aes(colour=Civil.Service.grad),stat='identity') +
-  geom_point(aes(colour=Civil.Service.grad),pch=19,show_guide=FALSE) +
+  geom_point(aes(colour=Civil.Service.grad),pch=16,show_guide=TRUE) +
   scale_colour_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
                       labels=c('All grades','Senior Civil Service')) +
   scale_fill_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
@@ -94,7 +92,8 @@ plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=var,group=grp)) +
         axis.text.x=element_text(angle=90,vjust=0.5),
         axis.ticks=element_line(colour=IfGcols[1,2]),
         panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
-        panel.grid.major.x=element_blank())
+        panel.grid.major.x=element_blank(),
+        legend.key.width=unit(0.5,'cm'))
 plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------

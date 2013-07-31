@@ -38,8 +38,6 @@ uu <- RelabelGrades(uu)
 uu <- uu[uu$Civil.Service.grad=='SCS' | uu$Civil.Service.grad=='All grades',]
 uu <- uu[uu$Disability.statu!='Non-disabled',]
 
-
-
 # Sort departments --------------------------------------------------------
 
 xtot <- ddply(uu[uu$Date==2012 & uu$Civil.Service.grad=='All grades',],.(Group),
@@ -56,7 +54,7 @@ uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
 if(whitehallonly) {
   uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
 }
-HLcol <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[3,1])
+HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[3,3])
 uu$grp <- paste0(uu$Group,uu$Civil.Service.grad)
 
 plotname <- paste0('plot_DeDisabGrYr',
@@ -77,12 +75,10 @@ ybreaks <- c(0,.03,.06,.09)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DeDisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
-  geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = .01) +
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+            fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = 1) +
   geom_bar(aes(fill=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
-  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
   scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
                     labels=c('All grades','Senior Civil Service')) +
   scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
