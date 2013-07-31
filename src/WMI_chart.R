@@ -16,7 +16,7 @@ wmibase <- data.frame('Dept'=uu$Dept[uu$Month==min(uu$Month)],
                       'base'=uu$value[uu$Month==min(uu$Month)],
                       'variable'=uu$variable[uu$Month==min(uu$Month)])
 uu <- merge(uu,wmibase)
-uu$valuepc <- uu$value/uu$base-1
+uu$valuepc <- (uu$value-uu$base)/uu$base
 
 
 # Filter
@@ -29,7 +29,7 @@ uu <- uu[uu$Dept!='AG Depts',]
 uu$yvar <- uu$valuepc
 plottitle <- ''
 plotname <- 'WMI_depts'
-ylabel <- 'Pay bill (£000\'s)/Staff count (FTE)'
+ylabel <- 'Change from March 2012 (%)'
 xlabel <- NULL
 
 ylimits <- c(min(uu$yvar,na.rm=TRUE),max(uu$yvar,na.rm=TRUE))
@@ -38,13 +38,13 @@ ylimits <- c(min(uu$yvar,na.rm=TRUE),max(uu$yvar,na.rm=TRUE))
 
 wmiplot <- ggplot(uu,aes(x=Month,y=yvar)) +
   geom_hline(y=0, colour=IfGcols[1,2]) +
-  geom_line(aes(colour=variable,group=grp),size=1) +
-  scale_x_datetime(labels=date_format('%Y-%m'),breaks=date_breaks(width = "3 months"),
-                   expand=c(.18, .18)) +
+  geom_line(aes(colour=variable,group=grp),size=.6) +
+  #scale_x_datetime(labels=date_format('%Y-%m'),breaks=date_breaks(width = "3 months"))+
+  scale_x_datetime(labels=c('Apr\n2012','Jul\n2012','Oct\n2012','Jan\n2013'))+
   scale_colour_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
                       labels=c('FTE (Payroll)','Pay bill (Payroll)')) +
   scale_y_continuous(labels=percent,limits=ylimits) +
-  facet_wrap(~Dept,ncol=4) +
+  facet_wrap(~Dept,nrow=3,scales='free_y') +
   guides(colour=guide_legend(keywidth=unit(1,'cm'))) +
   labs(x=xlabel,y=ylabel) +
   theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,2]),

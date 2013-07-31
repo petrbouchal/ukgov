@@ -44,7 +44,7 @@ plotPSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
                      labels=c('Departmental group','Whitehall','Non-Whitehall')) +
   scale_y_continuous(labels=percent) +
   scale_x_discrete(labels=labelsx) +
-  labs(y='% change since Spending Review 2010',
+  labs(y='% change since Spending Review 2010 (2010 Q3)',
        x = 'Departmental groups ordered by reduction made to 2013 Q1') +
   guides(colour = guide_legend(ncol = 3,keywidth=unit(1,'cm'))) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),plot.title=element_blank(),
@@ -60,79 +60,3 @@ plotPSE
 
 SavePlot(plotname='PSE change',plotformat=plotformat,ffamily=fontfamily,
          ploth=ph,plotw=pw)
-
-# GoogleVis aka Gapminder chart -------------------------------------------
-
-# Manual for google charts:
-# 
-# http://code.google.com/p/google-motion-charts-with-r/wiki/SettingOptions
-# http://code.google.com/p/google-motion-charts-with-r/
-# https://developers.google.com/chart/interactive/docs/
-
-# reshape to wide(r) for googlevis
-PSE2 <- PSE
-PSE2$group <- NULL
-PSE2 <- data.frame(cast(PSE, ... ~ measure + Whitehall))
-
-# dates for googlevis - seems not to be needed
-# PSE2$Period <- gsub("Q1","-03-31",PSE2$Period)
-# PSE2$Period <- gsub("Q2","-06-30",PSE2$Period)
-# PSE2$Period <- gsub("Q3","-09-30",PSE2$Period)
-# PSE2$Period <- gsub("Q4","-12-31",PSE2$Period)
-# 
-# PSE2$Period <- as.Date(PSE2$Period, tz = "GMT", format='%Y-%m-%d')
-
-# Google Plot
-# TODO: rename variables
-# TODO: get percent scales
-# TODO: subset data for different charts (excl. totals, excl. abs OR relative vars)
-#       and develop separate charts
-# TODO: get the quarterly scale working
-# TODO: get default variable choices working
-suppressPackageStartupMessages(library(googleVis))
-Motion=gvisMotionChart(PSE2, idvar="Dept", timevar="Period",
-                       options=list(
-                         height=600, 
-                         width=1000, 
-                         state="{\"playDuration\":15000,
-                         \"xZoomedDataMin\":0,
-                         \"xZoomedIn\":false,
-                         \"time\":\"2010-09-30\",
-                         \"yZoomedIn\":false,
-                         \"orderedByY\":false,
-                         \"sizeOption\":\"4\",
-                         \"xLambda\":1,
-                         \"colorOption\":\"2\",
-                         \"yZoomedDataMax\":130000,
-                         \"nonSelectedAlpha\":0.1,
-                         \"iconType\":\"BUBBLE\",
-                         \"dimensions\":{\"iconDimensions\":[\"dim0\"]},
-                         \"uniColorForNonSelected\":true,
-                         \"yZoomedDataMin\":0,
-                         \"xZoomedDataMax\":21,
-                         \"duration\":{\"multiplier\":1,\"timeUnit\":\"Y\"},
-                         \"xAxisOption\":\"10\",
-                         \"orderedByX\":false,
-                         \"showTrails\":true,
-                         \"yLambda\":1,
-                         \"yAxisOption\":\"11\",
-                         \"iconKeySettings\":[]};",
-                         showSelectListComponent = 1,
-                         showHeader=1,
-                         showAdvancedPanel=1,
-                         showChartButtons=1,
-                         showXScalePicker=1,
-                         showYScalePicker=1,
-                         showXMetricPicker=1,
-                         showYMetricPicker=1,
-                         showSidePanel=1,
-                         vAxis = "{\"format\" : \"#%\"}"
-                       ))
-
-plot(Motion)
-#print(Motion, "chart")
-
-# reorder levels - keeping code for record
-# DeptsFTEwithtotals$Dept <- reorder(DeptsFTEwithtotals$Dept,
-#                                   -DeptsFTEwithtotals$sFTE2012Q2) 
-

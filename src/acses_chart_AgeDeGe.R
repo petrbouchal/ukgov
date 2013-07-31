@@ -6,7 +6,9 @@ filename <- 'ACSES_Gender_Dept_Age_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
 
 # Process data ------------------------------------------------------------
-whitehallonly=TRUE
+if(!batchproduce) {
+  whitehallonly <- TRUE
+}
 uu <- origdata
 
 # LOAD DATA WITH GROUPINGS AND FILTER - MADE IN EXCEL
@@ -67,7 +69,6 @@ HLcol <- ifelse(whitehallonly,IfGcols[4,3],IfGcols[3,3])
 
 plotname <- 'plot_AgeDeGe'
 
-plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and age'
 xlabel = 'Age group (years)'
 ylabel = 'ordered by age composition of staff (youngest workforce first)'

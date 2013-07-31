@@ -6,7 +6,9 @@ filename <- 'ACSES_Gender_Dept_Ethn_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(filename,location)
 
 # Process data ------------------------------------------------------------
-whitehallonly <- FALSE
+if(!batchproduce) {
+  whitehallonly <- FALSE
+}
 uu <- origdata
 
 # FILTER OUT WAGE BAND LINES
