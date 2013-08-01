@@ -13,3 +13,5 @@ for(i in WHswitch) {
 }
 source('./src/WMI_chart.R')
 source('./src/PSE_Charts.R')
+
+batchproduce <- FALSE

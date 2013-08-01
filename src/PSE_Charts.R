@@ -26,14 +26,14 @@ PSE$Whitehall <- factor(PSE$Whitehall,levels(PSE$Whitehall)[c(3,1,2)])
 
 labelsx <- c('2010Q3','Q4','2011Q1','Q2','Q3','Q4','2012Q1','Q2','Q3','Q4','2013Q4')
 PSE$totalgroup <- ifelse(PSE$Dept=='Total excl. WH FCO',TRUE,FALSE)
-HLcol <- IfGcols[4,1]
+HLcol <- IfGcols[3,1]
 
-plotPSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
+plot_PSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
                                  PSE$chart,],
                   aes(x=Period,y=value, group=group, colour=Whitehall)) + 
   geom_rect(data = PSE[PSE$totalgroup & PSE$measure=='Cumulative_Perc_net_change' &
                          PSE$chart,],fill=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = .01, show_guide=FALSE) +
+            ymin = -Inf,ymax = Inf,alpha = 1, show_guide=FALSE) +
   geom_hline(yintercept=0,colour=IfGcols[1,1]) +
   geom_line(size=1) +
   geom_rect(data = PSE[PSE$totalgroup & PSE$measure=='Cumulative_Perc_net_change' &
@@ -55,8 +55,8 @@ plotPSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
         panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
         panel.grid.major.x=element_blank(),
         axis.text.x=element_text(size=8))
-plotPSE
+plot_PSE
 # Save ggplot -------------------------------------------------------------
 
-SavePlot(plotname='PSE change',plotformat=plotformat,ffamily=fontfamily,
+SavePlot(plotname='plot_PSE',plotformat=plotformat,ffamily=fontfamily,
          ploth=ph,plotw=pw)

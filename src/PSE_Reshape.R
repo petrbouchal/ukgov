@@ -41,7 +41,4 @@ change$variable <- NULL
 # create variable to group points into chart lines
 change$group=paste(change$Dept,change$Whitehall,sep='-')
 
-# relabel dept names
-change$Dept <- revalue(change$Dept, c('MoJ' = 'MOJ','MoD'='MOD'))
-
 write.csv(change,'./data-output/PSE_change_long.csv', row.names=FALSE)

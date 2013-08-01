@@ -50,15 +50,15 @@ Queen Elizabeth II Conference Centre,NWH,DCLG,Yes
 "Culture Media and Sport, Department for (incl agencies)",Whole,DCMS,No
 "Department for Culture, Media & Sport, Department for (excl agencies)",WH,DCMS,Yes
 Royal Parks Agency,NWH,DCMS,Yes
-Defence (incl agencies),Whole,MOD,No
-Army Base Repair Organisation (MOD) (until 2008),NWH,MOD,Yes
-DARA (MOD) : until 2008,NWH,MOD,Yes
-Defence Science and Technology Laboratory (MOD),NWH,MOD,Yes
-Defence Support Group (from 2009),NWH,MOD,Yes
-Meteorological Office (MOD) (until 2011),NWH,MOD,Yes
-Ministry of Defence (excl agencies),WH,MOD,Yes
-Royal Fleet Auxilliary,NWH,MOD,Yes
-UK Hydrographic Office (MOD),NWH,MOD,Yes
+Defence (incl agencies),Whole,MoD,No
+Army Base Repair Organisation (MOD) (until 2008),NWH,MoD,Yes
+DARA (MOD) : until 2008,NWH,MoD,Yes
+Defence Science and Technology Laboratory (MOD),NWH,MoD,Yes
+Defence Support Group (from 2009),NWH,MoD,Yes
+Meteorological Office (MOD) (until 2011),NWH,MoD,Yes
+Ministry of Defence (excl agencies),WH,MoD,Yes
+Royal Fleet Auxilliary,NWH,MoD,Yes
+UK Hydrographic Office (MOD),NWH,MoD,Yes
 "Education, Department for",WH,DfE,Yes
 "Energy & Climate Change, Department for (from 2009)",Whole,DECC,No
 "Energy and Climate Change, Department for (from 2009)",WH,DECC,Yes
@@ -107,19 +107,19 @@ Office for Security and Counter-Terrorism (until 2008),NWH,HO,Yes
 National Weights and Measures Laboratory (until 2009),NWH,BIS,Yes
 UK Intellectual Property Office (until 2009),NWH,BIS,Yes
 "International Development, Department for",WH,DfID,Yes
-"Justice, Ministry of (incl agencies)",Whole,MOJ,No
-HM Courts and Tribunals Service (from 2012),NWH,MOJ,Yes
-HM Courts Service (until 2011),NWH,MOJ,Yes
-Land Registry(until 2011),NWH,MOJ,Yes
-"Justice, Ministry of (excl agencies)",WH,MOJ,Yes
-National Archives,NWH,MOJ,Yes
-National Offender Management Service (from 2009),NWH,MOJ,Yes
-Office of the Public Guardian,NWH,MOJ,Yes
-Public Sector Prison Service (until 2008),NWH,MOJ,Yes
-Scotland Office,NWH,MOJ,Yes
-Tribunals Service (until 2011),NWH,MOJ,Yes
-UK Supreme Court (from 2010),NWH,MOJ,Yes
-Wales Office,NWH,MOJ,Yes
+"Justice, Ministry of (incl agencies)",Whole,MoJ,No
+HM Courts and Tribunals Service (from 2012),NWH,MoJ,Yes
+HM Courts Service (until 2011),NWH,MoJ,Yes
+Land Registry(until 2011),NWH,MoJ,Yes
+"Justice, Ministry of (excl agencies)",WH,MoJ,Yes
+National Archives,NWH,MoJ,Yes
+National Offender Management Service (from 2009),NWH,MoJ,Yes
+Office of the Public Guardian,NWH,MoJ,Yes
+Public Sector Prison Service (until 2008),NWH,MoJ,Yes
+Scotland Office,NWH,MoJ,Yes
+Tribunals Service (until 2011),NWH,MoJ,Yes
+UK Supreme Court (from 2010),NWH,MoJ,Yes
+Wales Office,NWH,MoJ,Yes
 Northern Ireland Office,WH,NIO,No
 Office for Standards in Education,NWH,DfE,Yes
 Office of Qualifications and Examinations Regulation (from 2011),NWH,DfE,Yes

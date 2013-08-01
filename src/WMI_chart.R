@@ -28,7 +28,7 @@ uu <- uu[uu$Dept!='AG Depts',]
 
 uu$yvar <- uu$valuepc
 plottitle <- ''
-plotname <- 'WMI_depts'
+plotname <- 'plot_WMI'
 ylabel <- 'Change from March 2012 (%)'
 xlabel <- NULL
 
@@ -36,7 +36,7 @@ ylimits <- c(min(uu$yvar,na.rm=TRUE),max(uu$yvar,na.rm=TRUE))
 
 # Build plot --------------------------------------------------------------
 
-wmiplot <- ggplot(uu,aes(x=Month,y=yvar)) +
+plot_WMI <- ggplot(uu,aes(x=Month,y=yvar)) +
   geom_hline(y=0, colour=IfGcols[1,2]) +
   geom_line(aes(colour=variable,group=grp),size=.6) +
   #scale_x_datetime(labels=date_format('%Y-%m'),breaks=date_breaks(width = "3 months"))+
@@ -53,6 +53,6 @@ wmiplot <- ggplot(uu,aes(x=Month,y=yvar)) +
         panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
         panel.grid.major.x=element_blank(),plot.title=element_blank(),
         axis.text.x=element_text(size=8))
-wmiplot
+plot_WMI
 
 SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)

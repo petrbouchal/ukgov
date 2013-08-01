@@ -42,7 +42,7 @@ plotname <- 'plot_GrMinYr'
 plottitle <- 'Civil Servants identifying as ethnic minority'
 ylabel <- 'Ethnic minority as % of disclosed'
 xlabel <- ''
-pw=15.3/3*2
+pw=10
 ph=24.5/3
 
 uu$yvar <- uu$share
@@ -57,12 +57,12 @@ uu$minpop <- 0.14
 plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
   geom_bar(aes(fill=Civil.Service.grad,group=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
-  geom_line(aes(y=minpop,group=Civil.Service.grad,linetype='UK Population (Census 2011)'),
+  geom_line(aes(y=minpop,group=Civil.Service.grad,linetype='UK population (Census 2011)'),
             colour=IfGcols[1,1],show_guide=T,
             stat='identity', size=1) +
   scale_fill_manual(values=c('All grades'=IfGcols[5,1],'SCS'=IfGcols[4,1]),
                     labels=c('All grades','Senior Civil Service')) +
-  scale_linetype_manual(values=c('UK Population (Census 2011)'='dashed')) +
+  scale_linetype_manual(values=c('UK population (Census 2011)'='dashed')) +
   scale_x_discrete(labels=yearlabels)+
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2, override.aes=list(colour=NA)),

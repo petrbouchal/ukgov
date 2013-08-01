@@ -19,7 +19,7 @@ library(reshape2)
 if(!batchproduce) {
   ph=14-2.5
   pw=21
-  plotformat <- 'wmf'
+  plotformat <- 'jpeg'
 }
 
 
