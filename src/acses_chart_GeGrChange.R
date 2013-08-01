@@ -1,7 +1,6 @@
 source('./src/acses_lib.R')
 
 uu <- read.csv('./data-input/GenderGrade.csv')
-uu$Variable <- factor(uu$Variable,levels(uu$Variable)[c(2,1)])
 uu$Grade <- factor(uu$Grade,levels(uu$Grade)[c(5,4,6,3,1,2)])
 uu$grp <- as.factor(paste0(uu$Gender,' ',uu$Variable))
 
