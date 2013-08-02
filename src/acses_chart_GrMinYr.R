@@ -53,13 +53,12 @@ ylabels <- paste0(abs(ybreaks*100),'%')
 
 uu$minpop <- 0.14
 
-
 plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
+  geom_segment(data=uu[uu$Civil.Service.grad=='SCS' & uu$Date=='2012',],
+               aes(x=-Inf,xend=Inf, y=minpop, yend=minpop,linetype='UK population (Census 2011)'),
+               colour=IfGcols[1,1],show_guide=T,stat='identity', size=.5) +
   geom_bar(aes(fill=Civil.Service.grad,group=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
-  geom_line(aes(y=minpop,group=Civil.Service.grad,linetype='UK population (Census 2011)'),
-            colour=IfGcols[1,1],show_guide=T,
-            stat='identity', size=1) +
   scale_fill_manual(values=c('All grades'=IfGcols[5,1],'SCS'=IfGcols[4,1]),
                     labels=c('All grades','Senior Civil Service')) +
   scale_linetype_manual(values=c('UK population (Census 2011)'='dashed')) +

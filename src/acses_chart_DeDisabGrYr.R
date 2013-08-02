@@ -1,4 +1,7 @@
 source('./src/acses_lib.R')
+if(!batchproduce) {
+  whitehallonly <- FALSE
+} 
 
 # Load data ---------------------------------------------------------------
 
@@ -6,9 +9,6 @@ filename <- 'ACSES_Gender_Dept_Disab_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
 
 # Process data ------------------------------------------------------------
-if(!batchproduce) {
-  whitehallonly <- FALSE
-} 
 uu <- origdata
 
 # FILTER OUT WAGE BAND LINES
@@ -31,6 +31,17 @@ totals <- ddply(uu, .(Date, Civil.Service.grad,Group), summarise,
 
 # MERGE TOTALS INTO MAIN FILE
 uu <- merge(uu, totals)
+
+# CREATE WHITEHALL TOTAL IF NEEDED
+if(whitehallonly) {
+  uu <- uu[uu$Group!='Whole Civil Service',]
+  whtotal <- ddply(uu,.(Date,Civil.Service.grad,Disability.statu),summarise,
+                   count=sum(count),total=sum(total))
+  whtotal$Group <- 'Whitehall'
+  uu <- rbind(uu,whtotal)
+}
+
+# calculate share
 uu$share <- uu$count/uu$total
 
 # ADJUST FACTOR LABELS
@@ -45,18 +56,18 @@ uu <- uu[uu$Disability.statu!='Non-disabled',]
 xtot <- ddply(uu[uu$Date==2012 & uu$Civil.Service.grad=='All grades',],.(Group),
               summarise,sorter=sum(share))
 uu <- merge(uu,xtot,all.x=T)
-#make Whole CS category go last
-#uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
 #reorder grouping variable
 uu$Group <- reorder(uu$Group,-uu$sorter)
-uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
+
+# Mark totals category
+uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service' | uu$Group=='Whitehall',
+                        TRUE,FALSE)
 
 # Build plot --------------------------------------------------------------
 
-if(whitehallonly) {
-  uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
-}
-HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[3,3])
+
+HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[4,3])
+HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[4,1])
 uu$grp <- paste0(uu$Group,uu$Civil.Service.grad)
 
 plotname <- paste0('plot_DeDisabGrYr',
@@ -81,6 +92,8 @@ plot_DeDisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
             fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = 1) +
   geom_bar(aes(fill=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+            colour=HLmarg,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,size = 1,fill=NA) +
   scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
                     labels=c('All grades','Senior Civil Service')) +
   scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),

@@ -92,7 +92,7 @@ plot_AgeYr <- ggplot(data=uu) +
         legend.key.width=unit(.3,'cm'),
         legend.title=element_text(face='bold',vjust=.5),
         legend.key.width=unit(.5,'cm'),axis.ticks=element_line(colour=IfGcols[1,2]),
-        axis.ticks.y=element_blank())
+        axis.ticks.y=element_blank(),panel.grid=element_blank())
 plot_AgeYr
 
 # Save plot ---------------------------------------------------------------

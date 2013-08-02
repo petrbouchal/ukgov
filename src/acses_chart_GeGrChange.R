@@ -24,7 +24,7 @@ plot_GeGrChange <- ggplot(uu,aes(y=value,x=Variable)) +
   scale_colour_manual(values=c(IfGcols[1,1],'white'),guide=FALSE)+
   scale_fill_manual(values=c(IfGcols[2,1],IfGcols[2,2],IfGcols[5,1],IfGcols[5,2]))+
   theme(plot.margin=unit(c(0.5,1,0,0),'cm'),
-        panel.margin=unit(c(0,0,0,0),'cm'))+
+        panel.margin=unit(c(0,0,0,0),'cm'),axis.ticks=element_blank())+
   labs(y=ylabel,x=xlabel,title=plottitle)
 plot_GeGrChange
 

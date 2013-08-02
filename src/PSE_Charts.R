@@ -1,45 +1,48 @@
 # Setup -------------------------------------------------------------------
 source('./src/acses_lib.R')
 source('./src/PSE_Reshape.R') # to prepare data if needed
-PSE <- change
+uu <- change
 
 # Plain chart in ggplot2 --------------------------------------------------
 
-PSE$chart <- TRUE
-PSE$chart[PSE$Dept == 'Total']  <- FALSE
-PSE$chart[PSE$Dept == 'AGO']  <- FALSE
-PSE$chart[PSE$Dept == 'NIO']  <- FALSE
-PSE$chart[PSE$Dept == 'GEO']  <- FALSE
-PSE$chart[PSE$Dept == 'Welsh Gov']  <- FALSE
-PSE$chart[PSE$Dept == 'Scot Gov']  <- FALSE
-PSE$chart[PSE$Dept == 'FCO' & PSE$Whitehall!='Total']  <- FALSE
+uu$chart <- TRUE
+uu$chart[uu$Dept == 'Total']  <- FALSE
+uu$chart[uu$Dept == 'AGO']  <- FALSE
+uu$chart[uu$Dept == 'NIO']  <- FALSE
+uu$chart[uu$Dept == 'GEO']  <- FALSE
+uu$chart[uu$Dept == 'Welsh Gov']  <- FALSE
+uu$chart[uu$Dept == 'Scot Gov']  <- FALSE
+uu$chart[uu$Dept == 'FCO' & uu$Whitehall!='Total']  <- FALSE
 
 # change order of facets
-totals <- PSE[PSE$measure=='Cumulative_Perc_net_change' & PSE$Whitehall=='Total' & PSE$Period=='2013Q1',
+totals <- uu[uu$measure=='Cumulative_Perc_net_change' & uu$Whitehall=='Total' & uu$Period=='2013Q1',
                   c(1,3)]
 totals$sorter <- totals$value
 totals$value <- NULL
-PSE <- merge(PSE, totals,all.x=TRUE)
-#PSE$sorter[PSE$Dept =='Total excl. WH FCO'] <- max(PSE$sorter)*1.1
-PSE$Dept <- reorder(PSE$Dept,PSE$sorter,mean)
-PSE$Whitehall <- factor(PSE$Whitehall,levels(PSE$Whitehall)[c(3,1,2)])
+uu <- merge(uu, totals,all.x=TRUE)
+#uu$sorter[uu$Dept =='Total excl. WH FCO'] <- max(uu$sorter)*1.1
+uu$Dept <- reorder(uu$Dept,uu$sorter,mean)
+uu$Whitehall <- factor(uu$Whitehall,levels(uu$Whitehall)[c(3,1,2)])
 
 labelsx <- c('2010Q3','Q4','2011Q1','Q2','Q3','Q4','2012Q1','Q2','Q3','Q4','2013Q4')
-PSE$totalgroup <- ifelse(PSE$Dept=='Total excl. WH FCO',TRUE,FALSE)
-HLcol <- IfGcols[3,1]
+uu$totalgroup <- ifelse(uu$Dept=='Total excl. WH FCO',TRUE,FALSE)
+HLcol <- IfGcols[4,3]
+HLmarg <- IfGcols[4,1]
 
-plot_PSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
-                                 PSE$chart,],
-                  aes(x=Period,y=value, group=group, colour=Whitehall)) + 
-  geom_rect(data = PSE[PSE$totalgroup & PSE$measure=='Cumulative_Perc_net_change' &
-                         PSE$chart,],fill=HLcol,xmin = -Inf,xmax = Inf,
+# Build chart -------------------------------------------------------------
+
+plotname <- 'plot_PSE'
+
+uu <- uu[uu$measure=='Cumulative_Perc_net_change' & uu$chart,]
+uu2 <- uu[uu$totalgroup & uu$measure=='Cumulative_Perc_net_change' & uu$chart,]
+plot_PSE <- ggplot(data=uu,aes(x=Period,y=value, group=group, colour=Whitehall)) + 
+  geom_rect(data=uu2,fill=HLcol,xmin = -Inf,xmax = Inf,
             ymin = -Inf,ymax = Inf,alpha = 1, show_guide=FALSE) +
   geom_hline(yintercept=0,colour=IfGcols[1,1]) +
   geom_line(size=1) +
-  geom_rect(data = PSE[PSE$totalgroup & PSE$measure=='Cumulative_Perc_net_change' &
-                         PSE$chart,],colour=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2, show_guide=FALSE) +
-  facet_wrap(~Dept, scales='fixed',nrow=3) +
+  geom_rect(data = uu2,colour=HLmarg,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=1, show_guide=FALSE) +
+  facet_wrap(~Dept,nrow=3) +
   scale_color_manual(values=c(IfGcols[3,1], IfGcols[2,1], IfGcols[5,1]),
                      labels=c('Departmental group','Whitehall','Non-Whitehall')) +
   scale_y_continuous(labels=percent) +
@@ -58,5 +61,4 @@ plot_PSE <- ggplot(data=PSE[PSE$measure=='Cumulative_Perc_net_change' &
 plot_PSE
 # Save ggplot -------------------------------------------------------------
 
-SavePlot(plotname='plot_PSE',plotformat=plotformat,ffamily=fontfamily,
-         ploth=ph,plotw=pw)
+SavePlot(plotname=plotname,plotformat=plotformat,ffamily=fontfamily,ploth=ph,plotw=pw)

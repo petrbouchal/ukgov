@@ -1,10 +1,15 @@
 # Set location ------------------------------------------------------------
+if(Sys.info()[['sysname']]=='Darwin') {
+  location='home'  
+} else {
+  location='ifg'
+}
 
-#location='home'
-location='ifg'
+# set parameters
+if(!exists('batchproduce')) {batchproduce <- FALSE}
+if(!batchproduce) {whitehallonly <- TRUE} # change here to produce WH or group charts
 
 # Load libraries ----------------------------------------------------------
-
 library(plyr)
 library(ggplot2)
 library(scales)
@@ -16,12 +21,11 @@ library(reshape)
 library(reshape2)
 
 # Set parameters for saved chart ------------------------------------------
-if(!batchproduce) {
+if(!batchproduce) { # don't override size & format variables if producing by batch
   ph=14-2.5
   pw=21
-  plotformat <- 'jpeg'
+  plotformat <- 'pdf'
 }
-
 
 fontfamily='Calibri'
 #font_import()
@@ -115,17 +119,17 @@ IfGBasecols <- c('#37424a','#00ccff','#d40072','#83389b',
 IfGcols <- tintshade(IfGBasecols,tints=c(.5,.25),hexin=T,)
 dimnames(IfGcols) <- NULL
 rm(IfGBasecols)
-# can accsess by calling IfGcols[colour#, tint#] e.g. IfGcols[2,1] for full blue
+# can access by calling IfGcols[colour#, tint#] e.g. IfGcols[2,1] for full blue
 
 # Custom WHM theme --------------------------------------------------------
 
-theme_WHM <-theme_few() +
+theme_WHM <- theme_few()+
   theme(text = element_text(family=fontfamily,size=10),
         axis.text = element_text(colour=IfGcols[1,1],hjust=.5,vjust=.5),
         axis.text.x = element_text(angle = 0),
         #axis.text.y= element_text(vjust=0,hjust=1),
         axis.title=element_text(colour=IfGcols[1,1]),
-        axis.ticks=element_blank(),
+        axis.ticks=element_line(colour=IfGcols[1,2]),
         axis.title=element_text(),
         axis.line=element_blank(),
         legend.title=element_blank(),
@@ -143,7 +147,11 @@ theme_WHM <-theme_few() +
         plot.background=element_rect(fill=NA,colour=NA),
         plot.margin=unit(c(.25,.25,0,0),'cm'),
         strip.background=element_rect(fill=NA,colour=NA),
-        plot.title=element_blank())
+        plot.title=element_blank(),
+        panel.grid=element_line(colour=IfGcols[1,3]),
+        panel.grid.minor=element_blank(),
+        panel.grid.major.x=element_blank(),
+        axis.ticks.length=unit(.12,'cm'))
 
 theme_set(theme_WHM)
 
