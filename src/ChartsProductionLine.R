@@ -1,7 +1,7 @@
 batchproduce <- TRUE
 
 plotformat <- 'pdf'
-ph <- 16
+ph <- 15.5
 pw <- 24
 WHswitch <- c(TRUE,FALSE)
 for(i in WHswitch) {
@@ -15,9 +15,9 @@ for(i in WHswitch) {
 source('./src/WMI_chart.R')
 source('./src/PSE_Charts.R')
 
-source('./src/acses_chart_AgeYr.R')
-source('./src/acses_chart_GeGrChange.R')
-source('./src/acses_chart_DisabGrYr.R')
-source('./src/acses_chart_GrMinYr.R')
+#source('./src/acses_chart_AgeYr.R')
+#source('./src/acses_chart_GeGrChange.R')
+#source('./src/acses_chart_DisabGrYr.R')
+#source('./src/acses_chart_GrMinYr.R')
 
 batchproduce <- FALSE

@@ -62,7 +62,7 @@ shdl <- data.frame('shlab'=sharedifflabels,'cat'=unique(uu$Age.band),
 
 maxY <- max(abs(uu$yvar),na.rm=TRUE)
 ylimits <- c(-.2, .2)
-ybreaks <- c(-.2,-.1,0,.1,.2)
+ybreaks <- c(-.2,-.15,-.1,-.05,0,.05,.1,.15,.2)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 uu$grp <- paste0(uu$Gender,' ',uu$Date)
