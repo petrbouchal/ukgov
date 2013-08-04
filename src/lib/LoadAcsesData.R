@@ -1,0 +1,21 @@
+# Fn: load and clean ACSES data -------------------------------------------------
+
+LoadAcsesData <- function (file_name, location='home') {
+  if(location=='home') {
+    directory  <- '/Users/petrbouchal/Downloads/ACSES/'
+  } else if(location=='ifg') {
+    directory  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
+  } else {
+    directory <- location
+  }
+  fullpath <- paste0(directory, file_name)
+  dataset <- read.delim(fullpath, sep='\t')
+  dataset$value[dataset$value=='#'] <- NA
+  dataset$value[dataset$value=='..'] <- NA
+  dataset$Organisation <- dataset$new1
+  dataset$new1 <- NULL
+  dataset$count <- as.numeric(as.character(dataset$value))
+  dataset <- unique(dataset) # removes duplicate lines for DfE and GEO
+  dataset$value <- NULL
+  return(dataset)
+}
