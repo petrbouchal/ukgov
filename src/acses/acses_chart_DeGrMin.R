@@ -119,7 +119,6 @@ plot_DeGrMin <- ggplot(ac_ch,aes(Civil.Service.grad, share_2012)) +
         panel.margin=unit(c(.1,.1,.1,.1),'cm'),
         panel.border=element_rect(colour='grey80'),
         plot.margin=unit(c(1,1,1,0),'cm'),
-        strip.text=element_text(face='bold',size=12),
         plot.title=element_text(family=fontfamily,face='bold',size=14,
                                 lineheight=2.5, vjust=2)) +
   facet_wrap(~Group, nrow=3) +

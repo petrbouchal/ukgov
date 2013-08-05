@@ -70,8 +70,8 @@ uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service' | uu$Group=='Whitehall',
 if(whitehallonly) {
   uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
 }
-HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[3,3])
-HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[3,1])
+HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[4,3])
+HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[4,1])
                 
 uu$grp <- paste(uu$Group,uu$Civil.Service.grad)
 

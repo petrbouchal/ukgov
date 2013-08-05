@@ -67,6 +67,7 @@ HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[4,3])
 HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[4,1])
 
 plotname <- 'plot_DeGeGrYr_alt'
+
 plottitle <- 'Civil Servants by gender and grade'
 ylabel = 'Female Civil Servants as % of grade in'
 xlabel = 'ordered by % of female Civil Servants in 2012'

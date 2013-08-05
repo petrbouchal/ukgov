@@ -72,9 +72,6 @@ uu$grp <- paste0(uu$Group,uu$Civil.Service.grad)
 
 plotname <- paste0('plot_DeDisabGrYr',
                    if(whitehallonly) { '_WH' } else {'_Group'})
-plottitle <- paste0('Civil Servants identifying as disabled, by ',
-                    if(whitehallonly){'Whitehall department'
-                                      } else {'departmental group'})
 ylabel <- paste0('Civil Servants as % of disclosed in ',
                 if(whitehallonly){'Whitehall department'
                                   } else {'departmental group'})

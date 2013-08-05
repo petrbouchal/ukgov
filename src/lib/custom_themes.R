@@ -1,5 +1,5 @@
 theme_WHM <- theme_few()+
-  theme(text = element_text(family=fontfamily,size=10),
+  theme(text = element_text(family=fontfamily,size=10,colour=IfGcols[1,1]),
         axis.text = element_text(colour=IfGcols[1,1],hjust=.5,vjust=.5),
         axis.text.x = element_text(angle = 0),
         #axis.text.y= element_text(vjust=0,hjust=1),
@@ -22,6 +22,7 @@ theme_WHM <- theme_few()+
         plot.background=element_rect(fill=NA,colour=NA),
         plot.margin=unit(c(.25,.25,0,0),'cm'),
         strip.background=element_rect(fill=NA,colour=NA),
+        strip.text=element_text(size=10),
         plot.title=element_blank(),
         panel.grid=element_line(colour=IfGcols[1,3]),
         panel.grid.minor=element_blank(),

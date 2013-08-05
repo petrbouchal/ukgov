@@ -4,7 +4,7 @@ basecols <- c('#37424a','#00ccff','#d40072','#83389b','#7a9393','#457e81','#be8b
 
 tints <- c(.75,.5,.25)
 shades=c()
-xtints <- tintshade(basecols,tints=tints,hexin=T,)
+xtints <- TintShade(basecols,tints=tints,hexin=T,)
 data <- data.frame('x'=sort(rep(1:dim(xtints)[1],dim(xtints)[2])),
                    'y'=rep(1:dim(xtints)[2],dim(xtints)[1]))
 data$col <- ''
@@ -30,4 +30,4 @@ palettesheet <- ggplot(data,aes(x,y))+
   theme(panel.border=element_blank(),axis.ticks=element_blank(),axis.title=element_blank())
 palettesheet
 
-ggsave('./')
+ggsave('./palettes-output/IfG_palette.pdf',width=30,height=21,units='cm')

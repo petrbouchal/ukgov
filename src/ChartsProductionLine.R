@@ -11,7 +11,7 @@ for(i in WHswitch) {
   source('./src/acses/acses_chart_AgeDeGe.R')
   source('./src/acses/acses_chart_DeDisabGrYr.R')
   source('./src/acses/acses_chart_DeGeGrYr.R')
-  source('./src/acses/acses_chart_DeGeGrYr_lines.R')
+  #source('./src/acses/acses_chart_DeGeGrYr_lines.R')
   source('./src/acses/acses_chart_DeGrMinYr.R')
 }
 source('./src/wmi/WMI_chart.R')
