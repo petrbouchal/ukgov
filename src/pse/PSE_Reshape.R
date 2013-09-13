@@ -4,7 +4,7 @@ source('./src/lib/lib_acses.R')
 # to minimise need for manual adjustment in Excel 
 
 # load data
-change <- read.csv("./data-input/ChangeDeptsFTE.csv",)
+change <- read.csv("./data-input/ChangeDeptsFTE_2013Q2.csv",comment.char='#')
 names(change)
 
 # clean up names
