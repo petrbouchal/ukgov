@@ -4,7 +4,7 @@ LoadAcsesData <- function (file_name, location='home') {
   if(location=='home') {
     directory  <- '/Users/petrbouchal/Downloads/ACSES/'
   } else if(location=='ifg') {
-    directory  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
+    directory  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/2008-13/'
   } else {
     directory <- location
   }

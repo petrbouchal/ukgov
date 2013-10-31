@@ -28,14 +28,14 @@ uu <- uu[uu$Age.band!='Total',]
 uu <- uu[uu$Age.band!='Unknown age',]
 
 # Select years and flip one year's value into negative
-uu <- uu[uu$Date=='2012' | uu$Date=='2010',]
+uu <- uu[uu$Date=='2013' | uu$Date=='2010',]
 
 # reshape to create year-on-year change figure
 uu2 <- ddply(uu, .(Age.band,Date),summarise,total=sum(total),count=sum(count))
 uu2$total <- uu2$total/2
 uu2 <- melt(uu2, id=c('Date','Age.band'))
 uu2 <- dcast(uu2, ... ~ variable + Date, drop=TRUE,fun.aggregate=sum)
-uu2$sharediff <- (uu2$count_2012/uu2$total_2012 - uu2$count_2010/uu2$total_2010)
+uu2$sharediff <- (uu2$count_2013/uu2$total_2013 - uu2$count_2010/uu2$total_2010)
 
 uu2 <- uu2[,c('Age.band','sharediff')]
 uu <- merge(uu,uu2,by='Age.band')
@@ -68,7 +68,7 @@ ylabels <- paste0(abs(ybreaks*100),'%')
 uu$grp <- paste0(uu$Gender,' ',uu$Date)
 
 plot_AgeYr <- ggplot(data=uu) +
-  geom_bar(position='identity', width=.9,data=uu[uu$Date==2012,],
+  geom_bar(position='identity', width=.9,data=uu[uu$Date==2013,],
            aes(x=Age.band, y=yvar,fill=Gender,colour=Gender),stat='identity') +
   geom_bar(position='identity', width=.9,data=uu[uu$Date==2010,],
            aes(x=Age.band,y=yvar,fill=NA,colour=as.factor(Date)),
@@ -80,7 +80,7 @@ plot_AgeYr <- ggplot(data=uu) +
                                'Male'=IfGcols[5,1],'Female'=IfGcols[2,1]),
                       labels=c('Female','Male')) +
   scale_y_continuous(limits=ylimits,labels=ylabels,breaks=ybreaks) +
-  guides(fill=guide_legend('2012', override.aes=list(colour=NA,size=1.2),
+  guides(fill=guide_legend('2013', override.aes=list(colour=NA,size=1.2),
                            label.vjust=.5,order=2,nrow=1),
          colour=guide_legend('2010',override.aes=list(fill=NA,colour='black',
                                                       linetype='dashed'))) +

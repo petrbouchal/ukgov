@@ -49,7 +49,7 @@ uu <- uu[uu$Gender=='Female',]
 
 # Sort departments --------------------------------------------------------
 
-xtot <- ddply(uu[uu$Date==2012 & uu$Civil.Service.grad=='All grades',],.(Group),
+xtot <- ddply(uu[uu$Date==2013 & uu$Civil.Service.grad=='All grades',],.(Group),
               summarise,sorter=sum(share))
 uu <- merge(uu,xtot,all.x=T)
 #make Whole CS category go last
@@ -72,7 +72,7 @@ HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[4,1])
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
 ylabel = 'Female Civil Servants as % of grade in'
-xlabel = 'ordered by % of female Civil Servants in 2012'
+xlabel = 'ordered by % of female Civil Servants in 2013'
 if(whitehallonly){
   plottitle=paste0(plottitle,' - Whitehall departments')
   ylabel = paste0(ylabel,' Whitehall dept')
@@ -93,11 +93,11 @@ ybreaks <- c(0,0.25,0.5,0.75)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
-  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
             fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = 1) +
   geom_line(size=1, aes(colour=Civil.Service.grad),stat='identity') +
   geom_point(aes(colour=Civil.Service.grad),pch=16,show_guide=TRUE) +
-  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
             colour=HLmarg,fill=NA,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,size = 1) +
   scale_colour_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
                       labels=c('All grades','Senior Civil Service')) +

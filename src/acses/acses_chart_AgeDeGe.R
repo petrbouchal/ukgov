@@ -48,7 +48,7 @@ if(whitehallonly) {
 uu$share <- uu$count/uu$total
 
 # Select years
-uu <- uu[uu$Date=='2012',]
+uu <- uu[uu$Date=='2013',]
 
 # Sort departments --------------------------------------------------------
 gradevalues <- data.frame('gradeval'=c(1:length(levels(as.factor(uu$Age.band)))),
@@ -100,10 +100,10 @@ ybreaks <- c(-.3,-.15,0,.15,.3)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_AgeDeGe <- ggplot(uu, aes(x=Age.band, y=yvar)) +
-  geom_rect(data=uu[uu$totalgroup & uu$Date==2012 & uu$Age.band=='< 29' & uu$Gender=='Female',],
+  geom_rect(data=uu[uu$totalgroup & uu$Date==2013 & uu$Age.band=='< 29' & uu$Gender=='Female',],
             fill=HLcol,xmin=-Inf,xmax=Inf,ymin=-Inf,ymax=Inf,alpha=1) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
-  geom_rect(data=uu[uu$totalgroup & uu$Date==2012 & uu$Age.band=='< 29' & uu$Gender=='Female',],
+  geom_rect(data=uu[uu$totalgroup & uu$Date==2013 & uu$Age.band=='< 29' & uu$Gender=='Female',],
             colour=HLmarg,xmin=-Inf,xmax=Inf,ymin=-Inf,ymax=Inf,size=1,fill=NA) +
   scale_fill_manual(values=c('Female'=IfGcols[2,1],'Male'=IfGcols[5,1]),
                     labels=c('Female   ', 'Male')) +

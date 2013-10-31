@@ -53,7 +53,7 @@ uu <- uu[uu$Disability.statu!='Non-disabled',]
 
 # Sort departments --------------------------------------------------------
 
-xtot <- ddply(uu[uu$Date==2012 & uu$Civil.Service.grad=='All grades',],.(Group),
+xtot <- ddply(uu[uu$Date==2013 & uu$Civil.Service.grad=='All grades',],.(Group),
               summarise,sorter=sum(share))
 uu <- merge(uu,xtot,all.x=T)
 #reorder grouping variable
@@ -76,7 +76,7 @@ ylabel <- paste0('Civil Servants as % of disclosed in ',
                 if(whitehallonly){'Whitehall department'
                                   } else {'departmental group'})
 xlabel <- paste0(ifelse(whitehallonly,'Whitehall departments ','Departmental groups '),
-                 'ordered by % of disabled staff in workforce in 2012')
+                 'ordered by % of disabled staff in workforce in 2013')
 
 uu$yvar <- uu$share
 maxY <- max(abs(uu$yvar)*1.04,na.rm=TRUE)
@@ -85,11 +85,11 @@ ybreaks <- c(0,.03,.06,.09)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DeDisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar,group=grp)) +
-  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
             fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = 1) +
   geom_bar(aes(fill=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
-  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
             colour=HLmarg,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,size = 1,fill=NA) +
   scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
                     labels=c('All grades','Senior Civil Service')) +

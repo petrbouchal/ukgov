@@ -46,7 +46,7 @@ uu$grp <- paste0(uu$Group, uu$Civil.Service.grad)
 
 # Sort departments --------------------------------------------------------
 
-xtot <- ddply(uu[uu$Date==2012 & uu$Civil.Service.grad=='All grades' & uu$Gender=='Female',],
+xtot <- ddply(uu[uu$Date==2013 & uu$Civil.Service.grad=='All grades' & uu$Gender=='Female',],
               .(Group),summarise,sorter=sum(share))
 uu <- merge(uu,xtot,all.x=T)
 #reorder grouping variable
@@ -70,7 +70,7 @@ plotname <- 'plot_DeGeGrYr_alt'
 
 plottitle <- 'Civil Servants by gender and grade'
 ylabel = 'Female Civil Servants as % of grade in'
-xlabel = 'ordered by % of female Civil Servants in 2012'
+xlabel = 'ordered by % of female Civil Servants in 2013'
 if(whitehallonly){
   plottitle=paste0(plottitle,' - Whitehall departments')
   ylabel = paste0(ylabel,' Whitehall dept')
@@ -91,7 +91,7 @@ ybreaks <- c(0,0.25,0.5,0.75,1)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
-  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
             fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = 1) +
   geom_area(data=uu[uu$Civil.Service.grad!='SCS',],width=.5,
            size=1, aes(fill=Gender,group=Gender),stat='identity', position='stack') +
@@ -99,7 +99,7 @@ plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
             size=1, aes(colour=Civil.Service.grad,ymax=1),position='identity') +
   geom_point(data=uu[uu$Civil.Service.grad=='SCS' & uu$Gender=='Female',],
                      aes(colour=Civil.Service.grad),pch=16,show_guide=TRUE) +
-  geom_rect(data = uu[uu$totalgroup & uu$Date==2012 & uu$Civil.Service.grad=='SCS',],
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
             colour=HLmarg,fill=NA,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,size = 1) +
   scale_colour_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
                       labels=c('Senior Civil Service')) +
