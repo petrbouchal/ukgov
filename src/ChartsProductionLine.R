@@ -17,9 +17,9 @@ for(i in WHswitch) {
 # source('./src/wmi/WMI_chart.R')
 # source('./src/pse/PSE_Charts.R')
 
-#source('./src/acses/acses_chart_AgeYr.R')
-#source('./src/acses/acses_chart_GeGrChange.R')
-#source('./src/acses/acses_chart_DisabGrYr.R')
-#source('./src/acses/acses_chart_GrMinYr.R')
+source('./src/acses/acses_chart_AgeYr.R')
+source('./src/acses/acses_chart_GeGrChange.R')
+source('./src/acses/acses_chart_DisabGrYr.R')
+source('./src/acses/acses_chart_GrMinYr.R')
 
 batchproduce <- FALSE
