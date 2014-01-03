@@ -1,6 +1,6 @@
 source('./src/lib/lib_acses.R')
 if(!batchproduce){ # avoid overriding when batch charting
-  whitehallonly <- FALSE # use this to override global set in lib
+  whitehallonly <- TRUE # use this to override global set in lib
 }
 
 # Load data ---------------------------------------------------------------
@@ -52,7 +52,7 @@ uu <- uu[uu$Gender=='Female',]
 xtot <- ddply(uu[uu$Date==2013 & uu$Civil.Service.grad=='All grades',],.(Group),
               summarise,sorter=sum(share))
 uu <- merge(uu,xtot,all.x=T)
-#make Whole CS category go last
+#make Whole CS/Whitehall category go last
 #uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*10
 #reorder grouping variable
 uu$Group <- reorder(uu$Group,-uu$sorter)
