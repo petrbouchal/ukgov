@@ -1,7 +1,9 @@
+# This script loads
+
 source('./src/lib/load_packages.R')
 
-load('./data-output/datafiles')
-load('./data-output/datasets')
+load('./data-output/datafiles.Rdata')
+load('./data-output/datasets.Rdata')
 
 db_datafiles <- as.data.frame(db_datafiles)
 db_datasets <- as.data.frame(db_datasets)

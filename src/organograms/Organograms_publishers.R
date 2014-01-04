@@ -1,42 +1,65 @@
 library('RCurl')
-library('rjson')
+library('RJSONIO')
 library('gtools')
+library('plyr')
 
 apibase <- 'http://data.gov.uk/api/'
 
 # download map of organisations - all publishers
 pdata <- getURI(paste0(apibase,'/2/rest/group'))
 jpdata <- fromJSON(pdata)
-dgukorgdata <- data.frame(name=character(),id=character(),title=character(),
-                          abbreviation=character(),displayname=character(),
-                          category=character(),
-                          stringsAsFactors=FALSE)
+orgdatarownum <- 1
+pb1 <- txtProgressBar(min=0, max = length(jpdata))
 for(i in jpdata) {
   pdata <- getURI(paste0(apibase,'/2/rest/group/',i))
   jodata <- fromJSON(pdata)
-  if(!is.null(jodata$extras$category)) {
-    ocategory <- jodata$extras$category
+  if(jodata$id=='68e4746a-7a79-4cf7-9525-b29e64b096c6') next
+  if(!is.null(jodata$extras['category'])) {
+    ocategory <- jodata$extras['category']
   } else {ocategory <- 'none'}
-  newrow <- list(jodata$name, jodata$id, jodata$title, jodata$extras$abbreviation,
-              jodata$display_name, ocategory)
-  if(is.null(newrow[[4]])) {newrow[[4]] <- NA}
-  dgukorgdata[nrow(dgukorgdata)+1,] <- newrow
+  if(!is.null(jodata$groups[1][[1]])) {
+    idgroup <- jodata$groups[[1]]$id
+  } else {idgroup <- NA}
+  if(!is.null(jodata$extras['abbreviation'])) {
+    oabbreviation <- jodata$extras['abbreviation']
+  } else {oabbreviation <- 'none'}
+  newrow <- data.frame(name=jodata$name,
+                       id=jodata$id,
+                       title=jodata$title,
+                       abbreviation=oabbreviation,
+                       displayname=jodata$display_name,
+                       category=ocategory,
+                       parentid=idgroup,row.names=NULL)
+  if(orgdatarownum==1) {
+    dgukorgdata <- newrow
+  } else {
+    dgukorgdata <- rbind(dgukorgdata,newrow)    
+  }
+  orgdatarownum <- orgdatarownum + 1
+  setTxtProgressBar(pb1,orgdatarownum)
 }
 
-dgukorghierarchy <- data.frame(namedept=character(),iddept=character(),
-                               nameorg=character(),idorg=character(),
-                          stringsAsFactors=FALSE)
-for(dept in 1:nrow(dgukorgdata[dgukorgdata$category=='core-department',])) {
-  sdata <- getURI(paste0(apibase,'2/rest/group/',
-                         dgukorgdata$id[dgukorgdata$category=='core-department'][dept]))
-  jsdata <- fromJSON(sdata)
-  if(length(jsdata$groups)==0){next}
-  for(orgnum in 1:length(jsdata$groups)) {
-    deptid <- dgukorgdata$id[dgukorgdata$category=='core-department'][dept]
-    deptname <- dgukorgdata$name[dgukorgdata$category=='core-department'][dept]
-    sorgrow <- c(deptname, deptid, jsdata$groups[[orgnum]]$name, jsdata$groups[[orgnum]]$id)
-    dgukorghierarchy[nrow(dgukorghierarchy)+1,] <- sorgrow    
-  }
+dgukorgssubset <- dgukorgdata[!is.na(dgukorgdata$parentid), ]
+pb2 <- txtProgressBar(min=0, max = nrow(dgukorgssubset))
+
+parentorgs <- dgukorgdata[,2:3]
+parentorgs <- rename(parentorgs,c('id'='parentid','title'='parent.title'))
+dgukorghierarchy <- merge(dgukorgdata,parentorgs)
+
+dgukorghierarchy <- rename(parentorgs,c('parentid'='parent2id','title'='parent2.title'))
+parentorgs <- rename(parentorgs,c('id'='parent2id','title'='parent1.title'))
+
+sorgdatarownum <- 1
+for(dept in 1:nrow(dgukorgssubset)) {
+  
+  sorgdatarownum <- sorgdatarownum + 1
+  setTxtProgressBar(pb2,sorgdatarownum)
 }
+
+# save data files with organisations
+save(dgukorgdata, file='dgukorgdata.Rdata')
+save(dgukorghierarchy, file='dgukorghierarchy.Rdata')
 
 # write CSV with organisations
+write.csv(dgukorgdata, file='dgukorgdata.csv', row.names=FALSE)
+write.csv(dgukorghierarchy, file='dgukorghierarchy.csv', row.names=FALSE)
