@@ -23,7 +23,7 @@ totals$value <- NULL
 uu <- merge(uu, totals,all.x=TRUE)
 # uu$sorter[uu$Dept =='Total excl. Whitehall FCO'] <- max(uu$sorter)*1.1
 uu$Dept <- reorder(uu$Dept,uu$sorter,mean)
-uu$Whitehall <- factor(uu$Whitehall,levels(uu$Whitehall)[c(2,1,4,3)])
+uu$Whitehall <- factor(uu$Whitehall,levels(uu$Whitehall)[c(1,4,2,3)])
 
 labelsx <- c('2010Q3','Q4',
              '2011Q1','Q2','Q3','Q4',
@@ -41,14 +41,14 @@ uu <- uu[uu$measure=='Cumulative_Perc_net_change' & uu$chart,]
 uu2 <- uu[uu$totalgroup & uu$measure=='Cumulative_Perc_net_change' & uu$chart,]
 
 plot_PSE <- ggplot(data=uu,aes(x=Period,y=value, group=group, colour=Whitehall)) + 
-#   geom_rect(data=uu2[uu2$Period=='2013Q3' & uu2$Whitehall=='Non-Whitehall Civil Service',],fill=HLcol,
-#             xmin = -Inf,xmax = Inf,colour=NA,
-#             ymin = -Inf,ymax = Inf,alpha = 1, show_guide=FALSE) +
+  geom_rect(data=uu2[uu2$Period=='2013Q3' & uu2$Whitehall=='Non-Whitehall',],fill=HLcol,
+            xmin = -Inf,xmax = Inf,colour=NA,
+            ymin = -Inf,ymax = Inf,alpha = 1, show_guide=FALSE) +
   geom_hline(yintercept=0,colour=IfGcols[1,1]) +
   geom_line(data=uu,size=1) +
-#   geom_rect(data=uu2[uu2$Period=='2013Q3' & uu2$Whitehall=='Non-Whitehall Civil Service',],colour=HLmarg,
-#             xmin = -Inf,xmax = Inf,
-#             ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=1, show_guide=FALSE) +
+  geom_rect(data=uu2[uu2$Period=='2013Q3' & uu2$Whitehall=='Non-Whitehall',],colour=HLmarg,
+             xmin = -Inf,xmax = Inf,
+             ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=1, show_guide=FALSE) +
   facet_wrap(~Dept,nrow=3) +
   scale_color_manual(values=c(IfGcols[3,1], IfGcols[2,1], IfGcols[5,1])) +
   scale_y_continuous(labels=percent) +
