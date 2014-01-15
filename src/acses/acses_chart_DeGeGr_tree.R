@@ -26,10 +26,10 @@ uu <- ddply(uu, .(Group, Date, Civil.Service.grad, Gender),
                summarise, count=sum(count, na.rm=TRUE))
 
 totals <- uu[uu$Civil.Service.grad=='All grades',]
-uu <- uu[uu$Civil.Service.grad!='All grades',]
+
 # Filter out unneeded things
 uu <- uu[uu$Civil.Service.grad!='Not reported',]
-uu <- uu[uu$Civil.Service.grad!='Total',]
+uu <- uu[uu$Civil.Service.grad!='All grades',]
 totals <- ddply(totals, .(Group,Date), summarise,
                 total=sum(count))
 
@@ -80,16 +80,16 @@ plotname <- 'plot_AgeDeGr_tree'
 HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[4,3])
 HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[4,1])
 
-plottitle <- 'Civil Servants by gender and age'
-xlabel='Age group (years)'
-ylabel='ordered by age composition of staff (youngest workforce first)'
+plottitle <- 'Civil Servants by gender and grade'
+xlabel='Civil Service grade'
+ylabel='ordered by grade composition of staff (more senior workforce first)'
 if(whitehallonly){
   plottitle=paste0(plottitle,' - Whitehall departments')
-  ylabel=paste0('% of Civil Servants in age group. Whitehall departments ',ylabel)
+  ylabel=paste0('% of Civil Servants in grade. Whitehall departments ',ylabel)
   plotname=paste0(plotname,'_WH')
 } else {
   plottitle=paste0(plottitle,' - departmental groups')
-  ylabel=paste0('% of Civil Servants in age group. Departmental groups ',ylabel)
+  ylabel=paste0('% of Civil Servants in grade. Departmental groups ',ylabel)
   plotname=paste0(plotname,'_Group')
 }
 
