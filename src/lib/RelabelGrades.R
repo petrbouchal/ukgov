@@ -8,7 +8,8 @@ RelabelGrades <- function (dataset) {
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Grades 6 & 7"] <- "G6/G7"
   levels(dataset$Civil.Service.grad)[levels(dataset$Civil.Service.grad)=="Total"] <- "All grades"
   dataset$Civil.Service.grad <- factor(dataset$Civil.Service.grad,
-                                       levels(dataset$Civil.Service.grad)[c(7,1,2,3,5,4,6)])
+                                       levels(dataset$Civil.Service.grad)[c(7,4,1,2,5,3,6)],
+                                       ordered=TRUE)
   dataset$Civil.Service.grad <- droplevels(dataset$Civil.Service.grad)
   return(dataset)
 }

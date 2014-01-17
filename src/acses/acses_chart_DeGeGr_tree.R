@@ -19,22 +19,23 @@ uu <- uu[uu$Gender!='Total',]
 uu <- uu[uu$Age.band=='Total',]
 uu <- uu[uu$Wage.band=='Total',]
 
-uu <- RelabelGrades(uu)
 
 # CREATE TOTALS PER GROUP
 uu <- ddply(uu, .(Group, Date, Civil.Service.grad, Gender),
                summarise, count=sum(count, na.rm=TRUE))
 
-totals <- uu[uu$Civil.Service.grad=='All grades',]
-
-# Filter out unneeded things
-uu <- uu[uu$Civil.Service.grad!='Not reported',]
-uu <- uu[uu$Civil.Service.grad!='All grades',]
+totals <- uu[uu$Civil.Service.grad=='Total',]
 totals <- ddply(totals, .(Group,Date), summarise,
                 total=sum(count))
 
+# Filter out unneeded things
+uu <- uu[uu$Civil.Service.grad!='Not reported',]
+uu <- uu[uu$Civil.Service.grad!='Total',]
+
 # MERGE TOTALS INTO MAIN FILE
 uu <- merge(uu, totals)
+
+uu <- RelabelGrades(uu)
 
 # CREATE WHITEHALL TOTAL IF NEEDED
 if(whitehallonly) {
@@ -70,7 +71,8 @@ uu$Group <- reorder(uu$Group,uu$sorter,mean)
 uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
 
 # Mark totals category
-uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service' | uu$Group=='Whitehall',
+uu$totalgroup <- ifelse((uu$Group=='Whole Civil Service' | uu$Group=='Whitehall' & 
+                           uu$Gender=='Female' & uu$Civil.Service.grad=='EO'),
                         TRUE,FALSE)
 
 # Build plot --------------------------------------------------------------
@@ -101,21 +103,22 @@ ybreaks <- c(-.3,-.15,0,.15,.3)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_AgeDeGe <- ggplot(uu, aes(x=Civil.Service.grad, y=yvar)) +
-  geom_rect(data=uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS' & uu$Gender=='Female',],
+  geom_rect(data=uu[uu$totalgroup==TRUE,],stat='identity',position='identity',
             fill=HLcol,xmin=-Inf,xmax=Inf,ymin=-Inf,ymax=Inf,alpha=1) +
-  geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
-  geom_rect(data=uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS' & uu$Gender=='Female',],
+  geom_rect(data=uu[uu$totalgroup==TRUE,],stat='identity',position='identity',
             colour=HLmarg,xmin=-Inf,xmax=Inf,ymin=-Inf,ymax=Inf,size=1,fill=NA) +
+  geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
+  facet_wrap(~Group, nrow=3) +
+  coord_flip() +
   scale_fill_manual(values=c('Female'=IfGcols[2,1],'Male'=IfGcols[5,1]),
                     labels=c('Female   ', 'Male')) +
   guides(col=guide_legend(ncol=3)) +
   scale_y_continuous(labels=ylabels,breaks=ybreaks,limits=ylimits) +
-  facet_wrap(~Group, nrow=3) +
   ggtitle(plottitle) +
-  coord_flip() +
   labs(y=ylabel,x=xlabel,title=NULL) +
-  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2],size=.5),
-        axis.ticks.y=element_blank(),panel.grid=element_blank())
+  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2],size=0.5),
+        axis.ticks.y=element_blank(),panel.grid=element_blank(),
+        strip.background=element_rect(colour='red',size=.5))
 plot_AgeDeGe
 
 # Save plot ---------------------------------------------------------------
