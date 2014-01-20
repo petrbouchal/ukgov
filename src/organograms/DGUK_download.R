@@ -1,21 +1,22 @@
 library('RCurl')
-library('RJSONIO')
-library('gtools')
+library('jsonlite')
+# library('RJSONIO')
+fromlibrary('gtools')
 
-apibase <- 'http://data.gov.uk/api/2/rest'
-limit  <- 1000
+apibase <- 'http://data.gov.uk/api/3'
+limit  <- 100
 searchterm <- 'organogram'
 
 labels <- c('organograms-and-salaries','organogram','senior-civil-servant-pay',
             'senior-civil-Service')
-query <- paste0(apibase,'/search/dataset?limit=',limit,'&q=',searchterm)
+query <- paste0(apibase,'/action/package_search?&q=',searchterm,'&rows=',limit)
 query
 data <- getURI(query)
 jdata <- fromJSON(data)
 
 firstdataset <- TRUE
 firstfile <- TRUE
-for(i in jdata$results) {
+for(i in jdata$result$results) {
   dquery <- paste0(apibase,'/dataset/',i)
   ddata <- fromJSON(getURI(dquery))
   # write into database of datasets here
