@@ -13,25 +13,15 @@ library(ggplot2)
 # It's obviously better to use a csv file rather than a long string in real life!
 
 metadata <- read.csv(
-  text=paste('CDID,geo,sex,age,variable,seasonally_adj',
-             'LF3Y,England,All,16-64,Employment Rate,SA',
-             'LF4D,England,Female,16-64,Employment Rate,SA',
-             'YCLL,England,Male,16-64,Employment Rate,SA',
-             'LF5Z,Northern Ireland,All,16-64,Employment Rate,SA',
-             'LF62,Northern Ireland,Female,16-64,Employment Rate,SA',
-             'ZSFJ,Northern Ireland,Male,16-64,Employment Rate,SA',
-             'LF42,Scotland,All,16-64,Employment Rate,SA',
-             'LF4F,Scotland,Female,16-64,Employment Rate,SA',
-             'YCLN,Scotland,Male,16-64,Employment Rate,SA',
-             'LF24,UK,All,16-64,Employment Rate,SA',
-             'LF25,UK,Female,16-64,Employment Rate,SA',
-             'MGSV,UK,Male,16-64,Employment Rate,SA',
-             'LF3Z,Wales,All,16-64,Employment Rate,SA',
-             'LF4E,Wales,Female,16-64,Employment Rate,SA',
-             'YCLM,Wales,Male,16-64,Employment Rate,SA',
+  text=paste('CDID,sector,geo,variable,seasonally_adj,unit',
+             'G7AU,XX,UK,HC,xSA,thousands',
+             'G7K5,XX,UK,HC,xSA,thousands',
+             'G7D6,XX,UK,HC,xSA,thousands',
+             'K8PD,XX,UK,HC,xSA,thousands',
+             'KSL8,XX,UK,HC,xSA,thousands',
              sep='\n'))
 
-dataset <- 'lms'
+dataset <- 'pse'
 
 uri <- 'http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv'
 uri <- paste(uri,
@@ -64,6 +54,6 @@ data_long$value <- as.numeric(data_long$value)
 
 # plot employment rate time series by country (colour) and sex (panel)
 plot_data <- data_long[!is.na(data_long$value), ]
-ggplot(plot_data, aes(x=time, y=value, colour=geo, group=geo)) +
-  facet_grid(sex ~ .) +
-  geom_line()
+ggplot(plot_data, aes(x=time, y=value, colour=CDID, group=CDID)) +
+#   facet_grid(sex ~ .,scales='free_y') +
+  geom_line(size=.8)
