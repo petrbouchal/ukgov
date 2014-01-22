@@ -2,7 +2,7 @@
 # http://www.ons.gov.uk/ons/datasets-and-tables/index.html
 # (Filter out reference tables at the right of the page)
 
-# from: https://gist.github.com/jamestrimble/6442229
+# adapted from: https://gist.github.com/jamestrimble/6442229
 
 library(reshape2)
 library(plyr)
@@ -57,3 +57,6 @@ plot_data <- data_long[!is.na(data_long$value), ]
 ggplot(plot_data, aes(x=time, y=value, colour=CDID, group=CDID)) +
 #   facet_grid(sex ~ .,scales='free_y') +
   geom_line(size=.8)
+
+write.csv(data_long,paste0('./data-output/ONS_downloaded_PSEtimeseries_',
+                           format(Sys.time(), format="%Y-%m-%d-%H%M")))
