@@ -1,0 +1,307 @@
+Dept group,Organisation,Dept IfG,Whitehall,Managed,Year,Communications and Marketing,Economics,Engineering,Finance,Human Resources,Information Technology,Inspector of Education and Training,Internal Audit,Knowledge and Information Management,Law,Medicine,Operational Delivery,Operational Research,Planning,Policy Delivery,Procurement and Contract Management,Programme and Project Management,Property Asset Management,Psychology,Science,Social and Market Research,Statistics,Tax Professionals,Veterinarian,Other,Not Reported,Total
+Attorney General's departments,Attorney General's Office,AGO,Whitehall,Yes,2010,0,0,0,0,0,0,0,0,0,10,0,10,0,0,20,0,0,0,0,0,0,0,0,0,0,0,40
+Attorney General's departments,Crown Prosecution Service,AGO,Non-Whitehall,No,2010,40,0,0,80,160,50,0,10,20,3440,0,4420,0,0,0,20,10,0,0,0,0,0,0,0,0,0,8240
+Attorney General's departments,Crown Prosecution Service Inspectorate,AGO,Non-Whitehall,No,2010,0,0,0,0,..,0,0,0,0,20,0,10,0,0,10,0,0,0,0,0,0,0,0,0,0,0,40
+Attorney General's departments,National Fraud Authority [AGO],AGO,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Attorney General's departments,Revenue and Customs Prosecution Office,AGO,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Attorney General's departments,Serious Fraud Office,AGO,Non-Whitehall,No,2010,10,0,0,10,10,..,0,0,0,20,0,240,0,0,..,..,20,0,0,0,0,0,0,0,0,0,320
+Attorney General's departments,Treasury Solicitor,AGO,Non-Whitehall,No,2010,0,0,0,10,20,20,0,0,..,510,0,50,0,0,250,0,..,0,0,0,0,0,0,0,0,0,860
+"Business, Innovation and Skills",Advisory Conciliation and Arbitration Service,BIS,Non-Whitehall,No,2010,10,0,0,10,20,30,0,0,10,0,0,790,10,0,10,..,..,0,0,0,0,0,0,0,0,0,900
+"Business, Innovation and Skills","Business, Enterprise and Regulatory Reform",BIS,Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Business, Innovation and Skills","Business, Innovation and Skills",BIS,Whitehall,Yes,2010,0,0,0,..,..,..,0,0,..,0,0,340,0,0,30,0,0,0,0,0,0,0,0,0,3490,0,3870
+"Business, Innovation and Skills",Companies House,BIS,Non-Whitehall,No,2010,30,0,0,60,40,160,0,10,0,10,0,690,0,..,20,10,10,10,0,0,0,0,0,0,0,0,1050
+"Business, Innovation and Skills",UK Space Agency,BIS,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Innovation, Universities and Skills","Department for Innovation, Universities and Skills",BIS,Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Export Credits Guarantee Department,Export Credit Guarantee Department,BIS,Non-Whitehall,No,2010,10,..,0,30,20,10,0,..,0,10,0,50,10,0,0,..,..,0,0,0,0,0,0,0,50,0,200
+"Business, Innovation and Skills",Insolvency Service,BIS,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,2600
+"Business, Innovation and Skills",National Measurement Office,BIS,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Business, Innovation and Skills",National Weights and Measures Laboratory,BIS,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,..,0,0,..,0,0,0,0,0,0,0,0,0,70,0,70
+"Business, Innovation and Skills",Office of Fair Trading,BIS,Non-Whitehall,No,2010,30,30,0,20,20,20,0,0,..,40,0,370,0,0,50,0,30,0,0,0,0,0,0,0,0,0,610
+"Business, Innovation and Skills",Office of Gas and Electricity Market,DECC,Non-Whitehall,No,2010,10,50,0,10,10,30,0,0,..,30,0,90,0,..,130,10,..,0,0,0,0,0,0,0,0,0,370
+"Business, Innovation and Skills",Postal Services Commission,BIS,Non-Whitehall,No,2010,..,10,0,..,..,..,0,0,0,10,..,..,0,0,10,..,10,0,0,0,..,0,0,0,..,0,50
+"Business, Innovation and Skills",Skills Funding Agency,BIS,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Business, Innovation and Skills",UK Intellectual Property Office,BIS,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,850,0,850
+"Business, Innovation and Skills",HM Land Registry,BIS,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Business, Innovation and Skills",Met Office,BIS,Non-Whitehall,No,2010,120,0,0,30,30,380,0,10,10,10,0,530,0,0,0,10,40,0,0,510,0,0,0,0,170,0,1850
+"Business, Innovation and Skills",Ordnance Survey,BIS,Non-Whitehall,No,2010,140,0,0,30,30,180,0,..,0,10,0,680,20,0,20,..,20,30,0,0,0,0,0,0,0,0,1170
+Cabinet Office ,Buying Solutions,CO,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Cabinet Office ,Cabinet Office excl agencies,CO,Whitehall,Yes,2010,120,10,0,50,50,40,0,0,10,0,0,40,..,..,420,20,10,0,0,0,0,..,0,0,460,0,1230
+Cabinet Office ,Central Office of Information,CO,Non-Whitehall,Yes,2010,600,0,0,20,10,20,0,..,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,120,0,770
+Charity Commission,Charity Commission,CO,Non-Whitehall,No,2010,20,0,0,10,10,10,0,0,10,20,0,310,0,0,30,..,..,0,0,0,0,0,0,0,30,0,450
+Cabinet Office ,National School of Government,CO,Non-Whitehall,No,2010,10,0,0,10,10,10,0,0,0,..,0,0,0,0,0,0,0,0,0,0,0,0,0,0,190,0,230
+Cabinet Office ,Office of the Parliamentary Counsel,CO,Non-Whitehall,Yes,2010,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,70
+Cabinet Office ,Government Procurement Service,CO,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Communities and Local Government,Department for Communities and Local Government,DCLG,Whitehall,Yes,2010,..,0,0,0,..,..,0,0,0,0,0,520,0,0,..,0,0,0,0,0,0,0,0,0,10,2010,2550
+Communities and Local Government,Fire Service College,DCLG,Non-Whitehall,No,2010,20,0,..,10,10,10,0,0,..,0,0,60,0,0,..,10,20,..,0,0,0,0,0,0,60,0,200
+Communities and Local Government,Ordnance Survey [DCLG],DCLG,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Communities and Local Government,Planning Inspectorate,DCLG,Non-Whitehall,Yes,2010,0,0,0,20,30,60,0,0,0,0,0,350,0,250,0,..,0,0,0,0,0,10,0,0,0,0,720
+Communities and Local Government,Queen Elizabeth II Conference Centre,DCLG,Non-Whitehall,No,2010,..,0,0,..,..,..,0,0,0,0,0,30,0,0,0,0,..,0,0,0,0,0,0,0,0,0,50
+"Culture, Media and Sport",Department for Culture Media and Sport,DCMS,Whitehall,Yes,2010,40,0,0,20,20,10,0,0,0,..,0,10,0,0,350,0,10,0,0,0,0,10,0,0,10,0,480
+"Culture, Media and Sport",Royal Parks,DCMS,Non-Whitehall,No,2010,10,0,0,10,..,..,0,0,..,0,0,80,0,0,..,..,10,0,0,0,0,0,0,0,10,0,120
+Department for Energy and Climate Change ,Department for Energy and Climate Change,DECC,Whitehall,Yes,2010,10,10,0,10,..,0,0,0,0,10,0,0,0,0,170,0,0,0,0,10,0,0,0,0,810,..,1030
+"Environment, Food and Rural Affairs",Animal Health and Veterinary Laboratories Agency,Defra,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Environment, Food and Rural Affairs",Central Science Laboratory,Defra,Non-Whitehall,No,2010,..,0,0,20,20,20,0,10,0,0,0,170,0,0,..,10,..,0,0,600,0,..,0,..,0,0,850
+"Environment, Food and Rural Affairs",Animal Health,Defra,Non-Whitehall,No,2010,10,0,0,20,20,0,0,0,0,0,0,1230,0,0,0,0,10,0,0,0,0,0,0,270,20,0,1590
+"Environment, Food and Rural Affairs",Centre for Environment Fisheries and Aquaculture Science,Defra,Non-Whitehall,No,2010,..,0,0,20,10,40,0,0,..,0,0,0,0,0,..,20,10,..,0,400,0,..,0,0,30,0,530
+"Environment, Food and Rural Affairs",Department for Environment Food and Rural Affairs,Defra,Whitehall,Yes,2010,70,50,0,150,160,30,0,20,50,110,0,120,0,0,1280,50,0,30,0,100,0,100,0,20,300,0,2630
+"Environment, Food and Rural Affairs",Food & Environment Research Agency,Defra,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Environment, Food and Rural Affairs",Government Decontamination Services,Defra,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Environment, Food and Rural Affairs",Marine Fisheries Agency,Defra,Non-Whitehall,No,2010,..,0,0,10,0,0,0,0,0,0,0,210,0,0,0,0,0,0,0,..,0,10,0,0,..,0,230
+"Environment, Food and Rural Affairs",OFWAT,Defra,Non-Whitehall,No,2010,10,20,0,20,10,10,0,0,..,10,0,100,0,..,30,..,10,0,0,0,0,0,0,0,0,0,220
+"Environment, Food and Rural Affairs",Rural Payments Agency,Defra,Non-Whitehall,Yes,2010,10,0,0,60,130,50,0,50,0,..,0,2070,0,0,240,..,310,0,0,0,0,0,0,0,0,0,2940
+"Environment, Food and Rural Affairs",Veterinary Laboratories Agency,Defra,Non-Whitehall,No,2010,20,0,0,20,30,30,0,0,10,0,0,0,0,0,0,30,20,..,0,750,0,0,0,90,220,0,1220
+"Environment, Food and Rural Affairs",Veterinary Medicines Directorate,Defra,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,90,0,0,30,0,0,0,0,20,0,0,0,10,0,0,150
+"Children, Schools and Families / Department for Education",Department for Education,DfE,Whitehall,Yes,2010,220,10,0,60,50,120,0,30,20,10,0,480,..,0,1270,140,80,0,0,0,0,80,0,0,360,20,2960
+Office of Qualifications and Examinations Regulation,Office of Qualifications and Examinations Regulation,DfE,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Ofsted,Ofsted,DfE,Non-Whitehall,No,2010,20,0,0,50,40,30,390,0,0,..,0,840,0,0,0,20,0,0,0,0,0,0,0,0,660,0,2050
+Department for Education,Standards and Testing Agency,DfE,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Department for Education,Education Funding Agency,DfE,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Department for Education,National College,DfE,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Department for Education,Teaching Agency,DfE,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Department for Education,National College for Teaching and Leadership,DfE,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+International Development ,Department for International Development,DfID,Whitehall,Yes,2010,60,70,20,90,90,100,10,20,30,0,40,360,0,0,640,40,0,0,0,0,0,20,0,0,0,0,1580
+Transport,Department for Transport,DfT,Whitehall,Yes,2010,0,..,0,0,0,0,0,0,0,0,0,110,0,0,0,0,0,0,0,0,0,0,0,0,0,1970,2080
+Transport,Driver and Vehicle Licensing Agency,DfT,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5910,5910
+Transport,Driving Standards Agency,DfT,Non-Whitehall,No,2010,50,0,0,20,70,..,0,0,30,0,0,1880,10,0,20,10,30,0,0,0,0,0,0,0,400,0,2510
+Transport,Government Car and Despatch Agency,DfT,Non-Whitehall,No,2010,..,0,10,10,10,..,0,0,0,0,0,0,0,0,..,0,0,0,0,0,0,0,0,0,270,0,310
+Transport,Highways Agency,DfT,Non-Whitehall,No,2010,30,0,40,140,70,130,0,10,0,0,0,1850,0,..,10,110,1290,60,0,0,0,..,0,0,0,0,3750
+Transport,Maritime and Coastguard Agency,DfT,Non-Whitehall,No,2010,10,0,0,20,50,50,0,10,0,..,0,850,0,10,160,..,10,10,0,0,0,0,0,0,0,0,1190
+Transport,Office of Rail Regulation,DfT,Non-Whitehall,No,2010,20,0,0,10,10,10,0,0,10,10,0,130,0,0,110,0,0,0,0,0,0,0,0,0,0,0,300
+Transport,Vehicle and Operator Services Agency,DfT,Non-Whitehall,No,2010,10,0,10,40,100,30,0,10,0,0,0,2130,0,0,30,..,0,0,0,0,0,0,0,0,90,0,2440
+Transport,Vehicle Certification Agency,DfT,Non-Whitehall,No,2010,10,0,50,10,10,..,0,0,0,0,0,70,0,0,0,0,0,0,0,0,0,0,0,0,0,0,140
+Health,Department of Health (excl agencies),DH,Whitehall,Yes,2010,140,60,0,140,70,110,0,10,30,0,..,200,40,0,1500,90,40,0,0,10,10,60,0,0,100,10,2630
+Health,Food Standards Agency,DH,Non-Whitehall,No,2010,40,0,0,40,20,10,0,..,0,10,0,..,0,..,450,0,10,0,0,50,0,30,0,20,0,0,710
+Health,Meat Hygiene Service,DH,Non-Whitehall,No,2010,..,0,0,30,30,20,0,10,0,0,0,690,0,0,0,..,0,0,0,0,0,0,0,20,60,0,870
+Health,Medicines and Healthcare Products Regulatory Agency,DH,Non-Whitehall,No,2010,30,0,0,20,20,20,0,0,0,0,80,80,0,0,40,0,0,0,0,460,0,10,0,0,220,0,970
+Health,National Healthcare Purchasing and Supplies,DH,Non-Whitehall,No,2010,..,0,0,10,..,10,0,0,0,0,0,0,0,0,0,20,..,0,0,0,0,0,0,0,0,0,50
+Health,NHS Business Services Authority,DH,Non-Whitehall,No,2010,..,0,0,0,0,..,0,0,0,0,0,180,0,0,20,..,0,0,0,0,0,0,0,0,0,0,200
+Health,Public Health England,DH,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Work and Pensions,Department for Work and Pensions,DWP,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Work and Pensions,Child Maintenance Enforcement Commission,DWP,Non-Whitehall,Yes,2010,10,0,0,10,50,10,0,0,0,0,0,8400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8470
+Work and Pensions,DWP Corporate and Shared Services  ,DWP,Non-Whitehall,Yes,2010,360,0,0,5460,550,2250,0,0,0,190,0,130,0,0,2790,470,70,0,0,0,0,0,0,0,0,0,12260
+Work and Pensions,Jobcentre Plus,DWP,Non-Whitehall,Yes,2010,250,0,0,620,330,20,0,0,0,0,0,80630,0,0,540,..,400,0,..,0,0,0,0,0,0,0,82800
+Work and Pensions,Pensions & Disability Carers Service ,DWP,Non-Whitehall,Yes,2010,..,0,0,400,100,0,0,0,0,0,0,12760,0,0,730,0,10,0,0,0,0,0,0,0,0,0,14000
+Work and Pensions,The Health and Safety Executive,DWP,Non-Whitehall,No,2010,50,10,0,50,50,10,0,..,10,10,..,2480,0,0,130,10,0,0,10,270,0,20,0,0,500,0,3600
+Work and Pensions,The Rent Service,DWP,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Foreign and Commonwealth Office,Foreign and Commonwealth Office (excl agencies),FCO,Whitehall,Yes,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5940,5940
+Security and Intelligence Services,Security and Intelligence Services,FCO,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5580,5580
+Foreign and Commonwealth Office,Wilton Park Executive Agency,FCO,Non-Whitehall,No,2010,0,0,0,..,..,..,0,0,0,0,0,40,0,0,0,0,20,0,0,0,0,0,0,0,0,0,70
+Foreign and Commonwealth Office,Foreign and Commonwealth Office Services,FCO,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Government Equalities Office,Government Equalities Office,GEO,Whitehall,Yes,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,110,110
+UK Statistics Authority,Census Field,CO,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Chancellor's other departments,Debt Management Office,HMT,Non-Whitehall,Yes,2010,0,..,0,10,..,30,0,..,0,0,0,30,0,0,10,..,0,0,0,0,0,0,0,0,..,0,90
+Chancellor's other departments,Government Actuary's Department,HMT,Non-Whitehall,Yes,2010,0,0,0,10,10,10,0,0,0,0,0,110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,130
+HM Revenue and Customs,HM Revenue and Customs,HMRC,Non-Whitehall,Yes,2010,150,0,0,460,940,1210,0,50,0,150,0,43580,0,0,1380,110,1660,0,0,0,0,290,8700,0,0,16680,75360
+HM Treasury,HM Treasury,HMT,Whitehall,Yes,2010,30,130,0,50,60,40,0,10,..,..,0,10,0,0,330,10,0,0,0,0,10,10,0,0,720,0,1420
+HM Treasury,Office for Budget Responsibility,HMT,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+HM Treasury,Asset Protection Agency,HMT,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Chancellor's other departments,National Savings and Investments,HMT,Non-Whitehall,No,2010,20,0,0,30,..,10,0,..,..,0,0,10,0,0,..,10,10,..,0,0,10,..,0,0,40,0,140
+Chancellor's other departments,Office of Government Commerce,HMT,Non-Whitehall,No,2010,10,0,0,10,0,10,0,0,0,0,0,40,0,0,190,30,0,0,0,0,0,0,0,0,..,0,290
+Chancellor's other departments,OGC Buying Solutions,HMT,Non-Whitehall,No,2010,40,0,0,20,20,30,0,..,0,..,0,10,..,10,..,210,20,0,0,0,..,0,0,0,10,0,380
+Chancellor's other departments,Royal Mint,HMT,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+UK Statistics Authority,UK Statistics Authority,CO,Non-Whitehall,No,2010,40,10,0,40,50,200,0,0,0,0,0,2350,0,0,0,20,60,0,0,0,170,390,0,0,10,0,3350
+HM Revenue and Customs,Valuation Office,HMRC,Non-Whitehall,Yes,2010,20,0,0,30,50,80,40,..,0,0,0,3540,0,30,110,20,10,0,0,0,..,..,0,0,20,0,3940
+Home Office,Criminal Records Bureau,HO,Non-Whitehall,No,2010,0,0,0,..,..,..,0,0,0,0,0,10,0,0,0,..,..,..,0,0,0,0,0,0,610,0,620
+Home Office,Home Office (excl agencies),HO,Non-Whitehall,Yes,2010,110,10,0,100,220,90,0,20,30,30,..,220,20,0,250,40,100,30,..,70,30,30,0,10,1760,0,3170
+Home Office,Identity and Passport Service,HO,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,..,0,0,0,0,0,0,0,3940,0,3940
+Home Office,UK Border Agency,HO,Non-Whitehall,Yes,2010,220,30,0,200,330,190,0,40,90,220,10,3820,120,0,320,110,370,60,..,20,30,60,0,20,11230,0,17480
+Home Office,National Fraud Authority,HO,Non-Whitehall,No,2010,..,0,0,..,..,0,0,0,0,0,0,30,0,0,..,0,10,0,0,0,0,0,0,0,0,..,50
+Defence,Defence Science and Technology Laboratory,MoD,Non-Whitehall,Yes,2010,10,0,1350,60,60,20,0,0,120,0,0,0,0,0,60,0,80,0,0,1710,0,0,0,0,190,0,3670
+Defence,Defence Support Group,MoD,Non-Whitehall,Yes,2010,..,0,0,20,70,40,0,0,0,0,..,2800,0,0,10,190,0,0,0,0,0,0,0,0,120,0,3240
+Defence,Meteorological Office,MoD,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Defence,Royal Fleet Auxiliary,MoD,Non-Whitehall,Yes,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2330,2330
+Defence,Ministry of Defence,MoD,Non-Whitehall,Yes,2010,0,0,0,0,0,0,0,0,0,0,0,..,0,0,0,0,0,0,0,0,0,0,0,0,0,63300,63300
+Defence,UK Hydrographic Office,MoD,Non-Whitehall,Yes,2010,70,0,0,30,20,60,0,10,..,20,..,710,10,20,10,..,0,0,0,..,0,0,0,0,10,0,960
+Justice,Her Majesty's Courts and Tribunals Service,MoJ,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Justice,HM Courts Service,MoJ,Non-Whitehall,Yes,2010,0,0,0,0,0,0,0,0,0,0,0,18330,0,0,..,0,0,0,0,0,0,0,0,0,0,0,18340
+Justice,Land Registry,MoJ,Non-Whitehall,No,2010,10,0,0,50,130,430,0,10,0,40,0,4700,0,0,0,20,30,0,0,0,0,0,0,0,100,0,5500
+Justice,Ministry of Justice (excl agencies),MoJ,Whitehall,Yes,2010,90,0,0,140,350,240,0,70,0,150,0,560,0,0,1400,10,0,0,0,0,0,0,0,0,140,0,3130
+Justice,National Archives,MoJ,Non-Whitehall,No,2010,10,0,0,10,20,50,0,0,40,0,0,190,0,0,..,..,10,10,0,0,0,0,0,0,250,0,590
+Justice,National Offender Management Service,MoJ,Non-Whitehall,Yes,2010,0,0,0,1190,630,0,0,0,0,0,700,41970,0,0,0,0,0,0,940,0,0,0,0,0,4020,0,49460
+Justice,Scotland Office (incl. Office of the Advocate General for Scotland),MoJ,Non-Whitehall,No,2010,0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30
+Justice,The Office of the Public Guardian,MoJ,Non-Whitehall,Yes,2010,0,0,0,60,0,0,0,0,0,0,0,360,0,0,10,0,0,0,0,0,0,0,0,0,0,0,430
+Justice,Tribunals Service,MoJ,Non-Whitehall,Yes,2010,..,0,0,30,0,0,0,0,0,0,0,2890,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2920
+Justice,UK Supreme Court,MoJ,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40
+Justice,Wales Office,MoJ,Non-Whitehall,No,2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,0,60
+Justice,Legal Aid Agency,MoJ,Non-Whitehall,Yes,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Northern Ireland Office,Northern Ireland Office,NIO,Whitehall,Yes,2010,..,0,0,..,10,..,0,0,10,..,0,30,0,0,50,0,0,0,0,0,0,0,0,0,0,0,110
+Scottish Government,Crown Office and Procurator Fiscal,Scot Gov,Non-Whitehall,No,2010,0,0,0,10,40,40,0,0,..,520,0,1080,0,0,40,0,10,0,0,0,0,0,0,0,0,0,1760
+Scottish Government,Disclosure Scotland,Scot Gov,Non-Whitehall,No,2010,0,0,0,..,0,..,0,0,0,0,0,10,0,0,..,0,0,0,0,0,0,..,0,0,150,0,170
+Scottish Government,Fisheries Research Services,Scot Gov,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,General Register Scotland,Scot Gov,Non-Whitehall,No,2010,..,0,0,10,..,60,0,0,..,0,..,30,0,..,10,10,0,0,0,0,..,30,0,0,150,0,310
+Scottish Government,GROS Census Field,Scot Gov,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Historic Scotland,Scot Gov,Non-Whitehall,No,2010,30,0,180,20,20,10,0,0,..,0,0,360,0,0,30,10,260,0,0,0,10,0,0,0,0,0,940
+Scottish Government,HM Inspectorate of Education,Scot Gov,Non-Whitehall,No,2010,..,0,0,..,..,..,100,0,0,0,..,..,0,..,..,0,0,0,..,0,0,..,0,0,90,0,210
+Scottish Government,Mental Health Tribunal Scotland,Scot Gov,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,National Records of Scotland,Scot Gov,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,National Archive for Scotland,Scot Gov,Non-Whitehall,No,2010,0,0,0,..,..,10,0,0,0,0,..,110,0,0,0,..,0,0,0,0,0,0,0,0,30,0,140
+Scottish Government,Office for the Scottish Charity Regulator,Scot Gov,Non-Whitehall,No,2010,..,0,0,..,0,..,0,..,0,..,0,20,0,0,10,0,0,0,0,..,0,0,0,0,10,0,50
+Scottish Government,Accountant in Bankruptcy,Scot Gov,Non-Whitehall,No,2010,0,0,0,..,0,0,0,0,0,0,..,30,0,..,..,0,0,0,0,0,0,0,0,0,110,0,150
+Scottish Government,Registers of Scotland,Scot Gov,Non-Whitehall,No,2010,20,0,0,20,20,20,0,0,..,30,0,1080,0,10,10,10,30,10,0,0,0,0,0,0,0,0,1260
+Scottish Government,Scottish Court Service,Scot Gov,Non-Whitehall,No,2010,..,0,0,10,40,30,0,0,0,0,0,1350,0,0,20,..,0,20,0,0,0,0,0,0,0,0,1470
+Scottish Government,Scottish Fisheries Protection Agency,Scot Gov,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Scottish Government (excl agencies),Scot Gov,Non-Whitehall,No,2010,90,50,20,180,100,280,..,30,10,90,210,790,0,80,960,70,0,0,..,230,60,90,0,10,2140,0,5500
+Scottish Government,Scottish Housing Regulator,Scot Gov,Non-Whitehall,No,2010,0,0,0,..,0,0,0,0,0,0,0,10,0,0,..,0,0,0,0,0,0,..,0,0,40,0,60
+Scottish Government,Scottish Law Commission,Scot Gov,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Scottish Prison Service Headquarters,Scot Gov,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Scottish Public Pensions Agency,Scot Gov,Non-Whitehall,No,2010,0,0,0,10,..,10,0,0,0,0,0,150,0,0,..,..,0,0,0,0,0,0,0,0,60,0,240
+Scottish Government,Social Work Inspection Agency,Scot Gov,Non-Whitehall,No,2010,0,0,0,..,0,0,0,0,0,0,0,10,0,0,..,0,0,0,0,0,0,..,0,0,30,0,40
+Scottish Government,Student Awards Agency,Scot Gov,Non-Whitehall,No,2010,..,0,0,10,..,20,0,0,0,0,0,20,0,0,..,..,0,0,0,0,0,0,0,0,110,0,160
+Scottish Government,Transport Scotland,Scot Gov,Non-Whitehall,No,2010,10,0,40,10,10,..,0,0,0,0,0,60,0,..,20,..,0,0,0,0,0,0,0,0,160,0,310
+Scottish Government,Education Scotland,Scot Gov,Non-Whitehall,No,2010,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Welsh Assembly,ESTYN,Welsh Gov,Non-Whitehall,No,2010,..,0,0,..,..,..,50,0,0,0,0,..,0,0,0,0,30,0,0,0,0,0,0,0,0,0,100
+Welsh Assembly,Welsh Government,Welsh Gov,Non-Whitehall,No,2010,230,20,40,540,220,130,0,40,250,90,30,1890,0,40,1350,80,190,180,0,40,50,70,0,..,410,0,5890
+ONS total,All employees,Total employment,Total Employment ONS total,Total Employment ONS total,2010,3870,580,1920,11580,6180,7550,590,500,840,5900,1320,264360,240,460,18120,2110,5410,460,1000,5240,390,1350,8700,490,39000,103870,492020
+Attorney General's departments,Attorney General's Office,AGO,Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,10,0,..,0,0,20,0,0,0,0,0,0,0,0,0,0,0,40
+Attorney General's departments,Crown Prosecution Service,AGO,Non-Whitehall,No,2013,50,0,0,70,120,50,0,..,20,2930,0,3470,0,0,0,30,30,0,0,0,0,0,0,0,0,0,6770
+Attorney General's departments,Crown Prosecution Service Inspectorate,AGO,Non-Whitehall,No,2013,0,0,0,0,..,0,0,0,0,20,0,..,0,0,10,0,0,0,0,0,0,0,0,0,0,0,30
+Attorney General's departments,National Fraud Authority [AGO],AGO,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Attorney General's departments,Revenue and Customs Prosecution Office,AGO,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Attorney General's departments,Serious Fraud Office,AGO,Non-Whitehall,No,2013,10,0,0,10,10,10,0,0,..,10,0,210,0,0,10,..,0,0,0,0,0,0,0,0,30,0,290
+Attorney General's departments,Treasury Solicitor,AGO,Non-Whitehall,No,2013,0,0,0,30,20,10,0,0,0,640,0,50,0,0,190,0,0,0,0,0,0,0,0,0,0,0,930
+"Business, Innovation and Skills",Advisory Conciliation and Arbitration Service,BIS,Non-Whitehall,No,2013,10,0,0,10,20,30,0,0,10,0,0,670,10,0,10,10,..,0,0,0,0,0,0,0,0,0,780
+"Business, Innovation and Skills","Business, Enterprise and Regulatory Reform",BIS,Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Business, Innovation and Skills","Business, Innovation and Skills",BIS,Whitehall,Yes,2013,90,60,0,120,80,30,0,20,40,140,0,670,10,10,1680,..,50,10,0,0,..,30,0,0,0,0,3060
+"Business, Innovation and Skills",Companies House,BIS,Non-Whitehall,No,2013,30,0,0,60,40,140,0,0,0,..,0,560,0,0,30,10,0,0,0,0,0,0,0,0,0,0,870
+"Business, Innovation and Skills",UK Space Agency,BIS,Non-Whitehall,No,2013,..,0,0,..,..,0,0,0,0,..,0,0,0,0,20,0,10,0,0,10,0,0,0,0,0,0,50
+"Innovation, Universities and Skills","Department for Innovation, Universities and Skills",BIS,Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Export Credits Guarantee Department,Export Credit Guarantee Department,BIS,Non-Whitehall,No,2013,0,..,0,10,10,10,0,10,0,10,0,120,..,0,0,..,..,0,0,0,0,0,0,0,10,0,190
+"Business, Innovation and Skills",Insolvency Service,BIS,Non-Whitehall,No,2013,10,0,0,70,30,40,0,10,0,0,0,1670,0,10,40,10,0,0,0,0,0,..,0,0,0,0,1890
+"Business, Innovation and Skills",National Measurement Office,BIS,Non-Whitehall,No,2013,..,0,20,..,0,..,0,0,0,0,0,0,0,10,..,20,10,0,0,..,0,0,0,0,0,0,60
+"Business, Innovation and Skills",National Weights and Measures Laboratory,BIS,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Business, Innovation and Skills",Office of Fair Trading,BIS,Non-Whitehall,No,2013,20,60,0,10,20,20,0,..,10,110,0,260,0,0,10,..,0,..,0,0,0,..,0,0,0,0,530
+"Business, Innovation and Skills",Office of Gas and Electricity Market,DECC,Non-Whitehall,No,2013,20,80,..,10,10,40,0,0,..,50,0,250,0,0,210,10,10,0,0,0,0,0,0,0,0,0,690
+"Business, Innovation and Skills",Postal Services Commission,BIS,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Business, Innovation and Skills",Skills Funding Agency,BIS,Non-Whitehall,No,2013,30,0,0,160,20,0,0,10,190,10,0,860,0,0,0,0,0,..,0,0,0,0,0,0,0,0,1280
+"Business, Innovation and Skills",UK Intellectual Property Office,BIS,Non-Whitehall,No,2013,50,10,0,40,20,110,0,0,10,0,0,510,0,10,100,10,20,20,0,0,0,0,0,0,0,0,910
+"Business, Innovation and Skills",HM Land Registry,BIS,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Business, Innovation and Skills",Met Office,BIS,Non-Whitehall,No,2013,0,20,0,30,50,310,0,10,0,0,0,540,0,0,0,10,30,0,0,620,0,0,0,0,260,0,1880
+"Business, Innovation and Skills",Ordnance Survey,BIS,Non-Whitehall,No,2013,130,0,0,30,30,190,0,..,0,10,0,640,30,0,20,..,10,..,0,0,0,0,0,0,0,0,1100
+Cabinet Office ,Buying Solutions,CO,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Cabinet Office ,Cabinet Office excl agencies,CO,Whitehall,Yes,2013,190,..,0,60,50,30,0,0,20,..,0,220,0,30,1000,20,60,80,0,0,0,10,0,0,30,0,1810
+Cabinet Office ,Central Office of Information,CO,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Charity Commission,Charity Commission,CO,Non-Whitehall,No,2013,10,0,0,10,10,10,0,0,10,10,0,200,0,0,20,..,0,0,0,0,0,0,0,0,20,0,310
+Cabinet Office ,National School of Government,CO,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Cabinet Office ,Office of the Parliamentary Counsel,CO,Non-Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,50,0,50,0,0,..,0,..,0,0,0,0,0,0,0,0,0,100
+Cabinet Office ,Government Procurement Service,CO,Non-Whitehall,Yes,2013,20,0,0,10,10,10,0,10,0,0,0,0,0,0,0,290,0,0,0,0,0,0,0,0,20,0,370
+Communities and Local Government,Department for Communities and Local Government,DCLG,Whitehall,Yes,2013,50,40,0,120,40,50,0,50,10,50,0,180,10,160,800,20,0,10,0,10,30,40,0,0,0,0,1680
+Communities and Local Government,Fire Service College,DCLG,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Communities and Local Government,Ordnance Survey [DCLG],DCLG,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Communities and Local Government,Planning Inspectorate,DCLG,Non-Whitehall,Yes,2013,..,0,0,10,20,40,0,0,0,10,0,330,0,210,10,..,0,0,0,0,0,10,0,0,10,0,650
+Communities and Local Government,Queen Elizabeth II Conference Centre,DCLG,Non-Whitehall,No,2013,..,0,0,..,..,..,0,0,0,0,0,30,0,0,0,0,..,0,0,0,0,0,0,0,0,0,40
+"Culture, Media and Sport",Department for Culture Media and Sport,DCMS,Whitehall,Yes,2013,..,..,0,..,..,..,0,0,..,0,0,..,..,0,50,..,..,0,0,0,..,0,0,0,40,270,380
+"Culture, Media and Sport",Royal Parks,DCMS,Non-Whitehall,No,2013,10,0,0,10,..,10,0,0,..,0,0,70,0,0,..,..,10,..,0,0,0,0,0,0,10,0,120
+Department for Energy and Climate Change ,Department for Energy and Climate Change,DECC,Whitehall,Yes,2013,60,60,20,40,30,10,0,0,10,50,0,0,0,30,770,10,0,0,0,50,0,20,0,0,0,280,1430
+"Environment, Food and Rural Affairs",Animal Health and Veterinary Laboratories Agency,Defra,Non-Whitehall,No,2013,30,0,0,20,30,20,0,0,10,0,0,1040,0,0,0,10,0,10,0,700,0,0,0,300,10,0,2180
+"Environment, Food and Rural Affairs",Central Science Laboratory,Defra,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Environment, Food and Rural Affairs",Animal Health,Defra,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Environment, Food and Rural Affairs",Centre for Environment Fisheries and Aquaculture Science,Defra,Non-Whitehall,No,2013,10,0,10,20,..,40,0,..,..,0,0,0,0,0,0,..,0,..,0,430,0,0,0,0,20,0,540
+"Environment, Food and Rural Affairs",Department for Environment Food and Rural Affairs,Defra,Whitehall,Yes,2013,80,60,0,200,130,80,0,20,60,0,0,40,10,..,1150,60,10,30,0,70,10,60,0,10,20,0,2090
+"Environment, Food and Rural Affairs",Food & Environment Research Agency,Defra,Non-Whitehall,No,2013,..,0,0,30,20,30,0,10,0,0,0,150,0,0,..,..,..,0,0,640,0,..,0,0,0,0,880
+"Environment, Food and Rural Affairs",Government Decontamination Services,Defra,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Environment, Food and Rural Affairs",Marine Fisheries Agency,Defra,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Environment, Food and Rural Affairs",OFWAT,Defra,Non-Whitehall,No,2013,10,20,0,20,10,10,0,0,0,10,0,90,0,0,20,..,..,0,0,0,0,0,0,0,0,0,180
+"Environment, Food and Rural Affairs",Rural Payments Agency,Defra,Non-Whitehall,Yes,2013,80,0,0,220,40,70,0,20,10,0,0,1350,70,0,60,10,110,10,0,0,0,0,0,0,60,0,2100
+"Environment, Food and Rural Affairs",Veterinary Laboratories Agency,Defra,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+"Environment, Food and Rural Affairs",Veterinary Medicines Directorate,Defra,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,80,0,0,40,0,0,0,0,20,0,0,0,10,0,0,150
+"Children, Schools and Families / Department for Education",Department for Education,DfE,Whitehall,Yes,2013,150,20,0,110,70,170,0,30,20,10,0,50,0,0,1430,50,70,40,0,0,0,90,0,0,200,0,2530
+Office of Qualifications and Examinations Regulation,Office of Qualifications and Examinations Regulation,DfE,Non-Whitehall,No,2013,10,10,0,..,..,..,0,0,0,..,0,0,0,0,..,..,0,0,0,0,0,..,0,0,110,0,150
+Ofsted,Ofsted,DfE,Non-Whitehall,No,2013,20,0,0,40,50,30,310,0,0,10,0,380,0,0,0,10,0,..,0,0,0,30,0,0,310,0,1190
+Department for Education,Standards and Testing Agency,DfE,Non-Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,0,0,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90
+Department for Education,Education Funding Agency,DfE,Non-Whitehall,Yes,2013,0,0,0,20,0,0,0,0,0,0,0,640,0,0,0,0,0,0,0,0,0,0,0,0,20,0,680
+Department for Education,National College,DfE,Non-Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,..,0,130,0,0,0,0,0,0,0,70,0,200
+Department for Education,Teaching Agency,DfE,Non-Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,0,0,240,0,0,0,0,0,0,0,0,0,0,0,0,0,0,240
+Department for Education,National College for Teaching and Leadership,DfE,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+International Development ,Department for International Development,DfID,Whitehall,Yes,2013,50,90,10,80,100,90,20,20,10,0,40,510,0,0,670,30,0,30,0,0,0,30,0,0,0,0,1760
+Transport,Department for Transport,DfT,Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1710,1710
+Transport,Driver and Vehicle Licensing Agency,DfT,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5860,5860
+Transport,Driving Standards Agency,DfT,Non-Whitehall,No,2013,10,0,0,40,30,20,0,0,40,0,0,1900,0,10,10,30,10,20,0,0,10,0,0,0,130,0,2260
+Transport,Government Car and Despatch Agency,DfT,Non-Whitehall,No,2013,0,0,0,10,..,..,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,70,0,80
+Transport,Highways Agency,DfT,Non-Whitehall,No,2013,20,0,0,110,50,40,0,10,20,0,0,2570,0,0,250,90,0,40,0,0,0,0,0,0,0,0,3210
+Transport,Maritime and Coastguard Agency,DfT,Non-Whitehall,No,2013,10,0,0,10,40,40,0,10,10,0,0,830,10,0,50,..,20,10,0,0,0,0,0,0,..,0,1030
+Transport,Office of Rail Regulation,DfT,Non-Whitehall,No,2013,20,20,10,10,10,..,0,0,..,10,0,140,0,..,40,0,..,..,0,0,0,10,0,0,0,0,270
+Transport,Vehicle and Operator Services Agency,DfT,Non-Whitehall,No,2013,10,0,10,40,80,40,0,10,0,10,0,1890,0,0,30,10,0,10,0,0,0,0,0,0,60,0,2180
+Transport,Vehicle Certification Agency,DfT,Non-Whitehall,No,2013,10,0,40,10,..,..,0,0,0,0,0,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,140
+Health,Department of Health (excl agencies),DH,Whitehall,Yes,2013,160,60,0,170,60,70,0,10,40,0,0,70,40,0,1270,60,20,0,0,20,10,70,0,0,20,40,2200
+Health,Food Standards Agency,DH,Non-Whitehall,No,2013,40,..,0,40,30,10,0,20,..,10,0,650,10,..,130,10,10,0,0,50,10,..,0,20,220,0,1280
+Health,Meat Hygiene Service,DH,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Health,Medicines and Healthcare Products Regulatory Agency,DH,Non-Whitehall,No,2013,20,0,0,20,10,10,0,0,..,0,330,380,..,0,40,0,..,..,0,50,0,10,0,0,0,0,890
+Health,National Healthcare Purchasing and Supplies,DH,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Health,NHS Business Services Authority,DH,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Health,Public Health England,DH,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Work and Pensions,Department for Work and Pensions,DWP,Non-Whitehall,Yes,2013,190,0,0,3820,770,1310,0,0,0,440,0,82310,0,0,1630,280,1750,0,0,0,0,0,0,0,0,20,92530
+Work and Pensions,Child Maintenance Enforcement Commission,DWP,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Work and Pensions,DWP Corporate and Shared Services  ,DWP,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Work and Pensions,Jobcentre Plus,DWP,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Work and Pensions,Pensions & Disability Carers Service ,DWP,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Work and Pensions,The Health and Safety Executive,DWP,Non-Whitehall,No,2013,70,10,0,50,60,20,0,10,60,20,..,2430,0,0,110,20,10,20,10,250,0,30,0,0,0,0,3180
+Work and Pensions,The Rent Service,DWP,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Foreign and Commonwealth Office,Foreign and Commonwealth Office (excl agencies),FCO,Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4780,4780
+Security and Intelligence Services,Security and Intelligence Services,FCO,Non-Whitehall,No,2013,40,0,940,230,240,200,0,10,100,10,0,0,0,0,0,90,190,0,0,0,0,0,0,0,3170,0,5220
+Foreign and Commonwealth Office,Wilton Park Executive Agency,FCO,Non-Whitehall,No,2013,..,0,0,..,..,..,0,0,0,0,0,30,0,0,0,0,20,0,0,0,0,0,0,0,0,0,70
+Foreign and Commonwealth Office,Foreign and Commonwealth Office Services,FCO,Non-Whitehall,No,2013,10,0,40,40,20,100,0,..,..,0,0,500,0,0,10,10,60,70,0,0,0,0,0,0,10,0,860
+Government Equalities Office,Government Equalities Office,GEO,Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+UK Statistics Authority,Census Field,CO,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Chancellor's other departments,Debt Management Office,HMT,Non-Whitehall,Yes,2013,0,..,0,10,..,40,0,..,..,..,0,30,0,0,10,..,..,0,0,0,0,0,0,0,..,0,110
+Chancellor's other departments,Government Actuary's Department,HMT,Non-Whitehall,Yes,2013,0,0,0,10,..,10,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,120
+HM Revenue and Customs,HM Revenue and Customs,HMRC,Non-Whitehall,Yes,2013,170,10,0,410,990,1290,0,90,..,340,0,35590,0,..,560,140,690,410,0,0,..,320,23460,0,0,0,64480
+HM Treasury,HM Treasury,HMT,Whitehall,Yes,2013,10,70,0,40,20,20,0,..,..,..,0,60,0,10,520,10,0,0,0,0,10,0,0,0,440,0,1210
+HM Treasury,Office for Budget Responsibility,HMT,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,..,0,20
+HM Treasury,Asset Protection Agency,HMT,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Chancellor's other departments,National Savings and Investments,HMT,Non-Whitehall,No,2013,30,0,0,30,10,10,0,..,..,..,0,10,0,..,..,20,20,..,0,0,10,..,0,0,40,0,170
+Chancellor's other departments,Office of Government Commerce,HMT,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Chancellor's other departments,OGC Buying Solutions,HMT,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Chancellor's other departments,Royal Mint,HMT,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+UK Statistics Authority,UK Statistics Authority,CO,Non-Whitehall,No,2013,40,30,0,40,50,220,0,..,10,0,0,1930,20,0,..,20,40,20,0,0,170,310,0,0,0,0,2910
+HM Revenue and Customs,Valuation Office,HMRC,Non-Whitehall,Yes,2013,10,0,0,40,90,90,0,0,0,0,0,3250,0,10,10,20,0,0,0,0,0,20,0,0,0,0,3540
+Home Office,Criminal Records Bureau,HO,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Home Office,Home Office (excl agencies),HO,Non-Whitehall,Yes,2013,190,40,0,270,290,410,0,60,80,770,10,7410,80,0,620,100,400,60,10,120,50,60,0,30,130,0,11170
+Home Office,Identity and Passport Service,HO,Non-Whitehall,No,2013,70,..,0,70,60,120,0,10,10,10,..,2570,20,0,50,50,90,40,..,..,..,10,0,..,10,0,3180
+Home Office,UK Border Agency,HO,Non-Whitehall,Yes,2013,180,10,0,200,200,150,0,40,100,260,..,8370,130,0,220,110,270,40,..,20,..,50,0,10,50,0,10440
+Home Office,National Fraud Authority,HO,Non-Whitehall,No,2013,..,0,0,..,..,0,0,..,0,..,0,20,0,0,10,0,10,0,0,0,..,..,0,0,0,0,50
+Defence,Defence Science and Technology Laboratory,MoD,Non-Whitehall,Yes,2013,10,0,0,70,50,0,0,50,70,0,0,200,0,0,0,60,120,60,0,3010,0,0,0,0,0,0,3710
+Defence,Defence Support Group,MoD,Non-Whitehall,Yes,2013,0,0,0,20,20,40,0,0,0,0,0,2380,0,0,0,10,0,..,0,0,0,0,0,0,0,0,2460
+Defence,Meteorological Office,MoD,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Defence,Royal Fleet Auxiliary,MoD,Non-Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1900,0,1900
+Defence,Ministry of Defence,MoD,Non-Whitehall,Yes,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47710,0,47710
+Defence,UK Hydrographic Office,MoD,Non-Whitehall,Yes,2013,100,0,0,20,10,110,0,10,0,0,..,770,0,0,..,20,0,0,0,0,0,0,0,0,0,0,1040
+Justice,Her Majesty's Courts and Tribunals Service,MoJ,Non-Whitehall,Yes,2013,..,0,0,90,80,40,0,0,0,1390,0,15660,0,..,0,0,50,0,0,0,0,0,0,0,0,0,17310
+Justice,HM Courts Service,MoJ,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Justice,Land Registry,MoJ,Non-Whitehall,No,2013,0,0,0,40,90,360,0,0,0,30,0,3370,0,0,0,20,0,0,0,0,0,0,0,0,100,0,4010
+Justice,Ministry of Justice (excl agencies),MoJ,Whitehall,Yes,2013,80,30,0,310,540,500,0,70,120,90,..,870,30,0,1030,220,40,310,0,0,20,40,0,0,0,0,4310
+Justice,National Archives,MoJ,Non-Whitehall,No,2013,10,0,0,10,10,50,0,0,20,0,0,340,10,0,0,..,10,10,0,0,0,0,0,0,110,0,590
+Justice,National Offender Management Service,MoJ,Non-Whitehall,Yes,2013,20,0,0,100,90,30,10,0,50,0,160,38190,0,0,40,50,0,0,530,0,0,0,0,0,1350,0,40620
+Justice,Scotland Office (incl. Office of the Advocate General for Scotland),MoJ,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,90
+Justice,The Office of the Public Guardian,MoJ,Non-Whitehall,Yes,2013,10,0,0,10,0,0,0,0,0,0,0,440,0,0,0,0,0,0,0,0,0,0,0,0,0,0,460
+Justice,Tribunals Service,MoJ,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Justice,UK Supreme Court,MoJ,Non-Whitehall,No,2013,..,0,0,..,..,..,0,0,..,10,0,30,0,0,0,0,0,..,0,0,0,0,0,0,0,0,50
+Justice,Wales Office,MoJ,Non-Whitehall,No,2013,10,0,0,..,..,0,0,0,0,..,0,..,0,0,30,0,0,0,0,0,0,0,0,0,0,0,40
+Justice,Legal Aid Agency,MoJ,Non-Whitehall,Yes,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Northern Ireland Office,Northern Ireland Office,NIO,Whitehall,Yes,2013,..,0,0,10,..,0,0,0,0,0,0,40,0,0,40,0,0,0,0,0,0,0,0,0,0,0,90
+Scottish Government,Crown Office and Procurator Fiscal,Scot Gov,Non-Whitehall,No,2013,10,0,0,10,30,30,0,0,20,440,0,1010,0,0,20,0,0,0,0,0,0,0,0,0,0,0,1580
+Scottish Government,Disclosure Scotland,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,170,170
+Scottish Government,Fisheries Research Services,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,General Register Scotland,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,GROS Census Field,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Historic Scotland,Scot Gov,Non-Whitehall,No,2013,30,0,180,30,20,10,0,0,10,0,0,700,0,10,10,..,10,..,0,..,10,0,0,0,0,0,1010
+Scottish Government,HM Inspectorate of Education,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Mental Health Tribunal Scotland,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,National Records of Scotland,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,380,380
+Scottish Government,National Archive for Scotland,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Office for the Scottish Charity Regulator,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,50
+Scottish Government,Accountant in Bankruptcy,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,140,140
+Scottish Government,Registers of Scotland,Scot Gov,Non-Whitehall,No,2013,30,0,0,40,20,30,0,0,10,20,0,790,0,0,10,0,..,10,0,0,0,0,0,0,0,0,940
+Scottish Government,Scottish Court Service,Scot Gov,Non-Whitehall,No,2013,0,0,0,10,40,30,0,0,0,0,0,1250,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1330
+Scottish Government,Scottish Fisheries Protection Agency,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Scottish Government (excl agencies),Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4920,4920
+Scottish Government,Scottish Housing Regulator,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,40
+Scottish Government,Scottish Law Commission,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Scottish Prison Service Headquarters,Scot Gov,Non-Whitehall,No,2013,..,0,200,250,170,20,0,..,0,10,20,3240,0,0,0,30,0,0,60,0,0,..,0,0,200,0,4210
+Scottish Government,Scottish Public Pensions Agency,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,250,250
+Scottish Government,Social Work Inspection Agency,Scot Gov,Non-Whitehall,No,2013,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A
+Scottish Government,Student Awards Agency,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,190,190
+Scottish Government,Transport Scotland,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,370,370
+Scottish Government,Education Scotland,Scot Gov,Non-Whitehall,No,2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,240,240
+Welsh Assembly,ESTYN,Welsh Gov,Non-Whitehall,No,2013,..,0,0,..,..,0,50,0,..,0,0,20,0,0,0,..,..,..,0,0,0,..,0,0,..,0,100
+Welsh Assembly,Welsh Government,Welsh Gov,Non-Whitehall,No,2013,220,40,40,420,230,130,0,40,180,100,30,1810,0,40,1370,80,160,100,0,20,70,40,0,..,170,0,5290
+ONS total,All employees,Total employment,Total Employment ONS total,Total Employment ONS total,2013,3080,850,1500,8870,5630,7370,400,670,1410,8130,600,240500,460,550,16510,2200,4570,1470,600,6090,410,1300,23460,380,57140,19780,413930
