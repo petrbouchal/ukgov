@@ -2,7 +2,7 @@ library(plyr)
 library(reshape2)
 library(stringr)
 
-datetime = '20140208_031439'
+datetime = '20140209_200303'
 path = '~/PycharmProjects/SCSgovUK/output/'
 
 govukpubs <- read.csv(paste0(path,'pubpages_',datetime,'.csv'))
@@ -66,3 +66,11 @@ govuk$staff[is.na(govuk$staff)] <- str_extract(govuk$url[is.na(govuk$staff)],
                                                          "[Ss]taff")
 govuk$staff <- tolower(govuk$staff)
 table(govuk$organogram,govuk$staff,exclude=NULL)
+table(govuk$organogram,govuk$staff,govuk$senjun,exclude=NULL)
+count(govuk, c('organogram','staff','senjun'))
+unique(govuk$puborg)
+
+coredepts <- read.csv('./data-input/Core_depts_GovUK.csv')
+govuk <- merge(govuk, coredepts, by.x='puborg', all.x=TRUE)
+govuk$coredept[govuk$coredept!=TRUE] <- FALSE
+table(govuk$coredept, exclude=F)
