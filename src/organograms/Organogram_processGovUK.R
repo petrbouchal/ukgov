@@ -81,8 +81,9 @@ govuk$earners <- tolower(str_extract(govuk$pubtitle,"[Ee]arners"))
 govuk$hospitality <- tolower(str_extract(govuk$pubtitle,"[Hh]ospitality"))
 govuk$expenses <- tolower(str_extract(govuk$pubtitle,"[Ee]xpenses"))
 govuk$spending <- tolower(str_extract(govuk$pubtitle,"[Ss]pending"))
-govuk$ministerial <- tolower(str_extract(govuk$pubtitle,"[Mm]inisterial"))
+govuk$ministerial <- tolower(str_extract(govuk$pubtitle,"[Mm]inister"))
 govuk$travel <- tolower(str_extract(govuk$pubtitle,"[Tt]ravel"))
+govuk$business <- tolower(str_extract(govuk$pubtitle,"[Bb]usiness"))
 
 govuk$staff <- tolower(govuk$staff)
 govuk$staff <- tolower(govuk$workforce)
@@ -109,6 +110,7 @@ govuk$include[!is.na(govuk$earners)] <- FALSE
 govuk$include[!is.na(govuk$spending)] <- FALSE
 govuk$include[!is.na(govuk$ministerial)] <- FALSE
 govuk$include[!is.na(govuk$travel)] <- FALSE
+govuk$include[!is.na(govuk$business)] <- FALSE
 
 govuknarrow <- govuk[govuk$include==TRUE,]
 
@@ -124,4 +126,4 @@ table(govuknarrow$coredept, exclude=NULL)
 
 govukcore <- subset(govuknarrow,coredept==TRUE)
 govukcore$puborg <- droplevels(govukcore$puborg)
-table(govukcore$puborg,govukcore$date_year)
+table(govukcore$puborg,govukcore$date_year, exclude=NULL)
