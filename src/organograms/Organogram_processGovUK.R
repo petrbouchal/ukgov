@@ -2,7 +2,7 @@ library(plyr)
 library(reshape2)
 library(stringr)
 
-datetime = '20140209_211543'
+datetime = '20140209_230453'
 path = '~/PycharmProjects/SCSgovUK/output/'
 
 govukpubs <- read.csv(paste0(path,'pubpages_',datetime,'.csv'))
@@ -76,6 +76,13 @@ govuk$payments <- tolower(str_extract(govuk$pubtitle,"[Pp]ayments"))
 govuk$strategy <- tolower(str_extract(govuk$pubtitle,"[Ss]trategy"))
 govuk$special <- tolower(str_extract(govuk$pubtitle,"[Ss]pecial"))
 govuk$recruitment <- tolower(str_extract(govuk$pubtitle,"[Rr]ecruitment"))
+govuk$meetings <- tolower(str_extract(govuk$pubtitle,"[Mm]eetings"))
+govuk$earners <- tolower(str_extract(govuk$pubtitle,"[Ee]arners"))
+govuk$hospitality <- tolower(str_extract(govuk$pubtitle,"[Hh]ospitality"))
+govuk$expenses <- tolower(str_extract(govuk$pubtitle,"[Ee]xpenses"))
+govuk$spending <- tolower(str_extract(govuk$pubtitle,"[Ss]pending"))
+govuk$ministerial <- tolower(str_extract(govuk$pubtitle,"[Mm]inisterial"))
+govuk$travel <- tolower(str_extract(govuk$pubtitle,"[Tt]ravel"))
 
 govuk$staff <- tolower(govuk$staff)
 govuk$staff <- tolower(govuk$workforce)
@@ -95,6 +102,13 @@ govuk$include[!is.na(govuk$payments)] <- FALSE
 govuk$include[!is.na(govuk$special)] <- FALSE
 govuk$include[!is.na(govuk$strategy)] <- FALSE
 govuk$include[!is.na(govuk$recruitment)] <- FALSE
+govuk$include[!is.na(govuk$meetings)] <- FALSE
+govuk$include[!is.na(govuk$hospitality)] <- FALSE
+govuk$include[!is.na(govuk$expenses)] <- FALSE
+govuk$include[!is.na(govuk$earners)] <- FALSE
+govuk$include[!is.na(govuk$spending)] <- FALSE
+govuk$include[!is.na(govuk$ministerial)] <- FALSE
+govuk$include[!is.na(govuk$travel)] <- FALSE
 
 govuknarrow <- govuk[govuk$include==TRUE,]
 
@@ -105,5 +119,9 @@ count(govuknarrow, c('organogram','staff','senjun'))
 table(govuk$month,govuk$date_year,exclude=NULL)
 table(govuknarrow$month, govuknarrow$date_year,exclude=NULL)
 table(govuknarrow$coredept, exclude=NULL)
-View(govuknarrow[is.na(govuknarrow$senjun) & is.na(govuknarrow$staff) &
-                   is.na(govuknarrow$organogram),])
+# View(govuknarrow[is.na(govuknarrow$senjun) & is.na(govuknarrow$staff) &
+#                    is.na(govuknarrow$organogram),])
+
+govukcore <- subset(govuknarrow,coredept==TRUE)
+govukcore$puborg <- droplevels(govukcore$puborg)
+table(govukcore$puborg,govukcore$date_year)
