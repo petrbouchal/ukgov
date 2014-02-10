@@ -11,6 +11,8 @@ AddOrgData <- function (dataset, whitehallonly=FALSE) {
   if(whitehallonly) {
     dataset$Whitehall[dataset$Group=='HMRC'] <- 'WH'
     dataset$Whitehall[dataset$Group=='DWP'] <- 'WH'
+    dataset$Whitehall[dataset$Group=='HO'] <- 'WH'
+    dataset$Whitehall[dataset$Group=='MoD'] <- 'WH'
     dataset <- dataset[dataset$Whitehall=='WH' | dataset$Whitehall=='Total',]
   }
   dataset <- dataset[dataset$Include=='Yes',]

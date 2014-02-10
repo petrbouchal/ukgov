@@ -1,13 +1,13 @@
 Profession,Category
-Communications and Marketing,Corporate
-Economics,Specialist
+Communications and Marketing,Communications & marketing
+Economics,Insight & analysis
 Engineering,Specialist
 Finance,Corporate
 Human Resources,Corporate
 Information Technology,Corporate
 Inspector of Education and Training,Specialist
 Internal Audit,Corporate
-Knowledge and Information Management,Corporate
+Knowledge and Information Management,Insight & analysis
 Law,Specialist
 Medicine,Specialist
 Operational Delivery,Operational delivery
@@ -15,13 +15,13 @@ Operational Research,Specialist
 Planning,Specialist
 Policy Delivery,Policy
 Procurement and Contract Management,Corporate
-Programme and Project Management,PPM
+Programme and Project Management,Operational delivery
 Property Asset Management,Corporate
 Psychology,Specialist
 Science,Specialist
-Social and Market Research,Specialist
-Statistics,Specialist
-Tax Professionals,Tax
+Social and Market Research,Insight & analysis
+Statistics,Insight & analysis
+Tax Professionals,Operational delivery
 Veterinarian,Specialist
 Other,Other
 Not Reported,Not reported

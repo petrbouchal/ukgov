@@ -49,7 +49,8 @@ csv$time <- years + (quarters-1)/4
 
 # Convert table to long for for use with ggplot2
 data_long <- melt(csv, id.vars='time', variable.name='CDID', value.name='value')
-data_long <- join(data_long, metadata)
+data_long <- rename(data_long,c('variable'='CDID'))
+data_long <- join(data_long, metadata,by='CDID')
 data_long$value <- as.numeric(data_long$value)
 
 # plot employment rate time series by country (colour) and sex (panel)

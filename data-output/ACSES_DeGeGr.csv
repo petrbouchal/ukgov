@@ -1,1081 +1,649 @@
 "","Group","Gender","Date","Civil.Service.grad","count"
-"1","BIS","Female",2008,"Administrative officers and assistants",340
-"2","BIS","Female",2008,"Executive officer",410
-"3","BIS","Female",2008,"Grades 6 & 7",510
-"4","BIS","Female",2008,"Not reported",0
-"5","BIS","Female",2008,"Senior and higher executive officer",660
-"6","BIS","Female",2008,"Senior Civil Service",80
-"7","BIS","Female",2009,"Administrative officers and assistants",270
-"8","BIS","Female",2009,"Executive officer",370
-"9","BIS","Female",2009,"Grades 6 & 7",500
-"10","BIS","Female",2009,"Not reported",0
-"11","BIS","Female",2009,"Senior and higher executive officer",660
-"12","BIS","Female",2009,"Senior Civil Service",100
-"13","BIS","Female",2010,"Administrative officers and assistants",240
-"14","BIS","Female",2010,"Executive officer",360
-"15","BIS","Female",2010,"Grades 6 & 7",540
-"16","BIS","Female",2010,"Not reported",0
-"17","BIS","Female",2010,"Senior and higher executive officer",680
-"18","BIS","Female",2010,"Senior Civil Service",100
-"19","BIS","Female",2011,"Administrative officers and assistants",210
-"20","BIS","Female",2011,"Executive officer",290
-"21","BIS","Female",2011,"Grades 6 & 7",480
-"22","BIS","Female",2011,"Not reported",0
-"23","BIS","Female",2011,"Senior and higher executive officer",590
-"24","BIS","Female",2011,"Senior Civil Service",90
-"25","BIS","Female",2012,"Administrative officers and assistants",160
-"26","BIS","Female",2012,"Executive officer",250
-"27","BIS","Female",2012,"Grades 6 & 7",430
-"28","BIS","Female",2012,"Not reported",0
-"29","BIS","Female",2012,"Senior and higher executive officer",480
-"30","BIS","Female",2012,"Senior Civil Service",80
-"31","BIS","Male",2008,"Administrative officers and assistants",220
-"32","BIS","Male",2008,"Executive officer",290
-"33","BIS","Male",2008,"Grades 6 & 7",700
-"34","BIS","Male",2008,"Not reported",0
-"35","BIS","Male",2008,"Senior and higher executive officer",910
-"36","BIS","Male",2008,"Senior Civil Service",170
-"37","BIS","Male",2009,"Administrative officers and assistants",170
-"38","BIS","Male",2009,"Executive officer",270
-"39","BIS","Male",2009,"Grades 6 & 7",660
-"40","BIS","Male",2009,"Not reported",0
-"41","BIS","Male",2009,"Senior and higher executive officer",820
-"42","BIS","Male",2009,"Senior Civil Service",160
-"43","BIS","Male",2010,"Administrative officers and assistants",150
-"44","BIS","Male",2010,"Executive officer",270
-"45","BIS","Male",2010,"Grades 6 & 7",680
-"46","BIS","Male",2010,"Not reported",30
-"47","BIS","Male",2010,"Senior and higher executive officer",810
-"48","BIS","Male",2010,"Senior Civil Service",160
-"49","BIS","Male",2011,"Administrative officers and assistants",120
-"50","BIS","Male",2011,"Executive officer",220
-"51","BIS","Male",2011,"Grades 6 & 7",610
-"52","BIS","Male",2011,"Not reported",0
-"53","BIS","Male",2011,"Senior and higher executive officer",730
-"54","BIS","Male",2011,"Senior Civil Service",130
-"55","BIS","Male",2012,"Administrative officers and assistants",100
-"56","BIS","Male",2012,"Executive officer",200
-"57","BIS","Male",2012,"Grades 6 & 7",510
-"58","BIS","Male",2012,"Not reported",0
-"59","BIS","Male",2012,"Senior and higher executive officer",620
-"60","BIS","Male",2012,"Senior Civil Service",120
-"61","CO","Female",2008,"Administrative officers and assistants",100
-"62","CO","Female",2008,"Executive officer",170
-"63","CO","Female",2008,"Grades 6 & 7",140
-"64","CO","Female",2008,"Not reported",0
-"65","CO","Female",2008,"Senior and higher executive officer",180
-"66","CO","Female",2008,"Senior Civil Service",60
-"67","CO","Female",2009,"Administrative officers and assistants",110
-"68","CO","Female",2009,"Executive officer",170
-"69","CO","Female",2009,"Grades 6 & 7",150
-"70","CO","Female",2009,"Not reported",0
-"71","CO","Female",2009,"Senior and higher executive officer",190
-"72","CO","Female",2009,"Senior Civil Service",60
-"73","CO","Female",2010,"Administrative officers and assistants",100
-"74","CO","Female",2010,"Executive officer",160
-"75","CO","Female",2010,"Grades 6 & 7",150
-"76","CO","Female",2010,"Not reported",0
-"77","CO","Female",2010,"Senior and higher executive officer",210
-"78","CO","Female",2010,"Senior Civil Service",60
-"79","CO","Female",2011,"Administrative officers and assistants",100
-"80","CO","Female",2011,"Executive officer",160
-"81","CO","Female",2011,"Grades 6 & 7",200
-"82","CO","Female",2011,"Not reported",0
-"83","CO","Female",2011,"Senior and higher executive officer",270
-"84","CO","Female",2011,"Senior Civil Service",70
-"85","CO","Female",2012,"Administrative officers and assistants",90
-"86","CO","Female",2012,"Executive officer",150
-"87","CO","Female",2012,"Grades 6 & 7",230
-"88","CO","Female",2012,"Not reported",0
-"89","CO","Female",2012,"Senior and higher executive officer",280
-"90","CO","Female",2012,"Senior Civil Service",70
-"91","CO","Male",2008,"Administrative officers and assistants",80
-"92","CO","Male",2008,"Executive officer",90
-"93","CO","Male",2008,"Grades 6 & 7",170
-"94","CO","Male",2008,"Not reported",0
-"95","CO","Male",2008,"Senior and higher executive officer",170
-"96","CO","Male",2008,"Senior Civil Service",100
-"97","CO","Male",2009,"Administrative officers and assistants",80
-"98","CO","Male",2009,"Executive officer",80
-"99","CO","Male",2009,"Grades 6 & 7",170
-"100","CO","Male",2009,"Not reported",0
-"101","CO","Male",2009,"Senior and higher executive officer",170
-"102","CO","Male",2009,"Senior Civil Service",90
-"103","CO","Male",2010,"Administrative officers and assistants",80
-"104","CO","Male",2010,"Executive officer",80
-"105","CO","Male",2010,"Grades 6 & 7",170
-"106","CO","Male",2010,"Not reported",0
-"107","CO","Male",2010,"Senior and higher executive officer",170
-"108","CO","Male",2010,"Senior Civil Service",80
-"109","CO","Male",2011,"Administrative officers and assistants",70
-"110","CO","Male",2011,"Executive officer",90
-"111","CO","Male",2011,"Grades 6 & 7",240
-"112","CO","Male",2011,"Not reported",0
-"113","CO","Male",2011,"Senior and higher executive officer",220
-"114","CO","Male",2011,"Senior Civil Service",90
-"115","CO","Male",2012,"Administrative officers and assistants",70
-"116","CO","Male",2012,"Executive officer",110
-"117","CO","Male",2012,"Grades 6 & 7",280
-"118","CO","Male",2012,"Not reported",0
-"119","CO","Male",2012,"Senior and higher executive officer",240
-"120","CO","Male",2012,"Senior Civil Service",100
-"121","DCLG","Female",2008,"Administrative officers and assistants",280
-"122","DCLG","Female",2008,"Executive officer",320
-"123","DCLG","Female",2008,"Grades 6 & 7",300
-"124","DCLG","Female",2008,"Not reported",0
-"125","DCLG","Female",2008,"Senior and higher executive officer",520
-"126","DCLG","Female",2008,"Senior Civil Service",80
-"127","DCLG","Female",2009,"Administrative officers and assistants",180
-"128","DCLG","Female",2009,"Executive officer",270
-"129","DCLG","Female",2009,"Grades 6 & 7",300
-"130","DCLG","Female",2009,"Not reported",0
-"131","DCLG","Female",2009,"Senior and higher executive officer",470
-"132","DCLG","Female",2009,"Senior Civil Service",50
-"133","DCLG","Female",2010,"Administrative officers and assistants",180
-"134","DCLG","Female",2010,"Executive officer",240
-"135","DCLG","Female",2010,"Grades 6 & 7",310
-"136","DCLG","Female",2010,"Not reported",0
-"137","DCLG","Female",2010,"Senior and higher executive officer",540
-"138","DCLG","Female",2010,"Senior Civil Service",50
-"139","DCLG","Female",2011,"Administrative officers and assistants",150
-"140","DCLG","Female",2011,"Executive officer",200
-"141","DCLG","Female",2011,"Grades 6 & 7",300
-"142","DCLG","Female",2011,"Not reported",0
-"143","DCLG","Female",2011,"Senior and higher executive officer",490
-"144","DCLG","Female",2011,"Senior Civil Service",50
-"145","DCLG","Female",2012,"Administrative officers and assistants",90
-"146","DCLG","Female",2012,"Executive officer",150
-"147","DCLG","Female",2012,"Grades 6 & 7",270
-"148","DCLG","Female",2012,"Not reported",0
-"149","DCLG","Female",2012,"Senior and higher executive officer",420
-"150","DCLG","Female",2012,"Senior Civil Service",40
-"151","DCLG","Male",2008,"Administrative officers and assistants",220
-"152","DCLG","Male",2008,"Executive officer",240
-"153","DCLG","Male",2008,"Grades 6 & 7",370
-"154","DCLG","Male",2008,"Not reported",0
-"155","DCLG","Male",2008,"Senior and higher executive officer",560
-"156","DCLG","Male",2008,"Senior Civil Service",100
-"157","DCLG","Male",2009,"Administrative officers and assistants",130
-"158","DCLG","Male",2009,"Executive officer",230
-"159","DCLG","Male",2009,"Grades 6 & 7",350
-"160","DCLG","Male",2009,"Not reported",0
-"161","DCLG","Male",2009,"Senior and higher executive officer",480
-"162","DCLG","Male",2009,"Senior Civil Service",80
-"163","DCLG","Male",2010,"Administrative officers and assistants",130
-"164","DCLG","Male",2010,"Executive officer",200
-"165","DCLG","Male",2010,"Grades 6 & 7",390
-"166","DCLG","Male",2010,"Not reported",0
-"167","DCLG","Male",2010,"Senior and higher executive officer",520
-"168","DCLG","Male",2010,"Senior Civil Service",80
-"169","DCLG","Male",2011,"Administrative officers and assistants",100
-"170","DCLG","Male",2011,"Executive officer",170
-"171","DCLG","Male",2011,"Grades 6 & 7",350
-"172","DCLG","Male",2011,"Not reported",0
-"173","DCLG","Male",2011,"Senior and higher executive officer",450
-"174","DCLG","Male",2011,"Senior Civil Service",70
-"175","DCLG","Male",2012,"Administrative officers and assistants",50
-"176","DCLG","Male",2012,"Executive officer",120
-"177","DCLG","Male",2012,"Grades 6 & 7",310
-"178","DCLG","Male",2012,"Not reported",0
-"179","DCLG","Male",2012,"Senior and higher executive officer",380
-"180","DCLG","Male",2012,"Senior Civil Service",60
-"181","DCMS","Female",2008,"Administrative officers and assistants",30
-"182","DCMS","Female",2008,"Executive officer",60
-"183","DCMS","Female",2008,"Grades 6 & 7",40
-"184","DCMS","Female",2008,"Not reported",0
-"185","DCMS","Female",2008,"Senior and higher executive officer",80
-"186","DCMS","Female",2008,"Senior Civil Service",10
-"187","DCMS","Female",2009,"Administrative officers and assistants",20
-"188","DCMS","Female",2009,"Executive officer",40
-"189","DCMS","Female",2009,"Grades 6 & 7",60
-"190","DCMS","Female",2009,"Not reported",0
-"191","DCMS","Female",2009,"Senior and higher executive officer",80
-"192","DCMS","Female",2009,"Senior Civil Service",20
-"193","DCMS","Female",2010,"Administrative officers and assistants",20
-"194","DCMS","Female",2010,"Executive officer",50
-"195","DCMS","Female",2010,"Grades 6 & 7",60
-"196","DCMS","Female",2010,"Not reported",0
-"197","DCMS","Female",2010,"Senior and higher executive officer",80
-"198","DCMS","Female",2010,"Senior Civil Service",20
-"199","DCMS","Female",2011,"Administrative officers and assistants",10
-"200","DCMS","Female",2011,"Executive officer",40
-"201","DCMS","Female",2011,"Grades 6 & 7",60
-"202","DCMS","Female",2011,"Not reported",0
-"203","DCMS","Female",2011,"Senior and higher executive officer",70
-"204","DCMS","Female",2011,"Senior Civil Service",20
-"205","DCMS","Female",2012,"Administrative officers and assistants",10
-"206","DCMS","Female",2012,"Executive officer",40
-"207","DCMS","Female",2012,"Grades 6 & 7",70
-"208","DCMS","Female",2012,"Not reported",0
-"209","DCMS","Female",2012,"Senior and higher executive officer",70
-"210","DCMS","Female",2012,"Senior Civil Service",20
-"211","DCMS","Male",2008,"Administrative officers and assistants",20
-"212","DCMS","Male",2008,"Executive officer",60
-"213","DCMS","Male",2008,"Grades 6 & 7",70
-"214","DCMS","Male",2008,"Not reported",0
-"215","DCMS","Male",2008,"Senior and higher executive officer",90
-"216","DCMS","Male",2008,"Senior Civil Service",20
-"217","DCMS","Male",2009,"Administrative officers and assistants",10
-"218","DCMS","Male",2009,"Executive officer",50
-"219","DCMS","Male",2009,"Grades 6 & 7",70
-"220","DCMS","Male",2009,"Not reported",0
-"221","DCMS","Male",2009,"Senior and higher executive officer",90
-"222","DCMS","Male",2009,"Senior Civil Service",30
-"223","DCMS","Male",2010,"Administrative officers and assistants",10
-"224","DCMS","Male",2010,"Executive officer",50
-"225","DCMS","Male",2010,"Grades 6 & 7",80
-"226","DCMS","Male",2010,"Not reported",0
-"227","DCMS","Male",2010,"Senior and higher executive officer",90
-"228","DCMS","Male",2010,"Senior Civil Service",30
-"229","DCMS","Male",2011,"Administrative officers and assistants",10
-"230","DCMS","Male",2011,"Executive officer",40
-"231","DCMS","Male",2011,"Grades 6 & 7",70
-"232","DCMS","Male",2011,"Not reported",0
-"233","DCMS","Male",2011,"Senior and higher executive officer",80
-"234","DCMS","Male",2011,"Senior Civil Service",30
-"235","DCMS","Male",2012,"Administrative officers and assistants",10
-"236","DCMS","Male",2012,"Executive officer",40
-"237","DCMS","Male",2012,"Grades 6 & 7",90
-"238","DCMS","Male",2012,"Not reported",0
-"239","DCMS","Male",2012,"Senior and higher executive officer",100
-"240","DCMS","Male",2012,"Senior Civil Service",20
-"241","DECC","Female",2008,"Administrative officers and assistants",0
-"242","DECC","Female",2008,"Executive officer",0
-"243","DECC","Female",2008,"Grades 6 & 7",0
-"244","DECC","Female",2008,"Not reported",0
-"245","DECC","Female",2008,"Senior and higher executive officer",0
-"246","DECC","Female",2008,"Senior Civil Service",0
-"247","DECC","Female",2009,"Administrative officers and assistants",50
-"248","DECC","Female",2009,"Executive officer",60
-"249","DECC","Female",2009,"Grades 6 & 7",130
-"250","DECC","Female",2009,"Not reported",0
-"251","DECC","Female",2009,"Senior and higher executive officer",130
-"252","DECC","Female",2009,"Senior Civil Service",10
-"253","DECC","Female",2010,"Administrative officers and assistants",40
-"254","DECC","Female",2010,"Executive officer",70
-"255","DECC","Female",2010,"Grades 6 & 7",160
-"256","DECC","Female",2010,"Not reported",0
-"257","DECC","Female",2010,"Senior and higher executive officer",170
-"258","DECC","Female",2010,"Senior Civil Service",20
-"259","DECC","Female",2011,"Administrative officers and assistants",50
-"260","DECC","Female",2011,"Executive officer",70
-"261","DECC","Female",2011,"Grades 6 & 7",200
-"262","DECC","Female",2011,"Not reported",0
-"263","DECC","Female",2011,"Senior and higher executive officer",190
-"264","DECC","Female",2011,"Senior Civil Service",20
-"265","DECC","Female",2012,"Administrative officers and assistants",50
-"266","DECC","Female",2012,"Executive officer",70
-"267","DECC","Female",2012,"Grades 6 & 7",230
-"268","DECC","Female",2012,"Not reported",0
-"269","DECC","Female",2012,"Senior and higher executive officer",220
-"270","DECC","Female",2012,"Senior Civil Service",30
-"271","DECC","Male",2008,"Administrative officers and assistants",0
-"272","DECC","Male",2008,"Executive officer",0
-"273","DECC","Male",2008,"Grades 6 & 7",0
-"274","DECC","Male",2008,"Not reported",0
-"275","DECC","Male",2008,"Senior and higher executive officer",0
-"276","DECC","Male",2008,"Senior Civil Service",0
-"277","DECC","Male",2009,"Administrative officers and assistants",30
-"278","DECC","Male",2009,"Executive officer",50
-"279","DECC","Male",2009,"Grades 6 & 7",190
-"280","DECC","Male",2009,"Not reported",0
-"281","DECC","Male",2009,"Senior and higher executive officer",200
-"282","DECC","Male",2009,"Senior Civil Service",50
-"283","DECC","Male",2010,"Administrative officers and assistants",30
-"284","DECC","Male",2010,"Executive officer",40
-"285","DECC","Male",2010,"Grades 6 & 7",240
-"286","DECC","Male",2010,"Not reported",0
-"287","DECC","Male",2010,"Senior and higher executive officer",220
-"288","DECC","Male",2010,"Senior Civil Service",60
-"289","DECC","Male",2011,"Administrative officers and assistants",30
-"290","DECC","Male",2011,"Executive officer",40
-"291","DECC","Male",2011,"Grades 6 & 7",270
-"292","DECC","Male",2011,"Not reported",0
-"293","DECC","Male",2011,"Senior and higher executive officer",240
-"294","DECC","Male",2011,"Senior Civil Service",60
-"295","DECC","Male",2012,"Administrative officers and assistants",40
-"296","DECC","Male",2012,"Executive officer",50
-"297","DECC","Male",2012,"Grades 6 & 7",310
-"298","DECC","Male",2012,"Not reported",0
-"299","DECC","Male",2012,"Senior and higher executive officer",270
-"300","DECC","Male",2012,"Senior Civil Service",60
-"301","Defra","Female",2008,"Administrative officers and assistants",330
-"302","Defra","Female",2008,"Executive officer",290
-"303","Defra","Female",2008,"Grades 6 & 7",290
-"304","Defra","Female",2008,"Not reported",0
-"305","Defra","Female",2008,"Senior and higher executive officer",550
-"306","Defra","Female",2008,"Senior Civil Service",50
-"307","Defra","Female",2009,"Administrative officers and assistants",290
-"308","Defra","Female",2009,"Executive officer",250
-"309","Defra","Female",2009,"Grades 6 & 7",290
-"310","Defra","Female",2009,"Not reported",0
-"311","Defra","Female",2009,"Senior and higher executive officer",490
-"312","Defra","Female",2009,"Senior Civil Service",50
-"313","Defra","Female",2010,"Administrative officers and assistants",260
-"314","Defra","Female",2010,"Executive officer",260
-"315","Defra","Female",2010,"Grades 6 & 7",320
-"316","Defra","Female",2010,"Not reported",0
-"317","Defra","Female",2010,"Senior and higher executive officer",530
-"318","Defra","Female",2010,"Senior Civil Service",50
-"319","Defra","Female",2011,"Administrative officers and assistants",220
-"320","Defra","Female",2011,"Executive officer",250
-"321","Defra","Female",2011,"Grades 6 & 7",290
-"322","Defra","Female",2011,"Not reported",0
-"323","Defra","Female",2011,"Senior and higher executive officer",520
-"324","Defra","Female",2011,"Senior Civil Service",50
-"325","Defra","Female",2012,"Administrative officers and assistants",200
-"326","Defra","Female",2012,"Executive officer",210
-"327","Defra","Female",2012,"Grades 6 & 7",200
-"328","Defra","Female",2012,"Not reported",0
-"329","Defra","Female",2012,"Senior and higher executive officer",450
-"330","Defra","Female",2012,"Senior Civil Service",30
-"331","Defra","Male",2008,"Administrative officers and assistants",230
-"332","Defra","Male",2008,"Executive officer",230
-"333","Defra","Male",2008,"Grades 6 & 7",390
-"334","Defra","Male",2008,"Not reported",0
-"335","Defra","Male",2008,"Senior and higher executive officer",630
-"336","Defra","Male",2008,"Senior Civil Service",110
-"337","Defra","Male",2009,"Administrative officers and assistants",200
-"338","Defra","Male",2009,"Executive officer",190
-"339","Defra","Male",2009,"Grades 6 & 7",360
-"340","Defra","Male",2009,"Not reported",0
-"341","Defra","Male",2009,"Senior and higher executive officer",540
-"342","Defra","Male",2009,"Senior Civil Service",90
-"343","Defra","Male",2010,"Administrative officers and assistants",180
-"344","Defra","Male",2010,"Executive officer",190
-"345","Defra","Male",2010,"Grades 6 & 7",360
-"346","Defra","Male",2010,"Not reported",0
-"347","Defra","Male",2010,"Senior and higher executive officer",510
-"348","Defra","Male",2010,"Senior Civil Service",90
-"349","Defra","Male",2011,"Administrative officers and assistants",160
-"350","Defra","Male",2011,"Executive officer",180
-"351","Defra","Male",2011,"Grades 6 & 7",360
-"352","Defra","Male",2011,"Not reported",0
-"353","Defra","Male",2011,"Senior and higher executive officer",500
-"354","Defra","Male",2011,"Senior Civil Service",90
-"355","Defra","Male",2012,"Administrative officers and assistants",130
-"356","Defra","Male",2012,"Executive officer",150
-"357","Defra","Male",2012,"Grades 6 & 7",280
-"358","Defra","Male",2012,"Not reported",0
-"359","Defra","Male",2012,"Senior and higher executive officer",450
-"360","Defra","Male",2012,"Senior Civil Service",70
-"361","DfE","Female",2008,"Administrative officers and assistants",290
-"362","DfE","Female",2008,"Executive officer",450
-"363","DfE","Female",2008,"Grades 6 & 7",390
-"364","DfE","Female",2008,"Not reported",0
-"365","DfE","Female",2008,"Senior and higher executive officer",750
-"366","DfE","Female",2008,"Senior Civil Service",70
-"367","DfE","Female",2009,"Administrative officers and assistants",230
-"368","DfE","Female",2009,"Executive officer",420
-"369","DfE","Female",2009,"Grades 6 & 7",450
-"370","DfE","Female",2009,"Not reported",0
-"371","DfE","Female",2009,"Senior and higher executive officer",820
-"372","DfE","Female",2009,"Senior Civil Service",90
-"373","DfE","Female",2010,"Administrative officers and assistants",190
-"374","DfE","Female",2010,"Executive officer",380
-"375","DfE","Female",2010,"Grades 6 & 7",450
-"376","DfE","Female",2010,"Not reported",0
-"377","DfE","Female",2010,"Senior and higher executive officer",780
-"378","DfE","Female",2010,"Senior Civil Service",80
-"379","DfE","Female",2011,"Administrative officers and assistants",160
-"380","DfE","Female",2011,"Executive officer",340
-"381","DfE","Female",2011,"Grades 6 & 7",390
-"382","DfE","Female",2011,"Not reported",0
-"383","DfE","Female",2011,"Senior and higher executive officer",690
-"384","DfE","Female",2011,"Senior Civil Service",80
-"385","DfE","Female",2012,"Administrative officers and assistants",130
-"386","DfE","Female",2012,"Executive officer",330
-"387","DfE","Female",2012,"Grades 6 & 7",430
-"388","DfE","Female",2012,"Not reported",0
-"389","DfE","Female",2012,"Senior and higher executive officer",700
-"390","DfE","Female",2012,"Senior Civil Service",70
-"391","DfE","Male",2008,"Administrative officers and assistants",150
-"392","DfE","Male",2008,"Executive officer",230
-"393","DfE","Male",2008,"Grades 6 & 7",370
-"394","DfE","Male",2008,"Not reported",0
-"395","DfE","Male",2008,"Senior and higher executive officer",580
-"396","DfE","Male",2008,"Senior Civil Service",80
-"397","DfE","Male",2009,"Administrative officers and assistants",120
-"398","DfE","Male",2009,"Executive officer",210
-"399","DfE","Male",2009,"Grades 6 & 7",400
-"400","DfE","Male",2009,"Not reported",0
-"401","DfE","Male",2009,"Senior and higher executive officer",590
-"402","DfE","Male",2009,"Senior Civil Service",70
-"403","DfE","Male",2010,"Administrative officers and assistants",90
-"404","DfE","Male",2010,"Executive officer",180
-"405","DfE","Male",2010,"Grades 6 & 7",360
-"406","DfE","Male",2010,"Not reported",0
-"407","DfE","Male",2010,"Senior and higher executive officer",540
-"408","DfE","Male",2010,"Senior Civil Service",60
-"409","DfE","Male",2011,"Administrative officers and assistants",70
-"410","DfE","Male",2011,"Executive officer",170
-"411","DfE","Male",2011,"Grades 6 & 7",340
-"412","DfE","Male",2011,"Not reported",0
-"413","DfE","Male",2011,"Senior and higher executive officer",500
-"414","DfE","Male",2011,"Senior Civil Service",60
-"415","DfE","Male",2012,"Administrative officers and assistants",60
-"416","DfE","Male",2012,"Executive officer",140
-"417","DfE","Male",2012,"Grades 6 & 7",370
-"418","DfE","Male",2012,"Not reported",0
-"419","DfE","Male",2012,"Senior and higher executive officer",500
-"420","DfE","Male",2012,"Senior Civil Service",60
-"421","DfID","Female",2008,"Administrative officers and assistants",130
-"422","DfID","Female",2008,"Executive officer",140
-"423","DfID","Female",2008,"Grades 6 & 7",290
-"424","DfID","Female",2008,"Not reported",0
-"425","DfID","Female",2008,"Senior and higher executive officer",230
-"426","DfID","Female",2008,"Senior Civil Service",40
-"427","DfID","Female",2009,"Administrative officers and assistants",100
-"428","DfID","Female",2009,"Executive officer",140
-"429","DfID","Female",2009,"Grades 6 & 7",330
-"430","DfID","Female",2009,"Not reported",0
-"431","DfID","Female",2009,"Senior and higher executive officer",230
-"432","DfID","Female",2009,"Senior Civil Service",30
-"433","DfID","Female",2010,"Administrative officers and assistants",100
-"434","DfID","Female",2010,"Executive officer",130
-"435","DfID","Female",2010,"Grades 6 & 7",340
-"436","DfID","Female",2010,"Not reported",0
-"437","DfID","Female",2010,"Senior and higher executive officer",220
-"438","DfID","Female",2010,"Senior Civil Service",30
-"439","DfID","Female",2011,"Administrative officers and assistants",80
-"440","DfID","Female",2011,"Executive officer",120
-"441","DfID","Female",2011,"Grades 6 & 7",380
-"442","DfID","Female",2011,"Not reported",0
-"443","DfID","Female",2011,"Senior and higher executive officer",230
-"444","DfID","Female",2011,"Senior Civil Service",30
-"445","DfID","Female",2012,"Administrative officers and assistants",70
-"446","DfID","Female",2012,"Executive officer",100
-"447","DfID","Female",2012,"Grades 6 & 7",430
-"448","DfID","Female",2012,"Not reported",0
-"449","DfID","Female",2012,"Senior and higher executive officer",250
-"450","DfID","Female",2012,"Senior Civil Service",30
-"451","DfID","Male",2008,"Administrative officers and assistants",70
-"452","DfID","Male",2008,"Executive officer",100
-"453","DfID","Male",2008,"Grades 6 & 7",380
-"454","DfID","Male",2008,"Not reported",0
-"455","DfID","Male",2008,"Senior and higher executive officer",220
-"456","DfID","Male",2008,"Senior Civil Service",60
-"457","DfID","Male",2009,"Administrative officers and assistants",70
-"458","DfID","Male",2009,"Executive officer",90
-"459","DfID","Male",2009,"Grades 6 & 7",370
-"460","DfID","Male",2009,"Not reported",0
-"461","DfID","Male",2009,"Senior and higher executive officer",230
-"462","DfID","Male",2009,"Senior Civil Service",70
-"463","DfID","Male",2010,"Administrative officers and assistants",60
-"464","DfID","Male",2010,"Executive officer",80
-"465","DfID","Male",2010,"Grades 6 & 7",390
-"466","DfID","Male",2010,"Not reported",0
-"467","DfID","Male",2010,"Senior and higher executive officer",220
-"468","DfID","Male",2010,"Senior Civil Service",60
-"469","DfID","Male",2011,"Administrative officers and assistants",50
-"470","DfID","Male",2011,"Executive officer",80
-"471","DfID","Male",2011,"Grades 6 & 7",380
-"472","DfID","Male",2011,"Not reported",0
-"473","DfID","Male",2011,"Senior and higher executive officer",220
-"474","DfID","Male",2011,"Senior Civil Service",50
-"475","DfID","Male",2012,"Administrative officers and assistants",40
-"476","DfID","Male",2012,"Executive officer",80
-"477","DfID","Male",2012,"Grades 6 & 7",440
-"478","DfID","Male",2012,"Not reported",0
-"479","DfID","Male",2012,"Senior and higher executive officer",210
-"480","DfID","Male",2012,"Senior Civil Service",50
-"481","DfT","Female",2008,"Administrative officers and assistants",150
-"482","DfT","Female",2008,"Executive officer",140
-"483","DfT","Female",2008,"Grades 6 & 7",180
-"484","DfT","Female",2008,"Not reported",0
-"485","DfT","Female",2008,"Senior and higher executive officer",240
-"486","DfT","Female",2008,"Senior Civil Service",40
-"487","DfT","Female",2009,"Administrative officers and assistants",140
-"488","DfT","Female",2009,"Executive officer",140
-"489","DfT","Female",2009,"Grades 6 & 7",190
-"490","DfT","Female",2009,"Not reported",0
-"491","DfT","Female",2009,"Senior and higher executive officer",270
-"492","DfT","Female",2009,"Senior Civil Service",40
-"493","DfT","Female",2010,"Administrative officers and assistants",130
-"494","DfT","Female",2010,"Executive officer",140
-"495","DfT","Female",2010,"Grades 6 & 7",210
-"496","DfT","Female",2010,"Not reported",0
-"497","DfT","Female",2010,"Senior and higher executive officer",280
-"498","DfT","Female",2010,"Senior Civil Service",50
-"499","DfT","Female",2011,"Administrative officers and assistants",120
-"500","DfT","Female",2011,"Executive officer",110
-"501","DfT","Female",2011,"Grades 6 & 7",190
-"502","DfT","Female",2011,"Not reported",0
-"503","DfT","Female",2011,"Senior and higher executive officer",260
-"504","DfT","Female",2011,"Senior Civil Service",40
-"505","DfT","Female",2012,"Administrative officers and assistants",80
-"506","DfT","Female",2012,"Executive officer",90
-"507","DfT","Female",2012,"Grades 6 & 7",180
-"508","DfT","Female",2012,"Not reported",0
-"509","DfT","Female",2012,"Senior and higher executive officer",240
-"510","DfT","Female",2012,"Senior Civil Service",40
-"511","DfT","Male",2008,"Administrative officers and assistants",100
-"512","DfT","Male",2008,"Executive officer",180
-"513","DfT","Male",2008,"Grades 6 & 7",410
-"514","DfT","Male",2008,"Not reported",0
-"515","DfT","Male",2008,"Senior and higher executive officer",500
-"516","DfT","Male",2008,"Senior Civil Service",110
-"517","DfT","Male",2009,"Administrative officers and assistants",80
-"518","DfT","Male",2009,"Executive officer",180
-"519","DfT","Male",2009,"Grades 6 & 7",430
-"520","DfT","Male",2009,"Not reported",0
-"521","DfT","Male",2009,"Senior and higher executive officer",530
-"522","DfT","Male",2009,"Senior Civil Service",100
-"523","DfT","Male",2010,"Administrative officers and assistants",70
-"524","DfT","Male",2010,"Executive officer",170
-"525","DfT","Male",2010,"Grades 6 & 7",460
-"526","DfT","Male",2010,"Not reported",0
-"527","DfT","Male",2010,"Senior and higher executive officer",540
-"528","DfT","Male",2010,"Senior Civil Service",110
-"529","DfT","Male",2011,"Administrative officers and assistants",60
-"530","DfT","Male",2011,"Executive officer",130
-"531","DfT","Male",2011,"Grades 6 & 7",420
-"532","DfT","Male",2011,"Not reported",0
-"533","DfT","Male",2011,"Senior and higher executive officer",490
-"534","DfT","Male",2011,"Senior Civil Service",90
-"535","DfT","Male",2012,"Administrative officers and assistants",40
-"536","DfT","Male",2012,"Executive officer",120
-"537","DfT","Male",2012,"Grades 6 & 7",380
-"538","DfT","Male",2012,"Not reported",0
-"539","DfT","Male",2012,"Senior and higher executive officer",440
-"540","DfT","Male",2012,"Senior Civil Service",80
-"541","DH","Female",2008,"Administrative officers and assistants",100
-"542","DH","Female",2008,"Executive officer",280
-"543","DH","Female",2008,"Grades 6 & 7",350
-"544","DH","Female",2008,"Not reported",0
-"545","DH","Female",2008,"Senior and higher executive officer",390
-"546","DH","Female",2008,"Senior Civil Service",110
-"547","DH","Female",2009,"Administrative officers and assistants",90
-"548","DH","Female",2009,"Executive officer",280
-"549","DH","Female",2009,"Grades 6 & 7",400
-"550","DH","Female",2009,"Not reported",0
-"551","DH","Female",2009,"Senior and higher executive officer",420
-"552","DH","Female",2009,"Senior Civil Service",110
-"553","DH","Female",2010,"Administrative officers and assistants",80
-"554","DH","Female",2010,"Executive officer",330
-"555","DH","Female",2010,"Grades 6 & 7",470
-"556","DH","Female",2010,"Not reported",0
-"557","DH","Female",2010,"Senior and higher executive officer",510
-"558","DH","Female",2010,"Senior Civil Service",120
-"559","DH","Female",2011,"Administrative officers and assistants",80
-"560","DH","Female",2011,"Executive officer",310
-"561","DH","Female",2011,"Grades 6 & 7",460
-"562","DH","Female",2011,"Not reported",0
-"563","DH","Female",2011,"Senior and higher executive officer",530
-"564","DH","Female",2011,"Senior Civil Service",110
-"565","DH","Female",2012,"Administrative officers and assistants",80
-"566","DH","Female",2012,"Executive officer",270
-"567","DH","Female",2012,"Grades 6 & 7",440
-"568","DH","Female",2012,"Not reported",0
-"569","DH","Female",2012,"Senior and higher executive officer",480
-"570","DH","Female",2012,"Senior Civil Service",90
-"571","DH","Male",2008,"Administrative officers and assistants",40
-"572","DH","Male",2008,"Executive officer",120
-"573","DH","Male",2008,"Grades 6 & 7",360
-"574","DH","Male",2008,"Not reported",0
-"575","DH","Male",2008,"Senior and higher executive officer",330
-"576","DH","Male",2008,"Senior Civil Service",150
-"577","DH","Male",2009,"Administrative officers and assistants",50
-"578","DH","Male",2009,"Executive officer",120
-"579","DH","Male",2009,"Grades 6 & 7",360
-"580","DH","Male",2009,"Not reported",0
-"581","DH","Male",2009,"Senior and higher executive officer",340
-"582","DH","Male",2009,"Senior Civil Service",160
-"583","DH","Male",2010,"Administrative officers and assistants",50
-"584","DH","Male",2010,"Executive officer",130
-"585","DH","Male",2010,"Grades 6 & 7",440
-"586","DH","Male",2010,"Not reported",0
-"587","DH","Male",2010,"Senior and higher executive officer",410
-"588","DH","Male",2010,"Senior Civil Service",170
-"589","DH","Male",2011,"Administrative officers and assistants",50
-"590","DH","Male",2011,"Executive officer",130
-"591","DH","Male",2011,"Grades 6 & 7",440
-"592","DH","Male",2011,"Not reported",0
-"593","DH","Male",2011,"Senior and higher executive officer",390
-"594","DH","Male",2011,"Senior Civil Service",150
-"595","DH","Male",2012,"Administrative officers and assistants",40
-"596","DH","Male",2012,"Executive officer",100
-"597","DH","Male",2012,"Grades 6 & 7",380
-"598","DH","Male",2012,"Not reported",0
-"599","DH","Male",2012,"Senior and higher executive officer",380
-"600","DH","Male",2012,"Senior Civil Service",130
-"601","DWP","Female",2008,"Administrative officers and assistants",43130
-"602","DWP","Female",2008,"Executive officer",28550
-"603","DWP","Female",2008,"Grades 6 & 7",1120
-"604","DWP","Female",2008,"Not reported",0
-"605","DWP","Female",2008,"Senior and higher executive officer",7030
-"606","DWP","Female",2008,"Senior Civil Service",130
-"607","DWP","Female",2009,"Administrative officers and assistants",44170
-"608","DWP","Female",2009,"Executive officer",29020
-"609","DWP","Female",2009,"Grades 6 & 7",1180
-"610","DWP","Female",2009,"Not reported",0
-"611","DWP","Female",2009,"Senior and higher executive officer",7170
-"612","DWP","Female",2009,"Senior Civil Service",140
-"613","DWP","Female",2010,"Administrative officers and assistants",44750
-"614","DWP","Female",2010,"Executive officer",33050
-"615","DWP","Female",2010,"Grades 6 & 7",1540
-"616","DWP","Female",2010,"Not reported",10
-"617","DWP","Female",2010,"Senior and higher executive officer",8920
-"618","DWP","Female",2010,"Senior Civil Service",140
-"619","DWP","Female",2011,"Administrative officers and assistants",42530
-"620","DWP","Female",2011,"Executive officer",30100
-"621","DWP","Female",2011,"Grades 6 & 7",1320
-"622","DWP","Female",2011,"Not reported",110
-"623","DWP","Female",2011,"Senior and higher executive officer",7740
-"624","DWP","Female",2011,"Senior Civil Service",130
-"625","DWP","Female",2012,"Administrative officers and assistants",38760
-"626","DWP","Female",2012,"Executive officer",28800
-"627","DWP","Female",2012,"Grades 6 & 7",1170
-"628","DWP","Female",2012,"Not reported",90
-"629","DWP","Female",2012,"Senior and higher executive officer",7180
-"630","DWP","Female",2012,"Senior Civil Service",110
-"631","DWP","Male",2008,"Administrative officers and assistants",17260
-"632","DWP","Male",2008,"Executive officer",13050
-"633","DWP","Male",2008,"Grades 6 & 7",1770
-"634","DWP","Male",2008,"Not reported",0
-"635","DWP","Male",2008,"Senior and higher executive officer",5330
-"636","DWP","Male",2008,"Senior Civil Service",230
-"637","DWP","Male",2009,"Administrative officers and assistants",18770
-"638","DWP","Male",2009,"Executive officer",13270
-"639","DWP","Male",2009,"Grades 6 & 7",1820
-"640","DWP","Male",2009,"Not reported",0
-"641","DWP","Male",2009,"Senior and higher executive officer",5360
-"642","DWP","Male",2009,"Senior Civil Service",230
-"643","DWP","Male",2010,"Administrative officers and assistants",20450
-"644","DWP","Male",2010,"Executive officer",16100
-"645","DWP","Male",2010,"Grades 6 & 7",2070
-"646","DWP","Male",2010,"Not reported",10
-"647","DWP","Male",2010,"Senior and higher executive officer",6250
-"648","DWP","Male",2010,"Senior Civil Service",250
-"649","DWP","Male",2011,"Administrative officers and assistants",18410
-"650","DWP","Male",2011,"Executive officer",14360
-"651","DWP","Male",2011,"Grades 6 & 7",1820
-"652","DWP","Male",2011,"Not reported",110
-"653","DWP","Male",2011,"Senior and higher executive officer",5600
-"654","DWP","Male",2011,"Senior Civil Service",230
-"655","DWP","Male",2012,"Administrative officers and assistants",16060
-"656","DWP","Male",2012,"Executive officer",13230
-"657","DWP","Male",2012,"Grades 6 & 7",1580
-"658","DWP","Male",2012,"Not reported",100
-"659","DWP","Male",2012,"Senior and higher executive officer",5230
-"660","DWP","Male",2012,"Senior Civil Service",190
-"661","FCO","Female",2008,"Administrative officers and assistants",640
-"662","FCO","Female",2008,"Executive officer",740
-"663","FCO","Female",2008,"Grades 6 & 7",340
-"664","FCO","Female",2008,"Not reported",0
-"665","FCO","Female",2008,"Senior and higher executive officer",640
-"666","FCO","Female",2008,"Senior Civil Service",70
-"667","FCO","Female",2009,"Administrative officers and assistants",670
-"668","FCO","Female",2009,"Executive officer",720
-"669","FCO","Female",2009,"Grades 6 & 7",360
-"670","FCO","Female",2009,"Not reported",0
-"671","FCO","Female",2009,"Senior and higher executive officer",700
-"672","FCO","Female",2009,"Senior Civil Service",80
-"673","FCO","Female",2010,"Administrative officers and assistants",640
-"674","FCO","Female",2010,"Executive officer",680
-"675","FCO","Female",2010,"Grades 6 & 7",380
-"676","FCO","Female",2010,"Not reported",0
-"677","FCO","Female",2010,"Senior and higher executive officer",660
-"678","FCO","Female",2010,"Senior Civil Service",80
-"679","FCO","Female",2011,"Administrative officers and assistants",600
-"680","FCO","Female",2011,"Executive officer",660
-"681","FCO","Female",2011,"Grades 6 & 7",360
-"682","FCO","Female",2011,"Not reported",0
-"683","FCO","Female",2011,"Senior and higher executive officer",650
-"684","FCO","Female",2011,"Senior Civil Service",80
-"685","FCO","Female",2012,"Administrative officers and assistants",650
-"686","FCO","Female",2012,"Executive officer",810
-"687","FCO","Female",2012,"Grades 6 & 7",460
-"688","FCO","Female",2012,"Not reported",0
-"689","FCO","Female",2012,"Senior and higher executive officer",790
-"690","FCO","Female",2012,"Senior Civil Service",100
-"691","FCO","Male",2008,"Administrative officers and assistants",490
-"692","FCO","Male",2008,"Executive officer",740
-"693","FCO","Male",2008,"Grades 6 & 7",730
-"694","FCO","Male",2008,"Not reported",0
-"695","FCO","Male",2008,"Senior and higher executive officer",1240
-"696","FCO","Male",2008,"Senior Civil Service",320
-"697","FCO","Male",2009,"Administrative officers and assistants",490
-"698","FCO","Male",2009,"Executive officer",710
-"699","FCO","Male",2009,"Grades 6 & 7",770
-"700","FCO","Male",2009,"Not reported",0
-"701","FCO","Male",2009,"Senior and higher executive officer",1290
-"702","FCO","Male",2009,"Senior Civil Service",300
-"703","FCO","Male",2010,"Administrative officers and assistants",510
-"704","FCO","Male",2010,"Executive officer",740
-"705","FCO","Male",2010,"Grades 6 & 7",770
-"706","FCO","Male",2010,"Not reported",0
-"707","FCO","Male",2010,"Senior and higher executive officer",1260
-"708","FCO","Male",2010,"Senior Civil Service",300
-"709","FCO","Male",2011,"Administrative officers and assistants",500
-"710","FCO","Male",2011,"Executive officer",660
-"711","FCO","Male",2011,"Grades 6 & 7",720
-"712","FCO","Male",2011,"Not reported",0
-"713","FCO","Male",2011,"Senior and higher executive officer",1230
-"714","FCO","Male",2011,"Senior Civil Service",280
-"715","FCO","Male",2012,"Administrative officers and assistants",490
-"716","FCO","Male",2012,"Executive officer",710
-"717","FCO","Male",2012,"Grades 6 & 7",840
-"718","FCO","Male",2012,"Not reported",0
-"719","FCO","Male",2012,"Senior and higher executive officer",1360
-"720","FCO","Male",2012,"Senior Civil Service",350
-"721","HMRC","Female",2008,"Administrative officers and assistants",33720
-"722","HMRC","Female",2008,"Executive officer",12760
-"723","HMRC","Female",2008,"Grades 6 & 7",1330
-"724","HMRC","Female",2008,"Not reported",0
-"725","HMRC","Female",2008,"Senior and higher executive officer",6800
-"726","HMRC","Female",2008,"Senior Civil Service",110
-"727","HMRC","Female",2009,"Administrative officers and assistants",32040
-"728","HMRC","Female",2009,"Executive officer",12520
-"729","HMRC","Female",2009,"Grades 6 & 7",1490
-"730","HMRC","Female",2009,"Not reported",10
-"731","HMRC","Female",2009,"Senior and higher executive officer",7010
-"732","HMRC","Female",2009,"Senior Civil Service",140
-"733","HMRC","Female",2010,"Administrative officers and assistants",29560
-"734","HMRC","Female",2010,"Executive officer",11870
-"735","HMRC","Female",2010,"Grades 6 & 7",1470
-"736","HMRC","Female",2010,"Not reported",0
-"737","HMRC","Female",2010,"Senior and higher executive officer",6770
-"738","HMRC","Female",2010,"Senior Civil Service",130
-"739","HMRC","Female",2011,"Administrative officers and assistants",27170
-"740","HMRC","Female",2011,"Executive officer",10560
-"741","HMRC","Female",2011,"Grades 6 & 7",1470
-"742","HMRC","Female",2011,"Not reported",0
-"743","HMRC","Female",2011,"Senior and higher executive officer",6390
-"744","HMRC","Female",2011,"Senior Civil Service",120
-"745","HMRC","Female",2012,"Administrative officers and assistants",27570
-"746","HMRC","Female",2012,"Executive officer",10250
-"747","HMRC","Female",2012,"Grades 6 & 7",1490
-"748","HMRC","Female",2012,"Not reported",0
-"749","HMRC","Female",2012,"Senior and higher executive officer",6310
-"750","HMRC","Female",2012,"Senior Civil Service",140
-"751","HMRC","Male",2008,"Administrative officers and assistants",17250
-"752","HMRC","Male",2008,"Executive officer",10430
-"753","HMRC","Male",2008,"Grades 6 & 7",2660
-"754","HMRC","Male",2008,"Not reported",0
-"755","HMRC","Male",2008,"Senior and higher executive officer",10000
-"756","HMRC","Male",2008,"Senior Civil Service",300
-"757","HMRC","Male",2009,"Administrative officers and assistants",16950
-"758","HMRC","Male",2009,"Executive officer",10020
-"759","HMRC","Male",2009,"Grades 6 & 7",2760
-"760","HMRC","Male",2009,"Not reported",10
-"761","HMRC","Male",2009,"Senior and higher executive officer",9870
-"762","HMRC","Male",2009,"Senior Civil Service",340
-"763","HMRC","Male",2010,"Administrative officers and assistants",15430
-"764","HMRC","Male",2010,"Executive officer",9660
-"765","HMRC","Male",2010,"Grades 6 & 7",2680
-"766","HMRC","Male",2010,"Not reported",0
-"767","HMRC","Male",2010,"Senior and higher executive officer",9500
-"768","HMRC","Male",2010,"Senior Civil Service",290
-"769","HMRC","Male",2011,"Administrative officers and assistants",13870
-"770","HMRC","Male",2011,"Executive officer",7560
-"771","HMRC","Male",2011,"Grades 6 & 7",2640
-"772","HMRC","Male",2011,"Not reported",0
-"773","HMRC","Male",2011,"Senior and higher executive officer",8550
-"774","HMRC","Male",2011,"Senior Civil Service",270
-"775","HMRC","Male",2012,"Administrative officers and assistants",14690
-"776","HMRC","Male",2012,"Executive officer",7270
-"777","HMRC","Male",2012,"Grades 6 & 7",2590
-"778","HMRC","Male",2012,"Not reported",0
-"779","HMRC","Male",2012,"Senior and higher executive officer",8330
-"780","HMRC","Male",2012,"Senior Civil Service",260
-"781","HMT","Female",2008,"Administrative officers and assistants",100
-"782","HMT","Female",2008,"Executive officer",90
-"783","HMT","Female",2008,"Grades 6 & 7",120
-"784","HMT","Female",2008,"Not reported",0
-"785","HMT","Female",2008,"Senior and higher executive officer",160
-"786","HMT","Female",2008,"Senior Civil Service",40
-"787","HMT","Female",2009,"Administrative officers and assistants",110
-"788","HMT","Female",2009,"Executive officer",100
-"789","HMT","Female",2009,"Grades 6 & 7",160
-"790","HMT","Female",2009,"Not reported",0
-"791","HMT","Female",2009,"Senior and higher executive officer",210
-"792","HMT","Female",2009,"Senior Civil Service",30
-"793","HMT","Female",2010,"Administrative officers and assistants",80
-"794","HMT","Female",2010,"Executive officer",120
-"795","HMT","Female",2010,"Grades 6 & 7",170
-"796","HMT","Female",2010,"Not reported",0
-"797","HMT","Female",2010,"Senior and higher executive officer",210
-"798","HMT","Female",2010,"Senior Civil Service",60
-"799","HMT","Female",2011,"Administrative officers and assistants",90
-"800","HMT","Female",2011,"Executive officer",110
-"801","HMT","Female",2011,"Grades 6 & 7",170
-"802","HMT","Female",2011,"Not reported",0
-"803","HMT","Female",2011,"Senior and higher executive officer",210
-"804","HMT","Female",2011,"Senior Civil Service",50
-"805","HMT","Female",2012,"Administrative officers and assistants",70
-"806","HMT","Female",2012,"Executive officer",100
-"807","HMT","Female",2012,"Grades 6 & 7",140
-"808","HMT","Female",2012,"Not reported",0
-"809","HMT","Female",2012,"Senior and higher executive officer",160
-"810","HMT","Female",2012,"Senior Civil Service",50
-"811","HMT","Male",2008,"Administrative officers and assistants",60
-"812","HMT","Male",2008,"Executive officer",70
-"813","HMT","Male",2008,"Grades 6 & 7",220
-"814","HMT","Male",2008,"Not reported",0
-"815","HMT","Male",2008,"Senior and higher executive officer",220
-"816","HMT","Male",2008,"Senior Civil Service",70
-"817","HMT","Male",2009,"Administrative officers and assistants",60
-"818","HMT","Male",2009,"Executive officer",70
-"819","HMT","Male",2009,"Grades 6 & 7",260
-"820","HMT","Male",2009,"Not reported",0
-"821","HMT","Male",2009,"Senior and higher executive officer",280
-"822","HMT","Male",2009,"Senior Civil Service",60
-"823","HMT","Male",2010,"Administrative officers and assistants",40
-"824","HMT","Male",2010,"Executive officer",70
-"825","HMT","Male",2010,"Grades 6 & 7",300
-"826","HMT","Male",2010,"Not reported",0
-"827","HMT","Male",2010,"Senior and higher executive officer",300
-"828","HMT","Male",2010,"Senior Civil Service",100
-"829","HMT","Male",2011,"Administrative officers and assistants",30
-"830","HMT","Male",2011,"Executive officer",60
-"831","HMT","Male",2011,"Grades 6 & 7",280
-"832","HMT","Male",2011,"Not reported",0
-"833","HMT","Male",2011,"Senior and higher executive officer",260
-"834","HMT","Male",2011,"Senior Civil Service",80
-"835","HMT","Male",2012,"Administrative officers and assistants",20
-"836","HMT","Male",2012,"Executive officer",50
-"837","HMT","Male",2012,"Grades 6 & 7",220
-"838","HMT","Male",2012,"Not reported",0
-"839","HMT","Male",2012,"Senior and higher executive officer",200
-"840","HMT","Male",2012,"Senior Civil Service",70
-"841","HO","Female",2008,"Administrative officers and assistants",310
-"842","HO","Female",2008,"Executive officer",320
-"843","HO","Female",2008,"Grades 6 & 7",280
-"844","HO","Female",2008,"Not reported",0
-"845","HO","Female",2008,"Senior and higher executive officer",470
-"846","HO","Female",2008,"Senior Civil Service",40
-"847","HO","Female",2009,"Administrative officers and assistants",300
-"848","HO","Female",2009,"Executive officer",330
-"849","HO","Female",2009,"Grades 6 & 7",330
-"850","HO","Female",2009,"Not reported",0
-"851","HO","Female",2009,"Senior and higher executive officer",540
-"852","HO","Female",2009,"Senior Civil Service",50
-"853","HO","Female",2010,"Administrative officers and assistants",270
-"854","HO","Female",2010,"Executive officer",360
-"855","HO","Female",2010,"Grades 6 & 7",390
-"856","HO","Female",2010,"Not reported",0
-"857","HO","Female",2010,"Senior and higher executive officer",590
-"858","HO","Female",2010,"Senior Civil Service",50
-"859","HO","Female",2011,"Administrative officers and assistants",200
-"860","HO","Female",2011,"Executive officer",320
-"861","HO","Female",2011,"Grades 6 & 7",360
-"862","HO","Female",2011,"Not reported",0
-"863","HO","Female",2011,"Senior and higher executive officer",540
-"864","HO","Female",2011,"Senior Civil Service",40
-"865","HO","Female",2012,"Administrative officers and assistants",1110
-"866","HO","Female",2012,"Executive officer",2120
-"867","HO","Female",2012,"Grades 6 & 7",460
-"868","HO","Female",2012,"Not reported",0
-"869","HO","Female",2012,"Senior and higher executive officer",1020
-"870","HO","Female",2012,"Senior Civil Service",50
-"871","HO","Male",2008,"Administrative officers and assistants",190
-"872","HO","Male",2008,"Executive officer",220
-"873","HO","Male",2008,"Grades 6 & 7",360
-"874","HO","Male",2008,"Not reported",0
-"875","HO","Male",2008,"Senior and higher executive officer",500
-"876","HO","Male",2008,"Senior Civil Service",100
-"877","HO","Male",2009,"Administrative officers and assistants",190
-"878","HO","Male",2009,"Executive officer",210
-"879","HO","Male",2009,"Grades 6 & 7",390
-"880","HO","Male",2009,"Not reported",0
-"881","HO","Male",2009,"Senior and higher executive officer",600
-"882","HO","Male",2009,"Senior Civil Service",110
-"883","HO","Male",2010,"Administrative officers and assistants",180
-"884","HO","Male",2010,"Executive officer",230
-"885","HO","Male",2010,"Grades 6 & 7",460
-"886","HO","Male",2010,"Not reported",0
-"887","HO","Male",2010,"Senior and higher executive officer",640
-"888","HO","Male",2010,"Senior Civil Service",100
-"889","HO","Male",2011,"Administrative officers and assistants",140
-"890","HO","Male",2011,"Executive officer",230
-"891","HO","Male",2011,"Grades 6 & 7",410
-"892","HO","Male",2011,"Not reported",0
-"893","HO","Male",2011,"Senior and higher executive officer",570
-"894","HO","Male",2011,"Senior Civil Service",90
-"895","HO","Male",2012,"Administrative officers and assistants",1170
-"896","HO","Male",2012,"Executive officer",2900
-"897","HO","Male",2012,"Grades 6 & 7",500
-"898","HO","Male",2012,"Not reported",0
-"899","HO","Male",2012,"Senior and higher executive officer",1310
-"900","HO","Male",2012,"Senior Civil Service",100
-"901","MoD","Female",2008,"Administrative officers and assistants",15740
-"902","MoD","Female",2008,"Executive officer",4170
-"903","MoD","Female",2008,"Grades 6 & 7",530
-"904","MoD","Female",2008,"Not reported",740
-"905","MoD","Female",2008,"Senior and higher executive officer",4820
-"906","MoD","Female",2008,"Senior Civil Service",40
-"907","MoD","Female",2009,"Administrative officers and assistants",15130
-"908","MoD","Female",2009,"Executive officer",4170
-"909","MoD","Female",2009,"Grades 6 & 7",550
-"910","MoD","Female",2009,"Not reported",60
-"911","MoD","Female",2009,"Senior and higher executive officer",5150
-"912","MoD","Female",2009,"Senior Civil Service",50
-"913","MoD","Female",2010,"Administrative officers and assistants",14910
-"914","MoD","Female",2010,"Executive officer",4130
-"915","MoD","Female",2010,"Grades 6 & 7",610
-"916","MoD","Female",2010,"Not reported",160
-"917","MoD","Female",2010,"Senior and higher executive officer",5250
-"918","MoD","Female",2010,"Senior Civil Service",60
-"919","MoD","Female",2011,"Administrative officers and assistants",13630
-"920","MoD","Female",2011,"Executive officer",3930
-"921","MoD","Female",2011,"Grades 6 & 7",610
-"922","MoD","Female",2011,"Not reported",10
-"923","MoD","Female",2011,"Senior and higher executive officer",5210
-"924","MoD","Female",2011,"Senior Civil Service",50
-"925","MoD","Female",2012,"Administrative officers and assistants",10640
-"926","MoD","Female",2012,"Executive officer",3490
-"927","MoD","Female",2012,"Grades 6 & 7",580
-"928","MoD","Female",2012,"Not reported",20
-"929","MoD","Female",2012,"Senior and higher executive officer",4870
-"930","MoD","Female",2012,"Senior Civil Service",50
-"931","MoD","Male",2008,"Administrative officers and assistants",19750
-"932","MoD","Male",2008,"Executive officer",8090
-"933","MoD","Male",2008,"Grades 6 & 7",1980
-"934","MoD","Male",2008,"Not reported",400
-"935","MoD","Male",2008,"Senior and higher executive officer",12500
-"936","MoD","Male",2008,"Senior Civil Service",250
-"937","MoD","Male",2009,"Administrative officers and assistants",18480
-"938","MoD","Male",2009,"Executive officer",7490
-"939","MoD","Male",2009,"Grades 6 & 7",1950
-"940","MoD","Male",2009,"Not reported",70
-"941","MoD","Male",2009,"Senior and higher executive officer",12300
-"942","MoD","Male",2009,"Senior Civil Service",250
-"943","MoD","Male",2010,"Administrative officers and assistants",18390
-"944","MoD","Male",2010,"Executive officer",7430
-"945","MoD","Male",2010,"Grades 6 & 7",1940
-"946","MoD","Male",2010,"Not reported",160
-"947","MoD","Male",2010,"Senior and higher executive officer",12080
-"948","MoD","Male",2010,"Senior Civil Service",240
-"949","MoD","Male",2011,"Administrative officers and assistants",17210
-"950","MoD","Male",2011,"Executive officer",7030
-"951","MoD","Male",2011,"Grades 6 & 7",1850
-"952","MoD","Male",2011,"Not reported",10
-"953","MoD","Male",2011,"Senior and higher executive officer",11970
-"954","MoD","Male",2011,"Senior Civil Service",230
-"955","MoD","Male",2012,"Administrative officers and assistants",14660
-"956","MoD","Male",2012,"Executive officer",6380
-"957","MoD","Male",2012,"Grades 6 & 7",1660
-"958","MoD","Male",2012,"Not reported",20
-"959","MoD","Male",2012,"Senior and higher executive officer",10810
-"960","MoD","Male",2012,"Senior Civil Service",190
-"961","MoJ","Female",2008,"Administrative officers and assistants",470
-"962","MoJ","Female",2008,"Executive officer",430
-"963","MoJ","Female",2008,"Grades 6 & 7",400
-"964","MoJ","Female",2008,"Not reported",0
-"965","MoJ","Female",2008,"Senior and higher executive officer",750
-"966","MoJ","Female",2008,"Senior Civil Service",70
-"967","MoJ","Female",2009,"Administrative officers and assistants",310
-"968","MoJ","Female",2009,"Executive officer",320
-"969","MoJ","Female",2009,"Grades 6 & 7",360
-"970","MoJ","Female",2009,"Not reported",0
-"971","MoJ","Female",2009,"Senior and higher executive officer",660
-"972","MoJ","Female",2009,"Senior Civil Service",60
-"973","MoJ","Female",2010,"Administrative officers and assistants",340
-"974","MoJ","Female",2010,"Executive officer",330
-"975","MoJ","Female",2010,"Grades 6 & 7",390
-"976","MoJ","Female",2010,"Not reported",0
-"977","MoJ","Female",2010,"Senior and higher executive officer",740
-"978","MoJ","Female",2010,"Senior Civil Service",70
-"979","MoJ","Female",2011,"Administrative officers and assistants",650
-"980","MoJ","Female",2011,"Executive officer",580
-"981","MoJ","Female",2011,"Grades 6 & 7",430
-"982","MoJ","Female",2011,"Not reported",0
-"983","MoJ","Female",2011,"Senior and higher executive officer",950
-"984","MoJ","Female",2011,"Senior Civil Service",60
-"985","MoJ","Female",2012,"Administrative officers and assistants",640
-"986","MoJ","Female",2012,"Executive officer",520
-"987","MoJ","Female",2012,"Grades 6 & 7",360
-"988","MoJ","Female",2012,"Not reported",0
-"989","MoJ","Female",2012,"Senior and higher executive officer",850
-"990","MoJ","Female",2012,"Senior Civil Service",50
-"991","MoJ","Male",2008,"Administrative officers and assistants",220
-"992","MoJ","Male",2008,"Executive officer",290
-"993","MoJ","Male",2008,"Grades 6 & 7",460
-"994","MoJ","Male",2008,"Not reported",0
-"995","MoJ","Male",2008,"Senior and higher executive officer",640
-"996","MoJ","Male",2008,"Senior Civil Service",80
-"997","MoJ","Male",2009,"Administrative officers and assistants",170
-"998","MoJ","Male",2009,"Executive officer",190
-"999","MoJ","Male",2009,"Grades 6 & 7",360
-"1000","MoJ","Male",2009,"Not reported",0
-"1001","MoJ","Male",2009,"Senior and higher executive officer",530
-"1002","MoJ","Male",2009,"Senior Civil Service",60
-"1003","MoJ","Male",2010,"Administrative officers and assistants",190
-"1004","MoJ","Male",2010,"Executive officer",170
-"1005","MoJ","Male",2010,"Grades 6 & 7",370
-"1006","MoJ","Male",2010,"Not reported",0
-"1007","MoJ","Male",2010,"Senior and higher executive officer",570
-"1008","MoJ","Male",2010,"Senior Civil Service",70
-"1009","MoJ","Male",2011,"Administrative officers and assistants",420
-"1010","MoJ","Male",2011,"Executive officer",290
-"1011","MoJ","Male",2011,"Grades 6 & 7",470
-"1012","MoJ","Male",2011,"Not reported",0
-"1013","MoJ","Male",2011,"Senior and higher executive officer",760
-"1014","MoJ","Male",2011,"Senior Civil Service",70
-"1015","MoJ","Male",2012,"Administrative officers and assistants",390
-"1016","MoJ","Male",2012,"Executive officer",280
-"1017","MoJ","Male",2012,"Grades 6 & 7",410
-"1018","MoJ","Male",2012,"Not reported",0
-"1019","MoJ","Male",2012,"Senior and higher executive officer",680
-"1020","MoJ","Male",2012,"Senior Civil Service",70
-"1021","Whole Civil Service","Female",2008,"Administrative officers and assistants",147500
-"1022","Whole Civil Service","Female",2008,"Executive officer",71760
-"1023","Whole Civil Service","Female",2008,"Grades 6 & 7",12640
-"1024","Whole Civil Service","Female",2008,"Not reported",960
-"1025","Whole Civil Service","Female",2008,"Senior and higher executive officer",43440
-"1026","Whole Civil Service","Female",2008,"Senior Civil Service",1520
-"1027","Whole Civil Service","Female",2009,"Administrative officers and assistants",145050
-"1028","Whole Civil Service","Female",2009,"Executive officer",72460
-"1029","Whole Civil Service","Female",2009,"Grades 6 & 7",13750
-"1030","Whole Civil Service","Female",2009,"Not reported",330
-"1031","Whole Civil Service","Female",2009,"Senior and higher executive officer",44860
-"1032","Whole Civil Service","Female",2009,"Senior Civil Service",1620
-"1033","Whole Civil Service","Female",2010,"Administrative officers and assistants",140650
-"1034","Whole Civil Service","Female",2010,"Executive officer",75180
-"1035","Whole Civil Service","Female",2010,"Grades 6 & 7",14720
-"1036","Whole Civil Service","Female",2010,"Not reported",410
-"1037","Whole Civil Service","Female",2010,"Senior and higher executive officer",47130
-"1038","Whole Civil Service","Female",2010,"Senior Civil Service",1730
-"1039","Whole Civil Service","Female",2011,"Administrative officers and assistants",133140
-"1040","Whole Civil Service","Female",2011,"Executive officer",70160
-"1041","Whole Civil Service","Female",2011,"Grades 6 & 7",14290
-"1042","Whole Civil Service","Female",2011,"Not reported",440
-"1043","Whole Civil Service","Female",2011,"Senior and higher executive officer",44490
-"1044","Whole Civil Service","Female",2011,"Senior Civil Service",1600
-"1045","Whole Civil Service","Female",2012,"Administrative officers and assistants",122010
-"1046","Whole Civil Service","Female",2012,"Executive officer",66410
-"1047","Whole Civil Service","Female",2012,"Grades 6 & 7",13820
-"1048","Whole Civil Service","Female",2012,"Not reported",240
-"1049","Whole Civil Service","Female",2012,"Senior and higher executive officer",42070
-"1050","Whole Civil Service","Female",2012,"Senior Civil Service",1550
-"1051","Whole Civil Service","Male",2008,"Administrative officers and assistants",106690
-"1052","Whole Civil Service","Male",2008,"Executive officer",58660
-"1053","Whole Civil Service","Male",2008,"Grades 6 & 7",20450
-"1054","Whole Civil Service","Male",2008,"Not reported",2700
-"1055","Whole Civil Service","Male",2008,"Senior and higher executive officer",55570
-"1056","Whole Civil Service","Male",2008,"Senior Civil Service",3270
-"1057","Whole Civil Service","Male",2009,"Administrative officers and assistants",104940
-"1058","Whole Civil Service","Male",2009,"Executive officer",58850
-"1059","Whole Civil Service","Male",2009,"Grades 6 & 7",21190
-"1060","Whole Civil Service","Male",2009,"Not reported",2510
-"1061","Whole Civil Service","Male",2009,"Senior and higher executive officer",55560
-"1062","Whole Civil Service","Male",2009,"Senior Civil Service",3310
-"1063","Whole Civil Service","Male",2010,"Administrative officers and assistants",105140
-"1064","Whole Civil Service","Male",2010,"Executive officer",58800
-"1065","Whole Civil Service","Male",2010,"Grades 6 & 7",21910
-"1066","Whole Civil Service","Male",2010,"Not reported",2390
-"1067","Whole Civil Service","Male",2010,"Senior and higher executive officer",56090
-"1068","Whole Civil Service","Male",2010,"Senior Civil Service",3340
-"1069","Whole Civil Service","Male",2011,"Administrative officers and assistants",100050
-"1070","Whole Civil Service","Male",2011,"Executive officer",53650
-"1071","Whole Civil Service","Male",2011,"Grades 6 & 7",20820
-"1072","Whole Civil Service","Male",2011,"Not reported",2530
-"1073","Whole Civil Service","Male",2011,"Senior and higher executive officer",54270
-"1074","Whole Civil Service","Male",2011,"Senior Civil Service",3010
-"1075","Whole Civil Service","Male",2012,"Administrative officers and assistants",88530
-"1076","Whole Civil Service","Male",2012,"Executive officer",52930
-"1077","Whole Civil Service","Male",2012,"Grades 6 & 7",19790
-"1078","Whole Civil Service","Male",2012,"Not reported",2100
-"1079","Whole Civil Service","Male",2012,"Senior and higher executive officer",51490
-"1080","Whole Civil Service","Male",2012,"Senior Civil Service",2870
+"1","BIS","Total",2008,"Administrative officers and assistants",550
+"2","BIS","Total",2008,"Executive officer",700
+"3","BIS","Total",2008,"Grades 6 & 7",1190
+"4","BIS","Total",2008,"Not reported",0
+"5","BIS","Total",2008,"Senior and higher executive officer",1570
+"6","BIS","Total",2008,"Senior Civil Service",250
+"7","BIS","Total",2009,"Administrative officers and assistants",440
+"8","BIS","Total",2009,"Executive officer",630
+"9","BIS","Total",2009,"Grades 6 & 7",1160
+"10","BIS","Total",2009,"Not reported",0
+"11","BIS","Total",2009,"Senior and higher executive officer",1480
+"12","BIS","Total",2009,"Senior Civil Service",250
+"13","BIS","Total",2010,"Administrative officers and assistants",390
+"14","BIS","Total",2010,"Executive officer",630
+"15","BIS","Total",2010,"Grades 6 & 7",1220
+"16","BIS","Total",2010,"Not reported",40
+"17","BIS","Total",2010,"Senior and higher executive officer",1480
+"18","BIS","Total",2010,"Senior Civil Service",260
+"19","BIS","Total",2011,"Administrative officers and assistants",330
+"20","BIS","Total",2011,"Executive officer",520
+"21","BIS","Total",2011,"Grades 6 & 7",1090
+"22","BIS","Total",2011,"Not reported",0
+"23","BIS","Total",2011,"Senior and higher executive officer",1320
+"24","BIS","Total",2011,"Senior Civil Service",220
+"25","BIS","Total",2012,"Administrative officers and assistants",260
+"26","BIS","Total",2012,"Executive officer",450
+"27","BIS","Total",2012,"Grades 6 & 7",940
+"28","BIS","Total",2012,"Not reported",0
+"29","BIS","Total",2012,"Senior and higher executive officer",1110
+"30","BIS","Total",2012,"Senior Civil Service",200
+"31","BIS","Total",2013,"Administrative officers and assistants",220
+"32","BIS","Total",2013,"Executive officer",470
+"33","BIS","Total",2013,"Grades 6 & 7",1050
+"34","BIS","Total",2013,"Not reported",0
+"35","BIS","Total",2013,"Senior and higher executive officer",1180
+"36","BIS","Total",2013,"Senior Civil Service",220
+"37","CO","Total",2008,"Administrative officers and assistants",180
+"38","CO","Total",2008,"Executive officer",260
+"39","CO","Total",2008,"Grades 6 & 7",310
+"40","CO","Total",2008,"Not reported",0
+"41","CO","Total",2008,"Senior and higher executive officer",340
+"42","CO","Total",2008,"Senior Civil Service",150
+"43","CO","Total",2009,"Administrative officers and assistants",180
+"44","CO","Total",2009,"Executive officer",240
+"45","CO","Total",2009,"Grades 6 & 7",320
+"46","CO","Total",2009,"Not reported",0
+"47","CO","Total",2009,"Senior and higher executive officer",360
+"48","CO","Total",2009,"Senior Civil Service",150
+"49","CO","Total",2010,"Administrative officers and assistants",180
+"50","CO","Total",2010,"Executive officer",240
+"51","CO","Total",2010,"Grades 6 & 7",320
+"52","CO","Total",2010,"Not reported",0
+"53","CO","Total",2010,"Senior and higher executive officer",390
+"54","CO","Total",2010,"Senior Civil Service",140
+"55","CO","Total",2011,"Administrative officers and assistants",160
+"56","CO","Total",2011,"Executive officer",250
+"57","CO","Total",2011,"Grades 6 & 7",440
+"58","CO","Total",2011,"Not reported",0
+"59","CO","Total",2011,"Senior and higher executive officer",500
+"60","CO","Total",2011,"Senior Civil Service",160
+"61","CO","Total",2012,"Administrative officers and assistants",160
+"62","CO","Total",2012,"Executive officer",260
+"63","CO","Total",2012,"Grades 6 & 7",510
+"64","CO","Total",2012,"Not reported",0
+"65","CO","Total",2012,"Senior and higher executive officer",520
+"66","CO","Total",2012,"Senior Civil Service",170
+"67","CO","Total",2013,"Administrative officers and assistants",160
+"68","CO","Total",2013,"Executive officer",270
+"69","CO","Total",2013,"Grades 6 & 7",640
+"70","CO","Total",2013,"Not reported",0
+"71","CO","Total",2013,"Senior and higher executive officer",600
+"72","CO","Total",2013,"Senior Civil Service",180
+"73","DCLG","Total",2008,"Administrative officers and assistants",500
+"74","DCLG","Total",2008,"Executive officer",560
+"75","DCLG","Total",2008,"Grades 6 & 7",680
+"76","DCLG","Total",2008,"Not reported",0
+"77","DCLG","Total",2008,"Senior and higher executive officer",1080
+"78","DCLG","Total",2008,"Senior Civil Service",180
+"79","DCLG","Total",2009,"Administrative officers and assistants",310
+"80","DCLG","Total",2009,"Executive officer",490
+"81","DCLG","Total",2009,"Grades 6 & 7",650
+"82","DCLG","Total",2009,"Not reported",0
+"83","DCLG","Total",2009,"Senior and higher executive officer",940
+"84","DCLG","Total",2009,"Senior Civil Service",130
+"85","DCLG","Total",2010,"Administrative officers and assistants",310
+"86","DCLG","Total",2010,"Executive officer",440
+"87","DCLG","Total",2010,"Grades 6 & 7",700
+"88","DCLG","Total",2010,"Not reported",0
+"89","DCLG","Total",2010,"Senior and higher executive officer",1060
+"90","DCLG","Total",2010,"Senior Civil Service",130
+"91","DCLG","Total",2011,"Administrative officers and assistants",250
+"92","DCLG","Total",2011,"Executive officer",370
+"93","DCLG","Total",2011,"Grades 6 & 7",650
+"94","DCLG","Total",2011,"Not reported",0
+"95","DCLG","Total",2011,"Senior and higher executive officer",940
+"96","DCLG","Total",2011,"Senior Civil Service",120
+"97","DCLG","Total",2012,"Administrative officers and assistants",140
+"98","DCLG","Total",2012,"Executive officer",270
+"99","DCLG","Total",2012,"Grades 6 & 7",590
+"100","DCLG","Total",2012,"Not reported",0
+"101","DCLG","Total",2012,"Senior and higher executive officer",800
+"102","DCLG","Total",2012,"Senior Civil Service",90
+"103","DCLG","Total",2013,"Administrative officers and assistants",100
+"104","DCLG","Total",2013,"Executive officer",240
+"105","DCLG","Total",2013,"Grades 6 & 7",550
+"106","DCLG","Total",2013,"Not reported",0
+"107","DCLG","Total",2013,"Senior and higher executive officer",760
+"108","DCLG","Total",2013,"Senior Civil Service",90
+"109","DCMS","Total",2008,"Administrative officers and assistants",50
+"110","DCMS","Total",2008,"Executive officer",120
+"111","DCMS","Total",2008,"Grades 6 & 7",110
+"112","DCMS","Total",2008,"Not reported",0
+"113","DCMS","Total",2008,"Senior and higher executive officer",170
+"114","DCMS","Total",2008,"Senior Civil Service",30
+"115","DCMS","Total",2009,"Administrative officers and assistants",30
+"116","DCMS","Total",2009,"Executive officer",90
+"117","DCMS","Total",2009,"Grades 6 & 7",130
+"118","DCMS","Total",2009,"Not reported",0
+"119","DCMS","Total",2009,"Senior and higher executive officer",170
+"120","DCMS","Total",2009,"Senior Civil Service",40
+"121","DCMS","Total",2010,"Administrative officers and assistants",30
+"122","DCMS","Total",2010,"Executive officer",100
+"123","DCMS","Total",2010,"Grades 6 & 7",140
+"124","DCMS","Total",2010,"Not reported",0
+"125","DCMS","Total",2010,"Senior and higher executive officer",170
+"126","DCMS","Total",2010,"Senior Civil Service",50
+"127","DCMS","Total",2011,"Administrative officers and assistants",30
+"128","DCMS","Total",2011,"Executive officer",90
+"129","DCMS","Total",2011,"Grades 6 & 7",130
+"130","DCMS","Total",2011,"Not reported",0
+"131","DCMS","Total",2011,"Senior and higher executive officer",160
+"132","DCMS","Total",2011,"Senior Civil Service",50
+"133","DCMS","Total",2012,"Administrative officers and assistants",20
+"134","DCMS","Total",2012,"Executive officer",70
+"135","DCMS","Total",2012,"Grades 6 & 7",150
+"136","DCMS","Total",2012,"Not reported",0
+"137","DCMS","Total",2012,"Senior and higher executive officer",170
+"138","DCMS","Total",2012,"Senior Civil Service",40
+"139","DCMS","Total",2013,"Administrative officers and assistants",20
+"140","DCMS","Total",2013,"Executive officer",60
+"141","DCMS","Total",2013,"Grades 6 & 7",140
+"142","DCMS","Total",2013,"Not reported",0
+"143","DCMS","Total",2013,"Senior and higher executive officer",140
+"144","DCMS","Total",2013,"Senior Civil Service",40
+"145","DECC","Total",2008,"Administrative officers and assistants",0
+"146","DECC","Total",2008,"Executive officer",0
+"147","DECC","Total",2008,"Grades 6 & 7",0
+"148","DECC","Total",2008,"Not reported",0
+"149","DECC","Total",2008,"Senior and higher executive officer",0
+"150","DECC","Total",2008,"Senior Civil Service",0
+"151","DECC","Total",2009,"Administrative officers and assistants",80
+"152","DECC","Total",2009,"Executive officer",110
+"153","DECC","Total",2009,"Grades 6 & 7",320
+"154","DECC","Total",2009,"Not reported",0
+"155","DECC","Total",2009,"Senior and higher executive officer",340
+"156","DECC","Total",2009,"Senior Civil Service",60
+"157","DECC","Total",2010,"Administrative officers and assistants",70
+"158","DECC","Total",2010,"Executive officer",110
+"159","DECC","Total",2010,"Grades 6 & 7",400
+"160","DECC","Total",2010,"Not reported",0
+"161","DECC","Total",2010,"Senior and higher executive officer",390
+"162","DECC","Total",2010,"Senior Civil Service",80
+"163","DECC","Total",2011,"Administrative officers and assistants",80
+"164","DECC","Total",2011,"Executive officer",110
+"165","DECC","Total",2011,"Grades 6 & 7",470
+"166","DECC","Total",2011,"Not reported",0
+"167","DECC","Total",2011,"Senior and higher executive officer",430
+"168","DECC","Total",2011,"Senior Civil Service",80
+"169","DECC","Total",2012,"Administrative officers and assistants",90
+"170","DECC","Total",2012,"Executive officer",120
+"171","DECC","Total",2012,"Grades 6 & 7",540
+"172","DECC","Total",2012,"Not reported",0
+"173","DECC","Total",2012,"Senior and higher executive officer",480
+"174","DECC","Total",2012,"Senior Civil Service",90
+"175","DECC","Total",2013,"Administrative officers and assistants",80
+"176","DECC","Total",2013,"Executive officer",140
+"177","DECC","Total",2013,"Grades 6 & 7",610
+"178","DECC","Total",2013,"Not reported",0
+"179","DECC","Total",2013,"Senior and higher executive officer",540
+"180","DECC","Total",2013,"Senior Civil Service",90
+"181","Defra","Total",2008,"Administrative officers and assistants",560
+"182","Defra","Total",2008,"Executive officer",520
+"183","Defra","Total",2008,"Grades 6 & 7",680
+"184","Defra","Total",2008,"Not reported",0
+"185","Defra","Total",2008,"Senior and higher executive officer",1180
+"186","Defra","Total",2008,"Senior Civil Service",160
+"187","Defra","Total",2009,"Administrative officers and assistants",500
+"188","Defra","Total",2009,"Executive officer",440
+"189","Defra","Total",2009,"Grades 6 & 7",650
+"190","Defra","Total",2009,"Not reported",0
+"191","Defra","Total",2009,"Senior and higher executive officer",1030
+"192","Defra","Total",2009,"Senior Civil Service",140
+"193","Defra","Total",2010,"Administrative officers and assistants",430
+"194","Defra","Total",2010,"Executive officer",440
+"195","Defra","Total",2010,"Grades 6 & 7",680
+"196","Defra","Total",2010,"Not reported",0
+"197","Defra","Total",2010,"Senior and higher executive officer",1030
+"198","Defra","Total",2010,"Senior Civil Service",150
+"199","Defra","Total",2011,"Administrative officers and assistants",380
+"200","Defra","Total",2011,"Executive officer",430
+"201","Defra","Total",2011,"Grades 6 & 7",650
+"202","Defra","Total",2011,"Not reported",0
+"203","Defra","Total",2011,"Senior and higher executive officer",1020
+"204","Defra","Total",2011,"Senior Civil Service",130
+"205","Defra","Total",2012,"Administrative officers and assistants",330
+"206","Defra","Total",2012,"Executive officer",350
+"207","Defra","Total",2012,"Grades 6 & 7",480
+"208","Defra","Total",2012,"Not reported",0
+"209","Defra","Total",2012,"Senior and higher executive officer",900
+"210","Defra","Total",2012,"Senior Civil Service",100
+"211","Defra","Total",2013,"Administrative officers and assistants",290
+"212","Defra","Total",2013,"Executive officer",350
+"213","Defra","Total",2013,"Grades 6 & 7",520
+"214","Defra","Total",2013,"Not reported",0
+"215","Defra","Total",2013,"Senior and higher executive officer",920
+"216","Defra","Total",2013,"Senior Civil Service",100
+"217","DfE","Total",2008,"Administrative officers and assistants",440
+"218","DfE","Total",2008,"Executive officer",680
+"219","DfE","Total",2008,"Grades 6 & 7",760
+"220","DfE","Total",2008,"Not reported",0
+"221","DfE","Total",2008,"Senior and higher executive officer",1330
+"222","DfE","Total",2008,"Senior Civil Service",150
+"223","DfE","Total",2009,"Administrative officers and assistants",350
+"224","DfE","Total",2009,"Executive officer",630
+"225","DfE","Total",2009,"Grades 6 & 7",850
+"226","DfE","Total",2009,"Not reported",0
+"227","DfE","Total",2009,"Senior and higher executive officer",1410
+"228","DfE","Total",2009,"Senior Civil Service",150
+"229","DfE","Total",2010,"Administrative officers and assistants",280
+"230","DfE","Total",2010,"Executive officer",550
+"231","DfE","Total",2010,"Grades 6 & 7",810
+"232","DfE","Total",2010,"Not reported",0
+"233","DfE","Total",2010,"Senior and higher executive officer",1320
+"234","DfE","Total",2010,"Senior Civil Service",150
+"235","DfE","Total",2011,"Administrative officers and assistants",230
+"236","DfE","Total",2011,"Executive officer",500
+"237","DfE","Total",2011,"Grades 6 & 7",730
+"238","DfE","Total",2011,"Not reported",0
+"239","DfE","Total",2011,"Senior and higher executive officer",1190
+"240","DfE","Total",2011,"Senior Civil Service",130
+"241","DfE","Total",2012,"Administrative officers and assistants",190
+"242","DfE","Total",2012,"Executive officer",470
+"243","DfE","Total",2012,"Grades 6 & 7",800
+"244","DfE","Total",2012,"Not reported",0
+"245","DfE","Total",2012,"Senior and higher executive officer",1200
+"246","DfE","Total",2012,"Senior Civil Service",140
+"247","DfE","Total",2013,"Administrative officers and assistants",410
+"248","DfE","Total",2013,"Executive officer",1110
+"249","DfE","Total",2013,"Grades 6 & 7",1960
+"250","DfE","Total",2013,"Not reported",0
+"251","DfE","Total",2013,"Senior and higher executive officer",2800
+"252","DfE","Total",2013,"Senior Civil Service",280
+"253","DfID","Total",2008,"Administrative officers and assistants",210
+"254","DfID","Total",2008,"Executive officer",240
+"255","DfID","Total",2008,"Grades 6 & 7",670
+"256","DfID","Total",2008,"Not reported",0
+"257","DfID","Total",2008,"Senior and higher executive officer",450
+"258","DfID","Total",2008,"Senior Civil Service",100
+"259","DfID","Total",2009,"Administrative officers and assistants",170
+"260","DfID","Total",2009,"Executive officer",240
+"261","DfID","Total",2009,"Grades 6 & 7",700
+"262","DfID","Total",2009,"Not reported",0
+"263","DfID","Total",2009,"Senior and higher executive officer",460
+"264","DfID","Total",2009,"Senior Civil Service",100
+"265","DfID","Total",2010,"Administrative officers and assistants",160
+"266","DfID","Total",2010,"Executive officer",200
+"267","DfID","Total",2010,"Grades 6 & 7",730
+"268","DfID","Total",2010,"Not reported",0
+"269","DfID","Total",2010,"Senior and higher executive officer",440
+"270","DfID","Total",2010,"Senior Civil Service",100
+"271","DfID","Total",2011,"Administrative officers and assistants",130
+"272","DfID","Total",2011,"Executive officer",200
+"273","DfID","Total",2011,"Grades 6 & 7",760
+"274","DfID","Total",2011,"Not reported",0
+"275","DfID","Total",2011,"Senior and higher executive officer",440
+"276","DfID","Total",2011,"Senior Civil Service",80
+"277","DfID","Total",2012,"Administrative officers and assistants",110
+"278","DfID","Total",2012,"Executive officer",190
+"279","DfID","Total",2012,"Grades 6 & 7",870
+"280","DfID","Total",2012,"Not reported",0
+"281","DfID","Total",2012,"Senior and higher executive officer",470
+"282","DfID","Total",2012,"Senior Civil Service",80
+"283","DfID","Total",2013,"Administrative officers and assistants",100
+"284","DfID","Total",2013,"Executive officer",190
+"285","DfID","Total",2013,"Grades 6 & 7",950
+"286","DfID","Total",2013,"Not reported",0
+"287","DfID","Total",2013,"Senior and higher executive officer",490
+"288","DfID","Total",2013,"Senior Civil Service",80
+"289","DfT","Total",2008,"Administrative officers and assistants",250
+"290","DfT","Total",2008,"Executive officer",320
+"291","DfT","Total",2008,"Grades 6 & 7",590
+"292","DfT","Total",2008,"Not reported",0
+"293","DfT","Total",2008,"Senior and higher executive officer",740
+"294","DfT","Total",2008,"Senior Civil Service",150
+"295","DfT","Total",2009,"Administrative officers and assistants",220
+"296","DfT","Total",2009,"Executive officer",320
+"297","DfT","Total",2009,"Grades 6 & 7",620
+"298","DfT","Total",2009,"Not reported",0
+"299","DfT","Total",2009,"Senior and higher executive officer",800
+"300","DfT","Total",2009,"Senior Civil Service",150
+"301","DfT","Total",2010,"Administrative officers and assistants",200
+"302","DfT","Total",2010,"Executive officer",310
+"303","DfT","Total",2010,"Grades 6 & 7",670
+"304","DfT","Total",2010,"Not reported",0
+"305","DfT","Total",2010,"Senior and higher executive officer",820
+"306","DfT","Total",2010,"Senior Civil Service",160
+"307","DfT","Total",2011,"Administrative officers and assistants",180
+"308","DfT","Total",2011,"Executive officer",240
+"309","DfT","Total",2011,"Grades 6 & 7",620
+"310","DfT","Total",2011,"Not reported",0
+"311","DfT","Total",2011,"Senior and higher executive officer",750
+"312","DfT","Total",2011,"Senior Civil Service",130
+"313","DfT","Total",2012,"Administrative officers and assistants",120
+"314","DfT","Total",2012,"Executive officer",210
+"315","DfT","Total",2012,"Grades 6 & 7",560
+"316","DfT","Total",2012,"Not reported",0
+"317","DfT","Total",2012,"Senior and higher executive officer",670
+"318","DfT","Total",2012,"Senior Civil Service",110
+"319","DfT","Total",2013,"Administrative officers and assistants",110
+"320","DfT","Total",2013,"Executive officer",210
+"321","DfT","Total",2013,"Grades 6 & 7",610
+"322","DfT","Total",2013,"Not reported",0
+"323","DfT","Total",2013,"Senior and higher executive officer",710
+"324","DfT","Total",2013,"Senior Civil Service",120
+"325","DH","Total",2008,"Administrative officers and assistants",130
+"326","DH","Total",2008,"Executive officer",400
+"327","DH","Total",2008,"Grades 6 & 7",710
+"328","DH","Total",2008,"Not reported",0
+"329","DH","Total",2008,"Senior and higher executive officer",720
+"330","DH","Total",2008,"Senior Civil Service",260
+"331","DH","Total",2009,"Administrative officers and assistants",140
+"332","DH","Total",2009,"Executive officer",400
+"333","DH","Total",2009,"Grades 6 & 7",760
+"334","DH","Total",2009,"Not reported",0
+"335","DH","Total",2009,"Senior and higher executive officer",760
+"336","DH","Total",2009,"Senior Civil Service",260
+"337","DH","Total",2010,"Administrative officers and assistants",130
+"338","DH","Total",2010,"Executive officer",460
+"339","DH","Total",2010,"Grades 6 & 7",910
+"340","DH","Total",2010,"Not reported",0
+"341","DH","Total",2010,"Senior and higher executive officer",920
+"342","DH","Total",2010,"Senior Civil Service",280
+"343","DH","Total",2011,"Administrative officers and assistants",130
+"344","DH","Total",2011,"Executive officer",440
+"345","DH","Total",2011,"Grades 6 & 7",900
+"346","DH","Total",2011,"Not reported",0
+"347","DH","Total",2011,"Senior and higher executive officer",920
+"348","DH","Total",2011,"Senior Civil Service",250
+"349","DH","Total",2012,"Administrative officers and assistants",120
+"350","DH","Total",2012,"Executive officer",370
+"351","DH","Total",2012,"Grades 6 & 7",820
+"352","DH","Total",2012,"Not reported",0
+"353","DH","Total",2012,"Senior and higher executive officer",850
+"354","DH","Total",2012,"Senior Civil Service",220
+"355","DH","Total",2013,"Administrative officers and assistants",120
+"356","DH","Total",2013,"Executive officer",350
+"357","DH","Total",2013,"Grades 6 & 7",790
+"358","DH","Total",2013,"Not reported",0
+"359","DH","Total",2013,"Senior and higher executive officer",820
+"360","DH","Total",2013,"Senior Civil Service",210
+"361","DWP","Total",2008,"Administrative officers and assistants",60400
+"362","DWP","Total",2008,"Executive officer",41590
+"363","DWP","Total",2008,"Grades 6 & 7",2870
+"364","DWP","Total",2008,"Not reported",0
+"365","DWP","Total",2008,"Senior and higher executive officer",12370
+"366","DWP","Total",2008,"Senior Civil Service",360
+"367","DWP","Total",2009,"Administrative officers and assistants",62950
+"368","DWP","Total",2009,"Executive officer",42290
+"369","DWP","Total",2009,"Grades 6 & 7",2980
+"370","DWP","Total",2009,"Not reported",0
+"371","DWP","Total",2009,"Senior and higher executive officer",12550
+"372","DWP","Total",2009,"Senior Civil Service",380
+"373","DWP","Total",2010,"Administrative officers and assistants",65200
+"374","DWP","Total",2010,"Executive officer",49150
+"375","DWP","Total",2010,"Grades 6 & 7",3590
+"376","DWP","Total",2010,"Not reported",20
+"377","DWP","Total",2010,"Senior and higher executive officer",15170
+"378","DWP","Total",2010,"Senior Civil Service",400
+"379","DWP","Total",2011,"Administrative officers and assistants",60930
+"380","DWP","Total",2011,"Executive officer",44460
+"381","DWP","Total",2011,"Grades 6 & 7",3130
+"382","DWP","Total",2011,"Not reported",210
+"383","DWP","Total",2011,"Senior and higher executive officer",13330
+"384","DWP","Total",2011,"Senior Civil Service",340
+"385","DWP","Total",2012,"Administrative officers and assistants",54830
+"386","DWP","Total",2012,"Executive officer",42030
+"387","DWP","Total",2012,"Grades 6 & 7",2740
+"388","DWP","Total",2012,"Not reported",190
+"389","DWP","Total",2012,"Senior and higher executive officer",12400
+"390","DWP","Total",2012,"Senior Civil Service",290
+"391","DWP","Total",2013,"Administrative officers and assistants",50900
+"392","DWP","Total",2013,"Executive officer",42170
+"393","DWP","Total",2013,"Grades 6 & 7",2840
+"394","DWP","Total",2013,"Not reported",0
+"395","DWP","Total",2013,"Senior and higher executive officer",12100
+"396","DWP","Total",2013,"Senior Civil Service",280
+"397","FCO","Total",2008,"Administrative officers and assistants",1130
+"398","FCO","Total",2008,"Executive officer",1480
+"399","FCO","Total",2008,"Grades 6 & 7",1070
+"400","FCO","Total",2008,"Not reported",0
+"401","FCO","Total",2008,"Senior and higher executive officer",1880
+"402","FCO","Total",2008,"Senior Civil Service",390
+"403","FCO","Total",2009,"Administrative officers and assistants",1160
+"404","FCO","Total",2009,"Executive officer",1430
+"405","FCO","Total",2009,"Grades 6 & 7",1130
+"406","FCO","Total",2009,"Not reported",0
+"407","FCO","Total",2009,"Senior and higher executive officer",1990
+"408","FCO","Total",2009,"Senior Civil Service",370
+"409","FCO","Total",2010,"Administrative officers and assistants",1150
+"410","FCO","Total",2010,"Executive officer",1420
+"411","FCO","Total",2010,"Grades 6 & 7",1140
+"412","FCO","Total",2010,"Not reported",0
+"413","FCO","Total",2010,"Senior and higher executive officer",1920
+"414","FCO","Total",2010,"Senior Civil Service",380
+"415","FCO","Total",2011,"Administrative officers and assistants",1110
+"416","FCO","Total",2011,"Executive officer",1330
+"417","FCO","Total",2011,"Grades 6 & 7",1080
+"418","FCO","Total",2011,"Not reported",0
+"419","FCO","Total",2011,"Senior and higher executive officer",1870
+"420","FCO","Total",2011,"Senior Civil Service",360
+"421","FCO","Total",2012,"Administrative officers and assistants",1150
+"422","FCO","Total",2012,"Executive officer",1520
+"423","FCO","Total",2012,"Grades 6 & 7",1290
+"424","FCO","Total",2012,"Not reported",0
+"425","FCO","Total",2012,"Senior and higher executive officer",2150
+"426","FCO","Total",2012,"Senior Civil Service",450
+"427","FCO","Total",2013,"Administrative officers and assistants",820
+"428","FCO","Total",2013,"Executive officer",850
+"429","FCO","Total",2013,"Grades 6 & 7",1170
+"430","FCO","Total",2013,"Not reported",40
+"431","FCO","Total",2013,"Senior and higher executive officer",1560
+"432","FCO","Total",2013,"Senior Civil Service",410
+"433","HMRC","Total",2008,"Administrative officers and assistants",50980
+"434","HMRC","Total",2008,"Executive officer",23190
+"435","HMRC","Total",2008,"Grades 6 & 7",3990
+"436","HMRC","Total",2008,"Not reported",0
+"437","HMRC","Total",2008,"Senior and higher executive officer",16800
+"438","HMRC","Total",2008,"Senior Civil Service",420
+"439","HMRC","Total",2009,"Administrative officers and assistants",49000
+"440","HMRC","Total",2009,"Executive officer",22510
+"441","HMRC","Total",2009,"Grades 6 & 7",4240
+"442","HMRC","Total",2009,"Not reported",10
+"443","HMRC","Total",2009,"Senior and higher executive officer",16870
+"444","HMRC","Total",2009,"Senior Civil Service",480
+"445","HMRC","Total",2010,"Administrative officers and assistants",45000
+"446","HMRC","Total",2010,"Executive officer",21520
+"447","HMRC","Total",2010,"Grades 6 & 7",4150
+"448","HMRC","Total",2010,"Not reported",0
+"449","HMRC","Total",2010,"Senior and higher executive officer",16270
+"450","HMRC","Total",2010,"Senior Civil Service",420
+"451","HMRC","Total",2011,"Administrative officers and assistants",41030
+"452","HMRC","Total",2011,"Executive officer",18110
+"453","HMRC","Total",2011,"Grades 6 & 7",4100
+"454","HMRC","Total",2011,"Not reported",0
+"455","HMRC","Total",2011,"Senior and higher executive officer",14960
+"456","HMRC","Total",2011,"Senior Civil Service",390
+"457","HMRC","Total",2012,"Administrative officers and assistants",42270
+"458","HMRC","Total",2012,"Executive officer",17510
+"459","HMRC","Total",2012,"Grades 6 & 7",4080
+"460","HMRC","Total",2012,"Not reported",0
+"461","HMRC","Total",2012,"Senior and higher executive officer",14610
+"462","HMRC","Total",2012,"Senior Civil Service",390
+"463","HMRC","Total",2013,"Administrative officers and assistants",40090
+"464","HMRC","Total",2013,"Executive officer",17020
+"465","HMRC","Total",2013,"Grades 6 & 7",4270
+"466","HMRC","Total",2013,"Not reported",480
+"467","HMRC","Total",2013,"Senior and higher executive officer",14490
+"468","HMRC","Total",2013,"Senior Civil Service",330
+"469","HMT","Total",2008,"Administrative officers and assistants",160
+"470","HMT","Total",2008,"Executive officer",160
+"471","HMT","Total",2008,"Grades 6 & 7",350
+"472","HMT","Total",2008,"Not reported",0
+"473","HMT","Total",2008,"Senior and higher executive officer",380
+"474","HMT","Total",2008,"Senior Civil Service",110
+"475","HMT","Total",2009,"Administrative officers and assistants",160
+"476","HMT","Total",2009,"Executive officer",180
+"477","HMT","Total",2009,"Grades 6 & 7",420
+"478","HMT","Total",2009,"Not reported",0
+"479","HMT","Total",2009,"Senior and higher executive officer",490
+"480","HMT","Total",2009,"Senior Civil Service",90
+"481","HMT","Total",2010,"Administrative officers and assistants",120
+"482","HMT","Total",2010,"Executive officer",190
+"483","HMT","Total",2010,"Grades 6 & 7",470
+"484","HMT","Total",2010,"Not reported",0
+"485","HMT","Total",2010,"Senior and higher executive officer",510
+"486","HMT","Total",2010,"Senior Civil Service",160
+"487","HMT","Total",2011,"Administrative officers and assistants",110
+"488","HMT","Total",2011,"Executive officer",170
+"489","HMT","Total",2011,"Grades 6 & 7",450
+"490","HMT","Total",2011,"Not reported",0
+"491","HMT","Total",2011,"Senior and higher executive officer",460
+"492","HMT","Total",2011,"Senior Civil Service",130
+"493","HMT","Total",2012,"Administrative officers and assistants",90
+"494","HMT","Total",2012,"Executive officer",150
+"495","HMT","Total",2012,"Grades 6 & 7",350
+"496","HMT","Total",2012,"Not reported",0
+"497","HMT","Total",2012,"Senior and higher executive officer",360
+"498","HMT","Total",2012,"Senior Civil Service",110
+"499","HMT","Total",2013,"Administrative officers and assistants",90
+"500","HMT","Total",2013,"Executive officer",150
+"501","HMT","Total",2013,"Grades 6 & 7",410
+"502","HMT","Total",2013,"Not reported",0
+"503","HMT","Total",2013,"Senior and higher executive officer",480
+"504","HMT","Total",2013,"Senior Civil Service",120
+"505","HO","Total",2008,"Administrative officers and assistants",10140
+"506","HO","Total",2008,"Executive officer",9250
+"507","HO","Total",2008,"Grades 6 & 7",1390
+"508","HO","Total",2008,"Not reported",0
+"509","HO","Total",2008,"Senior and higher executive officer",5920
+"510","HO","Total",2008,"Senior Civil Service",220
+"511","HO","Total",2009,"Administrative officers and assistants",9620
+"512","HO","Total",2009,"Executive officer",9140
+"513","HO","Total",2009,"Grades 6 & 7",1470
+"514","HO","Total",2009,"Not reported",0
+"515","HO","Total",2009,"Senior and higher executive officer",5760
+"516","HO","Total",2009,"Senior Civil Service",240
+"517","HO","Total",2010,"Administrative officers and assistants",9400
+"518","HO","Total",2010,"Executive officer",9350
+"519","HO","Total",2010,"Grades 6 & 7",1780
+"520","HO","Total",2010,"Not reported",0
+"521","HO","Total",2010,"Senior and higher executive officer",6270
+"522","HO","Total",2010,"Senior Civil Service",270
+"523","HO","Total",2011,"Administrative officers and assistants",10170
+"524","HO","Total",2011,"Executive officer",11130
+"525","HO","Total",2011,"Grades 6 & 7",1670
+"526","HO","Total",2011,"Not reported",0
+"527","HO","Total",2011,"Senior and higher executive officer",6460
+"528","HO","Total",2011,"Senior Civil Service",220
+"529","HO","Total",2012,"Administrative officers and assistants",8770
+"530","HO","Total",2012,"Executive officer",9850
+"531","HO","Total",2012,"Grades 6 & 7",1630
+"532","HO","Total",2012,"Not reported",0
+"533","HO","Total",2012,"Senior and higher executive officer",5900
+"534","HO","Total",2012,"Senior Civil Service",210
+"535","HO","Total",2013,"Administrative officers and assistants",8070
+"536","HO","Total",2013,"Executive officer",10390
+"537","HO","Total",2013,"Grades 6 & 7",1790
+"538","HO","Total",2013,"Not reported",0
+"539","HO","Total",2013,"Senior and higher executive officer",6020
+"540","HO","Total",2013,"Senior Civil Service",200
+"541","MoD","Total",2008,"Administrative officers and assistants",38540
+"542","MoD","Total",2008,"Executive officer",15230
+"543","MoD","Total",2008,"Grades 6 & 7",4050
+"544","MoD","Total",2008,"Not reported",3390
+"545","MoD","Total",2008,"Senior and higher executive officer",20400
+"546","MoD","Total",2008,"Senior Civil Service",330
+"547","MoD","Total",2009,"Administrative officers and assistants",35140
+"548","MoD","Total",2009,"Executive officer",15240
+"549","MoD","Total",2009,"Grades 6 & 7",4130
+"550","MoD","Total",2009,"Not reported",2410
+"551","MoD","Total",2009,"Senior and higher executive officer",20580
+"552","MoD","Total",2009,"Senior Civil Service",330
+"553","MoD","Total",2010,"Administrative officers and assistants",36050
+"554","MoD","Total",2010,"Executive officer",13740
+"555","MoD","Total",2010,"Grades 6 & 7",4300
+"556","MoD","Total",2010,"Not reported",2620
+"557","MoD","Total",2010,"Senior and higher executive officer",20610
+"558","MoD","Total",2010,"Senior Civil Service",340
+"559","MoD","Total",2011,"Administrative officers and assistants",33180
+"560","MoD","Total",2011,"Executive officer",12710
+"561","MoD","Total",2011,"Grades 6 & 7",4130
+"562","MoD","Total",2011,"Not reported",2490
+"563","MoD","Total",2011,"Senior and higher executive officer",20930
+"564","MoD","Total",2011,"Senior Civil Service",330
+"565","MoD","Total",2012,"Administrative officers and assistants",26310
+"566","MoD","Total",2012,"Executive officer",12270
+"567","MoD","Total",2012,"Grades 6 & 7",3670
+"568","MoD","Total",2012,"Not reported",2150
+"569","MoD","Total",2012,"Senior and higher executive officer",18260
+"570","MoD","Total",2012,"Senior Civil Service",280
+"571","MoD","Total",2013,"Administrative officers and assistants",24220
+"572","MoD","Total",2013,"Executive officer",10480
+"573","MoD","Total",2013,"Grades 6 & 7",3850
+"574","MoD","Total",2013,"Not reported",1940
+"575","MoD","Total",2013,"Senior and higher executive officer",17700
+"576","MoD","Total",2013,"Senior Civil Service",260
+"577","MoJ","Total",2008,"Administrative officers and assistants",680
+"578","MoJ","Total",2008,"Executive officer",720
+"579","MoJ","Total",2008,"Grades 6 & 7",860
+"580","MoJ","Total",2008,"Not reported",0
+"581","MoJ","Total",2008,"Senior and higher executive officer",1390
+"582","MoJ","Total",2008,"Senior Civil Service",140
+"583","MoJ","Total",2009,"Administrative officers and assistants",480
+"584","MoJ","Total",2009,"Executive officer",500
+"585","MoJ","Total",2009,"Grades 6 & 7",720
+"586","MoJ","Total",2009,"Not reported",0
+"587","MoJ","Total",2009,"Senior and higher executive officer",1190
+"588","MoJ","Total",2009,"Senior Civil Service",120
+"589","MoJ","Total",2010,"Administrative officers and assistants",530
+"590","MoJ","Total",2010,"Executive officer",500
+"591","MoJ","Total",2010,"Grades 6 & 7",750
+"592","MoJ","Total",2010,"Not reported",0
+"593","MoJ","Total",2010,"Senior and higher executive officer",1300
+"594","MoJ","Total",2010,"Senior Civil Service",140
+"595","MoJ","Total",2011,"Administrative officers and assistants",1080
+"596","MoJ","Total",2011,"Executive officer",870
+"597","MoJ","Total",2011,"Grades 6 & 7",900
+"598","MoJ","Total",2011,"Not reported",0
+"599","MoJ","Total",2011,"Senior and higher executive officer",1710
+"600","MoJ","Total",2011,"Senior Civil Service",130
+"601","MoJ","Total",2012,"Administrative officers and assistants",1030
+"602","MoJ","Total",2012,"Executive officer",800
+"603","MoJ","Total",2012,"Grades 6 & 7",770
+"604","MoJ","Total",2012,"Not reported",0
+"605","MoJ","Total",2012,"Senior and higher executive officer",1530
+"606","MoJ","Total",2012,"Senior Civil Service",120
+"607","MoJ","Total",2013,"Administrative officers and assistants",980
+"608","MoJ","Total",2013,"Executive officer",920
+"609","MoJ","Total",2013,"Grades 6 & 7",790
+"610","MoJ","Total",2013,"Not reported",0
+"611","MoJ","Total",2013,"Senior and higher executive officer",1670
+"612","MoJ","Total",2013,"Senior Civil Service",120
+"613","Whole Civil Service","Total",2008,"Administrative officers and assistants",254190
+"614","Whole Civil Service","Total",2008,"Executive officer",130420
+"615","Whole Civil Service","Total",2008,"Grades 6 & 7",33090
+"616","Whole Civil Service","Total",2008,"Not reported",3660
+"617","Whole Civil Service","Total",2008,"Senior and higher executive officer",99000
+"618","Whole Civil Service","Total",2008,"Senior Civil Service",4790
+"619","Whole Civil Service","Total",2009,"Administrative officers and assistants",249990
+"620","Whole Civil Service","Total",2009,"Executive officer",131300
+"621","Whole Civil Service","Total",2009,"Grades 6 & 7",34950
+"622","Whole Civil Service","Total",2009,"Not reported",2840
+"623","Whole Civil Service","Total",2009,"Senior and higher executive officer",100420
+"624","Whole Civil Service","Total",2009,"Senior Civil Service",4920
+"625","Whole Civil Service","Total",2010,"Administrative officers and assistants",245790
+"626","Whole Civil Service","Total",2010,"Executive officer",133980
+"627","Whole Civil Service","Total",2010,"Grades 6 & 7",36630
+"628","Whole Civil Service","Total",2010,"Not reported",2810
+"629","Whole Civil Service","Total",2010,"Senior and higher executive officer",103220
+"630","Whole Civil Service","Total",2010,"Senior Civil Service",5070
+"631","Whole Civil Service","Total",2011,"Administrative officers and assistants",233180
+"632","Whole Civil Service","Total",2011,"Executive officer",123810
+"633","Whole Civil Service","Total",2011,"Grades 6 & 7",35110
+"634","Whole Civil Service","Total",2011,"Not reported",2970
+"635","Whole Civil Service","Total",2011,"Senior and higher executive officer",98760
+"636","Whole Civil Service","Total",2011,"Senior Civil Service",4610
+"637","Whole Civil Service","Total",2012,"Administrative officers and assistants",210540
+"638","Whole Civil Service","Total",2012,"Executive officer",119340
+"639","Whole Civil Service","Total",2012,"Grades 6 & 7",33610
+"640","Whole Civil Service","Total",2012,"Not reported",2350
+"641","Whole Civil Service","Total",2012,"Senior and higher executive officer",93560
+"642","Whole Civil Service","Total",2012,"Senior Civil Service",4420
+"643","Whole Civil Service","Total",2013,"Administrative officers and assistants",197510
+"644","Whole Civil Service","Total",2013,"Executive officer",116230
+"645","Whole Civil Service","Total",2013,"Grades 6 & 7",35030
+"646","Whole Civil Service","Total",2013,"Not reported",2460
+"647","Whole Civil Service","Total",2013,"Senior and higher executive officer",93280
+"648","Whole Civil Service","Total",2013,"Senior Civil Service",4340
