@@ -13,12 +13,12 @@ library(ggplot2)
 # It's obviously better to use a csv file rather than a long string in real life!
 
 metadata <- read.csv(
-  text=paste('CDID,sector,geo,variable,seasonally_adj,unit',
-             'G7AU,XX,UK,HC,xSA,thousands',
-             'G7K5,XX,UK,HC,xSA,thousands',
-             'G7D6,XX,UK,HC,xSA,thousands',
-             'K8PD,XX,UK,HC,xSA,thousands',
-             'KSL8,XX,UK,HC,xSA,thousands',
+  text=paste('CDID,sector,geo,variable,seasonally_adj,unit,series.name',
+             'G7AU,XX,UK,HC,xSA,thousands,Public Sector',
+             'G7K5,XX,UK,HC,xSA,thousands,Private sector',
+             'G7D6,XX,UK,HC,xSA,thousands,Civil Service',
+             'K8PD,XX,UK,HC,xSA,thousands,Publicly owned fin. corps.',
+             'KSL8,XX,UK,HC,xSA,thousands,Publicly owned FE & 6th form colleges',
              sep='\n'))
 
 dataset <- 'pse'
@@ -55,7 +55,7 @@ data_long$value <- as.numeric(data_long$value)
 
 # plot employment rate time series by country (colour) and sex (panel)
 plot_data <- data_long[!is.na(data_long$value), ]
-ggplot(plot_data, aes(x=time, y=value, colour=CDID, group=CDID)) +
+ggplot(plot_data, aes(x=time, y=value, colour=series.name, group=series.name)) +
 #   facet_grid(sex ~ .,scales='free_y') +
   geom_line(size=.8)
 

@@ -5,6 +5,9 @@ library(stringr)
 datetime = '20140209_230453'
 path = '~/PycharmProjects/SCSgovUK/output/'
 
+datetime = '20140212_141229'
+path = 'C:/Users/bouchalp/GitHub/SCSGovUK/output/'
+
 govukpubs <- read.csv(paste0(path,'pubpages_',datetime,'.csv'))
 govukfiles <- read.csv(paste0(path,'pubfiles_',datetime,'.csv'))
 
@@ -90,6 +93,8 @@ table(govuk$organogram,govuk$staff,exclude=NULL)
 table(govuk$organogram,govuk$staff,govuk$senjun,exclude=NULL)
 # unique(govuk$puborg)
 
+govuk$date <- paste(govuk$date_year, govuk$month,sep=' ')
+
 coredepts <- read.csv('./data-input/Core_depts_GovUK.csv')
 govuk <- merge(govuk, coredepts, by.x='puborg', all.x=TRUE)
 govuk$coredept[govuk$coredept!=TRUE] <- FALSE
@@ -124,4 +129,7 @@ table(govuknarrow$coredept, exclude=NULL)
 
 govukcore <- subset(govuknarrow,coredept==TRUE)
 govukcore$puborg <- droplevels(govukcore$puborg)
-table(govukcore$puborg,govukcore$date_year)
+table(govukcore$puborg,govukcore$date_year, exclude=NULL)
+table(govukcore$puborg,govukcore$senjun, exclude=NULL)
+table(govukcore$date_year,govukcore$senjun, exclude=NULL)
+table(govukcore$date,govukcore$senjun, exclude=NULL)

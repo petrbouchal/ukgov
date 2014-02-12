@@ -118,7 +118,7 @@ plot_AgeDeGe <- ggplot(uu, aes(x=Civil.Service.grad, y=yvar)) +
   labs(y=ylabel,x=xlabel,title=NULL) +
   theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2],size=0.5),
         axis.ticks.y=element_blank(),panel.grid=element_blank(),
-        strip.background=element_rect(colour='red',size=.5))
+        strip.background=element_rect(colour=IfGcols[1,2],size=.5))
 plot_AgeDeGe
 
 # Save plot ---------------------------------------------------------------
