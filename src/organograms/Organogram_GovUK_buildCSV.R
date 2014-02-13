@@ -1,46 +1,50 @@
 library(gtools)
+source('./src/organograms/Organogram_processGovUK.R')
+source('./src/lib/MatchHeadings.R')
 
-orgfilesfinal <- govukcore[govukcore$extension=='csv',]
-datetime <- '20140212_141229'
+datetime <- '20140209_230453'
 path_files <- paste0('C:/Users/bouchalp/GitHub/SCSGovUK/output/','govukpubfiles','/',datetime)
+path_files <- paste0('~/PycharmProjects/SCSgovUK/output/','govukpubfiles','/',datetime)
 
-csvlog <- data.frame(filename=NA,linestatus=NA)
+csvlog <- data.frame(filename=character(),linestatus=character())
 
 names.senior <- c('UniqueID','Name','Grade','JobTitle','TeamFunction','ParentDept',
               'Organisation','Unit','Phone','Email','ReportsTo','SalaryCostOfReports','FTE',
               'ActualPayFloor','ActualPayCeiling','X','Profession','Notes','ValidCheck','NA','NA')
 
 filecounter <- 1
+orgfilesfinal <- govukcore[govukcore$extension=='csv',]
 seniorfiles <- orgfilesfinal[orgfilesfinal$senjun=='senior',]
+# seniorfiles <- seniorfiles[1:30,]
 for(i in 1:nrow(seniorfiles)) {
-  thiscsv <- read.csv(paste0(path_files,'/',seniorfiles$filename[i]))
   if(is.na(seniorfiles$filename[i])) {
     status <- 'No file to read'
     statusrow <- data.frame(filename=i,linestatus=status)
     csvlog <- rbind(csvlog,statusrow)
     next
   }
-  if(length(thiscsv)>11) {
-    maxlen <- ifelse(length(thiscsv)>19,19,length(thiscsv))
-    thiscsv <- thiscsv[,1:maxlen]
-    names(thiscsv) <- names.senior[1:length(names(thiscsv))]
-    thiscsv$date <- seniorfiles$date[i] 
-    thiscsv$filename <- seniorfiles$filename[i] 
-    status <- 'OK'
+  thiscsv <- read.csv(paste0(path_files,'/',seniorfiles$filename[i]),
+                      fileEncoding="latin1")
+  if(length(thiscsv)<2) {
+    status <- 'File data invalid'
+    statusrow <- data.frame(filename=i,linestatus=status)
+    csvlog <- rbind(csvlog,statusrow)
+    next
   }
-  else {
-    status <- 'Different number of fields'
-  }
+  thiscsv2 <- MatchHeadings(thiscsv)
+  thiscsv2$date <- seniorfiles$date[i] 
+  thiscsv2$filename <- seniorfiles$filename[i] 
+  status <- 'OK'
   if(i==1){
-    allcsvs <- thiscsv
+    allcsvs <- thiscsv2
   }
   else {
-    allcsvs <- smartbind(allcsvs,thiscsv)
+    allcsvs <- smartbind(allcsvs,thiscsv2)
   }
   statusrow <- data.frame(filename=seniorfiles$filename[i],linestatus=status)
   csvlog <- rbind(csvlog,statusrow)
 }
 table(csvlog$linestatus)
 table(allcsvs$date)
-table(allcsvs$ParentDept)
-# write.csv(allcsvs,'./data-output/organograms_ALL', row.names=F)
+table(allcsvs$ParentDept, exclude=NULL)
+write.csv(allcsvs,'./data-output/organograms_senior_ALL.csv', row.names=F)

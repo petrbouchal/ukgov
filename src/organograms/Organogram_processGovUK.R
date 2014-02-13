@@ -5,8 +5,8 @@ library(stringr)
 datetime = '20140209_230453'
 path = '~/PycharmProjects/SCSgovUK/output/'
 
-datetime = '20140212_141229'
-path = 'C:/Users/bouchalp/GitHub/SCSGovUK/output/'
+# datetime = '20140212_141229'
+# path = 'C:/Users/bouchalp/GitHub/SCSGovUK/output/'
 
 govukpubs <- read.csv(paste0(path,'pubpages_',datetime,'.csv'))
 govukfiles <- read.csv(paste0(path,'pubfiles_',datetime,'.csv'))
@@ -82,10 +82,14 @@ govuk$recruitment <- tolower(str_extract(govuk$pubtitle,"[Rr]ecruitment"))
 govuk$meetings <- tolower(str_extract(govuk$pubtitle,"[Mm]eetings"))
 govuk$earners <- tolower(str_extract(govuk$pubtitle,"[Ee]arners"))
 govuk$hospitality <- tolower(str_extract(govuk$pubtitle,"[Hh]ospitality"))
+govuk$hospitality[is.na(govuk$hospitality)] <- str_extract(govuk$pubdescription[is.na(govuk$hospitality)],
+                                                 "[Hh]ospitality")
 govuk$expenses <- tolower(str_extract(govuk$pubtitle,"[Ee]xpenses"))
 govuk$spending <- tolower(str_extract(govuk$pubtitle,"[Ss]pending"))
 govuk$ministerial <- tolower(str_extract(govuk$pubtitle,"[Mm]inister"))
 govuk$travel <- tolower(str_extract(govuk$pubtitle,"[Tt]ravel"))
+govuk$travel[is.na(govuk$travel)] <- str_extract(govuk$pubdescription[is.na(govuk$travel)],
+                                                 "[Tt]ravel")
 govuk$business <- tolower(str_extract(govuk$pubtitle,"[Bb]usiness"))
 
 govuk$staff <- tolower(govuk$staff)
@@ -132,9 +136,6 @@ table(govuknarrow$coredept, exclude=NULL)
 govukcore <- subset(govuknarrow,coredept==TRUE)
 govukcore$puborg <- droplevels(govukcore$puborg)
 table(govukcore$puborg,govukcore$date_year, exclude=NULL)
-<<<<<<< HEAD
-table(govukcore$puborg,govukcore$senjun, exclude=NULL)
+
 table(govukcore$date_year,govukcore$senjun, exclude=NULL)
 table(govukcore$date,govukcore$senjun, exclude=NULL)
-=======
->>>>>>> 4db94f459b71b4a39facad4646b5775e26864b3b
