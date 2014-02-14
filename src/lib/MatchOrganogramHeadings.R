@@ -1,4 +1,4 @@
-MatchHeadings <- function (dataset) {
+MatchOrganogramHeadings <- function (dataset) {
   
 #   if(nchar(names(dataset)[4])<4) {
 #     names(dataset) <- dataset[1,]

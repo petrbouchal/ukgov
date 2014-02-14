@@ -2,11 +2,12 @@ library(plyr)
 library(reshape2)
 library(stringr)
 
-datetime = '20140209_230453'
-path = '~/PycharmProjects/SCSgovUK/output/'
 
-# datetime = '20140212_141229'
-# path = 'C:/Users/bouchalp/GitHub/SCSGovUK/output/'
+datetime = '20140209_230453'
+path = '~/GitHub/SCSgovUK/output/'
+
+datetime = '20140212_141229'
+path = 'C:/Users/bouchalp/GitHub/SCSGovUK/output/'
 
 govukpubs <- read.csv(paste0(path,'pubpages_',datetime,'.csv'))
 govukfiles <- read.csv(paste0(path,'pubfiles_',datetime,'.csv'))
@@ -27,19 +28,22 @@ govuk$date_year[is.na(govuk$date_year)] <- str_extract(govuk$filetitle[is.na(gov
                                                         "(201[0123]{1})")
 govuk$date_year[is.na(govuk$date_year)] <- str_extract(govuk$url[is.na(govuk$date_year)],
                                                         "(201[0123]{1})")
+govuk$date_year[is.na(govuk$date_year)] <- str_extract(govuk$pubdescription[is.na(govuk$date_year)],
+                                                        "(201[0123]{1})")
 table(govuk$date_year,exclude=NULL)
 # View(govuk[is.na(govuk$date_year), ])
 table(govuk$extension,is.na(govuk$date_year))
 
 # discover month
 govuk$month <- NA
-months <- c('January','March','September','April')
-pattern = "([Jj]anuary)|([Mm]arch)|([Ss]eptember)|([Aa]pril)|([Jj]une)|([Jj]uly)|([Oo]ctober)|([Dd]ecember)"
+pattern = "([Jj]anuary)|([Ff)ebruary|([Mm]arch)|([Ss]eptember)|([Aa]pril)|([Jj]une)|([Nn]ovember)|([Mm]ay)|([Jj]uly)|([Oo]ctober)|([Dd]ecember)"
 
 govuk$month <- str_extract(govuk$pubtitle, pattern)
 govuk$month[is.na(govuk$month)] <- str_extract(govuk$filetitle[is.na(govuk$month)],
                                                        pattern)
 govuk$month[is.na(govuk$month)] <- str_extract(govuk$url[is.na(govuk$month)],
+                                                       pattern)
+govuk$month[is.na(govuk$month)] <- str_extract(govuk$pubdescription[is.na(govuk$month)],
                                                        pattern)
 # table(govuk$month,govuk$organogram,exclude=NULL)
 table(govuk$month,govuk$date_year,exclude=NULL)
