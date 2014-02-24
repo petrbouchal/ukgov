@@ -77,7 +77,7 @@ uu$totalgroup <- ifelse((uu$Group=='Whole Civil Service' | uu$Group=='Whitehall'
 
 # Build plot --------------------------------------------------------------
 
-plotname <- 'plot_AgeDeGr_tree'
+plotname <- 'plot_DeGeGr_tree'
 
 HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[4,3])
 HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[4,1])
@@ -102,7 +102,7 @@ ylimits <- c(-maxY*1.04, maxY*1.04)
 ybreaks <- c(-.3,-.15,0,.15,.3)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
-plot_AgeDeGe <- ggplot(uu, aes(x=Civil.Service.grad, y=yvar)) +
+plot_DeGeGr_tree <- ggplot(uu, aes(x=Civil.Service.grad, y=yvar)) +
   geom_rect(data=uu[uu$totalgroup==TRUE,],stat='identity',position='identity',
             fill=HLcol,xmin=-Inf,xmax=Inf,ymin=-Inf,ymax=Inf,alpha=1) +
   geom_rect(data=uu[uu$totalgroup==TRUE,],stat='identity',position='identity',
@@ -119,8 +119,8 @@ plot_AgeDeGe <- ggplot(uu, aes(x=Civil.Service.grad, y=yvar)) +
   theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2],size=0.5),
         axis.ticks.y=element_blank(),panel.grid=element_blank(),
         strip.background=element_rect(colour=IfGcols[1,2],size=.5))
-plot_AgeDeGe
+plot_DeGeGr_tree
 
 # Save plot ---------------------------------------------------------------
 
-SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)
+# SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)

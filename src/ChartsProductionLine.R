@@ -2,7 +2,7 @@ source('./src/lib/lib_acses.R')
 
 batchproduce <- TRUE
 
-plotformat <- 'pdf'
+plotformat <- 'eps'
 ph <- 15.5
 pw <- 24
 WHswitch <- c(TRUE,FALSE)
