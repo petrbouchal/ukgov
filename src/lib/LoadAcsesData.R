@@ -15,7 +15,7 @@ LoadAcsesData <- function (file_name, location='home') {
   dataset$Organisation <- dataset$new1
   dataset$new1 <- NULL
   dataset$count <- as.numeric(as.character(dataset$value))
-  dataset <- unique(dataset) # removes duplicate lines for DfE and GEO
+  dataset <- unique(dataset) # removes duplicate lines for DfE, DfID, Ofsted and GEO
   dataset$value <- NULL
   return(dataset)
 }
