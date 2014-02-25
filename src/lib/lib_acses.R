@@ -1,4 +1,7 @@
 source('./src/lib/load_packages.R')
+
+whmdatafolder <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/'
+
 # Set location ------------------------------------------------------------
 if(Sys.info()[['sysname']]=='Darwin') {location='home'} else {location='ifg'}
 
