@@ -1,3 +1,5 @@
+# Loads Civil Service People Survey detailed dataset
+
 source('./src/lib/lib_acses.R')
 library(stringr)
 
