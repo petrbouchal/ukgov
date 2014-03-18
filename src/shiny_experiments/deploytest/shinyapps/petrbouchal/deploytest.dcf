@@ -1,0 +1,4 @@
+name: deploytest
+account: petrbouchal
+bundleId: 14914
+url: http://petrbouchal.shinyapps.io/deploytest
