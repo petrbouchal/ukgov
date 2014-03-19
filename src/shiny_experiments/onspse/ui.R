@@ -10,7 +10,8 @@ shinyUI(pageWithSidebar(
   sidebarPanel(width=2,
     tags$style(type='text/css', ".well { background-color: #ffffff;}"),
     tags$style(type='text/css', "h1 { font-size: 3vh;}"),
-    selectInput('dept', 'Department', unique(onspse$Dept),multiple=T),    
+    selectInput('dept', 'Department', unique(onspse$Dept),multiple=F,
+                selected='Total excl. Whitehall FCO'),    
     checkboxInput('showAll', 'Show all')
   ),
   

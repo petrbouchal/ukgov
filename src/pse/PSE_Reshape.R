@@ -4,7 +4,7 @@ source('./src/lib/lib_acses.R')
 # to minimise need for manual adjustment in Excel 
 
 # load data
-change <- read.csv("./data-input/ChangeDeptsFTE_2013Q3.csv",comment.char='#')
+change <- read.csv("./data-input/ChangeDeptsFTE_2013Q4.csv",comment.char='#')
 names(change)
 
 # clean up names
@@ -40,3 +40,4 @@ change$value <- ifelse(grepl('%',change$value),
 change$group=paste(change$Dept,change$Whitehall,sep='-')
 
 write.csv(change,'./data-output/PSE_change_long.csv', row.names=FALSE)
+write.csv(change,'./src/shiny_experiments/onspse/PSE_change_long.csv', row.names=FALSE)

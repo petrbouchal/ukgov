@@ -4,15 +4,17 @@ source('./lib/lib_acses.R')
 
 shinyServer(function(input, output) {
   onspse <- read.csv('./PSE_change_long.csv') 
+  onspse <- onspse[onspse$measure=='Cumulative_Perc_net_change',]
   dataset <- reactive(
     onspse[onspse$Whitehall=='Departmental Group' & onspse$Dept==input$dept,]
   )
-  datasetall <- onspse[onspse$Whitehall=='Departmental Group',]
+  datasetall <- onspse[onspse$Whitehall=='Departmental Group' &
+                         onspse$Dept!='NIO',]
   
   labelsx <- c('2010Q3','Q4',
                '2011Q1','Q2','Q3','Q4',
                '2012Q1','Q2','Q3','Q4',
-               '2013Q1','Q2','Q3')
+               '2013Q1','Q2','Q3','2013Q4')
   output$plot <- renderPlot({
     p <- ggplot(dataset(), aes(x=Period, y=value)) +
       geom_line(size=2,aes(group=group),colour=IfGcols[2,1]) +

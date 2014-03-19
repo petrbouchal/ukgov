@@ -1,6 +1,7 @@
+library(shiny)
 source('./src/lib/deployPB.R')
-app='./src/shiny_experiments/onspse/'
-
+app='./src/shiny_experiments/onspse'
 runApp(app)
 
-deployPB(ghg)
+# deployPB(app)
+deployPB('C:/Users/bouchalp/GitHub/Charting-government/src/shiny_experiments/onspse')

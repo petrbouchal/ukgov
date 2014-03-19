@@ -28,7 +28,9 @@ uu$Whitehall <- factor(uu$Whitehall,levels(uu$Whitehall)[c(1,4,2,3)])
 labelsx <- c('2010Q3','Q4',
              '2011Q1','Q2','Q3','Q4',
              '2012Q1','Q2','Q3','Q4',
-             '2013Q1','Q2','Q3')
+             '2013Q1','Q2','Q3','2013Q4',
+             '2014Q1','Q2','Q3','Q4',
+             '2015Q1','Q2','Q3','Q4')
 uu$totalgroup <- ifelse(uu$Dept=='Total excl. Whitehall FCO',TRUE,FALSE)
 HLcol <- IfGcols[4,3]
 HLmarg <- IfGcols[4,1]
