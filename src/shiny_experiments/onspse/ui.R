@@ -20,7 +20,11 @@ shinyUI(
             ),
             mainPanel(plotOutput('plot')) 
           ),
-          tabPanel('Table',dataTableOutput("table")),
+          tabPanel('Table',
+                   downloadButton('downloadData', 'Download whole dataset'),
+                   br(),
+                   br(),
+                   dataTableOutput("table")),
           position='below'
         )
     )),

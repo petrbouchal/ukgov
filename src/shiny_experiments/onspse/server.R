@@ -9,6 +9,10 @@ shinyServer(function(input, output) {
   dataset <- reactive(
     onspse[onspse$Whitehall=='Departmental Group' & onspse$Dept==input$dept,]
   )
+  output$downloadData <- downloadHandler(
+    filename = 'headcount.csv',
+    content = function(file) {
+    write.csv(onspse, file) })
   
   labelsx <- c('2010Q3','Q4',
                '2011Q1','Q2','Q3','Q4',
