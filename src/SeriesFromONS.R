@@ -60,4 +60,4 @@ ggplot(plot_data, aes(x=time, y=value, colour=series.name, group=series.name)) +
   geom_line(size=.8)
 
 write.csv(data_long,paste0('./data-output/ONS_downloaded_PSEtimeseries_',
-                           format(Sys.time(), format="%Y-%m-%d-%H%M",'.csv')))
+                           format(Sys.time(), format="%Y-%m-%d-%H%M%S"),'.csv'))
