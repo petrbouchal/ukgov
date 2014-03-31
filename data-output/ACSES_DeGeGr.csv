@@ -1,649 +1,446 @@
-"","Group","Gender","Date","Civil.Service.grad","count"
-"1","BIS","Total",2008,"Administrative officers and assistants",550
-"2","BIS","Total",2008,"Executive officer",700
-"3","BIS","Total",2008,"Grades 6 & 7",1190
-"4","BIS","Total",2008,"Not reported",0
-"5","BIS","Total",2008,"Senior and higher executive officer",1570
-"6","BIS","Total",2008,"Senior Civil Service",250
-"7","BIS","Total",2009,"Administrative officers and assistants",440
-"8","BIS","Total",2009,"Executive officer",630
-"9","BIS","Total",2009,"Grades 6 & 7",1160
-"10","BIS","Total",2009,"Not reported",0
-"11","BIS","Total",2009,"Senior and higher executive officer",1480
-"12","BIS","Total",2009,"Senior Civil Service",250
-"13","BIS","Total",2010,"Administrative officers and assistants",390
-"14","BIS","Total",2010,"Executive officer",630
-"15","BIS","Total",2010,"Grades 6 & 7",1220
-"16","BIS","Total",2010,"Not reported",40
-"17","BIS","Total",2010,"Senior and higher executive officer",1480
-"18","BIS","Total",2010,"Senior Civil Service",260
-"19","BIS","Total",2011,"Administrative officers and assistants",330
-"20","BIS","Total",2011,"Executive officer",520
-"21","BIS","Total",2011,"Grades 6 & 7",1090
-"22","BIS","Total",2011,"Not reported",0
-"23","BIS","Total",2011,"Senior and higher executive officer",1320
-"24","BIS","Total",2011,"Senior Civil Service",220
-"25","BIS","Total",2012,"Administrative officers and assistants",260
-"26","BIS","Total",2012,"Executive officer",450
-"27","BIS","Total",2012,"Grades 6 & 7",940
-"28","BIS","Total",2012,"Not reported",0
-"29","BIS","Total",2012,"Senior and higher executive officer",1110
-"30","BIS","Total",2012,"Senior Civil Service",200
-"31","BIS","Total",2013,"Administrative officers and assistants",220
-"32","BIS","Total",2013,"Executive officer",470
-"33","BIS","Total",2013,"Grades 6 & 7",1050
-"34","BIS","Total",2013,"Not reported",0
-"35","BIS","Total",2013,"Senior and higher executive officer",1180
-"36","BIS","Total",2013,"Senior Civil Service",220
-"37","CO","Total",2008,"Administrative officers and assistants",180
-"38","CO","Total",2008,"Executive officer",260
-"39","CO","Total",2008,"Grades 6 & 7",310
-"40","CO","Total",2008,"Not reported",0
-"41","CO","Total",2008,"Senior and higher executive officer",340
-"42","CO","Total",2008,"Senior Civil Service",150
-"43","CO","Total",2009,"Administrative officers and assistants",180
-"44","CO","Total",2009,"Executive officer",240
-"45","CO","Total",2009,"Grades 6 & 7",320
-"46","CO","Total",2009,"Not reported",0
-"47","CO","Total",2009,"Senior and higher executive officer",360
-"48","CO","Total",2009,"Senior Civil Service",150
-"49","CO","Total",2010,"Administrative officers and assistants",180
-"50","CO","Total",2010,"Executive officer",240
-"51","CO","Total",2010,"Grades 6 & 7",320
-"52","CO","Total",2010,"Not reported",0
-"53","CO","Total",2010,"Senior and higher executive officer",390
-"54","CO","Total",2010,"Senior Civil Service",140
-"55","CO","Total",2011,"Administrative officers and assistants",160
-"56","CO","Total",2011,"Executive officer",250
-"57","CO","Total",2011,"Grades 6 & 7",440
-"58","CO","Total",2011,"Not reported",0
-"59","CO","Total",2011,"Senior and higher executive officer",500
-"60","CO","Total",2011,"Senior Civil Service",160
-"61","CO","Total",2012,"Administrative officers and assistants",160
-"62","CO","Total",2012,"Executive officer",260
-"63","CO","Total",2012,"Grades 6 & 7",510
-"64","CO","Total",2012,"Not reported",0
-"65","CO","Total",2012,"Senior and higher executive officer",520
-"66","CO","Total",2012,"Senior Civil Service",170
-"67","CO","Total",2013,"Administrative officers and assistants",160
-"68","CO","Total",2013,"Executive officer",270
-"69","CO","Total",2013,"Grades 6 & 7",640
-"70","CO","Total",2013,"Not reported",0
-"71","CO","Total",2013,"Senior and higher executive officer",600
-"72","CO","Total",2013,"Senior Civil Service",180
-"73","DCLG","Total",2008,"Administrative officers and assistants",500
-"74","DCLG","Total",2008,"Executive officer",560
-"75","DCLG","Total",2008,"Grades 6 & 7",680
-"76","DCLG","Total",2008,"Not reported",0
-"77","DCLG","Total",2008,"Senior and higher executive officer",1080
-"78","DCLG","Total",2008,"Senior Civil Service",180
-"79","DCLG","Total",2009,"Administrative officers and assistants",310
-"80","DCLG","Total",2009,"Executive officer",490
-"81","DCLG","Total",2009,"Grades 6 & 7",650
-"82","DCLG","Total",2009,"Not reported",0
-"83","DCLG","Total",2009,"Senior and higher executive officer",940
-"84","DCLG","Total",2009,"Senior Civil Service",130
-"85","DCLG","Total",2010,"Administrative officers and assistants",310
-"86","DCLG","Total",2010,"Executive officer",440
-"87","DCLG","Total",2010,"Grades 6 & 7",700
-"88","DCLG","Total",2010,"Not reported",0
-"89","DCLG","Total",2010,"Senior and higher executive officer",1060
-"90","DCLG","Total",2010,"Senior Civil Service",130
-"91","DCLG","Total",2011,"Administrative officers and assistants",250
-"92","DCLG","Total",2011,"Executive officer",370
-"93","DCLG","Total",2011,"Grades 6 & 7",650
-"94","DCLG","Total",2011,"Not reported",0
-"95","DCLG","Total",2011,"Senior and higher executive officer",940
-"96","DCLG","Total",2011,"Senior Civil Service",120
-"97","DCLG","Total",2012,"Administrative officers and assistants",140
-"98","DCLG","Total",2012,"Executive officer",270
-"99","DCLG","Total",2012,"Grades 6 & 7",590
-"100","DCLG","Total",2012,"Not reported",0
-"101","DCLG","Total",2012,"Senior and higher executive officer",800
-"102","DCLG","Total",2012,"Senior Civil Service",90
-"103","DCLG","Total",2013,"Administrative officers and assistants",100
-"104","DCLG","Total",2013,"Executive officer",240
-"105","DCLG","Total",2013,"Grades 6 & 7",550
-"106","DCLG","Total",2013,"Not reported",0
-"107","DCLG","Total",2013,"Senior and higher executive officer",760
-"108","DCLG","Total",2013,"Senior Civil Service",90
-"109","DCMS","Total",2008,"Administrative officers and assistants",50
-"110","DCMS","Total",2008,"Executive officer",120
-"111","DCMS","Total",2008,"Grades 6 & 7",110
-"112","DCMS","Total",2008,"Not reported",0
-"113","DCMS","Total",2008,"Senior and higher executive officer",170
-"114","DCMS","Total",2008,"Senior Civil Service",30
-"115","DCMS","Total",2009,"Administrative officers and assistants",30
-"116","DCMS","Total",2009,"Executive officer",90
-"117","DCMS","Total",2009,"Grades 6 & 7",130
-"118","DCMS","Total",2009,"Not reported",0
-"119","DCMS","Total",2009,"Senior and higher executive officer",170
-"120","DCMS","Total",2009,"Senior Civil Service",40
-"121","DCMS","Total",2010,"Administrative officers and assistants",30
-"122","DCMS","Total",2010,"Executive officer",100
-"123","DCMS","Total",2010,"Grades 6 & 7",140
-"124","DCMS","Total",2010,"Not reported",0
-"125","DCMS","Total",2010,"Senior and higher executive officer",170
-"126","DCMS","Total",2010,"Senior Civil Service",50
-"127","DCMS","Total",2011,"Administrative officers and assistants",30
-"128","DCMS","Total",2011,"Executive officer",90
-"129","DCMS","Total",2011,"Grades 6 & 7",130
-"130","DCMS","Total",2011,"Not reported",0
-"131","DCMS","Total",2011,"Senior and higher executive officer",160
-"132","DCMS","Total",2011,"Senior Civil Service",50
-"133","DCMS","Total",2012,"Administrative officers and assistants",20
-"134","DCMS","Total",2012,"Executive officer",70
-"135","DCMS","Total",2012,"Grades 6 & 7",150
-"136","DCMS","Total",2012,"Not reported",0
-"137","DCMS","Total",2012,"Senior and higher executive officer",170
-"138","DCMS","Total",2012,"Senior Civil Service",40
-"139","DCMS","Total",2013,"Administrative officers and assistants",20
-"140","DCMS","Total",2013,"Executive officer",60
-"141","DCMS","Total",2013,"Grades 6 & 7",140
-"142","DCMS","Total",2013,"Not reported",0
-"143","DCMS","Total",2013,"Senior and higher executive officer",140
-"144","DCMS","Total",2013,"Senior Civil Service",40
-"145","DECC","Total",2008,"Administrative officers and assistants",0
-"146","DECC","Total",2008,"Executive officer",0
-"147","DECC","Total",2008,"Grades 6 & 7",0
-"148","DECC","Total",2008,"Not reported",0
-"149","DECC","Total",2008,"Senior and higher executive officer",0
-"150","DECC","Total",2008,"Senior Civil Service",0
-"151","DECC","Total",2009,"Administrative officers and assistants",80
-"152","DECC","Total",2009,"Executive officer",110
-"153","DECC","Total",2009,"Grades 6 & 7",320
-"154","DECC","Total",2009,"Not reported",0
-"155","DECC","Total",2009,"Senior and higher executive officer",340
-"156","DECC","Total",2009,"Senior Civil Service",60
-"157","DECC","Total",2010,"Administrative officers and assistants",70
-"158","DECC","Total",2010,"Executive officer",110
-"159","DECC","Total",2010,"Grades 6 & 7",400
-"160","DECC","Total",2010,"Not reported",0
-"161","DECC","Total",2010,"Senior and higher executive officer",390
-"162","DECC","Total",2010,"Senior Civil Service",80
-"163","DECC","Total",2011,"Administrative officers and assistants",80
-"164","DECC","Total",2011,"Executive officer",110
-"165","DECC","Total",2011,"Grades 6 & 7",470
-"166","DECC","Total",2011,"Not reported",0
-"167","DECC","Total",2011,"Senior and higher executive officer",430
-"168","DECC","Total",2011,"Senior Civil Service",80
-"169","DECC","Total",2012,"Administrative officers and assistants",90
-"170","DECC","Total",2012,"Executive officer",120
-"171","DECC","Total",2012,"Grades 6 & 7",540
-"172","DECC","Total",2012,"Not reported",0
-"173","DECC","Total",2012,"Senior and higher executive officer",480
-"174","DECC","Total",2012,"Senior Civil Service",90
-"175","DECC","Total",2013,"Administrative officers and assistants",80
-"176","DECC","Total",2013,"Executive officer",140
-"177","DECC","Total",2013,"Grades 6 & 7",610
-"178","DECC","Total",2013,"Not reported",0
-"179","DECC","Total",2013,"Senior and higher executive officer",540
-"180","DECC","Total",2013,"Senior Civil Service",90
-"181","Defra","Total",2008,"Administrative officers and assistants",560
-"182","Defra","Total",2008,"Executive officer",520
-"183","Defra","Total",2008,"Grades 6 & 7",680
-"184","Defra","Total",2008,"Not reported",0
-"185","Defra","Total",2008,"Senior and higher executive officer",1180
-"186","Defra","Total",2008,"Senior Civil Service",160
-"187","Defra","Total",2009,"Administrative officers and assistants",500
-"188","Defra","Total",2009,"Executive officer",440
-"189","Defra","Total",2009,"Grades 6 & 7",650
-"190","Defra","Total",2009,"Not reported",0
-"191","Defra","Total",2009,"Senior and higher executive officer",1030
-"192","Defra","Total",2009,"Senior Civil Service",140
-"193","Defra","Total",2010,"Administrative officers and assistants",430
-"194","Defra","Total",2010,"Executive officer",440
-"195","Defra","Total",2010,"Grades 6 & 7",680
-"196","Defra","Total",2010,"Not reported",0
-"197","Defra","Total",2010,"Senior and higher executive officer",1030
-"198","Defra","Total",2010,"Senior Civil Service",150
-"199","Defra","Total",2011,"Administrative officers and assistants",380
-"200","Defra","Total",2011,"Executive officer",430
-"201","Defra","Total",2011,"Grades 6 & 7",650
-"202","Defra","Total",2011,"Not reported",0
-"203","Defra","Total",2011,"Senior and higher executive officer",1020
-"204","Defra","Total",2011,"Senior Civil Service",130
-"205","Defra","Total",2012,"Administrative officers and assistants",330
-"206","Defra","Total",2012,"Executive officer",350
-"207","Defra","Total",2012,"Grades 6 & 7",480
-"208","Defra","Total",2012,"Not reported",0
-"209","Defra","Total",2012,"Senior and higher executive officer",900
-"210","Defra","Total",2012,"Senior Civil Service",100
-"211","Defra","Total",2013,"Administrative officers and assistants",290
-"212","Defra","Total",2013,"Executive officer",350
-"213","Defra","Total",2013,"Grades 6 & 7",520
-"214","Defra","Total",2013,"Not reported",0
-"215","Defra","Total",2013,"Senior and higher executive officer",920
-"216","Defra","Total",2013,"Senior Civil Service",100
-"217","DfE","Total",2008,"Administrative officers and assistants",440
-"218","DfE","Total",2008,"Executive officer",680
-"219","DfE","Total",2008,"Grades 6 & 7",760
-"220","DfE","Total",2008,"Not reported",0
-"221","DfE","Total",2008,"Senior and higher executive officer",1330
-"222","DfE","Total",2008,"Senior Civil Service",150
-"223","DfE","Total",2009,"Administrative officers and assistants",350
-"224","DfE","Total",2009,"Executive officer",630
-"225","DfE","Total",2009,"Grades 6 & 7",850
-"226","DfE","Total",2009,"Not reported",0
-"227","DfE","Total",2009,"Senior and higher executive officer",1410
-"228","DfE","Total",2009,"Senior Civil Service",150
-"229","DfE","Total",2010,"Administrative officers and assistants",280
-"230","DfE","Total",2010,"Executive officer",550
-"231","DfE","Total",2010,"Grades 6 & 7",810
-"232","DfE","Total",2010,"Not reported",0
-"233","DfE","Total",2010,"Senior and higher executive officer",1320
-"234","DfE","Total",2010,"Senior Civil Service",150
-"235","DfE","Total",2011,"Administrative officers and assistants",230
-"236","DfE","Total",2011,"Executive officer",500
-"237","DfE","Total",2011,"Grades 6 & 7",730
-"238","DfE","Total",2011,"Not reported",0
-"239","DfE","Total",2011,"Senior and higher executive officer",1190
-"240","DfE","Total",2011,"Senior Civil Service",130
-"241","DfE","Total",2012,"Administrative officers and assistants",190
-"242","DfE","Total",2012,"Executive officer",470
-"243","DfE","Total",2012,"Grades 6 & 7",800
-"244","DfE","Total",2012,"Not reported",0
-"245","DfE","Total",2012,"Senior and higher executive officer",1200
-"246","DfE","Total",2012,"Senior Civil Service",140
-"247","DfE","Total",2013,"Administrative officers and assistants",410
-"248","DfE","Total",2013,"Executive officer",1110
-"249","DfE","Total",2013,"Grades 6 & 7",1960
-"250","DfE","Total",2013,"Not reported",0
-"251","DfE","Total",2013,"Senior and higher executive officer",2800
-"252","DfE","Total",2013,"Senior Civil Service",280
-"253","DfID","Total",2008,"Administrative officers and assistants",210
-"254","DfID","Total",2008,"Executive officer",240
-"255","DfID","Total",2008,"Grades 6 & 7",670
-"256","DfID","Total",2008,"Not reported",0
-"257","DfID","Total",2008,"Senior and higher executive officer",450
-"258","DfID","Total",2008,"Senior Civil Service",100
-"259","DfID","Total",2009,"Administrative officers and assistants",170
-"260","DfID","Total",2009,"Executive officer",240
-"261","DfID","Total",2009,"Grades 6 & 7",700
-"262","DfID","Total",2009,"Not reported",0
-"263","DfID","Total",2009,"Senior and higher executive officer",460
-"264","DfID","Total",2009,"Senior Civil Service",100
-"265","DfID","Total",2010,"Administrative officers and assistants",160
-"266","DfID","Total",2010,"Executive officer",200
-"267","DfID","Total",2010,"Grades 6 & 7",730
-"268","DfID","Total",2010,"Not reported",0
-"269","DfID","Total",2010,"Senior and higher executive officer",440
-"270","DfID","Total",2010,"Senior Civil Service",100
-"271","DfID","Total",2011,"Administrative officers and assistants",130
-"272","DfID","Total",2011,"Executive officer",200
-"273","DfID","Total",2011,"Grades 6 & 7",760
-"274","DfID","Total",2011,"Not reported",0
-"275","DfID","Total",2011,"Senior and higher executive officer",440
-"276","DfID","Total",2011,"Senior Civil Service",80
-"277","DfID","Total",2012,"Administrative officers and assistants",110
-"278","DfID","Total",2012,"Executive officer",190
-"279","DfID","Total",2012,"Grades 6 & 7",870
-"280","DfID","Total",2012,"Not reported",0
-"281","DfID","Total",2012,"Senior and higher executive officer",470
-"282","DfID","Total",2012,"Senior Civil Service",80
-"283","DfID","Total",2013,"Administrative officers and assistants",100
-"284","DfID","Total",2013,"Executive officer",190
-"285","DfID","Total",2013,"Grades 6 & 7",950
-"286","DfID","Total",2013,"Not reported",0
-"287","DfID","Total",2013,"Senior and higher executive officer",490
-"288","DfID","Total",2013,"Senior Civil Service",80
-"289","DfT","Total",2008,"Administrative officers and assistants",250
-"290","DfT","Total",2008,"Executive officer",320
-"291","DfT","Total",2008,"Grades 6 & 7",590
-"292","DfT","Total",2008,"Not reported",0
-"293","DfT","Total",2008,"Senior and higher executive officer",740
-"294","DfT","Total",2008,"Senior Civil Service",150
-"295","DfT","Total",2009,"Administrative officers and assistants",220
-"296","DfT","Total",2009,"Executive officer",320
-"297","DfT","Total",2009,"Grades 6 & 7",620
-"298","DfT","Total",2009,"Not reported",0
-"299","DfT","Total",2009,"Senior and higher executive officer",800
-"300","DfT","Total",2009,"Senior Civil Service",150
-"301","DfT","Total",2010,"Administrative officers and assistants",200
-"302","DfT","Total",2010,"Executive officer",310
-"303","DfT","Total",2010,"Grades 6 & 7",670
-"304","DfT","Total",2010,"Not reported",0
-"305","DfT","Total",2010,"Senior and higher executive officer",820
-"306","DfT","Total",2010,"Senior Civil Service",160
-"307","DfT","Total",2011,"Administrative officers and assistants",180
-"308","DfT","Total",2011,"Executive officer",240
-"309","DfT","Total",2011,"Grades 6 & 7",620
-"310","DfT","Total",2011,"Not reported",0
-"311","DfT","Total",2011,"Senior and higher executive officer",750
-"312","DfT","Total",2011,"Senior Civil Service",130
-"313","DfT","Total",2012,"Administrative officers and assistants",120
-"314","DfT","Total",2012,"Executive officer",210
-"315","DfT","Total",2012,"Grades 6 & 7",560
-"316","DfT","Total",2012,"Not reported",0
-"317","DfT","Total",2012,"Senior and higher executive officer",670
-"318","DfT","Total",2012,"Senior Civil Service",110
-"319","DfT","Total",2013,"Administrative officers and assistants",110
-"320","DfT","Total",2013,"Executive officer",210
-"321","DfT","Total",2013,"Grades 6 & 7",610
-"322","DfT","Total",2013,"Not reported",0
-"323","DfT","Total",2013,"Senior and higher executive officer",710
-"324","DfT","Total",2013,"Senior Civil Service",120
-"325","DH","Total",2008,"Administrative officers and assistants",130
-"326","DH","Total",2008,"Executive officer",400
-"327","DH","Total",2008,"Grades 6 & 7",710
-"328","DH","Total",2008,"Not reported",0
-"329","DH","Total",2008,"Senior and higher executive officer",720
-"330","DH","Total",2008,"Senior Civil Service",260
-"331","DH","Total",2009,"Administrative officers and assistants",140
-"332","DH","Total",2009,"Executive officer",400
-"333","DH","Total",2009,"Grades 6 & 7",760
-"334","DH","Total",2009,"Not reported",0
-"335","DH","Total",2009,"Senior and higher executive officer",760
-"336","DH","Total",2009,"Senior Civil Service",260
-"337","DH","Total",2010,"Administrative officers and assistants",130
-"338","DH","Total",2010,"Executive officer",460
-"339","DH","Total",2010,"Grades 6 & 7",910
-"340","DH","Total",2010,"Not reported",0
-"341","DH","Total",2010,"Senior and higher executive officer",920
-"342","DH","Total",2010,"Senior Civil Service",280
-"343","DH","Total",2011,"Administrative officers and assistants",130
-"344","DH","Total",2011,"Executive officer",440
-"345","DH","Total",2011,"Grades 6 & 7",900
-"346","DH","Total",2011,"Not reported",0
-"347","DH","Total",2011,"Senior and higher executive officer",920
-"348","DH","Total",2011,"Senior Civil Service",250
-"349","DH","Total",2012,"Administrative officers and assistants",120
-"350","DH","Total",2012,"Executive officer",370
-"351","DH","Total",2012,"Grades 6 & 7",820
-"352","DH","Total",2012,"Not reported",0
-"353","DH","Total",2012,"Senior and higher executive officer",850
-"354","DH","Total",2012,"Senior Civil Service",220
-"355","DH","Total",2013,"Administrative officers and assistants",120
-"356","DH","Total",2013,"Executive officer",350
-"357","DH","Total",2013,"Grades 6 & 7",790
-"358","DH","Total",2013,"Not reported",0
-"359","DH","Total",2013,"Senior and higher executive officer",820
-"360","DH","Total",2013,"Senior Civil Service",210
-"361","DWP","Total",2008,"Administrative officers and assistants",60400
-"362","DWP","Total",2008,"Executive officer",41590
-"363","DWP","Total",2008,"Grades 6 & 7",2870
-"364","DWP","Total",2008,"Not reported",0
-"365","DWP","Total",2008,"Senior and higher executive officer",12370
-"366","DWP","Total",2008,"Senior Civil Service",360
-"367","DWP","Total",2009,"Administrative officers and assistants",62950
-"368","DWP","Total",2009,"Executive officer",42290
-"369","DWP","Total",2009,"Grades 6 & 7",2980
-"370","DWP","Total",2009,"Not reported",0
-"371","DWP","Total",2009,"Senior and higher executive officer",12550
-"372","DWP","Total",2009,"Senior Civil Service",380
-"373","DWP","Total",2010,"Administrative officers and assistants",65200
-"374","DWP","Total",2010,"Executive officer",49150
-"375","DWP","Total",2010,"Grades 6 & 7",3590
-"376","DWP","Total",2010,"Not reported",20
-"377","DWP","Total",2010,"Senior and higher executive officer",15170
-"378","DWP","Total",2010,"Senior Civil Service",400
-"379","DWP","Total",2011,"Administrative officers and assistants",60930
-"380","DWP","Total",2011,"Executive officer",44460
-"381","DWP","Total",2011,"Grades 6 & 7",3130
-"382","DWP","Total",2011,"Not reported",210
-"383","DWP","Total",2011,"Senior and higher executive officer",13330
-"384","DWP","Total",2011,"Senior Civil Service",340
-"385","DWP","Total",2012,"Administrative officers and assistants",54830
-"386","DWP","Total",2012,"Executive officer",42030
-"387","DWP","Total",2012,"Grades 6 & 7",2740
-"388","DWP","Total",2012,"Not reported",190
-"389","DWP","Total",2012,"Senior and higher executive officer",12400
-"390","DWP","Total",2012,"Senior Civil Service",290
-"391","DWP","Total",2013,"Administrative officers and assistants",50900
-"392","DWP","Total",2013,"Executive officer",42170
-"393","DWP","Total",2013,"Grades 6 & 7",2840
-"394","DWP","Total",2013,"Not reported",0
-"395","DWP","Total",2013,"Senior and higher executive officer",12100
-"396","DWP","Total",2013,"Senior Civil Service",280
-"397","FCO","Total",2008,"Administrative officers and assistants",1130
-"398","FCO","Total",2008,"Executive officer",1480
-"399","FCO","Total",2008,"Grades 6 & 7",1070
-"400","FCO","Total",2008,"Not reported",0
-"401","FCO","Total",2008,"Senior and higher executive officer",1880
-"402","FCO","Total",2008,"Senior Civil Service",390
-"403","FCO","Total",2009,"Administrative officers and assistants",1160
-"404","FCO","Total",2009,"Executive officer",1430
-"405","FCO","Total",2009,"Grades 6 & 7",1130
-"406","FCO","Total",2009,"Not reported",0
-"407","FCO","Total",2009,"Senior and higher executive officer",1990
-"408","FCO","Total",2009,"Senior Civil Service",370
-"409","FCO","Total",2010,"Administrative officers and assistants",1150
-"410","FCO","Total",2010,"Executive officer",1420
-"411","FCO","Total",2010,"Grades 6 & 7",1140
-"412","FCO","Total",2010,"Not reported",0
-"413","FCO","Total",2010,"Senior and higher executive officer",1920
-"414","FCO","Total",2010,"Senior Civil Service",380
-"415","FCO","Total",2011,"Administrative officers and assistants",1110
-"416","FCO","Total",2011,"Executive officer",1330
-"417","FCO","Total",2011,"Grades 6 & 7",1080
-"418","FCO","Total",2011,"Not reported",0
-"419","FCO","Total",2011,"Senior and higher executive officer",1870
-"420","FCO","Total",2011,"Senior Civil Service",360
-"421","FCO","Total",2012,"Administrative officers and assistants",1150
-"422","FCO","Total",2012,"Executive officer",1520
-"423","FCO","Total",2012,"Grades 6 & 7",1290
-"424","FCO","Total",2012,"Not reported",0
-"425","FCO","Total",2012,"Senior and higher executive officer",2150
-"426","FCO","Total",2012,"Senior Civil Service",450
-"427","FCO","Total",2013,"Administrative officers and assistants",820
-"428","FCO","Total",2013,"Executive officer",850
-"429","FCO","Total",2013,"Grades 6 & 7",1170
-"430","FCO","Total",2013,"Not reported",40
-"431","FCO","Total",2013,"Senior and higher executive officer",1560
-"432","FCO","Total",2013,"Senior Civil Service",410
-"433","HMRC","Total",2008,"Administrative officers and assistants",50980
-"434","HMRC","Total",2008,"Executive officer",23190
-"435","HMRC","Total",2008,"Grades 6 & 7",3990
-"436","HMRC","Total",2008,"Not reported",0
-"437","HMRC","Total",2008,"Senior and higher executive officer",16800
-"438","HMRC","Total",2008,"Senior Civil Service",420
-"439","HMRC","Total",2009,"Administrative officers and assistants",49000
-"440","HMRC","Total",2009,"Executive officer",22510
-"441","HMRC","Total",2009,"Grades 6 & 7",4240
-"442","HMRC","Total",2009,"Not reported",10
-"443","HMRC","Total",2009,"Senior and higher executive officer",16870
-"444","HMRC","Total",2009,"Senior Civil Service",480
-"445","HMRC","Total",2010,"Administrative officers and assistants",45000
-"446","HMRC","Total",2010,"Executive officer",21520
-"447","HMRC","Total",2010,"Grades 6 & 7",4150
-"448","HMRC","Total",2010,"Not reported",0
-"449","HMRC","Total",2010,"Senior and higher executive officer",16270
-"450","HMRC","Total",2010,"Senior Civil Service",420
-"451","HMRC","Total",2011,"Administrative officers and assistants",41030
-"452","HMRC","Total",2011,"Executive officer",18110
-"453","HMRC","Total",2011,"Grades 6 & 7",4100
-"454","HMRC","Total",2011,"Not reported",0
-"455","HMRC","Total",2011,"Senior and higher executive officer",14960
-"456","HMRC","Total",2011,"Senior Civil Service",390
-"457","HMRC","Total",2012,"Administrative officers and assistants",42270
-"458","HMRC","Total",2012,"Executive officer",17510
-"459","HMRC","Total",2012,"Grades 6 & 7",4080
-"460","HMRC","Total",2012,"Not reported",0
-"461","HMRC","Total",2012,"Senior and higher executive officer",14610
-"462","HMRC","Total",2012,"Senior Civil Service",390
-"463","HMRC","Total",2013,"Administrative officers and assistants",40090
-"464","HMRC","Total",2013,"Executive officer",17020
-"465","HMRC","Total",2013,"Grades 6 & 7",4270
-"466","HMRC","Total",2013,"Not reported",480
-"467","HMRC","Total",2013,"Senior and higher executive officer",14490
-"468","HMRC","Total",2013,"Senior Civil Service",330
-"469","HMT","Total",2008,"Administrative officers and assistants",160
-"470","HMT","Total",2008,"Executive officer",160
-"471","HMT","Total",2008,"Grades 6 & 7",350
-"472","HMT","Total",2008,"Not reported",0
-"473","HMT","Total",2008,"Senior and higher executive officer",380
-"474","HMT","Total",2008,"Senior Civil Service",110
-"475","HMT","Total",2009,"Administrative officers and assistants",160
-"476","HMT","Total",2009,"Executive officer",180
-"477","HMT","Total",2009,"Grades 6 & 7",420
-"478","HMT","Total",2009,"Not reported",0
-"479","HMT","Total",2009,"Senior and higher executive officer",490
-"480","HMT","Total",2009,"Senior Civil Service",90
-"481","HMT","Total",2010,"Administrative officers and assistants",120
-"482","HMT","Total",2010,"Executive officer",190
-"483","HMT","Total",2010,"Grades 6 & 7",470
-"484","HMT","Total",2010,"Not reported",0
-"485","HMT","Total",2010,"Senior and higher executive officer",510
-"486","HMT","Total",2010,"Senior Civil Service",160
-"487","HMT","Total",2011,"Administrative officers and assistants",110
-"488","HMT","Total",2011,"Executive officer",170
-"489","HMT","Total",2011,"Grades 6 & 7",450
-"490","HMT","Total",2011,"Not reported",0
-"491","HMT","Total",2011,"Senior and higher executive officer",460
-"492","HMT","Total",2011,"Senior Civil Service",130
-"493","HMT","Total",2012,"Administrative officers and assistants",90
-"494","HMT","Total",2012,"Executive officer",150
-"495","HMT","Total",2012,"Grades 6 & 7",350
-"496","HMT","Total",2012,"Not reported",0
-"497","HMT","Total",2012,"Senior and higher executive officer",360
-"498","HMT","Total",2012,"Senior Civil Service",110
-"499","HMT","Total",2013,"Administrative officers and assistants",90
-"500","HMT","Total",2013,"Executive officer",150
-"501","HMT","Total",2013,"Grades 6 & 7",410
-"502","HMT","Total",2013,"Not reported",0
-"503","HMT","Total",2013,"Senior and higher executive officer",480
-"504","HMT","Total",2013,"Senior Civil Service",120
-"505","HO","Total",2008,"Administrative officers and assistants",10140
-"506","HO","Total",2008,"Executive officer",9250
-"507","HO","Total",2008,"Grades 6 & 7",1390
-"508","HO","Total",2008,"Not reported",0
-"509","HO","Total",2008,"Senior and higher executive officer",5920
-"510","HO","Total",2008,"Senior Civil Service",220
-"511","HO","Total",2009,"Administrative officers and assistants",9620
-"512","HO","Total",2009,"Executive officer",9140
-"513","HO","Total",2009,"Grades 6 & 7",1470
-"514","HO","Total",2009,"Not reported",0
-"515","HO","Total",2009,"Senior and higher executive officer",5760
-"516","HO","Total",2009,"Senior Civil Service",240
-"517","HO","Total",2010,"Administrative officers and assistants",9400
-"518","HO","Total",2010,"Executive officer",9350
-"519","HO","Total",2010,"Grades 6 & 7",1780
-"520","HO","Total",2010,"Not reported",0
-"521","HO","Total",2010,"Senior and higher executive officer",6270
-"522","HO","Total",2010,"Senior Civil Service",270
-"523","HO","Total",2011,"Administrative officers and assistants",10170
-"524","HO","Total",2011,"Executive officer",11130
-"525","HO","Total",2011,"Grades 6 & 7",1670
-"526","HO","Total",2011,"Not reported",0
-"527","HO","Total",2011,"Senior and higher executive officer",6460
-"528","HO","Total",2011,"Senior Civil Service",220
-"529","HO","Total",2012,"Administrative officers and assistants",8770
-"530","HO","Total",2012,"Executive officer",9850
-"531","HO","Total",2012,"Grades 6 & 7",1630
-"532","HO","Total",2012,"Not reported",0
-"533","HO","Total",2012,"Senior and higher executive officer",5900
-"534","HO","Total",2012,"Senior Civil Service",210
-"535","HO","Total",2013,"Administrative officers and assistants",8070
-"536","HO","Total",2013,"Executive officer",10390
-"537","HO","Total",2013,"Grades 6 & 7",1790
-"538","HO","Total",2013,"Not reported",0
-"539","HO","Total",2013,"Senior and higher executive officer",6020
-"540","HO","Total",2013,"Senior Civil Service",200
-"541","MoD","Total",2008,"Administrative officers and assistants",38540
-"542","MoD","Total",2008,"Executive officer",15230
-"543","MoD","Total",2008,"Grades 6 & 7",4050
-"544","MoD","Total",2008,"Not reported",3390
-"545","MoD","Total",2008,"Senior and higher executive officer",20400
-"546","MoD","Total",2008,"Senior Civil Service",330
-"547","MoD","Total",2009,"Administrative officers and assistants",35140
-"548","MoD","Total",2009,"Executive officer",15240
-"549","MoD","Total",2009,"Grades 6 & 7",4130
-"550","MoD","Total",2009,"Not reported",2410
-"551","MoD","Total",2009,"Senior and higher executive officer",20580
-"552","MoD","Total",2009,"Senior Civil Service",330
-"553","MoD","Total",2010,"Administrative officers and assistants",36050
-"554","MoD","Total",2010,"Executive officer",13740
-"555","MoD","Total",2010,"Grades 6 & 7",4300
-"556","MoD","Total",2010,"Not reported",2620
-"557","MoD","Total",2010,"Senior and higher executive officer",20610
-"558","MoD","Total",2010,"Senior Civil Service",340
-"559","MoD","Total",2011,"Administrative officers and assistants",33180
-"560","MoD","Total",2011,"Executive officer",12710
-"561","MoD","Total",2011,"Grades 6 & 7",4130
-"562","MoD","Total",2011,"Not reported",2490
-"563","MoD","Total",2011,"Senior and higher executive officer",20930
-"564","MoD","Total",2011,"Senior Civil Service",330
-"565","MoD","Total",2012,"Administrative officers and assistants",26310
-"566","MoD","Total",2012,"Executive officer",12270
-"567","MoD","Total",2012,"Grades 6 & 7",3670
-"568","MoD","Total",2012,"Not reported",2150
-"569","MoD","Total",2012,"Senior and higher executive officer",18260
-"570","MoD","Total",2012,"Senior Civil Service",280
-"571","MoD","Total",2013,"Administrative officers and assistants",24220
-"572","MoD","Total",2013,"Executive officer",10480
-"573","MoD","Total",2013,"Grades 6 & 7",3850
-"574","MoD","Total",2013,"Not reported",1940
-"575","MoD","Total",2013,"Senior and higher executive officer",17700
-"576","MoD","Total",2013,"Senior Civil Service",260
-"577","MoJ","Total",2008,"Administrative officers and assistants",680
-"578","MoJ","Total",2008,"Executive officer",720
-"579","MoJ","Total",2008,"Grades 6 & 7",860
-"580","MoJ","Total",2008,"Not reported",0
-"581","MoJ","Total",2008,"Senior and higher executive officer",1390
-"582","MoJ","Total",2008,"Senior Civil Service",140
-"583","MoJ","Total",2009,"Administrative officers and assistants",480
-"584","MoJ","Total",2009,"Executive officer",500
-"585","MoJ","Total",2009,"Grades 6 & 7",720
-"586","MoJ","Total",2009,"Not reported",0
-"587","MoJ","Total",2009,"Senior and higher executive officer",1190
-"588","MoJ","Total",2009,"Senior Civil Service",120
-"589","MoJ","Total",2010,"Administrative officers and assistants",530
-"590","MoJ","Total",2010,"Executive officer",500
-"591","MoJ","Total",2010,"Grades 6 & 7",750
-"592","MoJ","Total",2010,"Not reported",0
-"593","MoJ","Total",2010,"Senior and higher executive officer",1300
-"594","MoJ","Total",2010,"Senior Civil Service",140
-"595","MoJ","Total",2011,"Administrative officers and assistants",1080
-"596","MoJ","Total",2011,"Executive officer",870
-"597","MoJ","Total",2011,"Grades 6 & 7",900
-"598","MoJ","Total",2011,"Not reported",0
-"599","MoJ","Total",2011,"Senior and higher executive officer",1710
-"600","MoJ","Total",2011,"Senior Civil Service",130
-"601","MoJ","Total",2012,"Administrative officers and assistants",1030
-"602","MoJ","Total",2012,"Executive officer",800
-"603","MoJ","Total",2012,"Grades 6 & 7",770
-"604","MoJ","Total",2012,"Not reported",0
-"605","MoJ","Total",2012,"Senior and higher executive officer",1530
-"606","MoJ","Total",2012,"Senior Civil Service",120
-"607","MoJ","Total",2013,"Administrative officers and assistants",980
-"608","MoJ","Total",2013,"Executive officer",920
-"609","MoJ","Total",2013,"Grades 6 & 7",790
-"610","MoJ","Total",2013,"Not reported",0
-"611","MoJ","Total",2013,"Senior and higher executive officer",1670
-"612","MoJ","Total",2013,"Senior Civil Service",120
-"613","Whole Civil Service","Total",2008,"Administrative officers and assistants",254190
-"614","Whole Civil Service","Total",2008,"Executive officer",130420
-"615","Whole Civil Service","Total",2008,"Grades 6 & 7",33090
-"616","Whole Civil Service","Total",2008,"Not reported",3660
-"617","Whole Civil Service","Total",2008,"Senior and higher executive officer",99000
-"618","Whole Civil Service","Total",2008,"Senior Civil Service",4790
-"619","Whole Civil Service","Total",2009,"Administrative officers and assistants",249990
-"620","Whole Civil Service","Total",2009,"Executive officer",131300
-"621","Whole Civil Service","Total",2009,"Grades 6 & 7",34950
-"622","Whole Civil Service","Total",2009,"Not reported",2840
-"623","Whole Civil Service","Total",2009,"Senior and higher executive officer",100420
-"624","Whole Civil Service","Total",2009,"Senior Civil Service",4920
-"625","Whole Civil Service","Total",2010,"Administrative officers and assistants",245790
-"626","Whole Civil Service","Total",2010,"Executive officer",133980
-"627","Whole Civil Service","Total",2010,"Grades 6 & 7",36630
-"628","Whole Civil Service","Total",2010,"Not reported",2810
-"629","Whole Civil Service","Total",2010,"Senior and higher executive officer",103220
-"630","Whole Civil Service","Total",2010,"Senior Civil Service",5070
-"631","Whole Civil Service","Total",2011,"Administrative officers and assistants",233180
-"632","Whole Civil Service","Total",2011,"Executive officer",123810
-"633","Whole Civil Service","Total",2011,"Grades 6 & 7",35110
-"634","Whole Civil Service","Total",2011,"Not reported",2970
-"635","Whole Civil Service","Total",2011,"Senior and higher executive officer",98760
-"636","Whole Civil Service","Total",2011,"Senior Civil Service",4610
-"637","Whole Civil Service","Total",2012,"Administrative officers and assistants",210540
-"638","Whole Civil Service","Total",2012,"Executive officer",119340
-"639","Whole Civil Service","Total",2012,"Grades 6 & 7",33610
-"640","Whole Civil Service","Total",2012,"Not reported",2350
-"641","Whole Civil Service","Total",2012,"Senior and higher executive officer",93560
-"642","Whole Civil Service","Total",2012,"Senior Civil Service",4420
-"643","Whole Civil Service","Total",2013,"Administrative officers and assistants",197510
-"644","Whole Civil Service","Total",2013,"Executive officer",116230
-"645","Whole Civil Service","Total",2013,"Grades 6 & 7",35030
-"646","Whole Civil Service","Total",2013,"Not reported",2460
-"647","Whole Civil Service","Total",2013,"Senior and higher executive officer",93280
-"648","Whole Civil Service","Total",2013,"Senior Civil Service",4340
+"","Organisation","Date","National.Identit","Gender","Full.Part.tim","Ethnic.grou","Disability.statu","Wage.band","Civil.Service.grad","Age.band","country","value.type","flag","count","Whitehall","Group","Managed","Include","total","share","grp"
+"1","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
+"2","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
+"3","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
+"4","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
+"5","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
+"6","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
+"7","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
+"8","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
+"9","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
+"10","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
+"11","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
+"12","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
+"13","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
+"14","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
+"15","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
+"16","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
+"17","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
+"18","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
+"19","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
+"20","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
+"21","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,220,"WH","BIS",NA,"Yes",3140,0.0700636942675159,"BIS2013"
+"22","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,470,"WH","BIS",NA,"Yes",3140,0.14968152866242,"BIS2013"
+"23","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,390,"WH","BIS",NA,"Yes",4020,0.0970149253731343,"BIS2010"
+"24","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1220,"WH","BIS",NA,"Yes",4020,0.303482587064677,"BIS2010"
+"25","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,630,"WH","BIS",NA,"Yes",4020,0.156716417910448,"BIS2010"
+"26","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1480,"WH","BIS",NA,"Yes",4020,0.368159203980099,"BIS2010"
+"27","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","BIS",NA,"Yes",4020,0.0646766169154229,"BIS2010"
+"28","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1180,"WH","BIS",NA,"Yes",3140,0.375796178343949,"BIS2013"
+"29","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,220,"WH","BIS",NA,"Yes",3140,0.0700636942675159,"BIS2013"
+"30","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1050,"WH","BIS",NA,"Yes",3140,0.334394904458599,"BIS2013"
+"31","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,180,"WH","CO",NA,"Yes",1270,0.141732283464567,"CO2010"
+"32","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,390,"WH","CO",NA,"Yes",1270,0.307086614173228,"CO2010"
+"33","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,180,"WH","CO",NA,"Yes",1850,0.0972972972972973,"CO2013"
+"34","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,240,"WH","CO",NA,"Yes",1270,0.188976377952756,"CO2010"
+"35","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,600,"WH","CO",NA,"Yes",1850,0.324324324324324,"CO2013"
+"36","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,160,"WH","CO",NA,"Yes",1850,0.0864864864864865,"CO2013"
+"37","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,640,"WH","CO",NA,"Yes",1850,0.345945945945946,"CO2013"
+"38","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,320,"WH","CO",NA,"Yes",1270,0.251968503937008,"CO2010"
+"39","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","CO",NA,"Yes",1850,0.145945945945946,"CO2013"
+"40","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","CO",NA,"Yes",1270,0.110236220472441,"CO2010"
+"41","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"42","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"43","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"44","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"45","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"46","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"47","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"48","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"49","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"50","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"51","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"52","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"53","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"54","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"55","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"56","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"57","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"58","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"59","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"60","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"61","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,240,"WH","DCLG",NA,"Yes",1740,0.137931034482759,"DCLG2013"
+"62","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1060,"WH","DCLG",NA,"Yes",2640,0.401515151515151,"DCLG2010"
+"63","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,440,"WH","DCLG",NA,"Yes",2640,0.166666666666667,"DCLG2010"
+"64","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,550,"WH","DCLG",NA,"Yes",1740,0.316091954022989,"DCLG2013"
+"65","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,700,"WH","DCLG",NA,"Yes",2640,0.265151515151515,"DCLG2010"
+"66","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,310,"WH","DCLG",NA,"Yes",2640,0.117424242424242,"DCLG2010"
+"67","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,130,"WH","DCLG",NA,"Yes",2640,0.0492424242424242,"DCLG2010"
+"68","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,760,"WH","DCLG",NA,"Yes",1740,0.436781609195402,"DCLG2013"
+"69","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","DCLG",NA,"Yes",1740,0.0574712643678161,"DCLG2013"
+"70","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,90,"WH","DCLG",NA,"Yes",1740,0.0517241379310345,"DCLG2013"
+"71","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
+"72","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
+"73","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
+"74","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
+"75","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
+"76","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
+"77","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
+"78","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
+"79","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
+"80","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
+"81","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
+"82","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
+"83","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
+"84","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
+"85","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
+"86","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
+"87","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
+"88","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
+"89","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
+"90","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
+"91","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
+"92","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
+"93","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
+"94","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
+"95","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
+"96","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
+"97","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
+"98","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
+"99","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
+"100","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
+"101","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
+"102","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
+"103","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
+"104","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
+"105","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
+"106","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
+"107","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
+"108","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
+"109","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
+"110","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
+"111","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,170,"WH","DCMS",NA,"Yes",490,0.346938775510204,"DCMS2010"
+"112","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,30,"WH","DCMS",NA,"Yes",490,0.0612244897959184,"DCMS2010"
+"113","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,40,"WH","DCMS",NA,"Yes",400,0.1,"DCMS2013"
+"114","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","DCMS",NA,"Yes",400,0.35,"DCMS2013"
+"115","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","DCMS",NA,"Yes",490,0.204081632653061,"DCMS2010"
+"116","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","DCMS",NA,"Yes",490,0.285714285714286,"DCMS2010"
+"117","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,20,"WH","DCMS",NA,"Yes",400,0.05,"DCMS2013"
+"118","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,60,"WH","DCMS",NA,"Yes",400,0.15,"DCMS2013"
+"119","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","DCMS",NA,"Yes",400,0.35,"DCMS2013"
+"120","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,50,"WH","DCMS",NA,"Yes",490,0.102040816326531,"DCMS2010"
+"121","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"122","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"123","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"124","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"125","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"126","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"127","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"128","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"129","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"130","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"131","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"132","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"133","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"134","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"135","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"136","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"137","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"138","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"139","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"140","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"141","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"142","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"143","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"144","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"145","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"146","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"147","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"148","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"149","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"150","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"151","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"152","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"153","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"154","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"155","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"156","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"157","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"158","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"159","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"160","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"161","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,810,"WH","DfE",NA,"Yes",3110,0.260450160771704,"DfE2010"
+"162","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DfE",NA,"Yes",3110,0.090032154340836,"DfE2010"
+"163","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,410,"WH","DfE",NA,"Yes",6560,0.0625,"DfE2013"
+"164","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,2800,"WH","DfE",NA,"Yes",6560,0.426829268292683,"DfE2013"
+"165","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DfE",NA,"Yes",6560,0.0426829268292683,"DfE2013"
+"166","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,150,"WH","DfE",NA,"Yes",3110,0.0482315112540193,"DfE2010"
+"167","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1960,"WH","DfE",NA,"Yes",6560,0.298780487804878,"DfE2013"
+"168","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,550,"WH","DfE",NA,"Yes",3110,0.176848874598071,"DfE2010"
+"169","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1320,"WH","DfE",NA,"Yes",3110,0.42443729903537,"DfE2010"
+"170","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,1110,"WH","DfE",NA,"Yes",6560,0.169207317073171,"DfE2013"
+"171","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1960,"WH","DfE",NA,"Yes",6560,0.298780487804878,"DfE2013"
+"172","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DfE",NA,"Yes",6560,0.0426829268292683,"DfE2013"
+"173","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,1110,"WH","DfE",NA,"Yes",6560,0.169207317073171,"DfE2013"
+"174","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,410,"WH","DfE",NA,"Yes",6560,0.0625,"DfE2013"
+"175","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,2800,"WH","DfE",NA,"Yes",6560,0.426829268292683,"DfE2013"
+"176","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,540,"WH","DECC",NA,"Yes",1460,0.36986301369863,"DECC2013"
+"177","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,80,"WH","DECC",NA,"Yes",1050,0.0761904761904762,"DECC2010"
+"178","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","DECC",NA,"Yes",1460,0.0958904109589041,"DECC2013"
+"179","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DECC",NA,"Yes",1050,0.380952380952381,"DECC2010"
+"180","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,80,"WH","DECC",NA,"Yes",1460,0.0547945205479452,"DECC2013"
+"181","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,390,"WH","DECC",NA,"Yes",1050,0.371428571428571,"DECC2010"
+"182","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,90,"WH","DECC",NA,"Yes",1460,0.0616438356164384,"DECC2013"
+"183","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,610,"WH","DECC",NA,"Yes",1460,0.417808219178082,"DECC2013"
+"184","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,70,"WH","DECC",NA,"Yes",1050,0.0666666666666667,"DECC2010"
+"185","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,110,"WH","DECC",NA,"Yes",1050,0.104761904761905,"DECC2010"
+"186","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,350,"WH","Defra",NA,"Yes",2180,0.160550458715596,"Defra2013"
+"187","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1030,"WH","Defra",NA,"Yes",2730,0.377289377289377,"Defra2010"
+"188","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,920,"WH","Defra",NA,"Yes",2180,0.422018348623853,"Defra2013"
+"189","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,290,"WH","Defra",NA,"Yes",2180,0.13302752293578,"Defra2013"
+"190","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,520,"WH","Defra",NA,"Yes",2180,0.238532110091743,"Defra2013"
+"191","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","Defra",NA,"Yes",2180,0.0458715596330275,"Defra2013"
+"192","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,430,"WH","Defra",NA,"Yes",2730,0.157509157509158,"Defra2010"
+"193","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,440,"WH","Defra",NA,"Yes",2730,0.161172161172161,"Defra2010"
+"194","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,680,"WH","Defra",NA,"Yes",2730,0.249084249084249,"Defra2010"
+"195","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,150,"WH","Defra",NA,"Yes",2730,0.0549450549450549,"Defra2010"
+"196","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1920,"WH","FCO",NA,"Yes",6010,0.319467554076539,"FCO2010"
+"197","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,1150,"WH","FCO",NA,"Yes",6010,0.19134775374376,"FCO2010"
+"198","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,820,"WH","FCO",NA,"Yes",4850,0.169072164948454,"FCO2013"
+"199","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1140,"WH","FCO",NA,"Yes",6010,0.189683860232945,"FCO2010"
+"200","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1560,"WH","FCO",NA,"Yes",4850,0.321649484536082,"FCO2013"
+"201","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,850,"WH","FCO",NA,"Yes",4850,0.175257731958763,"FCO2013"
+"202","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,380,"WH","FCO",NA,"Yes",6010,0.0632279534109817,"FCO2010"
+"203","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1170,"WH","FCO",NA,"Yes",4850,0.241237113402062,"FCO2013"
+"204","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,1420,"WH","FCO",NA,"Yes",6010,0.236272878535774,"FCO2010"
+"205","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,410,"WH","FCO",NA,"Yes",4850,0.0845360824742268,"FCO2013"
+"206","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,420,"WH","HMRC",NA,"Yes",87360,0.00480769230769231,"HMRC2010"
+"207","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,330,"WH","HMRC",NA,"Yes",76680,0.00430359937402191,"HMRC2013"
+"208","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,40090,"WH","HMRC",NA,"Yes",76680,0.52282211789254,"HMRC2013"
+"209","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,45000,"WH","HMRC",NA,"Yes",87360,0.51510989010989,"HMRC2010"
+"210","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,14490,"WH","HMRC",NA,"Yes",76680,0.188967136150235,"HMRC2013"
+"211","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,17020,"WH","HMRC",NA,"Yes",76680,0.221961398017736,"HMRC2013"
+"212","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,21520,"WH","HMRC",NA,"Yes",87360,0.246336996336996,"HMRC2010"
+"213","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,16270,"WH","HMRC",NA,"Yes",87360,0.186240842490842,"HMRC2010"
+"214","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4150,"WH","HMRC",NA,"Yes",87360,0.0475045787545788,"HMRC2010"
+"215","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4270,"WH","HMRC",NA,"Yes",76680,0.0556859676577986,"HMRC2013"
+"216","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"217","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"218","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"219","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"220","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"221","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"222","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"223","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"224","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"225","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"226","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,820,"WH","DH",NA,"Yes",2290,0.358078602620087,"DH2013"
+"227","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,910,"WH","DH",NA,"Yes",2700,0.337037037037037,"DH2010"
+"228","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,790,"WH","DH",NA,"Yes",2290,0.344978165938865,"DH2013"
+"229","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,350,"WH","DH",NA,"Yes",2290,0.152838427947598,"DH2013"
+"230","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,130,"WH","DH",NA,"Yes",2700,0.0481481481481481,"DH2010"
+"231","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,460,"WH","DH",NA,"Yes",2700,0.17037037037037,"DH2010"
+"232","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","DH",NA,"Yes",2290,0.0524017467248908,"DH2013"
+"233","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DH",NA,"Yes",2700,0.103703703703704,"DH2010"
+"234","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,920,"WH","DH",NA,"Yes",2700,0.340740740740741,"DH2010"
+"235","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,210,"WH","DH",NA,"Yes",2290,0.091703056768559,"DH2013"
+"236","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,40090,"WH","HMRC",NA,"Yes",76680,0.52282211789254,"HMRC2013"
+"237","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,16270,"WH","HMRC",NA,"Yes",87360,0.186240842490842,"HMRC2010"
+"238","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,330,"WH","HMRC",NA,"Yes",76680,0.00430359937402191,"HMRC2013"
+"239","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4270,"WH","HMRC",NA,"Yes",76680,0.0556859676577986,"HMRC2013"
+"240","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,420,"WH","HMRC",NA,"Yes",87360,0.00480769230769231,"HMRC2010"
+"241","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,21520,"WH","HMRC",NA,"Yes",87360,0.246336996336996,"HMRC2010"
+"242","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,45000,"WH","HMRC",NA,"Yes",87360,0.51510989010989,"HMRC2010"
+"243","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,17020,"WH","HMRC",NA,"Yes",76680,0.221961398017736,"HMRC2013"
+"244","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4150,"WH","HMRC",NA,"Yes",87360,0.0475045787545788,"HMRC2010"
+"245","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,14490,"WH","HMRC",NA,"Yes",76680,0.188967136150235,"HMRC2013"
+"246","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,510,"WH","HMT",NA,"Yes",1450,0.351724137931034,"HMT2010"
+"247","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,480,"WH","HMT",NA,"Yes",1250,0.384,"HMT2013"
+"248","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","HMT",NA,"Yes",1250,0.096,"HMT2013"
+"249","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","HMT",NA,"Yes",1450,0.0827586206896552,"HMT2010"
+"250","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,410,"WH","HMT",NA,"Yes",1250,0.328,"HMT2013"
+"251","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,90,"WH","HMT",NA,"Yes",1250,0.072,"HMT2013"
+"252","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,160,"WH","HMT",NA,"Yes",1450,0.110344827586207,"HMT2010"
+"253","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,150,"WH","HMT",NA,"Yes",1250,0.12,"HMT2013"
+"254","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,470,"WH","HMT",NA,"Yes",1450,0.324137931034483,"HMT2010"
+"255","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,190,"WH","HMT",NA,"Yes",1450,0.131034482758621,"HMT2010"
+"256","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
+"257","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
+"258","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
+"259","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
+"260","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
+"261","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
+"262","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
+"263","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
+"264","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
+"265","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
+"266","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
+"267","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
+"268","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
+"269","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
+"270","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
+"271","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
+"272","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
+"273","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
+"274","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
+"275","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
+"276","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,220,"WH","BIS",NA,"Yes",3140,0.0700636942675159,"BIS2013"
+"277","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,390,"WH","BIS",NA,"Yes",4020,0.0970149253731343,"BIS2010"
+"278","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,630,"WH","BIS",NA,"Yes",4020,0.156716417910448,"BIS2010"
+"279","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1480,"WH","BIS",NA,"Yes",4020,0.368159203980099,"BIS2010"
+"280","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","BIS",NA,"Yes",4020,0.0646766169154229,"BIS2010"
+"281","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,220,"WH","BIS",NA,"Yes",3140,0.0700636942675159,"BIS2013"
+"282","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1220,"WH","BIS",NA,"Yes",4020,0.303482587064677,"BIS2010"
+"283","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,470,"WH","BIS",NA,"Yes",3140,0.14968152866242,"BIS2013"
+"284","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1050,"WH","BIS",NA,"Yes",3140,0.334394904458599,"BIS2013"
+"285","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1180,"WH","BIS",NA,"Yes",3140,0.375796178343949,"BIS2013"
+"286","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,950,"WH","DfID",NA,"Yes",1810,0.524861878453039,"DfID2013"
+"287","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","DfID",NA,"Yes",1810,0.0552486187845304,"DfID2013"
+"288","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,80,"WH","DfID",NA,"Yes",1810,0.0441988950276243,"DfID2013"
+"289","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,440,"WH","DfID",NA,"Yes",1630,0.269938650306748,"DfID2010"
+"290","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,730,"WH","DfID",NA,"Yes",1630,0.447852760736196,"DfID2010"
+"291","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,160,"WH","DfID",NA,"Yes",1630,0.098159509202454,"DfID2010"
+"292","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","DfID",NA,"Yes",1630,0.122699386503067,"DfID2010"
+"293","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,490,"WH","DfID",NA,"Yes",1810,0.270718232044199,"DfID2013"
+"294","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,190,"WH","DfID",NA,"Yes",1810,0.104972375690608,"DfID2013"
+"295","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","DfID",NA,"Yes",1630,0.0613496932515337,"DfID2010"
+"296","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"297","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"298","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"299","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"300","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"301","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"302","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"303","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"304","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"305","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"306","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,920,"WH","MoJ",NA,"Yes",4480,0.205357142857143,"MoJ2013"
+"307","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,750,"WH","MoJ",NA,"Yes",3220,0.232919254658385,"MoJ2010"
+"308","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1300,"WH","MoJ",NA,"Yes",3220,0.403726708074534,"MoJ2010"
+"309","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1670,"WH","MoJ",NA,"Yes",4480,0.372767857142857,"MoJ2013"
+"310","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","MoJ",NA,"Yes",3220,0.0434782608695652,"MoJ2010"
+"311","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,500,"WH","MoJ",NA,"Yes",3220,0.15527950310559,"MoJ2010"
+"312","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,790,"WH","MoJ",NA,"Yes",4480,0.176339285714286,"MoJ2013"
+"313","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,530,"WH","MoJ",NA,"Yes",3220,0.164596273291925,"MoJ2010"
+"314","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,980,"WH","MoJ",NA,"Yes",4480,0.21875,"MoJ2013"
+"315","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","MoJ",NA,"Yes",4480,0.0267857142857143,"MoJ2013"
+"316","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
+"317","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
+"318","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
+"319","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
+"320","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
+"321","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
+"322","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
+"323","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
+"324","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
+"325","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
+"326","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
+"327","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
+"328","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
+"329","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
+"330","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
+"331","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
+"332","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
+"333","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
+"334","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
+"335","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
+"336","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
+"337","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
+"338","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
+"339","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
+"340","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
+"341","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
+"342","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
+"343","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
+"344","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
+"345","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
+"346","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
+"347","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
+"348","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
+"349","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
+"350","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
+"351","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
+"352","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
+"353","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
+"354","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
+"355","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
+"356","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"357","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"358","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"359","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"360","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"361","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"362","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"363","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"364","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"365","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"366","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"367","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"368","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"369","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"370","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"371","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"372","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"373","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"374","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"375","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"376","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
+"377","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
+"378","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
+"379","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
+"380","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
+"381","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
+"382","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
+"383","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
+"384","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
+"385","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
+"386","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
+"387","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
+"388","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
+"389","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
+"390","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
+"391","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
+"392","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
+"393","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
+"394","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
+"395","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
+"396","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,245790,"Total","Whole Civil Service",NA,"Yes",527500,0.465952606635071,"Whole Civil Service2010"
+"397","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,35030,"Total","Whole Civil Service",NA,"Yes",448850,0.0780438899409602,"Whole Civil Service2013"
+"398","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,103220,"Total","Whole Civil Service",NA,"Yes",527500,0.195677725118483,"Whole Civil Service2010"
+"399","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,5070,"Total","Whole Civil Service",NA,"Yes",527500,0.00961137440758294,"Whole Civil Service2010"
+"400","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,93280,"Total","Whole Civil Service",NA,"Yes",448850,0.20781998440459,"Whole Civil Service2013"
+"401","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,4340,"Total","Whole Civil Service",NA,"Yes",448850,0.00966915450595967,"Whole Civil Service2013"
+"402","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,133980,"Total","Whole Civil Service",NA,"Yes",527500,0.253990521327014,"Whole Civil Service2010"
+"403","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,116230,"Total","Whole Civil Service",NA,"Yes",448850,0.258950651665367,"Whole Civil Service2013"
+"404","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,197510,"Total","Whole Civil Service",NA,"Yes",448850,0.440035646652557,"Whole Civil Service2013"
+"405","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,36630,"Total","Whole Civil Service",NA,"Yes",527500,0.0694407582938389,"Whole Civil Service2010"
+"406","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,210,"WH","DfT",NA,"Yes",1760,0.119318181818182,"DfT2013"
+"407","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,670,"WH","DfT",NA,"Yes",2160,0.310185185185185,"DfT2010"
+"408","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","DfT",NA,"Yes",2160,0.0925925925925926,"DfT2010"
+"409","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,610,"WH","DfT",NA,"Yes",1760,0.346590909090909,"DfT2013"
+"410","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","DfT",NA,"Yes",1760,0.0681818181818182,"DfT2013"
+"411","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,710,"WH","DfT",NA,"Yes",1760,0.403409090909091,"DfT2013"
+"412","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,160,"WH","DfT",NA,"Yes",2160,0.0740740740740741,"DfT2010"
+"413","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,820,"WH","DfT",NA,"Yes",2160,0.37962962962963,"DfT2010"
+"414","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,110,"WH","DfT",NA,"Yes",1760,0.0625,"DfT2013"
+"415","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,310,"WH","DfT",NA,"Yes",2160,0.143518518518519,"DfT2010"
+"416","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
+"417","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
+"418","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
+"419","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
+"420","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
+"421","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
+"422","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
+"423","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
+"424","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
+"425","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
+"426","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
+"427","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
+"428","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
+"429","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
+"430","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
+"431","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
+"432","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
+"433","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
+"434","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
+"435","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
+"436","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,40090,"WH","HMRC",NA,"Yes",76680,0.52282211789254,"HMRC2013"
+"437","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,16270,"WH","HMRC",NA,"Yes",87360,0.186240842490842,"HMRC2010"
+"438","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,330,"WH","HMRC",NA,"Yes",76680,0.00430359937402191,"HMRC2013"
+"439","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4150,"WH","HMRC",NA,"Yes",87360,0.0475045787545788,"HMRC2010"
+"440","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,420,"WH","HMRC",NA,"Yes",87360,0.00480769230769231,"HMRC2010"
+"441","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,21520,"WH","HMRC",NA,"Yes",87360,0.246336996336996,"HMRC2010"
+"442","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4270,"WH","HMRC",NA,"Yes",76680,0.0556859676577986,"HMRC2013"
+"443","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,14490,"WH","HMRC",NA,"Yes",76680,0.188967136150235,"HMRC2013"
+"444","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,45000,"WH","HMRC",NA,"Yes",87360,0.51510989010989,"HMRC2010"
+"445","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,17020,"WH","HMRC",NA,"Yes",76680,0.221961398017736,"HMRC2013"

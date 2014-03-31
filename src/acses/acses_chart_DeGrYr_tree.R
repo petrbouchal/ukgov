@@ -9,32 +9,23 @@ whitehallonly <- TRUE
 # Process data ------------------------------------------------------------
 uu <- origdata
 
-# FILTER OUT WAGE BAND LINES
-uu <- uu[uu$Wage.band=='Total',]
+# FILTER OUT WAGE BAND AND GENDER LINES
+uu <- filter(uu,Wage.band=='Total' & Gender=='Total')
 uu <- AddOrgData(uu,whitehallonly)
 
-# MERGE FILTER/GROUP DATA INTO MAIN DATA
-uu <- uu[uu$Gender=='Total',]
+# CREATE TOTALS PER GROUP AND SHARES, AND SELECT YEAR
 
-# CREATE TOTALS PER GROUP
-totals <- uu[uu$Civil.Service.grad=='Total',]
-uu <- uu[uu$Civil.Service.grad!='Total',]
-uu <- ddply(uu, .(Group, Gender, Date, Civil.Service.grad),
-               summarise, count=sum(count, na.rm=TRUE))
+uu <- filter(uu,Civil.Service.grad!='Total') %.%
+  group_by(Group, Date) %.%
+  mutate(total=sum(count,na.rm=TRUE)) %.%
+  ungroup() %.%
+  group_by(Group, Gender, Date, Civil.Service.grad) %.%
+  mutate(count=sum(count,na.rm=TRUE),
+         share=count/total) %.%
+  filter((Date=='2013' | Date=='2010') & Civil.Service.grad!='Not reported') %.%
+  mutate(grp=paste0(Group,Date))
 
 write.csv(uu,file='./data-output/ACSES_DeGeGr.csv')
-
-totals <- ddply(totals, .(Group, Date), summarise,
-                  total=sum(count, na.rm=TRUE))
-
-# MERGE TOTALS INTO MAIN FILE
-uu <- merge(uu, totals)
-uu$share <- uu$count/uu$total
-
-# SELECT YEAR
-uu <- uu[uu$Date=='2013' | uu$Date=='2010',]
-uu <- uu[uu$Civil.Service.grad!='Not reported',]
-uu$grp <- paste0(uu$Group, uu$Date) 
 
 uu <- RelabelGrades(uu)
 
