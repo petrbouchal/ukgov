@@ -14,7 +14,7 @@ fontfamily='Calibri'
 if(!batchproduce) { # don't override size & format variables if producing by batch
   ph=14-2.5
   pw=21
-  plotformat <- 'pdf'
+  plotformat <- 'png'
 }
 
 #font_import()

@@ -55,7 +55,7 @@ uu$minpop <- 0.14
 
 plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
   geom_segment(data=uu[uu$Civil.Service.grad=='SCS' & uu$Date=='2012',],
-               aes(x=-Inf,xend=Inf, y=minpop, yend=minpop,linetype='UK population (Census 2011)'),
+               aes(x='2010',xend='2012', y=minpop, yend=minpop,linetype='UK population (Census 2011)'),
                colour=IfGcols[1,1],show_guide=T,stat='identity', size=.5) +
   geom_bar(aes(fill=Civil.Service.grad,group=Civil.Service.grad),
            width=.6, stat='identity',position='dodge') +
@@ -68,11 +68,11 @@ plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
          linetype=guide_legend(order=3, keywidth=unit(1,'cm'))) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
   labs(x=xlabel,y=ylabel) +
-  theme(axis.line=element_line(colour=IfGcols[1,2]),
+  theme(axis.line=element_line(colour=IfGcols[1,2]),axis.line.y=element_blank(),
         text=element_text(family=fontfamily,size=10),plot.title=element_blank(),
         legend.position='bottom',plot.title=element_text(size=12),
         panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
-        panel.grid.major.x=element_blank(),axis.ticks=element_line(colour=IfGcols[1,2]),
+        panel.grid.major.x=element_blank(),axis.ticks=element_blank(),
         axis.ticks.x=element_blank())
 plot_GrMinYr
 

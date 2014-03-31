@@ -1,5 +1,6 @@
 library(stringr)
 library(plyr)
+library(dplyr)
 library(reshape)
 library(reshape2)
 require(ggplot2)
