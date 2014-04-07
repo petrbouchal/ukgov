@@ -2,7 +2,7 @@ source('./src/lib/lib_acses.R')
 
 # Load data ---------------------------------------------------------------
 
-filename <- 'ACSES_Gender_Dept_Ethn_Grade_Pay_data.tsv'
+filename <- 'ACSES_Gender_Dept_Disab_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
 
 # Process data ------------------------------------------------------------
@@ -14,12 +14,12 @@ uu <- uu[uu$Gender=='Total',]
 uu <- uu[uu$Organisation=='Total (All Departments)',]
 
 # MERGE FILTER/GROUP DATA INTO MAIN DATA
-uu <- uu[uu$Ethnic.grou!='Total',]
-uu <- uu[uu$Ethnic.grou!='Not reported / Not declared',]
+uu <- uu[uu$Disability.statu!='Total',]
+uu <- uu[uu$Disability.statu!='Not reported / Not declared',]
 
 # CREATE TOTALS PER GROUP
 #uu <- uu[uu$Civil.Service.grad!='Total',]
-uu <- ddply(uu, .(Ethnic.grou, Date, Civil.Service.grad),
+uu <- ddply(uu, .(Disability.statu, Date, Civil.Service.grad),
                summarise, count=sum(count, na.rm=TRUE))
 
 totals <- ddply(uu, .(Date, Civil.Service.grad), summarise,
@@ -34,48 +34,46 @@ uu <- RelabelGrades(uu)
 
 # Filter out unneeded things
 uu <- uu[uu$Civil.Service.grad=='SCS' | uu$Civil.Service.grad=='All grades',]
-uu <- uu[uu$Ethnic.grou!='White',]
+uu <- uu[uu$Disability.statu!='Non-disabled',]
 
 # Build plot --------------------------------------------------------------
 
-plotname <- 'plot_GrMinYr'
-plottitle <- 'Civil Servants identifying as ethnic minority'
-ylabel <- 'Ethnic minority as % of disclosed'
+plotname <- 'plot_DisabGrYr'
+plottitle <- ''
+ylabel <- 'Staff as % of disclosed'
+plottitle <- 'Civil Servants identifying as disabled'
+ylabel <- 'Disabled as % of disclosed'
 xlabel <- ''
-pw=6
+pw=12
 ph=9
 
 uu$yvar <- uu$share
-maxY <- max(abs(.16),na.rm=TRUE)
-ylimits <- c(0, .16)
-ybreaks <- c(0,0.05,.1,.15)
+maxY <- max(abs(uu$share),na.rm=TRUE)
+ylimits <- c(0, .1)
+ybreaks <- c(0,.025,.05,0.075,.1)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
-uu$minpop <- 0.14
-
-plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
-  geom_segment(data=uu[uu$Civil.Service.grad=='SCS' & uu$Date=='2012',],
-               aes(x='2010',xend='2012', y=minpop, yend=minpop,linetype='UK population (Census 2011)'),
-               colour=IfGcols[1,1],show_guide=T,stat='identity', size=.5) +
-  geom_line(aes(fill=Civil.Service.grad,group=Civil.Service.grad),size=1.5) +
-  geom_point(aes(fill=Civil.Service.grad,group=Civil.Service.grad),size=1.5) +
-  scale_fill_manual(values=c('All grades'=IfGcols[5,1],'SCS'=IfGcols[4,1]),
+plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
+  geom_line(aes(colour=Civil.Service.grad,group=Civil.Service.grad)) +
+  geom_point(aes(colour=Civil.Service.grad),size=4) +
+  scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
+                      labels=c('All grades','Senior Civil Service')) +
+  scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
                     labels=c('All grades','Senior Civil Service')) +
-  scale_linetype_manual(values=c('UK population (Census 2011)'='dashed')) +
-  scale_x_discrete(labels=yearlabels)+
   guides(colour=guide_legend(order=1),
-         fill=guide_legend(order=2, override.aes=list(colour=NA)),
-         linetype=guide_legend(order=3, keywidth=unit(1,'cm'))) +
+         fill=guide_legend(order=2,
+                             override.aes=list(size=1))) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
-  labs(x=xlabel,y=ylabel) +
+  scale_x_discrete(labels=yearlabels) +
+  labs(y=ylabel,x=NULL) +
   theme(axis.line=element_line(colour=IfGcols[1,2]),axis.line.y=element_blank(),
         text=element_text(family=fontfamily,size=10),plot.title=element_blank(),
         legend.position='bottom',plot.title=element_text(size=12),
         panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
         panel.grid.major.x=element_blank(),axis.ticks=element_blank(),
-        axis.ticks.x=element_blank())
-plot_GrMinYr
+        axis.ticks.x=element_blank(),legend.key.width=unit(1,'cm'))
+plot_DisabGrYr
 
 # Save plot ---------------------------------------------------------------
 
-SavePlot(ffamily=fontfamily,plotformat=plotformat,plotname=plotname,ploth=ph,plotw=pw)
+SavePlot(ffamily=fontfamily,plotformat=plotformat,ploth=ph,plotw=pw, plotname=plotname)

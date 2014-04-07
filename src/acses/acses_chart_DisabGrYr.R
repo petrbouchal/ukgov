@@ -54,11 +54,11 @@ ybreaks <- c(0,.025,.05,0.075,.1)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
 plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
-  geom_bar(aes(fill=Civil.Service.grad),
-           width=.6, stat='identity',position='dodge') +
+  geom_line(aes(colour=Civil.Service.grad)) +
+  geom_point(aes(colour=Civil.Service.grad),size=4) +
   scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
                       labels=c('All grades','Senior Civil Service')) +
-  scale_fill_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
+  scale_colour_manual(values=c('All grades'=IfGcols[2,1],'SCS'=IfGcols[3,1]),
                     labels=c('All grades','Senior Civil Service')) +
   guides(colour=guide_legend(order=1),
          fill=guide_legend(order=2,
