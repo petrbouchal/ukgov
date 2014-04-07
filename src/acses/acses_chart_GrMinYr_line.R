@@ -42,8 +42,8 @@ plotname <- 'plot_GrMinYr'
 plottitle <- 'Civil Servants identifying as ethnic minority'
 ylabel <- 'Ethnic minority as % of disclosed'
 xlabel <- ''
-pw=14
-ph=10
+pw=12
+ph=9
 
 uu$yvar <- uu$share
 maxY <- max(abs(.16),na.rm=TRUE)
@@ -73,7 +73,7 @@ plot_GrMinYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
         legend.position='bottom',plot.title=element_text(size=12),
         panel.grid=element_line(colour=IfGcols[1,3]),panel.grid.minor=element_blank(),
         panel.grid.major.x=element_blank(),axis.ticks=element_blank(),
-        axis.ticks.x=element_blank(),legend.key.width=unit(1.5,'cm'))
+        axis.ticks.x=element_blank(),legend.key.width=unit(1,'cm'))
 plot_GrMinYr
 
 # Save plot ---------------------------------------------------------------
