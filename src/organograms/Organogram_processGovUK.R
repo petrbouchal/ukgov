@@ -36,7 +36,7 @@ table(govuk$extension,is.na(govuk$date_year))
 
 # discover month
 govuk$month <- NA
-pattern = "([Jj]anuary)|([Ff)ebruary|([Mm]arch)|([Ss]eptember)|([Aa]pril)|([Jj]une)|([Nn]ovember)|([Mm]ay)|([Jj]uly)|([Oo]ctober)|([Dd]ecember)"
+pattern = "([Jj]anuary)|([Ff]ebruary|([Mm]arch)|([Ss]eptember)|([Aa]pril)|([Jj]une)|([Nn]ovember)|([Mm]ay)|([Jj]uly)|([Oo]ctober)|([Dd]ecember)"
 
 govuk$month <- str_extract(govuk$pubtitle, pattern)
 govuk$month[is.na(govuk$month)] <- str_extract(govuk$filetitle[is.na(govuk$month)],
