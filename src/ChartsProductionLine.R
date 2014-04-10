@@ -3,8 +3,8 @@ source('./src/lib/lib_acses.R')
 batchproduce <- TRUE
 
 plotformat <- 'png'
-ph <- 15.5
-pw <- 24
+ph <- 6
+pw <- 9
 WHswitch <- c(TRUE,FALSE)
 for(i in WHswitch) {
   whitehallonly <- i
@@ -16,10 +16,12 @@ for(i in WHswitch) {
 }
 # source('./src/wmi/WMI_chart.R')
 # source('./src/pse/PSE_Charts.R')
-
-source('./src/acses/acses_chart_AgeYr.R')
 # source('./src/acses/acses_chart_GeGrChange.R')
-source('./src/acses/acses_chart_DisabGrYr.R')
-source('./src/acses/acses_chart_GrMinYr.R')
+
+source('./src/acses/acses_chart_DisabGrYr_line.R')
+source('./src/acses/acses_chart_GrMinYr_line.R')
+ph <- 8
+pw <- 8
+source('./src/acses/acses_chart_AgeYr.R')
 
 batchproduce <- FALSE
