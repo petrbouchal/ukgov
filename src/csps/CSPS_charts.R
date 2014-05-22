@@ -2,7 +2,7 @@ library(pbtools)
 library(devtools)
 # install_github('pbtools','petrbouchal')
 
-csps <- read.csv('./data-output/CSPS_demographic_long.csv')
+csps <- fread('./data-output/CSPS_demographic_long.csv')
 
 csps2 <- csps[csps$eng_score_component & csps$dimension=='Time in current job',]
 plot <- ggplot(data=csps2,aes(x=split,y=value)) +
@@ -14,4 +14,4 @@ plot <- ggplot(data=csps2,aes(x=split,y=value)) +
   theme(panel.grid.major.y=element_blank(),
         panel.grid.major.x=element_line())
 plot
-  
+SavePlot
