@@ -6,10 +6,8 @@
 
 library(pbtools)
 library(RODBC)
-dbpath <- 'T:/Entity information.accdb'
-connectstring <- paste0("Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=",
-                        dbpath)
-conn  <- odbcDriverConnect(connectstring)
+
+conn <- connectAccess('T:/Entity information.accdb')
 
 # Run query - note queries saved inside the DB can be referred to as tables
 table <- sqlQuery(conn , paste ("select * from Sources"))
