@@ -4,9 +4,7 @@
 
 # adapted from: https://gist.github.com/jamestrimble/6442229
 
-library(reshape2)
-library(plyr)
-library(ggplot2)
+library(pbtools)
 
 # This is the time-consuming part. To get the maximum use out of your data,
 # create a CSV file listing CDIDs (variable codes) and some metadata.
@@ -31,11 +29,11 @@ uri <- paste(uri,
              paste(metadata$CDID, collapse='%2C'),
              sep='')
 
-data_string <- readLines(uri)
-data_string <- paste(data_string, collapse='\n')
-data_string <- sub('\n\n.*', '', data_string) # remove copyright notice and metadata
+ons_string <- readLines(uri)
+ons_string <- paste(ons_string, collapse='\n')
+ons_string <- sub('\n\n.*', '', ons_string) # remove copyright notice and metadata
 
-csv <- read.csv(text=data_string)
+csv <- read.csv(text=ons_string)
 names(csv)[1] <- 'time'
 
 # Just use the quarterly data
@@ -48,16 +46,22 @@ quarters <- as.numeric(substr(csv$time, 7, 7))
 csv$time <- years + (quarters-1)/4
 
 # Convert table to long for for use with ggplot2
-data_long <- melt(csv, id.vars='time', variable.name='CDID', value.name='value')
-data_long <- rename(data_long,c('variable'='CDID'))
-data_long <- join(data_long, metadata,by='CDID')
-data_long$value <- as.numeric(data_long$value)
+ons_long <- melt(csv, id.vars='time', variable.name='CDID', value.name='value')
+ons_long <- rename(ons_long,c('variable'='CDID'))
+ons_long <- join(ons_long, metadata,by='CDID')
+ons_long$value <- as.numeric(ons_long$value)
 
-# plot employment rate time series by country (colour) and sex (panel)
-plot_data <- data_long[!is.na(data_long$value), ]
-ggplot(plot_data, aes(x=time, y=value, colour=series.name, group=series.name)) +
+# Create change variable if needed
+toplot <- ons_long %>% group_by(CDID, series.name) %>%
+  mutate(change=value/lag(value)-1)
+
+# Plot employment rate time series
+LoadCustomThemes(ifgbasecolours, 'Calibri')
+plot_data <- toplot[!is.na(ons_long$value), ]
+ggplot(plot_data, aes(x=time, y=change, colour=series.name, group=series.name)) +
 #   facet_grid(sex ~ .,scales='free_y') +
   geom_line(size=.8)
 
-write.csv(data_long,paste0('./data-output/ONS_downloaded_PSEtimeseries_',
+# save data
+write.csv(ons_long,paste0('./data-output/ONS_downloaded_PSEtimeseries_',
                            format(Sys.time(), format="%Y-%m-%d-%H%M%S"),'.csv'))
