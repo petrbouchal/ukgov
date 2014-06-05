@@ -19,3 +19,9 @@ This is roughly mirrored by the structure of the src folder of this repo, but of
 The repo includes a different set of tools for each of these sources. For some, it starts with scraping or downloading data from the web and ends with a polished chart; for some, it's only a reshaping or plotting tool to be used with data created externally.
 
 The code is of various degrees of completeness: some bits provide a complete product, some are mere proofs of concept, and some were only used for data exploration or purely experimental.
+
+# To do
+* Figure out where it makes sense to replace read.table with fread
+* Figure out where it makes sense to replace merge with join
+* Rewrite data reshapes with dplyr
+* Simplify library script to deduplicate with what's in pbtools
