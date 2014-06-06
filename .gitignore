@@ -1,6 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
+.rda
 *.tsv
 .tsv
 .xlsx
