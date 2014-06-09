@@ -1,10 +1,15 @@
 source('./src/lib/lib_acses.R')
-
+library(pbtools)
+library(xlsx)
 # ideally load CSV here as raw text and edit before loading as data
 # to minimise need for manual adjustment in Excel 
 
 # load data
-change <- read.csv("./data-input/ChangeDeptsFTE_2013Q4.csv",comment.char='#')
+# change <- read.csv("./data-input/ChangeDeptsFTE_2013Q4.csv",comment.char='#')
+onspath <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Public Sector Employment/Analysis/'
+onsfilename <- 'ONS PSE Analysis v0.87.xlsx'
+onsfilepath <- paste0(onspath,onsfilename)
+change <- read.xlsx(onsfilepath,sheetName = 'Calculations',comment.char='#',startRow = 3)
 names(change)
 
 # clean up names
