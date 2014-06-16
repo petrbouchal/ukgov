@@ -67,6 +67,7 @@ grr2$alphaval <- .5
 grr2$alphaval[grr2$countr=='Czech Republic'] <- 1
 grr2$fontface <- 'plain'
 grr2$fontface[grr2$country %in% countries2] <- 'bold'
+
 # Chart
 
 loadcustomthemes(ifgcolours,'Calibri')
@@ -98,3 +99,4 @@ for(var in variables_index) {
 
 for(i in grrplots) {i}
 grrplots
+
