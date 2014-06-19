@@ -24,5 +24,5 @@ The code is of various degrees of completeness: some bits provide a complete pro
 * Figure out where it makes sense to replace read.table with fread
 * Figure out where it makes sense to replace merge with join (and how)
 * Rewrite data reshapes and calculations with dplyr
-* rewrite data manipulations using data.table
+* Rewrite data manipulations using data.table
 * Simplify library script to deduplicate with what's in pbtools
