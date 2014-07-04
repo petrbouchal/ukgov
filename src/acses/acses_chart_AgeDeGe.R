@@ -1,4 +1,5 @@
 source('./src/lib/lib_acses.R')
+library(pbtools)
 if (!batchproduce) {
   whitehallonly <- FALSE # uncomment line to override global WH-only set in lib
 }
@@ -9,38 +10,30 @@ filename <- 'ACSES_Gender_Dept_Age_Grade_data.tsv'
 origdata <- LoadAcsesData(filename,location)
 
 # Process data ------------------------------------------------------------
-uu <- origdata
+uu <- data.table(origdata)
 
 # LOAD DATA WITH GROUPINGS AND FILTER - MADE IN EXCEL
 uu <- AddOrgData(uu,whitehallonly)
 
-# FILTER OUT UNWANTED LINES
-uu <- uu[uu$Gender!='Total',]
-uu <- uu[uu$Civil.Service.grad=='Total',]
-uu <- uu[uu$Wage.band=='Total',]
+# PROCESS DATA
+uu <- filter(uu, Gender!='Total' & Civil.Service.grad=='Total' & Wage.band=='Total') %>%
+  select(Age.band,Group,Gender,count,Whitehall,Managed,Include,Date) %>%
+  filter(Age.band!='Total') %>%
+  group_by(Group, Date) %>%
+  mutate(total=sum(count, na.rm=TRUE)) %>%
+  ungroup() %>%
+  group_by(Group,Date, Age.band, Gender) %>%
+  summarise(count=sum(count,na.rm=TRUE), total=mean(total,na.rm=TRUE)) %>%
+  filter(Age.band!='Unknown age')
 
 uu <- RelabelAgebands(uu)
 
-# CREATE TOTALS PER GROUP
-uu <- ddply(uu, .(Group, Date, Age.band, Gender),
-               summarise, count=sum(count, na.rm=TRUE))
-
-totals <- uu[uu$Age.band=='Total',]
-# Filter out unneeded things
-uu <- uu[uu$Age.band!='Total',]
-totals <- ddply(totals, .(Group,Date), summarise,
-                total=sum(count))
-uu <- uu[uu$Age.band!='Unknown age',]
-
-# MERGE TOTALS INTO MAIN FILE
-uu <- merge(uu, totals)
-
 # CREATE WHITEHALL TOTAL IF NEEDED
 if(whitehallonly) {
-  uu <- uu[uu$Group!='Whole Civil Service',]
-  whtotal <- ddply(uu,.(Date,Age.band,Gender),summarise,
-                   count=sum(count),total=sum(total))
-  whtotal$Group <- 'Whitehall'
+  whtotal <- group_by(uu,Date,Age.band,Gender) %>%
+    filter(Group!='Whole Civil Service') %>%
+    summarise(count=sum(count),total=sum(total)) %>%
+    mutate(Group = 'Whitehall')
   uu <- rbind(uu,whtotal)
 }
 
@@ -48,16 +41,16 @@ if(whitehallonly) {
 uu$share <- uu$count/uu$total
 
 # Select years
-uu <- uu[uu$Date=='2013',]
+uu <- uu[Date=='2013']
 
 # Sort departments --------------------------------------------------------
+uu$Age.band <- as.factor(uu$Age.band)
 gradevalues <- data.frame('gradeval'=c(1:length(levels(as.factor(uu$Age.band)))),
                           'Age.band'=levels(as.factor(uu$Age.band)))
-uu <- merge(uu,gradevalues)
+uu <- merge(uu,gradevalues,by='Age.band')
 xtot <- ddply(uu,.(Group, Date, Age.band),
               summarise,sharebothgenders=sum(share, na.rm=TRUE))
 uu <- merge(uu,xtot)
-uu <- merge(uu,gradevalues)
 uu$gradescore <- uu$gradeval*uu$sharebothgenders
 xtot <- ddply(uu,.(Group,Date),summarise,meangradescore=mean(gradescore))
 uu <- merge(uu,xtot)
@@ -66,10 +59,10 @@ uu$sorter <- uu$meangradescore
 uu$Group <- reorder(uu$Group,uu$sorter,mean)
 
 # Make female share negative
-uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
+uu[Gender=='Female', share] <- uu[Gender=='Female',share]
 
 # Mark totals category
-uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service' | uu$Group=='Whitehall',
+uu[,totalgroup] <- ifelse(uu[Group=='Whole Civil Service'] | uu[Group=='Whitehall'],
                         TRUE,FALSE)
 
 # Build plot --------------------------------------------------------------

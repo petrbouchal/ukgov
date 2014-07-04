@@ -1,7 +1,7 @@
 # Setup -------------------------------------------------------------------
 source('./src/lib/lib_acses.R')
 library(pbtools)
-# source('./src/pse/PSE_Reshape.R') # to prepare data if needed
+source('./src/pse/PSE_Reshape.R') # to prepare data if needed
 uu <- change
 
 # Plain chart in ggplot2 --------------------------------------------------
