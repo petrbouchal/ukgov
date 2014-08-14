@@ -32,7 +32,7 @@ os$NA_AGGREGATE_LONG_NAME <- NULL
 # save(os, file='./data-output/oscar_all.Rda')
 # load('./data-output/oscar_all.Rda')
 
-# Drop everything except final period
+# Drop everything except final return
 os1 <- os[os$VERSION_CODE=='R13',]
 # rm(os)
 
@@ -42,7 +42,10 @@ groupinglist <- names(os1)[!(names(os1) %in% notgroup)]
 
 vars2 <- lapply(groupinglist, as.symbol)
 
-os2 <- os1 %>% regroup(vars2) %>% summarise(AMOUNT=sum(AMOUNT))
+os2 <- os1 %>%
+  filter(MONTH_SHORT_NAME != 'Period 0 - 12-13') %>%
+  regroup(vars2) %>%
+  summarise(AMOUNT=sum(AMOUNT))
 
 # Save data as CSV
 write.csv(os1,
