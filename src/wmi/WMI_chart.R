@@ -44,7 +44,7 @@ plot_WMI <- ggplot(uu,aes(x=Month,y=yvar)) +
   scale_colour_manual(values=c(IfGcols[3,1],IfGcols[2,1]),
                       labels=c('Payroll staff (FTE)','Pay bill (payroll only)')) +
   scale_y_continuous(labels=percent,limits=ylimits,breaks=c(-.3,-.15,0,.15,.3)) +
-  facet_wrap(~Dept,nrow=3,scales='fixed') +
+  facet_wrap(~Dept,nrow=5,scales='fixed') +
   guides(colour=guide_legend(keywidth=unit(1,'cm'))) +
   labs(x=xlabel,y=ylabel) +
   theme(panel.border=element_rect(fill=NA,colour=IfGcols[1,2]),
