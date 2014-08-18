@@ -7,60 +7,38 @@ origdata <- LoadAcsesData(file_name=filename,location=location)
 whitehallonly <- TRUE
 
 # Process data ------------------------------------------------------------
-uu <- origdata
-
-# FILTER OUT WAGE BAND LINES
-uu <- uu[uu$Wage.band=='Total',]
-uu <- AddOrgData(uu,whitehallonly)
-
-# MERGE FILTER/GROUP DATA INTO MAIN DATA
-uu <- uu[uu$Include=='Yes',]
-uu <- uu[uu$Gender!='Total',]
-
-# CREATE TOTALS PER GROUP
-totals <- uu[uu$Civil.Service.grad=='Total',]
-uu <- uu[uu$Civil.Service.grad!='Total',]
-uu <- ddply(uu, .(Group, Gender, Date, Civil.Service.grad),
-               summarise, count=sum(count, na.rm=TRUE))
-
+uu <- origdata %>%
+  filter(Wage.band=='Total' & Gender!='Total' & Wage.band=='Total') %>%
+  AddOrgData(whitehallonly) %>%
+  filter(Include=='Yes') %>%
+  select(Group, Whitehall, Gender, Civil.Service.grad, Date, count, Organisation) %>%
+  group_by(Group, Whitehall, Gender, Date, Civil.Service.grad) %>%
+  summarise(count=sum(count, na.rm=T)) %>%
+  group_by(Group, Whitehall, Date) %>%
+  mutate(total=sum(count[Civil.Service.grad=='Total'])) %>%
+  filter(Civil.Service.grad!='Total' & Civil.Service.grad!='Not reported') %>%
+  mutate(share=count/total, grp = paste0(Group, Gender)) %>%
+  RelabelGrades()
+  
 write.csv(uu,file='./data-output/ACSES_DeGeGr.csv')
-
-totals <- ddply(totals, .(Group, Date), summarise,
-                  total=sum(count, na.rm=TRUE))
-
-# MERGE TOTALS INTO MAIN FILE
-uu <- merge(uu, totals)
-uu$share <- uu$count/uu$total
-
-# SELECT YEAR
-uu <- uu[uu$Date=='2013',]
-uu <- uu[uu$Civil.Service.grad!='Not reported',]
-uu$grp <- paste0(uu$Group, uu$Gender) 
-
-uu <- RelabelGrades(uu)
 
 # Sort departments --------------------------------------------------------
 gradevalues <- data.frame('gradeval'=c(1:length(levels(uu$Civil.Service.grad))),
                           'Civil.Service.grad'=levels(uu$Civil.Service.grad))
-uu <- merge(uu,gradevalues)
-xtot <- ddply(uu,.(Group, Date, Civil.Service.grad),
-              summarise,sharebothgenders=sum(share, na.rm=TRUE))
-uu <- merge(uu,xtot)
-uu <- merge(uu,gradevalues)
-uu$gradescore <- uu$gradeval*uu$sharebothgenders
-xtot <- ddply(uu,.(Group,Date),summarise,meangradescore=mean(gradescore))
-uu <- merge(uu,xtot)
-uu$sorter <- uu$meangradescore
-#make Whole CS category go last
-#uu$sorter[uu$Group=='Whole Civil Service'] <- max(uu$sorter)*1.1
-#reorder grouping variable
-uu$Group <- reorder(uu$Group,-uu$sorter,mean)
+uu <- merge(uu,gradevalues) %>%
+  group_by(Group, Date, Civil.Service.grad) %>%
+  mutate(sharebothgenders=sum(share, na.rm=TRUE)) %>%
+  merge(gradevalues) %>%
+  mutate(gradescore = gradeval*sharebothgenders) %>%
+  group_by(Group,Date) %>%
+  mutate(meangradescore=mean(gradescore), sorter=meangradescore) %>%
+  ungroup() %>%
+  filter(Date=='2013') %>%
+  mutate(Group=reorder(Group,-sorter,mean)) %>%
+  mutate(share = ifelse(Gender=='Female', -share, share),
+         count = ifelse(Gender=='Female', -count, count),
+         totalgroup = ifelse(Group=='Whole Civil Service', TRUE, FALSE))
 
-# Make female share negative
-uu$share[uu$Gender=='Female'] <- -uu$share[uu$Gender=='Female']
-uu$count[uu$Gender=='Female'] <- -uu$count[uu$Gender=='Female']
-
-uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
 
 # Build plot --------------------------------------------------------------
 
@@ -103,9 +81,10 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
   facet_wrap(~Group, nrow=3) +
   labs(y=ylabel) +
-  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2]),
-        axis.ticks=element_line(colour=IfGcols[1,2]),axis.ticks.y=element_blank(),
-        plot.title=element_blank(),axis.title.y=element_blank())
+  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,3]),
+        plot.title=element_blank(),axis.title.y=element_blank(),
+        panel.grid.major.x=element_line(), axis.ticks=element_blank(),
+        panel.grid.major.y=element_blank())
 plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------
