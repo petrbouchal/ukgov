@@ -1,4 +1,7 @@
 source('./src/lib/lib_acses.R')
+library(pbtools)
+library(plyr)
+
 if(!batchproduce){ # avoid overriding when batch charting
   whitehallonly <- TRUE # use this to override global set in lib
 }
@@ -66,8 +69,7 @@ uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service' | uu$Group=='Whitehall',
 if(whitehallonly) {
   uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
 }
-HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[4,3])
-HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[4,1])
+HLcol <- ifelse(whitehallonly,ifgcolours[4,1],ifgcolours[3,1])
 
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
@@ -92,27 +94,30 @@ ylimits <- c(0, maxY*1.04)
 ybreaks <- c(0,0.25,0.5,0.75)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
+loadcustomthemes(ifgcolours, 'Calibri')
 plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
   geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
-            fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = 1) +
+            fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = .01) +
   geom_line(size=1, aes(colour=Civil.Service.grad),stat='identity') +
   geom_point(aes(colour=Civil.Service.grad),pch=16,show_guide=TRUE) +
   geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
-            colour=HLmarg,fill=NA,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,size = 1) +
-  scale_colour_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
+            colour=HLcol,fill=NA,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,
+            size = 1, alpha=1) +
+  scale_colour_manual(values=c('All grades' = ifgcolours[2,1],'SCS'=ifgcolours[3,1]),
                       labels=c('All grades','Senior Civil Service')) +
-  scale_fill_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
+  scale_fill_manual(values=c('All grades' = ifgcolours[2,1],'SCS'=ifgcolours[3,1]),
                       labels=c('All grades','Senior Civil Service')) +
   guides(colour = guide_legend(ncol = 2)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
   facet_wrap(~Group, nrow=3) +
   labs(title=plottitle, y=ylabel,x=xlabel) +
-  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2]),
+  theme(panel.border=element_rect(fill=NA,color=ifgcolours[1,2]),
         axis.text.x=element_text(angle=90,vjust=0.5),
-        panel.grid.major.y=element_line(colour=IfGcols[1,3]),
-        legend.key.width=unit(0.5,'cm'), axis.title.y=element_text(size=9))
+        panel.grid.major.y=element_line(colour=ifgcolours[1,3]),
+        legend.key.width=unit(0.5,'cm'), axis.title.y=element_text(size=9, angle=90))
 plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------
 
-SavePlot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily)
+saveplot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily,
+         plotdir='./charts-output/')
