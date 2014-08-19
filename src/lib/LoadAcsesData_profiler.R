@@ -2,7 +2,7 @@
 
 library(pbtools)
 
-LoadAcsesDataFast <- function (file_name, location='home') {
+LoadAcsesDataFread <- function (file_name, location='home') {
   if(location=='home') {
     directory  <- '/Users/petrbouchal/Downloads/ACSES/'
   } else if(location=='ifg') {
@@ -24,7 +24,7 @@ LoadAcsesDataFast <- function (file_name, location='home') {
   return(dataset)
 }
 
-LoadAcsesDataSlow <- function (file_name, location='home') {
+LoadAcsesDataTable <- function (file_name, location='home') {
   if(location=='home') {
     directory  <- '/Users/petrbouchal/Downloads/ACSES/'
   } else if(location=='ifg') {
@@ -46,7 +46,7 @@ LoadAcsesDataSlow <- function (file_name, location='home') {
   return(dataset)
 }
 
-filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
+filename <- 'ACSES_Gender_Dept_Ethn_Grade_Pay_data.tsv'
 
-# system.time(testdata <- LoadAcsesDataFast(file_name=filename,location=location))
-# system.time(testdata <- LoadAcsesDataSlow(file_name=filename,location=location))
+system.time(testdata <- LoadAcsesDataFread(file_name=filename,location=location))
+system.time(testdata <- LoadAcsesDataTable(file_name=filename,location=location))
