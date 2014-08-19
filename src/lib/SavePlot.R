@@ -1,5 +1,5 @@
 SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
-                      splot=last_plot() ,ploth=210/2, plotw=14) {
+                      splot=last_plot() ,ploth=21/2, plotw=14) {
   try(dev.off(),silent=TRUE)
   plotobjdir <- './charts-output/2013/charts-objects/'
   plotimagedir <- './charts-output/2013/charts-images/'
@@ -9,7 +9,7 @@ SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
   plotdatapath = paste0(plotdatadir,plotname,'.','ggp')
   if(plotformat=='pdf') {
     ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_pdf,
-           height=ph, width=pw, units='cm')  
+           height=ploth, width=plotw, units='cm')  
   } else if(plotformat=='eps') {
     ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_ps,
            height=ph, width=pw, units='cm')
