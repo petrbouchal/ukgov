@@ -12,8 +12,8 @@ if(!batchproduce) {whitehallonly <- TRUE} # change here to produce WH or group c
 # Set parameters for saved chart ------------------------------------------
 fontfamily='Calibri'
 if(!batchproduce) { # don't override size & format variables if producing by batch
-  ph=14-2.5
-  pw=21
+  ph=16
+  pw=16
   plotformat <- 'png'
 }
 
@@ -24,12 +24,6 @@ if(location=='ifg') {
   loadfonts(device='win',quiet=TRUE)
 }
 
-# source('./src/lib/GetColorTable.R')
-# source('./src/lib/TintShade.R')
-# source('./src/lib/SavePlot.R')
-# source('./src/lib/SortGroups.R')
-# source('./src/lib/rgb2col.R')
-
 source('./src/lib/AddOrgData.R')
 source('./src/lib/LoadAcsesData.R')
 source('./src/lib/RelabelAgebands.R')
@@ -37,3 +31,9 @@ source('./src/lib/RelabelPaybands.R')
 source('./src/lib/RelabelGrades.R')
 
 yearlabels <- c('2008','2009','2010\nSR10 baseline','2011','2012','2013')
+
+# source('./src/lib/GetColorTable.R')
+# source('./src/lib/TintShade.R')
+# source('./src/lib/SavePlot.R')
+# source('./src/lib/SortGroups.R')
+# source('./src/lib/rgb2col.R')
