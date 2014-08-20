@@ -1,6 +1,6 @@
 library(plyr)
-source('./src/lib/lib_acses.R')
 library(pbtools)
+source('./src/lib/lib_acses.R')
 
 if(!batchproduce){ # avoid overriding when batch charting
   whitehallonly <- FALSE # use this to override global set in lib
@@ -87,14 +87,14 @@ plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
   scale_x_discrete(labels=xlabels) +
   facet_wrap(~Group, nrow=4) +
-  labs(title=plottitle, y=ylabel,x=xlabel) +
+  labs(title=NULL, y=ylabel,x=xlabel) +
   theme(panel.border=element_rect(fill=NA,color=ifgcolours[1,4]),
-        axis.text.x=element_text(angle=0,vjust=0.5),
+        axis.text.x=element_text(angle=0,vjust=0.5, size=8),
         panel.grid.major.y=element_line(colour=ifgcolours[1,3]),
         legend.key.width=unit(0.5,'cm'), axis.title.y=element_text(size=9, angle=90))
 plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------
 
-saveplot(plotname=plotname,plotformat='eps',ploth=ph,plotw=pw,ffamily=fontfamily,
-         plotdir='./charts-output/')
+saveplot(plotname=plotname,plotformat='png',ploth=ph,plotw=pw,ffamily=fontfamily,
+         plotdir='./charts-output/',dpi=300)

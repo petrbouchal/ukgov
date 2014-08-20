@@ -6,7 +6,7 @@ source('./src/lib/lib_acses.R')
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(file_name=filename,location=location)
-whitehallonly <- TRUE
+whitehallonly <- FALSE
 
 # Process data ------------------------------------------------------------
 uu <- origdata %>%
@@ -16,12 +16,12 @@ uu <- origdata %>%
   AddOrgData(whitehallonly) %>%
   filter(Include=='Yes') %>%
   # Drop unneeded vars
-  select(Group, Whitehall, Gender, Civil.Service.grad, Date, count, Organisation) %>%
+  select(Group, Gender, Civil.Service.grad, Date, count, Organisation) %>%
   # Summarise by departmental group
-  group_by(Group, Whitehall, Gender, Date, Civil.Service.grad) %>%
+  group_by(Group, Gender, Date, Civil.Service.grad) %>%
   summarise(count=sum(count, na.rm=T)) %>%
   # Create total variable - dept group total on each row
-  group_by(Group, Whitehall, Date) %>%
+  group_by(Group, Date) %>%
   mutate(total=sum(count[Civil.Service.grad=='Total'])) %>%
   # Exclude unneeded grades
   filter(Civil.Service.grad!='Total' & Civil.Service.grad!='Not reported') %>%
@@ -85,19 +85,19 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share)) +
             ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
   geom_bar(position='identity', width=1, aes(fill=Gender),stat='identity') +
   coord_flip() +
-  facet_wrap(~Group, nrow=3) +
+  facet_wrap(~Group, nrow=4) +
   scale_fill_manual(values=c(ifgcolours[c(2,5),1]),
                     labels=c('Female   ', 'Male')) +
   guides(fill=guide_legend(ncol=3)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
-  labs(y=ylabel) +
-  theme(panel.border=element_rect(fill=NA,color=ifgcolours[1,3]),
+  labs(y=NULL) +
+  theme(panel.border=element_rect(fill=NA,color=ifgcolours[1,4]),
         plot.title=element_blank(),axis.title.y=element_blank(),
-        panel.grid.major.x=element_line(), axis.ticks=element_blank(),
+        panel.grid.major.x=element_line(color=ifgcolours[1,4]), axis.ticks=element_blank(),
         panel.grid.major.y=element_blank())
 plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------
 
-saveplot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,ffamily=fontfamily,
-         plotdir='./charts-output/')
+saveplot(plotname=plotname,plotformat=plotformat,ploth=pw,plotw=pw,ffamily=fontfamily,
+         plotdir='./charts-output/', dpi=300)
