@@ -4,7 +4,9 @@ source('./src/lib/lib_acses.R')
 
 path  <- '/Users/petrbouchal/Downloads/ACSES/'
 #path  <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Civil Service Statistics/Nomis ACSES/'
+
 filename <- 'ACSES_Gender_Dept_Ethn_Grade_Pay_data.tsv'
+
 fullpath <- paste0(path, filename)
 acses <- read.delim(fullpath, sep='\t')
 acses$value[acses$value=='#'] <- NA
@@ -23,8 +25,6 @@ ac_ch <- ac_ch[ac_ch$Gender=='Total',]
 # RENAME Org variable
 ac_ch$Organisation <- ac_ch$new1
 ac_ch$new1 <- NULL
-
-# MERGE FILTER/GROUP DATA INTO MAIN DATA
 ac_ch <- ac_ch[ac_ch$Ethnic.grou!='Total',]
 ac_ch <- ac_ch[ac_ch$Ethnic.grou!='Not reported / Not declared',]
 ac_ch$count <- as.numeric(as.character(ac_ch$value))
@@ -45,7 +45,7 @@ ac_ch <- merge(ac_ch, totals)
 ac_ch$share <- ac_ch$count/ac_ch$total
 
 # SELECT YEAR
-ac_ch <- ac_ch[ac_ch$Date=='2012' | ac_ch$Date=='2010',]
+ac_ch <- ac_ch[ac_ch$Date=='2013' | ac_ch$Date=='2010',]
 
 # Reshape for calculation
 ac_ch <- melt(ac_ch, id.vars=c('Group','Date','Ethnic.grou','Civil.Service.grad'))

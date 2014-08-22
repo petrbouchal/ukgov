@@ -77,17 +77,17 @@ wmipc$changepayrollcost[wmipc$short.form=='HMT' & (wmipc$month=='2014-04-01')] <
 wmipc$changepayrollcost[wmipc$short.form=='MOD' & (wmipc$month=='2014-04-01')] <- NA
 wmipc <- wmipc %>% arrange(short.form, month)
 
-# create long format with only change variables - for ggplot
+# create long format with only change variables - for ggplot ------------
 wmip <- wmipa %>%
   select(short.form, month, changefte, changepayroll,
          calyr, calquarter, calyrquarter, fy) %>%
   melt(id.vars = c('short.form', 'month', 'calyr',
                    'calquarter','calyrquarter', 'fy'))
 
-# plots
+# plots -----------------------------------------------------------------------
 loadcustomthemes(mycols = ifgbasecolours, 'Calibri')
 
-# lines: change staff and change paybill by department
+# lines: change staff and change paybill by department--------------------------
 ggplot(wmip, aes(month, value, colour=variable)) +
   geom_hline(y=0, colour=ifgbasecolours[1]) +
   geom_line(size=1) +
@@ -98,7 +98,7 @@ ggplot(wmip, aes(month, value, colour=variable)) +
   scale_x_date(labels=date_format("%b %Y")) +
   guides(colour=guide_legend(keywidth=unit(1,'cm')))
 
-# scatter: changes by department
+# scatter: changes by department-------------------------------------
 ggplot(wmipa, aes(changefte, changepayroll)) +
   geom_point(size=1, colour=ifgcolours[3]) +
   facet_wrap(~short.form) +
@@ -107,7 +107,7 @@ ggplot(wmipa, aes(changefte, changepayroll)) +
   scale_x_continuous(limits=c(-.4,.4), labels = percent) +
   theme(panel.grid.major.x=element_line()) + coord_fixed()
 
-# scatter: changes by financial year, comparing 2013 and 2014
+# scatter: changes by financial year, comparing 2013 and 2014-----------------
 ggplot(wmipa[(wmipa$fy=='2012-13' | wmipa$fy=='2013-14') & wmipa$month!='2012-03-01',],
        aes(changefte, changepayroll, fill=fy, colour=fy)) +
   geom_point(size=3, shape=16, size=3, alpha=.6) +
@@ -120,9 +120,16 @@ ggplot(wmipa[(wmipa$fy=='2012-13' | wmipa$fy=='2013-14') & wmipa$month!='2012-03
   facet_wrap(~fy) + coord_fixed()
 
 # line: departmental breakdown of non-payroll staff numbers
-ggplot(wmipb, aes(month, value, colour=variable)) +
+wmipb_change <- wmipb %>%
+  group_by(short.form, variable) %>%
+  arrange(variable, short.form, month) %>%
+  mutate(change = (value-first(value))/first(value)) %>%
+  mutate(label=value[value==max(value)][1])
+  
+
+ggplot(wmipb_change, aes(month, change, colour=variable)) +
   geom_line(size=1) + 
-  facet_wrap(~short.form) + 
+  facet_wrap(~short.form, scales='free_y') + 
   scale_colour_manual(values=ifgbasecolours,
                       labels=c('Agency / clerical',
                                'Interim managers',
@@ -130,13 +137,29 @@ ggplot(wmipb, aes(month, value, colour=variable)) +
                                'Consultants / consultancy staff'))
 # saveplot('Plot',plotformat = 'pdf',ploth = 10, plotw = 12)
 
-# line: cost changes by department, payroll and non-payroll
+# area: departmental breakdown of non-payroll staff numbers -----------------
+ggplot(wmipb, aes(month, value, fill=variable)) +
+  geom_area(position='stack') + 
+  facet_wrap(~short.form) + 
+  scale_fill_manual(values=ifgbasecolours,
+                      labels=c('Agency / clerical',
+                               'Interim managers',
+                               'Specialist contractors',
+                               'Consultants / consultancy staff')) + 
+  scale_x_date(labels=date_format('%b %y'), breaks="6 months", 
+               limits = as.Date(c('2012-04-01','2013-12-01'))) +
+  scale_y_continuous(limits=c(0,3000))
+
+saveplot('Tempsbydept',plotformat = 'png',ploth = 16, plotw = 16,
+         plotdir = './charts-output/', dpi=300)
+
+# line: cost changes by department, payroll and non-payroll --------------
 ggplot(wmipc, aes(month, value, colour=variable)) +
   geom_line(size=1.1) + scale_colour_manual(values=ifgbasecolours[3:4],
                                             labels=c('Payroll (FTE)', 'Non-payroll (FTE)')) +
   facet_wrap(~short.form, scales='free_y')
 
-# correlations for all departments
+# correlations for all departments ----------------------------------------
 corrs <- wmipa[wmipa$month!='2012-03-01',] %>% 
   group_by(short.form) %>%
   summarise(corrcol = cor(payroll, fte, use='complete.obs'))

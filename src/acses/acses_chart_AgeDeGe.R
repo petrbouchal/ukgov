@@ -14,7 +14,7 @@ origdata <- LoadAcsesData(filename,location)
 uu <- origdata %>%
   filter(Gender!='Total' & Civil.Service.grad=='Total' & Wage.band=='Total') %>%
   AddOrgData(whitehallonly) %>%
-  select(Age.band,Group,Gender,count,Whitehall,Managed,Include,Date) %>%
+  select(Age.band,Group,Gender,count,Date) %>%
   filter(Age.band!='Total') %>%
   group_by(Group, Date) %>%
   mutate(total=sum(count, na.rm=TRUE)) %>%
@@ -22,8 +22,7 @@ uu <- origdata %>%
   RelabelAgebands() %>%
   group_by(Group,Date, Age.band, Gender) %>%
   summarise(count=sum(count,na.rm=TRUE), total=mean(total,na.rm=TRUE)) %>%
-#   filter(Age.band!='Unknown age' & Date=='2013') %>%
-  filter(Age.band!='Unknown age') %>%
+  filter(Age.band!='Unknown age' & Date=='2013') %>%
   mutate(share=count/total) %>%
   ungroup() %>%
   mutate(Age.band = factor(Age.band))
@@ -33,7 +32,7 @@ if(whitehallonly) {
   whtotal <- uu %>% 
     group_by(Date,Age.band,Gender) %>%
     filter(Group!='Whole Civil Service') %>%
-    summarise(count=sum(count),total=sum(total), share=count/total) %>%
+    summarise(count=sum(count), total=sum(total), share=count/total) %>%
     mutate(Group = 'Whitehall')
   uu <- rbind(uu[uu$Group!='Whole Civil Service',],whtotal)
 }
