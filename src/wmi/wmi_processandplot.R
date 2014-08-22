@@ -119,17 +119,20 @@ ggplot(wmipa[(wmipa$fy=='2012-13' | wmipa$fy=='2013-14') & wmipa$month!='2012-03
   theme(panel.grid.major.x=element_line()) +
   facet_wrap(~fy) + coord_fixed()
 
-# line: departmental breakdown of non-payroll staff numbers
+# line: departmental change in non-payroll staff numbers (percent)
 wmipb_change <- wmipb %>%
   group_by(short.form, variable) %>%
   arrange(variable, short.form, month) %>%
   mutate(change = (value-first(value))/first(value)) %>%
   mutate(label=value[value==max(value)][1])
-  
+
+wmipb_change$label[wmipb_change$label != wmipb_change$value] <- NA 
 
 ggplot(wmipb_change, aes(month, change, colour=variable)) +
   geom_line(size=1) + 
   facet_wrap(~short.form, scales='free_y') + 
+  geom_text(aes(label=round(label,digits = 0)), vjust=-.2) +
+  scale_y_continuous(expand=c(0,1.1), labels=percent) +
   scale_colour_manual(values=ifgbasecolours,
                       labels=c('Agency / clerical',
                                'Interim managers',
@@ -140,15 +143,14 @@ ggplot(wmipb_change, aes(month, change, colour=variable)) +
 # area: departmental breakdown of non-payroll staff numbers -----------------
 ggplot(wmipb, aes(month, value, fill=variable)) +
   geom_area(position='stack') + 
-  facet_wrap(~short.form) + 
+  facet_wrap(~short.form, scales='free_y') + 
   scale_fill_manual(values=ifgbasecolours,
                       labels=c('Agency / clerical',
                                'Interim managers',
                                'Specialist contractors',
                                'Consultants / consultancy staff')) + 
   scale_x_date(labels=date_format('%b %y'), breaks="6 months", 
-               limits = as.Date(c('2012-04-01','2013-12-01'))) +
-  scale_y_continuous(limits=c(0,3000))
+               limits = as.Date(c('2012-04-01','2013-12-01')))
 
 saveplot('Tempsbydept',plotformat = 'png',ploth = 16, plotw = 16,
          plotdir = './charts-output/', dpi=300)
