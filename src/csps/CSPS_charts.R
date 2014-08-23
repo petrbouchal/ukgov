@@ -1,6 +1,7 @@
-library(devtools)
-install_github('pbtools','petrbouchal')
+# library(devtools)
+# install_github('pbtools','petrbouchal')
 library(pbtools)
+library(ggvis)
 
 csps <- fread('./data-output/CSPS_demographic_long.csv')
 loadcustomthemes(ifgbasecolours,'Calibri')
@@ -16,16 +17,16 @@ plot <- ggplot(data=csps2,aes(x=split,y=value)) +
 plot
 
 library(ggvis)
-csps3 <- csps[csps$eng_score_component]
 
-csps3 %>%
-  ggvis(~split, ~value) %>%
-  group_by(measure) %>%
-  layer_histograms(binwidth=1)
+csps3 <- csps2[csps2$measure=='Employee engagement index',]
+csps3$split <- as.factor(csps3$split)
+csps3$variable <- as.factor(csps3$variable)
 
-library(ggvis)
-ggvis(data=diamonds[diamonds$cut==input_select('Premium','Ideal',),],
-        x = ~table, fill=~cut) %>%
-  group_by(cut) %>%
-  filter(cut=='Premium') %>%
-  layer_histograms(binwidth=1,fill=input_select(c('a','n')))
+csps2 %>%
+  filter(eng_score_component & measure=='Employee engagement index') %>%
+  ggvis(x = ~split, y = ~value) %>%
+  layer_lines()
+
+ggvis(data = csps3, x = ~split, y = ~value) %>%
+  layer_lines()
+

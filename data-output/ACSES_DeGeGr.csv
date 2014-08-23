@@ -1,446 +1,541 @@
-"","Organisation","Date","National.Identit","Gender","Full.Part.tim","Ethnic.grou","Disability.statu","Wage.band","Civil.Service.grad","Age.band","country","value.type","flag","count","Whitehall","Group","Managed","Include","total","share","grp"
-"1","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
-"2","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
-"3","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
-"4","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
-"5","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
-"6","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
-"7","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
-"8","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
-"9","Army Base Repair Organisation (MOD) (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
-"10","Army Base Repair Organisation (MOD) (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
-"11","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
-"12","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
-"13","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
-"14","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
-"15","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
-"16","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
-"17","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
-"18","Assets Recovery Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
-"19","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
-"20","Assets Recovery Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
-"21","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,220,"WH","BIS",NA,"Yes",3140,0.0700636942675159,"BIS2013"
-"22","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,470,"WH","BIS",NA,"Yes",3140,0.14968152866242,"BIS2013"
-"23","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,390,"WH","BIS",NA,"Yes",4020,0.0970149253731343,"BIS2010"
-"24","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1220,"WH","BIS",NA,"Yes",4020,0.303482587064677,"BIS2010"
-"25","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,630,"WH","BIS",NA,"Yes",4020,0.156716417910448,"BIS2010"
-"26","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1480,"WH","BIS",NA,"Yes",4020,0.368159203980099,"BIS2010"
-"27","Business, Innovations and Skills (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","BIS",NA,"Yes",4020,0.0646766169154229,"BIS2010"
-"28","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1180,"WH","BIS",NA,"Yes",3140,0.375796178343949,"BIS2013"
-"29","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,220,"WH","BIS",NA,"Yes",3140,0.0700636942675159,"BIS2013"
-"30","Business, Innovations and Skills (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1050,"WH","BIS",NA,"Yes",3140,0.334394904458599,"BIS2013"
-"31","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,180,"WH","CO",NA,"Yes",1270,0.141732283464567,"CO2010"
-"32","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,390,"WH","CO",NA,"Yes",1270,0.307086614173228,"CO2010"
-"33","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,180,"WH","CO",NA,"Yes",1850,0.0972972972972973,"CO2013"
-"34","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,240,"WH","CO",NA,"Yes",1270,0.188976377952756,"CO2010"
-"35","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,600,"WH","CO",NA,"Yes",1850,0.324324324324324,"CO2013"
-"36","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,160,"WH","CO",NA,"Yes",1850,0.0864864864864865,"CO2013"
-"37","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,640,"WH","CO",NA,"Yes",1850,0.345945945945946,"CO2013"
-"38","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,320,"WH","CO",NA,"Yes",1270,0.251968503937008,"CO2010"
-"39","Cabinet Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","CO",NA,"Yes",1850,0.145945945945946,"CO2013"
-"40","Cabinet Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","CO",NA,"Yes",1270,0.110236220472441,"CO2010"
-"41","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"42","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"43","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"44","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"45","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"46","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"47","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"48","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"49","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"50","Child Maintenance & Enforcement Commission (from 2009 to 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"51","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"52","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"53","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"54","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"55","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"56","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"57","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"58","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"59","Child Support Agency (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"60","Child Support Agency (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"61","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,240,"WH","DCLG",NA,"Yes",1740,0.137931034482759,"DCLG2013"
-"62","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1060,"WH","DCLG",NA,"Yes",2640,0.401515151515151,"DCLG2010"
-"63","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,440,"WH","DCLG",NA,"Yes",2640,0.166666666666667,"DCLG2010"
-"64","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,550,"WH","DCLG",NA,"Yes",1740,0.316091954022989,"DCLG2013"
-"65","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,700,"WH","DCLG",NA,"Yes",2640,0.265151515151515,"DCLG2010"
-"66","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,310,"WH","DCLG",NA,"Yes",2640,0.117424242424242,"DCLG2010"
-"67","Communities and Local Government, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,130,"WH","DCLG",NA,"Yes",2640,0.0492424242424242,"DCLG2010"
-"68","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,760,"WH","DCLG",NA,"Yes",1740,0.436781609195402,"DCLG2013"
-"69","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","DCLG",NA,"Yes",1740,0.0574712643678161,"DCLG2013"
-"70","Communities and Local Government, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,90,"WH","DCLG",NA,"Yes",1740,0.0517241379310345,"DCLG2013"
-"71","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
-"72","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
-"73","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
-"74","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
-"75","Criminal Records Bureau",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
-"76","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
-"77","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
-"78","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
-"79","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
-"80","Criminal Records Bureau (until 2012)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
-"81","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
-"82","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
-"83","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
-"84","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
-"85","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
-"86","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
-"87","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
-"88","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
-"89","DARA (MOD) : until 2008",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
-"90","DARA (MOD) : until 2008",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
-"91","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
-"92","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
-"93","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
-"94","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
-"95","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
-"96","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
-"97","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
-"98","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
-"99","Defence Science and Technology Laboratory (MOD)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
-"100","Defence Science and Technology Laboratory (MOD)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
-"101","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
-"102","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
-"103","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
-"104","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
-"105","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
-"106","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
-"107","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
-"108","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
-"109","Defence Support Group (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
-"110","Defence Support Group (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
-"111","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,170,"WH","DCMS",NA,"Yes",490,0.346938775510204,"DCMS2010"
-"112","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,30,"WH","DCMS",NA,"Yes",490,0.0612244897959184,"DCMS2010"
-"113","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,40,"WH","DCMS",NA,"Yes",400,0.1,"DCMS2013"
-"114","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","DCMS",NA,"Yes",400,0.35,"DCMS2013"
-"115","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","DCMS",NA,"Yes",490,0.204081632653061,"DCMS2010"
-"116","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","DCMS",NA,"Yes",490,0.285714285714286,"DCMS2010"
-"117","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,20,"WH","DCMS",NA,"Yes",400,0.05,"DCMS2013"
-"118","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,60,"WH","DCMS",NA,"Yes",400,0.15,"DCMS2013"
-"119","Department for Culture, Media & Sport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","DCMS",NA,"Yes",400,0.35,"DCMS2013"
-"120","Department for Culture, Media & Sport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,50,"WH","DCMS",NA,"Yes",490,0.102040816326531,"DCMS2010"
-"121","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"122","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"123","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"124","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"125","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"126","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"127","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"128","Department for Work and Pensions (excl agencies) (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"129","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"130","Department for Work and Pensions (excl agencies) (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"131","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"132","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"133","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"134","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"135","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"136","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"137","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"138","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"139","Disability and Carers Service (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"140","Disability and Carers Service (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"141","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"142","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"143","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"144","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"145","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"146","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"147","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"148","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"149","DWP Corporate and Shared Services (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"150","DWP Corporate and Shared Services (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"151","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"152","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"153","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"154","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"155","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"156","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"157","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"158","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"159","DWP Shared Services (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"160","DWP Shared Services (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"161","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,810,"WH","DfE",NA,"Yes",3110,0.260450160771704,"DfE2010"
-"162","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DfE",NA,"Yes",3110,0.090032154340836,"DfE2010"
-"163","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,410,"WH","DfE",NA,"Yes",6560,0.0625,"DfE2013"
-"164","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,2800,"WH","DfE",NA,"Yes",6560,0.426829268292683,"DfE2013"
-"165","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DfE",NA,"Yes",6560,0.0426829268292683,"DfE2013"
-"166","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,150,"WH","DfE",NA,"Yes",3110,0.0482315112540193,"DfE2010"
-"167","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1960,"WH","DfE",NA,"Yes",6560,0.298780487804878,"DfE2013"
-"168","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,550,"WH","DfE",NA,"Yes",3110,0.176848874598071,"DfE2010"
-"169","Education, Department for",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1320,"WH","DfE",NA,"Yes",3110,0.42443729903537,"DfE2010"
-"170","Education, Department for",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,1110,"WH","DfE",NA,"Yes",6560,0.169207317073171,"DfE2013"
-"171","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1960,"WH","DfE",NA,"Yes",6560,0.298780487804878,"DfE2013"
-"172","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DfE",NA,"Yes",6560,0.0426829268292683,"DfE2013"
-"173","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,1110,"WH","DfE",NA,"Yes",6560,0.169207317073171,"DfE2013"
-"174","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,410,"WH","DfE",NA,"Yes",6560,0.0625,"DfE2013"
-"175","Education, Department for (excluding agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,2800,"WH","DfE",NA,"Yes",6560,0.426829268292683,"DfE2013"
-"176","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,540,"WH","DECC",NA,"Yes",1460,0.36986301369863,"DECC2013"
-"177","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,80,"WH","DECC",NA,"Yes",1050,0.0761904761904762,"DECC2010"
-"178","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","DECC",NA,"Yes",1460,0.0958904109589041,"DECC2013"
-"179","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DECC",NA,"Yes",1050,0.380952380952381,"DECC2010"
-"180","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,80,"WH","DECC",NA,"Yes",1460,0.0547945205479452,"DECC2013"
-"181","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,390,"WH","DECC",NA,"Yes",1050,0.371428571428571,"DECC2010"
-"182","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,90,"WH","DECC",NA,"Yes",1460,0.0616438356164384,"DECC2013"
-"183","Energy and Climate Change, Department for (from 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,610,"WH","DECC",NA,"Yes",1460,0.417808219178082,"DECC2013"
-"184","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,70,"WH","DECC",NA,"Yes",1050,0.0666666666666667,"DECC2010"
-"185","Energy and Climate Change, Department for (from 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,110,"WH","DECC",NA,"Yes",1050,0.104761904761905,"DECC2010"
-"186","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,350,"WH","Defra",NA,"Yes",2180,0.160550458715596,"Defra2013"
-"187","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1030,"WH","Defra",NA,"Yes",2730,0.377289377289377,"Defra2010"
-"188","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,920,"WH","Defra",NA,"Yes",2180,0.422018348623853,"Defra2013"
-"189","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,290,"WH","Defra",NA,"Yes",2180,0.13302752293578,"Defra2013"
-"190","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,520,"WH","Defra",NA,"Yes",2180,0.238532110091743,"Defra2013"
-"191","Environment, Food and Rural Affairs, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","Defra",NA,"Yes",2180,0.0458715596330275,"Defra2013"
-"192","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,430,"WH","Defra",NA,"Yes",2730,0.157509157509158,"Defra2010"
-"193","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,440,"WH","Defra",NA,"Yes",2730,0.161172161172161,"Defra2010"
-"194","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,680,"WH","Defra",NA,"Yes",2730,0.249084249084249,"Defra2010"
-"195","Environment, Food and Rural Affairs, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,150,"WH","Defra",NA,"Yes",2730,0.0549450549450549,"Defra2010"
-"196","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1920,"WH","FCO",NA,"Yes",6010,0.319467554076539,"FCO2010"
-"197","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,1150,"WH","FCO",NA,"Yes",6010,0.19134775374376,"FCO2010"
-"198","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,820,"WH","FCO",NA,"Yes",4850,0.169072164948454,"FCO2013"
-"199","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1140,"WH","FCO",NA,"Yes",6010,0.189683860232945,"FCO2010"
-"200","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1560,"WH","FCO",NA,"Yes",4850,0.321649484536082,"FCO2013"
-"201","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,850,"WH","FCO",NA,"Yes",4850,0.175257731958763,"FCO2013"
-"202","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,380,"WH","FCO",NA,"Yes",6010,0.0632279534109817,"FCO2010"
-"203","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1170,"WH","FCO",NA,"Yes",4850,0.241237113402062,"FCO2013"
-"204","Foreign and Commonwealth Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,1420,"WH","FCO",NA,"Yes",6010,0.236272878535774,"FCO2010"
-"205","Foreign and Commonwealth Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,410,"WH","FCO",NA,"Yes",4850,0.0845360824742268,"FCO2013"
-"206","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,420,"WH","HMRC",NA,"Yes",87360,0.00480769230769231,"HMRC2010"
-"207","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,330,"WH","HMRC",NA,"Yes",76680,0.00430359937402191,"HMRC2013"
-"208","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,40090,"WH","HMRC",NA,"Yes",76680,0.52282211789254,"HMRC2013"
-"209","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,45000,"WH","HMRC",NA,"Yes",87360,0.51510989010989,"HMRC2010"
-"210","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,14490,"WH","HMRC",NA,"Yes",76680,0.188967136150235,"HMRC2013"
-"211","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,17020,"WH","HMRC",NA,"Yes",76680,0.221961398017736,"HMRC2013"
-"212","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,21520,"WH","HMRC",NA,"Yes",87360,0.246336996336996,"HMRC2010"
-"213","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,16270,"WH","HMRC",NA,"Yes",87360,0.186240842490842,"HMRC2010"
-"214","Government Actuary's Department",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4150,"WH","HMRC",NA,"Yes",87360,0.0475045787545788,"HMRC2010"
-"215","Government Actuary's Department",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4270,"WH","HMRC",NA,"Yes",76680,0.0556859676577986,"HMRC2013"
-"216","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"217","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"218","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"219","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"220","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"221","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"222","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"223","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"224","Health and Safety Executive",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"225","Health and Safety Executive",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"226","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,820,"WH","DH",NA,"Yes",2290,0.358078602620087,"DH2013"
-"227","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,910,"WH","DH",NA,"Yes",2700,0.337037037037037,"DH2010"
-"228","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,790,"WH","DH",NA,"Yes",2290,0.344978165938865,"DH2013"
-"229","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,350,"WH","DH",NA,"Yes",2290,0.152838427947598,"DH2013"
-"230","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,130,"WH","DH",NA,"Yes",2700,0.0481481481481481,"DH2010"
-"231","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,460,"WH","DH",NA,"Yes",2700,0.17037037037037,"DH2010"
-"232","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","DH",NA,"Yes",2290,0.0524017467248908,"DH2013"
-"233","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DH",NA,"Yes",2700,0.103703703703704,"DH2010"
-"234","Health, Department of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,920,"WH","DH",NA,"Yes",2700,0.340740740740741,"DH2010"
-"235","Health, Department of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,210,"WH","DH",NA,"Yes",2290,0.091703056768559,"DH2013"
-"236","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,40090,"WH","HMRC",NA,"Yes",76680,0.52282211789254,"HMRC2013"
-"237","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,16270,"WH","HMRC",NA,"Yes",87360,0.186240842490842,"HMRC2010"
-"238","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,330,"WH","HMRC",NA,"Yes",76680,0.00430359937402191,"HMRC2013"
-"239","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4270,"WH","HMRC",NA,"Yes",76680,0.0556859676577986,"HMRC2013"
-"240","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,420,"WH","HMRC",NA,"Yes",87360,0.00480769230769231,"HMRC2010"
-"241","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,21520,"WH","HMRC",NA,"Yes",87360,0.246336996336996,"HMRC2010"
-"242","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,45000,"WH","HMRC",NA,"Yes",87360,0.51510989010989,"HMRC2010"
-"243","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,17020,"WH","HMRC",NA,"Yes",76680,0.221961398017736,"HMRC2013"
-"244","HM Revenue and Customs (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4150,"WH","HMRC",NA,"Yes",87360,0.0475045787545788,"HMRC2010"
-"245","HM Revenue and Customs (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,14490,"WH","HMRC",NA,"Yes",76680,0.188967136150235,"HMRC2013"
-"246","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,510,"WH","HMT",NA,"Yes",1450,0.351724137931034,"HMT2010"
-"247","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,480,"WH","HMT",NA,"Yes",1250,0.384,"HMT2013"
-"248","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","HMT",NA,"Yes",1250,0.096,"HMT2013"
-"249","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","HMT",NA,"Yes",1450,0.0827586206896552,"HMT2010"
-"250","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,410,"WH","HMT",NA,"Yes",1250,0.328,"HMT2013"
-"251","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,90,"WH","HMT",NA,"Yes",1250,0.072,"HMT2013"
-"252","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,160,"WH","HMT",NA,"Yes",1450,0.110344827586207,"HMT2010"
-"253","HM Treasury",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,150,"WH","HMT",NA,"Yes",1250,0.12,"HMT2013"
-"254","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,470,"WH","HMT",NA,"Yes",1450,0.324137931034483,"HMT2010"
-"255","HM Treasury",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,190,"WH","HMT",NA,"Yes",1450,0.131034482758621,"HMT2010"
-"256","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
-"257","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
-"258","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
-"259","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
-"260","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
-"261","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
-"262","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
-"263","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
-"264","Home Office (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
-"265","Home Office (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
-"266","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
-"267","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
-"268","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
-"269","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
-"270","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
-"271","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
-"272","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
-"273","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
-"274","Identity and Passport Service",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
-"275","Identity and Passport Service",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
-"276","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,220,"WH","BIS",NA,"Yes",3140,0.0700636942675159,"BIS2013"
-"277","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,390,"WH","BIS",NA,"Yes",4020,0.0970149253731343,"BIS2010"
-"278","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,630,"WH","BIS",NA,"Yes",4020,0.156716417910448,"BIS2010"
-"279","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1480,"WH","BIS",NA,"Yes",4020,0.368159203980099,"BIS2010"
-"280","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","BIS",NA,"Yes",4020,0.0646766169154229,"BIS2010"
-"281","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,220,"WH","BIS",NA,"Yes",3140,0.0700636942675159,"BIS2013"
-"282","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1220,"WH","BIS",NA,"Yes",4020,0.303482587064677,"BIS2010"
-"283","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,470,"WH","BIS",NA,"Yes",3140,0.14968152866242,"BIS2013"
-"284","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1050,"WH","BIS",NA,"Yes",3140,0.334394904458599,"BIS2013"
-"285","Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1180,"WH","BIS",NA,"Yes",3140,0.375796178343949,"BIS2013"
-"286","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,950,"WH","DfID",NA,"Yes",1810,0.524861878453039,"DfID2013"
-"287","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","DfID",NA,"Yes",1810,0.0552486187845304,"DfID2013"
-"288","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,80,"WH","DfID",NA,"Yes",1810,0.0441988950276243,"DfID2013"
-"289","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,440,"WH","DfID",NA,"Yes",1630,0.269938650306748,"DfID2010"
-"290","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,730,"WH","DfID",NA,"Yes",1630,0.447852760736196,"DfID2010"
-"291","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,160,"WH","DfID",NA,"Yes",1630,0.098159509202454,"DfID2010"
-"292","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","DfID",NA,"Yes",1630,0.122699386503067,"DfID2010"
-"293","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,490,"WH","DfID",NA,"Yes",1810,0.270718232044199,"DfID2013"
-"294","International Development, Department for",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,190,"WH","DfID",NA,"Yes",1810,0.104972375690608,"DfID2013"
-"295","International Development, Department for",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,100,"WH","DfID",NA,"Yes",1630,0.0613496932515337,"DfID2010"
-"296","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"297","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"298","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"299","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"300","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"301","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"302","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"303","Jobcentre Plus (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"304","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"305","Jobcentre Plus (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"306","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,920,"WH","MoJ",NA,"Yes",4480,0.205357142857143,"MoJ2013"
-"307","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,750,"WH","MoJ",NA,"Yes",3220,0.232919254658385,"MoJ2010"
-"308","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1300,"WH","MoJ",NA,"Yes",3220,0.403726708074534,"MoJ2010"
-"309","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,1670,"WH","MoJ",NA,"Yes",4480,0.372767857142857,"MoJ2013"
-"310","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,140,"WH","MoJ",NA,"Yes",3220,0.0434782608695652,"MoJ2010"
-"311","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,500,"WH","MoJ",NA,"Yes",3220,0.15527950310559,"MoJ2010"
-"312","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,790,"WH","MoJ",NA,"Yes",4480,0.176339285714286,"MoJ2013"
-"313","Justice, Ministry of (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,530,"WH","MoJ",NA,"Yes",3220,0.164596273291925,"MoJ2010"
-"314","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,980,"WH","MoJ",NA,"Yes",4480,0.21875,"MoJ2013"
-"315","Justice, Ministry of (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","MoJ",NA,"Yes",4480,0.0267857142857143,"MoJ2013"
-"316","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
-"317","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
-"318","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
-"319","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
-"320","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
-"321","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
-"322","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
-"323","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
-"324","Meteorological Office (MOD) (until 2011)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
-"325","Meteorological Office (MOD) (until 2011)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
-"326","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
-"327","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
-"328","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
-"329","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
-"330","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
-"331","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
-"332","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
-"333","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
-"334","Ministry of Defence (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
-"335","Ministry of Defence (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
-"336","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
-"337","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
-"338","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
-"339","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
-"340","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
-"341","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
-"342","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
-"343","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
-"344","National Fraud Authority (from 2012)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
-"345","National Fraud Authority (from 2012)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
-"346","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
-"347","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
-"348","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
-"349","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
-"350","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
-"351","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
-"352","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
-"353","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
-"354","Office for Security and Counter-Terrorism (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
-"355","Office for Security and Counter-Terrorism (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
-"356","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"357","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"358","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"359","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"360","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"361","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"362","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"363","Pension Services (until 2008)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"364","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"365","Pension Services (until 2008)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"366","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"367","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"368","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"369","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"370","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"371","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"372","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"373","Pensions, Disability and Carer's Service (from 2009 until 2011)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"374","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"375","Pensions, Disability and Carer's Service (from 2009 until 2011)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"376","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,65200,"WH","DWP",NA,"Yes",133530,0.488279787313712,"DWP2010"
-"377","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,15170,"WH","DWP",NA,"Yes",133530,0.113607429042163,"DWP2010"
-"378","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3590,"WH","DWP",NA,"Yes",133530,0.0268853441174268,"DWP2010"
-"379","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,400,"WH","DWP",NA,"Yes",133530,0.00299558151726204,"DWP2010"
-"380","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,50900,"WH","DWP",NA,"Yes",108290,0.470034167513159,"DWP2013"
-"381","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,12100,"WH","DWP",NA,"Yes",108290,0.111737002493305,"DWP2013"
-"382","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,2840,"WH","DWP",NA,"Yes",108290,0.0262258749653708,"DWP2013"
-"383","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,280,"WH","DWP",NA,"Yes",108290,0.00258564964447317,"DWP2013"
-"384","Rent Service (until 2009)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,42170,"WH","DWP",NA,"Yes",108290,0.389417305383692,"DWP2013"
-"385","Rent Service (until 2009)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,49150,"WH","DWP",NA,"Yes",133530,0.368082078933573,"DWP2010"
-"386","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
-"387","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
-"388","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
-"389","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
-"390","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
-"391","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
-"392","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
-"393","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
-"394","Royal Fleet Auxilliary",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
-"395","Royal Fleet Auxilliary",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
-"396","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,245790,"Total","Whole Civil Service",NA,"Yes",527500,0.465952606635071,"Whole Civil Service2010"
-"397","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,35030,"Total","Whole Civil Service",NA,"Yes",448850,0.0780438899409602,"Whole Civil Service2013"
-"398","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,103220,"Total","Whole Civil Service",NA,"Yes",527500,0.195677725118483,"Whole Civil Service2010"
-"399","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,5070,"Total","Whole Civil Service",NA,"Yes",527500,0.00961137440758294,"Whole Civil Service2010"
-"400","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,93280,"Total","Whole Civil Service",NA,"Yes",448850,0.20781998440459,"Whole Civil Service2013"
-"401","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,4340,"Total","Whole Civil Service",NA,"Yes",448850,0.00966915450595967,"Whole Civil Service2013"
-"402","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,133980,"Total","Whole Civil Service",NA,"Yes",527500,0.253990521327014,"Whole Civil Service2010"
-"403","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,116230,"Total","Whole Civil Service",NA,"Yes",448850,0.258950651665367,"Whole Civil Service2013"
-"404","Total (All Departments)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,197510,"Total","Whole Civil Service",NA,"Yes",448850,0.440035646652557,"Whole Civil Service2013"
-"405","Total (All Departments)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,36630,"Total","Whole Civil Service",NA,"Yes",527500,0.0694407582938389,"Whole Civil Service2010"
-"406","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,210,"WH","DfT",NA,"Yes",1760,0.119318181818182,"DfT2013"
-"407","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,670,"WH","DfT",NA,"Yes",2160,0.310185185185185,"DfT2010"
-"408","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","DfT",NA,"Yes",2160,0.0925925925925926,"DfT2010"
-"409","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,610,"WH","DfT",NA,"Yes",1760,0.346590909090909,"DfT2013"
-"410","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,120,"WH","DfT",NA,"Yes",1760,0.0681818181818182,"DfT2013"
-"411","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,710,"WH","DfT",NA,"Yes",1760,0.403409090909091,"DfT2013"
-"412","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,160,"WH","DfT",NA,"Yes",2160,0.0740740740740741,"DfT2010"
-"413","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,820,"WH","DfT",NA,"Yes",2160,0.37962962962963,"DfT2010"
-"414","Transport, Department for (excl agencies)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,110,"WH","DfT",NA,"Yes",1760,0.0625,"DfT2013"
-"415","Transport, Department for (excl agencies)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,310,"WH","DfT",NA,"Yes",2160,0.143518518518519,"DfT2010"
-"416","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6270,"WH","HO",NA,"Yes",27070,0.231621721462874,"HO2010"
-"417","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1790,"WH","HO",NA,"Yes",26470,0.067623724971666,"HO2013"
-"418","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10390,"WH","HO",NA,"Yes",26470,0.392519833774084,"HO2013"
-"419","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,1780,"WH","HO",NA,"Yes",27070,0.0657554488363502,"HO2010"
-"420","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,6020,"WH","HO",NA,"Yes",26470,0.227427276161692,"HO2013"
-"421","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,9400,"WH","HO",NA,"Yes",27070,0.347247875877355,"HO2010"
-"422","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,200,"WH","HO",NA,"Yes",26470,0.00755572346052135,"HO2013"
-"423","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,270,"WH","HO",NA,"Yes",27070,0.00997414111562616,"HO2010"
-"424","UK Border Agency",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,8070,"WH","HO",NA,"Yes",26470,0.304873441632036,"HO2013"
-"425","UK Border Agency",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,9350,"WH","HO",NA,"Yes",27070,0.345400812707795,"HO2010"
-"426","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,17700,"WH","MoD",NA,"Yes",58450,0.302822925577417,"MoD2013"
-"427","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,36050,"WH","MoD",NA,"Yes",77660,0.464202935874324,"MoD2010"
-"428","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4300,"WH","MoD",NA,"Yes",77660,0.0553695596188514,"MoD2010"
-"429","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,24220,"WH","MoD",NA,"Yes",58450,0.41437125748503,"MoD2013"
-"430","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,3850,"WH","MoD",NA,"Yes",58450,0.0658682634730539,"MoD2013"
-"431","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,20610,"WH","MoD",NA,"Yes",77660,0.265387586917332,"MoD2010"
-"432","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,13740,"WH","MoD",NA,"Yes",77660,0.176925057944888,"MoD2010"
-"433","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,260,"WH","MoD",NA,"Yes",58450,0.00444824636441403,"MoD2013"
-"434","UK Hydrographic Office (MOD)",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,340,"WH","MoD",NA,"Yes",77660,0.00437805820242081,"MoD2010"
-"435","UK Hydrographic Office (MOD)",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,10480,"WH","MoD",NA,"Yes",58450,0.179298545765612,"MoD2013"
-"436","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,40090,"WH","HMRC",NA,"Yes",76680,0.52282211789254,"HMRC2013"
-"437","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,16270,"WH","HMRC",NA,"Yes",87360,0.186240842490842,"HMRC2010"
-"438","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,330,"WH","HMRC",NA,"Yes",76680,0.00430359937402191,"HMRC2013"
-"439","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4150,"WH","HMRC",NA,"Yes",87360,0.0475045787545788,"HMRC2010"
-"440","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Senior Civil Service","Total","United Kingdom, overseas or unknown","number",NA,420,"WH","HMRC",NA,"Yes",87360,0.00480769230769231,"HMRC2010"
-"441","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,21520,"WH","HMRC",NA,"Yes",87360,0.246336996336996,"HMRC2010"
-"442","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Grades 6 & 7","Total","United Kingdom, overseas or unknown","number",NA,4270,"WH","HMRC",NA,"Yes",76680,0.0556859676577986,"HMRC2013"
-"443","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Senior and higher executive officer","Total","United Kingdom, overseas or unknown","number",NA,14490,"WH","HMRC",NA,"Yes",76680,0.188967136150235,"HMRC2013"
-"444","Valuation Office",2010,"Total","Total","Total","Total","Total","Total","Administrative officers and assistants","Total","United Kingdom, overseas or unknown","number",NA,45000,"WH","HMRC",NA,"Yes",87360,0.51510989010989,"HMRC2010"
-"445","Valuation Office",2013,"Total","Total","Total","Total","Total","Total","Executive officer","Total","United Kingdom, overseas or unknown","number",NA,17020,"WH","HMRC",NA,"Yes",76680,0.221961398017736,"HMRC2013"
+"","Group","Date","Civil.Service.grad","count","total","share"
+"1","BIS",2008,"AO/AA",550,4260,0.129107981220657
+"2","BIS",2008,"EO",700,4260,0.164319248826291
+"3","BIS",2008,"G6/G7",1190,4260,0.279342723004695
+"4","BIS",2008,"SEO/HEO",1570,4260,0.368544600938967
+"5","BIS",2008,"SCS",250,4260,0.0586854460093897
+"6","BIS",2009,"AO/AA",440,3960,0.111111111111111
+"7","BIS",2009,"EO",630,3960,0.159090909090909
+"8","BIS",2009,"G6/G7",1160,3960,0.292929292929293
+"9","BIS",2009,"SEO/HEO",1480,3960,0.373737373737374
+"10","BIS",2009,"SCS",250,3960,0.0631313131313131
+"11","BIS",2010,"AO/AA",390,4010,0.0972568578553616
+"12","BIS",2010,"EO",630,4010,0.1571072319202
+"13","BIS",2010,"G6/G7",1220,4010,0.304239401496259
+"14","BIS",2010,"SEO/HEO",1480,4010,0.369077306733167
+"15","BIS",2010,"SCS",260,4010,0.0648379052369077
+"16","BIS",2011,"AO/AA",330,3470,0.0951008645533141
+"17","BIS",2011,"EO",520,3470,0.14985590778098
+"18","BIS",2011,"G6/G7",1090,3470,0.314121037463977
+"19","BIS",2011,"SEO/HEO",1320,3470,0.380403458213256
+"20","BIS",2011,"SCS",220,3470,0.0634005763688761
+"21","BIS",2012,"AO/AA",260,2940,0.0884353741496599
+"22","BIS",2012,"EO",450,2940,0.153061224489796
+"23","BIS",2012,"G6/G7",940,2940,0.319727891156463
+"24","BIS",2012,"SEO/HEO",1110,2940,0.377551020408163
+"25","BIS",2012,"SCS",200,2940,0.0680272108843537
+"26","BIS",2013,"AO/AA",220,3150,0.0698412698412698
+"27","BIS",2013,"EO",470,3150,0.149206349206349
+"28","BIS",2013,"G6/G7",1050,3150,0.333333333333333
+"29","BIS",2013,"SEO/HEO",1180,3150,0.374603174603175
+"30","BIS",2013,"SCS",220,3150,0.0698412698412698
+"31","CO",2008,"AO/AA",180,1240,0.145161290322581
+"32","CO",2008,"EO",260,1240,0.209677419354839
+"33","CO",2008,"G6/G7",310,1240,0.25
+"34","CO",2008,"SEO/HEO",340,1240,0.274193548387097
+"35","CO",2008,"SCS",150,1240,0.120967741935484
+"36","CO",2009,"AO/AA",180,1260,0.142857142857143
+"37","CO",2009,"EO",240,1260,0.19047619047619
+"38","CO",2009,"G6/G7",320,1260,0.253968253968254
+"39","CO",2009,"SEO/HEO",360,1260,0.285714285714286
+"40","CO",2009,"SCS",150,1260,0.119047619047619
+"41","CO",2010,"AO/AA",180,1260,0.142857142857143
+"42","CO",2010,"EO",240,1260,0.19047619047619
+"43","CO",2010,"G6/G7",320,1260,0.253968253968254
+"44","CO",2010,"SEO/HEO",390,1260,0.30952380952381
+"45","CO",2010,"SCS",140,1260,0.111111111111111
+"46","CO",2011,"AO/AA",160,1510,0.105960264900662
+"47","CO",2011,"EO",250,1510,0.165562913907285
+"48","CO",2011,"G6/G7",440,1510,0.291390728476821
+"49","CO",2011,"SEO/HEO",500,1510,0.33112582781457
+"50","CO",2011,"SCS",160,1510,0.105960264900662
+"51","CO",2012,"AO/AA",160,1620,0.0987654320987654
+"52","CO",2012,"EO",260,1620,0.160493827160494
+"53","CO",2012,"G6/G7",510,1620,0.314814814814815
+"54","CO",2012,"SEO/HEO",520,1620,0.320987654320988
+"55","CO",2012,"SCS",170,1620,0.104938271604938
+"56","CO",2013,"AO/AA",160,1840,0.0869565217391304
+"57","CO",2013,"EO",270,1840,0.146739130434783
+"58","CO",2013,"G6/G7",640,1840,0.347826086956522
+"59","CO",2013,"SEO/HEO",600,1840,0.326086956521739
+"60","CO",2013,"SCS",180,1840,0.0978260869565217
+"61","DCLG",2008,"AO/AA",500,2990,0.167224080267559
+"62","DCLG",2008,"EO",560,2990,0.187290969899666
+"63","DCLG",2008,"G6/G7",680,2990,0.22742474916388
+"64","DCLG",2008,"SEO/HEO",1080,2990,0.361204013377926
+"65","DCLG",2008,"SCS",180,2990,0.0602006688963211
+"66","DCLG",2009,"AO/AA",310,2520,0.123015873015873
+"67","DCLG",2009,"EO",490,2520,0.194444444444444
+"68","DCLG",2009,"G6/G7",650,2520,0.257936507936508
+"69","DCLG",2009,"SEO/HEO",940,2520,0.373015873015873
+"70","DCLG",2009,"SCS",130,2520,0.0515873015873016
+"71","DCLG",2010,"AO/AA",310,2640,0.117424242424242
+"72","DCLG",2010,"EO",440,2640,0.166666666666667
+"73","DCLG",2010,"G6/G7",700,2640,0.265151515151515
+"74","DCLG",2010,"SEO/HEO",1060,2640,0.401515151515151
+"75","DCLG",2010,"SCS",130,2640,0.0492424242424242
+"76","DCLG",2011,"AO/AA",250,2330,0.107296137339056
+"77","DCLG",2011,"EO",370,2330,0.158798283261803
+"78","DCLG",2011,"G6/G7",650,2330,0.278969957081545
+"79","DCLG",2011,"SEO/HEO",940,2330,0.40343347639485
+"80","DCLG",2011,"SCS",120,2330,0.0515021459227468
+"81","DCLG",2012,"AO/AA",140,1880,0.074468085106383
+"82","DCLG",2012,"EO",270,1880,0.143617021276596
+"83","DCLG",2012,"G6/G7",590,1880,0.313829787234043
+"84","DCLG",2012,"SEO/HEO",800,1880,0.425531914893617
+"85","DCLG",2012,"SCS",90,1880,0.0478723404255319
+"86","DCLG",2013,"AO/AA",100,1730,0.0578034682080925
+"87","DCLG",2013,"EO",240,1730,0.138728323699422
+"88","DCLG",2013,"G6/G7",550,1730,0.317919075144509
+"89","DCLG",2013,"SEO/HEO",760,1730,0.439306358381503
+"90","DCLG",2013,"SCS",90,1730,0.0520231213872832
+"91","DCMS",2008,"AO/AA",50,480,0.104166666666667
+"92","DCMS",2008,"EO",120,480,0.25
+"93","DCMS",2008,"G6/G7",110,480,0.229166666666667
+"94","DCMS",2008,"SEO/HEO",170,480,0.354166666666667
+"95","DCMS",2008,"SCS",30,480,0.0625
+"96","DCMS",2009,"AO/AA",30,470,0.0638297872340425
+"97","DCMS",2009,"EO",90,470,0.191489361702128
+"98","DCMS",2009,"G6/G7",130,470,0.276595744680851
+"99","DCMS",2009,"SEO/HEO",170,470,0.361702127659574
+"100","DCMS",2009,"SCS",40,470,0.0851063829787234
+"101","DCMS",2010,"AO/AA",30,500,0.06
+"102","DCMS",2010,"EO",100,500,0.2
+"103","DCMS",2010,"G6/G7",140,500,0.28
+"104","DCMS",2010,"SEO/HEO",170,500,0.34
+"105","DCMS",2010,"SCS",50,500,0.1
+"106","DCMS",2011,"AO/AA",30,440,0.0681818181818182
+"107","DCMS",2011,"EO",90,440,0.204545454545455
+"108","DCMS",2011,"G6/G7",130,440,0.295454545454545
+"109","DCMS",2011,"SEO/HEO",160,440,0.363636363636364
+"110","DCMS",2011,"SCS",50,440,0.113636363636364
+"111","DCMS",2012,"AO/AA",20,460,0.0434782608695652
+"112","DCMS",2012,"EO",70,460,0.152173913043478
+"113","DCMS",2012,"G6/G7",150,460,0.326086956521739
+"114","DCMS",2012,"SEO/HEO",170,460,0.369565217391304
+"115","DCMS",2012,"SCS",40,460,0.0869565217391304
+"116","DCMS",2013,"AO/AA",20,390,0.0512820512820513
+"117","DCMS",2013,"EO",60,390,0.153846153846154
+"118","DCMS",2013,"G6/G7",140,390,0.358974358974359
+"119","DCMS",2013,"SEO/HEO",140,390,0.358974358974359
+"120","DCMS",2013,"SCS",40,390,0.102564102564103
+"121","DECC",2008,"AO/AA",0,0,NA
+"122","DECC",2008,"EO",0,0,NA
+"123","DECC",2008,"G6/G7",0,0,NA
+"124","DECC",2008,"SEO/HEO",0,0,NA
+"125","DECC",2008,"SCS",0,0,NA
+"126","DECC",2009,"AO/AA",80,910,0.0879120879120879
+"127","DECC",2009,"EO",110,910,0.120879120879121
+"128","DECC",2009,"G6/G7",320,910,0.351648351648352
+"129","DECC",2009,"SEO/HEO",340,910,0.373626373626374
+"130","DECC",2009,"SCS",60,910,0.0659340659340659
+"131","DECC",2010,"AO/AA",70,1050,0.0666666666666667
+"132","DECC",2010,"EO",110,1050,0.104761904761905
+"133","DECC",2010,"G6/G7",400,1050,0.380952380952381
+"134","DECC",2010,"SEO/HEO",390,1050,0.371428571428571
+"135","DECC",2010,"SCS",80,1050,0.0761904761904762
+"136","DECC",2011,"AO/AA",80,1170,0.0683760683760684
+"137","DECC",2011,"EO",110,1170,0.094017094017094
+"138","DECC",2011,"G6/G7",470,1170,0.401709401709402
+"139","DECC",2011,"SEO/HEO",430,1170,0.367521367521368
+"140","DECC",2011,"SCS",80,1170,0.0683760683760684
+"141","DECC",2012,"AO/AA",90,1310,0.0687022900763359
+"142","DECC",2012,"EO",120,1310,0.0916030534351145
+"143","DECC",2012,"G6/G7",540,1310,0.412213740458015
+"144","DECC",2012,"SEO/HEO",480,1310,0.366412213740458
+"145","DECC",2012,"SCS",90,1310,0.0687022900763359
+"146","DECC",2013,"AO/AA",80,1460,0.0547945205479452
+"147","DECC",2013,"EO",140,1460,0.0958904109589041
+"148","DECC",2013,"G6/G7",610,1460,0.417808219178082
+"149","DECC",2013,"SEO/HEO",540,1460,0.36986301369863
+"150","DECC",2013,"SCS",90,1460,0.0616438356164384
+"151","DH",2008,"AO/AA",130,2220,0.0585585585585586
+"152","DH",2008,"EO",400,2220,0.18018018018018
+"153","DH",2008,"G6/G7",710,2220,0.31981981981982
+"154","DH",2008,"SEO/HEO",720,2220,0.324324324324324
+"155","DH",2008,"SCS",260,2220,0.117117117117117
+"156","DH",2009,"AO/AA",140,2320,0.0603448275862069
+"157","DH",2009,"EO",400,2320,0.172413793103448
+"158","DH",2009,"G6/G7",760,2320,0.327586206896552
+"159","DH",2009,"SEO/HEO",760,2320,0.327586206896552
+"160","DH",2009,"SCS",260,2320,0.112068965517241
+"161","DH",2010,"AO/AA",130,2710,0.0479704797047971
+"162","DH",2010,"EO",460,2710,0.169741697416974
+"163","DH",2010,"G6/G7",910,2710,0.335793357933579
+"164","DH",2010,"SEO/HEO",920,2710,0.339483394833948
+"165","DH",2010,"SCS",280,2710,0.103321033210332
+"166","DH",2011,"AO/AA",130,2640,0.0492424242424242
+"167","DH",2011,"EO",440,2640,0.166666666666667
+"168","DH",2011,"G6/G7",900,2640,0.340909090909091
+"169","DH",2011,"SEO/HEO",920,2640,0.348484848484849
+"170","DH",2011,"SCS",250,2640,0.0946969696969697
+"171","DH",2012,"AO/AA",120,2370,0.0506329113924051
+"172","DH",2012,"EO",370,2370,0.156118143459916
+"173","DH",2012,"G6/G7",820,2370,0.345991561181435
+"174","DH",2012,"SEO/HEO",850,2370,0.358649789029536
+"175","DH",2012,"SCS",220,2370,0.0928270042194093
+"176","DH",2013,"AO/AA",120,2280,0.0526315789473684
+"177","DH",2013,"EO",350,2280,0.153508771929825
+"178","DH",2013,"G6/G7",790,2280,0.346491228070175
+"179","DH",2013,"SEO/HEO",820,2280,0.359649122807018
+"180","DH",2013,"SCS",210,2280,0.0921052631578947
+"181","DWP",2008,"AO/AA",60400,117570,0.513736497405801
+"182","DWP",2008,"EO",41590,117570,0.35374670409118
+"183","DWP",2008,"G6/G7",2870,117570,0.0244109891979246
+"184","DWP",2008,"SEO/HEO",12370,117570,0.1052139151144
+"185","DWP",2008,"SCS",360,117570,0.00306200561367696
+"186","DWP",2009,"AO/AA",62950,121120,0.51973249669749
+"187","DWP",2009,"EO",42290,121120,0.34915785997358
+"188","DWP",2009,"G6/G7",2980,121120,0.0246036988110964
+"189","DWP",2009,"SEO/HEO",12550,121120,0.103616248348745
+"190","DWP",2009,"SCS",380,121120,0.00313738441215324
+"191","DWP",2010,"AO/AA",65200,133520,0.48831635710006
+"192","DWP",2010,"EO",49150,133520,0.368109646494907
+"193","DWP",2010,"G6/G7",3590,133520,0.0268873576992211
+"194","DWP",2010,"SEO/HEO",15170,133520,0.113615937687238
+"195","DWP",2010,"SCS",400,133520,0.00299580587177951
+"196","DWP",2011,"AO/AA",60930,122400,0.497794117647059
+"197","DWP",2011,"EO",44460,122400,0.363235294117647
+"198","DWP",2011,"G6/G7",3130,122400,0.0255718954248366
+"199","DWP",2011,"SEO/HEO",13330,122400,0.10890522875817
+"200","DWP",2011,"SCS",340,122400,0.00277777777777778
+"201","DWP",2012,"AO/AA",54830,112480,0.487464438122333
+"202","DWP",2012,"EO",42030,112480,0.373666429587482
+"203","DWP",2012,"G6/G7",2740,112480,0.0243598862019915
+"204","DWP",2012,"SEO/HEO",12400,112480,0.110241820768137
+"205","DWP",2012,"SCS",290,112480,0.00257823613086771
+"206","DWP",2013,"AO/AA",50900,108290,0.470034167513159
+"207","DWP",2013,"EO",42170,108290,0.389417305383692
+"208","DWP",2013,"G6/G7",2840,108290,0.0262258749653708
+"209","DWP",2013,"SEO/HEO",12100,108290,0.111737002493305
+"210","DWP",2013,"SCS",280,108290,0.00258564964447317
+"211","Defra",2008,"AO/AA",560,3100,0.180645161290323
+"212","Defra",2008,"EO",520,3100,0.167741935483871
+"213","Defra",2008,"G6/G7",680,3100,0.219354838709677
+"214","Defra",2008,"SEO/HEO",1180,3100,0.380645161290323
+"215","Defra",2008,"SCS",160,3100,0.0516129032258065
+"216","Defra",2009,"AO/AA",500,2760,0.181159420289855
+"217","Defra",2009,"EO",440,2760,0.159420289855072
+"218","Defra",2009,"G6/G7",650,2760,0.235507246376812
+"219","Defra",2009,"SEO/HEO",1030,2760,0.373188405797101
+"220","Defra",2009,"SCS",140,2760,0.0507246376811594
+"221","Defra",2010,"AO/AA",430,2730,0.157509157509158
+"222","Defra",2010,"EO",440,2730,0.161172161172161
+"223","Defra",2010,"G6/G7",680,2730,0.249084249084249
+"224","Defra",2010,"SEO/HEO",1030,2730,0.377289377289377
+"225","Defra",2010,"SCS",150,2730,0.0549450549450549
+"226","Defra",2011,"AO/AA",380,2620,0.145038167938931
+"227","Defra",2011,"EO",430,2620,0.16412213740458
+"228","Defra",2011,"G6/G7",650,2620,0.248091603053435
+"229","Defra",2011,"SEO/HEO",1020,2620,0.389312977099237
+"230","Defra",2011,"SCS",130,2620,0.049618320610687
+"231","Defra",2012,"AO/AA",330,2160,0.152777777777778
+"232","Defra",2012,"EO",350,2160,0.162037037037037
+"233","Defra",2012,"G6/G7",480,2160,0.222222222222222
+"234","Defra",2012,"SEO/HEO",900,2160,0.416666666666667
+"235","Defra",2012,"SCS",100,2160,0.0462962962962963
+"236","Defra",2013,"AO/AA",290,2170,0.133640552995392
+"237","Defra",2013,"EO",350,2170,0.161290322580645
+"238","Defra",2013,"G6/G7",520,2170,0.23963133640553
+"239","Defra",2013,"SEO/HEO",920,2170,0.423963133640553
+"240","Defra",2013,"SCS",100,2170,0.0460829493087558
+"241","DfE",2008,"AO/AA",440,3350,0.13134328358209
+"242","DfE",2008,"EO",680,3350,0.202985074626866
+"243","DfE",2008,"G6/G7",760,3350,0.226865671641791
+"244","DfE",2008,"SEO/HEO",1330,3350,0.397014925373134
+"245","DfE",2008,"SCS",150,3350,0.0447761194029851
+"246","DfE",2009,"AO/AA",350,3380,0.103550295857988
+"247","DfE",2009,"EO",630,3380,0.186390532544379
+"248","DfE",2009,"G6/G7",850,3380,0.251479289940828
+"249","DfE",2009,"SEO/HEO",1410,3380,0.417159763313609
+"250","DfE",2009,"SCS",150,3380,0.0443786982248521
+"251","DfE",2010,"AO/AA",280,3100,0.0903225806451613
+"252","DfE",2010,"EO",550,3100,0.17741935483871
+"253","DfE",2010,"G6/G7",810,3100,0.261290322580645
+"254","DfE",2010,"SEO/HEO",1320,3100,0.425806451612903
+"255","DfE",2010,"SCS",150,3100,0.0483870967741935
+"256","DfE",2011,"AO/AA",230,2780,0.0827338129496403
+"257","DfE",2011,"EO",500,2780,0.179856115107914
+"258","DfE",2011,"G6/G7",730,2780,0.262589928057554
+"259","DfE",2011,"SEO/HEO",1190,2780,0.428057553956835
+"260","DfE",2011,"SCS",130,2780,0.0467625899280576
+"261","DfE",2012,"AO/AA",190,2790,0.0681003584229391
+"262","DfE",2012,"EO",470,2790,0.168458781362007
+"263","DfE",2012,"G6/G7",800,2790,0.28673835125448
+"264","DfE",2012,"SEO/HEO",1200,2790,0.43010752688172
+"265","DfE",2012,"SCS",140,2790,0.0501792114695341
+"266","DfE",2013,"AO/AA",410,6530,0.0627871362940276
+"267","DfE",2013,"EO",1110,6530,0.169984686064319
+"268","DfE",2013,"G6/G7",1960,6530,0.300153139356815
+"269","DfE",2013,"SEO/HEO",2800,6530,0.428790199081164
+"270","DfE",2013,"SCS",280,6530,0.0428790199081164
+"271","DfID",2008,"AO/AA",210,1670,0.125748502994012
+"272","DfID",2008,"EO",240,1670,0.143712574850299
+"273","DfID",2008,"G6/G7",670,1670,0.401197604790419
+"274","DfID",2008,"SEO/HEO",450,1670,0.269461077844311
+"275","DfID",2008,"SCS",100,1670,0.0598802395209581
+"276","DfID",2009,"AO/AA",170,1660,0.102409638554217
+"277","DfID",2009,"EO",240,1660,0.144578313253012
+"278","DfID",2009,"G6/G7",700,1660,0.421686746987952
+"279","DfID",2009,"SEO/HEO",460,1660,0.27710843373494
+"280","DfID",2009,"SCS",100,1660,0.0602409638554217
+"281","DfID",2010,"AO/AA",160,1620,0.0987654320987654
+"282","DfID",2010,"EO",200,1620,0.123456790123457
+"283","DfID",2010,"G6/G7",730,1620,0.450617283950617
+"284","DfID",2010,"SEO/HEO",440,1620,0.271604938271605
+"285","DfID",2010,"SCS",100,1620,0.0617283950617284
+"286","DfID",2011,"AO/AA",130,1610,0.0807453416149068
+"287","DfID",2011,"EO",200,1610,0.124223602484472
+"288","DfID",2011,"G6/G7",760,1610,0.472049689440994
+"289","DfID",2011,"SEO/HEO",440,1610,0.273291925465839
+"290","DfID",2011,"SCS",80,1610,0.0496894409937888
+"291","DfID",2012,"AO/AA",110,1710,0.064327485380117
+"292","DfID",2012,"EO",190,1710,0.111111111111111
+"293","DfID",2012,"G6/G7",870,1710,0.508771929824561
+"294","DfID",2012,"SEO/HEO",470,1710,0.274853801169591
+"295","DfID",2012,"SCS",80,1710,0.0467836257309941
+"296","DfID",2013,"AO/AA",100,1810,0.0552486187845304
+"297","DfID",2013,"EO",190,1810,0.104972375690608
+"298","DfID",2013,"G6/G7",950,1810,0.524861878453039
+"299","DfID",2013,"SEO/HEO",490,1810,0.270718232044199
+"300","DfID",2013,"SCS",80,1810,0.0441988950276243
+"301","DfT",2008,"AO/AA",250,2040,0.122549019607843
+"302","DfT",2008,"EO",320,2040,0.156862745098039
+"303","DfT",2008,"G6/G7",590,2040,0.28921568627451
+"304","DfT",2008,"SEO/HEO",740,2040,0.362745098039216
+"305","DfT",2008,"SCS",150,2040,0.0735294117647059
+"306","DfT",2009,"AO/AA",220,2100,0.104761904761905
+"307","DfT",2009,"EO",320,2100,0.152380952380952
+"308","DfT",2009,"G6/G7",620,2100,0.295238095238095
+"309","DfT",2009,"SEO/HEO",800,2100,0.380952380952381
+"310","DfT",2009,"SCS",150,2100,0.0714285714285714
+"311","DfT",2010,"AO/AA",200,2150,0.0930232558139535
+"312","DfT",2010,"EO",310,2150,0.144186046511628
+"313","DfT",2010,"G6/G7",670,2150,0.311627906976744
+"314","DfT",2010,"SEO/HEO",820,2150,0.381395348837209
+"315","DfT",2010,"SCS",160,2150,0.0744186046511628
+"316","DfT",2011,"AO/AA",180,1910,0.0942408376963351
+"317","DfT",2011,"EO",240,1910,0.12565445026178
+"318","DfT",2011,"G6/G7",620,1910,0.324607329842932
+"319","DfT",2011,"SEO/HEO",750,1910,0.392670157068063
+"320","DfT",2011,"SCS",130,1910,0.0680628272251309
+"321","DfT",2012,"AO/AA",120,1670,0.0718562874251497
+"322","DfT",2012,"EO",210,1670,0.125748502994012
+"323","DfT",2012,"G6/G7",560,1670,0.335329341317365
+"324","DfT",2012,"SEO/HEO",670,1670,0.401197604790419
+"325","DfT",2012,"SCS",110,1670,0.0658682634730539
+"326","DfT",2013,"AO/AA",110,1760,0.0625
+"327","DfT",2013,"EO",210,1760,0.119318181818182
+"328","DfT",2013,"G6/G7",610,1760,0.346590909090909
+"329","DfT",2013,"SEO/HEO",710,1760,0.403409090909091
+"330","DfT",2013,"SCS",120,1760,0.0681818181818182
+"331","FCO",2008,"AO/AA",1130,5950,0.189915966386555
+"332","FCO",2008,"EO",1480,5950,0.248739495798319
+"333","FCO",2008,"G6/G7",1070,5950,0.179831932773109
+"334","FCO",2008,"SEO/HEO",1880,5950,0.315966386554622
+"335","FCO",2008,"SCS",390,5950,0.065546218487395
+"336","FCO",2009,"AO/AA",1160,6090,0.19047619047619
+"337","FCO",2009,"EO",1430,6090,0.234811165845649
+"338","FCO",2009,"G6/G7",1130,6090,0.185550082101806
+"339","FCO",2009,"SEO/HEO",1990,6090,0.326765188834154
+"340","FCO",2009,"SCS",370,6090,0.0607553366174056
+"341","FCO",2010,"AO/AA",1150,6010,0.19134775374376
+"342","FCO",2010,"EO",1420,6010,0.236272878535774
+"343","FCO",2010,"G6/G7",1140,6010,0.189683860232945
+"344","FCO",2010,"SEO/HEO",1920,6010,0.319467554076539
+"345","FCO",2010,"SCS",380,6010,0.0632279534109817
+"346","FCO",2011,"AO/AA",1110,5750,0.19304347826087
+"347","FCO",2011,"EO",1330,5750,0.231304347826087
+"348","FCO",2011,"G6/G7",1080,5750,0.187826086956522
+"349","FCO",2011,"SEO/HEO",1870,5750,0.325217391304348
+"350","FCO",2011,"SCS",360,5750,0.0626086956521739
+"351","FCO",2012,"AO/AA",1150,6560,0.17530487804878
+"352","FCO",2012,"EO",1520,6560,0.231707317073171
+"353","FCO",2012,"G6/G7",1290,6560,0.196646341463415
+"354","FCO",2012,"SEO/HEO",2150,6560,0.327743902439024
+"355","FCO",2012,"SCS",450,6560,0.0685975609756098
+"356","FCO",2013,"AO/AA",820,4840,0.169421487603306
+"357","FCO",2013,"EO",850,4840,0.175619834710744
+"358","FCO",2013,"G6/G7",1170,4840,0.241735537190083
+"359","FCO",2013,"SEO/HEO",1560,4840,0.322314049586777
+"360","FCO",2013,"SCS",410,4840,0.0847107438016529
+"361","HMRC",2008,"AO/AA",50980,95370,0.5345496487365
+"362","HMRC",2008,"EO",23190,95370,0.243158225857188
+"363","HMRC",2008,"G6/G7",3990,95370,0.0418370556778861
+"364","HMRC",2008,"SEO/HEO",16800,95370,0.176156023906889
+"365","HMRC",2008,"SCS",420,95370,0.00440390059767222
+"366","HMRC",2009,"AO/AA",49000,93110,0.526259263237031
+"367","HMRC",2009,"EO",22510,93110,0.241757061540114
+"368","HMRC",2009,"G6/G7",4240,93110,0.0455375362474493
+"369","HMRC",2009,"SEO/HEO",16870,93110,0.181183546343035
+"370","HMRC",2009,"SCS",480,93110,0.0051551927827301
+"371","HMRC",2010,"AO/AA",45000,87350,0.515168860904408
+"372","HMRC",2010,"EO",21520,87350,0.246365197481397
+"373","HMRC",2010,"G6/G7",4150,87350,0.0475100171722954
+"374","HMRC",2010,"SEO/HEO",16270,87350,0.186262163709216
+"375","HMRC",2010,"SCS",420,87350,0.00480824270177447
+"376","HMRC",2011,"AO/AA",41030,78580,0.522143038941206
+"377","HMRC",2011,"EO",18110,78580,0.230465767370832
+"378","HMRC",2011,"G6/G7",4100,78580,0.0521761262407737
+"379","HMRC",2011,"SEO/HEO",14960,78580,0.190379231356579
+"380","HMRC",2011,"SCS",390,78580,0.00496309493509799
+"381","HMRC",2012,"AO/AA",42270,78860,0.536013187927974
+"382","HMRC",2012,"EO",17510,78860,0.222039056555922
+"383","HMRC",2012,"G6/G7",4080,78860,0.0517372558965255
+"384","HMRC",2012,"SEO/HEO",14610,78860,0.18526502662947
+"385","HMRC",2012,"SCS",390,78860,0.00494547299010905
+"386","HMRC",2013,"AO/AA",40090,76690,0.522753944451689
+"387","HMRC",2013,"EO",17020,76690,0.221932455339679
+"388","HMRC",2013,"G6/G7",4270,76690,0.0556787064806363
+"389","HMRC",2013,"SEO/HEO",14490,76690,0.188942495762159
+"390","HMRC",2013,"SCS",330,76690,0.00430303820576346
+"391","HMT",2008,"AO/AA",160,1150,0.139130434782609
+"392","HMT",2008,"EO",160,1150,0.139130434782609
+"393","HMT",2008,"G6/G7",350,1150,0.304347826086957
+"394","HMT",2008,"SEO/HEO",380,1150,0.330434782608696
+"395","HMT",2008,"SCS",110,1150,0.0956521739130435
+"396","HMT",2009,"AO/AA",160,1330,0.120300751879699
+"397","HMT",2009,"EO",180,1330,0.135338345864662
+"398","HMT",2009,"G6/G7",420,1330,0.315789473684211
+"399","HMT",2009,"SEO/HEO",490,1330,0.368421052631579
+"400","HMT",2009,"SCS",90,1330,0.0676691729323308
+"401","HMT",2010,"AO/AA",120,1450,0.0827586206896552
+"402","HMT",2010,"EO",190,1450,0.131034482758621
+"403","HMT",2010,"G6/G7",470,1450,0.324137931034483
+"404","HMT",2010,"SEO/HEO",510,1450,0.351724137931034
+"405","HMT",2010,"SCS",160,1450,0.110344827586207
+"406","HMT",2011,"AO/AA",110,1330,0.0827067669172932
+"407","HMT",2011,"EO",170,1330,0.12781954887218
+"408","HMT",2011,"G6/G7",450,1330,0.338345864661654
+"409","HMT",2011,"SEO/HEO",460,1330,0.345864661654135
+"410","HMT",2011,"SCS",130,1330,0.0977443609022556
+"411","HMT",2012,"AO/AA",90,1070,0.0841121495327103
+"412","HMT",2012,"EO",150,1070,0.14018691588785
+"413","HMT",2012,"G6/G7",350,1070,0.327102803738318
+"414","HMT",2012,"SEO/HEO",360,1070,0.336448598130841
+"415","HMT",2012,"SCS",110,1070,0.102803738317757
+"416","HMT",2013,"AO/AA",90,1250,0.072
+"417","HMT",2013,"EO",150,1250,0.12
+"418","HMT",2013,"G6/G7",410,1250,0.328
+"419","HMT",2013,"SEO/HEO",480,1250,0.384
+"420","HMT",2013,"SCS",120,1250,0.096
+"421","HO",2008,"AO/AA",10140,26910,0.376811594202899
+"422","HO",2008,"EO",9250,26910,0.343738387216648
+"423","HO",2008,"G6/G7",1390,26910,0.0516536603493125
+"424","HO",2008,"SEO/HEO",5920,26910,0.219992567818655
+"425","HO",2008,"SCS",220,26910,0.00817539947974731
+"426","HO",2009,"AO/AA",9620,26240,0.366615853658537
+"427","HO",2009,"EO",9140,26240,0.348323170731707
+"428","HO",2009,"G6/G7",1470,26240,0.0560213414634146
+"429","HO",2009,"SEO/HEO",5760,26240,0.219512195121951
+"430","HO",2009,"SCS",240,26240,0.00914634146341463
+"431","HO",2010,"AO/AA",9400,27030,0.347761746207917
+"432","HO",2010,"EO",9350,27030,0.345911949685535
+"433","HO",2010,"G6/G7",1780,27030,0.0658527561968184
+"434","HO",2010,"SEO/HEO",6270,27030,0.23196448390677
+"435","HO",2010,"SCS",270,27030,0.00998890122086571
+"436","HO",2011,"AO/AA",10170,29650,0.343001686340641
+"437","HO",2011,"EO",11130,29650,0.375379426644182
+"438","HO",2011,"G6/G7",1670,29650,0.0563237774030354
+"439","HO",2011,"SEO/HEO",6460,29650,0.21787521079258
+"440","HO",2011,"SCS",220,29650,0.00741989881956155
+"441","HO",2012,"AO/AA",8770,26350,0.332827324478178
+"442","HO",2012,"EO",9850,26350,0.373814041745731
+"443","HO",2012,"G6/G7",1630,26350,0.0618595825426945
+"444","HO",2012,"SEO/HEO",5900,26350,0.223908918406072
+"445","HO",2012,"SCS",210,26350,0.0079696394686907
+"446","HO",2013,"AO/AA",8070,26470,0.304873441632036
+"447","HO",2013,"EO",10390,26470,0.392519833774084
+"448","HO",2013,"G6/G7",1790,26470,0.067623724971666
+"449","HO",2013,"SEO/HEO",6020,26470,0.227427276161692
+"450","HO",2013,"SCS",200,26470,0.00755572346052135
+"451","MoD",2008,"AO/AA",38540,81950,0.470286760219646
+"452","MoD",2008,"EO",15230,81950,0.185845027455766
+"453","MoD",2008,"G6/G7",4050,81950,0.0494203782794387
+"454","MoD",2008,"SEO/HEO",20400,81950,0.248932275777913
+"455","MoD",2008,"SCS",330,81950,0.00402684563758389
+"456","MoD",2009,"AO/AA",35140,77830,0.451496852113581
+"457","MoD",2009,"EO",15240,77830,0.195811383785173
+"458","MoD",2009,"G6/G7",4130,77830,0.053064371065142
+"459","MoD",2009,"SEO/HEO",20580,77830,0.264422459205962
+"460","MoD",2009,"SCS",330,77830,0.0042400102788128
+"461","MoD",2010,"AO/AA",36050,77650,0.464262717321314
+"462","MoD",2010,"EO",13740,77650,0.176947842884739
+"463","MoD",2010,"G6/G7",4300,77650,0.0553766902768835
+"464","MoD",2010,"SEO/HEO",20610,77650,0.265421764327109
+"465","MoD",2010,"SCS",340,77650,0.00437862202189311
+"466","MoD",2011,"AO/AA",33180,73730,0.450020344500203
+"467","MoD",2011,"EO",12710,73730,0.172385731723857
+"468","MoD",2011,"G6/G7",4130,73730,0.0560151905601519
+"469","MoD",2011,"SEO/HEO",20930,73730,0.283873592838736
+"470","MoD",2011,"SCS",330,73730,0.0044757900447579
+"471","MoD",2012,"AO/AA",26310,62920,0.418150031786395
+"472","MoD",2012,"EO",12270,62920,0.195009535918627
+"473","MoD",2012,"G6/G7",3670,62920,0.0583280356007629
+"474","MoD",2012,"SEO/HEO",18260,62920,0.29020979020979
+"475","MoD",2012,"SCS",280,62920,0.00445009535918627
+"476","MoD",2013,"AO/AA",24220,58440,0.414442162902122
+"477","MoD",2013,"EO",10480,58440,0.179329226557153
+"478","MoD",2013,"G6/G7",3850,58440,0.0658795345653662
+"479","MoD",2013,"SEO/HEO",17700,58440,0.302874743326489
+"480","MoD",2013,"SCS",260,58440,0.00444900752908966
+"481","MoJ",2008,"AO/AA",680,3790,0.179419525065963
+"482","MoJ",2008,"EO",720,3790,0.189973614775726
+"483","MoJ",2008,"G6/G7",860,3790,0.226912928759894
+"484","MoJ",2008,"SEO/HEO",1390,3790,0.366754617414248
+"485","MoJ",2008,"SCS",140,3790,0.0369393139841689
+"486","MoJ",2009,"AO/AA",480,3010,0.159468438538206
+"487","MoJ",2009,"EO",500,3010,0.166112956810631
+"488","MoJ",2009,"G6/G7",720,3010,0.239202657807309
+"489","MoJ",2009,"SEO/HEO",1190,3010,0.395348837209302
+"490","MoJ",2009,"SCS",120,3010,0.0398671096345515
+"491","MoJ",2010,"AO/AA",530,3220,0.164596273291925
+"492","MoJ",2010,"EO",500,3220,0.15527950310559
+"493","MoJ",2010,"G6/G7",750,3220,0.232919254658385
+"494","MoJ",2010,"SEO/HEO",1300,3220,0.403726708074534
+"495","MoJ",2010,"SCS",140,3220,0.0434782608695652
+"496","MoJ",2011,"AO/AA",1080,4690,0.230277185501066
+"497","MoJ",2011,"EO",870,4690,0.185501066098081
+"498","MoJ",2011,"G6/G7",900,4690,0.191897654584222
+"499","MoJ",2011,"SEO/HEO",1710,4690,0.364605543710021
+"500","MoJ",2011,"SCS",130,4690,0.0277185501066098
+"501","MoJ",2012,"AO/AA",1030,4250,0.242352941176471
+"502","MoJ",2012,"EO",800,4250,0.188235294117647
+"503","MoJ",2012,"G6/G7",770,4250,0.181176470588235
+"504","MoJ",2012,"SEO/HEO",1530,4250,0.36
+"505","MoJ",2012,"SCS",120,4250,0.0282352941176471
+"506","MoJ",2013,"AO/AA",980,4480,0.21875
+"507","MoJ",2013,"EO",920,4480,0.205357142857143
+"508","MoJ",2013,"G6/G7",790,4480,0.176339285714286
+"509","MoJ",2013,"SEO/HEO",1670,4480,0.372767857142857
+"510","MoJ",2013,"SCS",120,4480,0.0267857142857143
+"511","Whole Civil Service",2008,"AO/AA",254190,525160,0.484023916520679
+"512","Whole Civil Service",2008,"EO",130420,525160,0.248343362023003
+"513","Whole Civil Service",2008,"G6/G7",33090,525160,0.0630093685733872
+"514","Whole Civil Service",2008,"SEO/HEO",99000,525160,0.188513976692817
+"515","Whole Civil Service",2008,"SCS",4790,525160,0.00912102978139995
+"516","Whole Civil Service",2009,"AO/AA",249990,524420,0.4766980664353
+"517","Whole Civil Service",2009,"EO",131300,524420,0.250371839365394
+"518","Whole Civil Service",2009,"G6/G7",34950,524420,0.0666450554898745
+"519","Whole Civil Service",2009,"SEO/HEO",100420,524420,0.191487738835285
+"520","Whole Civil Service",2009,"SCS",4920,524420,0.00938179321917547
+"521","Whole Civil Service",2010,"AO/AA",245790,527480,0.465970273754455
+"522","Whole Civil Service",2010,"EO",133980,527480,0.254000151664518
+"523","Whole Civil Service",2010,"G6/G7",36630,527480,0.0694433912186244
+"524","Whole Civil Service",2010,"SEO/HEO",103220,527480,0.195685144460453
+"525","Whole Civil Service",2010,"SCS",5070,527480,0.00961173883369986
+"526","Whole Civil Service",2011,"AO/AA",233180,498430,0.467828983006641
+"527","Whole Civil Service",2011,"EO",123810,498430,0.248399975924403
+"528","Whole Civil Service",2011,"G6/G7",35110,498430,0.0704411853219108
+"529","Whole Civil Service",2011,"SEO/HEO",98760,498430,0.198142166402504
+"530","Whole Civil Service",2011,"SCS",4610,498430,0.00924904199185442
+"531","Whole Civil Service",2012,"AO/AA",210540,463810,0.453935878915935
+"532","Whole Civil Service",2012,"EO",119340,463810,0.257303637265259
+"533","Whole Civil Service",2012,"G6/G7",33610,463810,0.0724650180030616
+"534","Whole Civil Service",2012,"SEO/HEO",93560,463810,0.201720532114443
+"535","Whole Civil Service",2012,"SCS",4420,463810,0.00952976434315776
+"536","Whole Civil Service",2013,"AO/AA",197510,448840,0.440045450494608
+"537","Whole Civil Service",2013,"EO",116230,448840,0.258956420996346
+"538","Whole Civil Service",2013,"G6/G7",35030,448840,0.0780456287318421
+"539","Whole Civil Service",2013,"SEO/HEO",93280,448840,0.207824614561982
+"540","Whole Civil Service",2013,"SCS",4340,448840,0.00966936993137867

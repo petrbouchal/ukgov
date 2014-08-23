@@ -1,5 +1,7 @@
-source('./src/lib/lib_acses.R')
 library(pbtools)
+source('./src/lib/lib_acses.R')
+library(plyr)
+
 if(!batchproduce){ # avoid overriding when batch charting
   whitehallonly <- FALSE # use this to override global set in lib
 }
@@ -64,8 +66,8 @@ uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service' | uu$Group=='Whitehall',
 if(whitehallonly) {
   uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
 }
-HLcol <- ifelse(whitehallonly,IfGcols[2,3],IfGcols[4,3])
-HLmarg <- ifelse(whitehallonly,IfGcols[2,1],IfGcols[4,1])
+HLcol <- ifelse(whitehallonly,ifgcolours[2,3],ifgcolours[4,3])
+HLmarg <- ifelse(whitehallonly,ifgcolours[2,1],ifgcolours[4,1])
 
 plotname <- 'plot_DeGeGrYr_alt'
 
@@ -102,19 +104,19 @@ plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
                      aes(colour=Civil.Service.grad),pch=16,show_guide=TRUE) +
   geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
             colour=HLmarg,fill=NA,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,size = 1) +
-  scale_colour_manual(values=c('All grades' = IfGcols[2,1],'SCS'=IfGcols[3,1]),
+  scale_colour_manual(values=c('All grades' = ifgcolours[2,1],'SCS'=ifgcolours[3,1]),
                       labels=c('Senior Civil Service')) +
   scale_y_continuous(labels=percent) +
-  scale_fill_manual(values=c('Male' = IfGcols[5,1],'Female'=IfGcols[2,1]),
+  scale_fill_manual(values=c('Male' = ifgcolours[5,1],'Female'=ifgcolours[2,1]),
                       labels=c('Female','Male')) +
   guides(colour = guide_legend(ncol = 2),
          fill=guide_legend(override.aes=list(colour=NA),order=1)) +
   #scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
   facet_wrap(~Group, nrow=3,scales='fixed') +
   labs(title=plottitle, y=ylabel,x=xlabel) +
-  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2]),
+  theme(panel.border=element_rect(fill=NA,color=ifgcolours[1,2]),
         axis.text.x=element_text(angle=90,vjust=0.5),
-        panel.grid.major.y=element_line(colour=IfGcols[1,3]),
+        panel.grid.major.y=element_line(colour=ifgcolours[1,3]),
         axis.title.y=element_text(size=9),axis.ticks.x=element_blank())
 plot_DeGeGrYr
 
