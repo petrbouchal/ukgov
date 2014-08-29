@@ -141,6 +141,10 @@ ggplot(wmipb_change, aes(month, change, colour=variable)) +
 # saveplot('Plot',plotformat = 'pdf',ploth = 10, plotw = 12)
 
 # area: departmental breakdown of non-payroll staff numbers -----------------
+monthslabels <- c('Mar\n2012','Sep\n2012','Mar\n2013','Sep\n2013','Mar\n2014')
+monthsbreaks <- as.Date(c('2012-03-01','2012-09-01',
+                          '2013-03-01','2013-09-01',
+                          '2014-03-01'))
 ggplot(wmipb, aes(month, value, fill=variable)) +
   geom_area(position='stack') + 
   facet_wrap(~short.form, scales='free_y') + 
@@ -149,10 +153,9 @@ ggplot(wmipb, aes(month, value, fill=variable)) +
                                'Interim managers',
                                'Specialist contractors',
                                'Consultants / consultancy staff')) + 
-  scale_x_date(labels=date_format('%b %y'), breaks="6 months", 
-               limits = as.Date(c('2012-04-01','2013-12-01')))
+  scale_x_date(labels=monthslabels, breaks=monthsbreaks)
 
-saveplot('Tempsbydept',plotformat = 'png',ploth = 16, plotw = 16,
+saveplot('Tempsbydept',plotformat = 'png',ploth = 16, plotw = 17.5,
          plotdir = './charts-output/', dpi=300)
 
 # line: cost changes by department, payroll and non-payroll --------------
