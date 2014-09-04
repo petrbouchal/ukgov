@@ -39,7 +39,7 @@ ylabels <- paste0(abs(ybreaks*100),'%')
 
 loadcustomthemes(ifgcolours, 'Calibri')
 plot_DisabGrYr <- ggplot(uu,aes(as.factor(Date), yvar)) +
-  geom_line(aes(colour=Civil.Service.grad,group=Civil.Service.grad)) +
+  geom_line(aes(colour=Civil.Service.grad,group=Civil.Service.grad), size=1.2) +
   geom_point(aes(colour=Civil.Service.grad),size=4) +
   scale_colour_manual(values=c('All grades'=ifgcolours[2,1],'SCS'=ifgcolours[3,1]),
                       labels=c('All grades','Senior Civil Service')) +
@@ -61,4 +61,5 @@ plot_DisabGrYr
 
 # Save plot ---------------------------------------------------------------
 
-# saveplot(ffamily=fontfamily,plotformat=plotformat,ploth=ph,plotw=pw, plotname=plotname)
+saveplot(ffamily=fontfamily,plotformat=plotformat,ploth=ph,plotw=pw, plotname=plotname,
+         plotdir='./charts-output/',dpi=300)

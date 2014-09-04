@@ -35,7 +35,7 @@ uu <- origdata %>%
 # Sort departments --------------------------------------------------------
 uu <- uu %>%
   group_by(Group) %>%
-  mutate(sorter=mean(share[Date==2013 & Civil.Service.grad=='All grades'])) %>%
+  mutate(sorter=mean(share[Date==2013 & Civil.Service.grad=='SCS'])) %>%
   ungroup() %>%
   mutate(Group=reorder(Group,-sorter,mean)) %>%
   mutate(totalgroup = ifelse(Group=='Whole Civil Service', TRUE, FALSE))
@@ -50,7 +50,7 @@ HLcol <- ifelse(whitehallonly,ifgcolours[4,1],ifgcolours[3,1])
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
 ylabel = 'Female Civil Servants as % of grade in'
-xlabel = 'ordered by % of female Civil Servants in 2013'
+xlabel = 'ordered by % of female Senior Civil Servants in 2013'
 if(whitehallonly){
   plottitle=paste0(plottitle,' - Whitehall departments')
   ylabel = paste0(ylabel,' Whitehall dept')
@@ -66,8 +66,8 @@ if(whitehallonly){
 uu$yvar <- uu$share
 
 maxY <- max(abs(uu$yvar),na.rm=TRUE)
-ylimits <- c(0, maxY*1.04)
-ybreaks <- c(0,0.25,0.5,0.75)
+ylimits <- c(0, 1)
+ybreaks <- c(0,0.25,0.5,0.75, 1)
 ylabels <- paste0(abs(ybreaks*100),'%')
 xlabels <- c('2008', '09', '10', '11', '12', '2013')
 
@@ -75,8 +75,8 @@ loadcustomthemes(ifgcolours, 'Calibri')
 plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
   geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
             ymin = -Inf,ymax = Inf,alpha = .01) +
-  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=1) +
+#   geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
+#             ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=1) +
   geom_line(size=1, aes(colour=Civil.Service.grad),stat='identity') +
   geom_point(aes(colour=Civil.Service.grad),pch=16,show_guide=TRUE) +
   scale_colour_manual(values=c('All grades' = ifgcolours[2,1],'SCS'=ifgcolours[3,1]),
@@ -88,13 +88,13 @@ plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
   scale_x_discrete(labels=xlabels) +
   facet_wrap(~Group, nrow=4) +
   labs(title=NULL, y=ylabel,x=xlabel) +
-  theme(panel.border=element_rect(fill=NA,color=ifgcolours[1,4]),
+  theme(panel.border=element_blank(),
         axis.text.x=element_text(angle=0,vjust=0.5, size=8),
-        panel.grid.major.y=element_line(colour=ifgcolours[1,3]),
-        legend.key.width=unit(0.5,'cm'), axis.title.y=element_text(size=9, angle=90))
+        panel.grid.major.y=element_line(colour=ifgcolours[1,4]),
+        legend.key.width=unit(0.5,'cm'), axis.title.x=element_text(size=9))
 plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------
 
-saveplot(plotname=plotname,plotformat='png',ploth=ph,plotw=pw,ffamily=fontfamily,
-         plotdir='./charts-output/',dpi=300)
+# saveplot(plotname=plotname,plotformat='png',ploth=ph,plotw=pw,ffamily=fontfamily,
+#          plotdir='./charts-output/',dpi=300)

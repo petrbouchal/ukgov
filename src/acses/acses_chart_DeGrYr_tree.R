@@ -59,7 +59,7 @@ uu$totalgroup <- ifelse(uu$Group=='Whole Civil Service',TRUE,FALSE)
 if(whitehallonly) {
   uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
 }
-HLcol <- ifelse(whitehallonly,IfGcols[4,1],IfGcols[3,1])
+HLcol <- ifelse(whitehallonly,ifgcolours[4,1],ifgcolours[3,1])
 
 plotname <- 'plot_DeGeGr'
 plottitle <- 'Civil Servants by grade'
@@ -88,15 +88,15 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, yvar)) +
   geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
             ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
   coord_flip() +
-  scale_fill_manual(values=c(IfGcols[5,1],IfGcols[2,1]),
+  scale_fill_manual(values=c(ifgcolours[5,1],ifgcolours[2,1]),
                     labels=c('2010   ', '2013')) +
   guides(colour = guide_legend(ncol = 1)) +
   guides(col=guide_legend(ncol=3)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
   facet_wrap(~Group, nrow=3) +
   labs(y=ylabel) +
-  theme(panel.border=element_rect(fill=NA,color=IfGcols[1,2]),
-        axis.ticks=element_line(colour=IfGcols[1,2]),axis.ticks.y=element_blank(),
+  theme(panel.border=element_rect(fill=NA,color=ifgcolours[1,2]),
+        axis.ticks=element_line(colour=ifgcolours[1,2]),axis.ticks.y=element_blank(),
         plot.title=element_blank(),axis.title.y=element_blank())
 plot_DeGeGr
 

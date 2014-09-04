@@ -12,8 +12,8 @@ if(!batchproduce) {whitehallonly <- TRUE} # change here to produce WH or group c
 # Set parameters for saved chart ------------------------------------------
 fontfamily='Calibri'
 if(!batchproduce) { # don't override size & format variables if producing by batch
-  ph=16
-  pw=16
+  ph=12
+  pw=17.5
   plotformat <- 'png'
 }
 

@@ -47,29 +47,30 @@ uu2 <- uu[uu$totalgroup & uu$measure=='Cumulative_Perc_net_change' & uu$chart,]
 plot_PSE <- ggplot(data=uu,aes(x=Period,y=value, group=group, colour=Whitehall)) + 
   geom_rect(data=uu2[uu2$Period=='2013Q3' & uu2$Whitehall=='Non-Whitehall',],fill=HLcol,
             xmin = -Inf,xmax = Inf,colour=NA,
-            ymin = -Inf,ymax = Inf,alpha = 1, show_guide=FALSE) +
+            ymin = -Inf,ymax = Inf,alpha = .5, show_guide=FALSE) +
   geom_hline(yintercept=0,colour=ifgcolours[1,1]) +
   geom_line(data=uu,size=1) +
-  geom_rect(data=uu2[uu2$Period=='2013Q3' & uu2$Whitehall=='Non-Whitehall',],colour=HLmarg,
-             xmin = -Inf,xmax = Inf,
-             ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=1, show_guide=FALSE) +
+#   geom_rect(data=uu2[uu2$Period=='2013Q3' & uu2$Whitehall=='Non-Whitehall',],colour=HLmarg,
+#              xmin = -Inf,xmax = Inf,
+#              ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=1, show_guide=FALSE) +
   facet_wrap(~Dept,nrow=5) +
   scale_color_manual(values=ifgbasecolours[c(3,2,5)]) +
-  scale_y_continuous(labels=percent) +
+  scale_y_continuous(labels=percent, breaks=c(-.3, 0, .3, .6,.9)) +
   scale_x_discrete(labels=labelsx) +
   labs(y='% change since Spending Review 2010 (2010 Q3)',
        x = 'Departmental groups ordered by reduction made to 2013 Q1') +
   guides(colour = guide_legend(ncol = 3,keywidth=unit(1,'cm'))) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),plot.title=element_blank(),
         axis.line.x=element_line(size=unit(1,'mm'),colour=ifgcolours[1,2]),
-        panel.border=element_rect(fill=NA,color=ifgcolours[1,2]),
+        panel.border=element_rect(fill=NA,color=ifgcolours[1,4]),
         panel.margin=unit(c(1,1,1,1),'mm'),
         axis.ticks.x=element_line(colour=ifgcolours[1,2]),
-        panel.grid=element_line(colour=ifgcolours[1,3]),panel.grid.minor=element_blank(),
+        panel.grid=element_line(colour=ifgcolours[1,4]),panel.grid.minor=element_blank(),
         panel.grid.major.x=element_blank(),
         axis.text.x=element_text(size=8))
 plot_PSE
 
 # Save ggplot -------------------------------------------------------------
 
-# SavePlot(plotname=plotname,plotformat=plotformat,ffamily=fontfamily,ploth=ph,plotw=pw)
+saveplot(plotname=plotname,plotformat=plotformat,ffamily=fontfamily,
+         ploth=ph,plotw=pw,plotdir = './charts-output/', dpi=300)

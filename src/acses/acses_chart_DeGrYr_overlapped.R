@@ -6,7 +6,7 @@ source('./src/lib/lib_acses.R')
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(file_name=filename,location=location)
-whitehallonly <- TRUE
+whitehallonly <- FALSE
 
 # Process data ------------------------------------------------------------
 uu <- origdata %>%
@@ -95,10 +95,10 @@ ylabels <- paste0(abs(ybreaks*100),'%')
 
 loadcustomthemes(ifgcolours, 'Calibri')
 plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
-#   geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
-#             ymin = -Inf,ymax = Inf,alpha = .01) +
-  geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
-            ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
+  geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
+            ymin = -Inf,ymax = Inf,alpha = .01) +
+#   geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
+#             ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
   geom_area(position='identity', width=1,stat='identity',
             data=uu[uu$Date=='2010',], aes(fill='col1'), alpha=1) +
   geom_area(position='identity', width=1,stat='identity',
