@@ -96,5 +96,5 @@ plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------
 
-# saveplot(plotname=plotname,plotformat='png',ploth=ph,plotw=pw,ffamily=fontfamily,
-#          plotdir='./charts-output/',dpi=300)
+saveplot(plotname=plotname,plotformat='png',ploth=ph,plotw=pw,ffamily=fontfamily,
+         plotdir='./charts-output/',dpi=300)

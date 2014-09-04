@@ -73,4 +73,4 @@ plot_PSE
 # Save ggplot -------------------------------------------------------------
 
 saveplot(plotname=plotname,plotformat=plotformat,ffamily=fontfamily,
-         ploth=ph,plotw=pw,plotdir = './charts-output/', dpi=300)
+         ploth=17.5,plotw=pw,plotdir = './charts-output/', dpi=300)
