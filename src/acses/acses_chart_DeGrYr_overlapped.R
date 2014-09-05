@@ -107,11 +107,13 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
             aes(label=Group, x=sorter*5), colour='white',y=0,
             fontface='bold',size=3) +
   coord_flip() +
-  facet_wrap(~Group, nrow=4) +
+  facet_wrap(~Group, nrow=5) +
   guides(fill=guide_legend(ncol=3)) +
   scale_fill_manual(values=c('col1'=ifgcolours[5,2],'col2'=ifgcolours[2,1]),
                     labels=c('2010', '2013')) +
-  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels) +
+  scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,
+                     expand=c(0,0)) +
+  scale_x_discrete(expand=c(0,0)) +
   labs(y=NULL, x=NULL) +
   theme(panel.border=element_rect(fill=NA,color=NA,size=.5),
         axis.ticks.y=element_blank(),panel.grid=element_blank(),
