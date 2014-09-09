@@ -145,6 +145,18 @@ monthslabels <- c('Mar\n2012','Sep\n2012','Mar\n2013','Sep\n2013','Mar\n2014')
 monthsbreaks <- as.Date(c('2012-03-01','2012-09-01',
                           '2013-03-01','2013-09-01',
                           '2014-03-01'))
+deptlist <- c('MOJ','HO','MOD','DH','CO','BIS','DWP','DECC','HMRC','DfID',
+              'Defra','DfT','DCLG','DCMS','DfE','HMT')
+scaledata <- data.frame(short.form=deptlist,
+                        value = c(rep(3000,3),
+                              rep(800,1),
+                              rep(400,4),
+                              rep(120,8)),
+                        variable='agency',
+                        month=as.Date('2012-03-01'))
+
+wmipb$short.form <- factor(wmipb$short.form,levels=deptlist)
+
 ggplot(wmipb, aes(month, value, fill=variable)) +
   geom_area(position='stack') + 
   facet_wrap(~short.form, scales='free_y') + 
@@ -153,7 +165,8 @@ ggplot(wmipb, aes(month, value, fill=variable)) +
                                'Interim managers',
                                'Specialist contractors',
                                'Consultants / consultancy staff')) + 
-  scale_x_date(labels=monthslabels, breaks=monthsbreaks)
+  scale_x_date(labels=monthslabels, breaks=monthsbreaks) +
+  geom_blank(data=scaledata)
 
 saveplot('Tempsbydept',plotformat = 'png',ploth = 16, plotw = 17.5,
          plotdir = './charts-output/', dpi=300)
