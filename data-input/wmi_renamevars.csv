@@ -1,7 +1,9 @@
 original,new
 month,month
 short.form,dept
+department,department
 ifg.classification,whitehall
+ifg.boundary,managed
 organisation.name,org
 organisation.type,orgtype
 main..parent.or.sponsoring.department,dept_orig
