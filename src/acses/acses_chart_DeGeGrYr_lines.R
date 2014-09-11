@@ -3,7 +3,7 @@ library(pbtools)
 source('./src/lib/lib_acses.R')
 
 if(!batchproduce){ # avoid overriding when batch charting
-  whitehallonly <- FALSE # use this to override global set in lib
+  managed <- TRUE # use this to override global set in lib
 }
 
 # Load data ---------------------------------------------------------------
@@ -17,7 +17,7 @@ uu <- origdata %>%
   filter(Wage.band=='Total') %>%
   filter(Civil.Service.grad=='Total' | Civil.Service.grad=='Senior Civil Service') %>%
   # Add organisation data and exclude what isn't needed
-  AddOrgData(whitehallonly) %>%
+  AddOrgData(managedonly = managed) %>%
   filter(Include=='Yes') %>%
   # Drop unneeded vars
   select(Group, Whitehall, Gender, Civil.Service.grad, Date, count, Organisation) %>%
@@ -32,29 +32,37 @@ uu <- origdata %>%
   mutate(share=count/total, grp = paste0(Group, Civil.Service.grad)) %>%
   RelabelGrades()
 
+# Create 'managed' total if needed
+if(managed) {
+  managedtotal <- uu %>%
+    filter(Group!='Whole Civil Service') %>%
+    group_by(Date, Civil.Service.grad, Gender) %>%
+    summarise(count=sum(count),total=sum(total), share=count/total) %>%
+    mutate(Group = 'All managed', grp = paste0(Group, Civil.Service.grad))
+  uu <- rbind(uu[uu$Group!='Whole Civil Service',],managedtotal)
+}
+
 # Sort departments --------------------------------------------------------
 uu <- uu %>%
   group_by(Group) %>%
   mutate(sorter=mean(share[Date==2013 & Civil.Service.grad=='SCS'])) %>%
   ungroup() %>%
   mutate(Group=reorder(Group,-sorter,mean)) %>%
-  mutate(totalgroup = ifelse(Group=='Whole Civil Service', TRUE, FALSE))
+  mutate(totalgroup = ifelse(Group=='Whole Civil Service' | Group=='All managed',
+                             TRUE, FALSE))
 
 # Build plot --------------------------------------------------------------
 
-if(whitehallonly) {
-  uu$Group <- revalue(uu$Group,c("Whole Civil Service"="Whitehall"))
-}
-HLcol <- ifelse(whitehallonly,ifgcolours[4,1],ifgcolours[3,1])
+HLcol <- ifelse(managed,ifgcolours[4,1],ifgcolours[3,1])
 
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
 ylabel = 'Female Civil Servants as % of grade in'
 xlabel = 'ordered by % of female Senior Civil Servants in 2013'
-if(whitehallonly){
-  plottitle=paste0(plottitle,' - Whitehall departments')
-  ylabel = paste0(ylabel,' Whitehall dept')
-  xlabel = paste0('Whitehall departments ',xlabel)
+if(managed){
+  plottitle=paste0(plottitle,' - managed departments')
+  ylabel = paste0(ylabel,' managed dept')
+  xlabel = paste0('managed departments ',xlabel)
   plotname = paste0(plotname,'_WH')
 } else {
   plottitle=paste0(plottitle,' - departmental groups')

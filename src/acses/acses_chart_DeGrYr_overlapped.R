@@ -7,14 +7,14 @@ source('./src/lib/lib_acses.R')
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(file_name=filename,location=location)
 whitehallonly <- FALSE
+managed <- FALSE
 
 # Process data ------------------------------------------------------------
 uu <- origdata %>%
   # Filter out unneeded totals
   filter(Wage.band=='Total' & Gender=='Total') %>%
   # Add organisation data and exclude what isn't needed
-  AddOrgData(whitehallonly) %>%
-  filter(Include=='Yes') %>%
+  AddOrgData(managedonly = managed) %>%
   # Drop unneeded vars
   select(Group, Civil.Service.grad, Date, count, Organisation) %>%
   # Summarise by departmental group
@@ -29,14 +29,14 @@ uu <- origdata %>%
   mutate(share=count/total) %>%
   RelabelGrades()
 
-# Create Whitehall total if needed
-if(whitehallonly) {
-  whtotal <- uu %>%
+# Create 'managed' total if needed
+if(managed) {
+  managedtotal <- uu %>%
     filter(Group!='Whole Civil Service') %>%
     group_by(Date, Civil.Service.grad) %>%
     summarise(count=sum(count),total=sum(total), share=count/total) %>%
-    mutate(Group = 'Whitehall')
-  uu <- rbind(uu[uu$Group!='Whole Civil Service',],whtotal)
+    mutate(Group = 'All managed')
+  uu <- rbind(uu[uu$Group!='Whole Civil Service',],managedtotal)
 }
   
 # Sort departments --------------------------------------------------------
@@ -52,7 +52,8 @@ uu <- merge(uu,gradevalues) %>%
   ungroup() %>%
   filter(Date=='2013' | Date=='2010') %>%
   mutate(Group=reorder(Group,-sorter,mean)) %>%
-  mutate(totalgroup = ifelse(Group=='Whole Civil Service', TRUE, FALSE)) %>%
+  mutate(totalgroup = ifelse(Group=='Whole Civil Service' | Group=='All managed',
+                             TRUE, FALSE)) %>%
   select(-meangradescore, -sharebothgenders)
 
 
@@ -70,18 +71,18 @@ uu$grp <- paste0(uu$left, uu$Date)
 uu <- arrange(uu, Group, grp)
 
 
-HLcol <- ifelse(whitehallonly,ifgcolours[2,1],ifgcolours[4,1])
+HLcol <- ifelse(managed,ifgcolours[4,1],ifgcolours[3,1])
 
 plotname <- 'plot_DeGrYr_overlapped'
 
 plottitle <- 'Civil Servants by gender and grade'
-ylabel = 'ordered by grade composition of staff (most senior workforce first)'
-if(whitehallonly){
-  plottitle=paste0(plottitle,' - Whitehall departments')
-  ylabel = paste0('% of Civil Servants in grade. Whitehall departments ',ylabel)
+ylabel = ' Most senior workforce top left'
+if(managed){
+  plottitle=paste0(plottitle,' - managed departments')
+  ylabel = paste0('% of Civil Servants in grade. Managed departments ',ylabel)
   plotname = paste0(plotname,'_WH')
 } else {
-  plottitle=paste0(plottitle,' - departmental groups')
+  plottitle=paste0(plottitle,' - departmental groups.')
   ylabel = paste0('% of Civil Servants in grade. Departmental groups ',ylabel)
   plotname = paste0(plotname,'_Group')
 }
@@ -114,10 +115,10 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,
                      expand=c(0,0)) +
   scale_x_discrete(expand=c(0,0)) +
-  labs(y=NULL, x=NULL) +
+  labs(y=ylabel, x=NULL) +
   theme(panel.border=element_rect(fill=NA,color=NA,size=.5),
         axis.ticks.y=element_blank(),panel.grid=element_blank(),
-        strip.text=element_blank())
+        strip.text=element_blank(), axis.title.x=element_text())
 plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------
