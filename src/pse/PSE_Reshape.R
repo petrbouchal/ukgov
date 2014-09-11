@@ -7,7 +7,7 @@ library(xlsx)
 # load data
 # change <- read.csv("./data-input/ChangeDeptsFTE_2013Q4.csv",comment.char='#')
 onspath <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall Monitor/Data Sources/ONS Public Sector Employment/Analysis/'
-onsfilename <- 'ONS PSE Analysis v0.94.xlsx'
+onsfilename <- 'ONS PSE Analysis v0.97.xlsx'
 onsfilepath <- paste0(onspath,onsfilename)
 change <- read.xlsx(onsfilepath,sheetName = 'Calculations',comment.char='#',startRow = 3)
 names(change)
@@ -23,7 +23,7 @@ names(change) <- gsub("X__","Perc_", names(change), fixed=TRUE)
 names(change) <- gsub("___","_Perc_", names(change), fixed=TRUE)
 
 # reshape into long
-change <- melt(change,id.vars=c('Dept','Whitehall'))
+change <- melt(change,id.vars=c('Dept','Managed'))
 
 # get rid of rows where 'variable' does not contain year
 change <- change[grepl('201', change$variable),]
@@ -42,7 +42,7 @@ change$value <- ifelse(grepl('%',change$value),
                        as.numeric(change$value))
 
 # create variable to group points into chart lines
-change$group=paste(change$Dept,change$Whitehall,sep='-')
+change$group=paste(change$Dept,change$Managed,sep='-')
 
 write.csv(change,'./data-output/PSE_change_long.csv', row.names=FALSE)
 write.csv(change,'./src/shiny_experiments/onspse/PSE_change_long.csv', row.names=FALSE)

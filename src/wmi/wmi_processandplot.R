@@ -1,56 +1,57 @@
 library(pbtools)
 
-wmi <- read.csv('./data-input/wmi2014.csv', stringsAsFactors=FALSE)
+# Load data --------------------------------------------------------------------
+wmi <- read.csv('./data-input/wmi2014_2.csv', stringsAsFactors=FALSE)
 
 names(wmi) <- tolower(names(wmi))
 wmi$month <- as.Date(wmi$month,format = '%d/%m/%Y')
 
 # filter out times and departments and calculate change rates variables
 wmipa <- wmi %>%
-  filter(ifg.classification=='Whitehall' & month > '2012-02-01' & month < '2014-04-01') %>%
-  filter(short.form!='Scot Off' & short.form != 'Wales Off' & short.form != 'AG Depts') %>%
-  group_by(month, short.form) %>%
+  filter(ifg.boundary=='Y' & month > '2012-02-01' & month < '2014-04-01') %>%
+  filter(department!='Scot Off' & department != 'Wales Off' & department != 'AG Depts') %>%
+  group_by(month, department) %>%
   summarise(payroll=sum(as.numeric(payroll.staff.costs.total.paybill.for.payroll.staff), na.rm=T),
 #   summarise(payroll=sum(as.numeric(payroll.staff.costs.salary), na.rm=T),
             fte=sum(as.numeric(payroll.staff.total.employees.full.time.equivalent), na.rm=T)) %>%
   ungroup() %>%
-  arrange(short.form, month) %>%
-  group_by(short.form) %>%
+  arrange(department, month) %>%
+  group_by(department) %>%
   mutate(changefte=fte/first(fte)-1,
          changepayroll=payroll/first(payroll)-1) %>%
-  arrange(short.form, month)
+  arrange(department, month)
 
 # create separate dataset for split of agency staff
 wmipb <- wmi %>%
-  filter(ifg.classification=='Whitehall' & month > '2012-02-01' & month < '2014-04-01') %>%
-  filter(short.form!='Scot Off' & short.form != 'Wales Off' & short.form != 'AG Depts') %>%
-  group_by(month, short.form) %>%
+  filter(ifg.boundary=='Y' & month > '2012-02-01' & month < '2014-04-01') %>%
+  filter(department!='Scot Off' & department != 'Wales Off' & department != 'AGO') %>%
+  group_by(month, department) %>%
   summarise(agency=sum(as.numeric(non.payroll.staff.agency.staff..clerical.admin..full.time.equivalent), na.rm=T),
             interim=sum(as.numeric(non.payroll.staff.interim.managers.full.time.equivalent), na.rm=T),
             specialist=sum(as.numeric(non.payroll.staff.specialist.contractors.full.time.equivalent), na.rm=T),
-            consultant=sum(as.numeric(non.payroll.staff.consultants.consultancy.full.time.equivalent), na.rm=T)            ) %>%
+            consultant=sum(as.numeric(non.payroll.staff.consultants.consultancy.full.time.equivalent), na.rm=T)) %>%
   ungroup() %>%
-  arrange(short.form, month) %>%
-  melt(id.vars=c('month','short.form'))
+  melt(id.vars=c('month','department')) %>%
+  arrange(department, variable, month)
 
 # payroll and non-payroll COSTs
 wmipc <- wmi %>%
-  filter(ifg.classification=='Whitehall' & month > '2012-02-01' & month < '2014-04-01') %>%
-  filter(short.form!='Scot Off' & short.form != 'Wales Off' & short.form != 'AG Depts') %>%
-  group_by(month, short.form) %>%
+  filter(ifg.boundary=='Y' & month > '2012-02-01' & month < '2014-04-01') %>%
+  filter(department!='Scot Off' & department != 'Wales Off' & department != 'AG Depts') %>%
+  group_by(month, department) %>%
   summarise(payrollcost=sum(as.numeric(payroll.staff.costs.total.paybill.for.payroll.staff), na.rm=T),
             nonpayrollcost=sum(as.numeric(non.payroll.staff.total.non.payroll..ccl..staff.costs), na.rm=T),
             payrollfte=sum(as.numeric(payroll.staff.total.employees.full.time.equivalent), na.rm=T),
             nonpayrollfte=sum(as.numeric(non.payroll.staff.total.employees.full.time.equivalent), na.rm=T)) %>%
   ungroup() %>%
-  arrange(short.form, month) %>%
-  group_by(short.form) %>%
+  arrange(department, month) %>%
+  group_by(department) %>%
   mutate(changepayrollfte=payrollfte-first(payrollfte),
          changepayrollcost=payrollcost-first(payrollcost),
          changenonpayrollcost=nonpayrollcost-first(nonpayrollcost),
          changenonpayrollfte=nonpayrollfte-first(nonpayrollfte)) %>%
-  select(starts_with('change'), -ends_with('fte'), month, short.form) %>%
-  melt(id.vars=c('month', 'short.form'))
+  select(starts_with('change'), -ends_with('fte'), month, department) %>%
+  melt(id.vars=c('month', 'department'))
 
 # calculate/add time variables
 wmipa$calyr <- year(wmipa$month)
@@ -61,27 +62,27 @@ fytable$month <- as.Date(fytable$month)
 wmipa <- merge(wmipa, fytable)
 
 # Remove observations with missing or obviously mistyped values
-wmipa$changepayroll[wmipa$short.form=='MOD' & (wmipa$month=='2012-04-01' | 
+wmipa$changepayroll[wmipa$department=='MOD' & (wmipa$month=='2012-04-01' | 
                                        wmipa$month=='2012-05-01')] <- NA
-wmipa$changepayroll[wmipa$short.form=='Defra' & (wmipa$month=='2013-03-01')] <- NA
-wmipa$changepayroll[wmipa$short.form=='HO' & (wmipa$month=='2013-11-01')] <- NA
-wmipa$changepayroll[wmipa$short.form=='HMT' & (wmipa$month=='2014-04-01')] <- NA
-wmipa$changepayroll[wmipa$short.form=='MOD' & (wmipa$month=='2014-04-01')] <- NA
-wmipa <- wmipa %>% arrange(short.form, month)
+wmipa$changepayroll[wmipa$department=='Defra' & (wmipa$month=='2013-03-01')] <- NA
+wmipa$changepayroll[wmipa$department=='HO' & (wmipa$month=='2013-11-01')] <- NA
+wmipa$changepayroll[wmipa$department=='HMT' & (wmipa$month=='2014-04-01')] <- NA
+wmipa$changepayroll[wmipa$department=='MOD' & (wmipa$month=='2014-04-01')] <- NA
+wmipa <- wmipa %>% arrange(department, month)
 
-wmipc$changepayrollcost[wmipc$short.form=='MOD' & (wmipc$month=='2012-04-01' | 
+wmipc$changepayrollcost[wmipc$department=='MOD' & (wmipc$month=='2012-04-01' | 
                                                  wmipc$month=='2012-05-01')] <- NA
-wmipc$changepayrollcost[wmipc$short.form=='Defra' & (wmipc$month=='2013-03-01')] <- NA
-wmipc$changepayrollcost[wmipc$short.form=='HO' & (wmipc$month=='2013-11-01')] <- NA
-wmipc$changepayrollcost[wmipc$short.form=='HMT' & (wmipc$month=='2014-04-01')] <- NA
-wmipc$changepayrollcost[wmipc$short.form=='MOD' & (wmipc$month=='2014-04-01')] <- NA
-wmipc <- wmipc %>% arrange(short.form, month)
+wmipc$changepayrollcost[wmipc$department=='Defra' & (wmipc$month=='2013-03-01')] <- NA
+wmipc$changepayrollcost[wmipc$department=='HO' & (wmipc$month=='2013-11-01')] <- NA
+wmipc$changepayrollcost[wmipc$department=='HMT' & (wmipc$month=='2014-04-01')] <- NA
+wmipc$changepayrollcost[wmipc$department=='MOD' & (wmipc$month=='2014-04-01')] <- NA
+wmipc <- wmipc %>% arrange(department, month)
 
 # create long format with only change variables - for ggplot ------------
 wmip <- wmipa %>%
-  select(short.form, month, changefte, changepayroll,
+  select(department, month, changefte, changepayroll,
          calyr, calquarter, calyrquarter, fy) %>%
-  melt(id.vars = c('short.form', 'month', 'calyr',
+  melt(id.vars = c('department', 'month', 'calyr',
                    'calquarter','calyrquarter', 'fy'))
 
 # plots -----------------------------------------------------------------------
@@ -91,7 +92,7 @@ loadcustomthemes(mycols = ifgbasecolours, 'Calibri')
 ggplot(wmip, aes(month, value, colour=variable)) +
   geom_hline(y=0, colour=ifgbasecolours[1]) +
   geom_line(size=1) +
-  facet_wrap(~short.form) +
+  facet_wrap(~department) +
   scale_colour_manual(values=ifgbasecolours[3:2],
                       labels=c('Payroll staff (FTE)','Pay bill (payroll only)')) +
   scale_y_continuous(limits=c(-.4, .4), labels = percent) +
@@ -101,7 +102,7 @@ ggplot(wmip, aes(month, value, colour=variable)) +
 ## scatter: changes by department-------------------------------------
 ggplot(wmipa, aes(changefte, changepayroll)) +
   geom_point(size=1, colour=ifgcolours[3]) +
-  facet_wrap(~short.form) +
+  facet_wrap(~department) +
   geom_smooth(method='lm', se=FALSE, colour=ifgcolours[1,2]) +
   scale_y_continuous(limits=c(-.4,.4), labels = percent) +
   scale_x_continuous(limits=c(-.4,.4), labels = percent) +
@@ -121,8 +122,8 @@ ggplot(wmipa[(wmipa$fy=='2012-13' | wmipa$fy=='2013-14') & wmipa$month!='2012-03
 
 # line: departmental change in non-payroll staff numbers (percent) -----------
 wmipb_change <- wmipb %>%
-  group_by(short.form, variable) %>%
-  arrange(variable, short.form, month) %>%
+  group_by(department, variable) %>%
+  arrange(variable, department, month) %>%
   mutate(change = (value-first(value))/first(value)) %>%
   mutate(label=value[value==max(value)][1])
 
@@ -130,7 +131,7 @@ wmipb_change$label[wmipb_change$label != wmipb_change$value] <- NA
 
 ggplot(wmipb_change, aes(month, change, colour=variable)) +
   geom_line(size=1) + 
-  facet_wrap(~short.form, scales='free_y') + 
+  facet_wrap(~department, scales='free_y') + 
   geom_text(aes(label=round(label,digits = 0)), vjust=-.2, size=2.5) +
   scale_y_continuous(expand=c(0,1.1), labels=percent) +
   scale_colour_manual(values=ifgbasecolours,
@@ -145,9 +146,9 @@ monthslabels <- c('Mar\n2012','Sep\n2012','Mar\n2013','Sep\n2013','Mar\n2014')
 monthsbreaks <- as.Date(c('2012-03-01','2012-09-01',
                           '2013-03-01','2013-09-01',
                           '2014-03-01'))
-deptlist <- c('MOJ','HO','MOD','DH','CO','BIS','DWP','DECC','HMRC','DfID',
+deptlist <- c('MoJ','HO','MoD','DH','CO','BIS','DWP','DECC','HMRC','DfID',
               'Defra','DfT','DCLG','DCMS','DfE','HMT')
-scaledata <- data.frame(short.form=deptlist,
+scaledata <- data.frame(department=deptlist,
                         value = c(rep(3000,3),
                               rep(800,1),
                               rep(400,4),
@@ -155,11 +156,11 @@ scaledata <- data.frame(short.form=deptlist,
                         variable='agency',
                         month=as.Date('2012-03-01'))
 
-wmipb$short.form <- factor(wmipb$short.form,levels=deptlist)
+wmipb$department <- factor(wmipb$department,levels=deptlist)
 
 ggplot(wmipb, aes(month, value, fill=variable)) +
   geom_area(position='stack') + 
-  facet_wrap(~short.form, scales='free_y') + 
+  facet_wrap(~department, scales='free_y') + 
   scale_fill_manual(values=ifgbasecolours,
                       labels=c('Agency / clerical',
                                'Interim managers',
@@ -175,17 +176,17 @@ saveplot('Tempsbydept',plotformat = 'png',ploth = 16, plotw = 17.5,
 ggplot(wmipc, aes(month, value/10e6, colour=variable)) +
   geom_line(size=1.1) + scale_colour_manual(values=ifgbasecolours[3:4],
                                             labels=c('Payroll (FTE)', 'Non-payroll (FTE)')) +
-  facet_wrap(~short.form, scales='free_y')
+  facet_wrap(~department, scales='free_y')
 
 #### correlations for all departments ----------------------------------------
 corrs <- wmipa[wmipa$month!='2012-03-01',] %>% 
-  group_by(short.form) %>%
+  group_by(department) %>%
   summarise(corrcol = cor(payroll, fte, use='complete.obs'))
 
 corrs2 <- wmipa[wmipa$month!='2012-03-01',] %>% 
-  group_by(short.form, fy) %>%
+  group_by(department, fy) %>%
   summarise(corrcol = cor(payroll, fte, use='complete.obs')) %>%
-  cast(short.form ~ fy) %>%
+  cast(department ~ fy) %>%
   mutate(improved = `2012-13` < `2013-14`)
 table(corrs2$improved)
 
