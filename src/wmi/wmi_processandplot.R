@@ -1,7 +1,7 @@
 library(pbtools)
 
 # Load data --------------------------------------------------------------------
-wmi <- read.csv('./data-input/wmi2014_2.csv', stringsAsFactors=FALSE)
+wmi <- read.csv('./data-input/wmi_2014-09-19.csv', stringsAsFactors=FALSE)
 
 names(wmi) <- tolower(names(wmi))
 wmi$month <- as.Date(wmi$month,format = '%d/%m/%Y')
@@ -147,12 +147,12 @@ monthsbreaks <- as.Date(c('2012-03-01','2012-09-01',
                           '2013-03-01','2013-09-01',
                           '2014-03-01'))
 deptlist <- c('MoJ','HO','MoD','DH','CO','BIS','DWP','DECC','HMRC','DfID',
-              'Defra','DfT','DCLG','DCMS','DfE','HMT')
+              'Defra','DfT','DCLG','DCMS','DfE','HMT','FCO')
 scaledata <- data.frame(department=deptlist,
                         value = c(rep(3000,3),
                               rep(800,1),
                               rep(400,4),
-                              rep(120,8)),
+                              rep(120,9)),
                         variable='agency',
                         month=as.Date('2012-03-01'))
 
