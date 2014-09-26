@@ -3,7 +3,7 @@ library(pbtools)
 
 # Load data ---------------------------------------------------------------
 
-origdata <- read.csv('./data-input/WMI2014.csv')
+origdata <- read.csv('./data-input/wmi_2014-09-19.csv')
 
 # Process data ------------------------------------------------------------
 
