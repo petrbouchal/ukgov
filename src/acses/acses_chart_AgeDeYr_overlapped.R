@@ -114,10 +114,14 @@ plot_AgeDeGe <- ggplot(uu, aes(x=Age.band, y=yvar, group=grp)) +
   theme(panel.border=element_rect(fill=NA,color=NA,size=.5),
         axis.ticks.y=element_blank(),panel.grid=element_blank(),
         axis.title.x=element_text(),axis.title.y=element_text(angle=90),
-        strip.text=element_blank())
+        strip.text=element_blank(),
+        legend.key.width=unit(.2,'cm'),legend.key.height=unit(.2,'cm'),
+        axis.text = element_text(colour=ifgbasecolours[1]),
+        strip.text=element_text(size=12),
+        legend.text=element_text(size=12))
 plot_AgeDeGe
 
 # Save plot ---------------------------------------------------------------
 
-saveplot(plotname=plotname,plotformat=plotformat,ploth=ph,plotw=pw,
+saveplot(plotname=plotname,plotformat='pdf',ploth=10.5,plotw=17.5,
          ffamily=fontfamily, plotdir='./charts-output/',dpi=300)

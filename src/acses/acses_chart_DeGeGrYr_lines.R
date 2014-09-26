@@ -77,7 +77,7 @@ maxY <- max(abs(uu$yvar),na.rm=TRUE)
 ylimits <- c(0, 1)
 ybreaks <- c(0,0.25,0.5,0.75, 1)
 ylabels <- paste0(abs(ybreaks*100),'%')
-xlabels <- c('2008', '09', '10', '11', '12', '2013')
+xlabels <- c('\'08', '\'09', '\'10', '\'11', '\'12', '\'13')
 
 loadcustomthemes(ifgcolours, 'Calibri')
 plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
@@ -93,16 +93,21 @@ plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
                       labels=c('All grades','Senior Civil Service')) +
   guides(colour = guide_legend(ncol = 2)) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,expand=c(0,0)) +
-  scale_x_discrete(labels=xlabels) +
+  scale_x_discrete(labels=xlabels,expand=c(0,0.15)) +
   facet_wrap(~Group, nrow=4) +
   labs(title=NULL, y=ylabel,x=xlabel) +
-  theme(panel.border=element_blank(),
-        axis.text.x=element_text(angle=0,vjust=0.5, size=8),
+  theme(panel.border=element_rect(fill=NA,color=NA,size=.5),
         panel.grid.major.y=element_line(colour=ifgcolours[1,4]),
-        legend.key.width=unit(0.5,'cm'), axis.title.x=element_text(size=9))
+        axis.ticks.y=element_blank(),
+        axis.title=element_text(size=11, colour=ifgbasecolours[1]),
+        legend.key.width=unit(.5,'cm'),legend.key.height=unit(.2,'cm'),
+        axis.text = element_text(colour=ifgbasecolours[1],size=10),
+        axis.text.x = element_text(size=8),
+        strip.text=element_text(size=12),
+        legend.text=element_text(size=12))
 plot_DeGeGrYr
 
 # Save plot ---------------------------------------------------------------
 
-saveplot(plotname=plotname,plotformat='png',ploth=ph,plotw=pw,ffamily=fontfamily,
+saveplot(plotname=plotname,plotformat='pdf',ploth=15,plotw=17.5,ffamily=fontfamily,
          plotdir='./charts-output/',dpi=300)

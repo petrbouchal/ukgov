@@ -6,8 +6,7 @@ source('./src/lib/lib_acses.R')
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
 origdata <- LoadAcsesData(file_name=filename,location=location)
-whitehallonly <- FALSE
-managed <- FALSE
+managed <- TRUE
 
 # Process data ------------------------------------------------------------
 uu <- origdata %>%
@@ -106,7 +105,7 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
             data=uu[uu$Date=='2013',], aes(fill='col2'), alpha=.4) +
   geom_text(data=uu[uu$grp=='TRUE2010' & uu$Civil.Service.grad=='SCS',],
             aes(label=Group, x=sorter*5), colour='white',y=0,
-            fontface='bold',size=3) +
+            fontface='bold',size=4) +
   coord_flip() +
   facet_wrap(~Group, nrow=5) +
   guides(fill=guide_legend(ncol=3)) +
@@ -118,10 +117,15 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
   labs(y=ylabel, x=NULL) +
   theme(panel.border=element_rect(fill=NA,color=NA,size=.5),
         axis.ticks.y=element_blank(),panel.grid=element_blank(),
-        strip.text=element_blank(), axis.title.x=element_text())
+        strip.text=element_blank(), axis.title.x=element_text(),
+        axis.title=element_text(size=11, colour=ifgbasecolours[1]),
+        legend.key.width=unit(.2,'cm'),legend.key.height=unit(.2,'cm'),
+        axis.text = element_text(colour=ifgbasecolours[1],size=10),
+        strip.text=element_text(size=12),
+        legend.text=element_text(size=12))
 plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------
 
-saveplot(plotname=plotname,plotformat=plotformat,ploth=pw,plotw=pw,ffamily=fontfamily,
+saveplot(plotname=plotname,plotformat='pdf',ploth=15,plotw=17.5,ffamily=fontfamily,
          plotdir='./charts-output/', dpi=300)
