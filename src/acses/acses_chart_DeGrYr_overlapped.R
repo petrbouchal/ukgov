@@ -5,7 +5,7 @@ source('./src/lib/lib_acses.R')
 # Load data ---------------------------------------------------------------
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
-origdata <- LoadAcsesData(file_name=filename,location=location)
+origdata <- LoadAcsesData2014(file_name=filename,location=location)
 managed <- TRUE
 
 # Process data ------------------------------------------------------------
@@ -49,7 +49,7 @@ uu <- merge(uu,gradevalues) %>%
   group_by(Group,Date) %>%
   mutate(meangradescore=mean(gradescore), sorter=meangradescore) %>%
   ungroup() %>%
-  filter(Date=='2013' | Date=='2010') %>%
+  filter(Date=='2014' | Date=='2010') %>%
   mutate(Group=reorder(Group,-sorter,mean)) %>%
   mutate(totalgroup = ifelse(Group=='Whole Civil Service' | Group=='All managed',
                              TRUE, FALSE)) %>%
