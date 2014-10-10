@@ -5,7 +5,7 @@ source('./src/lib/lib_acses.R')
 # Load data ---------------------------------------------------------------
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
-origdata <- LoadAcsesData(file_name=filename,location=location)
+origdata <- LoadAcsesData2014(file_name=filename,location=location)
 managed <- TRUE
 
 # Process data ------------------------------------------------------------

@@ -1,4 +1,4 @@
-# This code takes 2012-8 data and adds 2013 data to it
+# This code takes 2008-13 data and adds 2014 data to it
 
 library(pbtools)
 
@@ -17,10 +17,10 @@ dir_new <- 'P:/Research & Learning/Research/19. Transforming Whitehall/Whitehall
 
 for(dfile in listofdatafiles){
   path_old <- paste0(dir_old,dfile,'_data.tsv')
-  path_2013 <- paste0(dir_2013,dfile,'_2014.tsv')
+  path_2014 <- paste0(dir_2014,dfile,'_2014.tsv')
   path_new <- paste0(dir_new,dfile,'_data.tsv')
   data_old <- read.delim(path_old)
-  data_2013 <- read.delim(path_2013)
-  data_new <- rbind(data_old,data_2013)
+  data_2014 <- read.delim(path_2014)
+  data_new <- rbind(data_old,data_2014)
   write.table(data_new,path_new,sep='\t',row.names=F)
 }
