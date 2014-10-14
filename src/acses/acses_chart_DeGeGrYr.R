@@ -9,8 +9,8 @@ if(!batchproduce){ # avoid overriding when batch charting
 # Load data ---------------------------------------------------------------
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
-origdata <- LoadAcsesData(file_name=filename,location=location)
-
+origdata <- LoadAcsesData2014(file_name=filename,location=location)
+  
 # Process data ------------------------------------------------------------
 uu <- origdata %>%
   filter(Wage.band=='Total' & Gender!='Total') %>%
@@ -39,7 +39,7 @@ if(whitehallonly) {
 
 # Sort departments --------------------------------------------------------
 
-xtot <- ddply(uu[uu$Date==2013 & uu$Civil.Service.grad=='SCS' & uu$Gender=='Female',],
+xtot <- ddply(uu[uu$Date==2014 & uu$Civil.Service.grad=='SCS' & uu$Gender=='Female',],
               .(Group),summarise,sorter=sum(share))
 uu <- merge(uu,xtot,all.x=T)
 #reorder grouping variable
@@ -63,7 +63,7 @@ plotname <- 'plot_DeGeGrYr_alt'
 
 plottitle <- 'Civil Servants by gender and grade'
 ylabel = 'Female Civil Servants as % of grade in'
-xlabel = 'ordered by % of female Senior Civil Servants in 2013'
+xlabel = 'ordered by % of female Senior Civil Servants in 2014'
 if(whitehallonly){
   plottitle=paste0(plottitle,' - Whitehall departments')
   ylabel = paste0(ylabel,' Whitehall dept')
@@ -82,11 +82,11 @@ maxY <- max(abs(uu$yvar),na.rm=TRUE)
 ylimits <- c(0, 1)
 ybreaks <- c(0,0.25,0.5,0.75,1)
 ylabels <- paste0(abs(ybreaks*100),'%')
-xlabels <- c('2008', '09', '10', '11', '12', '2013')
+xlabels <- c('2008', '09', '10', '11', '12', '2014')
 
 loadcustomthemes(ifgbasecolours, 'Calibri')
 plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
-  geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
+  geom_rect(data = uu[uu$totalgroup & uu$Date==2014 & uu$Civil.Service.grad=='SCS',],
             fill=HLcol,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha = .5) +
   geom_area(data=uu[uu$Civil.Service.grad!='SCS',],width=.5,
            size=1, aes(fill=Gender,group=Gender),stat='identity', position='stack') +
@@ -94,7 +94,7 @@ plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
             size=1, aes(colour=Civil.Service.grad,ymax=1),position='identity') +
   geom_point(data=uu[uu$Civil.Service.grad=='SCS' & uu$Gender=='Female',],
                      aes(colour=Civil.Service.grad),pch=16,show_guide=TRUE) +
-#   geom_rect(data = uu[uu$totalgroup & uu$Date==2013 & uu$Civil.Service.grad=='SCS',],
+#   geom_rect(data = uu[uu$totalgroup & uu$Date==2014 & uu$Civil.Service.grad=='SCS',],
 #             colour=HLmarg,fill=NA,xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,size = 1) +
   scale_colour_manual(values=c('All grades' = ifgcolours[2,1],'SCS'=ifgcolours[3,1]),
                       labels=c('Senior Civil Service')) +
