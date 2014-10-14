@@ -32,7 +32,7 @@ Scottish Public Pensions Agency,NWH,ScotGov,FALSE,No,
 Social Work Inspection Agency (until 2011),NWH,ScotGov,FALSE,No,
 Student Awards Agency for Scotland,NWH,ScotGov,FALSE,No,
 Transport Scotland,NWH,ScotGov,FALSE,No,
-Northern Ireland Office,WH,NIO,TRUE,No,
+Northern Ireland Office,WH,NIO,TRUE,Yes,
 HM Courts and Tribunals Service (from 2012),NWH,MoJ,TRUE,Yes,
 HM Courts Service (until 2011),NWH,MoJ,TRUE,Yes,
 "Justice, Ministry of (excl agencies)",WH,MoJ,TRUE,Yes,
@@ -187,13 +187,13 @@ UK Intellectual Property Office (from 2010),NWH,BIS,FALSE,Yes,
 UK Intellectual Property Office (until 2009),NWH,BIS,FALSE,Yes,
 UK Space Agency (from 2012),NWH,BIS,FALSE,Yes,
 Attorney General's Departments,WH,AGO,FALSE,No,
-Attorney General's Office,WH,AGO,TRUE,No,
-Crown Prosecution Service,NWH,AGO,FALSE,No,
-Crown Prosecution Service Inspectorate,NWH,AGO,FALSE,No,
-National Fraud Authority (from 2010 to 2011),NWH,AGO,FALSE,No,
-Revenue and Customs Prosecutions Office (until 2009),NWH,AGO,FALSE,No,
-Serious Fraud Office,NWH,AGO,FALSE,No,
-Treasury Solicitor,NWH,AGO,FALSE,No,
+Attorney General's Office,WH,AGO,TRUE,Yes,
+Crown Prosecution Service,NWH,AGO,FALSE,Yes,
+Crown Prosecution Service Inspectorate,NWH,AGO,FALSE,Yes,
+National Fraud Authority (from 2010 to 2011),NWH,AGO,FALSE,Yes,
+Revenue and Customs Prosecutions Office (until 2009),NWH,AGO,FALSE,Yes,
+Serious Fraud Office,NWH,AGO,FALSE,Yes,
+Treasury Solicitor,NWH,AGO,FALSE,Yes,
 Office of Gas and Electricity Market (until 2013),NWH,DECC,FALSE,Yes,Added in 2014
 Government in Parliament,WH,CO,TRUE,Yes,Added in 2014
 Chancellor's Departments including HM Treasury (until 2013),Whole,HMT,FALSE,No,Added in 2014
@@ -216,7 +216,7 @@ Office for Budget Responsibility (from 2014),NWH,HMT,FALSE,Yes,Added in 2014
 UK Border Agency (until 2013),NWH,HO,TRUE,Yes,Added in 2014
 Her Majesty's Passport Office,NWH,HO,FALSE,Yes,Added in 2014
 Legal Aid Agency (from 2014),NWH,MoJ,TRUE,Yes,Added in 2014
-UK Supreme Court (from 2010 to 2013),NWH,MoJ,FALSE,No,Added in 2014
+UK Supreme Court (from 2010 to 2013),NWH,MoJ,FALSE,Yes,Added in 2014
 National Crime Agency (from 2014),NWH,HO,FALSE,Yes,Added in 2014
 National Crime Agency (from 2014),NWH,HO,FALSE,Yes,Added in 2014
 "Office for Standards in Education, Children's Services and Skills",NWH,DfE,FALSE,Yes,Added in 2014
@@ -224,7 +224,7 @@ Office of Gas and Electricity Markets (from 2014),NWH,DECC,FALSE,Yes,Added in 20
 Office of Gas and Electricity Markets (from 2014),NWH,DECC,FALSE,Yes,Added in 2014
 Government Car Service (until 2013),NWH,DfT,FALSE,Yes,Added in 2014
 Office of Rail Regulation,NWH,DfT,FALSE,Yes,Added in 2014
-UK Supreme Court (from 2014),NWH,MoJ,FALSE,No,Added in 2014
-UK Supreme Court (from 2014),NWH,MoJ,FALSE,No,Added in 2014
+UK Supreme Court (from 2014),NWH,MoJ,FALSE,Yes,Added in 2014
+UK Supreme Court (from 2014),NWH,MoJ,FALSE,Yes,Added in 2014
 Welsh Government (incl agencies),NWH,WelshGov,FALSE,No,Added in 2014
 Welsh Government (excl agencies),NWH,WelshGov,FALSE,No,Added in 2014
