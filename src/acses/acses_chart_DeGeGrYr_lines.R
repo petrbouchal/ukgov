@@ -9,7 +9,7 @@ if(!batchproduce){ # avoid overriding when batch charting
 # Load data ---------------------------------------------------------------
 
 filename <- 'ACSES_Gender_Dept_Grade_Pay_data.tsv'
-origdata <- LoadAcsesData(file_name=filename,location=location)
+origdata <- LoadAcsesData2014(file_name=filename,location=location)
 
 # Process data ------------------------------------------------------------
 uu <- origdata %>%
@@ -18,7 +18,7 @@ uu <- origdata %>%
   filter(Civil.Service.grad=='Total' | Civil.Service.grad=='Senior Civil Service') %>%
   # Add organisation data and exclude what isn't needed
   AddOrgData(managedonly = managed) %>%
-  filter(Include=='Yes') %>%
+  filter(Include=='Yes' & Group!='AGO' & Group!='NIO') %>%
   # Drop unneeded vars
   select(Group, Whitehall, Gender, Civil.Service.grad, Date, count, Organisation) %>%
   # Summarise by departmental group
@@ -45,7 +45,7 @@ if(managed) {
 # Sort departments --------------------------------------------------------
 uu <- uu %>%
   group_by(Group) %>%
-  mutate(sorter=mean(share[Date==2013 & Civil.Service.grad=='SCS'])) %>%
+  mutate(sorter=mean(share[Date==2014 & Civil.Service.grad=='SCS'])) %>%
   ungroup() %>%
   mutate(Group=reorder(Group,-sorter,mean)) %>%
   mutate(totalgroup = ifelse(Group=='Whole Civil Service' | Group=='All managed',
@@ -58,7 +58,7 @@ HLcol <- ifelse(managed,ifgcolours[4,1],ifgcolours[3,1])
 plotname <- 'plot_DeGeGrYr'
 plottitle <- 'Civil Servants by gender and grade'
 ylabel = 'Female Civil Servants as % of grade in'
-xlabel = 'ordered by % of female Senior Civil Servants in 2013'
+xlabel = 'ordered by % of female Senior Civil Servants in 2014'
 if(managed){
   plottitle=paste0(plottitle,' - managed departments')
   ylabel = paste0(ylabel,' managed dept')
