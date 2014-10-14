@@ -94,7 +94,7 @@ ylimits <- c(-maxY*1.04, maxY*1.04)
 ybreaks <- c(-.3,-.15,0,.15,.3)
 ylabels <- paste0(abs(ybreaks*100),'%')
 
-loadcustomthemes(ifgcolours, 'Calibri')
+loadcustomthemes(ifgcolours, fontfamily)
 plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
   geom_rect(data = uu[uu$totalgroup,],fill=HLcol,xmin = -Inf,xmax = Inf,
             ymin = -Inf,ymax = Inf,alpha = .01) +
@@ -108,7 +108,7 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
             aes(label=Group, x=sorter*5), colour='white',y=0,
             fontface='bold',size=4) +
   coord_flip() +
-  facet_wrap(~Group, nrow=5) +
+  facet_wrap(~Group, nrow=6) +
   guides(fill=guide_legend(ncol=3)) +
   scale_fill_manual(values=c('col1'=ifgcolours[5,2],'col2'=ifgcolours[2,1]),
                     labels=c('2010', '2014')) +
@@ -128,5 +128,7 @@ plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------
 
-saveplot(plotname=plotname,plotformat='pdf',ploth=15,plotw=17.5,ffamily=fontfamily,
-         plotdir='./charts-output/', dpi=300)
+saveplot2(plotname=plotname,plotformat='png',ploth=24,plotw=21.1,ffamily=fontfamily,
+         plotdir='./charts-output/', dpi=72, scale=1)
+saveplot(plotname=plotname,plotformat='png',ploth=24,plotw=21.1,ffamily=fontfamily,
+         plotdir='./charts-output/', dpi=72)
