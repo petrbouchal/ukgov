@@ -14,6 +14,7 @@ uu <- origdata %>%
   filter(Wage.band=='Total' & Gender=='Total') %>%
   # Add organisation data and exclude what isn't needed
   AddOrgData(managedonly = managed) %>%
+  filter(Group!='NIO' & Group!='AGO') %>%
   # Drop unneeded vars
   select(Group, Civil.Service.grad, Date, count, Organisation) %>%
   # Summarise by departmental group
@@ -102,7 +103,7 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
   geom_area(position='identity', width=1,stat='identity',
             data=uu[uu$Date=='2010',], aes(fill='col1'), alpha=1) +
   geom_area(position='identity', width=1,stat='identity',
-            data=uu[uu$Date=='2013',], aes(fill='col2'), alpha=.4) +
+            data=uu[uu$Date=='2014',], aes(fill='col2'), alpha=.4) +
   geom_text(data=uu[uu$grp=='TRUE2010' & uu$Civil.Service.grad=='SCS',],
             aes(label=Group, x=sorter*5), colour='white',y=0,
             fontface='bold',size=4) +
@@ -110,7 +111,7 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
   facet_wrap(~Group, nrow=5) +
   guides(fill=guide_legend(ncol=3)) +
   scale_fill_manual(values=c('col1'=ifgcolours[5,2],'col2'=ifgcolours[2,1]),
-                    labels=c('2010', '2013')) +
+                    labels=c('2010', '2014')) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,
                      expand=c(0,0)) +
   scale_x_discrete(expand=c(0,0)) +
