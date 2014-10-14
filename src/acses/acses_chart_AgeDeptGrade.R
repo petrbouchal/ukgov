@@ -1,7 +1,13 @@
+##### Prep -----------------------
+
 library(pbtools)
 source('./src/lib/lib_acses.R')
 
+#### Load data -------------
+
 origdata <- LoadAcsesData2014('ACSES_Gender_Dept_Age_Grade_data.tsv',location='ifg')
+
+#### Reshape and calculate -----------------
 
 uu <- origdata %>%
   select(Date,Gender,Age.band,Civil.Service.grad,Organisation,count) %>%
@@ -18,9 +24,18 @@ uu <- origdata %>%
   filter(Age.band!='Total' & Civil.Service.grad!='Total') %>%
   RelabelGrades()
 
+#### Build plot -----------------
+
+loadcustomthemes(ifgcolours, fontfamily)
+
 plot <- ggplot(uu, aes(x=Age.band, y=Civil.Service.grad, fill=share)) + 
   geom_tile() +
   facet_wrap(~Group) +
   scale_fill_distiller()
+
+#### Plot ---------------
+
 plot
+
+#### Save plot -----------
   
