@@ -128,7 +128,7 @@ plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------
 
-saveplot2(plotname=plotname,plotformat='png',ploth=24,plotw=21.1,ffamily=fontfamily,
-         plotdir='./charts-output/', dpi=72, scale=1)
-saveplot(plotname=plotname,plotformat='png',ploth=24,plotw=21.1,ffamily=fontfamily,
+# saveplot2(plotname=plotname,plotformat='png',ploth=24,plotw=21.1,ffamily=fontfamily,
+#          plotdir='./charts-output/', dpi=72, scale=1)
+saveplot(plotname=plotname,plotformat='png',ploth=24,plotw=21.1666,ffamily=fontfamily,
          plotdir='./charts-output/', dpi=72)
