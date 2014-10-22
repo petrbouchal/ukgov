@@ -35,7 +35,7 @@ if(managed) {
     filter(Group!='Whole Civil Service') %>%
     group_by(Date, Civil.Service.grad) %>%
     summarise(count=sum(count),total=sum(total), share=count/total) %>%
-    mutate(Group = 'All managed')
+    mutate(Group = 'All\nmanaged')
   uu <- rbind(uu[uu$Group!='Whole Civil Service',],managedtotal)
 }
   
@@ -52,7 +52,7 @@ uu <- merge(uu,gradevalues) %>%
   ungroup() %>%
   filter(Date=='2014' | Date=='2010') %>%
   mutate(Group=reorder(Group,-sorter,mean)) %>%
-  mutate(totalgroup = ifelse(Group=='Whole Civil Service' | Group=='All managed',
+  mutate(totalgroup = ifelse(Group=='Whole Civil Service' | Group=='All\nmanaged',
                              TRUE, FALSE)) %>%
   select(-meangradescore, -sharebothgenders)
 
@@ -76,14 +76,14 @@ HLcol <- ifelse(managed,ifgcolours[4,1],ifgcolours[3,1])
 plotname <- 'plot_DeGrYr_overlapped'
 
 plottitle <- 'Civil Servants by gender and grade'
-ylabel = ' Most senior workforce top left'
+ylabel = ' most senior workforce top left'
 if(managed){
   plottitle=paste0(plottitle,' - managed departments')
-  ylabel = paste0('% of Civil Servants in grade. Managed departments ',ylabel)
+  ylabel = paste0('% of Civil Servants in grade. Managed departments, ',ylabel)
   plotname = paste0(plotname,'_WH')
 } else {
   plottitle=paste0(plottitle,' - departmental groups.')
-  ylabel = paste0('% of Civil Servants in grade. Departmental groups ',ylabel)
+  ylabel = paste0('% of Civil Servants in grade. Departmental groups, ',ylabel)
   plotname = paste0(plotname,'_Group')
 }
 
@@ -92,7 +92,10 @@ uu$yvar <- uu$share2
 maxY <- max(abs(uu$yvar),na.rm=TRUE)
 ylimits <- c(-maxY*1.04, maxY*1.04)
 ybreaks <- c(-.3,-.15,0,.15,.3)
-ylabels <- paste0(abs(ybreaks*100),'%')
+ylabels <- paste0(abs(ybreaks*100*2),'%')
+ylabels[1:2] <- ''
+ylabels[3] <- '0'
+
 
 loadcustomthemes(ifgcolours, fontfamily)
 plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
@@ -100,17 +103,24 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
             ymin = -Inf,ymax = Inf,alpha = .01) +
 #   geom_rect(data = uu[uu$totalgroup,],colour=HLcol,xmin = -Inf,xmax = Inf,
 #             ymin = -Inf,ymax = Inf,alpha = 1,fill=NA,size=2) +
+
+  geom_line(position='identity',stat='identity',
+            data=uu[uu$Date=='2010',], aes(colour='col1'), alpha=1) +
+  geom_line(position='identity',stat='identity',
+            data=uu[uu$Date=='2014',], aes(colour='col2'), alpha=.1) +
   geom_area(position='identity', width=1,stat='identity',
             data=uu[uu$Date=='2010',], aes(fill='col1'), alpha=1) +
   geom_area(position='identity', width=1,stat='identity',
             data=uu[uu$Date=='2014',], aes(fill='col2'), alpha=.4) +
   geom_text(data=uu[uu$grp=='TRUE2010' & uu$Civil.Service.grad=='SCS',],
-            aes(label=Group, x=sorter*5), colour='white',y=0,
-            fontface='bold',size=4) +
+            aes(label=Group, x=sorter*6), colour='white',y=0,
+            fontface='bold',size=3.6) +
   coord_flip() +
   facet_wrap(~Group, nrow=6) +
   guides(fill=guide_legend(ncol=3)) +
   scale_fill_manual(values=c('col1'=ifgcolours[5,2],'col2'=ifgcolours[2,1]),
+                    labels=c('2010', '2014')) +
+  scale_colour_manual(values=c('col1'=ifgcolours[5,2],'col2'=ifgcolours[2,1]),
                     labels=c('2010', '2014')) +
   scale_y_continuous(breaks=ybreaks,limits=ylimits,labels=ylabels,
                      expand=c(0,0)) +
@@ -118,6 +128,8 @@ plot_DeGeGr <- ggplot(uu, aes(Civil.Service.grad, share2, group=grp)) +
   labs(y=ylabel, x=NULL) +
   theme(panel.border=element_rect(fill=NA,color=NA,size=.5),
         axis.ticks.y=element_blank(),panel.grid=element_blank(),
+        panel.margin.y=unit(5,'mm'),
+        panel.margin.x=unit(0,'mm'),
         strip.text=element_blank(), axis.title.x=element_text(),
         axis.title=element_text(size=11, colour=ifgbasecolours[1]),
         legend.key.width=unit(.2,'cm'),legend.key.height=unit(.2,'cm'),
@@ -130,5 +142,7 @@ plot_DeGeGr
 
 # saveplot2(plotname=plotname,plotformat='png',ploth=24,plotw=21.1,ffamily=fontfamily,
 #          plotdir='./charts-output/', dpi=72, scale=1)
-saveplot(plotname=plotname,plotformat='png',ploth=24,plotw=21.1666,ffamily=fontfamily,
-         plotdir='./charts-output/', dpi=72)
+saveplot(plotname=plotname,plotformat='pdf',ploth=20,plotw=15.875,ffamily=fontfamily,
+         plotdir='./charts-output/', dpi=96)
+ggsave('./charts-output/charts-images/CAIROTEST.PNG', type='cairo-png',width = 15.875, height=20, dpi=96,units = 'cm', antialias='default')
+ggsave('./charts-output/charts-images/CAIROTEST2.PNG')
