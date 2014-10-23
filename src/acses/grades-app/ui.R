@@ -1,22 +1,29 @@
 library(ggvis)
 library(dplyr)
-deptchoices <- c('DCMS','HMT','DWP','CO','BIS','DfID','DECC')
-ui = fluidPage(
-  column(width=6,
-  wellPanel(
-    column(width = 3,
-      selectInput(choices=deptchoices, inputId = 'select_dept',label = 'Department',
-                  selected = 'HMT', width='90px')
-                      ),
-    column(width=3,
-      sliderInput(min=2010, max=2014, step=1,animate = TRUE, value=2010,
-                  inputId = 'slider_date', label='Year',format='####',
-                  width='100px')
-             )
+
+ui = fixedPage(responsive = TRUE,
+  fixedRow(
+      column(width=3,
+        sliderInput(min=2010, max=2014, step=1,animate = TRUE, value=2010,
+                    inputId = 'slider_date', label='Year',format='####',
+                    width='150px')
+                        )
+
     ),
-  fluidRow(column(width=6,
-    ggvisOutput('ggvis')
+  fixedRow(
+      column(width=4,ggvisOutput('ggvis1')),
+      column(width=4,ggvisOutput('ggvis2')),
+      column(width=4,ggvisOutput('ggvis3'))
+
+    ),
+  fixedRow(
+      column(width=4,ggvisOutput('ggvis4')),
+      column(width=4,ggvisOutput('ggvis5')),
+      column(width=4,ggvisOutput('ggvis6'))
+
+    ),
+  fixedRow(
+      column(width=4,ggvisOutput('ggvis7'))
+
     )
-  )
-)
 )
