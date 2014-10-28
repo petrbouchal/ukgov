@@ -77,7 +77,7 @@ maxY <- max(abs(uu$yvar),na.rm=TRUE)
 ylimits <- c(0, 1)
 ybreaks <- c(0,0.25,0.5,0.75, 1)
 ylabels <- paste0(abs(ybreaks*100),'%')
-xlabels <- c('\'08', '\'09', '\'10', '\'11', '\'12', '\'13')
+xlabels <- c('08', '09', '10', '11', '12', '13','14')
 
 loadcustomthemes(ifgcolours, 'Calibri')
 plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
@@ -97,7 +97,7 @@ plot_DeGeGrYr <- ggplot(uu, aes(as.factor(Date), y=yvar,group=grp)) +
   facet_wrap(~Group, nrow=4) +
   labs(title=NULL, y=ylabel,x=xlabel) +
   theme(panel.border=element_rect(fill=NA,color=NA,size=.5),
-        panel.grid.major.y=element_line(colour=ifgcolours[1,4]),
+        panel.grid.major.y=element_line(colour=rgb(238/255,242/255,244/255)),
         axis.ticks.y=element_blank(),
         axis.title=element_text(size=11, colour=ifgbasecolours[1]),
         legend.key.width=unit(.5,'cm'),legend.key.height=unit(.2,'cm'),

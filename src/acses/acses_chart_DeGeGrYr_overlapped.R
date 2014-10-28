@@ -139,9 +139,7 @@ plot_DeGeGr
 
 # Save plot ---------------------------------------------------------------
 
-# saveplot2(plotname=plotname,plotformat='png',ploth=24,plotw=21.1,ffamily=fontfamily,
-#          plotdir='./charts-output/', dpi=72, scale=1)
-saveplot(plotname=plotname,plotformat='pdf',ploth=20,plotw=15.875,ffamily=fontfamily,
+saveplot(plotname=plotname,plotformat='pdf',ploth=20,plotw=17.5,ffamily=fontfamily,
          plotdir='./charts-output/', dpi=96)
 ggsave('./charts-output/charts-images/CAIROTEST.PNG', type='cairo-png',width = 15.875, height=20, dpi=96,units = 'cm', antialias='default')
 ggsave('./charts-output/charts-images/CAIROTEST2.PNG')
