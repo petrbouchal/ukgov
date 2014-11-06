@@ -3,8 +3,13 @@ library(ggvis)
 shinyServer(function(input, output) {
   csps <- read.csv('csps.csv')
   csps$value <- csps$value*100
+  csps$split <- relevel(csps$split, 'AO/AA')
+  csps$split <- relevel(csps$split, 'EO')
+  csps$split <- relevel(csps$split, 'SEO/HEO')
+  csps$split <- relevel(csps$split, 'G6/G7')
   csps$split <- relevel(csps$split, 'SCS')
   
+#   load(csps.rda)
   output$dimensionsList <- renderUI({
     dimensions <- unique(as.character(csps$dimension))
     selectInput("dimension2", "Choose dimension", as.list(dimensions),
@@ -49,8 +54,7 @@ shinyServer(function(input, output) {
                    "#dde4e4", "#d0dedf", "#eee2d6") 
 
   csps3 %>%
-    ggvis(~split, ~value, stroke = ~questiontext, fillOpacity.hover := 1,
-          fillOpacity := .7, strokeOpacity := .7, strokeOpacity.hover :=1) %>%
+    ggvis(~split, ~value, stroke = ~questiontext) %>%
     layer_lines(strokeWidth:=5) %>%
     layer_points(fill = ~questiontext, size := 80, size.hover := 120) %>%
 #     layer_bars(width=.9, stack=FALSE) %>%
@@ -61,11 +65,15 @@ shinyServer(function(input, output) {
     scale_numeric('y',domain=c(0,100),zero = TRUE) %>%
     scale_ordinal('fill', range=colourscale, label = '') %>%
     scale_ordinal('stroke', range=colourscale, label = '') %>%
+    scale_nominal('x',sort=FALSE, reverse=TRUE) %>%
     add_tooltip(tooltip) %>%
+#     add_legend(scales = c('stroke','fill'),
+#                properties=legend_props(legend = list(x=0,
+#                                                      y=-1))) %>%
+    add_legend(scales=c('stroke','fill')) %>%
     scale_nominal(property = 'x') %>%
     scale_numeric('y') %>%
-    set_options(padding = padding(20, 150, 25, 30)) %>%
-    add_legend(c('stroke','fill')) %>%
+    set_options(padding = padding(20, 200, 30, 30), width=500, height=400) %>%
     bind_shiny('ggvis')
   
   output$datat <- renderDataTable({
