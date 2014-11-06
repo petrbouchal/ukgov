@@ -1,11 +1,10 @@
-library(shiny)
 library(ggvis)
-
 
 shinyServer(function(input, output) {
   csps <- read.csv('csps.csv')
   questionkey <- read.csv('questionkey.csv')
-  csps <- merge(csps, questionkey, all.x=TRUE)
+#   csps$questiontext <- csps$measure
+#   csps <- merge(csps, questionkey, all.x=TRUE)
   csps$value <- csps$value*100
   csps$split <- relevel(csps$split, 'SCS')
   
@@ -18,11 +17,11 @@ shinyServer(function(input, output) {
   output$measuresList <- renderUI({
     measures <- unique(as.character(csps$questiontext))
     selectInput("measure2", "Choose measure", as.list(measures),multiple = TRUE,
-                selected='I feel that my pay adequately reflects my performance')
+                selected='Employee engagement index')
   })
   
   cspsshort <- csps[csps$questiontext=='Employee engagement index' &
-                      csps$dimension=='Age',]
+                      csps$dimension=='Grade',]
   cspsshort$questiontext <- droplevels(cspsshort$questiontext)
   cspsshort$dimension <- droplevels(cspsshort$dimension)
   cspsshort$split <- droplevels(cspsshort$split)
@@ -55,9 +54,9 @@ shinyServer(function(input, output) {
   csps3 %>%
     ggvis(~split, ~value, stroke = ~questiontext, fillOpacity.hover := 1,
           fillOpacity := .7, strokeOpacity := .7, strokeOpacity.hover :=1) %>%
-    layer_lines(strokeWidth:=3) %>%
-    layer_points(fill = ~questiontext, size := 50, size.hover := 90) %>%
-#     layer_bar(width=.9) %>%
+    layer_lines(strokeWidth:=5) %>%
+    layer_points(fill = ~questiontext, size := 80, size.hover := 120) %>%
+#     layer_bars(width=.9, stack=FALSE) %>%
     add_axis('x',tick_size_major = 0, grid=FALSE, title='') %>%  
     add_axis('y',tick_size_major = 0, grid=TRUE, values=c(0,25,50,75,100),
              title = '',
