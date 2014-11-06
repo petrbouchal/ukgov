@@ -1,15 +1,7 @@
 library(ggvis)
 
 shinyServer(function(input, output) {
-  csps <- read.csv('csps.csv')
-  csps$value <- csps$value*100
-  csps$split <- relevel(csps$split, 'AO/AA')
-  csps$split <- relevel(csps$split, 'EO')
-  csps$split <- relevel(csps$split, 'SEO/HEO')
-  csps$split <- relevel(csps$split, 'G6/G7')
-  csps$split <- relevel(csps$split, 'SCS')
-  
-#   load(csps.rda)
+  load('./csps.rda')
   output$dimensionsList <- renderUI({
     dimensions <- unique(as.character(csps$dimension))
     selectInput("dimension2", "Choose dimension", as.list(dimensions),
