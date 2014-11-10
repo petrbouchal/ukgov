@@ -1,0 +1,180 @@
+Organisation,Whitehall,Group,Include
+Total (All Departments),Total,Whole Civil Service,Yes
+Attorney General's Departments,WH,AGO,No
+Attorney General's Office,WH,AGO,No
+Crown Prosecution Service,NWH,AGO,No
+Crown Prosecution Service Inspectorate,NWH,AGO,No
+National Fraud Authority (from 2010 to 2011),NWH,AGO,No
+Revenue and Customs Prosecutions Office (until 2009),NWH,AGO,No
+Serious Fraud Office,NWH,AGO,No
+Treasury Solicitor,NWH,AGO,No
+"Business, Innovation and Skills (incl agencies)",Whole,BIS,No
+"Advisory, Conciliation and Arbitration Service",NWH,BIS,Yes
+Companies House,NWH,BIS,Yes
+"Business, Innovations and Skills (excl agencies)",WH,BIS,Yes
+Insolvency Service,NWH,BIS,Yes
+Land Registry (from 2012),NWH,BIS,Yes
+Met Office (from 2012),NWH,BIS,Yes
+National Measurement Office (from 2010),NWH,BIS,Yes
+Office of Fair Trading,NWH,BIS,Yes
+Office of Gas and Electricity Market,NWH,DECC,Yes
+Ordnance Survey (from 2012),NWH,BIS,Yes
+Postal Services Commission (until 2011),NWH,BIS,Yes
+Skills Funding Agency (from 2011),NWH,BIS,Yes
+UK Intellectual Property Office (from 2010),NWH,BIS,Yes
+UK Space Agency (from 2012),NWH,BIS,Yes
+Cabinet Office (incl agencies),Whole,CO,No
+Government Procurement Service (from 2011),NWH,CO,Yes
+Cabinet Office (excl agencies),WH,CO,Yes
+Central Office of Information,NWH,CO,Yes
+National School of Government (until 2011),NWH,CO,Yes
+Office of the Parliamentary Counsel,NWH,CO,Yes
+Chancellor's Departments including HM Treasury,Whole,CD,No
+Asset Protection Agency (from 2012),NWH,HMT,Yes
+Debt Management Office,NWH,HMT,Yes
+Government Actuary's Department,NWH,HMRC,Yes
+HM Treasury,WH,HMT,Yes
+National Savings and Investments,NWH,HMT,Yes
+Office for Budget Responsibility (from 2011),NWH,HMT,Yes
+Office for National Statistics (2008 only : from 2009 became UK Statistics Authority),NWH,CO,Yes
+Office of Government Commerce (until 2010),NWH,HMT,Yes
+OGC Buying Solutions (until 2010 : responsibility moved to Cabinet Office in 2011 survey),NWH,CO,Yes
+Royal Mint (until 2009),NWH,HMT,Yes
+Charity Commission,NWH,CO,Yes
+"Communities and Local Government, Department for (incl agencies)",Whole,DCLG,No
+"Communities and Local Government, Department for (excl agencies)",WH,DCLG,Yes
+Fire Service College,NWH,DCLG,Yes
+Ordnance Survey (until 2011),NWH,DCLG,Yes
+Planning Inspectorate,NWH,DCLG,Yes
+Queen Elizabeth II Conference Centre,NWH,DCLG,Yes
+"Culture Media and Sport, Department for (incl agencies)",Whole,DCMS,No
+"Department for Culture, Media & Sport, Department for (excl agencies)",WH,DCMS,Yes
+Royal Parks Agency,NWH,DCMS,Yes
+Defence (incl agencies),Whole,MoD,No
+Army Base Repair Organisation (MOD) (until 2008),NWH,MoD,Yes
+DARA (MOD) : until 2008,NWH,MoD,Yes
+Defence Science and Technology Laboratory (MOD),NWH,MoD,Yes
+Defence Support Group (from 2009),NWH,MoD,Yes
+Meteorological Office (MOD) (until 2011),NWH,MoD,Yes
+Ministry of Defence (excl agencies),WH,MoD,Yes
+Royal Fleet Auxilliary,NWH,MoD,Yes
+UK Hydrographic Office (MOD),NWH,MoD,Yes
+"Education, Department for",WH,DfE,Yes
+"Energy & Climate Change, Department for (from 2009)",Whole,DECC,No
+"Energy and Climate Change, Department for (from 2009)",WH,DECC,Yes
+"Environment, Food and Rural Affairs, Department for (incl agencies)",Whole,Defra,No
+Animal Health (until 2011),NWH,Defra,Yes
+Animal Health and Veterinary Laboratories Agency (from 2012),NWH,Defra,Yes
+Food and Environment Research Agency,NWH,Defra,Yes
+"Centre for Environment, Fisheries and Aquaculture Science",NWH,Defra,Yes
+"Environment, Food and Rural Affairs, Department for (excl agencies)",WH,Defra,Yes
+Government Decontamination Services (until 2009),NWH,Defra,Yes
+Marine and Fisheries Agency (until 2010),NWH,Defra,Yes
+OFWAT (formerly Office of Water Services),NWH,Defra,Yes
+Pesticides Safety Directorate (until 2008),NWH,Defra,Yes
+Rural Payments Agency,NWH,Defra,Yes
+Veterinary Laboratories Agency (until 2011),NWH,Defra,Yes
+Veterinary Medicines Directorate,NWH,Defra,Yes
+ESTYN (from 2011 - previously reported under Welsh Assembly Government),NWH,WelshGov,No
+ESTYN (from 2011),NWH,WelshGov,No
+UK Export Finance (prior to 2012 named Export Credits Guarantee Department),NWH,HMT,Yes
+Food Standards Agency (from 2012),NWH,DH,Yes
+Foreign and Commonwealth Office (incl agencies),Whole,FCO,No
+Foreign and Commonwealth Office (excl agencies),WH,FCO,Yes
+Wilton Park Executive Agency,NWH,FCO,Yes
+Government Equalities Office (until 2011),NWH,DCMS,Yes
+Government Equalities Office (Until 2011),NWH,DCMS,Yes
+"Health, Department of (incl agencies)",Whole,DH,No
+"Health, Department of (excl agencies)",WH,DH,Yes
+Food Standards Agency (until 2011),NWH,DH,Yes
+Meat Hygiene Service (until 2010),NWH,DH,Yes
+Medicines and Healthcare Products Regulatory Agency,NWH,DH,Yes
+NHS Business Services Authority (Civil Service only) (until 2011),NWH,DH,Yes
+NHS Purchasing and Supply Agency (until 2010),NWH,DH,Yes
+HM Revenue and Customs (incl agencies),Whole,HMRC,No
+HM Revenue and Customs (excl agencies),NWH,HMRC,Yes
+Valuation Office,NWH,HMRC,Yes
+Home Office (incl agencies),Whole,HO,No
+Assets Recovery Agency (until 2008),NWH,HO,Yes
+UK Border Agency,NWH,HO,Yes
+Criminal Records Bureau,NWH,HO,Yes
+Home Office (excl agencies),WH,HO,Yes
+Identity and Passport Service,NWH,HO,Yes
+National Fraud Authority (from 2012),NWH,HO,Yes
+Office for Security and Counter-Terrorism (until 2008),NWH,HO,Yes
+"Innovation, Universities and Skills, Department for (incl agencies) (until 2009)",Whole,BIS,No
+"Innovation, Universities and Skills, Department for (excl agencies) (until 2009)",WH,BIS,Yes
+National Weights and Measures Laboratory (until 2009),NWH,BIS,Yes
+UK Intellectual Property Office (until 2009),NWH,BIS,Yes
+"International Development, Department for",WH,DfID,Yes
+"Justice, Ministry of (incl agencies)",Whole,MoJ,No
+HM Courts and Tribunals Service (from 2012),NWH,MoJ,Yes
+HM Courts Service (until 2011),NWH,MoJ,Yes
+Land Registry(until 2011),NWH,MoJ,Yes
+"Justice, Ministry of (excl agencies)",WH,MoJ,Yes
+National Archives,NWH,MoJ,Yes
+National Offender Management Service (from 2009),NWH,MoJ,Yes
+Office of the Public Guardian,NWH,MoJ,Yes
+Public Sector Prison Service (until 2008),NWH,MoJ,Yes
+Scotland Office,NWH,MoJ,Yes
+Tribunals Service (until 2011),NWH,MoJ,Yes
+UK Supreme Court (from 2010),NWH,MoJ,Yes
+Wales Office,NWH,MoJ,Yes
+Northern Ireland Office,WH,NIO,No
+Office for Standards in Education,NWH,DfE,Yes
+Office of Qualifications and Examinations Regulation (from 2011),NWH,DfE,Yes
+Ofqual (from 2011),NWH,DfE,Yes
+Scottish Government (incl agencies),Whole,ScotGov,No
+Communities Scotland (until 2008),NWH,ScotGov,No
+Courts Group (until 2009),NWH,ScotGov,No
+Crown Office and Procurator Fiscal Service,NWH,ScotGov,No
+Disclosure Scotland (from 2010),NWH,ScotGov,No
+Education Scotland (from 2012),NWH,ScotGov,No
+Fisheries Research Services (until 2009),NWH,ScotGov,No
+General Register Office for Scotland (until 2011),NWH,ScotGov,No
+HM Inspectorate of Education (until 2011),NWH,ScotGov,No
+Historic Scotland,NWH,ScotGov,No
+Mental Health Tribunal for Scotland (until 2009),NWH,ScotGov,No
+National Archives of Scotland (until 2011),NWH,ScotGov,No
+National Records of Scotland (from 2012),NWH,ScotGov,No
+Office of Accountant in Bankruptcy,NWH,ScotGov,No
+Office of the Scottish Charity Regulator,NWH,ScotGov,No
+Registers of Scotland,NWH,ScotGov,No
+Scottish Agricultural Science Agency (until 2008),NWH,ScotGov,No
+Scottish Building Standards Agency (until 2008),NWH,ScotGov,No
+Scottish Courts Service,NWH,ScotGov,No
+Scottish Fisheries Protection Agency (until 2009),NWH,ScotGov,No
+Scottish Government (excl agencies),NWH,ScotGov,No
+Scottish Housing Regulator,NWH,ScotGov,No
+Scottish Prison Service,NWH,ScotGov,No
+Scottish Public Pensions Agency,NWH,ScotGov,No
+Social Work Inspection Agency (until 2011),NWH,ScotGov,No
+Student Awards Agency for Scotland,NWH,ScotGov,No
+Transport Scotland,NWH,ScotGov,No
+Security and Intelligence Services,NWH,FCO,Yes
+"Transport, Department for (incl agencies)",Whole,DfT,No
+"Transport, Department for (excl agencies)",WH,DfT,Yes
+Driver and Vehicle Licensing Agency,NWH,DfT,Yes
+Driving Standards Agency,NWH,DfT,Yes
+Government Car and Despatch Agency,NWH,DfT,Yes
+Highways Agency,NWH,DfT,Yes
+Maritime and Coastguard Agency,NWH,DfT,Yes
+Office of Rail Regulator,NWH,DfT,Yes
+Vehicle and Operator Services Agency,NWH,DfT,Yes
+Vehicle Certification Agency,NWH,DfT,Yes
+Welsh Assembly Government (incl agencies),Whole,WelshGov,No
+Welsh Assembly Government (excl agencies),NWH,WelshGov,No
+Estyn - HM Inspectorate for Education and Training in Wales (until 2010 - now separate dept),NWH,WelshGov,No
+United Kingdom Statistics Authority (from 2009),NWH,HMT,Yes
+"Work and Pensions, Department for (incl agencies)",Whole,DWP,No
+Child Maintenance & Enforcement Commission (from 2009 to 2012),NWH,DWP,Yes
+Child Support Agency (until 2008),NWH,DWP,Yes
+Department for Work and Pensions (excl agencies) (from 2012),NWH,DWP,Yes
+Disability and Carers Service (until 2008),NWH,DWP,Yes
+DWP Corporate and Shared Services (until 2011),NWH,DWP,Yes
+Health and Safety Executive,NWH,DWP,Yes
+Jobcentre Plus (until 2011),NWH,DWP,Yes
+Pension Services (until 2008),NWH,DWP,Yes
+"Pensions, Disability and Carer's Service (from 2009 until 2011)",NWH,DWP,Yes
+DWP Shared Services (until 2009),NWH,DWP,Yes
+Rent Service (until 2009),NWH,DWP,Yes
