@@ -1,0 +1,7 @@
+git clone ORIGREPO FINALREPO
+cd FINALREPO
+git filter-branch --prune-empty --subdirectory-filter YOUR_FOLDER_NAME master
+git remote set-url origin https://github.com/petrbouchal/FINALREPO.git
+git remote -v
+# create repo on github here
+git push 
