@@ -13,5 +13,8 @@ system.time(withopen())
 system.time(withjava2())
 system.time(withjava())
 
-comall <- openxlsx::read.xlsx(comfile,sheet = 'Data')
+comall <- xlsx::read.xlsx2(comfile,sheetName = 'Data')
+# comall <- openxlsx::read.xlsx(comfile,sheetName = 'Data')
 comall$HouseEndDate2 <- as.Date(substr(comall$HouseEndDate,1,10))
+
+combook <- openxlsx::readWorkbook(comfile,sheet = 'Data')
